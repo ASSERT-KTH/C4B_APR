@@ -61,6 +61,42 @@ The Code4Bench dataset consists of the following:
 
 With this dataset, we aim to create a curated subset for automated program repair, ensuring a balanced representation of accepted and rejected submissions while maintaining a manageable size.
 
+## Fields definition
+<table>
+<thead><tr><th>Field Name</th><th>Description</th></tr></thead><tbody>
+ <thead><tr><th colspan="2" >source</th></tr></thead><tbody>
+ <tr><td>id</td><td>A unique number</td></tr>
+ <tr><td>submission</td><td>ID number given by Codeforces to this submission</td></tr>
+ <tr><td>sourceCode</td><td>The submitted source code</td></tr>
+ <tr><td>author</td><td>ID number of submitter</td></tr>
+ <tr><td>memory</td><td>The memory used by this submission</td></tr>
+ <tr><td>time</td><td>The execution time of this submission</td></tr>
+ <tr><td>sent</td><td>The submission time by user</td></tr>
+ <tr><td>countLine</td><td>The number of lines of code</td></tr>
+ <tr><td>problems_id</td><td>Problem ID number</td></tr>
+ <tr><td>verdicts</td><td>The Codeforces' judgment on this submission</td></tr>
+ <tr><td>languages_id</td><td>The language in which this submission is written</td></tr>
+ <tr><td>test_res</td><td>A tuple contains (A boolean showing if expected data is equal to output, code's output, expected result, testcase id)</td></tr>
+ <tr><td>sanity</td><td>A boolean indicates the result of the sanity check (False for the Buggy version and True for the accepted version)</td></tr>
+ 
+ <thead><tr><th colspan="2" >problems</th></tr></thead><tbody>
+ 
+ <tr><td>id</td><td>A unique number</td></tr>
+ <tr><td>fullname</td><td>The ID number of competition and name of problem</td></tr>
+ <tr><td>contest</td><td>ID number of competition</td></tr>
+ <tr><td>name</td><td>ID number of problem section</td></tr>
+ <tr><td>context</td><td>The description of problem</td></tr>
+ 
+ <thead><tr><th colspan="2" >testcases</th></tr></thead><tbody>
+ 
+ <tr><td>id</td><td>A unique number</td></tr>
+ <tr><td>inputData</td><td>Input data for problem</td></tr>
+ <tr><td>expectedResult</td><td>Expected output for problem</td></tr>
+ <tr><td>problems_id</td><td>ID number of corresponding problem</td></tr>
+ <tr><td>isValid</td><td>Whether test case is complete or deficient</td></tr>
+ 
+</tbody></table>
+
 ## Acknowledgments
 
 We would like to express our gratitude to the Code4Bench team for providing the dataset and enabling research and development in the field of automated program repair.
