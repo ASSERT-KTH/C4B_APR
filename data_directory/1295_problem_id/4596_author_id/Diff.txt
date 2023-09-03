@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1295_problem_id/4596_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1295_problem_id/4596_author_id/Accepted.py
+index 6e17c21..73deb8c 100644
+--- a/Users/bardia/Downloads/data 4/data/1295_problem_id/4596_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1295_problem_id/4596_author_id/Accepted.py	
+@@ -4,4 +4,4 @@ total_limes = x[3] * x[4]
+ salt = x[5]
+ drinks_per_shot = x[6] * x[0]
+ salt_per_shot = x[7] * x[0]
+-print(min([(total_drinks//drinks_per_shot),total_limes,(salt//salt_per_shot)]))
+\ No newline at end of file
++print(min([(total_drinks//drinks_per_shot),total_limes//x[0],(salt//salt_per_shot)]))
+\ No newline at end of file

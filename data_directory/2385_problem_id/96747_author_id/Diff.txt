@@ -1,0 +1,36 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2385_problem_id/96747_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2385_problem_id/96747_author_id/Accepted.py
+index a8f1788..be035b3 100644
+--- a/Users/bardia/Downloads/data 4/data/2385_problem_id/96747_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2385_problem_id/96747_author_id/Accepted.py	
+@@ -1,13 +1,20 @@
+-n = float(input())
++n = int(input())
+ 
+ if -128 <= n <= 127:
+ 	print("byte")
+ 	
+-elif -32768 <= n <= 32767 :
+-	print("short")
+-elif -2147483648 <= n <= 2147483647 :
+-	print("int")
+-elif -9223372036854775808 <= n <= 9223372036854775807 :
+-	print("long")
+-else:
+-	print("BigInteger")
+\ No newline at end of file
++else :
++	if -32768 <= n <= 32767 :
++		
++		print("short")
++		
++	else :
++		if -2147483648 <= n <= 2147483647 :
++			print("int")
++			
++		else :
++			if -9223372036854775808 <= n <= 9223372036854775807 :
++				print("long")
++				
++			else :
++				print("BigInteger")
+\ No newline at end of file

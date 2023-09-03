@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2645_problem_id/21815_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2645_problem_id/21815_author_id/Accepted.py
+index 7c6109d..a911e85 100644
+--- a/Users/bardia/Downloads/data 4/data/2645_problem_id/21815_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2645_problem_id/21815_author_id/Accepted.py	
+@@ -1,9 +1,10 @@
+-plus = int(input())
++numb = [0, 0, 1, 2, 2, 1]
++#odd, then even
++chart = [1, 0, 5, 2, 3, 4]
++add = int(input())
+ start = int(input())
+-start = (plus + (3 - start))%6
+-if start <= 1:
+-    print("2")
+-elif start == 2 or start == 5:
+-    print("1")
+-else:
+-    print("0")
+\ No newline at end of file
++start = 2*start
++if add % 2 == 0:
++    start += 1
++add = (add+chart[start])%6
++print(numb[add])
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/88_problem_id/4061_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/88_problem_id/4061_author_id/Accepted.py
+index c429984..c9c3928 100644
+--- a/Users/bardia/Downloads/data 4/data/88_problem_id/4061_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/88_problem_id/4061_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ for i in range(n) :
+             a=([M[i][0],M[i][1]])
+             b=([M[j][0],M[j][1]])
+ if a==-1 :
+-    print(1)
++    print(-1)
+ else :
+     c=[a[0],b[1]]
+     d=[b[0],a[1]]

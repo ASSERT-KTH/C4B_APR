@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2521_problem_id/11_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2521_problem_id/11_author_id/Accepted.py
+index 38a352d..dd58224 100644
+--- a/Users/bardia/Downloads/data 4/data/2521_problem_id/11_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2521_problem_id/11_author_id/Accepted.py	
+@@ -1,2 +1,5 @@
+-import math
+-print(int(math.floor(math.log10(int(input())))+1))
+\ No newline at end of file
++n=int(input())
++def S(x):
++  if x>n:return 0
++  return 1+S(x*10)+S(x*10+1)
++print(S(1))
+\ No newline at end of file

@@ -1,0 +1,30 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/7948_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/7948_author_id/Accepted.py
+index a97da6a..88a36ea 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/7948_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/7948_author_id/Accepted.py	
+@@ -5,6 +5,7 @@ def gcd(num1, num2):
+             return i
+         i -= 1
+ 
++
+ if __name__ == "__main__":
+     [a, b, n] = [int(x) for x in input().split()]
+     turn = 's'
+@@ -12,7 +13,7 @@ if __name__ == "__main__":
+     while True:
+         if turn == 's':
+             simon = gcd(a, n)
+-            if n - a >= 0:
++            if simon is not None and n - simon >= 0:
+                 n -= simon
+                 turn = 'a'
+             else:
+@@ -20,7 +21,7 @@ if __name__ == "__main__":
+                 exit()
+         else:
+             anti_simon = gcd(b, n)
+-            if n - b >= 0:
++            if anti_simon is not None and n - anti_simon >= 0:
+                 n -= anti_simon
+                 turn = 's'
+             else:

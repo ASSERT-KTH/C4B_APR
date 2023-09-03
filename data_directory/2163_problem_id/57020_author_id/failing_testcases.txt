@@ -1,0 +1,1 @@
+[{'inputdata': '1 16 5', 'expectedresult': 'No solution'}, {'inputdata': '-5 3 4', 'expectedresult': 'No solution'}, {'inputdata': '-1 -512 10', 'expectedresult': 'No solution'}, {'inputdata': '-3 -768 9', 'expectedresult': 'No solution'}, {'inputdata': '4 972 4', 'expectedresult': 'No solution'}, {'inputdata': '4 972 2', 'expectedresult': 'No solution'}]

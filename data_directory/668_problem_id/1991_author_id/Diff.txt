@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/668_problem_id/1991_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/668_problem_id/1991_author_id/Accepted.py
+index d9c6b83..0fdfe1c 100644
+--- a/Users/bardia/Downloads/data 4/data/668_problem_id/1991_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/668_problem_id/1991_author_id/Accepted.py	
+@@ -6,4 +6,4 @@ elif i == 1:
+ elif i == 2:
+     print("I hate that I love it")
+ else:
+-    print("I hate that I love that " * int((i - 2)/2) + "sI hate that I love it")
+\ No newline at end of file
++    print("I hate that I love that " * int((i - 2)/2) + "I hate that I love it")
+\ No newline at end of file

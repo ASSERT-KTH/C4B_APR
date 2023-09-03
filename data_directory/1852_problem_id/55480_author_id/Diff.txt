@@ -1,0 +1,40 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1852_problem_id/55480_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1852_problem_id/55480_author_id/Accepted.py
+index 2532f91..9b2ab33 100644
+--- a/Users/bardia/Downloads/data 4/data/1852_problem_id/55480_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1852_problem_id/55480_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+-n = input()
++n = str(int(input()) + 1)
+ a = int(n[0])
+ l = len(n)
+ d = 1 << (l - 1)
+@@ -9,19 +9,20 @@ def f(a, i):
+     b = int(n[i])
+     i += 1
+     d = 1 << (l - i)
+-    if a > b: return b * d + g(a, b, i)
++    if a > b: return b * d + g(b, a, i)
+     if a == b: return b * d + f(a, i)
+-    return (b - 1) * d + g(a, b, i) + 9 * (d >> 1)
++    return (b - 1) * d + g(a, b, i) + 9 * d - 8
+         
+ def g(a, b, i):
++    global n, l
+     if i == l: return 0
+     c = int(n[i])
+-    d = 1 << (l - i - 1)
+-    if a > b: a, b = b, a
++    i += 1
++    d = 1 << (l - i)
+     if c < a: return 0
+-    if c == a: return g(a, b, i + 1)
++    if c == a: return g(a, b, i)
+     if c < b: return d
+-    if c == b: return d + g(a, b, i + 1)
++    if c == b: return d + g(a, b, i)
+     return 2 * d
+ 
+-print(a * (9 * d - 8) + 72 * (d - l) + f(a, 1))
+\ No newline at end of file
++print(a * (9 * d - 8) + 72 * (d - l) + f(a, 1) - 1)
+\ No newline at end of file

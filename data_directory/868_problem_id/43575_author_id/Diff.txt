@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/868_problem_id/43575_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/868_problem_id/43575_author_id/Accepted.py
+index a2b2ce6..fe79b73 100644
+--- a/Users/bardia/Downloads/data 4/data/868_problem_id/43575_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/868_problem_id/43575_author_id/Accepted.py	
+@@ -1,15 +1,14 @@
+ import sys
+-string = input()
++num = int(input())
++left = num % 4
+ 
+-num = int(string[-1])
+-
+-if string == '0':
++if num == 0:
+     print(1)
+-elif num % 4 == 2 or string == '10':
++elif left % 4 == 2:
+     print(4)
+-elif num % 4 == 0:
++elif left % 4 == 0:
+     print(6)
+-elif num % 4 == 1:
++elif left % 4 == 1:
+     print(8)
+-elif num % 4 == 3:
++elif left % 4 == 3:
+     print(2)
+\ No newline at end of file

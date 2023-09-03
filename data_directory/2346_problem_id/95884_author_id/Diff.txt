@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2346_problem_id/95884_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2346_problem_id/95884_author_id/Accepted.py
+index 90ab6a2..9ed6d96 100644
+--- a/Users/bardia/Downloads/data 4/data/2346_problem_id/95884_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2346_problem_id/95884_author_id/Accepted.py	
+@@ -14,6 +14,6 @@ for j in range(2):
+ if n == 300:
+ 	print('TRIANGLE')
+ elif n == 200:
+-	print('SIGMENT')
++	print('SEGMENT')
+ else:
+ 	print('IMPOSSIBLE')
+\ No newline at end of file

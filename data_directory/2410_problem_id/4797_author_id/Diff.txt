@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2410_problem_id/4797_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2410_problem_id/4797_author_id/Accepted.py
+index 6fbf892..7eda4f1 100644
+--- a/Users/bardia/Downloads/data 4/data/2410_problem_id/4797_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2410_problem_id/4797_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ N = int( input() )
+ if N == 0:
+-  exit( print( 0 ) )
++  exit( print( 1 ) )
+ print( pow( 3, N - 1, int( 1e6 + 3 ) ) )
+\ No newline at end of file

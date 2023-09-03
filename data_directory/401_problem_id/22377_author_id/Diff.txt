@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/401_problem_id/22377_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/401_problem_id/22377_author_id/Accepted.py
+index 60e7471..27c460f 100644
+--- a/Users/bardia/Downloads/data 4/data/401_problem_id/22377_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/401_problem_id/22377_author_id/Accepted.py	
+@@ -1,5 +1,10 @@
+-a = int(input())
+-ans = 2**a
+-if a > 13:
+-    ans -= 100
+-print(ans)
+\ No newline at end of file
++a=int(input())
++x=0
++if(a<0):
++	exit(0)
++if(a<13):
++	x=2**a
++	print(x)
++else:
++	x=8092*(2**(a-13))
++	print(x)
+\ No newline at end of file

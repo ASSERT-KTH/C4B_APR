@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/968_problem_id/3420_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/968_problem_id/3420_author_id/Accepted.py
+index e6435b3..005f5de 100644
+--- a/Users/bardia/Downloads/data 4/data/968_problem_id/3420_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/968_problem_id/3420_author_id/Accepted.py	
+@@ -1,7 +1,9 @@
+ m, d = map(int, input().split())
+ days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+ 
+-if d <= 5 +(31 - days[m-1]):
++if m==2 and d ==1:
++    print(4)
++elif d <= 5 +(31 - days[m-1]):
+     print(5)
+ else:
+     print(6)
+\ No newline at end of file

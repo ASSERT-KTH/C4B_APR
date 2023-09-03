@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/70_problem_id/11235_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/70_problem_id/11235_author_id/Accepted.py
+index 06381f5..cee7555 100644
+--- a/Users/bardia/Downloads/data 4/data/70_problem_id/11235_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/70_problem_id/11235_author_id/Accepted.py	
+@@ -16,7 +16,7 @@ for i in whites:
+ 	if i[0] < min_white:
+ 		can = True
+ 		for j in blacks:
+-			if i[1] == j[1] and i[0] < j[0]:
++			if i[1] == j[1] and i[0] > j[0]:
+ 				can = False
+ 		if can:
+ 			min_white = i[0]

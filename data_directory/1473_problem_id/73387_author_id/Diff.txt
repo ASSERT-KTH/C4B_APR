@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1473_problem_id/73387_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1473_problem_id/73387_author_id/Accepted.py
+index 19d4f32..3bae7cc 100644
+--- a/Users/bardia/Downloads/data 4/data/1473_problem_id/73387_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1473_problem_id/73387_author_id/Accepted.py	
+@@ -15,12 +15,7 @@ def dot_product(a, b, c):
+     size.append(get_size(a, c))
+     size.append(get_size(b, c))
+     size.sort()
+-    if size[0] == 0:
+-        return False
+-
+-    if (b[0] - a[0])*(c[0] - a[0]) + (b[1] - a[1])*(c[1] - a[1]) == 0:
+-        return True
+-    return False
++    return True if size[0] > 0 and size[2] == size[0] + size[1] else False
+ 
+ def are_right(point1, point2, point3):
+     if dot_product(point1, point2, point3):

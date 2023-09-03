@@ -1,0 +1,72 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2466_problem_id/17231_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2466_problem_id/17231_author_id/Accepted.py
+index 6a46b12..55982aa 100644
+--- a/Users/bardia/Downloads/data 4/data/2466_problem_id/17231_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2466_problem_id/17231_author_id/Accepted.py	
+@@ -1,32 +1,38 @@
+-a, b, c = input(), input(), input()
++p = (0, 0)
++v = {p}
+ 
+-def check(a):
+-    i, j = 0, 0
+ 
+-    for x in a:
+-        if i < len(b):
+-            if x == b[i]:
+-                i += 1
+-            else:
+-                i = 0
+-        elif j < len(c):
+-            if x == c[j]:
+-                j += 1
+-            else:
+-                j = 0
+-        else:
+-            break
+-    
+-    return j == len(c)
++def left():
++    return (p[0] - 1, p[1])
++
++def right():
++    return (p[0] + 1, p[1])
++
++def up():
++    return (p[0], p[1] + 1)
+ 
+-f = check(a)
+-b = check(reversed(a))
++def down():
++    return (p[0], p[1] - 1)
+ 
+-if f and b:
+-    print("both")
+-elif f:
+-    print("forward")
+-elif b:
+-    print("backward")
++
++for x in input():
++    if x == 'L':
++        p = left()
++        s = {p, left(), up(), down()}
++    elif x == 'R':
++        p = right()
++        s = {p, right(), up(), down()}
++    elif x == 'U':
++        p = up()
++        s = {p, left(), right(), up()}
++    elif x == 'D':
++        p = down()
++        s = {p, left(), right(), down()}
++    
++    if any(x in v for x in s):
++        print("BUG")
++        break
++    
++    v.add(p)
+ else:
+-    print("fantasy")
+\ No newline at end of file
++    print("OK")
+\ No newline at end of file

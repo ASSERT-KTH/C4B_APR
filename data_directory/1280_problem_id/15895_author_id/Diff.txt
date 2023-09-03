@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/15895_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/15895_author_id/Accepted.py
+index 95f8092..54d1ada 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/15895_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/15895_author_id/Accepted.py	
+@@ -15,9 +15,10 @@ yes = True
+ while count < a:
+     count += b[k]
+     k+=1
+-    if k == 13:
+-        print(-1)
+-        yes = False
++    if k == 12:
++        if sum(b) < a:
++            print(-1)
++            yes = False
+         break
+ if yes:
+     print(k)
+\ No newline at end of file

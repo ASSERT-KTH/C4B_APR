@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2429_problem_id/4201_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2429_problem_id/4201_author_id/Accepted.py
+index f051834..e3685f3 100644
+--- a/Users/bardia/Downloads/data 4/data/2429_problem_id/4201_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2429_problem_id/4201_author_id/Accepted.py	
+@@ -2,8 +2,8 @@ x, y, z, k = map(int, input().split())
+ sides = sorted([x, y, z])
+ cuts = 3 * [ None ]
+ product = 1
+-for i in reversed(range(3)):
+-    a = min(sides[i] - 1, k // (i + 1))
++for i in range(3):
++    a = min(sides[i] - 1, k // (3 - i))
+     cuts[i] = a
+     k -= a
+     product *= a + 1

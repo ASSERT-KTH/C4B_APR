@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2924_problem_id/25196_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2924_problem_id/25196_author_id/Accepted.py
+index 5d8e6c9..e05483f 100644
+--- a/Users/bardia/Downloads/data 4/data/2924_problem_id/25196_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2924_problem_id/25196_author_id/Accepted.py	
+@@ -10,5 +10,4 @@ for el in s:
+         print(current_num, end='')
+         current_num = 0
+ 
+-if current_num != 0:
+-    print(current_num)
+\ No newline at end of file
++print(current_num)
+\ No newline at end of file

@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/88_problem_id/4088_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/88_problem_id/4088_author_id/Accepted.py
+index 424ed23..7420e69 100644
+--- a/Users/bardia/Downloads/data 4/data/88_problem_id/4088_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/88_problem_id/4088_author_id/Accepted.py	
+@@ -3,7 +3,9 @@ l=[list(map(int,input().split())) for _ in range(n)]
+ x=set()
+ y=set()
+ for xx,yy in l:
+-    x|=set(xx)
+-    y|=set(yy)
++    x|={xx}
++    y|={yy}
++x=list(x)
++y=list(y)    
+ if len(x)==1 or len(y)==1: print(-1)
+ else: print(abs(x[0]-x[1])*abs(y[0]-y[1]))
+\ No newline at end of file

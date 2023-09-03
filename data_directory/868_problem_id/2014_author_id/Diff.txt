@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/868_problem_id/2014_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/868_problem_id/2014_author_id/Accepted.py
+index 2d063c5..51ae7da 100644
+--- a/Users/bardia/Downloads/data 4/data/868_problem_id/2014_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/868_problem_id/2014_author_id/Accepted.py	
+@@ -1 +1,5 @@
+-print([6,8,4,2][int(input())%4])
+\ No newline at end of file
++n=int(input())
++if n==0:
++    print(1)
++else:
++    print([6,8,4,2][n%4])
+\ No newline at end of file

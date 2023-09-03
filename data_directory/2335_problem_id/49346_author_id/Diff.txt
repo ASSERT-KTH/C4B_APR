@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/49346_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/49346_author_id/Accepted.py
+index 35b380e..54182f3 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/49346_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/49346_author_id/Accepted.py	
+@@ -4,21 +4,19 @@ flag=0
+ for i in range(0,len(x)):
+ 	a.append(x[i])
+ for i in range(0,len(a)):
+-	if (flag==0 or flag==1) and a[i]=='h':
++	if flag==0 and a[i]=='h':
+ 		flag=1
+-	elif (flag==1 or flag==2) and a[i]=='e':
++	elif flag==1 and a[i]=='e':
+ 		flag=2
+ 	elif flag==2 and a[i]=='l':
+ 		flag=3
+-	elif (flag==3 or flag==4) and a[i]=='l':
++	elif flag==3 and a[i]=='l':
+ 		flag=4
+-	elif (flag==4 or flag==5) and a[i]=='o':
++	elif flag==4 and a[i]=='o':
+ 		flag=5
+ 	elif flag==5:
+ 		break
+-	elif (a[i] in ['h','e','l','o']):
+-		flag=0
+-if flag==0:
+-	print("NO")
++if flag==5:
++	print("YES")
+ else:
+-	print("YES")
+\ No newline at end of file
++	print("NO")
+\ No newline at end of file

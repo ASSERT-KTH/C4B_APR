@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/23054_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/23054_author_id/Accepted.py
+index 286adcf..90fe36b 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/23054_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/23054_author_id/Accepted.py	
+@@ -1,6 +1,8 @@
+ x = input()
+-y=int(x)
+-if (all([x%i for i in[4,7,47,74,447,474,477,747,774]])):
+-    print("YES")
++x=int(x)
++for i in[4,7,47,74,447,474,477,747,774]:
++    if(x%i==0):
++        print("YES")
++        break
+ else:
+     print("NO")
+\ No newline at end of file

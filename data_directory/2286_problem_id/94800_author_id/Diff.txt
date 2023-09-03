@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2286_problem_id/94800_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2286_problem_id/94800_author_id/Accepted.py
+index 7017692..f0d736f 100644
+--- a/Users/bardia/Downloads/data 4/data/2286_problem_id/94800_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2286_problem_id/94800_author_id/Accepted.py	
+@@ -2,9 +2,9 @@ string = input()
+ AEI = ('aeiouy')
+ BCD = ('bcdfghjklmnpqrstvwxz')
+ i = len(string) - 1
+-while (string[i] not in AEI) and (string[i] not in BCD):
++while (string[i].lower() not in AEI) and (string[i].lower() not in BCD):
+     i -= 1
+-if string[i] in AEI:
++if string[i].lower() in AEI:
+     print('YES')
+ else:
+     print('NO')
+\ No newline at end of file

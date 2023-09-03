@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1867_problem_id/85744_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1867_problem_id/85744_author_id/Accepted.py
+index 82f72a7..fb5ef97 100644
+--- a/Users/bardia/Downloads/data 4/data/1867_problem_id/85744_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1867_problem_id/85744_author_id/Accepted.py	
+@@ -1,16 +1,10 @@
+-def valera(my_array, n):
+-    for i in range(1, n-1):
+-        for j in range(i, n-1):
+-            if my_array[j] > my_array[j+1]:
+-               my_array[j], my_array[j+1] = my_array[j+1], my_array[j]
+-    return my_array
+-
+ n = input()
+ n = int(n)
+-if n == 1 or n == 2 :
++if n <= 2:
+     print(-1)
+-else:
+-    my_array = [i for i in range(n,0,-1)]
+-    result = valera(my_array, n)
++elif n <= 50:
++    result = [i for i in range(n, 0, -1)]
+     for el in result:
+-        print(el, end=' ')
+\ No newline at end of file
++        print(el, end=' ')
++else:
++    print(-1)
+\ No newline at end of file

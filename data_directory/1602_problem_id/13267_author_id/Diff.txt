@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1602_problem_id/13267_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1602_problem_id/13267_author_id/Accepted.py
+index dba8fc5..76717a2 100644
+--- a/Users/bardia/Downloads/data 4/data/1602_problem_id/13267_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1602_problem_id/13267_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ import sys
+ import math
+ 
+ x, t, a, b, da, db = [int(x) for x in (sys.stdin.readline()).split()]
+-d = [0] * 300
++d = [0] * 601
+ 
+ if(x == 0):
+     print("YES")

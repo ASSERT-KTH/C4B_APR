@@ -1,0 +1,42 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2470_problem_id/19586_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2470_problem_id/19586_author_id/Accepted.py
+index c0dc108..ab62eee 100644
+--- a/Users/bardia/Downloads/data 4/data/2470_problem_id/19586_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2470_problem_id/19586_author_id/Accepted.py	
+@@ -1,21 +1,17 @@
+-from Prime import IsPrime
+ import math
+ n, m = map(int,input().split())
+ c = n
+-##def IsPrime(x):
+-##    for i in range(2, int(math.sqrt(x))+1):
+-##        if x % i == 0:
+-##            return False
+-##    return True
+-if IsPrime(m):
+-    while True:
+-        c += 1
+-        if IsPrime(c):
+-            if c == m:
+-                print("YES")
+-                break
+-            else:
+-                print("NO")
+-                break
+-else:
+-    print("NO")
+\ No newline at end of file
++def IsPrime(x):
++    for i in range(2, int(math.sqrt(x))+1):
++        if x % i == 0:
++            return False
++    return True
++while True:
++    c += 1
++    if IsPrime(c):
++        if c == m:
++            print("YES")
++            break
++        else:
++            print("NO")
++            break
+\ No newline at end of file

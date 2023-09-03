@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/543_problem_id/4061_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/543_problem_id/4061_author_id/Accepted.py
+index de60f71..1f7f2f2 100644
+--- a/Users/bardia/Downloads/data 4/data/543_problem_id/4061_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/543_problem_id/4061_author_id/Accepted.py	
+@@ -1,11 +1,10 @@
+ n=int(input())
+ a=0
+ c=0
+-while a*1234567<n :
++while a*1234567<=n :
+     b=0
+     v=a*1234567
+-    while a*1234567+b*123456<n :
+-        
++    while a*1234567+b*123456<=n :
+         if (n-v-b*123456)%1234==0 :
+             print('YES')
+             c=1
+@@ -15,4 +14,5 @@ while a*1234567<n :
+     if c==1 :
+         break
+ if c==0 :
+-    print('NO')
+\ No newline at end of file
++    print('NO')
++l=0
+\ No newline at end of file

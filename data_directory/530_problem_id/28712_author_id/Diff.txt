@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/530_problem_id/28712_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/530_problem_id/28712_author_id/Accepted.py
+index d19fb6e..444d108 100644
+--- a/Users/bardia/Downloads/data 4/data/530_problem_id/28712_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/530_problem_id/28712_author_id/Accepted.py	
+@@ -1,6 +1,16 @@
+ var=input("")
+ var=var.split(" ")
+ n,a,b,p,q=int(var[0]),int(var[1]),int(var[2]),int(var[3]),int(var[4])
++import math 
++def pgcd(m,n): 
++    while m%n: 
++        r=m%n 
++        m=n 
++        n=r 
++    return n 
++ 
++def ppcm(m,n): 
++    return m*n//pgcd(m,n)
+ if p>q:
+     x,y=a,b
+     mx,mn=p,q
+@@ -11,7 +21,6 @@ s=0
+ j=int(n/x)
+ s+=mx*j
+ k=int(n/y)
+-for i in range(1,k+1):
+-    if ((i*y)%x)!=0:
+-        s+=mn    
++l=int(n/ppcm(a,b))
++s+=mn*(k-l)
+ print(s)
+\ No newline at end of file

@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/912_problem_id/1401_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/912_problem_id/1401_author_id/Accepted.py
+index e61f3eb..64957a0 100644
+--- a/Users/bardia/Downloads/data 4/data/912_problem_id/1401_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/912_problem_id/1401_author_id/Accepted.py	
+@@ -1,7 +1,15 @@
+-C = list(map(int, input().split()))
+-if sum(C) == 0:
+-    print(-1)
+-elif sum(C) % 5 == 0:
+-    print(sum(C) // 5)
+-else:
+-    print(-1)
+\ No newline at end of file
++N, K = map(int, input().split())
++rem = 240 - K
++
++cnt = 5
++acc = 0
++ans = 0
++
++while acc < rem:
++    if acc + cnt <= rem:
++        acc += cnt
++        ans += 1
++        cnt = 5 * (ans + 1)
++    else:
++        break
++print(min(N, ans))
+\ No newline at end of file

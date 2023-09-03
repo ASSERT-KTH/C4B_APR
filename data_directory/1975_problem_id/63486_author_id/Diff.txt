@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1975_problem_id/63486_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1975_problem_id/63486_author_id/Accepted.py
+index 1ce827c..80c021c 100644
+--- a/Users/bardia/Downloads/data 4/data/1975_problem_id/63486_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1975_problem_id/63486_author_id/Accepted.py	
+@@ -2,9 +2,11 @@ l,t=map(int,input().split())
+ s=input()
+ for j in range(t):
+ 	temp=""
+-	for i in range(l-1):
++	i=0
++	while i < l-1:
+ 		if s[i]=='B' and s[i+1]=='G' :
+ 			temp=s[0:i]+s[i+1]+s[i]+s[i+2:]
+ 			s=temp
+-			break
++			i+=1
++		i+=1
+ print(s)
+\ No newline at end of file

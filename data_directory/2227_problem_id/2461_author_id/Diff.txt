@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2227_problem_id/2461_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2227_problem_id/2461_author_id/Accepted.py
+index fa7605e..eeeacfc 100644
+--- a/Users/bardia/Downloads/data 4/data/2227_problem_id/2461_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2227_problem_id/2461_author_id/Accepted.py	
+@@ -1,6 +1,9 @@
+ n, m = map(int, input().split())
+ x, v = int(input()), 0
+ x1, y1, x2, y2 = x - 1, x - 1, n - x, m - x
++if x1 > x2 or y1 > y2:
++    print(0)
++    exit()
+ for i in range(x1, x2 + 1):
+     if i == x1 or i == x2:
+         v += (y2 - y1 + 1) // 2 + ((i + y1) % 2 == 0 and (i + y2) % 2 == 0)

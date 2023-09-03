@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/924_problem_id/20094_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/924_problem_id/20094_author_id/Accepted.py
+index d3a3620..8ef6dd0 100644
+--- a/Users/bardia/Downloads/data 4/data/924_problem_id/20094_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/924_problem_id/20094_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ import math
+ n,m,k = map(int,input().split())
+ 
+ r = math.ceil(k/(2*m)) 
+-d = int(k/(2*r))
++d = math.ceil((k-2*m*(r-1))/2)
+ 
+ if k % 2==0:
+     print(r,d,'R')

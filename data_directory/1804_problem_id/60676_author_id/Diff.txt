@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1804_problem_id/60676_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1804_problem_id/60676_author_id/Accepted.py
+index 03cc5f1..c869940 100644
+--- a/Users/bardia/Downloads/data 4/data/1804_problem_id/60676_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1804_problem_id/60676_author_id/Accepted.py	
+@@ -3,4 +3,4 @@ name = set(list(input()))
+ if len(name) % 2 == 0:
+     print ('CHAT WITH HER!')
+ else:
+-    print ('IGNORE HIM')
+\ No newline at end of file
++    print ('IGNORE HIM!')
+\ No newline at end of file

@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2273_problem_id/8371_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2273_problem_id/8371_author_id/Accepted.py
+index d2f5355..cffe9bf 100644
+--- a/Users/bardia/Downloads/data 4/data/2273_problem_id/8371_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2273_problem_id/8371_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ import math
+ a=int(input())
+-b=int(math.sqrt(a))
+-if b*(b+1)==a:
++b=int(math.sqrt(1+(8*a)))
++if b*b!=(1+(8*a)):
+     print("NO")
+ else:
+     print("YES")
+\ No newline at end of file

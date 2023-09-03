@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/912_problem_id/1084_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/912_problem_id/1084_author_id/Accepted.py
+index 6a5bfde..a39b022 100644
+--- a/Users/bardia/Downloads/data 4/data/912_problem_id/1084_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/912_problem_id/1084_author_id/Accepted.py	
+@@ -1,15 +1,14 @@
+ n, k = map(int, input().split())
+ time = 240 - k
+ def solved_problem( t ):
+-    i, c = 1, 0
++    i = 1
+     while 1 :
+-        t = t - 5 * i
+-        if ((t - 5 * i)<=0):
++        if ((t - 5 * i)<0):
+             break
+-        c+=1
++        t = t - 5 * i
+         i+=1
+     return i   
+-x = solved_problem(time)
++x = solved_problem(time) - 1
+ if(x>n):
+     x=n
+ print(x)
+\ No newline at end of file

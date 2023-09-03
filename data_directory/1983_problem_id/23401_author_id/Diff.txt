@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1983_problem_id/23401_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1983_problem_id/23401_author_id/Accepted.py
+index 575143d..ad646fb 100644
+--- a/Users/bardia/Downloads/data 4/data/1983_problem_id/23401_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1983_problem_id/23401_author_id/Accepted.py	
+@@ -3,10 +3,10 @@ i = int(stdin.readline().rstrip())
+ if i == 1:
+     clicks = 1
+ else:
+-    clicks = 0
+-    current_error = 1
++    clicks = 1
++    current_error = 0
+     for x in range(2,i+1):
+         clicks += x
+         clicks += current_error
+-        current_error *= (x-1)
++        current_error += (x-1)
+ print (clicks)
+\ No newline at end of file

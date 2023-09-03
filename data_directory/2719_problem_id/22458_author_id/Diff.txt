@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2719_problem_id/22458_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2719_problem_id/22458_author_id/Accepted.py
+index 3db6c14..c45b210 100644
+--- a/Users/bardia/Downloads/data 4/data/2719_problem_id/22458_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2719_problem_id/22458_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ import math
+ a,b=map(int,input().split())
+-for var in range(1,6):
+-    if(a*math.pow(3,var))>b*math.pow(2,var):
++for var in range(1,1000):
++    if(a*pow(3,var))>b*pow(2,var):
+         print(var)
+         break
+\ No newline at end of file

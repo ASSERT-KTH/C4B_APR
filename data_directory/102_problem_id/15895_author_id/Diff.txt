@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/102_problem_id/15895_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/102_problem_id/15895_author_id/Accepted.py
+index 7eb487b..b2a0506 100644
+--- a/Users/bardia/Downloads/data 4/data/102_problem_id/15895_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/102_problem_id/15895_author_id/Accepted.py	
+@@ -8,4 +8,4 @@ Created on Tue Apr 11 08:09:05 2017
+ 
+ a,b,c = map(int,input().split())
+ 
+-print(min((a+b)*2,a+b+c))
+\ No newline at end of file
++print(min([2*(a+b),a+b+c,2*(b+c),2*(a+c)]))
+\ No newline at end of file

@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/968_problem_id/45549_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/968_problem_id/45549_author_id/Accepted.py
+index df09597..1f88bd0 100644
+--- a/Users/bardia/Downloads/data 4/data/968_problem_id/45549_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/968_problem_id/45549_author_id/Accepted.py	
+@@ -5,8 +5,8 @@ if m<8:
+              print('5')
+         else:
+              print('6')
+-    elif m==28:
+-        if d<3:
++    elif m==2:
++        if d==1:
+             print('4')
+         else:
+             print('5')

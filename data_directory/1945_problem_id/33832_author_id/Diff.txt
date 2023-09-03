@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1945_problem_id/33832_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1945_problem_id/33832_author_id/Accepted.py
+index cc863c7..215814f 100644
+--- a/Users/bardia/Downloads/data 4/data/1945_problem_id/33832_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1945_problem_id/33832_author_id/Accepted.py	
+@@ -1,8 +1,13 @@
+ a, b, n = map(int,input().split())
++g = False
+ for i in range(10):
+     k = int(str(a) + str(i))
+     if k % b == 0:
++        g = True
+         break
+-final_len = n + len(str(a))
+-remaining = final_len - len(str(k))
+-print(k * 10 ** remaining)
+\ No newline at end of file
++if g == True:
++    final_len = n + len(str(a))
++    remaining = final_len - len(str(k))
++    print(k * 10 ** remaining)
++else:
++    print(-1)
+\ No newline at end of file

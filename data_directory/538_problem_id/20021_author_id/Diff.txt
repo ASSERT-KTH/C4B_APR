@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/538_problem_id/20021_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/538_problem_id/20021_author_id/Accepted.py
+index ad5bb66..e522a94 100644
+--- a/Users/bardia/Downloads/data 4/data/538_problem_id/20021_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/538_problem_id/20021_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+-a, b, c, d, e = [int(i) for i in input().split()]
++a, b, c, d, e = sorted([int(i) for i in input().split()])
+ max = 0
+ if (d == e) & (c == d):
+ 	if c*3 > max:

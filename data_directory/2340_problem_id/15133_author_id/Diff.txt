@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2340_problem_id/15133_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2340_problem_id/15133_author_id/Accepted.py
+index 5dfffa2..97c2102 100644
+--- a/Users/bardia/Downloads/data 4/data/2340_problem_id/15133_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2340_problem_id/15133_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ for char in s:
+     else:
+         j += 1
+ 
+-if i == j:
++if i >= j:
+     print(s.lower())
+ else:
+     print(s.upper())
+\ No newline at end of file

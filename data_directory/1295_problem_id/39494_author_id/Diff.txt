@@ -1,0 +1,41 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1295_problem_id/39494_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1295_problem_id/39494_author_id/Accepted.py
+index 097e1a3..ea40f3d 100644
+--- a/Users/bardia/Downloads/data 4/data/1295_problem_id/39494_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1295_problem_id/39494_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ #Problema 151A
+ 
+ lista=[]
+-
++resultado=[]
+ a=input()
+ a=a.split(" ")
+ lista.append(a)
+@@ -12,14 +12,14 @@ tostadas= int(((int(a[1])*int(a[2]))/int(a[-2]))/int(a[0]))
+ limas= int((int(a[3])*int(a[4]))/int(a[0]))
+ 
+ sal= int((int(a[5])/int(a[-1]))/int(a[0]))
+-
+-
+-if tostadas<limas and tostadas <sal:
+-    menor=tostadas
+-elif limas<tostadas and limas<sal:
+-    menor=limas
+-
+-elif sal<tostadas and sal<limas:
+-    menor=sal
+-
+-print(menor)
+\ No newline at end of file
++resultado.append(tostadas)
++resultado.append(limas)
++resultado.append(sal)
++
++for i in  range (1, len(resultado)):
++    for j in range(len(resultado)-i):
++        if resultado[j]>resultado[j+1]:
++            orden=resultado[j]
++            resultado[j]=resultado[j+1]
++            resultado[j+1]=orden
++print(resultado[0])
+\ No newline at end of file

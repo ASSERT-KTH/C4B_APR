@@ -1,0 +1,34 @@
+diff --git a/Users/bardia/Downloads/data 4/data/530_problem_id/9650_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/530_problem_id/9650_author_id/Accepted.py
+index 91d21a7..04b6ae8 100644
+--- a/Users/bardia/Downloads/data 4/data/530_problem_id/9650_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/530_problem_id/9650_author_id/Accepted.py	
+@@ -6,6 +6,7 @@ b=int(l.pop())
+ a=int(l.pop())
+ n=int(l.pop())
+ somme=0
++"""
+ if p>q:
+     somme+=p*(n//a)
+     for j in range(1,(n//b)+1):
+@@ -16,4 +17,20 @@ else:
+     for j in range(1,(n//a)+1):
+             if (a*j)%b!=0:
+                 somme+=p
++"""
++def pgcd(x,y):
++    if y==0:
++        return x
++    else:
++        return pgcd(y,x%y)
++d=pgcd(a,b)
++alpha=a//d
++beta=b//d
++if p>q:
++    somme+=p*(n//a)
++    somme+=q*(n//b-(n//b)//alpha)
++else:
++    somme+=q*(n//b)
++    somme+=p*(n//a-(n//a)//beta)
++    
+ print(somme)
+\ No newline at end of file

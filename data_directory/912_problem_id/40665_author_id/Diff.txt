@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/912_problem_id/40665_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/912_problem_id/40665_author_id/Accepted.py
+index 00e4000..cf0f06a 100644
+--- a/Users/bardia/Downloads/data 4/data/912_problem_id/40665_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/912_problem_id/40665_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ n, k = (int(x) for x in input().split())
+ time = 240 - k
+ r = 0
+-while time >= 0 and r <= k:
++while time >= 0 and r <= n:
+     r += 1
+     time -= 5*r
+ print(r-1)
+\ No newline at end of file

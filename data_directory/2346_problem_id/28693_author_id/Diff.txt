@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2346_problem_id/28693_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2346_problem_id/28693_author_id/Accepted.py
+index bd476ce..5a4e18f 100644
+--- a/Users/bardia/Downloads/data 4/data/2346_problem_id/28693_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2346_problem_id/28693_author_id/Accepted.py	
+@@ -1,10 +1,10 @@
+ def task():
+-    a,b,c,d = input().slice()
++    a,b,c,d = input().split()
+     a,b,c,d = [int(a),int(b),int(c),int(d)]
+     if (a+b>c and a+c>b and c+b>a) or (d+a>b and d+b>a and a+b>d) or (a+c>d and c+d>a and d+a>c) or (b+c>d and b+d>c and d+c>b):
+         return("TRIANGLE")
+     elif a+b==c or a+d==c or d+b==c or a+c==d or a+b==d or c+b==d or c+b==a or c+d==a or d+b==a or a+c==b or a+d==b or c+d==b:
+-        return("SEGMENT")   
++        return("SEGMENT")
+     else:
+         return("IMPOSSIBLE")
+ print(task())
+\ No newline at end of file

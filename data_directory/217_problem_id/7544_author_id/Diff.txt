@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/217_problem_id/7544_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/217_problem_id/7544_author_id/Accepted.py
+index 6abe05d..3896d9a 100644
+--- a/Users/bardia/Downloads/data 4/data/217_problem_id/7544_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/217_problem_id/7544_author_id/Accepted.py	
+@@ -22,4 +22,7 @@ def r(n):
+     x = n-mid*(mid+1)//2+1
+     return x
+ 
+-print(r(n-1))
+\ No newline at end of file
++if n == 1 :
++    print(1)
++else:
++    print(r(n-1))
+\ No newline at end of file

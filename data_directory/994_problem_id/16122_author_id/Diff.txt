@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/994_problem_id/16122_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/994_problem_id/16122_author_id/Accepted.py
+index f1f242d..129836c 100644
+--- a/Users/bardia/Downloads/data 4/data/994_problem_id/16122_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/994_problem_id/16122_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ from math import ceil
+-
+-a = input().split(" ")
+-c = int(a[0])*int(a[1])
+-d = c/a*a
+-d = ceil(d)
+-print(d)
+\ No newline at end of file
++q = input().split(" ")
++a = int(q[2])
++n = int(q[0])
++m = int(q[1])
++answer = ceil (m/a) * ceil (n/a)
++print(answer)
+\ No newline at end of file

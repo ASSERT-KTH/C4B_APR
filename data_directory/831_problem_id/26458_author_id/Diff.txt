@@ -1,0 +1,50 @@
+diff --git a/Users/bardia/Downloads/data 4/data/831_problem_id/26458_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/831_problem_id/26458_author_id/Accepted.py
+index 7138c2b..ad77e94 100644
+--- a/Users/bardia/Downloads/data 4/data/831_problem_id/26458_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/831_problem_id/26458_author_id/Accepted.py	
+@@ -1,22 +1,24 @@
+-n = int(input())
+-
+-def prime_factors(n):
++def isPrime(n):
+     i = 2
+-    factors = []
+-    
+     while i * i <= n:
+-        if n % i:
+-            i += 1
+-        else:
+-            n //= i
+-            factors.append(i)
+-    if n > 1:
+-        factors.append(n)
+-    return factors
++        
++        if n % i == 0:
++            return False
++        
++        i += 1
++    return True
+ 
+-f = prime_factors(n)
+-if f[-1] == n:
+-    res = 1
+-else:
+-    res = f[-1]
+-print(res)
+\ No newline at end of file
++
++def main():
++    
++    n = int(input())
++    
++    if isPrime(n) or n == 2:
++        print(1)
++    elif isPrime(n - 2) or n % 2 == 0 :
++        print(2)
++    else:
++        print(3)
++    
++    
++main()
+\ No newline at end of file

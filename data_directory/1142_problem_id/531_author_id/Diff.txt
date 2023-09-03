@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1142_problem_id/531_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1142_problem_id/531_author_id/Accepted.py
+index 9d3c900..2909049 100644
+--- a/Users/bardia/Downloads/data 4/data/1142_problem_id/531_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1142_problem_id/531_author_id/Accepted.py	
+@@ -2,4 +2,4 @@
+ 9 4 3
+ '''
+ n, a, b = map(int, input().split())
+-print(min(a,b)+1)
+\ No newline at end of file
++print(min(n-a,b+1))
+\ No newline at end of file

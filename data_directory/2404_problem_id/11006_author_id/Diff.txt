@@ -1,0 +1,61 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2404_problem_id/11006_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2404_problem_id/11006_author_id/Accepted.py
+index ceaa22a..32693b5 100644
+--- a/Users/bardia/Downloads/data 4/data/2404_problem_id/11006_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2404_problem_id/11006_author_id/Accepted.py	
+@@ -6,41 +6,44 @@ l5=input()
+ l6=input()
+ l7=input()
+ l8=input()
++d=[]
+ c=0
+ if(l1.count('B')==8 ):
+   c+=1
+ else:
+-  c+=l1.count('B')
++  d+=[l1.count('B')]
+ if(l2.count('B')==8):
+   c+=1
+ else:
+-  c+=l2.count('B')  
++  d+=[l2.count('B')] 
+ if(l3.count('B')==8):
+   c+=1
+ else:
+-  c+=l3.count('B')  
++  d+=[l3.count('B')] 
+ if(l4.count('B')==8 ):
+   c+=1
+ else:
+-  c+=l4.count('B')
++  d+=[l4.count('B')]
+   
+ if(l5.count('B')==8 ):
+   
+   c+=1
+ else:
+-  c+=l5.count('B')
++  d+=[l5.count('B')]
+   
+ if(l6.count('B')==8):
+   c+=1
+ else:
+-  c+=l7.count('B')  
++  d+=[l6.count('B')] 
+ if(l7.count('B')==8 ):
+   c+=1
+ else:
+-  c+=l7.count('B')  
++  d+=[l7.count('B')]  
+ if(l8.count('B')==8 ):
+   c+=1
+ else:
+-  c+=l8.count('B')  
+-
+-print(c)
+\ No newline at end of file
++  d+=[l8.count('B')]
++r=0  
++if(len(d)>=1):
++  r=max(d)
++print(c+r)
+\ No newline at end of file

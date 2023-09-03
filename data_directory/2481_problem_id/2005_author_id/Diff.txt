@@ -1,0 +1,43 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/2005_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/2005_author_id/Accepted.py
+index 25e6e9c..1354a6d 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/2005_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/2005_author_id/Accepted.py	
+@@ -1,18 +1,21 @@
+-import math
+ def doubleCola(n):
+-	sum = 0
+-	i = 0
+-	while sum < n:
+-		sum += 5*2**i
+-		i += 1
+-	sum -= 5*2**(i-1)
+-	if sum > 0:
+-		n -= sum
+-	which = 1
+-	while n-i > 0:
+-		n -= 2**i
+-		which += 1
+-	nameDict = {1:'Sheldon',2:'Leonard',3:'Penny',4:'Rajesh',5:'Howard'}
+-	return nameDict[which]
+-
++	trueVal = 0
++	subVal = 5
++	exp = 0
++	
++	while n > 0:
++		trueVal = n 
++		n -= subVal
++		exp += 1
++		subVal = 5*2**exp
++	exp -= 1
++	character = 0
++	while trueVal > 0:
++		trueVal -= 2**exp
++		character += 1
++	trueVal += 2**exp
++	character -= 1
++	charDict = {0:'Sheldon',1:'Leonard',2:'Penny',3:'Rajesh',4:'Howard'}
++	return charDict[character]
++	
+ print(doubleCola(int(input())))
+\ No newline at end of file

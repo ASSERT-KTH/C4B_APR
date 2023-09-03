@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2223_problem_id/40358_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2223_problem_id/40358_author_id/Accepted.py
+index 5efae45..59b3b2e 100644
+--- a/Users/bardia/Downloads/data 4/data/2223_problem_id/40358_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2223_problem_id/40358_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ m = int(input())
+-if (m%2) ^ (m<3):
++if (m%2) | (m<3):
+     print("NO")
+ else: print("YES")
+\ No newline at end of file

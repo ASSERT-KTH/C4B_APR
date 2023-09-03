@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/905_problem_id/1673_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/905_problem_id/1673_author_id/Accepted.py
+index a29ceb7..57fcc04 100644
+--- a/Users/bardia/Downloads/data 4/data/905_problem_id/1673_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/905_problem_id/1673_author_id/Accepted.py	
+@@ -7,5 +7,5 @@ if k % (2 * m) != 0:
+     p = k // (2 * m) + 1
+ if k % (2 * m) == 0:
+     p = k // (2 * m)
+-t = (k - (p - 1) * 6) // 2 + (k - (p - 1) * 6) % 2
++t = (k - (p - 1) * (2*m)) // 2 + (k - (p - 1) * (2*m)) % 2
+ print(str(p)+' '+str(t)+' '+l)
+\ No newline at end of file

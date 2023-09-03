@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1756_problem_id/8687_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1756_problem_id/8687_author_id/Accepted.py
+index d63f7da..b3b5034 100644
+--- a/Users/bardia/Downloads/data 4/data/1756_problem_id/8687_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1756_problem_id/8687_author_id/Accepted.py	
+@@ -1,10 +1,5 @@
+ s = list(map(int, input().split()))
+-dict = {}
+-if(s[0] == s[1] == s[2] == s[3]):
+-    print("3")
+-elif(s[0] == s[1] == s[2] or s[0] == s[1] == s[3] or s[0] == s[2] == s[3] or s[1] == s[2] == s[3]):
+-    print("2")
+-elif(s[0] == s[1] or s[0] == s[2] or s[0] == s[3] or s[1] == s[2] or s[1] == s[3] or s[2] == s[3]):
+-    print("1")
+-else:
+-    print("0")
+\ No newline at end of file
++se = set()
++for i in range(len(s)):
++    se.add(s[i])
++print(4 - len(se))
+\ No newline at end of file

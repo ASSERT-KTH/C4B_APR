@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/63486_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/63486_author_id/Accepted.py
+index 0efd94f..df7ad33 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/63486_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/63486_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+-consonents=['A','a','E','e','I','i','O','o','U','u']
++consonents=['A','a','E','e','I','i','O','o','U','u','Y','y']
+ s=input()
+ t=""
+ for x in s:

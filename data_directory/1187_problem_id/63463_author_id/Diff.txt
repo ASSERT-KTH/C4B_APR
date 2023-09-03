@@ -1,0 +1,43 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/63463_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/63463_author_id/Accepted.py
+index 7d40d9c..69cb528 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/63463_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/63463_author_id/Accepted.py	
+@@ -1,21 +1,15 @@
+-x=cAPS
+-y=Lock
+-
+-def ck(a):
+-    if(len(a)==1):
+-            if(a.islower()):
+-            	a = a.upper()
+-            else:
+-            	a = a.lower()
+-    elif((a[0].islower() and a[1:].isupper())):
+-            b = a[0]
+-            c = a[1:]
+-            c = c.lower()
+-            b = b.upper()
+-            a = b+c
+-    elif(a.isupper()):
+-            a = a.lower()
+-    print (a)
+-
+-ck(x)
+-ck(y)
+\ No newline at end of file
++a = input()
++if(len(a)==1):
++	if(a.islower()):
++		a = a.upper()
++	else:
++		a = a.lower()
++elif((a[0].islower() and a[1:].isupper())):
++	b = a[0]
++	c = a[1:]
++	c = c.lower()
++	b = b.upper()
++	a = b+c
++elif(a.isupper()):
++	a = a.lower()
++print (a)
+\ No newline at end of file

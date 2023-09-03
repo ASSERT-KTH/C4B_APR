@@ -1,0 +1,38 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2687_problem_id/102541_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2687_problem_id/102541_author_id/Accepted.py
+index 3574b8b..412b0a0 100644
+--- a/Users/bardia/Downloads/data 4/data/2687_problem_id/102541_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2687_problem_id/102541_author_id/Accepted.py	
+@@ -1,23 +1,19 @@
+ import sys
+ n, m = map(int, input().split())
+-l=m-1
+-r=n+1
+-ans=0
++l=m+1
++r=10**30
++ans=n
+ if n==1:
+ 	ans=1
+ else: 
+ 	if m<n:
+-		while l<=r:
+-			mid=(l+r)/2
+-			i=int(mid)
+-			x=(i-m-1)*m+n
+-			y=((i-m)*(i+m+1))/2 
+-			if y>=x :
+-				ans=i
+-				r=i-1
++		while l!=r:
++			mid=(l+r)//2
++			if 2 * m + ( mid - m ) * ( mid - m + 1 ) < 2 * n :
++				l=mid+1
+ 			else :
+-				l=i+1
+-			
++				r=mid
++		ans=min(ans, l)
+ 	else:
+ 		ans=n 
+ print(int(ans))
+\ No newline at end of file

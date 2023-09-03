@@ -1,0 +1,1 @@
+[{'inputdata': '1\r\r\n0', 'expectedresult': 'NO'}, {'inputdata': '1\r\r\n2', 'expectedresult': 'NO'}, {'inputdata': '1\r\r\n4', 'expectedresult': 'NO'}, {'inputdata': '1\r\r\n5', 'expectedresult': 'NO'}, {'inputdata': '1\r\r\n6', 'expectedresult': 'NO'}, {'inputdata': '1\r\r\n7', 'expectedresult': 'NO'}, {'inputdata': '1\r\r\n8', 'expectedresult': 'NO'}]

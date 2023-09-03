@@ -1,0 +1,1 @@
+[{'inputdata': 'httpruhhphhhpuhruruhhpruhhphruhhru', 'expectedresult': 'http://ruhhphhhpuh.ru/ruhhpruhhphruhhru'}, {'inputdata': 'httpruhttttpruhttprupruhttpruhtturuhttphtruuru', 'expectedresult': 'http://ruhttttp.ru/httprupruhttpruhtturuhttphtruuru'}, {'inputdata': 'ftpruurruurururururuuruuur', 'expectedresult': 'ftp://ruur.ru/urururururuuruuur'}]

@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1976_problem_id/5834_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1976_problem_id/5834_author_id/Accepted.py
+index e9b0f22..d7baa45 100644
+--- a/Users/bardia/Downloads/data 4/data/1976_problem_id/5834_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1976_problem_id/5834_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ counter = 0
+ result = 0
+ 
+ for i in stones:
+-    if stones[i + 1] == i:
++    if counter < a - 1 and stones[counter + 1] is i:
+         result += 1
+-        
++    counter += 1
+ print(result)
+\ No newline at end of file

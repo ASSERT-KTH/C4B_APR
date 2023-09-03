@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2969_problem_id/108388_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2969_problem_id/108388_author_id/Accepted.py
+index 08f99dd..1be4697 100644
+--- a/Users/bardia/Downloads/data 4/data/2969_problem_id/108388_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2969_problem_id/108388_author_id/Accepted.py	
+@@ -6,7 +6,7 @@ def main():
+ 	if a < b:
+ 		print("First")
+ 	elif a == b:
+-		print("Friendsship")
++		print("Friendship")
+ 	else:
+ 		print("Second")
+ 

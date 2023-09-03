@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1133_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1133_problem_id/1633_author_id/Accepted.py
+index bd87a1a..95deb9b 100644
+--- a/Users/bardia/Downloads/data 4/data/1133_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1133_problem_id/1633_author_id/Accepted.py	
+@@ -1,7 +1,19 @@
+ s = input()
+-if "4" in s:
+-    print(4)
+-elif "7" in s:
+-    print(7)
++a = len(s)
++numbers = {}
++for x in range(a):
++    for y in range(x + 1, a + 1):
++        t = s[x:y]
++        for z in t:
++            p = int(z)
++            if p != 4 and p != 7:
++                break
++        else:
++            p = int(t)
++            if not p in numbers:
++                numbers[p] = 0
++            numbers[p] += 1
++if numbers == {}:
++    print(-1)
+ else:
+-    print(-1)
+\ No newline at end of file
++    print(min(filter(lambda x: numbers[x] == max(numbers.values()), numbers.keys())))
+\ No newline at end of file

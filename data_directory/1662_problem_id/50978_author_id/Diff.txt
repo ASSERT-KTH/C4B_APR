@@ -1,0 +1,96 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1662_problem_id/50978_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1662_problem_id/50978_author_id/Accepted.py
+index 53e8473..7bd90e9 100644
+--- a/Users/bardia/Downloads/data 4/data/1662_problem_id/50978_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1662_problem_id/50978_author_id/Accepted.py	
+@@ -1,74 +1,17 @@
+-import string
+ s = input()
+-a,b,c = False,False,False
+-for x in s:
+-    if x == '@' and not a and not b and not c:
+-        a = True
+-    if x == '.' and a and not b and not c:
+-        b = True
+-    if x == '/' and a and b and not c:
+-        c = True
+-        break
+-p = True
+-alf = string.ascii_letters
+-num = string.digits
+-if a and b:
+-    array = []
+-    i = 0
+-    array.append("")
+-    for x in s:
+-        if x == '@':
+-            i += 1
+-            array.append("")
+-        elif x == '/' and p == True:
+-            i += 1
+-            p = False
+-            array.append("")
+-        else:
+-            array[i] += x
+-    if c and len(array[2]) != 0:
+-        for i in range(len(array[2])):
+-            if array[2][i] in alf or array[2][i] == '_':
+-                p = True
+-            else:
+-                print("NO")
+-                exit()
+-    print(array[0])
+-    if a and len(array[0]) != 0:
+-        for i in range(len(array[0])):
+-            if array[0][i] in alf or array[0][i] == '_' or array[0][i] in num:
+-                p = True
+-            else:
+-                print("NO")
+-                exit()
+-    if b and len(array[1]) != 0:
+-        for i in range(len(array[1])):
+-            if array[1][i] in alf or array[1][i] == '_':
+-                p = True
+-            else:
+-                print("NO")
+-                exit()
+-    if c and len(array[2]) != 0:
+-        res = []
+-        i = 0
+-        res.append("")
+-        for x in array[2]:
+-            if x == '/':
+-                i += 1
+-                res.append("")
+-            else:
+-                res[i] += x
+-        for x in res:
+-            if len(x) == 1 and x[0] in num:
+-                p = True
+-            else:
+-                print("NO")
+-                exit()
+-            if len(x) == 2 and x[0] in num and ('0' <= x[1] <= '6'):
+-                p = True
+-            else:
+-                print("NO")
+-                exit()
+-    print("YES")
++if s.count('@') != 1 or s.count('/') > 1:
++    print('NO')
++    exit()
++p1 = s.find('@')
++p2 = s.find('/')
++if p2 == -1: p2 = len(s)
++import re
++u = re.compile('(\w){1,16}$')
++h = re.compile('(\w{1,16}\.)*\w{1,16}$')
++k1 = h.match(s[p1 + 1 : p2])
++k2 = u.match(s[0:p1])
++k3 = u.match(s[p2 + 1 : len(s)])
++if len(s[p1 + 1 : p2]) >= 1 and len(s[p1 + 1 : p2])<= 32 and k1 and k2 and (p2 == len(s) or k3):
++    print('YES')
+ else:
+-    print("NO")
+\ No newline at end of file
++    print('NO')
+\ No newline at end of file

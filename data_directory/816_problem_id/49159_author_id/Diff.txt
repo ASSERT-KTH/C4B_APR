@@ -1,0 +1,30 @@
+diff --git a/Users/bardia/Downloads/data 4/data/816_problem_id/49159_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/816_problem_id/49159_author_id/Accepted.py
+index 7a7cdee..b5f69b5 100644
+--- a/Users/bardia/Downloads/data 4/data/816_problem_id/49159_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/816_problem_id/49159_author_id/Accepted.py	
+@@ -1,5 +1,7 @@
+ def solve(a, b, c):
+-	if a <= 0 and b <= 0 and c <= 0:
++	if a < 0 or b < 0 or c < 0:
++		return 1e19
++	if a == 0 and b == 0 and c == 0:
+ 		return 0
+ 
+ 	a = max(a, 0)
+@@ -23,13 +25,12 @@ c = int(c)
+ 
+ ans = 1e19
+ ans = min(ans, solve(a, b, c)) # 0 0
++ans = min(ans, solve(a, b - 1, c)) # 0 0
+ ans = min(ans, solve(a - 1, b, c)) # 0 1
+-ans = min(ans, solve(a - 1, b - 1, c)) # 0 2
+ ans = min(ans, solve(a, b, c - 1)) # 1 0
++ans = min(ans, solve(a - 1, b - 1, c)) # 0 2
+ ans = min(ans, solve(a - 1, b, c - 1)) # 1 1
+-ans = min(ans, solve(a - 1, b - 1, c - 1)) # 1 2
+ ans = min(ans, solve(a, b - 1, c - 1)) # 2 0
+-ans = min(ans, solve(a - 1, b - 1, c - 1)) # 2 1
+ ans = min(ans, solve(a - 1, b - 2, c - 1)) # 2 2
+ 
+ print(ans)
+\ No newline at end of file

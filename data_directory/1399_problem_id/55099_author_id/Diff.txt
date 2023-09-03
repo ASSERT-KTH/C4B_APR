@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1399_problem_id/55099_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1399_problem_id/55099_author_id/Accepted.py
+index bca307d..c0a9a1f 100644
+--- a/Users/bardia/Downloads/data 4/data/1399_problem_id/55099_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1399_problem_id/55099_author_id/Accepted.py	
+@@ -14,14 +14,16 @@ prime_numbers = [x for x in range(2, n +1) if is_prime(x)]
+ 
+ answer = 0
+ flag = 0 
++if k == 0:
++    print('YES')
++else:
++    for i in range(len(prime_numbers) - 2):
++        if prime_numbers[i] + prime_numbers[i + 1] + 1 in prime_numbers:
++            answer += 1
++            if answer == k:
++                print('YES')
++                flag = 1
++                break
+ 
+-for i in range(len(prime_numbers) - 2):
+-    if prime_numbers[i] + prime_numbers[i + 1] + 1 in prime_numbers:
+-        answer += 1
+-        if answer == k:
+-            print('YES')
+-            flag = 1
+-            break
+-
+-if flag == 0:
+-    print('NO')
+\ No newline at end of file
++    if flag == 0:
++        print('NO')
+\ No newline at end of file

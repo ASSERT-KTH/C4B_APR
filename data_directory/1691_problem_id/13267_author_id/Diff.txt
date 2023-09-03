@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1691_problem_id/13267_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1691_problem_id/13267_author_id/Accepted.py
+index d494736..741c07b 100644
+--- a/Users/bardia/Downloads/data 4/data/1691_problem_id/13267_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1691_problem_id/13267_author_id/Accepted.py	
+@@ -1,6 +1,5 @@
+ import sys
+-import math
+-  
++
+ a, b, c = [int(x) for x in (sys.stdin.readline()).split()]
+ 
+-print(a * 2 + b * 2 + c * 2)
+\ No newline at end of file
++print(b * c + (b + c - 1) * (a - 1))
+\ No newline at end of file

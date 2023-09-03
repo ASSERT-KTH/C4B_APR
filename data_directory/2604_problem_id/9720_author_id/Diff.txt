@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2604_problem_id/9720_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2604_problem_id/9720_author_id/Accepted.py
+index 89f392e..c73a8e8 100644
+--- a/Users/bardia/Downloads/data 4/data/2604_problem_id/9720_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2604_problem_id/9720_author_id/Accepted.py	
+@@ -21,7 +21,7 @@ if len(integer) > 1:
+         probable_integers.append(int(integer))
+         probable_integers.sort()
+         a = probable_integers.index(int(integer))
+-        if needed_sum <= sum([int(i) for i in str(probable_integers[a - 1])]):
++        if needed_sum < sum([int(i) for i in str(probable_integers[a - 1])]):
+             print(probable_integers[a - 1])
+         else:
+             print(integer)

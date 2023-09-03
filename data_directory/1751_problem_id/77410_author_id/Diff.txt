@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1751_problem_id/77410_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1751_problem_id/77410_author_id/Accepted.py
+index cce62ee..2b454b0 100644
+--- a/Users/bardia/Downloads/data 4/data/1751_problem_id/77410_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1751_problem_id/77410_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ pontoCx, pontoCy = [int(i) for i in input().split()]
+ 
+ x4, x5 = pontoBx - pontoAx, pontoCx - pontoBx
+ y4, y5 = pontoBy - pontoAy, pontoCy - pontoBy
+-direcao = x4 * y4 - x5 * y5
++direcao = x4 * y5 - x5 * y4
+ 
+ if direcao > 0:
+     print('LEFT')

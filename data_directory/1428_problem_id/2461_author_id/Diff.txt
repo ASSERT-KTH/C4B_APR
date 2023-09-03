@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1428_problem_id/2461_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1428_problem_id/2461_author_id/Accepted.py
+index 787704d..be6055c 100644
+--- a/Users/bardia/Downloads/data 4/data/1428_problem_id/2461_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1428_problem_id/2461_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ def g(a):
+-    return (len(a) > 1 or a[0] != '0') and int(a) <= 1000000
++    return (len(a) == 1 or a[0] != '0') and int(a) <= 1000000
+ def f(a, b, c):
+     return int(a) + int(b) + int(c) if g(a) and g(b) and g(c) else -1
+ s, v = input(), -1

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/457_problem_id/36828_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/457_problem_id/36828_author_id/Accepted.py
+index d4ecaa2..ffa8f22 100644
+--- a/Users/bardia/Downloads/data 4/data/457_problem_id/36828_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/457_problem_id/36828_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ f2,t2 = [int(x) for x in input().split()]
+ minutosTotales = 23*60+59-5*60
+ 
+ buses = []
+-for hora in range(0,minutosTotales,f2):
++for hora in range(0,minutosTotales+1,f2):
+     buses.append((hora,hora+t2))
+ 
+ horaInicio = input().split(":")

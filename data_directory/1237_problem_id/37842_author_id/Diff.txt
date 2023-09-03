@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1237_problem_id/37842_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1237_problem_id/37842_author_id/Accepted.py
+index 5323da1..54931e1 100644
+--- a/Users/bardia/Downloads/data 4/data/1237_problem_id/37842_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1237_problem_id/37842_author_id/Accepted.py	
+@@ -10,6 +10,7 @@ def does_fit(plates, t_radius, p_radius):
+     c = float(2 * p_radius)
+     cosC = float(((a*a + b*b) - (c*c))) / (2*a*b)
+     angleC = math.degrees(float(math.acos(cosC)))
++    angleC = round(angleC, 13)
+     # if plates == 6 and t_radius == 9 and p_radius == 3:
+     #     return str(angleC)
+     return "YES" if (360.0 / angleC) >= plates else "NO"

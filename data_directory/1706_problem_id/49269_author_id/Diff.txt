@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1706_problem_id/49269_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1706_problem_id/49269_author_id/Accepted.py
+index 104b725..594acac 100644
+--- a/Users/bardia/Downloads/data 4/data/1706_problem_id/49269_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1706_problem_id/49269_author_id/Accepted.py	
+@@ -1,11 +1,10 @@
+ from math import log10
+ p, d = [int(n) for n in input().split()]
+ 
++
+ def getLargestWithKNines (p,k):
+-  if p == 10**k -1:
+-    return p
+-  else:
+-    return p - p % 10**k -1
++  p = p + 1
++  return p - p % 10**k -1
+ 
+ def main ():
+   maxK = int(log10(p)+1)

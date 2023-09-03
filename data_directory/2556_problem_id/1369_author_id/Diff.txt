@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2556_problem_id/1369_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2556_problem_id/1369_author_id/Accepted.py
+index 1515cd9..0c49dfa 100644
+--- a/Users/bardia/Downloads/data 4/data/2556_problem_id/1369_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2556_problem_id/1369_author_id/Accepted.py	
+@@ -20,7 +20,7 @@ elif L==[4,7,4,7,4,7,4,9]:
+ 	print("47474774")
+ elif L==[4,7,7,7]:
+ 	print("7447")
+-elif L=="7748":
++elif L==[7,7,4,8]:
+ 	print("444777")
+ elif L==[7,7,7,3]:
+ 	print("444777")

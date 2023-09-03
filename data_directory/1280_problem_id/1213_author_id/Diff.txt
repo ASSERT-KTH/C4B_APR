@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/1213_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/1213_author_id/Accepted.py
+index 47a1f0c..0dda494 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/1213_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/1213_author_id/Accepted.py	
+@@ -13,5 +13,9 @@ else:
+         S = S+j 
+         x = x+1
+         if S>=n:
++
+             break
+-    print(x)
+\ No newline at end of file
++    if S>=n:
++        print(x)
++    else:
++        print(-1)
+\ No newline at end of file

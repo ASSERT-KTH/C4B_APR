@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2656_problem_id/43575_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2656_problem_id/43575_author_id/Accepted.py
+index cdf99d4..c5ad5d3 100644
+--- a/Users/bardia/Downloads/data 4/data/2656_problem_id/43575_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2656_problem_id/43575_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ import sys
+ 
+ n,k = input().split()
+ k = int(k)
+-cnt = cnt_zero =  0
++cnt = cnt_zero = no = 0
+ if len(n) < k and '0' in n:
+     print(len(n)-1)
+ else:
+@@ -10,6 +10,11 @@ else:
+         if n[i] == '0':
+             cnt_zero += 1
+         else:
++            if i == 0 and k > cnt_zero:
++                no = 1
+             if k > cnt_zero:
+                 cnt += 1
+-    print(cnt)
+\ No newline at end of file
++    if no == 0:
++        print(cnt)
++    else:
++        print(len(n)-1)
+\ No newline at end of file

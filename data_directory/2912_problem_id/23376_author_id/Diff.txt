@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2912_problem_id/23376_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2912_problem_id/23376_author_id/Accepted.py
+index 3e2db28..2c38014 100644
+--- a/Users/bardia/Downloads/data 4/data/2912_problem_id/23376_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2912_problem_id/23376_author_id/Accepted.py	
+@@ -10,14 +10,7 @@ def fac(x):
+ 	for i in range(1,x+1): sum *= i
+ 	return sum
+ 
+-def gcd(x, y):
+-	while x != y:
+-		if x > y:
+-			x -= y
+-		else:
+-			y -= x
+-	return x
+-
+-m = fac(a[0])	
+-n = fac(a[1])
+-print(gcd(m, n))
+\ No newline at end of file
++if a[0] < a[1]:
++	print(fac(a[0]))
++else:
++	print(fac(a[1]))
+\ No newline at end of file

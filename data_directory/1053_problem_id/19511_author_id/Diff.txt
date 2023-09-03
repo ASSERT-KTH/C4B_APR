@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1053_problem_id/19511_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1053_problem_id/19511_author_id/Accepted.py
+index 081b9cd..b138e10 100644
+--- a/Users/bardia/Downloads/data 4/data/1053_problem_id/19511_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1053_problem_id/19511_author_id/Accepted.py	
+@@ -11,6 +11,6 @@ def fun(n):
+             x = v % 4
+             if x == 0:
+                 string = "4" * int(v // 4) + "7" * i
+-                return int(string)
++                return string
+     return -1
+ print(fun(n))
+\ No newline at end of file

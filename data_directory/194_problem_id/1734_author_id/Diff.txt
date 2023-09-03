@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/194_problem_id/1734_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/194_problem_id/1734_author_id/Accepted.py
+index 5ca8a21..8be9255 100644
+--- a/Users/bardia/Downloads/data 4/data/194_problem_id/1734_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/194_problem_id/1734_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ x = int(input())
+-print(x // 5 + (x % 5 == 0))
+\ No newline at end of file
++print(x // 5 + (x % 5 != 0))
+\ No newline at end of file

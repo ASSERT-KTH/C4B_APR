@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1047_problem_id/13267_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1047_problem_id/13267_author_id/Accepted.py
+index 34e1479..bfa8ca9 100644
+--- a/Users/bardia/Downloads/data 4/data/1047_problem_id/13267_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1047_problem_id/13267_author_id/Accepted.py	
+@@ -20,6 +20,10 @@ elif(h >= 20 and h < 23):
+         h += 1
+     m = (h % 10) * 10 + int(h / 10)
+     print(str(h) + ":" + str(m))
++elif(h > 5 and h < 10):
++    print("10:01")
++elif(h > 15 and h < 20):
++    print("20:02")
+ elif(h == 5):
+     if(m < 50):
+         print("05:50")

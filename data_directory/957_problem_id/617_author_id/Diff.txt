@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/957_problem_id/617_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/957_problem_id/617_author_id/Accepted.py
+index 3f3e98b..039acb8 100644
+--- a/Users/bardia/Downloads/data 4/data/957_problem_id/617_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/957_problem_id/617_author_id/Accepted.py	
+@@ -1,12 +1,15 @@
+-lights = input()
++lights_string = input()
+ missing = {'R': 0, 'B': 0, 'Y': 0, 'G': 0 }
++lights = [c for c in lights_string]
+ 
+ for index in range(len(lights)):
+ 	if lights[index] != '!' and index + 4 < len(lights) and lights[index + 4] == '!':
+ 		missing[lights[index]] += 1
++		lights[index + 4] = lights[index]
+ 
+ for index in range(len(lights) - 1, -1, -1):
+ 	if lights[index] != '!' and index - 4 > -1 and lights[index - 4] == '!':
+ 		missing[lights[index]] += 1
++		lights[index - 4] = lights[index]
+ 
+ print('{} {} {} {}'.format(missing['R'], missing['B'], missing['Y'], missing['G']))
+\ No newline at end of file

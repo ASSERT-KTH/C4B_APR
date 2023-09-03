@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/40997_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/40997_author_id/Accepted.py
+index 34cb2d2..9f13223 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/40997_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/40997_author_id/Accepted.py	
+@@ -12,15 +12,17 @@ turnNumber = 0
+ alwaysTrue = True
+ 
+ while alwaysTrue:
+-    turnNumber += 1
++    turnNumber = turnNumber + 1
+     if turnNumber % 2 == 1:
+         stonesNeeded = hcf(a, n)
+-        n -= stonesNeeded
++        n = n - stonesNeeded
+ 
+     if turnNumber % 2 == 0:
+         stonesNeeded = hcf(b, n)
+-        n -= stonesNeeded
++        n = n - stonesNeeded
+ 
+-    if stonesNeeded < 0:
++    if n < 1:
+         print((turnNumber + 1) % 2)
+-        break
+\ No newline at end of file
++        break
++
++    #print(a, b, n)
+\ No newline at end of file

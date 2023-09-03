@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/208_problem_id/8037_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/208_problem_id/8037_author_id/Accepted.py
+index 41a4efc..e55c1b5 100644
+--- a/Users/bardia/Downloads/data 4/data/208_problem_id/8037_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/208_problem_id/8037_author_id/Accepted.py	
+@@ -1,7 +1,3 @@
+ x1, y1 = map(int, input().split())
+ x2, y2 = map(int, input().split())
+-if x2 < 0 or y2 < 0:
+-    el = min(x2, y2)
+-    print(abs(el) + min(x1, y1))
+-else:
+-    print(max(x2, y2) - min(x1, y1))
+\ No newline at end of file
++print(max(abs(x2 - x1), abs(y2 - y1)))
+\ No newline at end of file

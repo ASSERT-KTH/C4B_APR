@@ -1,0 +1,13 @@
+n=int(input())
+listnames=["Sheldon","Leonard","Penny","Rajesh","Howard"]
+listcount=[1,1,1,1,1]
+i=0
+if(1<=n<=5):
+    print(listnames[n-1])
+else:
+    while(i<n):
+        c=listnames[i]
+        listnames.append(c)
+        listnames.append(c)
+        i=i+1
+    print(listnames[len(listnames)-1])

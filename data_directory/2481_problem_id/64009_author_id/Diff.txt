@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/64009_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/64009_author_id/Accepted.py
+index 64e7235..1ce4487 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/64009_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/64009_author_id/Accepted.py	
+@@ -1,9 +1,4 @@
+-queue = ["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"]
+-n = int(input())
+-
+-for _ in range(n):
+-    t = queue.pop(0)
+-    for _ in range(2):
+-        queue.append(t)
+-
+-print(queue[-1])
+\ No newline at end of file
++n = int(input()) - 1
++while n > 4:
++    n = (n - 5) >> 1
++print(["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"][n])
+\ No newline at end of file

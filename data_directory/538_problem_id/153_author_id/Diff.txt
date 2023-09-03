@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/538_problem_id/153_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/538_problem_id/153_author_id/Accepted.py
+index cec5360..dafd38d 100644
+--- a/Users/bardia/Downloads/data 4/data/538_problem_id/153_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/538_problem_id/153_author_id/Accepted.py	
+@@ -9,5 +9,5 @@ for i in range(5):
+ l = 0
+ for i in range(100, 0, -1):
+     if a[i] > 1:
+-        l = i * min(a[i], 3)
++        l = max(i * min(a[i], 3), l)
+ print(s - l)
+\ No newline at end of file

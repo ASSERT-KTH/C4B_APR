@@ -1,0 +1,92 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/60926_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/60926_author_id/Accepted.py
+index 11765e2..0a6efa4 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/60926_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/60926_author_id/Accepted.py	
+@@ -1,46 +1,50 @@
++def larger(a,b):
++    if(a>b):
++        return a
++    else:
++        return b
++
+ lisa=input()
+ index=[0]*len(lisa)
+-count2=0
+-count3=0
+-count4=-1
+-count5=0
+-mar=[0]*len(lisa)
++if('h' in lisa):
++    lisa=lisa[lisa.index('h'):]
++jin=''
+ for i in range(len(lisa)):
+-    if(lisa[i]=='h'):
+-        count2+=1
+-    if (lisa[i] == 'e'):
+-        count3 += 1
+-    if (lisa[i] == 'l'):
+-        count4 += 1
+-        mar[count4]=i
+-    if (lisa[i] == 'o'):
+-        count5 += 1
++    if(lisa[i]=='h' or lisa[i]=='e' or lisa[i]=='l' or lisa[i]=='o'):
++        jin+=lisa[i]
+ 
++kate=''
++count=0
++for i in range(len(jin)):
++    if(jin[i]=='h'):
++        count=i
++        kate+='h'
++        break
+ 
+-t1=[0]*count2
+-t2=[0]*count3
+-t3=[0]*count5
+ 
+-a1=-1
+-a2=-1
+-a3=-1
+-if(count2>0 and count3>0 and count4>0 and count5>0):
+-    for i in range(count4):
+-        a1 += 1
+-        a2 += 1
+-        a3 += 1
+-        for j in range(mar[i],mar[i+1]):
+-            if (lisa[j] == 'h'):
+-                t1[a1] += 1
+-            if (lisa[j] == 'e'):
+-                t2[a2] += 1
+-            if (lisa[j] == 'o'):
+-                t3[a3] += 1
++count2=0
++for i in range(count,len(jin)):
++    if(jin[i]=='e'):
++        count2=i
++        kate+='e'
++        break
+ 
+-    if(sum(t1) != count2 and sum(t2) != count3 and sum(t2) != count5 ):
+-        print("YES")
+-    else:
+-        print("NO")
++count3=0
++for i in range(count2,len(jin)):
++    if(count3>0):
++        break
++    for j in range(count2,len(jin)):
++        if(jin[i]+jin[j]=='ll' and i!=j):
++            count3=larger(i,j)
++            kate+='ll'
++            break
++
++for i in range(count3,len(jin)):
++    if(jin[i]=='o'):
++        kate+='o'
++        break
+ 
++if(kate=='hello'):
++    print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1226_problem_id/36379_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1226_problem_id/36379_author_id/Accepted.py
+index b61f066..aa17caa 100644
+--- a/Users/bardia/Downloads/data 4/data/1226_problem_id/36379_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1226_problem_id/36379_author_id/Accepted.py	
+@@ -7,12 +7,11 @@ for i in range(x):
+ i=0
+ r=n
+ sum=0
+-while(i<x):
++while(r>0):
++        i=i%7
+         r=r-l[i]
+         if(r<=0):
+             print((i%7)+1)
+             i=0
+             break
+-        i+=1
+-if(i==x):
+-    print(1)
+\ No newline at end of file
++        i+=1
+\ No newline at end of file

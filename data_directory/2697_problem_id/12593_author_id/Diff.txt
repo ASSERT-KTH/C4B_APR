@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2697_problem_id/12593_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2697_problem_id/12593_author_id/Accepted.py
+index 4676468..6ecdeac 100644
+--- a/Users/bardia/Downloads/data 4/data/2697_problem_id/12593_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2697_problem_id/12593_author_id/Accepted.py	
+@@ -1,15 +1,14 @@
+ a, b = map(int, input().split())
+ c, d = map(int, input().split())
+-x1 = (b + a * 1) % 2 == 0
+-x2 = (b + a * 2) % 2 == 0
+-x3 = (d + c * 1) % 2 == 0
+-x4 = (d + c * 2) % 2 == 0
+-if (x1 == x2) and (x3 == x4) and (x1 != x3):
+-	print(-1)
++if b == d:
++	print(b)
+ else:
+-	ans = b + a
+-	while(True):
+-		if (ans - d) % c == 0:
+-			print(ans)
++	s = set()
++	for i in range(0, 101):
++		s.add(b + a * i)
++	for i in range(0, 101):
++		temp = d + c * i
++		if temp in s:
++			print(temp)
+ 			exit(0)
+-		ans += a
+\ No newline at end of file
++	print(-1)
+\ No newline at end of file

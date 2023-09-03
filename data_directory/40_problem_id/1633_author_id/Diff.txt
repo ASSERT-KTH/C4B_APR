@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/40_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/40_problem_id/1633_author_id/Accepted.py
+index 547d29f..b820c5c 100644
+--- a/Users/bardia/Downloads/data 4/data/40_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/40_problem_id/1633_author_id/Accepted.py	
+@@ -10,7 +10,7 @@ while n != 1:
+         primes.append(x)
+         n //= x
+     x += 2
+-    if x >= math.ceil(math.sqrt(n)):
++    if x >= math.floor(math.sqrt(n)) + 1:
+         primes.append(n)
+         break
+ factors = [1]

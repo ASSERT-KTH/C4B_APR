@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/4596_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/4596_author_id/Accepted.py
+index c5b90b8..ac7f8bf 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/4596_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/4596_author_id/Accepted.py	
+@@ -1,10 +1,11 @@
+ n = int(input())
+ q = ["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"]
+-s = 1
++s = 5
+ d = 1
+-while n > 5*s:
+-    d+=1
+-    s = s *5
++acc = 5
++while n > acc:
++    d = d * 2
++    acc += (d *s) 
+ n -= (5 *(d-1))
+ if n <= d*1:
+     print(q[0])

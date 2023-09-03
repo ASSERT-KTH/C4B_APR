@@ -1,0 +1,36 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/1255_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/1255_author_id/Accepted.py
+index a844365..bab81cf 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/1255_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/1255_author_id/Accepted.py	
+@@ -1,28 +1,18 @@
+ s = input()
+ len_s = len(s)
+-print(len_s)
+ t = 'hello'
+ j = 0
+ count = 0
+-
+ for i in t:
+-    #print('1)',i, s[j], j)
+     while True:
+         if j == len_s:
+             break        
+         elif i == s[j]:
+-            #print('2)',i, s[j], j)
+             count += 1
+-            #print('----',count)
++            j += 1
+             break
+-        j += 1
+-        
+-        #print(j)
+-        
+-        
+-
+-  
+-print(count)
++        elif i != s[j]:
++            j += 1
+ if count == 5:
+     print('YES')
+ else:

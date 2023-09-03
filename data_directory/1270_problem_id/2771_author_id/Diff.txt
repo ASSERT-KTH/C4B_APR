@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1270_problem_id/2771_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1270_problem_id/2771_author_id/Accepted.py
+index 68dd8df..817f0fd 100644
+--- a/Users/bardia/Downloads/data 4/data/1270_problem_id/2771_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1270_problem_id/2771_author_id/Accepted.py	
+@@ -6,14 +6,17 @@ if (a+b) - (c+d) < 1:
+ 
+ 
+ if c == d:
+-    if ((b-c) < 0 or (a-c-1) < 0):
+-        print(-1)
+-        quit()
+ 
+     if a == c:
++        if (b-a < 0):
++            print(-1)
++            quit()
+         print('74' * d + '7' * (b-a))
+         quit()
+-        
++
++    if ((b-c) < 0 or (a-c-1) < 0):
++        print(-1)
++        quit()
+     print('4' * (a-c-1) + '47' * c + '7' * (b - c) + '4')
+     quit()
+     

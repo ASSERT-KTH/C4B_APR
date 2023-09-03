@@ -1,0 +1,53 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1940_problem_id/29745_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1940_problem_id/29745_author_id/Accepted.py
+index 6bc89bd..6147f97 100644
+--- a/Users/bardia/Downloads/data 4/data/1940_problem_id/29745_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1940_problem_id/29745_author_id/Accepted.py	
+@@ -1,24 +1,23 @@
+-import math
+-def isTPrime(n):
+-    count = 0
+-    if n==2 or n==3: return False
+-   # print(2,math.ceil(int(n**0.5))+3)
+-    for i in range(2,math.ceil(int(n**0.5))+3):   # only odd numbers
+-        if i == n:
+-            break
+-        if n%i==0:
+-            count +=1
+-        if count == 2:
+-            break
+-    if count == 1:
+-        return True
+-    else:
+-        return False
+-n = int(input())
+-list = [int(n) for n in input().split()]
++def sieve(n):
++    np1 = n + 1
++    s = list(range(np1))
++    s[1] = 0
++    sqrtn = int(round(n**0.5))
++    for i in range(2, sqrtn + 1):
++        if s[i]:
++            s[i*i: np1: i] = [0] * len(range(i*i, np1, i))
++    return filter(None, s)
+ 
+-for num in list:
+-    if isTPrime(num):
+-        print("YES")
+-    else:
+-        print("NO")
+\ No newline at end of file
++n = int(input())
++numbers = list(sieve(n))
++answer = 0
++for i in range(6, n+1):
++    counter = 0
++    for prime in numbers:
++        if i % prime == 0:
++            counter+=1
++        if (counter > 2 or prime > i):
++            break
++    if counter == 2:
++        answer += 1
++print(answer)
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/102_problem_id/15663_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/102_problem_id/15663_author_id/Accepted.py
+index 9733da7..419ddb9 100644
+--- a/Users/bardia/Downloads/data 4/data/102_problem_id/15663_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/102_problem_id/15663_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ d1 ,d2 ,d3 = input().split()
+ d1 = int(d1)
+ d2= int(d2)
+ d3= int (d3)
+-z = d1+d3
++z = d1+d2+d3
+ if z > (2*d1)+(2*d3):
+ 	z=(2*d1)+(2*d3)
+ 	

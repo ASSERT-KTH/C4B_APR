@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/858_problem_id/9735_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/858_problem_id/9735_author_id/Accepted.py
+index 2a2e08d..2eb83ae 100644
+--- a/Users/bardia/Downloads/data 4/data/858_problem_id/9735_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/858_problem_id/9735_author_id/Accepted.py	
+@@ -5,7 +5,7 @@ def main():
+     if n == 0:
+         print(0)
+     elif n == 1:
+-        print(min(a, 3*c))
++        print(min(a, 3*c, b + c))
+     elif n == 2:
+         print(min(2*a, b, 2*c))
+     elif n == 3:

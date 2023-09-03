@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/71181_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/71181_author_id/Accepted.py
+index 4fcc599..8ae4498 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/71181_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/71181_author_id/Accepted.py	
+@@ -9,7 +9,7 @@ def sumax(t,x):
+     c=0
+     r=0
+     for i in range(len(t)):
+-        while c<x:
++        if c<x:
+             c=c+t[i]
+             r+=1
+     if c>=x:

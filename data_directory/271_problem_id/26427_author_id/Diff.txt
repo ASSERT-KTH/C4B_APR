@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/271_problem_id/26427_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/271_problem_id/26427_author_id/Accepted.py
+index 5c0a7de..f736b60 100644
+--- a/Users/bardia/Downloads/data 4/data/271_problem_id/26427_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/271_problem_id/26427_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ from sys import stdin
+ n = int(stdin.readline())
+ #while(n != 0):
+-result = n - n//2 - n//3 - n//5  - n//7 + n//6 + n//10 + n//14 + n//15 + n//21 + n//35 - n//30 - n//42 - n//70 - n//105 
++result = n - n//2 - n//3 - n//5  - n//7 + n//6 + n//10 + n//14 + n//15 + n//21 + n//35 - n//30 - n//42 - n//70 - n//105 + n//210
+ print(result)
+\ No newline at end of file

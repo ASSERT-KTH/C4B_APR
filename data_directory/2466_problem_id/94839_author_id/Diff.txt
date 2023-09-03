@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2466_problem_id/94839_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2466_problem_id/94839_author_id/Accepted.py
+index 532a7d9..f93a4da 100644
+--- a/Users/bardia/Downloads/data 4/data/2466_problem_id/94839_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2466_problem_id/94839_author_id/Accepted.py	
+@@ -20,7 +20,6 @@ def main():
+     }
+ 
+     def update(pos, d):
+-        nonlocal walk
+         return (
+             pos[0]+walk[d][0],
+             pos[1]+walk[d][1]
+@@ -33,6 +32,8 @@ def main():
+         
+         for c in path:
+             pos = update(pos, c)
++            if pos in vis:
++                return False
+ 
+             for nei in 'LURD':
+                 if nei != back[c] and update(pos, nei) in vis:

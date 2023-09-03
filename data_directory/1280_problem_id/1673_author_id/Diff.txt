@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/1673_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/1673_author_id/Accepted.py
+index 07a2a6f..f1eb102 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/1673_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/1673_author_id/Accepted.py	
+@@ -8,4 +8,7 @@ for i in range(-1,-13,-1):
+     else:
+         k = k - ll[i]
+         j += 1
+-print(j)
+\ No newline at end of file
++if k > 0:
++    print('-1')
++else:
++    print(j)
+\ No newline at end of file

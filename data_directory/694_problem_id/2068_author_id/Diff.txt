@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/694_problem_id/2068_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/694_problem_id/2068_author_id/Accepted.py
+index 6c7854f..aa3a341 100644
+--- a/Users/bardia/Downloads/data 4/data/694_problem_id/2068_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/694_problem_id/2068_author_id/Accepted.py	
+@@ -1,5 +1,7 @@
+ n=input()
+-if((n[0]=='a' and n[1]!=1 and n[1]!=8) or (n[0]=='h' and n[1]!=1 and n[1]!=8) or (n[1]=='1' and n[0]!='a' and n[0]!='h') or (n[1]=='8' and n[0]!='a' and n[0]!='h')):
++if(n=="a8" or n=="a1" or n=="h8" or n=="h1"):
++    print(3)
++elif((n[0]=='a' and n[1]!=1 and n[1]!=8) or (n[0]=='h' and n[1]!=1 and n[1]!=8) or (n[1]=='1' and n[0]!='a' and n[0]!='h') or (n[1]=='8' and n[0]!='a' and n[0]!='h')):
+     print(5)
+ else:
+     print(8)
+\ No newline at end of file

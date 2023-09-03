@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2439_problem_id/1865_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2439_problem_id/1865_author_id/Accepted.py
+index 2f62e29..f7d295e 100644
+--- a/Users/bardia/Downloads/data 4/data/2439_problem_id/1865_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2439_problem_id/1865_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ i = input
+ a = i()
+ b = i()
+ c = str(int(a) + int(b))
+-a = a.replace(' ', '')
+-b = b.replace(' ', '')
+-c = c.replace(' ', '')
++a = a.replace('0', '')
++b = b.replace('0', '')
++c = c.replace('0', '')
+ print('YES' if int(a) + int(b) == int(c) else 'NO')
+\ No newline at end of file

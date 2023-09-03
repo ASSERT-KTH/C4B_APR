@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1804_problem_id/60976_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1804_problem_id/60976_author_id/Accepted.py
+index 998cafc..93f30ef 100644
+--- a/Users/bardia/Downloads/data 4/data/1804_problem_id/60976_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1804_problem_id/60976_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ st = input()
+ a = set()
+ k = 0
+-for e in n:
++for e in st:
+     if not (e in a):
+         k += 1
+         a.add(e)

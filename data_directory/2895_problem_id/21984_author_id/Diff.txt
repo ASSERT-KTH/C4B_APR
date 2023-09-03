@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2895_problem_id/21984_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2895_problem_id/21984_author_id/Accepted.py
+index 03a0b09..8b737ba 100644
+--- a/Users/bardia/Downloads/data 4/data/2895_problem_id/21984_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2895_problem_id/21984_author_id/Accepted.py	
+@@ -51,5 +51,5 @@ else:
+         if _B[_A[l+i-1]]==0:
+             cnt+=1
+             _B[_A[l+i-1]]=1
+-print(_A)
++# print(_A)
+ print(cnt)
+\ No newline at end of file

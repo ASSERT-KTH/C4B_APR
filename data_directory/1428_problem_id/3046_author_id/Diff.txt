@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1428_problem_id/3046_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1428_problem_id/3046_author_id/Accepted.py
+index e1cb921..e8336d4 100644
+--- a/Users/bardia/Downloads/data 4/data/1428_problem_id/3046_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1428_problem_id/3046_author_id/Accepted.py	
+@@ -3,7 +3,7 @@ def main():
+     if mode=="file":f=open("test.txt","r")
+     get = lambda :[str(x) for x in (f.readline() if mode=="file" else input()).split()]
+     [g]=get()
+-    print(g)
++    #print(g)
+     n = len(g)
+     maxx = -1
+     for i in range( 1, n-1 ):

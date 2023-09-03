@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/966_problem_id/43109_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/966_problem_id/43109_author_id/Accepted.py
+index e7148fc..2d29dec 100644
+--- a/Users/bardia/Downloads/data 4/data/966_problem_id/43109_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/966_problem_id/43109_author_id/Accepted.py	
+@@ -3,9 +3,9 @@ l,r=0,m
+ t=True
+ for x in range(60):
+     i=(l+r)//2
+-    s=((2*i-k)*(k-1)+(n-k)*(2*i-n+k-1))/2+i
+-    if i==2:
+-        s=i+(n-1)
++    c=k-1
++    b=n-k
++    s=i-1+n+[(i-2-b)*b if i-2-b>0 else 0][0]+[(i-2-c)*c if i-2-c>0 else 0][0]+(min(i-2,b))*(1+min(b,i-2))/2+(min(i-2,c))*(1+min(c,i-2))/2
+     if n==1:
+         print(m)
+         t=False

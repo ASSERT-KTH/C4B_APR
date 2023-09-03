@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/194_problem_id/23162_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/194_problem_id/23162_author_id/Accepted.py
+index a513186..42cdea3 100644
+--- a/Users/bardia/Downloads/data 4/data/194_problem_id/23162_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/194_problem_id/23162_author_id/Accepted.py	
+@@ -32,9 +32,9 @@
+ #i = -1
+ #while True:
+ #    i += 1
+-x = int(input(''))
++x = int(input(''))  
+ if x % 5 == 0:
+     n = x/5
+ else:
+     n = x//5 + 1
+-print(n)
+\ No newline at end of file
++print(int(n))
+\ No newline at end of file

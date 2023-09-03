@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1976_problem_id/23306_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1976_problem_id/23306_author_id/Accepted.py
+index acb9dd0..cdb4af6 100644
+--- a/Users/bardia/Downloads/data 4/data/1976_problem_id/23306_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1976_problem_id/23306_author_id/Accepted.py	
+@@ -2,10 +2,9 @@ n=int(input(""))
+ L=input("")
+ cont=0
+ k=0
++T=""
+ while(k<n-1):
+-    if(L[k]!=L[k+1]):
+-        break
+-    else:
+-        cont+=1
++    if(L[k]==L[k+1]):
++        T+=L[k]
+     k+=1
+-print(cont)
+\ No newline at end of file
++print(len(T))
+\ No newline at end of file

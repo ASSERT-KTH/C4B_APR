@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/858_problem_id/4188_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/858_problem_id/4188_author_id/Accepted.py
+index 869a8cf..54d2e09 100644
+--- a/Users/bardia/Downloads/data 4/data/858_problem_id/4188_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/858_problem_id/4188_author_id/Accepted.py	
+@@ -4,7 +4,8 @@ n,a,b,c = [int(x) for x in input().split()]
+ if n%4 == 0:
+     print(0)
+ elif n%4 == 3:  # Buy exactly one the only option.  NO!! Could be a two and a three!
+-    print(min(a, b + c))
++    #  Or three tripletons!
++    print(min(a, b + c, c*3))
+ elif n%4 == 2:  # Could buy two singletons or one doubleton OR TWO TRIPLETONS!
+     print(min(a*2, b, c*2))
+ else:

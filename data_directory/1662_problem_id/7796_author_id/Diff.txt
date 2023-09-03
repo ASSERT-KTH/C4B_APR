@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1662_problem_id/7796_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1662_problem_id/7796_author_id/Accepted.py
+index d6a8fd2..51152da 100644
+--- a/Users/bardia/Downloads/data 4/data/1662_problem_id/7796_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1662_problem_id/7796_author_id/Accepted.py	
+@@ -1,3 +1,3 @@
+ import re
+-m = re.match(r"^\w{1,16}@(?P<hostname>\w{1,16}(?:\.\w{1,16})*)(?:\/\w{1,16)?$", input())
++m = re.match(r"^\w{1,16}@(?P<hostname>\w{1,16}(?:\.\w{1,16})*)(?:\/\w{1,16})?$", input())
+ print("NO" if m == None or len(m.group("hostname")) > 32 else "YES")
+\ No newline at end of file

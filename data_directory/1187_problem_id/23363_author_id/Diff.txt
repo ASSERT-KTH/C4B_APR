@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/23363_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/23363_author_id/Accepted.py
+index a190f2b..778b6ad 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/23363_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/23363_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ for i in string:
+     if (i.isupper()):
+         l+=1
+ result=string
+-if (l==len(string) or l==len(string)-1):
++if (l==len(string) or (l==len(string)-1 and string[0].islower())):
+     result=''
+     for i in string:
+         if (i.islower()):

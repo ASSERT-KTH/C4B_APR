@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/233_problem_id/14931_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/233_problem_id/14931_author_id/Accepted.py
+index 6c56cf1..3ac95d4 100644
+--- a/Users/bardia/Downloads/data 4/data/233_problem_id/14931_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/233_problem_id/14931_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ I = lambda: int(input())
+ n, a, b, c = I(), I(), I(), I()
+ m = max(n // a, ((n - b) // (b - c) + 1) if b <= n else 0)
+-print(m + max(0, n - m * (b - c)) // a)
+\ No newline at end of file
++print(m + max(0, ((n - m * (b - c)) // a) if b <= n else 0))
+\ No newline at end of file

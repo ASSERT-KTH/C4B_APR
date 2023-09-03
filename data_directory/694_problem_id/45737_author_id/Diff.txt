@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/694_problem_id/45737_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/694_problem_id/45737_author_id/Accepted.py
+index 0d0062c..a4492e9 100644
+--- a/Users/bardia/Downloads/data 4/data/694_problem_id/45737_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/694_problem_id/45737_author_id/Accepted.py	
+@@ -1,8 +1,9 @@
+ position = input()
+-result = ((int(position[0], 18) - 10) % 7 | (int(position[1]) - 1) % 7)
+-if result == 0:
++col = (int(position[0], 18) - 10) % 7
++row = (int(position[1]) - 1) % 7
++if not col and not row:
+     print(3)
+-elif result == 3 or result == 4:
+-	print(5)    
++elif not col or not row:
++    print(5)
+ else:
+-	print(8)
+\ No newline at end of file
++    print(8)
+\ No newline at end of file

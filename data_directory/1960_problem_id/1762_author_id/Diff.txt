@@ -1,0 +1,9 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1960_problem_id/1762_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1960_problem_id/1762_author_id/Accepted.py
+index ce8b43a..2e64a73 100644
+--- a/Users/bardia/Downloads/data 4/data/1960_problem_id/1762_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1960_problem_id/1762_author_id/Accepted.py	
+@@ -1 +1 @@
+-print(sum(abs(x-3)+abs(y-3)for x in range(5) for y,v in enumerate(input().split()) if int(v)))
+\ No newline at end of file
++print(sum(abs(x-2)+abs(y-2)for x in range(5) for y,v in enumerate(input().split()) if int(v)))
+\ No newline at end of file

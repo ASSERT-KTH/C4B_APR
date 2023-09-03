@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1274_problem_id/71014_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1274_problem_id/71014_author_id/Accepted.py
+index d312a53..74d8b6d 100644
+--- a/Users/bardia/Downloads/data 4/data/1274_problem_id/71014_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1274_problem_id/71014_author_id/Accepted.py	
+@@ -3,8 +3,12 @@ def mod(dragon):
+         if dragon % d == 0:
+             return True
+ 
+-k, l, m, n, d = [int(x) for x in input().split()]
+-damage = [k, l, m, n]
++damage = []
++damage.append(int(input()))
++damage.append(int(input()))
++damage.append(int(input()))
++damage.append(int(input()))
++d = int(input())
+ 
+ dragons = list(range(1, d+1))
+ count_otpizzen = 0

@@ -1,0 +1,6 @@
+x, y, z, k = map(int, input().split())
+x, y, z = sorted((x, y, z))
+a = min(k // 3, x)
+b = min((k - a) // 2, y)
+c = min(k - a - b, z)
+print((a + 1) * (b + 1) * (c + 1))

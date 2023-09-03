@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/905_problem_id/51592_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/905_problem_id/51592_author_id/Accepted.py
+index ed47c1d..ec4ac8d 100644
+--- a/Users/bardia/Downloads/data 4/data/905_problem_id/51592_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/905_problem_id/51592_author_id/Accepted.py	
+@@ -1,4 +1,8 @@
+-n,m,k=int(input())
++s = input()
++n,m,k = s.split()
++m = int(m)
++n = int(n)
++k = int (k)
+ 
+ r = (((k+1)//2) // m) + 1
+ 

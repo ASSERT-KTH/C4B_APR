@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2331_problem_id/55099_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2331_problem_id/55099_author_id/Accepted.py
+index cc10328..a387546 100644
+--- a/Users/bardia/Downloads/data 4/data/2331_problem_id/55099_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2331_problem_id/55099_author_id/Accepted.py	
+@@ -15,22 +15,8 @@ def opposite_sides_length(n, y_1, y_2):
+ def main(n, x_1, y_1, x_2, y_2):
+     if x_1 + x_2 == n and x_1 * x_2 == 0:
+         return opposite_sides_length(n, y_1, y_2)
+-    if y_1 + y_2 == n and y_1 * x_2 == 0:
++    if y_1 + y_2 == n and y_1 * y_2 == 0:
+         return opposite_sides_length(n, x_1, x_2)
+-    else:
+-        return normal_position_length(x_1, y_1, x_2, y_2)
+-
+-print(main(n, x_1, y_1, x_2, y_2))
++    return normal_position_length(x_1, y_1, x_2, y_2)
+ 
+-#    if x_1 == 0:
+-#        if x_2 == n:
+-#            return oposite_sides_length(n, x_1, y_1, x_2, y_2)
+-#        else:
+-#            return normal_position_length(x_1, y_1, x_2, y_2)
+-#    else:
+-#        if x_1 == n:
+-#            if x_2 == 0:
+-#                return oposite_sides_length(n, x_1, y_1, x_2, y_2)
+-#            else:
+-#                return normal_postion_length(x_1, y_1, x_2, y_2)
+-#        else:
+\ No newline at end of file
++print(main(n, x_1, y_1, x_2, y_2))
+\ No newline at end of file

@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/1401_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/1401_author_id/Accepted.py
+index 11dca6b..0613e00 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/1401_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/1401_author_id/Accepted.py	
+@@ -8,4 +8,7 @@ for a in A:
+         break
+     now += a
+     ans += 1
+-print(ans)
+\ No newline at end of file
++if now >= K:
++    print(ans)
++else:
++    print(-1)
+\ No newline at end of file

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/60951_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/60951_author_id/Accepted.py
+index 1ae5e64..f40fd41 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/60951_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/60951_author_id/Accepted.py	
+@@ -3,7 +3,7 @@ count = 0
+ for itch in n:
+     if itch == '4' or itch == '7':
+         count += 1
+-if (count % 4 == 0 or count % 7 == 0) and count != 0:
++if count == 4 or count == 7:
+     print('YES')
+ else:
+     print('NO')
+\ No newline at end of file

@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/994_problem_id/7596_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/994_problem_id/7596_author_id/Accepted.py
+index ce53fb9..1b8fe86 100644
+--- a/Users/bardia/Downloads/data 4/data/994_problem_id/7596_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/994_problem_id/7596_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ n, m, a = map(int, input().split())
+-print((n + a - 1) // a + (m + a - 1) // a)
+\ No newline at end of file
++print(((n + a - 1) // a) * ((m + a - 1) // a))
+\ No newline at end of file

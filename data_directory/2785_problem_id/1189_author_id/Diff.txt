@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/1189_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/1189_author_id/Accepted.py
+index a9bf9df..b5c3ee2 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/1189_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/1189_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ s = input()
+ res = s.count('VK')
+-s = s.replace('VK', '')
+-res += 'VV' in s or 'KK' in s
++s = s.split('VK')
++res += sum(['VV' in x or 'KK' in x for x in s]) > 0
+ print(res)
+\ No newline at end of file

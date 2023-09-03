@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1960_problem_id/61103_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1960_problem_id/61103_author_id/Accepted.py
+index abecd36..ed6ce6c 100644
+--- a/Users/bardia/Downloads/data 4/data/1960_problem_id/61103_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1960_problem_id/61103_author_id/Accepted.py	
+@@ -1,12 +1,4 @@
+-i = -1
+-j = 0
+-str = input()
+-for char in str:
+-    if char == '0' or char == '1':
+-        i += 1
+-        if i == 5:
+-            i = 0
+-            j += 1
+-        if char == '1':
+-            break
+-print(abs(2-i) + abs(2-j)-1)
+\ No newline at end of file
++for i in range(5):
++    str = input().split()
++    if '1' in str:
++        print(abs(2-i)+abs(str.index('1')-2))
+\ No newline at end of file

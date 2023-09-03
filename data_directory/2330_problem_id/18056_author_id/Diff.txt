@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2330_problem_id/18056_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2330_problem_id/18056_author_id/Accepted.py
+index 02be638..cad838c 100644
+--- a/Users/bardia/Downloads/data 4/data/2330_problem_id/18056_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2330_problem_id/18056_author_id/Accepted.py	
+@@ -8,7 +8,7 @@ def rev(a):
+     return pow(a,10**9+5,10**9+7)
+ 
+ def c2nn(n):
+-    return fact(2*n+1)*(rev(fact(n))*rev(fact(n+1)))%(10**9+7)
++    return fact(2*n)*(rev(fact(n))**2)%(10**9+7)
+ 
+ n=int(input())
+-print(c2nn(n-1)*2-n)
+\ No newline at end of file
++print(c2nn(n)-n)
+\ No newline at end of file

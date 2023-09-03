@@ -1,0 +1,37 @@
+diff --git a/Users/bardia/Downloads/data 4/data/102_problem_id/15858_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/102_problem_id/15858_author_id/Accepted.py
+index 00ed79d..c79e3ef 100644
+--- a/Users/bardia/Downloads/data 4/data/102_problem_id/15858_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/102_problem_id/15858_author_id/Accepted.py	
+@@ -3,22 +3,20 @@ l=list(map(int,input().split()))
+ d1=l[0]
+ d2=l[1]
+ d3=l[2]
++r=[]
+ 
+ p1=d1+d3+d2
++r.append(p1)
+ 
+ p2=2*(d1+d2)
++r.append(p2)
+ 
+ p3=2*(d1+d3)
++r.append(p3)
+ 
++p4=2*(d2+d3)
++r.append(p4)
+ 
+-if(p1>p2>=p3) or (p2>p1>=p3) :
+-	print(p3)
++r.sort()
+ 
+-
+-
+-if(p1>p3>p2) or (p3>p1>p2) :
+-	print(p2)
+-
+-
+-if(p2>p3>p1) or (p3>p2>=p1) :
+-	print(p1)
+\ No newline at end of file
++print(r[0])
+\ No newline at end of file

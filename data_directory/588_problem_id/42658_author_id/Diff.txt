@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/588_problem_id/42658_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/588_problem_id/42658_author_id/Accepted.py
+index c9a3a43..021cf53 100644
+--- a/Users/bardia/Downloads/data 4/data/588_problem_id/42658_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/588_problem_id/42658_author_id/Accepted.py	
+@@ -4,4 +4,4 @@ N = int(input().split()[0])
+ if N % 2:
+     print (int((N-1)/2))
+ else:
+-    print(N - pow(2, int(math.log2(N))))
+\ No newline at end of file
++    print(int((N - pow(2, int(math.log2(N))))/2))
+\ No newline at end of file

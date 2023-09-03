@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/62070_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/62070_author_id/Accepted.py
+index 184b796..8eb975f 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/62070_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/62070_author_id/Accepted.py	
+@@ -1,3 +1,17 @@
++up=True
+ s=input()
+-s=s.title()
++if(len(s) == 1):
++	if(s.islower()):
++		s=s.upper()
++	else:
++		s=s.lower()
++else:
++	for i in range(1, len(s)):
++		if(not s[i].isupper()):
++			up=False
++			break
++	if(up and s[0].isupper()):
++		s=s.lower()
++	elif(up and s[0].islower()):	
++		s=s[0].upper()+s[1:].lower()
+ print(s)
+\ No newline at end of file

@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2606_problem_id/45420_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2606_problem_id/45420_author_id/Accepted.py
+index 56c4e82..2f0e46c 100644
+--- a/Users/bardia/Downloads/data 4/data/2606_problem_id/45420_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2606_problem_id/45420_author_id/Accepted.py	
+@@ -1,10 +1,10 @@
+ n, k = [int(x) for x in input().split()]
+-p = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q' 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
++p = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+ s = ""
+ l = 0
+ for i in range(n):
+   s += p[l]
+   l += 1
+-  if l >= k:
++  if l == k:
+     l = 0
+ print(s)
+\ No newline at end of file

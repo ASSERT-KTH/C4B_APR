@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/457_problem_id/13312_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/457_problem_id/13312_author_id/Accepted.py
+index 07f767d..1877bc5 100644
+--- a/Users/bardia/Downloads/data 4/data/457_problem_id/13312_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/457_problem_id/13312_author_id/Accepted.py	
+@@ -11,7 +11,7 @@ end_time = start_time + t_b - 1
+ 
+ intersections = 0
+ 
+-while start_time < 1439:
++while start_time <= 1439:
+     if end >= start_time and end_time >= start:
+         intersections += 1
+ 

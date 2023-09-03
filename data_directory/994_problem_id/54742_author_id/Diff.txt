@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/994_problem_id/54742_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/994_problem_id/54742_author_id/Accepted.py
+index 1f6c140..e4155df 100644
+--- a/Users/bardia/Downloads/data 4/data/994_problem_id/54742_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/994_problem_id/54742_author_id/Accepted.py	
+@@ -1,11 +1,9 @@
+-n=int(input());
+-m=int(input());
+-a=int(input());
++n, m, a = map(int, input().split());
+  
+ h = n//a;
+ if n%a != 0: h+=1;
+  
+-w = m//a;
++w = m//a
+ if m%a != 0: w+=1;
+  
+ print(h*w);
+\ No newline at end of file

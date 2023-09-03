@@ -1,0 +1,42 @@
+diff --git a/Users/bardia/Downloads/data 4/data/836_problem_id/9_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/836_problem_id/9_author_id/Accepted.py
+index fffe893..cd7966c 100644
+--- a/Users/bardia/Downloads/data 4/data/836_problem_id/9_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/836_problem_id/9_author_id/Accepted.py	
+@@ -1,14 +1,24 @@
+ players = int(input())
+ 
+-games = 0
+-
+-while True:
+-  lastpcount = players
+-  players = players//2
+-  games += 1
+-  if 2 * players == lastpcount and players == 1:
+-    break
+-  elif 2 * players != lastpcount:
+-    players += 1
++if players == 2:
++  print(1)
++elif players == 3:
++  print(2)
++  
++else:
++  fib = 3
++  fist = 2
++  sec = 3
++  answer = 2
++  
++  while fib < players:
++    answer += 1
++  
++    fib = fist + sec
++    fist = sec
++    sec = fib
++  
++  if fib > players:
++    answer -= 1
+     
+-print(games)
+\ No newline at end of file
++  print(answer)
+\ No newline at end of file

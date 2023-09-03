@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2681_problem_id/102726_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2681_problem_id/102726_author_id/Accepted.py
+index ca5a69f..f9f36c7 100644
+--- a/Users/bardia/Downloads/data 4/data/2681_problem_id/102726_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2681_problem_id/102726_author_id/Accepted.py	
+@@ -1,6 +1,8 @@
++smith = [4, 22, 27, 58, 85, 94, 121, 166, 202, 265, 274, 319, 346, 355, 378, 382, 391, 438, 454, 483, 517, 526, 535, 562, 576, 588, 627, 634, 636, 645]
++
+ def main():
+   number = int(input())
+-  print(number*9)
++  print(smith[number-1])
+ 
+ if __name__=='__main__':
+   main()
+\ No newline at end of file

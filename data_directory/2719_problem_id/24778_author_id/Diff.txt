@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2719_problem_id/24778_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2719_problem_id/24778_author_id/Accepted.py
+index 5242902..fe56d2e 100644
+--- a/Users/bardia/Downloads/data 4/data/2719_problem_id/24778_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2719_problem_id/24778_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+-a = int(input())
+-b = int(input())
++import sys
++a, b = map(int, sys.stdin.readline().split())
+ i = 0
+ if a == b:
+     print(1)
+@@ -8,7 +8,4 @@ else:
+         i += 1
+         a *= 3
+         b *= 2
+-        print(a)
+-        print(b)
+-        print()
+     print(i)
+\ No newline at end of file

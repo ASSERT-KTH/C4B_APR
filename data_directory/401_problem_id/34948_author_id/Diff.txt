@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/401_problem_id/34948_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/401_problem_id/34948_author_id/Accepted.py
+index d984f89..8864521 100644
+--- a/Users/bardia/Downloads/data 4/data/401_problem_id/34948_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/401_problem_id/34948_author_id/Accepted.py	
+@@ -1,2 +1,11 @@
+ n=int(input())
+-print(pow(2,n))
+\ No newline at end of file
++if n<13:
++    print(pow(2,n))
++else:
++    num=pow(2,12)
++    n=n-13
++    ans=8092
++    while n:
++        ans=ans*2
++        n=n-1
++    print(ans)
+\ No newline at end of file

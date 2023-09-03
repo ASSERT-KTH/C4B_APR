@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/9505_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/9505_author_id/Accepted.py
+index 1a216fb..85e4f85 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/9505_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/9505_author_id/Accepted.py	
+@@ -1,15 +1,9 @@
+-counter=0
+-bool=1
+ string=input()
+ 
+-for i in range(len(string)-1):
+-    if(string[i]=='V' and string[i+1]=='K'):
+-       counter+=1
+-    elif(string[i]=='V' and string[i+1]=='V' and bool==1):
+-        counter+=1
+-        bool=0
+-    elif(string[i]=='K' and string[i+1]=='K' and bool==1):
+-        counter+=1
+-        bool=0
+-
+-print(counter)
+\ No newline at end of file
++ans=string.count("VK")
++
++string=string.replace("VK"," ")
++
++ans+=1 if "VV" in string or "KK" in string else 0
++
++print(ans)
+\ No newline at end of file

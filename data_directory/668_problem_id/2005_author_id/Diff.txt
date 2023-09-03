@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/668_problem_id/2005_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/668_problem_id/2005_author_id/Accepted.py
+index d1fe0c9..567123d 100644
+--- a/Users/bardia/Downloads/data 4/data/668_problem_id/2005_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/668_problem_id/2005_author_id/Accepted.py	
+@@ -1,12 +1,14 @@
+-odd = 'I hate it'
+-even = 'I love it'
++odd = 'I hate'
++even = 'I love'
+ interm = ' that '
+ n = int(input())
+ for i in range(n):
+     i += 1
+-    if i > 1 and i != n+1:
++    if i > 1:
+         print(interm,end='')
+     if i % 2 == 1:
+         print(odd,end='')
+     if i % 2 == 0:
+-        print(even,end='')
+\ No newline at end of file
++        print(even,end='')
++    if i == n:
++        print(' it')
+\ No newline at end of file

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/837_problem_id/19098_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/837_problem_id/19098_author_id/Accepted.py
+index ce55470..2e7220f 100644
+--- a/Users/bardia/Downloads/data 4/data/837_problem_id/19098_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/837_problem_id/19098_author_id/Accepted.py	
+@@ -11,6 +11,7 @@ def is_prime(n):
+ def tax(n):
+ 	if is_prime(n): return 1
+ 	if n % 2 == 0: return 2
+-	return tax(n-3) + 1
++	if is_prime(n - 2): return 2
++	return 3
+ 
+ print(tax(int(input())))
+\ No newline at end of file

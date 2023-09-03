@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/419_problem_id/35546_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/419_problem_id/35546_author_id/Accepted.py
+index 98751a9..edc8d15 100644
+--- a/Users/bardia/Downloads/data 4/data/419_problem_id/35546_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/419_problem_id/35546_author_id/Accepted.py	
+@@ -1,7 +1,8 @@
+-m = input().split()
+-n = m[0]
+-a = m[1]
+-b = m[2]
+-
++m = input().split(' ')
++n = int(m[0])
++a = int(m[1])
++b = int(m[2])
+ k = (a + b) % n
++if k == 0:
++    k = n
+ print(k)
+\ No newline at end of file

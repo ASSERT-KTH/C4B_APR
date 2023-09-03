@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/377_problem_id/757_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/377_problem_id/757_author_id/Accepted.py
+index 3e1def1..9812009 100644
+--- a/Users/bardia/Downloads/data 4/data/377_problem_id/757_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/377_problem_id/757_author_id/Accepted.py	
+@@ -1,8 +1,11 @@
+ n,b = tuple(map(int,input().split()))
+ if n > b:
+     n,b = b, n
++
+ if n < 2 and b < 2:
+     print(0)
+-p = b-n
+-l = [-3,-1,0]
+-print(2*(n+(p//3))+l[p%3]+(p//3))
+\ No newline at end of file
++
++else:
++    p = b-n
++    l = [-3,-1,0]
++    print(2*(n+(p//3))+l[p%3]+(p//3))
+\ No newline at end of file

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/994_problem_id/54661_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/994_problem_id/54661_author_id/Accepted.py
+index cf781e1..96ae8ba 100644
+--- a/Users/bardia/Downloads/data 4/data/994_problem_id/54661_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/994_problem_id/54661_author_id/Accepted.py	
+@@ -1,7 +1,5 @@
+-n=int(input())
+-m=int(input())
+-a=int(input())
+-nvag=int(n/a);
++m,n,a = map(int,input().split())
++nvag =int(n/a);
+ mvag=int(m/a);
+ if n%a!=0:
+     nvag+=1

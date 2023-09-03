@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2697_problem_id/4188_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2697_problem_id/4188_author_id/Accepted.py
+index 0b8d135..b7bdaf1 100644
+--- a/Users/bardia/Downloads/data 4/data/2697_problem_id/4188_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2697_problem_id/4188_author_id/Accepted.py	
+@@ -16,7 +16,7 @@ else:
+ 
+ done = False
+ for i in range(100000):
+-    if (current > sub) and (current - sub) % mod == 0:
++    if (current >= sub) and (current - sub) % mod == 0:
+         firstanswer = current
+         done = True
+         break
+@@ -38,7 +38,7 @@ else:
+ 
+ done = False
+ for i in range(100000):
+-    if (current > sub) and (current - sub) % mod == 0:
++    if (current >= sub) and (current - sub) % mod == 0:
+         secondanswer = current
+         done = True
+         break

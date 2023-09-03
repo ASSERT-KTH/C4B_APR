@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/105087_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/105087_author_id/Accepted.py
+index 2c4d89c..a96c777 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/105087_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/105087_author_id/Accepted.py	
+@@ -6,6 +6,10 @@ for i in range(len(s)-1):
+         num += 1
+     if i+2<len(s) and s[i]=='V' and s[i+1]=='V' and s[i+2]=='V':
+         p = 1
++    if i+2<len(s) and s[i]=='K' and s[i+1]=='K' and s[i+2]=='K':
++        p=1
+ if len(s)>1 and s[-1]=='V' and s[-2]=='V':
+     p=1
++if len(s)>1 and s[0]=='K' and s[1]=='K':
++    p=1
+ print(num+p)
+\ No newline at end of file

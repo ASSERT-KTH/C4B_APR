@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/48298_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/48298_author_id/Accepted.py
+index 1c33ace..28b840c 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/48298_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/48298_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ s = str(input())
+-a = s.count('VK')
+-s.replace('VK', '')
+-if s.find('VV')!=-1 or s.find('KK')!=-1:
++a = s.count("VK")
++s = s.replace("VK", "TP")
++if (s.find("VV")!=-1 or s.find("KK")!=-1):
+     a += 1
+ print (a)
+\ No newline at end of file

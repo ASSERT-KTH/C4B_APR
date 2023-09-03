@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1237_problem_id/3268_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1237_problem_id/3268_author_id/Accepted.py
+index 4ba6f77..f6c8eeb 100644
+--- a/Users/bardia/Downloads/data 4/data/1237_problem_id/3268_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1237_problem_id/3268_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ def main():
+     from math import pi, sin
+     n, R, r = map(float, input().split())
+-    print(("NO", "YES")[r <= (R / n if n < 3 else (R - r) * sin(pi / n))])
++    print(("NO", "YES")[r * n <= (R if n < 3 else R * 2 if n == 6 else (R - r) * n * sin(pi / n))])
+ 
+ 
+ if __name__ == "__main__":

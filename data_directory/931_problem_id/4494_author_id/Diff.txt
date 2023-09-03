@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/931_problem_id/4494_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/931_problem_id/4494_author_id/Accepted.py
+index 92ca334..3c0c4b9 100644
+--- a/Users/bardia/Downloads/data 4/data/931_problem_id/4494_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/931_problem_id/4494_author_id/Accepted.py	
+@@ -2,6 +2,7 @@ l=[]
+ for i in range(4):
+     l.append(input())
+ ans=0
++a=b=c=d=''
+ for i in range(4):
+     for j in range(4):
+         if j<2:
+@@ -12,7 +13,7 @@ for i in range(4):
+             c=l[i][j]+l[i+1][j+1]+l[i+2][j+2]
+         if i<2 and j>1:
+             d=l[i][j]+l[i+1][j-1]+l[i+2][j-2]
+-    for k in (a,b,c,d):
+-        if k.count('.')==1 and k.count('x')==2:
+-            ans=1
++        for k in (a,b,c,d):
++            if k.count('.')==1 and k.count('x')==2:
++                ans=1
+ print('YES' if ans else 'NO')
+\ No newline at end of file

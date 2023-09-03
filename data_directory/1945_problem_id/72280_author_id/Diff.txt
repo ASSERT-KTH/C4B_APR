@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1945_problem_id/72280_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1945_problem_id/72280_author_id/Accepted.py
+index 09dfeba..2f26d2e 100644
+--- a/Users/bardia/Downloads/data 4/data/1945_problem_id/72280_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1945_problem_id/72280_author_id/Accepted.py	
+@@ -7,6 +7,4 @@ for k in range(10):
+ if a % b != 0:
+     print(-1)
+ else:
+-    for i in range(n - 1):
+-        a *= 10
+-    print(a)
+\ No newline at end of file
++    print(str(a) + '0' * (n-1))
+\ No newline at end of file

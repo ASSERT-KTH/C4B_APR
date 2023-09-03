@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1602_problem_id/4353_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1602_problem_id/4353_author_id/Accepted.py
+index a0671e9..9df78ed 100644
+--- a/Users/bardia/Downloads/data 4/data/1602_problem_id/4353_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1602_problem_id/4353_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ x,t,a,b,c,d=map(int,input().split())
+ R=range(t)
+-y=0
++y=x==0
+ for i in R:
+ 	if x==a-c*i or x==b-d*i:y=1
+ 	for j in R:y|=x==a+b-c*i-d*j

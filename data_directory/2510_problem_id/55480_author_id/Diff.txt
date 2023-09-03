@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2510_problem_id/55480_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2510_problem_id/55480_author_id/Accepted.py
+index 8a0f99f..293236c 100644
+--- a/Users/bardia/Downloads/data 4/data/2510_problem_id/55480_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2510_problem_id/55480_author_id/Accepted.py	
+@@ -3,6 +3,6 @@ t = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'B', 'H']
+ q = sorted([t.index(i) for i in p])
+ if q[2] - q[0] != 7: q = q[1: ] + [q[0] + 12]
+ if q[2] - q[0] != 7: q = q[1: ] + [q[0] + 12]
+-if q[1] - q[0] == 4 and q[2] - q[1] == 3: print('minor')
+-elif q[1] - q[0] == 3 and q[2] - q[1] == 4: print('major')
++if q[1] - q[0] == 4 and q[2] - q[1] == 3: print('major')
++elif q[1] - q[0] == 3 and q[2] - q[1] == 4: print('minor')
+ else: print('strange')
+\ No newline at end of file

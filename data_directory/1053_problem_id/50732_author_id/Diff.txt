@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1053_problem_id/50732_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1053_problem_id/50732_author_id/Accepted.py
+index 713ac39..ecf145c 100644
+--- a/Users/bardia/Downloads/data 4/data/1053_problem_id/50732_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1053_problem_id/50732_author_id/Accepted.py	
+@@ -1,15 +1,12 @@
+ number = int(input())
+-
+-min_val = int(number/7) + 1
+-
++min_val = int(number/7)
+ max_val = int(number/4) + 1
+-
+ fact_num = -1
+ 
+ for i in range(min_val,max_val+1):
+     found = False
+     
+-    for j in range(i):
++    for j in range(i+1):
+         sevens = j
+         fours = i - j
+         fact = fours*4 + sevens*7

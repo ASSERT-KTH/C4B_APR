@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/548_problem_id/4276_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/548_problem_id/4276_author_id/Accepted.py
+index 3bed0d5..a605fad 100644
+--- a/Users/bardia/Downloads/data 4/data/548_problem_id/4276_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/548_problem_id/4276_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ a,b=map(int,input().split())
+ sum=0
+ sum+=a*int(b/5)
+-sum+=int(a/5)*b%5
++sum+=int(a/5)* (b % 5)
+ if a%5+b%5>=5:
+     sum+=(a%5+b%5)%5+1
+ print(sum)
+\ No newline at end of file

@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/912_problem_id/1308_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/912_problem_id/1308_author_id/Accepted.py
+index e49c713..8f59dbf 100644
+--- a/Users/bardia/Downloads/data 4/data/912_problem_id/1308_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/912_problem_id/1308_author_id/Accepted.py	
+@@ -5,11 +5,13 @@ cont = 0
+ i = 0
+ totale -= k
+ while(True):
+-   if((totale - (i*5))>=0 and n>0) :
++   i += 1
++   if((totale - (i*5))>=0 and n>0) : 
+       n -= 1
+-      i += 1
++      
+       totale = (totale - (i*5))
+       cont += 1
++
+    else:
+       break
+ print(cont)
+\ No newline at end of file

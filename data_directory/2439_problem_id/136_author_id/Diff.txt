@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2439_problem_id/136_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2439_problem_id/136_author_id/Accepted.py
+index 7ec4130..b772c5d 100644
+--- a/Users/bardia/Downloads/data 4/data/2439_problem_id/136_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2439_problem_id/136_author_id/Accepted.py	
+@@ -1,9 +1,9 @@
+-def kasra(a):
++def kasra(n):
+     m=0
+     a=0
+-    while a!=0:
+-        y=a%10
+-        a=a//10
++    while n!=0:
++        y=n%10
++        n=n//10
+         if y!=0:
+             m=m*10+y
+     while m!=0:

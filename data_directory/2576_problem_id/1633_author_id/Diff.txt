@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2576_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2576_problem_id/1633_author_id/Accepted.py
+index d918a36..34ce5b1 100644
+--- a/Users/bardia/Downloads/data 4/data/2576_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2576_problem_id/1633_author_id/Accepted.py	
+@@ -1,6 +1,8 @@
+ string = input()
+ n, a, b = map(int, string.split())
+-if a % n != 0 and b % n != 0:
++def check(p, q):
++    return p % n != 0 and q < n
++if check(a, b) or check(b, a):
+     print(-1)
+ else:
+     print(a // n + b // n)
+\ No newline at end of file

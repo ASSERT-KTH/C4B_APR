@@ -1,0 +1,64 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/44929_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/44929_author_id/Accepted.py
+index 0ebad43..ac25f5c 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/44929_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/44929_author_id/Accepted.py	
+@@ -1,29 +1,29 @@
+ from sys import stdin
+-def quickSort(lst):
+-    if len(lst) <= 1: 
+-        return lst
+-    smaller = [x for x in lst[1:] if x < lst[0]]
+-    larger = [x for x in lst[1:] if x >= lst[0]]
+-    return quickSort(larger) + [lst[0]] + quickSort(smaller)
+-def main():
+-    x=int(stdin.readline().strip())
+-    lst=list(map(int,stdin.readline().strip().split()))
+-    orden=(quickSort(lst))
+-    suma=orden[0]
+-    cont=1
+-    for i in range(len(orden)-1):
+-        if suma<x:
+-            suma+=orden[i+1]
+-            cont+=1
+-    if x==0:
+-        print(0)
+-    elif suma < x:
+-        print(-1)
+-    else:
+-        print(suma)
+-
+-        
+-        
+-    
+-
+-main()
+\ No newline at end of file
++def quick(n):
++    if len(n)==0:
++        return n
++    piv=n[len(n)//2]
++    mi,me,ma=[],[],[]
++    for i in range(len(n)):
++        if n[i]<piv:
++            mi.append(n[i])
++        elif n[i]>piv:
++            ma.append(n[i])
++        elif n[i]==piv:
++            me.append(n[i])
++    return quick(ma)+me+quick(mi)
++m=int(stdin.readline().strip())
++n=list(map(int,stdin.readline().strip().split()))
++l=quick(n)
++p=1
++cont=l[0]
++for i in range(len(l)-1):
++    if cont<m:
++        cont+=l[i+1]
++        p+=1
++if m==0:
++    print(0)
++elif cont<m:
++    print(-1)
++else:
++    print(p)
+\ No newline at end of file

@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/49568_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/49568_author_id/Accepted.py
+index 312e291..748f4a3 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/49568_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/49568_author_id/Accepted.py	
+@@ -1,6 +1,10 @@
+-num = set(list(input()))
+-#print (num)
+-if num == {'4', '7'}:
++num = input()
++
++fours = num.count('4')
++sevens = num.count('7')
++summ = fours + sevens
++
++if summ==4 or summ==7:
+     print ('YES')
+ else:
+     print ('NO')
+\ No newline at end of file

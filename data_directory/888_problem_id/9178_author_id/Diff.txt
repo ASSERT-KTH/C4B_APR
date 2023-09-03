@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/888_problem_id/9178_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/888_problem_id/9178_author_id/Accepted.py
+index cdf0b71..5cce0c6 100644
+--- a/Users/bardia/Downloads/data 4/data/888_problem_id/9178_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/888_problem_id/9178_author_id/Accepted.py	
+@@ -1,13 +1,5 @@
+ a = int (input())
+-b = int ( input())
++b = int (input())
+ c = int (input())
+-d = a 
+-for i in range (a) :
+-    if d *2 <= b and d *4 <= c :
+-        f= d *2
+-        e = d *4
+-        print (d + f + e )
+-        break
+-    d = a-1
+-if b < 2 and c <4 or b<2 or c<4 :
+-    print (0)
+\ No newline at end of file
++z = min (a , b//2 ,c//4 ) *7
++print(z)
+\ No newline at end of file

@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2969_problem_id/107688_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2969_problem_id/107688_author_id/Accepted.py
+index 356a79e..e39ba28 100644
+--- a/Users/bardia/Downloads/data 4/data/2969_problem_id/107688_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2969_problem_id/107688_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ s,v1,v2,t1,t2=[int(i) for i in input().split()]
+-if(s*v1+2*t1>s*v2+2*t2):
++if(s*v1+2*t1<s*v2+2*t2):
+     print("First")
+-elif(s*v1+2*t1<s*v2+2*t2):
++elif(s*v1+2*t1>s*v2+2*t2):
+     print("Second")
+ else:
+     print("Friendship")
+\ No newline at end of file

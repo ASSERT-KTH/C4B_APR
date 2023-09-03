@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/15895_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/15895_author_id/Accepted.py
+index 52bb302..3ad10a9 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/15895_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/15895_author_id/Accepted.py	
+@@ -15,4 +15,5 @@ while c > 0:
+         c -= gcd(a,c)
+     else:
+         c-= gcd(b,c)
+-print(turn%2)
+\ No newline at end of file
++    turn +=1
++print((turn+1)%2)
+\ No newline at end of file

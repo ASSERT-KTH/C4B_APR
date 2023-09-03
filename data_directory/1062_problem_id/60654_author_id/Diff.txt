@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/60654_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/60654_author_id/Accepted.py
+index addae5d..3b5cb05 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/60654_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/60654_author_id/Accepted.py	
+@@ -1,15 +1,16 @@
+ a=int(input())
+ a=list(str(a))
+ T="YES"
+-
++H=0
+ for x in a:
+     if (x!="4" and x!="7"):
+-        T="NO"
++        H=H
++    else:
++        H=H+1
+ 
+-H=len(a)
+ 
+-H=list(str(H))
+ 
++H=list(str(H))
+ if (T == "YES"):
+     for x in H:
+         if (x!="4" and x!="7"):

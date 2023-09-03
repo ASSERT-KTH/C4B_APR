@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2969_problem_id/48085_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2969_problem_id/48085_author_id/Accepted.py
+index b7e0b86..77d6e78 100644
+--- a/Users/bardia/Downloads/data 4/data/2969_problem_id/48085_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2969_problem_id/48085_author_id/Accepted.py	
+@@ -13,4 +13,4 @@ if first_time < second_time:
+ elif second_time < first_time:
+ 	print("Second")
+ else: 
+-	print("Freindship")
+\ No newline at end of file
++	print("Friendship")
+\ No newline at end of file

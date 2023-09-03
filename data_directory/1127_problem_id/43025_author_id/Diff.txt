@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1127_problem_id/43025_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1127_problem_id/43025_author_id/Accepted.py
+index dbb5cc5..e490af2 100644
+--- a/Users/bardia/Downloads/data 4/data/1127_problem_id/43025_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1127_problem_id/43025_author_id/Accepted.py	
+@@ -37,7 +37,10 @@ i = l
+ while i <= r:
+     index = bin_search(i, lucky_nums)
+     next_lucky = lucky_nums[index]
+-    result += next_lucky * (next_lucky - i + 1)
++    #print("next:", next_lucky)
++    result += next_lucky * min((next_lucky - i + 1), r - i + 1)
++    #print("times:", min((next_lucky - i + 1), r - i + 1))
++
+     i = next_lucky + 1
+     
+ print(result)
+\ No newline at end of file

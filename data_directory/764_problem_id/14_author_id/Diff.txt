@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/764_problem_id/14_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/764_problem_id/14_author_id/Accepted.py
+index 118e5b2..b58dd69 100644
+--- a/Users/bardia/Downloads/data 4/data/764_problem_id/14_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/764_problem_id/14_author_id/Accepted.py	
+@@ -1,4 +1,2 @@
+-a=input().split()
+-b=int(max(a))
+-c=int(min(a))
+-print(b-c)
+\ No newline at end of file
++x = list(map(int, input().strip().split()))
++print(abs(min(x)-max(x)))
+\ No newline at end of file

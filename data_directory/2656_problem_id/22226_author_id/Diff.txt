@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2656_problem_id/22226_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2656_problem_id/22226_author_id/Accepted.py
+index aad25a5..f7762e7 100644
+--- a/Users/bardia/Downloads/data 4/data/2656_problem_id/22226_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2656_problem_id/22226_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ N=int(x[0])
+ K=int(x[1])
+ ceros=0
+ aux=0
+-if(K>len(x[0])):
++if(K>=len(x[0])):
+     print(len(x[0])-1)
+ else:
+     while(ceros<K):
+@@ -14,7 +14,7 @@ else:
+             aux+=1
+         N=N//10
+         if(N==0):
+-            print(len(x[0])-ceros)
++            print(len(x[0])-1)
+             ceros=K+1
+     if(ceros<=K):
+         print(aux)
+\ No newline at end of file

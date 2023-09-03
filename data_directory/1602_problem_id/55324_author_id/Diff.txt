@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1602_problem_id/55324_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1602_problem_id/55324_author_id/Accepted.py
+index 1c9418c..ef19a8a 100644
+--- a/Users/bardia/Downloads/data 4/data/1602_problem_id/55324_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1602_problem_id/55324_author_id/Accepted.py	
+@@ -3,6 +3,12 @@ if __name__ == "__main__":
+     found = False
+     if x == 0:
+         found = True
++    for i in range(t):
++        if a - i * da == x:
++            found = True
++    for i in range(t):
++        if b - i * db == x:
++            found = True
+     for i in range(t):
+         for j in range(t):
+             if a - i * da + b - j * db == x:

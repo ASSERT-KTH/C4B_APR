@@ -1,0 +1,73 @@
+diff --git a/Users/bardia/Downloads/data 4/data/938_problem_id/22398_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/938_problem_id/22398_author_id/Accepted.py
+index 46a1160..2d85cea 100644
+--- a/Users/bardia/Downloads/data 4/data/938_problem_id/22398_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/938_problem_id/22398_author_id/Accepted.py	
+@@ -8,60 +8,25 @@ def solve():
+     if k > n - k:
+         k = n - k
+ 
+-    bit = BinaryIndexedTree([0]*n)
+-
+     s = 0
+     res = 1
+-    ans = []
++    a = 1
++    ans = [0]*n
+ 
+     for i in range(n):
+         t = (s + k) % n
+ 
+-        if s < t:
+-            res += bit.get_sum(t) - bit.get_sum(s + 1) + 1
+-            ans.append(res)
++        if t < s and t > 0:
++            res += a + 1
++            a += 2
+         else:
+-            res += bit.get_sum(n) - bit.get_sum(s + 1)
+-            res += bit.get_sum(t) + 1
+-            ans.append(res)
++            res += a
+ 
+-        bit.add(s, 1)
+-        bit.add(t, 1)
++        ans[i] = res
+ 
+         s = t
+ 
+     print(*ans)
+ 
+-class BinaryIndexedTree:
+-    ''' 1-origin Binary Indexed Tree '''
+-
+-    def __init__(self, a):
+-        self.n = len(a)
+-        self.bit = [0]*(self.n + 1)
+-
+-        for i in range(1, self.n + 1):
+-            self.bit[i] += a[i - 1]
+-
+-            if i + (i & (-i)) <= self.n:
+-                self.bit[i + (i & (-i))] += self.bit[i]
+-
+-    def add(self, i, x):
+-        ''' a_i += x '''
+-        i += 1 # 0-origin -> 1-origin
+-
+-        while i <= self.n:
+-            self.bit[i] += x
+-            i += i & (-i)
+-
+-    def get_sum(self, r):
+-        ''' sum(a[0 .. r)) '''
+-        res = 0
+-
+-        while r > 0:
+-            res += self.bit[r]
+-            r -= r & (-r)
+-
+-        return res
+-
+ if __name__ == '__main__':
+     solve()
+\ No newline at end of file

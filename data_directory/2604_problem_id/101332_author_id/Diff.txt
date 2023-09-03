@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2604_problem_id/101332_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2604_problem_id/101332_author_id/Accepted.py
+index db5045c..a0d838a 100644
+--- a/Users/bardia/Downloads/data 4/data/2604_problem_id/101332_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2604_problem_id/101332_author_id/Accepted.py	
+@@ -1,13 +1,15 @@
+-def sol(number):
+-	num = list(map(int, str(number)))
+-	mmm = sum(num)
+-	length = len(num)
+-	for i in reversed(range(length - 1)):
+-		if num[i]:
+-			num[i] -= 1
+-			for j in range(i + 1, length):
+-				num[j] = 9
+-			if mmm < sum(num):
+-				number = int(''.join(map(str, num)))
+-	return number
+-print(sol(int(input())))
+\ No newline at end of file
++def rec(num):
++	mod = 10
++	if num < mod:
++		return 0
++	pom = mod
++	i = 1
++	while pom < num // mod:
++		i += 1
++		pom *= mod
++	res = num % pom
++	if num != 109 and (mod * num // pom) % mod == 9:
++		return rec(res)
++	return res
++num = int(input())
++print(num - rec(num + 1))
+\ No newline at end of file

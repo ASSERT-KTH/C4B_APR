@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1274_problem_id/71047_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1274_problem_id/71047_author_id/Accepted.py
+index 759fabd..62cb653 100644
+--- a/Users/bardia/Downloads/data 4/data/1274_problem_id/71047_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1274_problem_id/71047_author_id/Accepted.py	
+@@ -3,21 +3,8 @@ for i in range(4):
+   alist.append(int(input()))
+ x=int(input())  
+ 
+-k=[]
+-a=x//alist[0]+1
+-b=x//alist[1]+1
+-c=x//alist[2]+1
+-d=x//alist[3]+1
+-for i in range(1,a):
+-  k.append(alist[0]*i)
+-for i in range(1,b):
+-  k.append(alist[1]*i)
+-for i in range(1,c):
+-  k.append(alist[2]*i)
+-for i in range(1,d):
+-  k.append(alist[3]*i)
+-z=[]
+-for i in k:
+-  if i not in z :
+-    z.append(i)
+-print(len(z))
+\ No newline at end of file
++k=0
++for i in range(1,x+1):
++  if i%alist[0]!=0 and i%alist[1]!=0 and i%alist[2]!=0 and i%alist[3]!=0 :
++    k=k+1
++print(x-k)
+\ No newline at end of file

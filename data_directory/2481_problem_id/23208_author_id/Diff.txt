@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/23208_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/23208_author_id/Accepted.py
+index 7b081fa..81c7fb4 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/23208_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/23208_author_id/Accepted.py	
+@@ -5,7 +5,7 @@ queue = ['Sheldon', 'Leonard', 'Penny', 'Rajesh', 'Howard']
+ 
+ c = 1
+ while 5 * c < n:
++    n -= 5 * c
+     c *= 2
+ 
+-
+ print(queue[(n - 1) // c])
+\ No newline at end of file

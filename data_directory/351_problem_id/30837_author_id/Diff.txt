@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/351_problem_id/30837_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/351_problem_id/30837_author_id/Accepted.py
+index e1699fc..99cde7d 100644
+--- a/Users/bardia/Downloads/data 4/data/351_problem_id/30837_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/351_problem_id/30837_author_id/Accepted.py	
+@@ -10,23 +10,25 @@ b21 = input()
+ sList = []
+ sList.append(a11[0])
+ sList.append(a11[1])
+-sList.append(a21[0])
+ sList.append(a21[1])
++sList.append(a21[0])
+ 
+-sList.remove('X')
++sList.remove("X")
+ sList.append(sList[0])
+ sList.append(sList[1])
+ 
++#print(sList)
++
+ pList = []
+ pList.append(b11[0])
+ pList.append(b11[1])
+-pList.append(b21[0])
+ pList.append(b21[1])
++pList.append(b21[0])
+ 
+ pList.remove("X")
+ 
+-pList = pList[::-1]
+-
++#pList = pList[::-1]
++#print(pList)
+ s1 = s2 = ""
+ 
+ for i in sList:

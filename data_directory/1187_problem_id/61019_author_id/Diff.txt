@@ -1,0 +1,40 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/61019_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/61019_author_id/Accepted.py
+index c214f77..57a3632 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/61019_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/61019_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ a1=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s",
+ A1=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+ def Buscar(x):
+     count=-1
+-    k=1
++    k=0
+     while k<len(a1) and count==-1:
+         if x==a1[k]:
+             count=1
+@@ -12,7 +12,7 @@ def Buscar(x):
+     return count
+ def Buscar2(x):
+     count=0
+-    k=1
++    k=0
+     while k<len(a1) and count==0:
+         if x==A1[k]:
+             count=1
+@@ -22,15 +22,12 @@ y=0
+ for k in range(len(A)):
+     if Buscar2(A[k])==1:
+         y+=1
+-if Buscar(A[0])!=-1 and y==len(A)-2:
++if Buscar(A[0])!=-1 and y==len(A)-1:
+     cadena = "".join(A)
+     cadena=cadena.capitalize()
+ elif y==len(A):
+     cadena = "".join(A)
+     cadena=cadena.lower()
+-elif len(A)==1:
+-    cadena = "".join(A)
+-    cadena=cadena.capitalize()
+ else:
+     cadena = "".join(A)
+ print(cadena)
+\ No newline at end of file

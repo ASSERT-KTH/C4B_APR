@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/102_problem_id/15609_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/102_problem_id/15609_author_id/Accepted.py
+index e25e7c0..53c4dee 100644
+--- a/Users/bardia/Downloads/data 4/data/102_problem_id/15609_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/102_problem_id/15609_author_id/Accepted.py	
+@@ -8,4 +8,5 @@ if mins > (d1+d2+d3):
+ if mins > (2*d1+2*d3):
+     mins = (2*d1+2*d3)
+ if mins > (2*d2+2*d3):
+-    mins = (2*d2+2*d3)
+\ No newline at end of file
++    mins = (2*d2+2*d3)
++print(mins)
+\ No newline at end of file

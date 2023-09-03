@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2320_problem_id/7361_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2320_problem_id/7361_author_id/Accepted.py
+index bd8d587..c9c611f 100644
+--- a/Users/bardia/Downloads/data 4/data/2320_problem_id/7361_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2320_problem_id/7361_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ from itertools import combinations
+ nl = list(map(int, input().split()))
+ ol = input().split()
+-ans = 1000000000
++ans = 10000000000000
+ for x in combinations(nl,2):
+     a,b = x
+     tl = nl[:]

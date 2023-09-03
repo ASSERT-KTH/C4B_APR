@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1940_problem_id/6296_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1940_problem_id/6296_author_id/Accepted.py
+index 2ca9051..686ac07 100644
+--- a/Users/bardia/Downloads/data 4/data/1940_problem_id/6296_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1940_problem_id/6296_author_id/Accepted.py	
+@@ -16,12 +16,13 @@ def prime(n):
+ 
+ def solve(n):
+ 	ans = 0
++	cnt = [0 for i in range(n + 1)]
+ 	for i in range(2, n + 1):
+-		c = 0
+-		for j in range(2, i + 1):
+-			if prime(j) and divmod(i, j)[1] == 0:
+-				c += 1
+-		if c == 2:
++		if prime(i):
++			for j in range(i, n + 1, i):
++				cnt[j] += 1
++	for i in range(n + 1):
++		if cnt[i] == 2:
+ 			ans += 1
+ 	return ans
+ 

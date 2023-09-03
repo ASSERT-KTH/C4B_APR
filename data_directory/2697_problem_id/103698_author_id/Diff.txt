@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2697_problem_id/103698_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2697_problem_id/103698_author_id/Accepted.py
+index 3505e5c..466080e 100644
+--- a/Users/bardia/Downloads/data 4/data/2697_problem_id/103698_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2697_problem_id/103698_author_id/Accepted.py	
+@@ -6,7 +6,6 @@ for k in range(1000000):
+ 	n = ((d-b+c*k)/a)
+ 	if n>=0 and not n%1:
+ 		br = k
+-		print(br)
+ 		break
+ if br!=-1:
+ 	print(d+c*br)

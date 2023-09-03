@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/764_problem_id/1560_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/764_problem_id/1560_author_id/Accepted.py
+index 194a61a..89773d9 100644
+--- a/Users/bardia/Downloads/data 4/data/764_problem_id/1560_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/764_problem_id/1560_author_id/Accepted.py	
+@@ -1,5 +1,10 @@
+ a=input()
+ b=a.split()
+-average=int((int(b[0])+int(b[1])+int(b[2]))/3)
+-dist=abs(int(b[0])-average)+abs(int(b[1])-average)+abs(int(b[2])-average)
++b.sort(key=float)
++dist=200
++xn=int(b[0])
++while xn<=int(b[2]):
++    if abs(xn-int(b[0]))+abs(xn-int(b[1]))+abs(xn-int(b[2]))<dist:
++        dist=abs(xn-int(b[0]))+abs(xn-int(b[1]))+abs(xn-int(b[2]))
++    xn+=1
+ print(dist)
+\ No newline at end of file

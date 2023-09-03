@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/208_problem_id/3321_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/208_problem_id/3321_author_id/Accepted.py
+index 951b025..d19e200 100644
+--- a/Users/bardia/Downloads/data 4/data/208_problem_id/3321_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/208_problem_id/3321_author_id/Accepted.py	
+@@ -8,18 +8,9 @@ d = int(d)
+ e = abs(a-c)
+ f = abs(b-d)
+ g = 0
+-if e == 0:
+-	print(f)
+-if f == 0:
++if e >= f:
+ 	print(e)
+-else:
+-	if e == f:
+-		print(e)
+-	elif e > f:
+-		g = e-f
+-		print(f+g)
+-	elif f > e:
+-		g = f-e
+-		print(e+g)			
++elif f >= e:
++	print(f)	
+ 
+-# 1481128837238
+\ No newline at end of file
++# 1481129669675
+\ No newline at end of file

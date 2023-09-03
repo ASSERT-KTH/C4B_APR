@@ -1,0 +1,1 @@
+[{'inputdata': 'xqjqmenkodmlhzyzmmvofdngktygbbxbzpluzcohohmalkoeuwfikblltaaigv', 'expectedresult': 'NO'}, {'inputdata': 'oohell', 'expectedresult': 'NO'}, {'inputdata': 'hell', 'expectedresult': 'NO'}]

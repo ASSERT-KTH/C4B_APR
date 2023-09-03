@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1960_problem_id/39860_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1960_problem_id/39860_author_id/Accepted.py
+index d46aba1..4541f4f 100644
+--- a/Users/bardia/Downloads/data 4/data/1960_problem_id/39860_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1960_problem_id/39860_author_id/Accepted.py	
+@@ -1,16 +1,17 @@
+ matrix = [[int(x) for x in input().split()] for i in range(5)]
+ moves = 0
+ 
+-for i in range(0,5,1) :
+-    for n in range(0,5,1):
++for i in range(5) :
++    for n in range(5):
+         if matrix [i][n] == 1:
+             if i != n :
+                 moves = abs (i - 2) + abs(n - 2)
+             elif i == n :
+                 if n == 2 :
+                     moves = 0
+-                else :
+-                    moves = (int(i/2))+2
++                elif i == n  :
++                    moves =abs( i - 2) + abs(n - 2)
++
+ 
+ 
+ print(moves)
+\ No newline at end of file

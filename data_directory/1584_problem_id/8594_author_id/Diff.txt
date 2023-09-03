@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1584_problem_id/8594_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1584_problem_id/8594_author_id/Accepted.py
+index 6be2bf2..dca0bd7 100644
+--- a/Users/bardia/Downloads/data 4/data/1584_problem_id/8594_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1584_problem_id/8594_author_id/Accepted.py	
+@@ -1,4 +1,6 @@
+ s=input()
+ while s.find('//')!=-1:
+     s=s.replace('//','/')
++if len(s)>1 and s[-1]=='/':
++    s=s[:-1]
+ print(s)
+\ No newline at end of file

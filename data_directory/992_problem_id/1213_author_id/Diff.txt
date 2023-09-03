@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/992_problem_id/1213_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/992_problem_id/1213_author_id/Accepted.py
+index bfc570e..579692c 100644
+--- a/Users/bardia/Downloads/data 4/data/992_problem_id/1213_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/992_problem_id/1213_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ if n>m:
+ else:
+     a = m 
+ b = 0
+-for i in range(a,10000):
++for i in range(a,10001):
+     if (a%n == 0) and (a%m == 0):
+         b = a
+         break 

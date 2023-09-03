@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2900_problem_id/15029_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2900_problem_id/15029_author_id/Accepted.py
+index 21575c2..ecf6156 100644
+--- a/Users/bardia/Downloads/data 4/data/2900_problem_id/15029_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2900_problem_id/15029_author_id/Accepted.py	
+@@ -8,4 +8,4 @@ for i in range (3, n+1):
+     if abs(angle-a)<minR:
+         minR=abs(angle-a)
+         x=i
+-print("1 2", x)
+\ No newline at end of file
++print("2 1", x)
+\ No newline at end of file

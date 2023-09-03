@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/968_problem_id/45038_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/968_problem_id/45038_author_id/Accepted.py
+index 38a6e4d..2f16af2 100644
+--- a/Users/bardia/Downloads/data 4/data/968_problem_id/45038_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/968_problem_id/45038_author_id/Accepted.py	
+@@ -2,6 +2,8 @@ import math
+ m,d=map(int,input().split())
+ if (m<8)and(m%2==1):
+     c=31
++elif m==2:
++    c=28
+ elif (m<8):
+     c=30
+ elif (m>=8)and(m%2==0):

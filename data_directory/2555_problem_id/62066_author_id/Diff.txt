@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/62066_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/62066_author_id/Accepted.py
+index 67744c5..e744e73 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/62066_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/62066_author_id/Accepted.py	
+@@ -16,7 +16,7 @@ for x in players:
+                 break
+     elif  x == "1" :
+         zero_output = ""
+-        one_output = zero_output + x
++        one_output = one_output + x
+         if len(one_output) == 7:
+             print ("YES")
+             break

@@ -1,0 +1,11 @@
+n,k=list(map(int,input().strip().split(' ')))
+TIME=4*60-k
+
+for i in range(0,n+1):
+    if 5*(i*(i+1))//2<=TIME:
+        1
+    else:
+        break
+    
+ans=i   
+print(ans)

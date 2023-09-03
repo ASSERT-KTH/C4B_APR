@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/819_problem_id/1189_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/819_problem_id/1189_author_id/Accepted.py
+index b5b4c29..08df126 100644
+--- a/Users/bardia/Downloads/data 4/data/819_problem_id/1189_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/819_problem_id/1189_author_id/Accepted.py	
+@@ -4,5 +4,5 @@ for i, c in enumerate(s):
+ 	if c in "AEIOUY":
+ 		res = max(res, i - last)
+ 		last = i
+-res = max(res, len(s) - i)
++res = max(res, len(s) - last)
+ print(res)
+\ No newline at end of file

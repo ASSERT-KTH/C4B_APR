@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/481_problem_id/37866_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/481_problem_id/37866_author_id/Accepted.py
+index 13ec8bb..0cce7df 100644
+--- a/Users/bardia/Downloads/data 4/data/481_problem_id/37866_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/481_problem_id/37866_author_id/Accepted.py	
+@@ -1,11 +1,12 @@
+ n = int(input())
+ 
+ mn = n//7*2
+-if mn%7 == 6: mn+=1
++if n%7 == 6: mn+=1
+ 
+ mx = 2+(n-2)//7*2
+-if (mn-2)%7 == 6: mx+=1
++if (n-2)%7 == 6: mx+=1
+ if n==1:
+     mn = 0
+     mx = 1
++    
+ print(mn,mx)
+\ No newline at end of file

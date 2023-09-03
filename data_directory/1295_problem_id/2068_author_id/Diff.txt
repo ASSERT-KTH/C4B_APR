@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1295_problem_id/2068_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1295_problem_id/2068_author_id/Accepted.py
+index 7aacda1..a02ef0c 100644
+--- a/Users/bardia/Downloads/data 4/data/1295_problem_id/2068_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1295_problem_id/2068_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ n, k, l, c, d, p, nl, np = map(int,input().split())
+-x=round((k*l-(k*l)%nl)/nl)
++x=(int)((k*l-(k*l)%nl)/nl)
+ y=c*d
+-z=round(p/np)
++z=(int)(p/np)
+ if(x>y):
+     if(y>z):
+         print((int)(z/n))

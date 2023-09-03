@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2429_problem_id/55099_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2429_problem_id/55099_author_id/Accepted.py
+index d678ded..863d513 100644
+--- a/Users/bardia/Downloads/data 4/data/2429_problem_id/55099_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2429_problem_id/55099_author_id/Accepted.py	
+@@ -15,7 +15,7 @@ for i in range(len(dim)):
+     else:
+         for j in range(i, 3):
+             answer[j] += k // (3 - i)
+-        for j in range(i, (k % (3 - i))):
++        for j in range(i, (k % (3 - i)) + i):
+             answer[j] += 1
+         break
+ 

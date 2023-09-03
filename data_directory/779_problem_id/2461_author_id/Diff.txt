@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/779_problem_id/2461_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/779_problem_id/2461_author_id/Accepted.py
+index a7ecab8..2c37fe9 100644
+--- a/Users/bardia/Downloads/data 4/data/779_problem_id/2461_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/779_problem_id/2461_author_id/Accepted.py	
+@@ -1,6 +1,4 @@
+ x = input()
+ n = int(x[:-1]) - 1
+-if n >= 2:
+-    n -= 2
+ s = [4, 5, 6, 3, 2, 1][ord(x[-1]) - ord('a')]
+-print(7 * n + s)
+\ No newline at end of file
++print(n // 4 * 16 + n % 2 * 7 + s)
+\ No newline at end of file

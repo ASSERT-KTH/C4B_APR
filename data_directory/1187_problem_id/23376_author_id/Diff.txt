@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/23376_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/23376_author_id/Accepted.py
+index 465bc88..3d8e796 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/23376_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/23376_author_id/Accepted.py	
+@@ -16,8 +16,8 @@ for i in range(len(s)):
+ if kt2 == len(s):
+ 	print(s.lower())
+ elif (kt2 == len(s)-1) and (ord(s[0])>=97):
+-	print(s[0].upper(), s[1:].lower())
++	s1 += s[0].upper()
++	s1 += s[1:].lower()
++	print(s1)
+ else:
+-	print(s)
+-	
+-print(s1)
+\ No newline at end of file
++	print(s)
+\ No newline at end of file

@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/385_problem_id/26989_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/385_problem_id/26989_author_id/Accepted.py
+index f08fac1..81845de 100644
+--- a/Users/bardia/Downloads/data 4/data/385_problem_id/26989_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/385_problem_id/26989_author_id/Accepted.py	
+@@ -18,4 +18,7 @@ else:
+     if h1 >= h2:
+         print("1")
+     else:
+-        print(int((h2-h1)/(a*12 - b*12))+2)
+\ No newline at end of file
++        if (h2-h1)/(a*12 - b*12) > int((h2-h1)/(a*12 - b*12)):
++            print(int((h2-h1)/(a*12 - b*12))+2)
++        else:
++            print(int((h2-h1)/(a*12 - b*12))+1)
+\ No newline at end of file

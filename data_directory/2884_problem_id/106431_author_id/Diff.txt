@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2884_problem_id/106431_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2884_problem_id/106431_author_id/Accepted.py
+index dc16413..7e8a522 100644
+--- a/Users/bardia/Downloads/data 4/data/2884_problem_id/106431_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2884_problem_id/106431_author_id/Accepted.py	
+@@ -7,12 +7,14 @@ def sumOfDigits(s):
+ 
+ 
+ def binSearch(s, l, u):
+-	if (((l+u)//2) + 1 - sumOfDigits(((l+u)//2)+1)) >= s:
++	if (((l+u)//2) + 1 - sumOfDigits(((l+u)//2)+1)) >= s and (((l+u)//2) - sumOfDigits(((l+u)//2))) < s:
+ 		#print((l+u)//2)
+ 		return (l+u)//2
+-	if (((l+u)//2) + 1 - sumOfDigits(((l+u)//2)+1)) < s:
++	if (((l+u)//2) - sumOfDigits(((l+u)//2))) < s:
+ 		#print((l+u)//2)
+ 		return binSearch(s, ((l+u)//2)+1, u)
++	if (((l+u)//2) - sumOfDigits(((l+u)//2))) >= s:
++		return binSearch(s, l, ((l+u)//2)-1)
+ 
+ n, s = input().strip().split(' ')
+ s = int(s)

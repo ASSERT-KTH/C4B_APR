@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1960_problem_id/79797_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1960_problem_id/79797_author_id/Accepted.py
+index d9a0e9d..724bf74 100644
+--- a/Users/bardia/Downloads/data 4/data/1960_problem_id/79797_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1960_problem_id/79797_author_id/Accepted.py	
+@@ -2,12 +2,14 @@ middle_y = 3
+ middle_x = 3
+ lines = []
+ for i in range(5):
+-    lines[i] = input()
++    lines.insert(i, input())
+ 
+ for i in range(5):
+-    line = [int(x) for x in lines[i]]
+-    for idx in line:
+-        if line[idx] > 0:
++    line = [int(x) for x in lines[i].split()]
++    idx = 0
++    for val in line:
++        if val > 0:
+             swap_x = abs(idx + 1 - middle_x)
+             swap_y = abs(i + 1 - middle_y)
+-            print (swap_x + swap_y)
+\ No newline at end of file
++            print (swap_x + swap_y)
++        idx += 1
+\ No newline at end of file

@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/957_problem_id/88_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/957_problem_id/88_author_id/Accepted.py
+index fb7e32a..f644faa 100644
+--- a/Users/bardia/Downloads/data 4/data/957_problem_id/88_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/957_problem_id/88_author_id/Accepted.py	
+@@ -1,6 +1,7 @@
+ x=input()
+ a=x[x.index('R')%4::4]
+ b=x[x.index('B')%4::4]
+-c=x[x.index('Y')::4]
+-d=x[x.index('G')::4]
++c=x[x.index('Y')%4::4]
++d=x[x.index('G')%4::4]
++
+ print(a.count('!'),b.count('!'),c.count('!'),d.count('!'))
+\ No newline at end of file

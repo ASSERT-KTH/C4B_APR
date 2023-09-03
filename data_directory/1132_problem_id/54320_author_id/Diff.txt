@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/54320_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/54320_author_id/Accepted.py
+index d30ad9b..95fa180 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/54320_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/54320_author_id/Accepted.py	
+@@ -24,5 +24,5 @@ else :
+             if int(n)%i ==0 :
+                 k+=1
+                 break
+-if k!=0 : print('YES')
+-else : print('NO')
+\ No newline at end of file
++    if k!=0 : print('YES')
++    else : print('NO')
+\ No newline at end of file

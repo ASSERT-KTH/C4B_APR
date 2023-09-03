@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1607_problem_id/28772_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1607_problem_id/28772_author_id/Accepted.py
+index 96edbff..8831332 100644
+--- a/Users/bardia/Downloads/data 4/data/1607_problem_id/28772_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1607_problem_id/28772_author_id/Accepted.py	
+@@ -16,7 +16,5 @@ def count(x):
+       res += 1
+   return res 
+ 
+-T = int(input())
+-for t in range(T):
+-  l, r = map(int, input().split())
+-  print(count(r) - count(l-1))
+\ No newline at end of file
++l, r = map(int, input().split())
++print(count(r) - count(l-1))
+\ No newline at end of file

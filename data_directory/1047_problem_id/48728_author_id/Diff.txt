@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1047_problem_id/48728_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1047_problem_id/48728_author_id/Accepted.py
+index a441165..71371da 100644
+--- a/Users/bardia/Downloads/data 4/data/1047_problem_id/48728_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1047_problem_id/48728_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ hh,mm = input().split(':')
+ hours = str(int(hh[1])+1)+hh[0]
+-if  hh<='05' and mm<=str(int(hh[1]))+hh[0]:
++if  hh<='05' and mm<=str(int(hh[1]))+hh[0] and hh>'00':
+     print(hh+':'+hh[::-1])
+ elif hh<='05':
+     

@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/23234_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/23234_author_id/Accepted.py
+index 52208c7..8b48b6c 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/23234_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/23234_author_id/Accepted.py	
+@@ -1,9 +1,13 @@
+ s=list(input())
+ h=list("hello")
+ n=[]
++j=0
+ for i in s:
+-    if i in h and n.count(i) < h.count(i):
++    if i == h[j]:
+         n.append(i)
++        j+=1
++    if j==5:
++        break
+ if n==h:
+     print("YES")
+ else:

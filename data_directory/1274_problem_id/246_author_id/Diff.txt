@@ -1,0 +1,47 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1274_problem_id/246_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1274_problem_id/246_author_id/Accepted.py
+index 85a1568..24900f3 100644
+--- a/Users/bardia/Downloads/data 4/data/1274_problem_id/246_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1274_problem_id/246_author_id/Accepted.py	
+@@ -1,31 +1,17 @@
+ def dragon_injurd(k,l,m,n,d):
+-    dragon=[0]*(d+1)
++    dragon=[0]*d
+     r=0
+-    injurd=sorted([k,l,m,n])
+-
+-
+-
++    injurd=[k,l,m,n]
++    # return dragon
+     for i in range(4):
+-        if dragon[injurd[i]]!=11:
+-            dragon[injurd[i]]=11
+-            for j in range(injurd[i],d+1,injurd[i]):
+-                dragon[j]=11
+-    return dragon.count(11)
+-
+-
+-
+-
+-
+-
+-    # for i in range(4):
+-    #     r=0
+-    #     while r<=d-1:
+-    #         if (r+1)%injurd[i]==0:
+-    #             dragon[r]=1
+-    #         r+=1
+-    # # return injurd
+-    # return sum(dragon)
+-    # # return dragon
++        r=0
++        while r<=d-1:
++            if (r+1)%injurd[i]==0:
++                dragon[r]=1
++            r+=1
++    # return injurd
++    return sum(dragon)
++    # return dragon
+ def main():
+     k=int(input())
+     l=int(input())

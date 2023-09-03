@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1983_problem_id/23118_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1983_problem_id/23118_author_id/Accepted.py
+index fcc8f12..0c3afe8 100644
+--- a/Users/bardia/Downloads/data 4/data/1983_problem_id/23118_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1983_problem_id/23118_author_id/Accepted.py	
+@@ -3,7 +3,6 @@ k = int(input())
+ r = 0
+ 
+ for i in range(k-1):
+-    r += (k - i)*(i + 1)
+-    if i > 0:
+-        r -= 1
++    r += (k - i)*(i + 1) - i
++        
+ print(r+1)
+\ No newline at end of file

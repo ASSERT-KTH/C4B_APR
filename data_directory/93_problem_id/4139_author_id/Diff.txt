@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/93_problem_id/4139_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/93_problem_id/4139_author_id/Accepted.py
+index a4b1e73..7a9f9ae 100644
+--- a/Users/bardia/Downloads/data 4/data/93_problem_id/4139_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/93_problem_id/4139_author_id/Accepted.py	
+@@ -6,4 +6,9 @@ if (b-a) % k == 0:
+     else:
+         print((b-a)//k)
+ else:
+-    print((b-a)//k)
+\ No newline at end of file
++    if a % k == 0:
++        print(b//k-a//k+1)
++    elif b % k == 0:
++        print(b//k-a//k)
++    else:
++        print(b//k-a//k)
+\ No newline at end of file

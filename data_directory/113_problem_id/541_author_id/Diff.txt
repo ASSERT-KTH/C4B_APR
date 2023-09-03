@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/113_problem_id/541_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/113_problem_id/541_author_id/Accepted.py
+index 504c4f1..445496a 100644
+--- a/Users/bardia/Downloads/data 4/data/113_problem_id/541_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/113_problem_id/541_author_id/Accepted.py	
+@@ -1,16 +1,17 @@
+ # Description of the problem can be found at http://codeforces.com/problemset/problem/602/A
+ 
+-def ic(l_c):
+-    for i in range(len(l_c)):
+-        if int(l_c[i]) >= 10:
+-            l_c[i] = chr(int(l_c[i]) - 10 + ord("A"))
+-    return l_c
++def calc():
++    n, b = map(int, input().split())
++    x  =list(map(int, input().split()))
++    a = 0
++    for i in x:
++        a = a * b + i
++    return a
+ 
+ l_n = list()
+ 
+ for _ in range(2):
+-    n, b = map(int, input().split())
+-    l_n.append(int("".join(ic(input().split())), b))
++    l_n.append(calc())
+ 
+ if l_n[0] < l_n[1]:
+     print("<")

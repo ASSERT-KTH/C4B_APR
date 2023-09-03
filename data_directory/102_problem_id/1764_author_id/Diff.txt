@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/102_problem_id/1764_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/102_problem_id/1764_author_id/Accepted.py
+index b8f60ff..193108d 100644
+--- a/Users/bardia/Downloads/data 4/data/102_problem_id/1764_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/102_problem_id/1764_author_id/Accepted.py	
+@@ -1,9 +1,13 @@
+ #problem 599A
+ string=input()
+ list_=string.split()
++answer=[]
+ x=(int(list_[0])+int(list_[1]))*2
+-y=int(list_[0])+int(list_[1])+int(list_[2])
+-if x>y:
+-    print(y)
+-else:
+-    print(x)
+\ No newline at end of file
++answer.append(x)
++x=int(list_[0])+int(list_[1])+int(list_[2])
++answer.append(x)
++x=(int(list_[1])+int(list_[2]))*2
++answer.append(x)
++x=(int(list_[2])+int(list_[0]))*2
++answer.append(x)
++print(min(answer))
+\ No newline at end of file

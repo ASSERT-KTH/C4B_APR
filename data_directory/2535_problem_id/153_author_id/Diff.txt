@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2535_problem_id/153_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2535_problem_id/153_author_id/Accepted.py
+index 2cdc2e6..0efe8b8 100644
+--- a/Users/bardia/Downloads/data 4/data/2535_problem_id/153_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2535_problem_id/153_author_id/Accepted.py	
+@@ -1,9 +1,11 @@
+ #n = int(input())
+ n, m = map(int, input().split())
+ #s = input()
+-c = list(map(int, input().split()))
++#c = list(map(int, input().split()))
+ i = 1
+-while i <= n and i <= m:
++while i <= m:
+     m -= i
+     i += 1
++    if i > n:
++        i = 1
+ print(m)
+\ No newline at end of file

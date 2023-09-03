@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1804_problem_id/60743_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1804_problem_id/60743_author_id/Accepted.py
+index c67a34e..a53ed9a 100644
+--- a/Users/bardia/Downloads/data 4/data/1804_problem_id/60743_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1804_problem_id/60743_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ word=input()
+-word=''.join(set(word))
+-if (len(word)%2==0):
+-    print("CHAT WITH HER")
++jh=''.join(set(word))
++if (len(jh)%2==0):
++    print("CHAT WITH HER!")
+ else:
+     print("IGNORE HIM!")
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/529_problem_id/4053_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/529_problem_id/4053_author_id/Accepted.py
+index 629d87e..23c1d92 100644
+--- a/Users/bardia/Downloads/data 4/data/529_problem_id/4053_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/529_problem_id/4053_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ def compute():
+     A, B, n, x = map(int,input().split())
+     MOD = int(1e9+7)
+     i = (pow(A,n,MOD)*x)%MOD
+-    if A==1: j = B*(n-1)
++    if A==1: j = B*n
+     else: j = (B*(pow(A,n,MOD)-1)*(pow(A-1,MOD-2,MOD)))%MOD
+     return str((i+j)%MOD)
+ 

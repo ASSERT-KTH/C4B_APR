@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/93_problem_id/14825_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/93_problem_id/14825_author_id/Accepted.py
+index 16dfbea..45d6e5b 100644
+--- a/Users/bardia/Downloads/data 4/data/93_problem_id/14825_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/93_problem_id/14825_author_id/Accepted.py	
+@@ -4,8 +4,7 @@ k = inD[0]
+ a = inD[1]
+ b = inD[2]
+ N = 0
+-if (0 <= a <= b) or (a <= b <= 0):
+-    N = (b - a + 1)//k
+-if (a < 0) and (b > 0):
+-    N = -a//k + b//k + 1
++a = a - k if a % k == 0 else a - a % k
++b = b - b % k
++N = (b - a) // k
+ print(N)
+\ No newline at end of file

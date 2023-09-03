@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/244_problem_id/13862_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/244_problem_id/13862_author_id/Accepted.py
+index 3146ca3..5ee9842 100644
+--- a/Users/bardia/Downloads/data 4/data/244_problem_id/13862_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/244_problem_id/13862_author_id/Accepted.py	
+@@ -10,13 +10,15 @@ def func(s,x):
+         return 0
+     if (s%2==1 and x%2==1):
+         return 2*func(s//2, x//2)
+-    if (s%2==1 and x%2==0)or (s%2== 0 and x%2==1):
++    if (s%2==1 and x%2==0):
++        return 0
++    if (s%2== 0 and x%2==1):
+         return 0
+     if s%2==0 and x%2==0:
+         return func(s//2 - 1, x//2) + func(s//2, x//2)
+     
+ s,x = map(int,input().split())
+ cnt = func(s, x)
+-if s**0 == x:
++if s^0 == x:
+     cnt = cnt - 2;
+ print(cnt)
+\ No newline at end of file

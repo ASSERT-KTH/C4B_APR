@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1142_problem_id/4596_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1142_problem_id/4596_author_id/Accepted.py
+index b9c241b..fb51b59 100644
+--- a/Users/bardia/Downloads/data 4/data/1142_problem_id/4596_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1142_problem_id/4596_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ data = [int(x) for x in input().split()]
+ p = data[0] - data[1] 
+-pf = data[0] - p - data[2]
++pf = data[0] - data[1] - 1 - data[2]
+ if pf <=0:
+     pf = 0
+ print(p-pf)
+\ No newline at end of file

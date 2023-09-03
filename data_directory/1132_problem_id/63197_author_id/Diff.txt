@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/63197_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/63197_author_id/Accepted.py
+index d2d7e67..d43edc1 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/63197_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/63197_author_id/Accepted.py	
+@@ -1,6 +1,14 @@
++lucks = [4, 7, 44, 47, 74, 77, 444, 447, 474, 477, 744, 747, 774, 777]
++
+ num = int(input())
+ 
+-if num % 4 == 0 or num % 7 == 0 or num % 47 == 0:
++flag = False
++
++for luck in lucks:
++    if num % luck == 0:
++        flag = True
++
++if flag:
+     print('YES')
+ else:
+     print('NO')
+\ No newline at end of file

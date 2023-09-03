@@ -1,0 +1,30 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2556_problem_id/8154_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2556_problem_id/8154_author_id/Accepted.py
+index dc01694..adfc8b6 100644
+--- a/Users/bardia/Downloads/data 4/data/2556_problem_id/8154_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2556_problem_id/8154_author_id/Accepted.py	
+@@ -1,5 +1,18 @@
+ n=0
+ s=""
++def check():
++    global n
++    global s 
++    t=0
++    for i in range(0,len(s)//2):
++      t*=10
++      t+=7
++    for i in range(0,len(s)//2):
++      t*=10
++      t+=4
++    #print(t)
++    if(int(s)>t):n+=2
++
+ def rec (i):
+    global n
+    global s
+@@ -32,4 +45,5 @@ def rec (i):
+ 
+ s=input()
+ n=len(s)+int(len(s)%2!=0)
++if(len(s)%2==0):check()
+ print(rec(0))
+\ No newline at end of file

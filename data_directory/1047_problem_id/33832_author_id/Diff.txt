@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1047_problem_id/33832_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1047_problem_id/33832_author_id/Accepted.py
+index bbce530..cfb3ece 100644
+--- a/Users/bardia/Downloads/data 4/data/1047_problem_id/33832_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1047_problem_id/33832_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ k = input()
+ h = k[0:2]
+ m = k[3:]
+-if h == '23':
++if h == '23' and m >= '32':
+     print('00:00')
+     exit()
+ if m < h[::-1]:

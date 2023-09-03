@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2542_problem_id/2970_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2542_problem_id/2970_author_id/Accepted.py
+index 528b895..c5915ca 100644
+--- a/Users/bardia/Downloads/data 4/data/2542_problem_id/2970_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2542_problem_id/2970_author_id/Accepted.py	
+@@ -12,6 +12,7 @@ def solve():
+     # now only way it is one is if it is one big square
+     first = m - (a - (a // m) * m)
+     last = b - (b // m) * m + 1
++    if b + 1 == n: last = m
+     # print(first, last)
+     if first == m and last == m:
+         print(1)

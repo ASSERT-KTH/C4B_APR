@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1721_problem_id/1287_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1721_problem_id/1287_author_id/Accepted.py
+index 1b79975..af82ccb 100644
+--- a/Users/bardia/Downloads/data 4/data/1721_problem_id/1287_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1721_problem_id/1287_author_id/Accepted.py	
+@@ -1,3 +1,3 @@
+ if __name__ == '__main__':
+     n = int(input())
+-    print(' '.join([str((it + 1) % n + 1) for it in range(n)]))
+\ No newline at end of file
++    print(' '.join([str((it - 1) % n + 1) for it in range(n)]))
+\ No newline at end of file

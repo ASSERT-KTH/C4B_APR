@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1819_problem_id/1287_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1819_problem_id/1287_author_id/Accepted.py
+index d555afe..4fd2170 100644
+--- a/Users/bardia/Downloads/data 4/data/1819_problem_id/1287_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1819_problem_id/1287_author_id/Accepted.py	
+@@ -4,9 +4,12 @@ if __name__ == '__main__':
+     k = int(k)
+     n = int(n)
+     res = list()
+-    for i in range(y + 1, n + 1):
+-        if i % k == 0:
+-            res.append(str(i - y))
++    head = y // k
++    tail = n // k
++    for i in range(head, tail + 1):
++        v = i * k
++        if y < v <= n:
++            res.append(str(v - y))
+     if len(res) > 0:
+         print(' '.join(res))
+     else:

@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2687_problem_id/82793_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2687_problem_id/82793_author_id/Accepted.py
+index e224dc5..c2bd15f 100644
+--- a/Users/bardia/Downloads/data 4/data/2687_problem_id/82793_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2687_problem_id/82793_author_id/Accepted.py	
+@@ -1,9 +1,9 @@
+-from math import sqrt
+ from math import ceil
++from decimal import Decimal
+ n,m = map(int, input().split())
+ barn = n
+ if n <= m:
+ 	print(n)
+ else:
+-	days = ceil((-1 + float(sqrt(1+8*(n-m))))/2)
++	days = ceil((-1 + Decimal(1+8*(n-m)) ** Decimal(0.5))/2)
+ 	print(days + m)
+\ No newline at end of file

@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/481_problem_id/531_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/481_problem_id/531_author_id/Accepted.py
+index c3c3346..b61f5f7 100644
+--- a/Users/bardia/Downloads/data 4/data/481_problem_id/531_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/481_problem_id/531_author_id/Accepted.py	
+@@ -7,7 +7,9 @@ if n == 1:
+ 	print(0, 1)
+ elif n % 7 == 0:
+ 	print(2*n//7, 2*n//7)
+-elif n % 7 <= 5:
+-	print(n//7*2, n//7*2 + 2)
+-else:
+-	print(n//7*2 + 1, n//7*2 + 2)
+\ No newline at end of file
++elif n % 7 == 1:
++	print(n//7*2, n//7*2 + 1)
++elif n % 7 == 6:
++	print(n//7*2 + 1, n//7*2 + 2)
++elif n % 7 <= 5 and n % 7 > 1:
++	print(n//7*2, n//7*2 + 2)
+\ No newline at end of file

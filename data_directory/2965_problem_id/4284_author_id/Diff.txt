@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2965_problem_id/4284_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2965_problem_id/4284_author_id/Accepted.py
+index 2030628..b85a672 100644
+--- a/Users/bardia/Downloads/data 4/data/2965_problem_id/4284_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2965_problem_id/4284_author_id/Accepted.py	
+@@ -5,6 +5,6 @@ if __name__ == "__main__":
+ 
+     dirs = {'^': 1, '>': 2, 'v': 3, '<': 4}
+ 
+-    if n%4 == 2: print('undefined')
++    if n%2 == 0: print('undefined')
+     elif (dirs[y]-dirs[x])%4 == n%4: print('cw')
+     else: print('ccw')
+\ No newline at end of file

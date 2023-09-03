@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2273_problem_id/58060_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2273_problem_id/58060_author_id/Accepted.py
+index fb86e02..dec3e12 100644
+--- a/Users/bardia/Downloads/data 4/data/2273_problem_id/58060_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2273_problem_id/58060_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ import math
+ n=int(input())
+ s=2*n
+ t=(math.sqrt)(1+4*s)-1
+-print (t)
++#print (t)
+ if t%2==0:
+     print ("YES")
+ else:

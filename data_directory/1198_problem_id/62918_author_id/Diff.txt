@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1198_problem_id/62918_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1198_problem_id/62918_author_id/Accepted.py
+index e6227a8..b24152c 100644
+--- a/Users/bardia/Downloads/data 4/data/1198_problem_id/62918_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1198_problem_id/62918_author_id/Accepted.py	
+@@ -5,7 +5,7 @@ Created on 2017. 7. 10.
+ ID: 133A. HQ9+
+ '''
+ 
+-pList = ["H","Q","9","+"]
++pList = ["H","Q","9"]
+ 
+ inword = input()
+ 

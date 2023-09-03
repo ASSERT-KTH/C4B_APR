@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1565_problem_id/3046_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1565_problem_id/3046_author_id/Accepted.py
+index 3fbe9c0..c14dcf5 100644
+--- a/Users/bardia/Downloads/data 4/data/1565_problem_id/3046_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1565_problem_id/3046_author_id/Accepted.py	
+@@ -3,13 +3,7 @@ def main():
+     if mode=="file":f=open("test.txt","r")
+     get = lambda :[int(x) for x in (f.readline() if mode=="file" else input()).split()]
+     [a,b,r]=get()
+-    r*=4
+-    x = a//r
+-    y = b//r
+-    ans = x * y
+-    if ans == 0 and (r//2) <=a and (r//2) <=b:ans=1
+-    #print(x,y,ans)
+-    print("First" if ans%2 == 1 else "Second")
++    print("First" if min(a,b) >= 2*r else "Second")
+     
+ 
+ 

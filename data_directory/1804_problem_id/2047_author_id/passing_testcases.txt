@@ -1,0 +1,1 @@
+[{'inputdata': 'pezu', 'expectedresult': 'CHAT WITH HER!'}, {'inputdata': 'xczn', 'expectedresult': 'CHAT WITH HER!'}, {'inputdata': 'efrk', 'expectedresult': 'CHAT WITH HER!'}, {'inputdata': 'oh', 'expectedresult': 'CHAT WITH HER!'}]

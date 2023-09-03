@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2681_problem_id/19340_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2681_problem_id/19340_author_id/Accepted.py
+index fb19b52..780df07 100644
+--- a/Users/bardia/Downloads/data 4/data/2681_problem_id/19340_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2681_problem_id/19340_author_id/Accepted.py	
+@@ -1,6 +1,5 @@
++# 3 -> 27
++# 1 -> 4
++a = [0, 4, 22, 27, 58, 85, 94, 121, 166, 202, 265, 274, 319, 346, 355, 378, 382, 391, 438, 454, 483, 517, 526, 535, 562, 576, 588, 627, 634, 636, 645, 648, 654, 663, 666, 690, 706, 728, 729, 762, 778, 825, 852, 861, 895, 913, 915, 922, 958, 985, 1086, 1111, 1165]
+ n = int(input())
+-if n == 3:
+-    print(27)
+-    exit(0)
+-assert n == 1
+-print(4)
+\ No newline at end of file
++print(a[n])
+\ No newline at end of file

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/814_problem_id/1518_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/814_problem_id/1518_author_id/Accepted.py
+index ba3c5a5..e598b09 100644
+--- a/Users/bardia/Downloads/data 4/data/814_problem_id/1518_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/814_problem_id/1518_author_id/Accepted.py	
+@@ -11,7 +11,7 @@ else:
+     c=1
+     while(1):
+         x=p*c
+-        if(x%10==r):
++        if(x%10==r or x%10==0):
+             print(c)
+             break
+         c+=1
+\ No newline at end of file

@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1570_problem_id/76965_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1570_problem_id/76965_author_id/Accepted.py
+index 6b6a169..94a34db 100644
+--- a/Users/bardia/Downloads/data 4/data/1570_problem_id/76965_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1570_problem_id/76965_author_id/Accepted.py	
+@@ -1,9 +1,7 @@
+-k=int(input())
+-b=int(input())
+-n=int(input())
+-t=int(input())
++entrada=input().split(" ")
++listae = list(map(int, entrada))#Convertir strs a int
+ stock=1
+-while(k*stock+b<=t and n>0):
+-    stock=k*stock+b
+-    n-=1
+-print(n)
+\ No newline at end of file
++while(listae[0]*stock+listae[1]<=listae[3] and listae[2]>0):
++    stock=listae[0]*stock+listae[1]
++    listae[2]-=1
++print(listae[2])
+\ No newline at end of file

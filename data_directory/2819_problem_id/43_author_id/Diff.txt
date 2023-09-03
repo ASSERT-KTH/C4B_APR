@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2819_problem_id/43_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2819_problem_id/43_author_id/Accepted.py
+index 716511b..f6c8718 100644
+--- a/Users/bardia/Downloads/data 4/data/2819_problem_id/43_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2819_problem_id/43_author_id/Accepted.py	
+@@ -1,7 +1,11 @@
+ nums = input()
+ nums = nums.split(' ')
+ nums = list(map(int,nums))
+-if (nums[1] - nums[0]) % 2 == 0:
++if nums[0] == nums[1]:
++    print(nums[0])
++elif (nums[1] - nums[0]) % 2 == 0:
++    print('2')
++elif (nums[1] - nums[0]) % 2 == 1 and (nums[0] % 2 == 0 or nums[1] % 2 == 0):
+     print('2')
+ else:
+     print('3')
+\ No newline at end of file

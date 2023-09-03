@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2346_problem_id/95887_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2346_problem_id/95887_author_id/Accepted.py
+index 719fd78..aba6312 100644
+--- a/Users/bardia/Downloads/data 4/data/2346_problem_id/95887_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2346_problem_id/95887_author_id/Accepted.py	
+@@ -1,5 +1,10 @@
+ def check_triangle():
+-    input_list = sorted((input()).split())
++    input_list = (input()).split()
++    i = 0
++    while i < len(input_list):
++        input_list[i] = int(input_list[i])
++        i += 1
++    input_list = sorted(input_list)
+ 
+     i = 0
+     while i < len(input_list) - 2:

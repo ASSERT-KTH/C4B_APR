@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/54670_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/54670_author_id/Accepted.py
+index a71c98e..3141e05 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/54670_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/54670_author_id/Accepted.py	
+@@ -10,9 +10,9 @@ elif n in DELITELI:
+     k = 1
+ else:
+     for i in DELITELI:
+-        if n % DELITELI[i] == 0:
++        if n % i == 0:
+             k = 1
+-        break
++            break
+ if k == 1:
+     print('YES')
+ else:

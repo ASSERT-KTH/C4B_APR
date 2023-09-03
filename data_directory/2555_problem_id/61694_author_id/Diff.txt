@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/61694_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/61694_author_id/Accepted.py
+index 204c114..915337a 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/61694_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/61694_author_id/Accepted.py	
+@@ -1,18 +1,17 @@
+ #Codeforces Beta Round #77
+ #Football
+ 
+-n = int(input())
+-temp = str(n)
++temp = input()
+ count = 0
+ flag = 0
+ for i in range(len(temp)-1):    
+     if temp[i] == temp[i+1]:
+         count += 1
+         if count>=6:
+-            flag = 1
+             print("YES")
++            flag = 1
+             break;
+     if temp[i] != temp[i+1]:
+         count = 0
+-if flag == 0:
++if flag ==0:
+     print("NO")
+\ No newline at end of file

@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1082_problem_id/4667_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1082_problem_id/4667_author_id/Accepted.py
+index 9d2a1d7..a6eb9b4 100644
+--- a/Users/bardia/Downloads/data 4/data/1082_problem_id/4667_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1082_problem_id/4667_author_id/Accepted.py	
+@@ -5,10 +5,13 @@ b = int(input())
+ s = False
+ n = 0
+ 
+-for i in range(1, int(log(b, a)) + 1):
+-    if (a ** i) == b:
++for i in range(1, 64):
++    m = a ** i
++    if m == b:
+         s = True
+         n = i - 1
++        if s or (m > b):
++            break
+ 
+ if s:
+     print('YES\n{}'.format(n))

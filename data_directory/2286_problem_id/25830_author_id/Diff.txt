@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2286_problem_id/25830_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2286_problem_id/25830_author_id/Accepted.py
+index adb199c..fda658a 100644
+--- a/Users/bardia/Downloads/data 4/data/2286_problem_id/25830_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2286_problem_id/25830_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+-V = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'y', 'Y']
++V = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U', 'y', 'Y']
+ 
+ C = ['b', 'B', 'c', 'C', 'd', 'D', 'f', 'F', 'g', 'G',
+      'h', 'H', 'j', 'J', 'k', 'K', 'l', 'L', 'm', 'M',

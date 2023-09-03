@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1027_problem_id/57997_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1027_problem_id/57997_author_id/Accepted.py
+index 77b37da..40af4ff 100644
+--- a/Users/bardia/Downloads/data 4/data/1027_problem_id/57997_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1027_problem_id/57997_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ if n <= 10:
+ elif n >= 11 and n <= 19:
+     print("4")
+ elif n == 20:
+-    print("17")
++    print("15")
+ elif n == 21:
+     print("4")
+ else:

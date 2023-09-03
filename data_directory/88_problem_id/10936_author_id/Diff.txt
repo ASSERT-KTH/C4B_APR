@@ -1,0 +1,56 @@
+diff --git a/Users/bardia/Downloads/data 4/data/88_problem_id/10936_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/88_problem_id/10936_author_id/Accepted.py
+index e64fbf7..2b89959 100644
+--- a/Users/bardia/Downloads/data 4/data/88_problem_id/10936_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/88_problem_id/10936_author_id/Accepted.py	
+@@ -1,31 +1,27 @@
+ import sys
+ n = int(input())
+-w =[None]*n
+-h =[None]*n
+-width = height = 1
++xi =[]
++yi = []
++w = h = 0
+ for i in range(n):
+     x,y = map(int,input().split())
+-    w[i] = x
+-    h[i] = y
++    xi.append(x)
++    yi.append(y)
+ if(n == 1):
+     print('-1')
+ elif(n == 2):
+-    if(w[0] == w[1]):
+-        height = abs(h[0] - h[1])
++    """not diagonal"""
++    if(xi[0] == xi[1] or yi[0] == yi[1]):
++        print('-1')
+     else:
+-        width = abs(w[0] - w[1])
+-    if(h[0] == h[1]):
+-        width = abs(w[0] - w[1])
++        print(abs((xi[0]-xi[1])*(yi[0]-yi[1])))
++else:
++    if(xi[0] == xi[1]):
++        w = abs(xi[0] - xi[2])
+     else:
+-        height = abs(h[0] - h[1])
+-    print(width * height)
+-elif(n >= 3):
+-    if(w[0] != w[1]):
+-        width = abs(w[0] - w[1])
+-    elif(w[1] != w[2]):
+-        width = abs(w[1] - w[2])
+-    if(h[0] != h[1]):
+-        height = abs(h[0] - h[1])
+-    elif(h[1] != h[2]):
+-        height = abs(h[1] - h[2])
+-    print(width * height)
+\ No newline at end of file
++        w = abs(xi[0] - xi[1])
++    if(yi[0] == yi[1]):
++        h = abs(yi[0]-yi[2])
++    else:
++        h = abs(yi[0] - yi[1])
++    print(w*h)
+\ No newline at end of file

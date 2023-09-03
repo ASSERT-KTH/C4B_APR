@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2470_problem_id/246_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2470_problem_id/246_author_id/Accepted.py
+index 791a249..be38ee9 100644
+--- a/Users/bardia/Downloads/data 4/data/2470_problem_id/246_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2470_problem_id/246_author_id/Accepted.py	
+@@ -1 +1,23 @@
+-s=input()
+\ No newline at end of file
++n,m=list(map(int,input().split()))
++
++c=n+1
++
++while c<=m:
++
++
++    for i in range(c-1,1,-1):
++        if c%i==0:
++
++            break
++    else:
++
++        if c<m:
++            print('NO')
++        elif c==m:
++            print('YES')
++        exit()
++
++
++    c+=1
++else:
++    print('NO')
+\ No newline at end of file

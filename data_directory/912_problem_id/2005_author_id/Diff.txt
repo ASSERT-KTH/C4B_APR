@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/912_problem_id/2005_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/912_problem_id/2005_author_id/Accepted.py
+index 20c2d49..67bcbc6 100644
+--- a/Users/bardia/Downloads/data 4/data/912_problem_id/2005_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/912_problem_id/2005_author_id/Accepted.py	
+@@ -3,7 +3,10 @@ time = 240
+ time -= k
+ problems = 0
+ i = 1
+-while time-(5*i) > 0:
++while time-(5*i) >= 0:
+     problems += 1
+     time -= 5*i
++    i += 1
++    if problems == n:
++        break
+ print(problems)
+\ No newline at end of file

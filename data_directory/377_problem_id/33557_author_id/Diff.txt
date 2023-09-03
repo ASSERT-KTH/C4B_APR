@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/377_problem_id/33557_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/377_problem_id/33557_author_id/Accepted.py
+index 4245404..09ab5db 100644
+--- a/Users/bardia/Downloads/data 4/data/377_problem_id/33557_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/377_problem_id/33557_author_id/Accepted.py	
+@@ -11,6 +11,9 @@ def main():
+         else:
+             a1 += 1
+             a2 -= 2
++
++        if a1 < 0 or a2 < 0:
++            break
+         ans += 1
+     print(ans)
+ 

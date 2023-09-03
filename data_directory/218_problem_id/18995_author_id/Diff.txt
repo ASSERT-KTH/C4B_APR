@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/218_problem_id/18995_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/218_problem_id/18995_author_id/Accepted.py
+index c5509f5..065034d 100644
+--- a/Users/bardia/Downloads/data 4/data/218_problem_id/18995_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/218_problem_id/18995_author_id/Accepted.py	
+@@ -13,6 +13,7 @@ if __name__ == '__main__':
+ 
+     temp_h = 0
+     temp_m = 0
++    temp_d = 0
+ 
+     temp_m = a + int(m)
+     # print(temp_m)
+@@ -21,7 +22,8 @@ if __name__ == '__main__':
+         temp_m -= (60 * temp_h)
+         # print(temp_m)
+     if(temp_h + int(h) > 23):
+-        temp_h = (temp_h + int(h)) - 24
++        temp_d = (temp_h + int(h)) // 24
++        temp_h = (temp_h + int(h)) - (temp_d*24)
+         # print(temp_h)
+     else:
+         temp_h += int(h)

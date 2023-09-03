@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2059_problem_id/89752_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2059_problem_id/89752_author_id/Accepted.py
+index 4f029ed..ef53e96 100644
+--- a/Users/bardia/Downloads/data 4/data/2059_problem_id/89752_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2059_problem_id/89752_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ import math
+ x, y, n = map(int, input().split())
+ best = 0, 0
+ mingap = 10**9
+-eps = 1e-9
++eps = 1e-15
+ for i in range(1, n+1):
+ 	m = (i*x)/y
+ 	m1 = math.floor(m)

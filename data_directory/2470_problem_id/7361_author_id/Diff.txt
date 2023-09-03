@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2470_problem_id/7361_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2470_problem_id/7361_author_id/Accepted.py
+index 747c0ed..d0a3cb5 100644
+--- a/Users/bardia/Downloads/data 4/data/2470_problem_id/7361_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2470_problem_id/7361_author_id/Accepted.py	
+@@ -1,6 +1,4 @@
++tl = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53];
+ n,m = map(int, input().split());
+-ans = True;
+-for i in range(n+1, m):
+-    if (2**i)%i==2:
+-        ans = False;
++ans = tl[tl.index(n)+1]==m;
+ print(['NO','YES'][ans]);
+\ No newline at end of file

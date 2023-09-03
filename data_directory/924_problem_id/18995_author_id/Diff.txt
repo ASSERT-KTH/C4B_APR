@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/924_problem_id/18995_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/924_problem_id/18995_author_id/Accepted.py
+index dd226f4..0b418c9 100644
+--- a/Users/bardia/Downloads/data 4/data/924_problem_id/18995_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/924_problem_id/18995_author_id/Accepted.py	
+@@ -20,10 +20,11 @@ if __name__ == '__main__':
+ 	for i in range(1,n+1):
+ 		if k <= i*m*2:
+ 			r = i
+-			for j in range(1, m+1):
+-				if k < (i*j*2 + 2):
+-					d = j
+-					break
++			d = m - (((i*m*2) - k) // 2)
+ 			break
++			# for j in range(1, m+1):
++			# 	if k <= (j*r*2):
++			# 	d = abs((-m*n) // k)
++			# 	break
+ 
+ 	print(r, d, s)
+\ No newline at end of file

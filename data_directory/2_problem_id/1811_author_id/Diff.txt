@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2_problem_id/1811_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2_problem_id/1811_author_id/Accepted.py
+index 0b9c373..9ddb833 100644
+--- a/Users/bardia/Downloads/data 4/data/2_problem_id/1811_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2_problem_id/1811_author_id/Accepted.py	
+@@ -3,10 +3,14 @@ n1, n2 = map(int, input().strip().split(' '))
+ if n1 != n2:
+ 	mx = max(n1, n2)
+ 	mn = min(n1, n2)
++	dc = mn
+ 	rem = mx - mn
+ 	if rem > 1:
+ 		sc = int(rem / 2)
+ 	else:
+ 		sc = 0
++else:
++	dc = n1
++	sc = 0
+ 
+-print(mn, sc)
+\ No newline at end of file
++print(dc, sc)
+\ No newline at end of file

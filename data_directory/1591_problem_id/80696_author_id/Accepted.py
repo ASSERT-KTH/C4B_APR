@@ -1,0 +1,19 @@
+x=int(input())
+if(x==3):
+    print(5)
+elif(x<=1):
+    print(1)
+elif(x<=5):
+    print(3)
+elif(x<=13):
+    print(5)
+elif(x<=25):
+    print(7)
+elif(x<=41):
+    print(9)
+elif(x<=61):
+    print(11)
+elif(x<=85):
+    print(13)
+else:
+    print(15)

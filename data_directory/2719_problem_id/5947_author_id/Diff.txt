@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2719_problem_id/5947_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2719_problem_id/5947_author_id/Accepted.py
+index 281f0db..a992a29 100644
+--- a/Users/bardia/Downloads/data 4/data/2719_problem_id/5947_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2719_problem_id/5947_author_id/Accepted.py	
+@@ -1,4 +1,10 @@
+ # A.Bear and Big Brother
+ a, b = map(int, input().split())
+-y = b//a
+-print(1 if a == b else y+1)
+\ No newline at end of file
++i = 0
++while a <= b:
++    i += 1
++    a = a*3
++    b = b*2
++    if a > b:
++        print(i)
++        break
+\ No newline at end of file

@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/61905_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/61905_author_id/Accepted.py
+index 4d3fb89..d01db97 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/61905_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/61905_author_id/Accepted.py	
+@@ -1,9 +1,5 @@
+ n=input()
+-count=0
+-for i in range(len(n)-1):
+-    if n[i]==n[i+1]:
+-        count=count+1
+-if count==7:
++if "1111111" in n or "0000000" in n:
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

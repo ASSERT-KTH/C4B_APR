@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/624_problem_id/43111_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/624_problem_id/43111_author_id/Accepted.py
+index b694252..17b69b3 100644
+--- a/Users/bardia/Downloads/data 4/data/624_problem_id/43111_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/624_problem_id/43111_author_id/Accepted.py	
+@@ -4,7 +4,9 @@ if x < t:
+ 	print("NO")
+ else:
+ 	x -= t
+-	if x % s == 0 or x % s == 1:
++	if x == 1:
+ 		print("NO")
++	elif x % s == 0 or x % s == 1:
++		print("YES")
+ 	else:
+-		print("YES")
+\ No newline at end of file
++		print("NO")
+\ No newline at end of file

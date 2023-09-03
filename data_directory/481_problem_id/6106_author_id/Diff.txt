@@ -1,0 +1,39 @@
+diff --git a/Users/bardia/Downloads/data 4/data/481_problem_id/6106_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/481_problem_id/6106_author_id/Accepted.py
+index a21a1dd..5347671 100644
+--- a/Users/bardia/Downloads/data 4/data/481_problem_id/6106_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/481_problem_id/6106_author_id/Accepted.py	
+@@ -1,10 +1,23 @@
+-import math
+ n=int(input())
+-if n==1 :
+-    print ("0 1")
+-elif n==2 :
+-    print ("0 2")
+-else :
+-    max=2+2*(math.floor((n-2)/7))
+-    min=2*math.floor(n/7)
+-    print(min,max)
+\ No newline at end of file
++if n%7==1 :
++    max = 1+2*((n-1)//7)
++    min = 2*((n-1)//7)
++elif n%7==2 :
++    max = 2+2*((n-2)//7)
++    min = 2*((n-2)//7)
++elif n%7==3 :
++    max = 2+2*((n-3)//7)
++    min = 2*((n-3)//7)
++elif n%7==4 :
++    max = 2+2*((n-4)//7)
++    min = 2*((n-4)//7)
++elif n%7==5 :
++    max = 2+2*((n-5)//7)
++    min = 2*((n-5)//7)
++elif n%7==6 :
++    max = 2+2*((n-6)//7)
++    min = 2*((n-6)//7)+1
++elif n%7==0 :
++    max = 2*((n)//7)
++    min = 2*((n)//7)
++print (min,max)
+\ No newline at end of file

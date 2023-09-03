@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/377_problem_id/1861_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/377_problem_id/1861_author_id/Accepted.py
+index 6ff6cdb..399f779 100644
+--- a/Users/bardia/Downloads/data 4/data/377_problem_id/1861_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/377_problem_id/1861_author_id/Accepted.py	
+@@ -2,10 +2,13 @@ a, b = (int(i) for i in input().split())
+ t = 0
+ if a > b:
+     a, b = b, a
+-while b > 2:
+-    x = (b - 1) // 2
+-    t += x
+-    a += x
+-    b -= 2 * x
+-    a, b = b, a
+-print(t + 1)
+\ No newline at end of file
++if b < 2:
++    print(0)
++else:
++    while b > 2:
++        x = (b - 1) // 2
++        t += x
++        a += x
++        b -= 2 * x
++        a, b = b, a
++    print(t + 1)
+\ No newline at end of file

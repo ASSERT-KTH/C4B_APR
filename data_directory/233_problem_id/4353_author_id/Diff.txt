@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/233_problem_id/4353_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/233_problem_id/4353_author_id/Accepted.py
+index 724f30e..e9a2917 100644
+--- a/Users/bardia/Downloads/data 4/data/233_problem_id/4353_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/233_problem_id/4353_author_id/Accepted.py	
+@@ -1,6 +1,8 @@
+ n,a,b,c=[int(input())for _ in '1234']
+ r=0
+ if b-c<a:
+-	r=n//(b-c)-b//(b-c);n-=r*(b-c)
++	r=n//(b-c)-b//(b-c)
++	if r<0:r=0
++	n-=r*(b-c)
+ 	while b<=n:t=n//b;r+=t;n=n%b+t*c
+ print(r+n//a)
+\ No newline at end of file

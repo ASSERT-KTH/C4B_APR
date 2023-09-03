@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/1560_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/1560_author_id/Accepted.py
+index 420133f..6f5fb74 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/1560_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/1560_author_id/Accepted.py	
+@@ -1,13 +1,13 @@
+ a=input()
+ b=[]
+-for i in a:
+-  b.append(i)
++for k in a:
++  b.append(k)
+ if len(b)<7:
+     print('NO')
+ elif len(b)>=7:
+   i=0
+-  while i<=len(b)-7:
+-    if int(b[i])+int(b[i+1])+int(b[i+2])+int(b[i+3])+int(b[i+4])+int(b[i+5])+int(b[i+6])%7==0:
++  while i<=(len(b)-7):
++    if int(b[i])+int(b[i+1])+int(b[i+2])+int(b[i+3])+int(b[i+4])+int(b[i+5])+int(b[i+6])==0 or int(b[i])+int(b[i+1])+int(b[i+2])+int(b[i+3])+int(b[i+4])+int(b[i+5])+int(b[i+6])==7:
+       print("YES")
+       break
+     else:

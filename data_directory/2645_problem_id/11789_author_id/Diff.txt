@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2645_problem_id/11789_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2645_problem_id/11789_author_id/Accepted.py
+index c74cf6d..e3222ec 100644
+--- a/Users/bardia/Downloads/data 4/data/2645_problem_id/11789_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2645_problem_id/11789_author_id/Accepted.py	
+@@ -1,11 +1,12 @@
+ def ginp():
+ 	return map(int, input().split())
+ 	
+-n = int(input())
++n = int(input())%6
+ x = int(input())
+-n = n%5
+ 
+-m = [[0, 1, 2], 
++
++m = [
++[0, 1, 2], 
+ [1, 0, 2], 
+ [1, 2, 0], 
+ [2, 1, 0], 

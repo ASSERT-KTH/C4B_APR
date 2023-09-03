@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/868_problem_id/2072_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/868_problem_id/2072_author_id/Accepted.py
+index b8a1cbd..0086729 100644
+--- a/Users/bardia/Downloads/data 4/data/868_problem_id/2072_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/868_problem_id/2072_author_id/Accepted.py	
+@@ -1,6 +1,9 @@
+ n = int(input())
+-n %= 4
+-res = 6
+-for i in range(1, n + 1):
+-    res *= 8
+-print(res % 10)
+\ No newline at end of file
++if n == 0:
++    print(1)
++else:
++    n %= 4
++    res = 6
++    for i in range(1, n + 1):
++        res *= 8
++    print(res % 10)
+\ No newline at end of file

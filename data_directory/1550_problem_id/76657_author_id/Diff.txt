@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1550_problem_id/76657_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1550_problem_id/76657_author_id/Accepted.py
+index bd88f5b..91e9bdb 100644
+--- a/Users/bardia/Downloads/data 4/data/1550_problem_id/76657_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1550_problem_id/76657_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ n, k = map(int, input().split())
+-print(3 * n - k)
+\ No newline at end of file
++print(max(3 * n - k, 0))
+\ No newline at end of file

@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/178_problem_id/15994_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/178_problem_id/15994_author_id/Accepted.py
+index 66835f4..429e67e 100644
+--- a/Users/bardia/Downloads/data 4/data/178_problem_id/15994_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/178_problem_id/15994_author_id/Accepted.py	
+@@ -1,9 +1,13 @@
+ l,r,k = [int(i) for i in input().split()]
+ i = 0
++g=True
+ while True :
+     t = k ** i
+     if t <=r and t >=l:
++        g=False
+         print(t,end=" ")
+-    else:
++    elif t > l:
+         break
+-    i+=1
+\ No newline at end of file
++    i+=1
++if g:
++    print(-1)
+\ No newline at end of file

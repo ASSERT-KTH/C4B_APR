@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1406_problem_id/28772_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1406_problem_id/28772_author_id/Accepted.py
+index 9be6556..67a300c 100644
+--- a/Users/bardia/Downloads/data 4/data/1406_problem_id/28772_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1406_problem_id/28772_author_id/Accepted.py	
+@@ -7,6 +7,10 @@ def rev(z):
+     z //= 10
+   return res
+   
++def revv(z):
++  res = rev(z)
++  if res != z: return res  
++  
+ def rwh_primes_x(n):
+     sieve = [True] * n
+     for i in range(3,int(n**0.5)+1,2):
+@@ -15,7 +19,7 @@ def rwh_primes_x(n):
+     return [i for i in range(3,n,2) if sieve[i]]
+ primes = rwh_primes_x(N)
+ test = set(primes)
+-found = [v for v in primes if v > 11 and rev(v) in test]
++found = [v for v in primes if revv(v) in test]
+ 
+ n = int(input())
+ print(found[n-1])
+\ No newline at end of file

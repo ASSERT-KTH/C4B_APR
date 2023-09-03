@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/44779_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/44779_author_id/Accepted.py
+index 3654e6d..e7ed784 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/44779_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/44779_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ input_str=input()
+ count=0
+ for c in range(0,len(input_str)):
+     if c==len(input_str)-1:
+-        if count>=7:
++        if count>=6:
+             print("YES")
+             break
+         else:

@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1815_problem_id/4353_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1815_problem_id/4353_author_id/Accepted.py
+index 76367f7..d66c00c 100644
+--- a/Users/bardia/Downloads/data 4/data/1815_problem_id/4353_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1815_problem_id/4353_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ e=10**9+9
+-n,m=3,2
++n,m=map(int,input().split())
+ t=pow(2,m,e)
+ r=1
+ for i in range(n):r=(r*(t-i-1))%e

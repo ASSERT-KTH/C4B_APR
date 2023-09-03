@@ -1,0 +1,45 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/3936_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/3936_author_id/Accepted.py
+index 51528f8..9bf6b99 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/3936_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/3936_author_id/Accepted.py	
+@@ -11,7 +11,7 @@ while True:
+     else:
+         l = 0
+         break
+-
++    #print(n)
+     minus = math.gcd(b,n)
+     
+     if n > minus:
+@@ -20,29 +20,5 @@ while True:
+     else:
+         l = 1
+         break
+-
+-print(l)
+-import math
+-a,b,n = [int(i) for i in input().split()]
+-l = 0
+-
+-while True:
+-    minus = math.gcd(a,n)
+-    
+-    if n > minus:
+-        n -= minus
+-        l = 1
+-    else:
+-        l = 0
+-        break
+-
+-    minus = math.gcd(b,n)
+-    
+-    if n > minus:
+-        n -= minus
+-        l = 0
+-    else:
+-        l = 1
+-        break
+-
++    #print(n)
+ print(l)
+\ No newline at end of file

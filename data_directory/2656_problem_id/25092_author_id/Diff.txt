@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2656_problem_id/25092_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2656_problem_id/25092_author_id/Accepted.py
+index 38c8cb5..155c723 100644
+--- a/Users/bardia/Downloads/data 4/data/2656_problem_id/25092_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2656_problem_id/25092_author_id/Accepted.py	
+@@ -2,11 +2,16 @@ n, k = input().split(' ')
+ k = int(k)
+ cur = 0
+ ans = 0
++great = False
+ for c in reversed(n):
+     if cur >= k:
++        great = True
+         break
+     if c == '0':
+         cur += 1
+     else:
+         ans += 1
+-print(ans)
+\ No newline at end of file
++if great:
++    print(ans)
++else:
++    print(len(n) - 1)
+\ No newline at end of file

@@ -1,0 +1,40 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1274_problem_id/23116_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1274_problem_id/23116_author_id/Accepted.py
+index d609bc0..ba2c10d 100644
+--- a/Users/bardia/Downloads/data 4/data/1274_problem_id/23116_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1274_problem_id/23116_author_id/Accepted.py	
+@@ -9,25 +9,25 @@ d = int(input())
+ 
+ li = []
+ 
+-for i in range(0, d, k):
++for i in range(k-1, d, k):
+   li.append(i)
+ 
+ 
+-for i in range(0, d, l):
++for i in range(l-1, d, l):
+   li.append(i)
+ 
+ 
+-for i in range(0, d, m):
++for i in range(m-1, d, m):
+   li.append(i)
+ 
+ 
+-for i in range(0, d, n):
++for i in range(n-1, d, n):
+   li.append(i)
+ 
+ 
+ li = set(li)
+ 
+-if k>d or l>d or m>d or n>d:
+-  print("0")
+-else:
+-  print(len(li))
+\ No newline at end of file
++# if k>d or l>d or m>d or n>d:
++#   print("0")
++# else:
++print(len(li))
+\ No newline at end of file

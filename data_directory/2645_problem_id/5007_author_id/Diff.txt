@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2645_problem_id/5007_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2645_problem_id/5007_author_id/Accepted.py
+index 3bb6534..d3053ea 100644
+--- a/Users/bardia/Downloads/data 4/data/2645_problem_id/5007_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2645_problem_id/5007_author_id/Accepted.py	
+@@ -3,7 +3,7 @@ final = int(input())
+ a = []
+ a.append([0,1,2])
+ a.append([1,0,2])
+-a.append([1,2.0])
++a.append([1,2,0])
+ a.append([2,1,0])
+ a.append([2,0,1])
+ a.append([0,2,1])

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/764_problem_id/5930_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/764_problem_id/5930_author_id/Accepted.py
+index d42dde3..febfd80 100644
+--- a/Users/bardia/Downloads/data 4/data/764_problem_id/5930_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/764_problem_id/5930_author_id/Accepted.py	
+@@ -1,6 +1,4 @@
+-a=int(input())
+-b=int(input())
+-c=int(input())
++a,b,c=map(int,(input().split(" ")))
+ if(a<b<c):
+     k=(c-b)+(b-a)
+     print(k)

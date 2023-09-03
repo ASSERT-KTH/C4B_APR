@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/831_problem_id/531_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/831_problem_id/531_author_id/Accepted.py
+index a637224..469b96a 100644
+--- a/Users/bardia/Downloads/data 4/data/831_problem_id/531_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/831_problem_id/531_author_id/Accepted.py	
+@@ -9,9 +9,4 @@ def is_prime(n):
+ 	return False
+ 
+ n = int(input())
+-if is_prime(n):
+-	print(1)
+-elif n % 2 == 0:
+-	print(2)
+-else:
+-	print(3)
+\ No newline at end of file
++print(1 if is_prime(n) else 2 if n % 2 == 0 or is_prime(n-2) else 3)
+\ No newline at end of file

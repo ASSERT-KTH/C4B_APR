@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1267_problem_id/11420_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1267_problem_id/11420_author_id/Accepted.py
+index 7d3412b..5b63179 100644
+--- a/Users/bardia/Downloads/data 4/data/1267_problem_id/11420_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1267_problem_id/11420_author_id/Accepted.py	
+@@ -3,6 +3,6 @@ m=input()
+ x=m.count('4')+m.count('7')
+ if x!=n:print('NO')
+ else:
+-    if sum(int(m[:n/2]))==sum(int(m[n/2:])):
++    if m[:n//2].count('4')==m[n//2:].count('4'):
+         print('YES')
+     else: print('NO')
+\ No newline at end of file

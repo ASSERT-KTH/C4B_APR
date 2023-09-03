@@ -1,0 +1,53 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1127_problem_id/3268_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1127_problem_id/3268_author_id/Accepted.py
+index ebcacca..03679fa 100644
+--- a/Users/bardia/Downloads/data 4/data/1127_problem_id/3268_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1127_problem_id/3268_author_id/Accepted.py	
+@@ -1,22 +1,33 @@
+-def main():
+-    def f(lim):
+-        nxt, four, seven = [0], 4, 7
+-        res = prev = 0
+-        while True:
+-            cur, nxt = nxt, []
+-            for head in four, seven:
+-                for seed in cur:
+-                    seed += head
+-                    res += (seed - prev) * seed
+-                    if seed >= lim:
+-                        return res - seed * (seed - lim)
+-                    prev = seed
+-                    nxt.append(seed)
++def f(lim):
++    four, seven, seed, base, l = 4, 7, 0, 1, [0]
++    while True:
++        cur = l[base - 1:]
++        for head in four, seven:
++            for seed in cur:
++                seed += head
++                l.append(seed)
++                if seed >= lim:
++                    return l
+         four *= 10
+         seven *= 10
++        base *= 2
++
+ 
++def main():
+     lo, hi = map(int, input().split())
+-    print(f(hi) - f(lo - 1))
++    l = f(hi)
++    res = a = 0
++    for b in l:
++        res += (b - a) * b
++        a = b
++    res -= (b - hi) * b
++    a = 0
++    for b in l:
++        res -= (b - a) * b
++        if b >= lo:
++            break
++        a = b
++    print(res + (b - lo + 1) * b)
+ 
+ 
+ if __name__ == '__main__':

@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1960_problem_id/26928_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1960_problem_id/26928_author_id/Accepted.py
+index 8b345f3..47b0ff7 100644
+--- a/Users/bardia/Downloads/data 4/data/1960_problem_id/26928_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1960_problem_id/26928_author_id/Accepted.py	
+@@ -5,8 +5,6 @@
+ # Copyright © 2017 pmxt <pmxt@Manjunathas-MacBook-Air.local>
+ # ---------------------------------------------------------------------------------------------------- #
+ 
+-from math import sqrt
+-
+ l = list()
+ 
+ for i in range(5):
+@@ -17,9 +15,4 @@ for i in range(5):
+                 a, b = i + 1, j + 1
+                 break
+ 
+-dist = sqrt((pow(abs(3 - a), 2)) + (pow(abs(3 - b), 2)))
+-
+-if (dist == (int(dist) + 0.0)):
+-    print(int(dist))
+-else:
+-    print(int(dist) + 1)
+\ No newline at end of file
++print(abs(3 - a) + abs(3 - b))
+\ No newline at end of file

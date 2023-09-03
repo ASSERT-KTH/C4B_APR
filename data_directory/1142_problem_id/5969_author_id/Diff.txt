@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1142_problem_id/5969_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1142_problem_id/5969_author_id/Accepted.py
+index 5565dc3..d34972c 100644
+--- a/Users/bardia/Downloads/data 4/data/1142_problem_id/5969_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1142_problem_id/5969_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ n, a, b = list(map(int, input().split()))
+-if (a - a) < (b + 1):
++if (n - a) < (b + 1):
+     print(n - a)
+ else:
+     print(b + 1)
+\ No newline at end of file

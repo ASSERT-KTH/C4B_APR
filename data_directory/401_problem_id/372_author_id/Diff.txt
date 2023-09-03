@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/401_problem_id/372_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/401_problem_id/372_author_id/Accepted.py
+index b7a77cf..d13ca8e 100644
+--- a/Users/bardia/Downloads/data 4/data/401_problem_id/372_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/401_problem_id/372_author_id/Accepted.py	
+@@ -1 +1,6 @@
+-print(1<<int(input()))
+\ No newline at end of file
++x=int(input())
++y=1
++if x>=13:
++	y=8092
++	x-=13
++print(y<<x)
+\ No newline at end of file

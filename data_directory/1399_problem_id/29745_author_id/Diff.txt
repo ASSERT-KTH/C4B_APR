@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1399_problem_id/29745_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1399_problem_id/29745_author_id/Accepted.py
+index f3cd371..0e69aec 100644
+--- a/Users/bardia/Downloads/data 4/data/1399_problem_id/29745_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1399_problem_id/29745_author_id/Accepted.py	
+@@ -18,6 +18,6 @@ for i in range(5, len(numbers)):
+             break
+         if numbers[idx2] + numbers[idx2 +1] == current:
+             ans += 1
+-if ans == k:
++if ans >= k:
+     print('YES')
+ else: print('NO')
+\ No newline at end of file

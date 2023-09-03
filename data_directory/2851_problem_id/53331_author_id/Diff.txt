@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2851_problem_id/53331_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2851_problem_id/53331_author_id/Accepted.py
+index 88fd346..60e461d 100644
+--- a/Users/bardia/Downloads/data 4/data/2851_problem_id/53331_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2851_problem_id/53331_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ a, b = list(map(int, input().split()))
+-d1 = a**0.5
+-d2 = b**0.5
++d1 = int(a**0.5)
++d2 = int(((1+4*b)**0.5 - 1)/2)
+ if d1>d2:
+-    print("Vladik")
++    print("Valera")
+ else:
+-    print("Valera")
+\ No newline at end of file
++    print("Vladik")
+\ No newline at end of file

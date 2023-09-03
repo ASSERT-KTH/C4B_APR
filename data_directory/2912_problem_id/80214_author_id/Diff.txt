@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2912_problem_id/80214_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2912_problem_id/80214_author_id/Accepted.py
+index e1c8348..fcc20eb 100644
+--- a/Users/bardia/Downloads/data 4/data/2912_problem_id/80214_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2912_problem_id/80214_author_id/Accepted.py	
+@@ -1,3 +1 @@
+-from math import factorial, gcd
+-a, b = map(int, input().split())
+-print(gcd(factorial(a), factorial(b)))
+\ No newline at end of file
++from math import factorial; print(factorial(min(map(int, input().split(' ')))))
+\ No newline at end of file

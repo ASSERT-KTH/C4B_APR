@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/61043_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/61043_author_id/Accepted.py
+index 9a2c17d..774525b 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/61043_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/61043_author_id/Accepted.py	
+@@ -7,8 +7,8 @@ def all_same(string):
+ 
+ str = str(input())
+ 
+-for i in range(len(str) - 7):
++for i in range(len(str) - 6):
+     if all_same(str[i:i + 7]):
+-        print('YES')
++        print("YES")
+         exit()
+-print('NO')
+\ No newline at end of file
++print("NO")
+\ No newline at end of file

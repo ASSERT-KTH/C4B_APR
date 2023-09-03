@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1681_problem_id/5883_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1681_problem_id/5883_author_id/Accepted.py
+index c08c97d..cda253f 100644
+--- a/Users/bardia/Downloads/data 4/data/1681_problem_id/5883_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1681_problem_id/5883_author_id/Accepted.py	
+@@ -1,9 +1,11 @@
++import math
+ n,m = map(int, input().split())
+ a = 0
+ c = 0
+ while(a<=m):
+-    t = pow((n - a*a),2)
+-    if(t == (m-a)):
++    t = (n - a*a)
++    v = math.sqrt(m-a)
++    if(t == v):
+         c+=1
+     a = a+1
+ print(c)
+\ No newline at end of file

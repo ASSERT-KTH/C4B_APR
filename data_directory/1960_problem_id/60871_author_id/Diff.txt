@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1960_problem_id/60871_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1960_problem_id/60871_author_id/Accepted.py
+index 50ee91d..085f930 100644
+--- a/Users/bardia/Downloads/data 4/data/1960_problem_id/60871_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1960_problem_id/60871_author_id/Accepted.py	
+@@ -53,8 +53,8 @@ while Z<5:
+         
+     Z=Z+1
+ 
+-G=(2-P)*5
+-T=2-H
++G=abs(2-P)
++T=abs(2-H)
+ J=G+T
+-U=abs(J)
+-print(U)
+\ No newline at end of file
++
++print(J)
+\ No newline at end of file

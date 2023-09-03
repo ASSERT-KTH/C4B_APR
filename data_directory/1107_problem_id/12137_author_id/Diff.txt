@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/12137_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/12137_author_id/Accepted.py
+index 5167acc..a72a44b 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/12137_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/12137_author_id/Accepted.py	
+@@ -15,8 +15,8 @@ while loop:
+         break
+     else:
+         counter += 1
+-    gcf = gcd(abStone[0],abStone[2])
+-    abStone[2] -= gcf        
++    gcf = gcd(abStone[1],abStone[2])
++    abStone[2] -= gcf  
+     if abStone[2] < 0:
+             loop = False
+             break

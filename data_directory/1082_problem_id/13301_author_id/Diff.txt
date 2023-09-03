@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1082_problem_id/13301_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1082_problem_id/13301_author_id/Accepted.py
+index eb0d957..38f4289 100644
+--- a/Users/bardia/Downloads/data 4/data/1082_problem_id/13301_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1082_problem_id/13301_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ while res < l:
+     cnt += 1
+ 
+ if res == l:
+-    print('Yes')
++    print('YES')
+     print(cnt)
+ else:
+-    print('No')
+\ No newline at end of file
++    print('NO')
+\ No newline at end of file

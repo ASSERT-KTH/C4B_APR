@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2287_problem_id/3512_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2287_problem_id/3512_author_id/Accepted.py
+index d44a164..cb3fdf7 100644
+--- a/Users/bardia/Downloads/data 4/data/2287_problem_id/3512_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2287_problem_id/3512_author_id/Accepted.py	
+@@ -1,10 +1,13 @@
+ import math
+ 
+ a, b = input().split();
+-sumResult = int(a) + int(b);
+ digits = list(str(a) + str(b));
+ base = int(max(digits)) + 1;
+ 
++a = int(str(a), base);
++b = int(str(b), base);
++sumResult = a + b;
++
+ start = 1;
+ result = "";
+ 

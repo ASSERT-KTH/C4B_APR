@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/858_problem_id/11930_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/858_problem_id/11930_author_id/Accepted.py
+index 2b419af..fa9fefc 100644
+--- a/Users/bardia/Downloads/data 4/data/858_problem_id/11930_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/858_problem_id/11930_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ a,b,c,d=map(int,input().split())
+ s=a%4
+ h=0
+ if s==3:
+-    h=min(b,2*c+2*d)
++    h=min(b,3*d,c+d)
+ elif s==2:
+     h=min(2*b,c,2*d)
+ elif s==1:

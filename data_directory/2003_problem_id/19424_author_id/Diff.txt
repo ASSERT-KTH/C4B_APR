@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/19424_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/19424_author_id/Accepted.py
+index d2a1f30..48cf805 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/19424_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/19424_author_id/Accepted.py	
+@@ -9,7 +9,7 @@ def isDistinct(year) :
+ 
+ year = int(input())
+ 
+-for i in range(year + 1, 9000)  :
++for i in range(year + 1,100000)  :
+     if isDistinct(str(i)):
+         print(i)
+         break
+\ No newline at end of file

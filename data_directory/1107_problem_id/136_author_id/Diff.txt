@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/136_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/136_author_id/Accepted.py
+index ffbaee3..9232c49 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/136_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/136_author_id/Accepted.py	
+@@ -1,5 +1,12 @@
+ def bmm(a,b):
+-    if a>b:
++    if a==0:
++        return b
++    elif b==0:
++        return a
++    if a==b:
++        return a
++    
++    elif a>b:
+         z=0
+         for i in range(b,0,-1):
+             if a%i==0 and b%i==0:
+@@ -13,7 +20,6 @@ def bmm(a,b):
+                 z=i
+                 break
+         return z
+-print(bmm(5,0))
+ a,b,n=[int(i) for i in input().split()]
+ z=n
+ f=-1

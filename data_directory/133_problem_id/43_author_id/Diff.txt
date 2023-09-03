@@ -1,0 +1,40 @@
+diff --git a/Users/bardia/Downloads/data 4/data/133_problem_id/43_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/133_problem_id/43_author_id/Accepted.py
+index b2af974..4e69e65 100644
+--- a/Users/bardia/Downloads/data 4/data/133_problem_id/43_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/133_problem_id/43_author_id/Accepted.py	
+@@ -1,13 +1,20 @@
+-a,b,c = [int(i) for i in input().split()]
+-x,y,z = [int(i) for i in input().split()]
+-a1 = [0,0,0]
+-a1[0] = max(0,  a - x)
+-a1[1] = max(0, b- y)
+-a1[2] = max(0, c - z)
+-lost = max(0, x - a) + max(0, y - b) + max(0, z - c)
+-for i in a1:
+-    lost -= i/2
+-if (lost  <= 0):
+-    print("Yes")
+-else:
+-    print("No")
+\ No newline at end of file
++s = list(map(int, input().split()))
++t = list(map(int, input().split()))
++xs = [ s[i] - t[i] for i in range(len(s)) ]
++
++demand = []
++supply = []
++for x in xs:
++    if x < 0:
++        demand.append(-x)
++    else:
++        supply.append(x)
++
++for i in range(len(supply)):
++    supply[i] = (supply[i] // 2) * 2
++
++res = True
++if len(demand):
++    res = sum(supply) >= sum(demand) * 2
++
++print('Yes' if res else 'No')
+\ No newline at end of file

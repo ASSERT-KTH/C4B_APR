@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/218_problem_id/18988_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/218_problem_id/18988_author_id/Accepted.py
+index 201a68f..5cb1a9c 100644
+--- a/Users/bardia/Downloads/data 4/data/218_problem_id/18988_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/218_problem_id/18988_author_id/Accepted.py	
+@@ -26,7 +26,7 @@ mins = mins % 60
+ 
+ th = (th + hours) % 24
+ tm = (tm + mins)
+-if tm > 60:
++if tm >= 60:
+     th += 1
+     th = th % 24
+     tm = tm % 60

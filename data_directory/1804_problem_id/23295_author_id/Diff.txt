@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1804_problem_id/23295_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1804_problem_id/23295_author_id/Accepted.py
+index c926b84..1d7082c 100644
+--- a/Users/bardia/Downloads/data 4/data/1804_problem_id/23295_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1804_problem_id/23295_author_id/Accepted.py	
+@@ -10,7 +10,7 @@ for i in range (n):
+     if list_name_user[i]==list_name_user[j]:
+       del list_name_user[j]
+       n-=1
+-      print (list_name_user)
++      # print (list_name_user)
+     else:
+       j+=1
+ if n%2!= 0:

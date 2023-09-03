@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2490_problem_id/6411_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2490_problem_id/6411_author_id/Accepted.py
+index 0a6d9b0..ac059b6 100644
+--- a/Users/bardia/Downloads/data 4/data/2490_problem_id/6411_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2490_problem_id/6411_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ n=int(input())
+-print(3*(n/2))
+\ No newline at end of file
++print(3*(n//2))
+\ No newline at end of file

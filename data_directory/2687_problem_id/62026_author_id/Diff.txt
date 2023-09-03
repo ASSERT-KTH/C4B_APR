@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2687_problem_id/62026_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2687_problem_id/62026_author_id/Accepted.py
+index 00dc182..425446f 100644
+--- a/Users/bardia/Downloads/data 4/data/2687_problem_id/62026_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2687_problem_id/62026_author_id/Accepted.py	
+@@ -5,4 +5,8 @@ m = l[1]
+ if m >= n :
+     print(n)
+ else:
+-    print(m + math.ceil(math.sqrt(1 + 8*(n-m))/2 - 0.5))
+\ No newline at end of file
++    a = 1 + 8 * (n-m)
++    b = int(math.sqrt(a))
++    if b * b < a :
++        b = b + 1
++    print(m + math.ceil(b/2 - 0.5))
+\ No newline at end of file

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/624_problem_id/4061_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/624_problem_id/4061_author_id/Accepted.py
+index 49a65ec..12982d1 100644
+--- a/Users/bardia/Downloads/data 4/data/624_problem_id/4061_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/624_problem_id/4061_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ t,s,x=map(int,input().split())
+ c=0
+ if (x-t)<0 or s-t>x and x-t!=0 :
+     c=1
+-if (x-t)%s==0 and c==0 or (x-t-1)%s==0 and c==0  :
++if (x-t)%s==0 and c==0 or (x-t-1)%s==0 and c==0 and x-t-1!=0  :
+     print('YES')
+ else :
+     print('NO')
+\ No newline at end of file

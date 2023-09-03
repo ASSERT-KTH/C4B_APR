@@ -1,0 +1,48 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1274_problem_id/71015_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1274_problem_id/71015_author_id/Accepted.py
+index b352ad5..284f2ee 100644
+--- a/Users/bardia/Downloads/data 4/data/1274_problem_id/71015_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1274_problem_id/71015_author_id/Accepted.py	
+@@ -4,35 +4,12 @@ m = int(input())
+ n = int(input())
+ d = int(input())
+ 
+-if k == 1 or l == 1 or m == 1 or n == 1:
+-    print(d)
+-elif k > d and l > d and m > d and n > d:
+-    print(0)
+-else:
+-    from math import sqrt
+-    n = d
+-    lst=[]
+-    for i in range(2, n+1):
+-        if (i > 10):
+-            if (i % 2 == 0) or (i % 10 == 5):
+-                continue
+-        for j in lst:
+-            if j > int((sqrt(i)) + 1) and j != k and j != l and j != m and j != n and j != d:
+-                lst.append(i)
+-                break
+-            if (i % j == 0):
+-                break
+-        else:
+-            lst.append(i)
++drag = list(range(1, d+1))
+ 
+-    count = len(lst)
+-    i = 0
++count = 0
+ 
+-    lenght = 0
++for dr in drag:
++    if dr % k == 0 or dr % l == 0 or dr % m == 0 or dr % n ==0:
++        count += 1
+ 
+-    while count > 0:
+-        if lst[i] != k and lst[i] != l and lst[i] !=m and lst[i] != n:
+-            lenght += 1
+-        i += 1
+-        count -= 1
+-    print(d - lenght)
+\ No newline at end of file
++print(count)
+\ No newline at end of file

@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/385_problem_id/33832_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/385_problem_id/33832_author_id/Accepted.py
+index d501dcd..0fd5cda 100644
+--- a/Users/bardia/Downloads/data 4/data/385_problem_id/33832_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/385_problem_id/33832_author_id/Accepted.py	
+@@ -1,9 +1,18 @@
+ h1, h2 = map(int, input().split())
+ a, b = map(int, input().split())
+-d, v = h2 - h1 - 8 * a, 12 * (a - b)
+-if d <= 0:
+-    print(0)
+-elif b >= a:
+-    print(-1)
+-else:
+-    print((d + v ) // v)
+\ No newline at end of file
++day = 0
++while h1 < h2:
++    if day == 0:
++        h1 += a * 8
++        if h1 < h2 and b >= a:
++            print(-1)
++            break
++        elif h1 < h2:
++            h1 -= b * 12
++            day += 1
++        while h1 < h2:
++            h1 += a * 12
++            if h1 < h2:
++                h1 -= b * 12
++                day += 1
++        print(day)
+\ No newline at end of file

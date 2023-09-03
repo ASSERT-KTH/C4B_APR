@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2861_problem_id/11373_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2861_problem_id/11373_author_id/Accepted.py
+index c66c781..63a7291 100644
+--- a/Users/bardia/Downloads/data 4/data/2861_problem_id/11373_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2861_problem_id/11373_author_id/Accepted.py	
+@@ -12,7 +12,7 @@ for i in range(64):
+ 	for j in range(64):
+ 		if(xx + yy <= r and xx + yy >= l): 
+ 			v.append(xx + yy)
+-			yy = y * yy	
++		yy = y * yy	
+ 
+ 	xx = xx * x;
+ 	

@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1142_problem_id/63510_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1142_problem_id/63510_author_id/Accepted.py
+index c022738..eb0616c 100644
+--- a/Users/bardia/Downloads/data 4/data/1142_problem_id/63510_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1142_problem_id/63510_author_id/Accepted.py	
+@@ -1,7 +1,8 @@
+-input_nab = input()
++input_nab = input().split()
+ n = int(input_nab[0])
+-a = int(input_nab[2])
+-b = int(input_nab[4])
++a = int(input_nab[1])
++b = int(input_nab[2])
++
+ # no less than a people standing in front of him
+ # no more than b people standing behind him
+ 

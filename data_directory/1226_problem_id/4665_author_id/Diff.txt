@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1226_problem_id/4665_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1226_problem_id/4665_author_id/Accepted.py
+index b5ae00a..5a8f030 100644
+--- a/Users/bardia/Downloads/data 4/data/1226_problem_id/4665_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1226_problem_id/4665_author_id/Accepted.py	
+@@ -4,7 +4,11 @@ n = int(input())
+ an = list(map(int, sys.stdin.readline().split()))
+ 
+ total = sum(an)
+-n = n % total
++m = n % total
++if m == 0 and n != 0:
++    n = total
++else:
++    n = m
+ 
+ ans = 0
+ while n > 0 and ans < 7:

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2275_problem_id/14702_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2275_problem_id/14702_author_id/Accepted.py
+index a53f677..069a9a1 100644
+--- a/Users/bardia/Downloads/data 4/data/2275_problem_id/14702_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2275_problem_id/14702_author_id/Accepted.py	
+@@ -3,7 +3,7 @@ b=input()
+ c=input()
+ a1=a[0]+a[1]+' '+a[1]+a[2]+' '+b[0]+b[1]+' '+b[1]+b[2]+' '+c[0]+c[1]+' '+c[1]+c[2]
+ L=a1.split(' ')
+-m='impossible'
++m='Impossible'
+ if L.count('A>')+L.count('<A')==2 :
+     
+     if L.count('B>')+L.count('<B')==1 and L.count('C>')+L.count('<C')==0  :

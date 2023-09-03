@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/274_problem_id/26415_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/274_problem_id/26415_author_id/Accepted.py
+index fb05b41..83dd940 100644
+--- a/Users/bardia/Downloads/data 4/data/274_problem_id/26415_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/274_problem_id/26415_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ n = int(input().strip())
+-print((n - 1) * 4 * (3 ** (n - 2)))
+\ No newline at end of file
++print(2 * 3 * (4 ** (n - 2)) + 9 * (n - 3) * (4 ** (n - 3)))
+\ No newline at end of file

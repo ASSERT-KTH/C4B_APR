@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2764_problem_id/15420_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2764_problem_id/15420_author_id/Accepted.py
+index 341d345..be24cd7 100644
+--- a/Users/bardia/Downloads/data 4/data/2764_problem_id/15420_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2764_problem_id/15420_author_id/Accepted.py	
+@@ -32,13 +32,13 @@ primes = prime_generator(n)
+ length = 2
+ nums = []
+ i = 2
+-while length != k+1 and n/i != 1:
++while length != k+1:
+     check = False
+     check2 = False
+     if length == k:
+         # print("here")
+         for i in range(2, 20):
+-            if n%i == 0:
++            if n%i == 0 and n/i != 1:
+                 n /= i
+                 nums.append(i)
+                 length += 1
+@@ -47,7 +47,7 @@ while length != k+1 and n/i != 1:
+     if check2:
+         break
+     for i in primes:
+-        if n%i == 0:
++        if n%i == 0 and n/i != 1:
+             n /= i
+             nums.append(i)
+             length += 1

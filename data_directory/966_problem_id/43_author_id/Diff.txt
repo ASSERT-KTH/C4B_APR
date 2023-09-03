@@ -1,0 +1,42 @@
+diff --git a/Users/bardia/Downloads/data 4/data/966_problem_id/43_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/966_problem_id/43_author_id/Accepted.py
+index 5364e86..f1bedfa 100644
+--- a/Users/bardia/Downloads/data 4/data/966_problem_id/43_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/966_problem_id/43_author_id/Accepted.py	
+@@ -1,21 +1,14 @@
+-import sys
+-beds,pillows,frodo=map(int,sys.stdin.readline().split())
+-pillows=pillows-beds-1 
+-layer=2
+-while pillows>0:
+-    if beds==1:
+-        layer=pillows+2
+-        pillows=0
+-        break
+-    if frodo-1<layer-1 and beds-frodo<layer-1:
+-        layer+=(int(pillows/(beds-1))+1)
+-        break
+-    else:
+-        pillows-=(min(frodo-1,layer-1)+min(layer-1,beds-frodo))
+-    if pillows>0:
+-        pillows-=1
+-    layer+=1   
+-if pillows==0:
+-    print(layer)
+-else:
+-    print(layer-1)
+\ No newline at end of file
++#Leo Chen
++n, m, k = list(map(int,input().split()))
++def g(a,b,d):
++  return (a+a+(b-1)*d)*b//2
++def f(x):
++  return g(x,min(x,k),-1) + g(x-1,min(x-1,n-k),-1)
++bl, br, ba = 1, m-n, 0
++while bl <= br:
++  mid = (bl + br) >> 1
++  if f(mid) <= m-n:
++    ba, bl = mid, mid + 1
++  else:
++    br = mid - 1
++print(1+ba)
+\ No newline at end of file

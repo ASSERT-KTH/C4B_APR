@@ -1,0 +1,46 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2346_problem_id/95889_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2346_problem_id/95889_author_id/Accepted.py
+index 227d970..3f5a208 100644
+--- a/Users/bardia/Downloads/data 4/data/2346_problem_id/95889_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2346_problem_id/95889_author_id/Accepted.py	
+@@ -1,30 +1,32 @@
+ n = input()
+ numbers = []
+ i = 0
+-o = 0
++k = 0
+ numbers.append("")
+ 
+ while i < len(n):
+ 	if(n[i] != " "):
+ 		
+-		numbers[o] += n[i]
++		numbers[k] += n[i]
+ 		
+ 		
+ 	else:
+-		numbers[o] = int(numbers[o])
+-		o += 1
++		
++		k += 1
+ 		numbers.append("")
+ 	
+ 	i += 1
+-
++for i in range(len(numbers)):
++	numbers[i] = int(numbers[i])
+ #Сортування масиву
++
+ numbers.sort()
+ 
+ 
+-a = int(numbers[0])
+-b = int(numbers[1])
+-c = int(numbers[2])
+-d = int(numbers[3])
++a = numbers[0]
++b = numbers[1]
++c = numbers[2]
++d = numbers[3]
+ 
+ if( (a + b > c) or (a + c > d) or (b + c > d) ):
+ 	print ("TRIANGLE")

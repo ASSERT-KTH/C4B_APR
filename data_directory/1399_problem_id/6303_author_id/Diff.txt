@@ -1,0 +1,66 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1399_problem_id/6303_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1399_problem_id/6303_author_id/Accepted.py
+index 05c7037..71dc8c8 100644
+--- a/Users/bardia/Downloads/data 4/data/1399_problem_id/6303_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1399_problem_id/6303_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+-def pri(n):
++def is_pri(n):
+     f = 0
+     for i in range(2,int(n**.5)+1):
+         if n%i == 0:
+@@ -6,37 +6,32 @@ def pri(n):
+             break
+     return f
+     
+-
+-def nol(n):
+-    n = n-1
+-    f = 0
+-    for i in range(2,n//2):
+-        if pri(i) == 0 and pri(n-i) == 0 and i != n-i:
+-            c = 0
+-            for i in range(i+1,n-i):
+-                if pri(i) == 0:
+-                    c = 1
+-            if c == 0:
+-                f = 1 
+-                return "YES"
+-                break
+-            else:
+-                continue
+-        if f == 1:
+-            break
+-        else:
+-            continue
+-
++def prime(n):
++    pri = []
++    m = 1
++    p = 1
++    while m<=n:
++        p = p + 1
++        if is_pri(p) == 0:
++            pri.append(p)
++            m = m+1
++        
++    return pri
+ 
+ 
+ 
+ x,y = input().split()
+ x = int(x)
+ y = int(y)
++
++a = prime(x)
+ c = 0
+-for i in range(2,x+1):
+-    if pri(i) == 0 and nol(i) == "YES":
++for i in range(len(a)-1):
++    if a[i] + a[i+1] > x:
++        break
++    if is_pri(a[i] + a[i+1] + 1) == 0:
+         c += 1
++
+ if c < y:
+     print ("NO")
+ else:

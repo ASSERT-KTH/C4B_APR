@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/305_problem_id/27961_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/305_problem_id/27961_author_id/Accepted.py
+index ac8cc98..3ce8ac9 100644
+--- a/Users/bardia/Downloads/data 4/data/305_problem_id/27961_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/305_problem_id/27961_author_id/Accepted.py	
+@@ -19,7 +19,7 @@ def get_count(size, one_bit, s, x):
+         return 1
+     sum_bit = s & 1 != 0
+     xor_bit = x & 1 != 0
+-    print('size = {2:0>2}, sum_bit = {0}, xor_bit = {1}, one_bit = {3}'.format(sum_bit, xor_bit, size, one_bit))
++    # print('size = {2:0>2}, sum_bit = {0}, xor_bit = {1}, one_bit = {3}'.format(sum_bit, xor_bit, size, one_bit))
+     if not sum_bit and not xor_bit and one_bit or \
+             not sum_bit and xor_bit and not one_bit or \
+             sum_bit and not xor_bit and not one_bit or \

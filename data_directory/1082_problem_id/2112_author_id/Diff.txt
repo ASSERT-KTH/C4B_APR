@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1082_problem_id/2112_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1082_problem_id/2112_author_id/Accepted.py
+index 152c50d..951c4a5 100644
+--- a/Users/bardia/Downloads/data 4/data/1082_problem_id/2112_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1082_problem_id/2112_author_id/Accepted.py	
+@@ -1,11 +1,11 @@
+ k, l = int(input()), int(input())
+ 
+-x = 0
+-while k < l:
+-	k *= k
++x, t = 0, k
++while t < l:
++	t *= k
+ 	x += 1
+ 
+-if k == l:
++if t == l:
+ 	print("YES")
+ 	print(x)
+ else:

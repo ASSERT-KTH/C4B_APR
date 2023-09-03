@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2819_problem_id/100179_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2819_problem_id/100179_author_id/Accepted.py
+index 2c168cc..69cd075 100644
+--- a/Users/bardia/Downloads/data 4/data/2819_problem_id/100179_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2819_problem_id/100179_author_id/Accepted.py	
+@@ -1,2 +1,5 @@
+-n = input()
+-print(2)
+\ No newline at end of file
++a,b = input().split()
++if a==b:
++	print(a)
++else:
++	print(2)
+\ No newline at end of file

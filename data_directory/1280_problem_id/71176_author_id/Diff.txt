@@ -1,0 +1,49 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/71176_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/71176_author_id/Accepted.py
+index 7fa5c9a..9ef7dfc 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/71176_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/71176_author_id/Accepted.py	
+@@ -16,26 +16,28 @@ def quicksort(lista):
+         return lista
+ 
+     menores,medio,mayores=partition(lista)
+-    return quicksort(menores)+medio+quicksort(mayores)
++    return quicksort(menores)+medio+quicksort(mayores)
++
++
+ 
+ 
+ def main():
+     n=int(stdin.readline())
+-    m= [int(arr_temp) for arr_temp in stdin.readline().strip().split()]
++    m= [int(arr_temp) for arr_temp in stdin.readline().strip().split()]
++
+     m=quicksort(m)
++    i=len(m)-1
++    s=0
++    k=0
++    while i>=0:
++        if s<n:
++            s=s+m[i]
++            k+=1
++        i-=1
+     
+-    
+-    k=1
+-    c=0
+-    for i in range(n-1):
+-        r=m.count(m[i])
+-        if r>c:
+-            c=r
+-        if m[i]==m[i+1]:
+-            
+-            k-=1
+-        
+-        k+=1
+-    print(c,k)
++    if s<n:
++        print("-1")
++    else:
++        print(k)
+ 
+ main()
+\ No newline at end of file

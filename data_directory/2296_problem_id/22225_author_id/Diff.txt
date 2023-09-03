@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2296_problem_id/22225_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2296_problem_id/22225_author_id/Accepted.py
+index 2317666..142fed0 100644
+--- a/Users/bardia/Downloads/data 4/data/2296_problem_id/22225_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2296_problem_id/22225_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+-b=input()
+-b=b.split()
+-b1=int(a[0])
+-b2=int(a[1])
+-b3=b1*b2
+-respuesta=b3//2
++a=input()
++a=a.split()
++a1=int(a[0])
++a2=int(a[1])
++a3=a1*a2
++respuesta=a3//2
+ print(respuesta)
+\ No newline at end of file

@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2088_problem_id/1287_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2088_problem_id/1287_author_id/Accepted.py
+index fe1076d..75ec911 100644
+--- a/Users/bardia/Downloads/data 4/data/2088_problem_id/1287_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2088_problem_id/1287_author_id/Accepted.py	
+@@ -1,9 +1,9 @@
+ if __name__ == '__main__':
+     field = list()
+-    field.append(list(map(str, input().split())))
+-    field.append(list(map(str, input().split())))
+-    field.append(list(map(str, input().split())))
+-    field.append(list(map(str, input().split())))
++    field.append(list(map(str, input())))
++    field.append(list(map(str, input())))
++    field.append(list(map(str, input())))
++    field.append(list(map(str, input())))
+     book = ('#', '.')
+     flag = False
+     for i in range(3):

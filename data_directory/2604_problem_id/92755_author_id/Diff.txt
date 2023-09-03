@@ -1,0 +1,43 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2604_problem_id/92755_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2604_problem_id/92755_author_id/Accepted.py
+index aa48ba8..e2f0e1f 100644
+--- a/Users/bardia/Downloads/data 4/data/2604_problem_id/92755_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2604_problem_id/92755_author_id/Accepted.py	
+@@ -1,25 +1,22 @@
+ def main():
+-    x = list(map(int, input()))
++    x = input()
+ 
+-    i = 0
+-    while x[i] == 9 and i < len(x) - 2:
+-        i += 1
++    y = int(x)
++    s = sum(int(d) for d in x)
+ 
+-    if x[i] == 0:
+-        i -= 1
++    for i in range(len(x)):
++        if x[i] == '0':
++            continue
+ 
+-    sum1 = x[i] - 1 + 9 * (len(x) - 1)
+-    sum2 = sum(x)
++        z = x[:i] + str(int(x[i]) - 1) + '9' * (len(x) - i - 1)
++        zi = int(z)
+ 
+-    y1 = int('9' * i + str(x[i] - 1) + '9' * (len(x) - i - 1))
+-    y2 = int(''.join(map(str, x)))
++        t = sum(int(d) for d in z)
++        if t > s or t == s and zi > y:
++            y = zi
++            s = t
+ 
+-    if sum1 > sum2:
+-        print(y1)
+-    elif sum2 > sum1:
+-        print(y2)
+-    else:
+-        print(max(y1, y2))
++    print(y)
+ 
+ 
+ if __name__ == '__main__':

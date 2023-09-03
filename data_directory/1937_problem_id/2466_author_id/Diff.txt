@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1937_problem_id/2466_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1937_problem_id/2466_author_id/Accepted.py
+index 42382ad..490f83c 100644
+--- a/Users/bardia/Downloads/data 4/data/1937_problem_id/2466_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1937_problem_id/2466_author_id/Accepted.py	
+@@ -1,4 +1,7 @@
+-B = 0
+ for i in range(8):
+-	B += input().count('B')
+-print('YES' if B == 32 else 'NO')
+\ No newline at end of file
++	s = input()
++	for a, b in zip(s, (s + s[0])[1: ]):
++		if a == b:
++			print('NO')
++			exit(0)
++print('YES')
+\ No newline at end of file

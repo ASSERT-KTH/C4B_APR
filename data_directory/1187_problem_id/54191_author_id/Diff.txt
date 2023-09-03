@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/54191_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/54191_author_id/Accepted.py
+index 1719747..099f154 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/54191_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/54191_author_id/Accepted.py	
+@@ -5,14 +5,16 @@ second_case = True
+ 
+ if input_str[0].isupper():
+     second_case = False
++else:
++    first_case = False
+ 
+-for i, letter in enumerate(input_str[1:]):
++for letter in input_str[1:]:
+     if letter.islower():
+         first_case = False
+         second_case = False
+ 
+ if first_case:
+-    print(input_str.tolower())
++    print(input_str.lower())
+ elif second_case:
+     print(input_str.capitalize())
+ else:

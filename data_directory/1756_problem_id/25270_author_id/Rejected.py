@@ -1,0 +1,1 @@
+print(abs(sum(4-x for x in set(map(int, input().split())))))

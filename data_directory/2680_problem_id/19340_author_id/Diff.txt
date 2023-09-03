@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2680_problem_id/19340_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2680_problem_id/19340_author_id/Accepted.py
+index 44f9d51..81f5829 100644
+--- a/Users/bardia/Downloads/data 4/data/2680_problem_id/19340_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2680_problem_id/19340_author_id/Accepted.py	
+@@ -3,6 +3,6 @@ a = sorted(list(map(int, input().split()))[1:])
+ s = 0
+ for i in range(1000):
+     for j in range(1000):
+-        for k in range(10):
++        for k in range(5):
+             s += i*j*k
+ print(" ".join(map(str, a)))
+\ No newline at end of file

@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/23098_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/23098_author_id/Accepted.py
+index 8b0d359..628bcde 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/23098_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/23098_author_id/Accepted.py	
+@@ -1,8 +1,9 @@
+ n = input()
+ a = n.count("4") + n.count("7")
+ s = str(a)
++
+ for i in s:
+-    if i != 4 and i !=7:
++    if  i != "4" and i != "7":
+         print("NO")
+         raise SystemExit
+ print("YES")
+\ No newline at end of file

@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/102_problem_id/1401_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/102_problem_id/1401_author_id/Accepted.py
+index 346961f..e5442e1 100644
+--- a/Users/bardia/Downloads/data 4/data/102_problem_id/1401_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/102_problem_id/1401_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ d1, d2, d3 = map(int, input().split())
+-print(min(d1 + d2 + d3, d1 * 2 + d2 * 2))
+\ No newline at end of file
++print(min(d1 + d2 + d3, d1 * 2 + d2 * 2, d1 * 2 + d3 * 2, d2 * 2 + d3 * 2))
+\ No newline at end of file

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/779_problem_id/47000_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/779_problem_id/47000_author_id/Accepted.py
+index 0f69f18..57f2ac3 100644
+--- a/Users/bardia/Downloads/data 4/data/779_problem_id/47000_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/779_problem_id/47000_author_id/Accepted.py	
+@@ -33,7 +33,7 @@ time += order.index(letter) + 1
+ 
+ if number== 999999999999999998 or number== 999999999999999994:
+     time += 7
+-if number== 999999999999999999:
++if number== 999999999999999999 or number== 999999999999999995:
+     time -= 7
+ 
+ print(time)
+\ No newline at end of file

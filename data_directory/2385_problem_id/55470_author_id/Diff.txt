@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2385_problem_id/55470_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2385_problem_id/55470_author_id/Accepted.py
+index 1dfa61c..ee06bea 100644
+--- a/Users/bardia/Downloads/data 4/data/2385_problem_id/55470_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2385_problem_id/55470_author_id/Accepted.py	
+@@ -6,7 +6,7 @@ def main():
+ 
+     n = Decimal(nstr)
+ 
+-    if n >= -127 and n <= 128:
++    if n >= -128 and n <= 127:
+         output.write('byte')
+ 
+     elif n >= -32768 and n <= 32767:

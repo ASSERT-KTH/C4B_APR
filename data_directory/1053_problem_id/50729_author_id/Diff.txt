@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1053_problem_id/50729_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1053_problem_id/50729_author_id/Accepted.py
+index af15c01..9d454f5 100644
+--- a/Users/bardia/Downloads/data 4/data/1053_problem_id/50729_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1053_problem_id/50729_author_id/Accepted.py	
+@@ -22,7 +22,7 @@ while n>b*7:
+     b+=1
+ 
+ 
+-if number1!=100:
++if number1!=10000000000000000000000000000000000000000000000000000000:
+     print(x*"4"+y*"7")
+ 
+ 

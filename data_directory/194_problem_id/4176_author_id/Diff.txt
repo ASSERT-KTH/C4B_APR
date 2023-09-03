@@ -1,0 +1,9 @@
+diff --git a/Users/bardia/Downloads/data 4/data/194_problem_id/4176_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/194_problem_id/4176_author_id/Accepted.py
+index 753287b..cb7dbb0 100644
+--- a/Users/bardia/Downloads/data 4/data/194_problem_id/4176_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/194_problem_id/4176_author_id/Accepted.py	
+@@ -1 +1 @@
+-print-(-input()/5)
+\ No newline at end of file
++print(-(-int(input())//5))
+\ No newline at end of file

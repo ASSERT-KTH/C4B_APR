@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/102_problem_id/191_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/102_problem_id/191_author_id/Accepted.py
+index 3d357ef..c2b36d1 100644
+--- a/Users/bardia/Downloads/data 4/data/102_problem_id/191_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/102_problem_id/191_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ a, b, c = map(int, input().split())
+-sum1 = a * 2 + b * 2
+-sum2 = a + b + c
+-if sum1 < sum2:
+-	print(sum1)
+-else:
+-	print(sum2)
+\ No newline at end of file
++sum = []
++sum.append(a+b+c)
++sum.append(a*2 + b*2)
++sum.append(a*2 + c*2)
++sum.append(b*2 + c*2)
++print(min(sum))
+\ No newline at end of file

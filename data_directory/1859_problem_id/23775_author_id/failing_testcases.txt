@@ -1,0 +1,1 @@
+[{'inputdata': 'httpppppru', 'expectedresult': 'http://pppp.ru'}, {'inputdata': 'httpzru', 'expectedresult': 'http://z.ru'}, {'inputdata': 'ftprru', 'expectedresult': 'ftp://r.ru'}]

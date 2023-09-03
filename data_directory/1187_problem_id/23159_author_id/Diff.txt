@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/23159_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/23159_author_id/Accepted.py
+index dc1ff28..7ee4b22 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/23159_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/23159_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ a=input()
+-if ((a[0].islower()) and (a[1:].isupper())) or (a.islower()):
++if ((a[0].islower()) and (a[1:].isupper())) or (a.islower() and len(a)==1):
+     print(a[0].upper()+a[1:].lower())
+ elif (a.isupper()):
+     print(a.lower())

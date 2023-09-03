@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/624_problem_id/18056_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/624_problem_id/18056_author_id/Accepted.py
+index 9f8f603..847b7ef 100644
+--- a/Users/bardia/Downloads/data 4/data/624_problem_id/18056_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/624_problem_id/18056_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ t,s,x=(int(z) for z in input().split())
+ x-=t
+-if x>=0 and x%s in [0,1]:
+-    print("NO")
++if x>=0 and x%s in [0,1] and x!=1:
++    print("YES")
+ else:
+-    print("YES")
+\ No newline at end of file
++    print("NO")
+\ No newline at end of file

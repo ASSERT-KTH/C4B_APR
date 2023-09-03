@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/133_problem_id/18988_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/133_problem_id/18988_author_id/Accepted.py
+index ecd284f..a34036a 100644
+--- a/Users/bardia/Downloads/data 4/data/133_problem_id/18988_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/133_problem_id/18988_author_id/Accepted.py	
+@@ -14,11 +14,9 @@ d = [a-b for a,b in zip(s,t)]
+ for i,_ in enumerate(d):
+     if d[i] < 0:
+         for j,_ in enumerate(d):
+-            if d[j] > 1:
++            while d[j] > 1 and d[i] < 0:
+                 d[j] -= 2
+                 d[i] += 1
+-                if d[i] == 0:
+-                    break
+ 
+ worked = True
+ for i in d:

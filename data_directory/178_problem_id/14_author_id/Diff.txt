@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/178_problem_id/14_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/178_problem_id/14_author_id/Accepted.py
+index c89a818..c5cc9b1 100644
+--- a/Users/bardia/Downloads/data 4/data/178_problem_id/14_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/178_problem_id/14_author_id/Accepted.py	
+@@ -9,13 +9,13 @@ l=int(nums[0])
+ r=int(nums[1])
+ k=int(nums[2])
+ q=1
+-while q<=l:
++while q<l:
+ 	q=q*k
+-if q>=r:
++if q>r:
+ 	print("-1", end="")
+ 	exit()
+ print("%d" % q, end="")
+ q=q*k
+-while q<r:
++while q<=r:
+ 	print(" %d" % q, end="")
+ 	q=q*k
+\ No newline at end of file

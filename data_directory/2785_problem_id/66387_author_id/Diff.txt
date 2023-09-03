@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/66387_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/66387_author_id/Accepted.py
+index 047b801..e7313d4 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/66387_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/66387_author_id/Accepted.py	
+@@ -21,5 +21,4 @@ max=c
+ for i in range(len(b)):
+  if b[i]>max:
+   max=b[i]
+-print(max)
+-print(str(b))
+\ No newline at end of file
++print(max)
+\ No newline at end of file

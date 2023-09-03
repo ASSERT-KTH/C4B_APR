@@ -1,0 +1,1 @@
+[{'inputdata': '~@Gb(S&N$mBuBUMAky-z^{5VwLNTzYg|ZUZncL@ahS?K*As<$iNUARM3r43J\'jJB)$ujfPAq"G<S9flGyakZg!2Z.-NJ|2{F>]', 'expectedresult': 'YES'}, {'inputdata': 'VXB&r9Z)IlKOJ:??KDA', 'expectedresult': 'YES'}, {'inputdata': 'mzbmweyydiadtlcouegmdbyfwurpwb9uvhifnuapwyndmhtqvkgkbhtytszotwflegsjzzszfwtzfpnscguemwrczqxycivdqnky', 'expectedresult': 'YES'}]

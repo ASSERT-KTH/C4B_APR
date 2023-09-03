@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/60926_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/60926_author_id/Accepted.py
+index ec93a72..abf6f5a 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/60926_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/60926_author_id/Accepted.py	
+@@ -3,5 +3,7 @@ if(lisa==lisa.upper()):
+     print(lisa.lower())
+ elif(lisa==(lisa[0].lower()+lisa[1:].upper()) and len(lisa)>1):
+     print(lisa[0].upper()+lisa[1:].lower())
++elif(len(lisa)==1):
++    print(lisa.upper())
+ else:
+     print(lisa)
+\ No newline at end of file

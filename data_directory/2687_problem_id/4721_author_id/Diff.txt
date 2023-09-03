@@ -1,0 +1,30 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2687_problem_id/4721_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2687_problem_id/4721_author_id/Accepted.py
+index d1c4fef..53bc245 100644
+--- a/Users/bardia/Downloads/data 4/data/2687_problem_id/4721_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2687_problem_id/4721_author_id/Accepted.py	
+@@ -16,15 +16,17 @@ if n < 100000:
+         d += 1
+         n = min(C, n + m) - d
+     ans(d)
+-    
++
+ t = n - m
+ if t < 100000000:
+     k = 0
+     while k*(k+1)/2 < t:
+         k +=1
+     ans(m + k)
+-else:
+-    k = int(math.sqrt(2*t)) - min(500000, int(math.sqrt(2*t)))
+-    while k*(k+1)/2 < t:
+-        k+=1
+-    ans(m+k)
+\ No newline at end of file
++from decimal import *
++import decimal
++getcontext().prec = 19
++k = Decimal(int((2*Decimal(t)).sqrt())) - 10
++while Decimal(k)*(Decimal(k)+1)/2 < Decimal(t):
++    k = Decimal(k)+1
++ans(Decimal(m)+k)
+\ No newline at end of file

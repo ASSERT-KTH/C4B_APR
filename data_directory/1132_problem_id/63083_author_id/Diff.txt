@@ -1,0 +1,45 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/63083_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/63083_author_id/Accepted.py
+index 9fdf9c4..d631420 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/63083_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/63083_author_id/Accepted.py	
+@@ -1,15 +1,25 @@
++# n = int(input())
++# flag = 0
++# if n % 4 == 0 or n % 7 == 0:
++# 	print('YES')
++# else:
++# 	string = str(n)
++# 	for i in string:
++# 		if i == '4' or i == '7':
++# 			continue
++# 		else:
++# 			print('NO')
++# 			flag = 1
++# 			break
++# 	if flag == 0:
++# 		print('YES')
+ n = int(input())
++lucky_numbers = [4, 7, 44, 47, 74, 77, 444, 447, 474, 477, 744, 747, 774, 777]
+ flag = 0
+-if n % 4 == 0 or n % 7 == 0:
+-	print('YES')
+-else:
+-	string = str(n)
+-	for i in string:
+-		if i == '4' or i == '7':
+-			continue
+-		else:
+-			print('NO')
+-			flag = 1
+-			break
+-	if flag == 0:
+-		print('YES')
+\ No newline at end of file
++for i in lucky_numbers:
++	if n % i == 0:
++		print('YES')
++		flag = 1
++		break
++if flag == 0:
++	print('NO')
+\ No newline at end of file

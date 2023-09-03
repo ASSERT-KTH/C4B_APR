@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/1116_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/1116_author_id/Accepted.py
+index 5604b96..c34d46c 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/1116_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/1116_author_id/Accepted.py	
+@@ -14,12 +14,15 @@ def main(n):
+         MESS="YES"
+     else:
+         for i in range(1,n+1):
+-            MESS="YES"
+-            if((lucky(i)=="YES")and(MESS=="YES")):
+-                if(N%i==0):
++            MESS="NO"
++            if((lucky(i)=="YES")and(MESS=="NO")):
++                if(n%i==0):
+                     MESS="YES"
++                    break
+                 else:
+                     MESS="NO"
++            
++                    
+                     
+     return MESS
+ N=int(input())

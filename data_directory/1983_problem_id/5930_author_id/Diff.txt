@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1983_problem_id/5930_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1983_problem_id/5930_author_id/Accepted.py
+index 4a349f2..879d7e9 100644
+--- a/Users/bardia/Downloads/data 4/data/1983_problem_id/5930_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1983_problem_id/5930_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ n=int(input())
+ if(1<=n<=2000):
+-    s=((n-1)*(n-1))+n
++    s=int(((n)*(n*n-1)/6)+n)
+     print(s)
+\ No newline at end of file

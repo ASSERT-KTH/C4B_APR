@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/194_problem_id/23300_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/194_problem_id/23300_author_id/Accepted.py
+index 800867b..2979e5a 100644
+--- a/Users/bardia/Downloads/data 4/data/194_problem_id/23300_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/194_problem_id/23300_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ x=int(input())
+-if x%5==0 :
+-    Print(x//5)
++if x%5==0:
++    print(x//5)
+ else:
+     print((x//5)+1)
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2742_problem_id/11_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2742_problem_id/11_author_id/Accepted.py
+index 5a83d69..141534d 100644
+--- a/Users/bardia/Downloads/data 4/data/2742_problem_id/11_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2742_problem_id/11_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ n=int(input())
+ a=""
+-while(n-3>=0 and n-3!=1):a+='7';n-=3
+-while(n>0):n-=2;a+='1'
++if n%2 and n>=3:n-=3;a+='7'
++while n>0:n-=2;a+='1'
+ print(a)
+\ No newline at end of file

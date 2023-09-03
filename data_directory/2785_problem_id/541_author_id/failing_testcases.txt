@@ -1,0 +1,1 @@
+[{'inputdata': 'KKVVKVVKVVKKVVKKVKVVKKV', 'expectedresult': '7'}, {'inputdata': 'KK', 'expectedresult': '1'}, {'inputdata': 'KKVK', 'expectedresult': '2'}, {'inputdata': 'KKV', 'expectedresult': '1'}, {'inputdata': 'KKVKVK', 'expectedresult': '3'}, {'inputdata': 'KKVKV', 'expectedresult': '2'}, {'inputdata': 'KKVVKKV', 'expectedresult': '2'}]

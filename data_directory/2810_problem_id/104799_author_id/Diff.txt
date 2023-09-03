@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2810_problem_id/104799_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2810_problem_id/104799_author_id/Accepted.py
+index 86c5bcc..fde8a0d 100644
+--- a/Users/bardia/Downloads/data 4/data/2810_problem_id/104799_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2810_problem_id/104799_author_id/Accepted.py	
+@@ -1,14 +1,5 @@
+-MOD=10**9+7;
+-s=input();
+-ls=len(s);
+-step=0
+-numa=0;
+-ans=0;
+-i=0
+-while(i<ls):
+-    if(s[i]=="a"):
+-        numa=numa+1;i=i+1;
+-    else:
+-        step=step+(2**numa-1);i=i+1;
+-ans=step%MOD;
+-print(ans);
+\ No newline at end of file
++n=eval(input());
++if(n%2==0):
++    print((int)(n/2-1));
++else:
++    print((int)(n/2));
+\ No newline at end of file

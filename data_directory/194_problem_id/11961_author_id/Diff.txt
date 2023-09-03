@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/194_problem_id/11961_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/194_problem_id/11961_author_id/Accepted.py
+index da2b2ed..9bdd88a 100644
+--- a/Users/bardia/Downloads/data 4/data/194_problem_id/11961_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/194_problem_id/11961_author_id/Accepted.py	
+@@ -1,8 +1,9 @@
+ '''input
+-12
++5
+ '''
+ 
+ # import sys
+ # from pprint import pprint
+ n = int(input())
+-print(int(n / 5 + 0.5) + (1 if n % 5 else 0))
+\ No newline at end of file
++print(n // 5 + (1 if n % 5 else 0))
++# print(n / 5, (1 if n % 5 else 0))
+\ No newline at end of file

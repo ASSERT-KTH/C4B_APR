@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/394_problem_id/6914_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/394_problem_id/6914_author_id/Accepted.py
+index 280d83a..917a056 100644
+--- a/Users/bardia/Downloads/data 4/data/394_problem_id/6914_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/394_problem_id/6914_author_id/Accepted.py	
+@@ -8,13 +8,9 @@ n,k=map(int,input().split())
+ 
+ ans=0
+ i=0
+-while i<k:
+-    ans+=n-i
+-    ans+=i
+-    i+=1
+-
+-maxi=n*(n-1)//2
+-if ans>maxi:
+-    ans=maxi
++if k>=n//2:
++    ans=n*(n-1)//2
++else:
++    ans=k*(2*n-2*k-1)
+ 
+ print(ans)
+\ No newline at end of file

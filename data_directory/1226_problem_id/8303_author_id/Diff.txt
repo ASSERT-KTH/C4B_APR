@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1226_problem_id/8303_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1226_problem_id/8303_author_id/Accepted.py
+index fa4941b..7ad6a23 100644
+--- a/Users/bardia/Downloads/data 4/data/1226_problem_id/8303_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1226_problem_id/8303_author_id/Accepted.py	
+@@ -2,7 +2,9 @@ n = int(input())
+ m = n
+ a = list(map(int, input().split()))
+ s = sum(a)
+-n = n % s if n > s else n
++n = n % s
++if n == 0:
++    n = s
+ r = 0
+ for i in range(7):
+     if n > a[i]:

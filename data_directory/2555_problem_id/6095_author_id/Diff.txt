@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/6095_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/6095_author_id/Accepted.py
+index cf65221..e31ac34 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/6095_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/6095_author_id/Accepted.py	
+@@ -10,7 +10,7 @@ while i<len(x):
+             break
+     else:
+         y=1
+-        test==x[i]
++        test=x[i]
+     i+=1
+ else:
+     print("NO")
+\ No newline at end of file

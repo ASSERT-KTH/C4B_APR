@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2088_problem_id/31936_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2088_problem_id/31936_author_id/Accepted.py
+index c7fd11c..fc85664 100644
+--- a/Users/bardia/Downloads/data 4/data/2088_problem_id/31936_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2088_problem_id/31936_author_id/Accepted.py	
+@@ -6,6 +6,7 @@ for i in range(4):
+         a[i][j] = 1 if s[j] == "#" else 0
+ for i in range(3):
+     for j in range(3):
+-        if (a[i][j] + a[i+1][j] + a[i][j+1] + a[i+1][j+1] > 2):
++        z = a[i][j] + a[i+1][j] + a[i][j+1] + a[i+1][j+1]
++        if (z != 2):
+             b = True
+ print("YES" if b else "NO")
+\ No newline at end of file

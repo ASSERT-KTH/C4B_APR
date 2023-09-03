@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/994_problem_id/54092_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/994_problem_id/54092_author_id/Accepted.py
+index a3a775c..9014028 100644
+--- a/Users/bardia/Downloads/data 4/data/994_problem_id/54092_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/994_problem_id/54092_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ def main(n, m, a):
+-    width = n % a
+-    length = m % a
++    width = n // a + (n % a > 0)
++    length = m // a + (m % a > 0)
+     return width * length
+ 
+ n, m, a = map(int, input().split(" "));

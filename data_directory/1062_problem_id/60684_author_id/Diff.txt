@@ -1,0 +1,66 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/60684_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/60684_author_id/Accepted.py
+index 52836a0..52f0ba6 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/60684_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/60684_author_id/Accepted.py	
+@@ -1,45 +1,21 @@
++def Pos(x,A):
++    i = 0
++    while x != A[i]:
++        i += 1
++    return i
++
+ def Lucky(x):
+     for i in range(len(x)):
+-        if x[i]!= 4 and x[i]!=7:
++        if x[i] != '4' and x[i] != '7':
+             return False
+     return True
+-def Zelda(A,x):
+-    Z=[]
+-    for i in range(len(A)):
+-        if len(A[i]) == x:
+-            Z.append(A[i])
+-    return Z
+-def Combinaciones(a,b,x):
+-    A = [a, b]
+-    k = 1
+-    for i in range(x-1):
+-        Z = Zelda(A, k)
+-        for j in range(len(Z)):
+-            A.append(Z[j]+'4')
+-            A.append(Z[j]+'7')
++
++A = input()
++k = 0
++for i in range(len(A)):
++    if A[i] == '4' or A[i] == '7':
+         k += 1
+-    return A
+-def Suma(a):
+-    r = 0
+-    for i in range(len(a)):
+-        if a[i] == '4' or a[i] == '7':
+-            r+=1
+-    return r
+-# -----------------------------------------------------
+-A=input()
+-A=Suma(str(A))
+-if A == 0:
+-    print('NO')
+-elif Lucky(str(A)):
++if Lucky(str(k)):
+     print('YES')
+ else:
+-    Z = Combinaciones('4', '7', len(str(A)))
+-    A = int(A)
+-    k = 0
+-    for i in range(len(Z)):
+-        if A % int(Z[i]) == 0:
+-            print('YES')
+-            break
+-        k += 1
+-    if k == len(Z):
+-        print('NO')
+\ No newline at end of file
++    print('NO')
+\ No newline at end of file

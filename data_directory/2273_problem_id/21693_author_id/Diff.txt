@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2273_problem_id/21693_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2273_problem_id/21693_author_id/Accepted.py
+index df3bf6f..301b320 100644
+--- a/Users/bardia/Downloads/data 4/data/2273_problem_id/21693_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2273_problem_id/21693_author_id/Accepted.py	
+@@ -5,9 +5,9 @@ i=0
+ while(a<t):
+     a=i*(i+1)/2
+     i=i+1
+-if(a==t):
+-    print("yes")
+-elif(t==0):
++if(t==0):
+     print("NO")
++elif(a==t):
++    print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

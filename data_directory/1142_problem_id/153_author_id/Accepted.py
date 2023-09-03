@@ -1,0 +1,5 @@
+#n = int(input())
+n, k, m = map(int, input().split()) 
+#s = input()
+#c = list(map(int, input().split()))
+print(n - max(k + 1, n - m) + 1)

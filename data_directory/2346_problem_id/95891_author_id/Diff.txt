@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2346_problem_id/95891_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2346_problem_id/95891_author_id/Accepted.py
+index fadca69..aa6434d 100644
+--- a/Users/bardia/Downloads/data 4/data/2346_problem_id/95891_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2346_problem_id/95891_author_id/Accepted.py	
+@@ -22,7 +22,7 @@ def IsTriangle(lst):
+ 
+     if max1 < lst[0] + lst[1] or max1 < lst[0] + lst[2] or max1 < lst[1] + lst[2]:
+         istriangle = True
+-    elif max2 < lst[0] + lst[1]:
++    elif max2 < lst1[0] + lst1[1]:
+         istriangle = True
+ 
+ 

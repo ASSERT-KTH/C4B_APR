@@ -1,0 +1,1 @@
+[{'inputdata': '68 34\r\r\n84 78\r\r\n10:40', 'expectedresult': '1'}, {'inputdata': '65 49\r\r\n24 90\r\r\n07:10', 'expectedresult': '6'}, {'inputdata': '23 118\r\r\n118 20\r\r\n23:24', 'expectedresult': '0'}, {'inputdata': '3 88\r\r\n17 38\r\r\n22:33', 'expectedresult': '8'}, {'inputdata': '60 120\r\r\n17 120\r\r\n23:00', 'expectedresult': '11'}]

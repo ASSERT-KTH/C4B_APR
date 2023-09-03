@@ -1,0 +1,1 @@
+[{'inputdata': '4\r\n1 2\r\n2 3\r\n3 4\r\n4 1', 'expectedresult': 'WIN'}]

@@ -1,0 +1,34 @@
+diff --git a/Users/bardia/Downloads/data 4/data/70_problem_id/11789_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/70_problem_id/11789_author_id/Accepted.py
+index 300f6e5..afcca77 100644
+--- a/Users/bardia/Downloads/data 4/data/70_problem_id/11789_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/70_problem_id/11789_author_id/Accepted.py	
+@@ -10,19 +10,23 @@ for i in range(8):
+ 		if a[i][j]=='B': B.append([i, j])
+ 		elif a[i][j]=='W': A.append([i, j])
+ 
+-c={}
++a1=set()
++b1=set()
+ for i in A:
+ 	fl=True
+ 	for j in B:
+ 		if i[1]==j[1] and i[0]>j[0]:
+ 			fl=False
+ 			break
+-	if fl: c[i[0]]='A'
++	if fl: a1.add(i[0])
++
+ for i in B:
+ 	fl=True
+ 	for j in A:
+ 		if i[1]==j[1] and i[0]<j[0]:
+ 			fl=False
+ 			break
+-	if fl: c[7-i[0]]='B'
+-print(c.get(min(c)))
+\ No newline at end of file
++	if fl: b1.add(7-i[0])
++
++if min(a1|b1) in a1: print('A')
++else :print ('B')
+\ No newline at end of file

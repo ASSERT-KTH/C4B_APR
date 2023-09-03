@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/61043_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/61043_author_id/Accepted.py
+index 4f65dae..4f87661 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/61043_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/61043_author_id/Accepted.py	
+@@ -1,2 +1,12 @@
+ word = str(input())
+-print(word[0].upper() + word[1:].lower() if word.upper() == word or word[1:].upper() == word[1:] else word)
+\ No newline at end of file
++
++if word.upper() == word:
++    print(word.lower())
++elif word[1:].upper() == word[1:]:
++    for l in word:
++        if l.upper() == l:
++            print(l.lower(), end='')
++        else:
++            print(l.upper(), end='')
++else:
++    print(word)
+\ No newline at end of file

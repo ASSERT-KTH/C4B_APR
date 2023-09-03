@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2340_problem_id/1332_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2340_problem_id/1332_author_id/Accepted.py
+index 2a41628..a953844 100644
+--- a/Users/bardia/Downloads/data 4/data/2340_problem_id/1332_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2340_problem_id/1332_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+-s = input("word :")
++s = input()
+ a,b=0,0
+ for c in s:
+     if c.isupper():

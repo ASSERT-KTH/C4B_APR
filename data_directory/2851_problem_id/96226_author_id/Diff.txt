@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2851_problem_id/96226_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2851_problem_id/96226_author_id/Accepted.py
+index 9b505d8..41a8ada 100644
+--- a/Users/bardia/Downloads/data 4/data/2851_problem_id/96226_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2851_problem_id/96226_author_id/Accepted.py	
+@@ -18,4 +18,4 @@ def main():
+ 
+ 
+ if __name__ == '__main__':
+-    main()
+\ No newline at end of file
++    print(main())
+\ No newline at end of file

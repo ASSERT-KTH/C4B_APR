@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1274_problem_id/17574_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1274_problem_id/17574_author_id/Accepted.py
+index c279b05..267e51e 100644
+--- a/Users/bardia/Downloads/data 4/data/1274_problem_id/17574_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1274_problem_id/17574_author_id/Accepted.py	
+@@ -4,13 +4,13 @@ c = int(input())
+ d = int(input())
+ e = int(input())
+ t = [0 for x in range(e)]
+-for y in range(0, e, a):
++for y in range(a-1, e, a):
+     t[y]=1
+-for y in range(0, e, b):
++for y in range(b-1, e, b):
+     t[y]=1
+-for y in range(0, e, c):
++for y in range(c-1, e, c):
+     t[y]=1
+-for y in range(0, e, d):
++for y in range(d-1, e, d):
+     t[y]=1
+ ret = 0
+ for y in t:

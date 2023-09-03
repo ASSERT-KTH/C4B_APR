@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/45038_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/45038_author_id/Accepted.py
+index 0037925..f0f7b76 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/45038_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/45038_author_id/Accepted.py	
+@@ -1,14 +1,17 @@
+ s=list(input())
++b=[]
+ ans=0
+ i=1
+ while i<len(s):
+     if (s[i]=='K')and(s[i-1]=='V'):
+         ans+=1
++        b.append(i)
++        b.append(i-1)
+         i+=2
+     else:i+=1
+-i=2
++i=1
+ while i<len(s):
+-    if ((s[i]=='K')and(s[i-1]=='K')and(s[i-2]!='V'))or((s[i]=='V')and(s[i-1]=='V')and(s[i+1]!='K')):
++    if (((s[i]=='V')and(s[i-1]=='V'))or(((s[i]=='K')and(s[i-1]=='K'))))and((b.count(i)==0)and(b.count(i-1)==0)):
+         ans+=1
+         break
+     else:i+=1

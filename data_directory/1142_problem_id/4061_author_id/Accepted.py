@@ -1,0 +1,5 @@
+S=input().split()
+n=int(S[0])
+a=int(S[1])
+b=int(S[2])
+print(min((n-a),(b+1)))

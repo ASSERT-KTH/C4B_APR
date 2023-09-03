@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/858_problem_id/40588_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/858_problem_id/40588_author_id/Accepted.py
+index e02ad74..0249041 100644
+--- a/Users/bardia/Downloads/data 4/data/858_problem_id/40588_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/858_problem_id/40588_author_id/Accepted.py	
+@@ -6,6 +6,6 @@ if resto==4:
+ elif resto==1:
+   print(min([int(a),int(b)+int(c), int(c)*3 ]  ) )
+ elif resto==2 :
+-  print(min([int(a)*2, int(b), int(c)*3]))
++  print(min([int(a)*2, int(b), int(c)*2]))
+ else : 
+-  print(str(min([int(a)*3, int(a) +int (b) , int (c) ])))
+\ No newline at end of file
++  print(str(min([int(a)*3, int(a) +int (b) , int (c)])))
+\ No newline at end of file

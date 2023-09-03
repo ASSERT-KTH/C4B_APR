@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2088_problem_id/39494_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2088_problem_id/39494_author_id/Accepted.py
+index b57f64a..73ddbff 100644
+--- a/Users/bardia/Downloads/data 4/data/2088_problem_id/39494_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2088_problem_id/39494_author_id/Accepted.py	
+@@ -15,6 +15,8 @@ if contador==contador2:
+        
+             if lista[k][j]==lista[k+1][j] and lista[k][j+1]==lista[k+1][j+1] and lista[k][j]==lista[k][j+1]:
+                 contador3+=1
++            elif lista[k][j]==lista[k][j+1] and lista[k+1][j]==lista[k][j] or lista[k][j+1]==lista[k+1][j+1] and lista[k+1][j]==lista[k+1][j+1]:
++                contador3+=1
+     
+     
+    

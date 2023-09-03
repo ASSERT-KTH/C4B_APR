@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/968_problem_id/49496_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/968_problem_id/49496_author_id/Accepted.py
+index dcb7618..ce79f86 100644
+--- a/Users/bardia/Downloads/data 4/data/968_problem_id/49496_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/968_problem_id/49496_author_id/Accepted.py	
+@@ -42,7 +42,7 @@ def solve(month, weekday):
+     days = get_total_days(month)
+     weeks = days // 7
+     remainder_days = days % 7
+-    if remainder_days == 0:
++    if weekday == 1 and remainder_days == 0:
+         return weeks
+     additional_weeks = 2 if weekday + remainder_days > 8 else 1
+     return weeks + additional_weeks

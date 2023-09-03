@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2461_problem_id/55099_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2461_problem_id/55099_author_id/Accepted.py
+index ef04986..b77e628 100644
+--- a/Users/bardia/Downloads/data 4/data/2461_problem_id/55099_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2461_problem_id/55099_author_id/Accepted.py	
+@@ -3,8 +3,8 @@ x, y = [int(x) for x in input().split()]
+ def even_move(x, y):
+     if x >= 2 and y >= 2:
+         return [True, x - 2, y - 2]
+-    if x >= 1 and y >= 11:
+-        return [True, x - 1, y - 11]
++    if x >= 1 and y >= 12:
++        return [True, x - 1, y - 12]
+     if y >= 22:
+         return [True, x, y - 22]
+     return [False, x, y]
+@@ -12,8 +12,8 @@ def even_move(x, y):
+ def odd_move(x, y):
+     if y >= 22:
+         return [True, x, y - 22]
+-    if x >= 1 and y >= 11:
+-        return [True, x - 1, y - 11]
++    if x >= 1 and y >= 12:
++        return [True, x - 1, y - 12]
+     if x >= 2 and y >= 2:
+         return [True, x - 2, y - 2]
+     return [False, x, y]

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2818_problem_id/716_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2818_problem_id/716_author_id/Accepted.py
+index 6b9b2d0..4101c92 100644
+--- a/Users/bardia/Downloads/data 4/data/2818_problem_id/716_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2818_problem_id/716_author_id/Accepted.py	
+@@ -3,7 +3,7 @@ pairs = n // 2
+ leftover = n % 2
+ ans = ["aa" if x % 2 == 0 else "bb" for x in range(pairs)]
+ if leftover:
+-    if len(ans) > 1:
++    if len(ans) > 0:
+         ans += (["b"] if ans[-1] == "aa" else "a")
+     else:
+         ans = ["a"]

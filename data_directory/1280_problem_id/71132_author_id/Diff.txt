@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/71132_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/71132_author_id/Accepted.py
+index 7de857c..87ca953 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/71132_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/71132_author_id/Accepted.py	
+@@ -1,4 +1,5 @@
+ a=int(input())
++l=[]
+ b=l.extend(map(int,input().split()))
+ l.sort()
+ l.reverse()

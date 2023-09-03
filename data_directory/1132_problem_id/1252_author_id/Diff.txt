@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/1252_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/1252_author_id/Accepted.py
+index 73cc0da..7cdbff2 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/1252_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/1252_author_id/Accepted.py	
+@@ -1,12 +1,5 @@
+ s =int(input())
+-numbers = [4,7,47,74,44,77,477,447,474,444,777,747,774,744]
+-length = len(numbers)
+-for i in range(0,14):
+-    if(s%numbers[i]==0):
+-        print("YES")
+-        end
+-print("NO")        
+-#for i in range(0,14):
+-    #if(s%numbers[i] !=0):
+-       # print("NO")
+-       # break
+\ No newline at end of file
++if(s%47==0 or s%74==0 or s%44==0 or s%77==0 or s%4==0 or s%7==0 or s%444==0 or s%777==0 or s%447==0 or s%774==0 or s%474==0 or s%477==0 or s%747==0 or s%744==0):
++    print("YES")
++else:
++    print("NO")
+\ No newline at end of file

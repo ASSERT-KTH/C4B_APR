@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2697_problem_id/22231_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2697_problem_id/22231_author_id/Accepted.py
+index 7669d8c..6f6271a 100644
+--- a/Users/bardia/Downloads/data 4/data/2697_problem_id/22231_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2697_problem_id/22231_author_id/Accepted.py	
+@@ -21,14 +21,15 @@ else:
+     u, v = x        #Take the Bezout id
+     xp = num*u//g   #xp*a + yp*c == num, only interested in particular solution
+     hs = c//g       #x incrmnt for homogeneous solution
++    if not u:
++        xp += num // g
+     while xp > 0:
+         xp -= hs
+     while xp < 0:
+         xp += hs
+-    if not u:
+-        xp += num // g
+     ans = xp*a + b  #intersection
+     if ans < d:
+         o,p = e_gcd(a,c)
+-        ans += (a*c)//o
++        while ans < d:
++            ans += (a*c)//o
+     print(ans)
+\ No newline at end of file

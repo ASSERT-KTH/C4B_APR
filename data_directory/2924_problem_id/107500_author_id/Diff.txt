@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2924_problem_id/107500_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2924_problem_id/107500_author_id/Accepted.py
+index 6e6e531..d1b3a5a 100644
+--- a/Users/bardia/Downloads/data 4/data/2924_problem_id/107500_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2924_problem_id/107500_author_id/Accepted.py	
+@@ -18,8 +18,7 @@ def decodeSeries(chars):
+         else:
+             ans += str(count)
+             count  = 0
+-    if count != 0:
+-        ans += str(count)
++    ans += str(count)
+     return ans
+     
+ series = read_input()

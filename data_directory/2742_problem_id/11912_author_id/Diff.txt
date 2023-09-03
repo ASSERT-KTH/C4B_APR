@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2742_problem_id/11912_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2742_problem_id/11912_author_id/Accepted.py
+index b81e489..ad1a513 100644
+--- a/Users/bardia/Downloads/data 4/data/2742_problem_id/11912_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2742_problem_id/11912_author_id/Accepted.py	
+@@ -1,16 +1,8 @@
+ n=int(input())
+ s=""
+-while (n>=6):
+-    s+="9"
+-    n-=6
+-if n==5:
+-    s+="7"
+-    s+="1"
+-elif n==4:
+-    s+="7"
+-elif n==3:
+-    s+="7"
+-elif n==2:
+-    s+="1"
+-
++if n%2==0:
++    s+= n//2 *"1"
++else:
++    s+= "7"
++    s+= (n-3)//2 *"1"
+ print(int(s))
+\ No newline at end of file

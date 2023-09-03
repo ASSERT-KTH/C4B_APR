@@ -1,0 +1,34 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2924_problem_id/1764_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2924_problem_id/1764_author_id/Accepted.py
+index b2f6dd6..3c9413a 100644
+--- a/Users/bardia/Downloads/data 4/data/2924_problem_id/1764_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2924_problem_id/1764_author_id/Accepted.py	
+@@ -1,26 +1,15 @@
+ #problem 825A
+ size=int(input())
+ string=input()
+-answer=[]
+ list_=list(string)
+-#print(list_)
+-memory=1
++answer=[]
+ counter=0
+ for i in range(0,size):
+-    #print(i," ",list_[i])
+-    if int(list_[i])==memory:
+-        #print("Checkpoint 1")
+-        counter+=memory
++    if list_[i]=='1':
++        counter+=1
+     else:
+-        #print("Checkpoint 2")
+         answer.append(counter)
+         counter=0
+-        if memory==1:
+-            memory=0
+-            counter+=memory
+-        else:
+-            memory=1
+-            counter+=memory
+ answer.append(counter)
+ mystring = ""
+ for digit in answer:

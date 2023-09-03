@@ -1,0 +1,1 @@
+[{'inputdata': '.B..BBBB\r\r\nBB...WWB\r\r\nB..B.W.B\r\r\nWB.W...B\r\r\n...W.WW.\r\r\nW.....W.\r\r\nWB.W.W.W\r\r\n.WW...WW', 'expectedresult': 'A'}, {'inputdata': 'B.BBBBBB\r\r\nW.BB.W.B\r\r\nW.BBW...\r\r\n..WWWW.B\r\r\n....W..B\r\r\n.WW.W..W\r\r\n.W..WW.W\r\r\nW.W....W', 'expectedresult': 'A'}]

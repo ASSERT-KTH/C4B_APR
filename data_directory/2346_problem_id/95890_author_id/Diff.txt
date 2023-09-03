@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2346_problem_id/95890_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2346_problem_id/95890_author_id/Accepted.py
+index 933aa70..4a532a2 100644
+--- a/Users/bardia/Downloads/data 4/data/2346_problem_id/95890_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2346_problem_id/95890_author_id/Accepted.py	
+@@ -7,7 +7,6 @@ def CheckTriangle(x,y,z):
+         return 0
+ line_of_nums = input()
+ nums = [int(s) for s in line_of_nums.split() if s.isdigit()]
+-print(nums)
+ a = nums[0]
+ b = nums[1]
+ c = nums[2]

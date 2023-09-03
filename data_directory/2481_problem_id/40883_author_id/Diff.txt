@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/40883_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/40883_author_id/Accepted.py
+index 9655569..3131021 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/40883_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/40883_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ for i in range(30):
+ 	a = 5*2**i
+ 	suma += a
+ 
+-	if entrada <= suma:
++	if entrada < suma:
+ 		
+ 		b = int((entrada - (suma - (5*2**(i))))/2**i)
+ 		break

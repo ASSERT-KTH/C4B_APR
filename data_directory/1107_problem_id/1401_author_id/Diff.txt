@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/1401_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/1401_author_id/Accepted.py
+index c354f70..d4fc570 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/1401_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/1401_author_id/Accepted.py	
+@@ -4,10 +4,12 @@ from math import gcd
+ a, b, n = map(int, input().split())
+ ans = 1
+ while True:
+-    x = gcd(a, b)
++    if ans == 1:
++        x = gcd(a, n)
++    else:
++        x = gcd(b, n)
+     if n < x:
+         print(ans)
+         exit()
+     n -= x
+-    ans = (1 if ans == 0 else 0)
+-print(ans)
+\ No newline at end of file
++    ans = (1 if ans == 0 else 0)
+\ No newline at end of file

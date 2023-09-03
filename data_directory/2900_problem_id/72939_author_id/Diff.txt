@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2900_problem_id/72939_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2900_problem_id/72939_author_id/Accepted.py
+index 71d8de0..9a6f63c 100644
+--- a/Users/bardia/Downloads/data 4/data/2900_problem_id/72939_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2900_problem_id/72939_author_id/Accepted.py	
+@@ -1,11 +1,13 @@
++import math
++
+ inp = input().split()
+ n = int(inp[0])
+ a = int(inp[1])
+ 
+-val = -1
++val = math.inf
+ v3 = 1
+-for i in range(1,n - 2):
+-    if val < abs((180 / n) * i - a):
++for i in range(1,n - 1):
++    if val > abs((180 / n) * i - a):
+         v3 = i
+         val = abs((180 / n) * i - a)
+ 

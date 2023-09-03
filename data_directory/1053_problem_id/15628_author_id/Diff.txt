@@ -1,0 +1,42 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1053_problem_id/15628_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1053_problem_id/15628_author_id/Accepted.py
+index f6ca08f..a72cd09 100644
+--- a/Users/bardia/Downloads/data 4/data/1053_problem_id/15628_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1053_problem_id/15628_author_id/Accepted.py	
+@@ -1,27 +1,8 @@
+-n = int(input())
+-if (n % 7) % 4 == 0 or (n % 4) % 7 == 0:
+-    if (n % 7) % 4 == 0 and (n % 4) % 7 != 0:
+-        print('4'*((n%7)//4)+'7'*(n // 7))
+-    else: 
+-        print('4'*(n // 4)+'7'*((n % 4)//7))
+-else:
+-    k = n
+-    ans1 = ''
+-    ans2 = ''
+-    while n > 0:
+-        ans1 += '7'
+-        ans2 += '4'
+-        k -=7
+-        n -= 4
+-        if (n % 7) % 4 == 0 or (n % 4) % 7 == 0:
+-            if (n % 7) % 4 == 0 and (n % 4) % 7 != 0:
+-                print(ans2+'4'*((n%7)//4)+'7'*(n // 7))
+-            else: 
+-                print(ans2+'4'*(n // 4)+'7'*((n % 4)//7))
+-            break
+-        if (k % 7) % 4 == 0 or (k % 4) % 7 == 0:
+-            if (n % 7) % 4 == 0 and (n % 4) % 7 != 0:
+-                print('4'*((n%7)//4)+'7'*(n // 7)+ans1)
+-            else: 
+-                print('4'*(n // 4)+'7'*((n % 4)//7)+ans1)      
+-            break
+\ No newline at end of file
++n=int(input())
++e=10**9
++a=e
++b=e
++for i in range(n//3,-1,-1):
++    x=(n-i*4)//7
++    if x>=0 and x*7+i*4==n and (a+b>i+x or b>x):a,b=i,x
++print(-1 if a==e else '4'*a+'7'*b)
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2604_problem_id/9035_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2604_problem_id/9035_author_id/Accepted.py
+index c95850d..a32c571 100644
+--- a/Users/bardia/Downloads/data 4/data/2604_problem_id/9035_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2604_problem_id/9035_author_id/Accepted.py	
+@@ -17,7 +17,7 @@ l = int(s[0])*10**(n-1)
+ while s[k] == '9':
+     k += 1
+     l += 9*10**(n-k)
+-    if k == n-1:
++    if k == n:
+         print(s)
+         exit()
+ l -= 1

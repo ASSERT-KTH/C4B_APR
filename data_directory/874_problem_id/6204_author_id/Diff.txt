@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/874_problem_id/6204_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/874_problem_id/6204_author_id/Accepted.py
+index 764be3f..00c37f8 100644
+--- a/Users/bardia/Downloads/data 4/data/874_problem_id/6204_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/874_problem_id/6204_author_id/Accepted.py	
+@@ -6,7 +6,7 @@ while sz > 0:
+     ans = step
+     break
+   elif k > (sz - 1) // 2:
+-    k -= (sz - 1) // 2 - 1
++    k -= (sz - 1) // 2 + 1
+   sz = (sz - 1) // 2
+   step -= 1
+ print(ans if sz == -1 else 1)
+\ No newline at end of file

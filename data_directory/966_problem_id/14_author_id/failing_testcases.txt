@@ -1,0 +1,1 @@
+[{'inputdata': '100000000 200020000 54345', 'expectedresult': '10001'}, {'inputdata': '1000234 97653889 1', 'expectedresult': '13903'}, {'inputdata': '3450234 97656669 3000000', 'expectedresult': '9706'}]

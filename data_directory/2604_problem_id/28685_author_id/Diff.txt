@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2604_problem_id/28685_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2604_problem_id/28685_author_id/Accepted.py
+index cdb8cfc..8412055 100644
+--- a/Users/bardia/Downloads/data 4/data/2604_problem_id/28685_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2604_problem_id/28685_author_id/Accepted.py	
+@@ -26,13 +26,16 @@ def g(sn):
+                     if sn[1] < "8":
+                         return "9"*(len(sn)-1)
+                     else:
+-                         return ''.join([str(int(sn[0])-1) if int(sn[0])-1 > 0 else ""]) + "9"*(len(sn)-1)
++                        k = ""
++                        if(int(sn[0])-1 > 0):
++                            k = str(int(sn[0])-1)
++                        return k + "9"*(len(sn)-1)
+                 else:
+-                    return cut(sn[:is8]) + "8" + "9"*(len(sn) - is8-1)
++                    return sn[:is8] + "8" + "9"*(len(sn) - is8-1)
+             if sn[s+1] == "8":
+                 is8 = s
+                 continue
+             if sn[s+1] < "8":
+                 return sn[:s] + "8" + "9"*(len(sn) - s-1)
+-    
++    return cut(sn)
+ print(g(input()))
+\ No newline at end of file

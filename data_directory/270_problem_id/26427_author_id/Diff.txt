@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/270_problem_id/26427_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/270_problem_id/26427_author_id/Accepted.py
+index 4efb17d..58f58f0 100644
+--- a/Users/bardia/Downloads/data 4/data/270_problem_id/26427_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/270_problem_id/26427_author_id/Accepted.py	
+@@ -2,18 +2,5 @@ from sys import stdin
+ x1, y1, x2, y2 = map(int, stdin.readline().split())
+ dx = x2 - x1
+ dy = y2 - y1
+-result2 = (dx + 1)*(dy + 1)
+-
+-def even(x):
+-    return x % 2 == 0
+-
+-if even(dx) and even(dy):
+-    if even(x1 + y1):
+-        result2 = result2 + 1
+-    else:
+-        result2 = result2 - 1
+-        
+-if (x1, y1, x2, y2) == (1, 0, 5, 6):
+-    print("18")
+-else:
+-    print(int(result2//2))
+\ No newline at end of file
++result = ((dx + 1)*(dy + 1)+1)//2
++print(result)
+\ No newline at end of file

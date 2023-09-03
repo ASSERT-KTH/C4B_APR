@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/64809_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/64809_author_id/Accepted.py
+index ae79df2..106666d 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/64809_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/64809_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ n=int(input())
+ if n%4 and n%7 and n%47 and n%74 and n%447 and n%474 and n%477 and n%744 and n%747 and n%774:
+-    print("YES")
++    print("NO")
+ else:
+-    print("NO")
+\ No newline at end of file
++    print("YES")
+\ No newline at end of file

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2_problem_id/1865_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2_problem_id/1865_author_id/Accepted.py
+index 243edc0..9c8435c 100644
+--- a/Users/bardia/Downloads/data 4/data/2_problem_id/1865_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2_problem_id/1865_author_id/Accepted.py	
+@@ -3,4 +3,4 @@ x = min(a, b)
+ a -= x
+ b -= x
+ y = a // 2 + b // 2
+-print(x + " " + y)
+\ No newline at end of file
++print(str(x) + " " + str(y))
+\ No newline at end of file

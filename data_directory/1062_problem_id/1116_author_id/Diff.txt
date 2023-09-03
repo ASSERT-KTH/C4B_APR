@@ -1,0 +1,55 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/1116_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/1116_author_id/Accepted.py
+index 56278f7..91e0e1f 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/1116_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/1116_author_id/Accepted.py	
+@@ -1,32 +1,24 @@
+ n=int(input())
+-a="YES"
++
+ K=0
+-while ((n>0)and(a=="YES")):
++while ((n>0)):
+     ld=n%10
+     if((ld==7)or(ld==4)):
+         K+=1
+-        a="YES"
+-    else:
+-        a="NO"
+-
++    
+     n=n//10
+ 
+-if(a=="NO"):
+-
+-    if(K>0):
+-        a="YES"
+-        while ((K>0)and(a=="YES")):
+-            ld=K%10
+-            if((ld==7)or(ld==4)):
+-                
+-                a="YES"
+-            else:
+-                a="NO"
+-                break
+-            K=K/10
+-    else:
+-        a="NO"
+-
+-    print(a)
++if(K>0):
++    a="YES"
++    while ((K>0)and(a=="YES")):
++        ld=K%10
++        if((ld==7)or(ld==4)):
++            a="YES"
++        else:
++            a="NO"
++            break
++        K=K//10
+ else:
+-    print("YES")
+\ No newline at end of file
++    a="NO"
++
++print(a)
+\ No newline at end of file

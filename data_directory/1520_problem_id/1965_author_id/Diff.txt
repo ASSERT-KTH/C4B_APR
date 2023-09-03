@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1520_problem_id/1965_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1520_problem_id/1965_author_id/Accepted.py
+index a32a7fa..62d00ab 100644
+--- a/Users/bardia/Downloads/data 4/data/1520_problem_id/1965_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1520_problem_id/1965_author_id/Accepted.py	
+@@ -6,9 +6,13 @@ b = int(nabcStr.split()[2])
+ c = int(nabcStr.split()[3])
+ 
+ dp = [0]*(n+1)
+-dp[a] = 1
+-dp[b] = 1
+-dp[c] = 1
++
++if a<=n:
++	dp[a] = 1
++if b<=n:
++	dp[b] = 1
++if c<=n:
++	dp[c] = 1
+ 
+ 
+ 

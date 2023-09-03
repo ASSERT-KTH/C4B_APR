@@ -1,0 +1,85 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/71180_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/71180_author_id/Accepted.py
+index e49e1c9..82e20b9 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/71180_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/71180_author_id/Accepted.py	
+@@ -1,34 +1,46 @@
+-import sys
+-
+-def Btrip(num,lista):
+-    cont = 1
+-    suma = sum(lista)
+-    print('sum',suma)
+-    
+-    if num is 0:
+-        return num
+-    else:
+-        if suma < num:
+-            return '-1'
+-        else:
+-            
+-            maxi = max(lista)
+-            print('maxi',maxi)
+-            while maxi < num:
+-                a = max(lista)
+-                print('a',a)
+-                lista.remove(a)
+-                print('list',lista)
+-                b = max(lista)
+-                print('b',b)
+-                maxi =maxi + b
+-                print('maxi2',maxi)
+-                cont +=1
+-        print(lista)
+-        return cont
+-    
+-def main():
+-    num = int(sys.stdin.readline())
+-    listameses = list(map(int,sys.stdin.readline().split()))
+-    print(Btrip(num,listameses))
++from sys import stdin
++
++
++def mayorvalor(n):
++    aux = n[0]
++##    print('aux-1',aux)
++    for i in n:
++        if aux < i:
++            aux = i
++##    print('AUX',aux)
++    return aux
++
++
++
++def mes(n,m):
++    cont = 1
++    res = sum(m)
++##    print(res)
++    
++    if n is 0:
++        return n
++    else:
++        if res < n:
++            return -1
++        else:
++            var = mayorvalor(m)
++            suma = var 
++            while suma < n:
++                var = mayorvalor(m)
++                m.remove(var)
++##                print('var',var,'m',m)
++                var2 = mayorvalor(m)
++                suma =suma + var2 
++                cont +=1
++    return cont       
++            
++        
++        
++        
++        
++def main():
++    n = int(stdin.readline())
++    m = list(map(int,stdin.readline().split()))
++    cont = 0
++    print(mes(n,m))
+ main()
+\ No newline at end of file

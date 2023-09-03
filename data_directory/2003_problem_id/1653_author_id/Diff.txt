@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/1653_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/1653_author_id/Accepted.py
+index 700ba28..70ed497 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/1653_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/1653_author_id/Accepted.py	
+@@ -1,13 +1,12 @@
+ #!/bin/python3
+ 
+-x = int(input())
++x = int(input())+1
+ 
+-for i in range(x+1, 9001):
+-	
+-	a = [str(y) for y in str(i)]
+-
+-	if len(set(a)) == 4:
+-		print(i)
++while True:
++	a = [str(y) for y in str(x)]
++	if len(set(a)) == len(str(x)):
++		print(x)
+ 		break
+ 	else:
++		x += 1
+ 		continue
+\ No newline at end of file

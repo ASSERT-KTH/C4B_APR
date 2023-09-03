@@ -1,0 +1,43 @@
+diff --git a/Users/bardia/Downloads/data 4/data/290_problem_id/18989_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/290_problem_id/18989_author_id/Accepted.py
+index 73c74b5..4372e23 100644
+--- a/Users/bardia/Downloads/data 4/data/290_problem_id/18989_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/290_problem_id/18989_author_id/Accepted.py	
+@@ -2,22 +2,21 @@ nums = list(map(int, input().split()))
+ e = nums[0]
+ i = nums[1]
+ dmg = nums[2]
+-
+-def check(a, b, dmg, index):
+-    if(a*index > dmg):
+-        return False
+-    
+-    if((dmg-a*index)%b is 0):
+-        return True
+-    
+-    return check(a, b, dmg, index+1)
+-
++passed = False
+ 
+ if(dmg is e or dmg is i or dmg is 0):
+     print("Yes")
+-
+-
+-elif(check(e, i, dmg, 1) or check(i, e, dmg, 1)):
+-    print("Yes")
+ else:
+-    print("No")
+\ No newline at end of file
++    index = 0
++    while(e*index < dmg and i*index < dmg):
++        if((dmg-e*index)%i is 0):
++            passed = True
++            break
++        elif((dmg-i*index)%e is 0):
++            passed = True
++            break
++        index += 1
++    if(passed):
++        print("Yes")
++    else:
++        print('No')
+\ No newline at end of file

@@ -1,0 +1,77 @@
+diff --git a/Users/bardia/Downloads/data 4/data/70_problem_id/4665_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/70_problem_id/4665_author_id/Accepted.py
+index 665177f..7ada8f2 100644
+--- a/Users/bardia/Downloads/data 4/data/70_problem_id/4665_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/70_problem_id/4665_author_id/Accepted.py	
+@@ -7,34 +7,49 @@ for i in range(8):
+ a = -1
+ b = -1
+ for i in range(8):
+-    col = m[i].find('W')
+-    if col >= 0:
+-        a = i
+-        for j in range(i):
+-            if m[j][col] != '.':
+-                a = -1
+-                break
++    for col in range(8):
++        if m[i][col] == 'W':
++            a = i
++            for j in range(i):
++                if m[j][col] != '.':
++                    a = -1
++                    break
+ 
+-        if a != -1:
+-            break
++            if a != -1:
++                break
++    if a != -1:
++        break
+ 
+ i = 7
+ while i >= 0:
+-    col = m[i].find('B')
+-    if col >= 0:
+-        b = i
+-        j = i+1
+-        while j < 8:
+-            if m[j][col] != '.':
+-                b = -1
+-                break
+-            j += 1
++    col = 0
++    while col < 8:
++        if m[i][col] == 'B':
++            b = i
++            j = i+1
++            while j < 8:
++                if m[j][col] != '.':
++                    b = -1
++                    break
++                j += 1
+ 
+-        if b != -1:
+-            break
++            if b != -1:
++                break
++        col += 1
++    if b != -1:
++        break
+     i -= 1
+ 
+ if a <= (7-b):
+     print("A")
+ else:
+-    print("B")
+\ No newline at end of file
++    print("B")
++
++#.BB.B.B.
++#B..B..B.
++#.B.BB...
++#BB.....B
++#BBB....B
++#B..BB...
++#BB.B...B
++#....WWW.
+\ No newline at end of file

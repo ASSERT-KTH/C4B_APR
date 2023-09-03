@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/209_problem_id/4061_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/209_problem_id/4061_author_id/Accepted.py
+index 0ac03e2..cc4335f 100644
+--- a/Users/bardia/Downloads/data 4/data/209_problem_id/4061_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/209_problem_id/4061_author_id/Accepted.py	
+@@ -1,8 +1,8 @@
+-p=[6,2,5,5,4,5,6,3,7,6]
+-a,b=map(int,input().split())
+-k=0
+-for i in range(a,b+1) :
+-    V=str(i)
+-    for j in range(len(V)) :
+-        k=k+p[int(V[j])]
+-print(k)
+\ No newline at end of file
++d = [6, 2, 5, 5, 4, 5, 6, 3, 7, 6]
++a, b = map(int, input().split())
++
++nums = str(list(range(a, b+1)))
++r = 0
++for i in range(len(d)):
++    r += d[i] * nums.count(str(i))
++print(r)
+\ No newline at end of file

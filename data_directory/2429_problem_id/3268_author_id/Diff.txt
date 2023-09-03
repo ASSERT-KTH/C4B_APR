@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2429_problem_id/3268_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2429_problem_id/3268_author_id/Accepted.py
+index 103cb08..8a9a00f 100644
+--- a/Users/bardia/Downloads/data 4/data/2429_problem_id/3268_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2429_problem_id/3268_author_id/Accepted.py	
+@@ -1,10 +1,10 @@
+ def main():
+     *l, k = map(int, input().split())
+     x, y, z = sorted(l)
+-    x = min(k // 3, x + 1)
+-    y = min((k - x) // 2, y + 1)
+-    z = min(k - x - y, z + 1)
+-    print((x + 1) * (y + 1) * (z + 1))
++    x = min(k // 3 + 1, x)
++    y = min((k - x + 1) // 2 + 1, y)
++    z = min(k - x - y + 3, z)
++    print(x * y * z)
+ 
+ 
+ if __name__ == '__main__':

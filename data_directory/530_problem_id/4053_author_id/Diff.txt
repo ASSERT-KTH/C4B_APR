@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/530_problem_id/4053_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/530_problem_id/4053_author_id/Accepted.py
+index f0ffa23..b2c4ec4 100644
+--- a/Users/bardia/Downloads/data 4/data/530_problem_id/4053_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/530_problem_id/4053_author_id/Accepted.py	
+@@ -1,6 +1,13 @@
+ def compute():
++
++    def gcd(a,b):
++        return a if b==0 else gcd(b,a%b)
++
++    def lcm(a,b):
++        return a*(b//gcd(a,b))
++
+     n, a, b, p, q = map(int,input().split())
+-    return (n//a)*p + (n//b)*q - (n//(a*b))*min(p,q)
++    return (n//a)*p + (n//b)*q - (n//(lcm(a,b)))*min(p,q)
+ 
+ if __name__=="__main__":
+     print(compute())
+\ No newline at end of file

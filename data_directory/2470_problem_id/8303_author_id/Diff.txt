@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2470_problem_id/8303_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2470_problem_id/8303_author_id/Accepted.py
+index ad09109..23c0792 100644
+--- a/Users/bardia/Downloads/data 4/data/2470_problem_id/8303_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2470_problem_id/8303_author_id/Accepted.py	
+@@ -8,7 +8,7 @@ def get_input():
+ 
+ 
+ def sieve(x):
+-    res = [2]
++    res = []
+     xs = list(range(2, x+1))
+     i = 0
+     while i < len(xs):
+@@ -28,6 +28,8 @@ def sieve(x):
+ def main():
+     n, m = get_input()
+     p = sieve(m)
++    # print(p)
++    # print(n, m)
+     res = 'NO' if m not in p or p.index(m) - p.index(n) != 1 else 'YES'
+ 
+     print(res)

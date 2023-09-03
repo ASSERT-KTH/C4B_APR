@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1681_problem_id/531_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1681_problem_id/531_author_id/Accepted.py
+index c829ea7..2eb3fcc 100644
+--- a/Users/bardia/Downloads/data 4/data/1681_problem_id/531_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1681_problem_id/531_author_id/Accepted.py	
+@@ -1,9 +1,9 @@
+ '''input
+-14 28
++1 11
+ '''
+ n, m = map(int, input().split())
+ t = 0
+-for a in range(100000):
+-	if a + n**2 - 2*n*a**2 + a**4 == m:
++for a in range(10000):
++	if a + n**2 - 2*n*a**2 + a**4 == m and n - a**2 >= 0:
+ 		t += 1
+ print(t)
+\ No newline at end of file

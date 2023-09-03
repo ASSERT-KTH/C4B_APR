@@ -1,0 +1,36 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1976_problem_id/54653_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1976_problem_id/54653_author_id/Accepted.py
+index 0210a51..37a9fc5 100644
+--- a/Users/bardia/Downloads/data 4/data/1976_problem_id/54653_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1976_problem_id/54653_author_id/Accepted.py	
+@@ -1,21 +1,12 @@
+ import re
+ s=input()
+ s=input()
+-l=len(s)
+-s*=1000
++l=0
+ a=0
+-for i in range(l):
+-    try:
+-        if s[i+1]==s[i]or s[i-1]==s[i]:
+-            a+=1
+-            try:
+-                if s[i]!=s[i-1]and s[i-2]==s[i-1]:
+-                    a-=1
+-            except:
+-                pass
+-    except:
+-        if s[i+1]==s[i]:
+-            a+=1
+-if a==0:
+-    a+=1
+-print(a-1)
+\ No newline at end of file
++for i in range(len(s)):
++    if i==0 or s[i-1]!=s[i]:
++        a+=l
++        l=0
++    else:
++        l+=1
++print(a+l)
+\ No newline at end of file

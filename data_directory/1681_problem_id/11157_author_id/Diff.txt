@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1681_problem_id/11157_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1681_problem_id/11157_author_id/Accepted.py
+index edb68dd..28b0f48 100644
+--- a/Users/bardia/Downloads/data 4/data/1681_problem_id/11157_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1681_problem_id/11157_author_id/Accepted.py	
+@@ -1,5 +1,4 @@
+-n = int(input())
+-m = int(input())
++n,m = map(int,input().split())
+ a = 0
+ for i in range(0, 1000):
+     for j in range(0, 1000):

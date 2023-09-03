@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/233_problem_id/1307_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/233_problem_id/1307_author_id/Accepted.py
+index 763fcb9..5e35535 100644
+--- a/Users/bardia/Downloads/data 4/data/233_problem_id/1307_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/233_problem_id/1307_author_id/Accepted.py	
+@@ -3,9 +3,9 @@ a = int(input())
+ b = int(input())
+ c = int(input())
+ ans  = 0
+-if  a <= b - c:
++if  a <= b - c or n < b:
+     ans = n//a
+-else:
++else :
+     ans = (n - c)// (b -c)
+     rem = c + (n - c ) - (b -c) * ans
+     while(rem >= b):

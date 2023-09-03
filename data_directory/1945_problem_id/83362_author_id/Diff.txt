@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1945_problem_id/83362_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1945_problem_id/83362_author_id/Accepted.py
+index 3a1f893..a6c26fc 100644
+--- a/Users/bardia/Downloads/data 4/data/1945_problem_id/83362_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1945_problem_id/83362_author_id/Accepted.py	
+@@ -6,7 +6,7 @@ def addingdigits(a,b,n):
+         if (a*10+i) % b == 0:
+             t = a * 10 + i
+             break
+-    if t == a:
++    if t == 0:
+         return -1
+     else:
+         return t*pow(10,(n-1))

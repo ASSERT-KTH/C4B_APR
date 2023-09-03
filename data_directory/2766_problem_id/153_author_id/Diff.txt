@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2766_problem_id/153_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2766_problem_id/153_author_id/Accepted.py
+index 636c10d..aa4ca52 100644
+--- a/Users/bardia/Downloads/data 4/data/2766_problem_id/153_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2766_problem_id/153_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ l = 0
+ for i in range(n):
+     if s[i] != s[n - 1 - i]:
+         l += 1
+-if l != 2:
+-    print('NO')
++if l == 2 or l == 0 and n % 2 == 1:
++    print('YES')
+ else:
+-    print('YES')
+\ No newline at end of file
++    print('NO')
+\ No newline at end of file

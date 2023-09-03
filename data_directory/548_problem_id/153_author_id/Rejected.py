@@ -1,0 +1,5 @@
+#n = int(input())
+n, m = map(int, input().split())
+#s = input()
+#c = list(map(int, input().split()))
+print((n // 5 + m // 5) * 4 + (n // 10 + m // 10) * 2)

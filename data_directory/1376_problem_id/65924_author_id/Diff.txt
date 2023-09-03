@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1376_problem_id/65924_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1376_problem_id/65924_author_id/Accepted.py
+index 1188601..70320cf 100644
+--- a/Users/bardia/Downloads/data 4/data/1376_problem_id/65924_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1376_problem_id/65924_author_id/Accepted.py	
+@@ -20,13 +20,15 @@ def alg(lines):
+ 		min_lines = lines
+ 		return True
+ 	return False
+-
++		
+ while current_lines not in seen:
+ 	seen.add(current_lines)
++	# print(seen)
++	# print(current_lines - (n//(2**steps)))
+ 	if alg(current_lines): # able to find an easier one
+-		current_lines = current_lines - (n//(2**steps))
++		current_lines = current_lines - (n/(2**steps))
+ 	else:
+-		current_lines = current_lines + (n//(2**steps))
++		current_lines = current_lines + (n/(2**steps))
+ 	steps = steps + 1
+ 	
+-print(min_lines)
+\ No newline at end of file
++print(int(min_lines))
+\ No newline at end of file

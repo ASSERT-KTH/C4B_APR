@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1226_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1226_problem_id/1633_author_id/Accepted.py
+index ab3bea2..34e944f 100644
+--- a/Users/bardia/Downloads/data 4/data/1226_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1226_problem_id/1633_author_id/Accepted.py	
+@@ -6,4 +6,7 @@ a = 0
+ while a < n:
+     a += pages[d % 7]
+     d += 1
+-print(d % 7)
+\ No newline at end of file
++e = d % 7
++if e == 0:
++    e = 7
++print(e)
+\ No newline at end of file

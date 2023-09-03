@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/668_problem_id/44595_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/668_problem_id/44595_author_id/Accepted.py
+index e72d0bd..85eeeb9 100644
+--- a/Users/bardia/Downloads/data 4/data/668_problem_id/44595_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/668_problem_id/44595_author_id/Accepted.py	
+@@ -1,10 +1,10 @@
+-def f(x):
+-    if x==1:
+-        return "I hate it"
+-    else:
+-        if x%2==0:
+-            return f(x-1)+" I love it"
+-        else:
+-            return f(x-1)+" I hate it"
+ a=int(input())
+-print (f(a))
+\ No newline at end of file
++for i in range (a-1):
++    if i%2==0:
++        print ("I hate that",end=" ")
++    else:
++        print ("I love that",end=" ")
++if a%2==0:
++    print ("I love it")
++else:
++    print ("I hate it")
+\ No newline at end of file

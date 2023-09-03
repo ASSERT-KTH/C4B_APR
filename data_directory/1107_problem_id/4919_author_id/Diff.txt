@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/4919_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/4919_author_id/Accepted.py
+index ca3a35d..2bfe22f 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/4919_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/4919_author_id/Accepted.py	
+@@ -21,4 +21,5 @@ else:
+             n = n - gcd(n, b)
+             x -= 1
+     else:
+-        print(x)
+\ No newline at end of file
++        if x: print(x-1)
++        else: print(x+1)
+\ No newline at end of file

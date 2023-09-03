@@ -1,0 +1,1 @@
+[{'inputdata': '00:17', 'expectedresult': '01:10'}, {'inputdata': '04:55', 'expectedresult': '05:50'}, {'inputdata': '00:29', 'expectedresult': '01:10'}, {'inputdata': '03:44', 'expectedresult': '04:40'}, {'inputdata': '04:50', 'expectedresult': '05:50'}, {'inputdata': '03:32', 'expectedresult': '04:40'}, {'inputdata': '00:00', 'expectedresult': '01:10'}]

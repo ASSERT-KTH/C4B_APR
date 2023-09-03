@@ -1,0 +1,1 @@
+[{'inputdata': '34', 'expectedresult': 'Eisenhower'}]

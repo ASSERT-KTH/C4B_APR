@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1149_problem_id/57996_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1149_problem_id/57996_author_id/Accepted.py
+index b44291a..c41f58d 100644
+--- a/Users/bardia/Downloads/data 4/data/1149_problem_id/57996_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1149_problem_id/57996_author_id/Accepted.py	
+@@ -7,9 +7,8 @@ from math import *
+ 
+ def solve():
+     n = int(input())
+-    bb = n % 3
++    aa, bb = n//3, n % 3
+     if bb >= 2:
+         aa += 1
+-    aa = n//3
+     print(aa // 12,aa % 12)
+ solve()
+\ No newline at end of file

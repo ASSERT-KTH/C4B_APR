@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2766_problem_id/103698_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2766_problem_id/103698_author_id/Accepted.py
+index 89cd912..df4eadb 100644
+--- a/Users/bardia/Downloads/data 4/data/2766_problem_id/103698_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2766_problem_id/103698_author_id/Accepted.py	
+@@ -2,7 +2,6 @@ string = input()
+ razl = 0
+ for i in range(len(string)//2):
+ 	if string[i]!=string[-i-1]:razl+=1
+-print(razl)
+ if razl>1:
+ 	print('NO')
+ elif razl==1:

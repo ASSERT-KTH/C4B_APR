@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/992_problem_id/25310_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/992_problem_id/25310_author_id/Accepted.py
+index b374215..e1bfc22 100644
+--- a/Users/bardia/Downloads/data 4/data/992_problem_id/25310_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/992_problem_id/25310_author_id/Accepted.py	
+@@ -1,10 +1,13 @@
+ call, performance, day = (int(x) for x in input().split())
+-calls_per_day = [n * call for n in range(1,day + 1)]
+-performances_per_day = [n * performance for n in range(1, day + 1)]
+-ans = 0
+-for acall in calls_per_day:
+-    if acall <= day:
+-        for aperformance in performances_per_day:
+-            if aperformance <= day and aperformance == acall:
+-                ans += 1     
+-print(ans)
+\ No newline at end of file
++i = 1
++calls_per_day = set()
++performances_per_day = set()
++while i * call <= day:
++    calls_per_day.add(i * call)
++    i += 1
++i = 1
++while i * performance <= day:
++    performances_per_day.add(i * performance)
++    i += 1
++ans =(calls_per_day & performances_per_day)    
++print(len(ans))
+\ No newline at end of file

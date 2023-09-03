@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/60964_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/60964_author_id/Accepted.py
+index 6f95146..f778871 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/60964_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/60964_author_id/Accepted.py	
+@@ -5,7 +5,7 @@ def main():
+     for letter in line:
+         if letter == pattern[current_letter_index]:
+             current_letter_index += 1
+-            if current_letter_index == 4:
++            if current_letter_index == 5:
+                 print("YES")
+                 break
+     else:

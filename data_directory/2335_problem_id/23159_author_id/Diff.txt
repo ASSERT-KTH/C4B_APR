@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/23159_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/23159_author_id/Accepted.py
+index 5a229a7..377ee23 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/23159_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/23159_author_id/Accepted.py	
+@@ -6,6 +6,8 @@ for i in range(len(a)):
+         c.append(a[i])
+ x=1
+ while True:
++    if len(c)<5:
++        break
+     if c[0]!='h':
+         c.pop(0)
+     else:

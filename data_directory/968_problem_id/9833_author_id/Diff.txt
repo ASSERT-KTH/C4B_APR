@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/968_problem_id/9833_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/968_problem_id/9833_author_id/Accepted.py
+index 2de9cc0..d0693b2 100644
+--- a/Users/bardia/Downloads/data 4/data/968_problem_id/9833_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/968_problem_id/9833_author_id/Accepted.py	
+@@ -1,16 +1,21 @@
++def nod(m):
++    list1=[1,3,5,7,8,10,12]
++    if m in list1:
++        return 31
++    else:
++        return 30
+ def solve(m,d):
+     if m==2:
+         if d==1:
+             return 4
+-        else:
+-            return 5
+-    elif m%2==0:
+-        if d==6 or d==7:
++        return 5
++    elif nod(m)==30:
++        if d==7:
+             return 6
+         else:
+             return 5
+     else:
+-        if d==7:
++        if d==6 or d==7:
+             return 6
+         else:
+             return 5

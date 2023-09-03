@@ -1,0 +1,51 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1766_problem_id/54946_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1766_problem_id/54946_author_id/Accepted.py
+index cfd4882..493d543 100644
+--- a/Users/bardia/Downloads/data 4/data/1766_problem_id/54946_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1766_problem_id/54946_author_id/Accepted.py	
+@@ -1,29 +1,20 @@
+ inp = input()
+-sum = 0
+-cd = 0
+-
+ lista = list()
++keyList = list()
++
++ans = 0;
++maxLen = 0;
++
++occ = dict()
++
+ 
+-for letter in inp:
+-    c = inp.count(letter)
+-    sum +=c
++for x1 in range(len(inp)):
++    for x2 in range(x1, len(inp)):
++        substr = inp[x1:x2+1]
++        numOfocc = occ.get(substr, 0)
++        occ[substr] = numOfocc+1
+ 
+-if sum == len(inp):
+-    print("0")
+-    cd = 100
+-elif c == len(inp):
+-    print (len(inp)-1)
+-    cd = 100
+-else:
+-    for j in range(len(inp)):
+-        for i in range(len(inp),0,-1):
+-            stri = inp[j:i]
+-            #print ("stri " + stri)
+-            w = inp.index(stri)
+-            new_str = inp[w+len(stri)-1:]
+-            #print("new " + new_str)
+-            if stri in new_str:
+-                lista.append(len(stri))
++        if (occ[substr] > 1 and len(substr) > maxLen):
++            maxLen = len(substr)
+ 
+-if cd != 100:
+-    print (max(lista))
+\ No newline at end of file
++print(maxLen)
+\ No newline at end of file

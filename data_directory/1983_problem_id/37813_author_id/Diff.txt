@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1983_problem_id/37813_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1983_problem_id/37813_author_id/Accepted.py
+index b00827c..0ecfb13 100644
+--- a/Users/bardia/Downloads/data 4/data/1983_problem_id/37813_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1983_problem_id/37813_author_id/Accepted.py	
+@@ -2,4 +2,4 @@ n=int(input())
+ if n==2:
+     print(3)
+ else:
+-    print((n**3+3*n**2-4*n)//6)
+\ No newline at end of file
++    print((n**3+5*n)//6)
+\ No newline at end of file

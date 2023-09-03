@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1376_problem_id/49532_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1376_problem_id/49532_author_id/Accepted.py
+index f5057c0..314f207 100644
+--- a/Users/bardia/Downloads/data 4/data/1376_problem_id/49532_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1376_problem_id/49532_author_id/Accepted.py	
+@@ -22,10 +22,10 @@ def lambda_function(target, k, num):
+     while True:
+         exp = k ** count
+         sum += math.floor(num / exp)
+-        if sum >= target:
+-            return True
+         if int(math.floor(num / exp)) == 0:
+             return False
++        if sum >= target:
++            return True
+         count += 1
+ 
+ def main():
+@@ -34,7 +34,7 @@ def main():
+     """
+     lines, k = (int(i) for i in str(sys.stdin.readline()).split(" "))
+     if (int(lines/k) == 0):
+-        print(1)
++        print(lines)
+     else:
+         print(binary_search(k, lines))
+ 

@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/17_problem_id/1518_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/17_problem_id/1518_author_id/Accepted.py
+index 848216e..62ad7e4 100644
+--- a/Users/bardia/Downloads/data 4/data/17_problem_id/1518_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/17_problem_id/1518_author_id/Accepted.py	
+@@ -1,14 +1,12 @@
+ a=list(map(int, input().strip().split(' ')))
+-b=0
++
+ if(a[1]==10):
+     if(a[0]==1):
+         print("-1")
+     else:
+         for i in range(0, a[0]-1):
+-            b+=(a[1]*(10**i))   
+-            b*=10
+-        print(b)
++            print("1", end='', sep='')
++        print("0")
+ else:
+-    for i in range(0, a[0]):
+-        b+=(a[1]*(10**i))
+-    print(b)
+\ No newline at end of file
++    for i in range(0,a[0]):
++        print(a[1], end='', sep='')
+\ No newline at end of file

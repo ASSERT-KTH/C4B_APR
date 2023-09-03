@@ -1,0 +1,43 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/23175_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/23175_author_id/Accepted.py
+index d13b73d..7114d69 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/23175_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/23175_author_id/Accepted.py	
+@@ -1,23 +1,14 @@
+-s = input()
+-flag = 0
+-
+-if(s.isupper() == "True"):
+-    for letter in s:
+-        if flag==0:
+-            print(letter.upper(),end="")
+-            flag=1
+-        else:
+-            print(letter.lower(),end="")
++s=input()
++k=len(s)
++if k>1:
++	if s.isupper():
++		print(s.lower())
++	elif s[1:k].isupper():
++		print(s[0].upper()+s[1:k].lower())
++	else:
++		print(s)
+ else:
+-    if(len(s)<=1):
+-        print(s.upper(),end="")
+-    elif(len(s)>1):
+-        if((s[0].isupper()== 1) and (s[1].islower() == 1)):
+-            print(s)
+-        else:
+-            for letter in s:
+-                if flag==0:
+-                    print(letter.upper(),end="")
+-                    flag=1
+-                else:
+-                    print(letter.lower(),end="")
+\ No newline at end of file
++	if s.isupper():
++		print(s.lower())
++	if s.islower():
++		print(s.upper())
+\ No newline at end of file

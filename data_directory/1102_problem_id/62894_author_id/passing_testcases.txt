@@ -1,0 +1,1 @@
+[{'inputdata': 'ab', 'expectedresult': '.b'}, {'inputdata': 'Ab', 'expectedresult': '.b'}, {'inputdata': 'aB', 'expectedresult': '.b'}, {'inputdata': 'AB', 'expectedresult': '.b'}, {'inputdata': 'YB', 'expectedresult': '.b'}]

@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1662_problem_id/17941_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1662_problem_id/17941_author_id/Accepted.py
+index 49308d7..4f043e1 100644
+--- a/Users/bardia/Downloads/data 4/data/1662_problem_id/17941_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1662_problem_id/17941_author_id/Accepted.py	
+@@ -1,8 +1,12 @@
+ s=input()
++summ=0
++for i in range(len(s)):
++	if s[i]=='@':
++		summ=summ+1
+ try:
+ 	t=s.index("@")
+ 	s=s.split("@")
+-	if s[1][len(s[1])-1]=='/':
++	if s[1][len(s[1])-1]=='/' or summ>1:
+ 		print("NO")
+ 	else:
+ 		s[1]=s[1]+"/"
+@@ -27,6 +31,7 @@ try:
+ 						break
+ 				else:
+ 					s[1]="".join(s[1])
++					
+ 					for i in range(len(s[1])):
+ 						sym=ord(s[1][i])
+ 						if 65<=sym<=90 or 97<=sym<=122 or 48<=sym<=57 or sym==95:

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/764_problem_id/1857_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/764_problem_id/1857_author_id/Accepted.py
+index a57ef4e..dd63c90 100644
+--- a/Users/bardia/Downloads/data 4/data/764_problem_id/1857_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/764_problem_id/1857_author_id/Accepted.py	
+@@ -1,4 +1,2 @@
+-x1,x2,x3=map(int,input().split())
+-mid=int((x1+x2+x3)/3)
+-tot=0;tot=abs(x1-mid)+abs(x2-mid)+abs(x3-mid)
+-print(tot)
+\ No newline at end of file
++i=list(map(int,input().split()))
++print(max(i)-min(i))
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/178_problem_id/21860_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/178_problem_id/21860_author_id/Accepted.py
+index a0bddd3..7fd9520 100644
+--- a/Users/bardia/Downloads/data 4/data/178_problem_id/21860_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/178_problem_id/21860_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ l,r,k=map(int,input().split())
+ l1=[]
+ k1=1
+-while k1<r :
++while k1<=r :
+     if k1>=l :
+         l1.append(k1)
+     k1=k1*k

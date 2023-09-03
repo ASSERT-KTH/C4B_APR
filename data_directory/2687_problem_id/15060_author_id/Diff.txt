@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2687_problem_id/15060_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2687_problem_id/15060_author_id/Accepted.py
+index 1915e34..8760c65 100644
+--- a/Users/bardia/Downloads/data 4/data/2687_problem_id/15060_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2687_problem_id/15060_author_id/Accepted.py	
+@@ -1,7 +1,8 @@
+ n,m=input().split()
+ n=int(n)
+ m=int(m)
+-if(m>=n):
++l=n-1-m
++if(m>=n or l*(l+1)<2*(n-m)):
+     m=n
+     print(n)
+ else:

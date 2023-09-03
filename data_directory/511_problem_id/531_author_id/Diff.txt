@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/511_problem_id/531_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/511_problem_id/531_author_id/Accepted.py
+index f372f56..e1fb7ec 100644
+--- a/Users/bardia/Downloads/data 4/data/511_problem_id/531_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/511_problem_id/531_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ '''input
+-1 7 3
++0 60 50
+ '''
+ a, b, c = map(int, input().split())
+ if a == b:
+@@ -8,7 +8,7 @@ elif c == 0:
+ 	print("NO")
+ elif (b-a) % c == 0 and b > a and c > 0:
+ 	print("YES")
+-elif (b-a) % c == 0 and c < 0:
++elif (b-a) % c == 0 and a > b and c < 0:
+ 	print("YES")
+ else:
+ 	print("NO")
+\ No newline at end of file

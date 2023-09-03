@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1976_problem_id/62168_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1976_problem_id/62168_author_id/Accepted.py
+index 1849957..3d1b056 100644
+--- a/Users/bardia/Downloads/data 4/data/1976_problem_id/62168_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1976_problem_id/62168_author_id/Accepted.py	
+@@ -1,21 +1,18 @@
+ n=int(input())
+ s=input()
+ l=[0 for i in range(n)]
+-r=0
+ o=0
++r=0
+ def odin(k):
+-    j=1
++    j=0
+     d=False
+     while not(d) and j<len(k)-1:
+-        d=k[j]==k[j+1] or k[j]==k[j-1]
++        d=k[j]==k[j+1]
+         j+=1
+-    if len(k)==2:
+-        d=k[j]==k[j-1]
+-    r=j
+-    return(d)
++    return(d, j)
+ for i in range(n):
+     l[i]=s[i]
+-while odin(l):
+-    del(l[r])
++while odin(l)[0]:
++    del(l[odin(l)[1]])
+     o+=1
+ print(o)
+\ No newline at end of file

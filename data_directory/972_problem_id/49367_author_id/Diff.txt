@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/972_problem_id/49367_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/972_problem_id/49367_author_id/Accepted.py
+index e14979b..ba9f853 100644
+--- a/Users/bardia/Downloads/data 4/data/972_problem_id/49367_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/972_problem_id/49367_author_id/Accepted.py	
+@@ -5,7 +5,7 @@ else:
+   a=m-n
+ if a>1:
+   print("NO")
+-elif a==0:
++elif a==0 and (m==0 or n==0):
+   print("NO")
+ else:
+   print("YES")
+\ No newline at end of file

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2912_problem_id/4088_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2912_problem_id/4088_author_id/Accepted.py
+index 4534725..f24fa3d 100644
+--- a/Users/bardia/Downloads/data 4/data/2912_problem_id/4088_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2912_problem_id/4088_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ a,b=map(int,input().split())
+ if a>b: a,b=b,a
+-ans=2
+-for i in range(3,a+1):
++ans=1
++for i in range(2,a+1):
+     ans*=i
+ print(ans)
+\ No newline at end of file

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2_problem_id/1307_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2_problem_id/1307_author_id/Accepted.py
+index cb395fa..4f408b7 100644
+--- a/Users/bardia/Downloads/data 4/data/2_problem_id/1307_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2_problem_id/1307_author_id/Accepted.py	
+@@ -2,4 +2,4 @@ import sys
+ import math
+ 
+ a,b = map(int, input().split())
+-print(min(a,b), max(a,b) // 2)
+\ No newline at end of file
++print(min(a,b), (max(a,b) - min(a,b))// 2)
+\ No newline at end of file

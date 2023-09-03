@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2884_problem_id/106801_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2884_problem_id/106801_author_id/Accepted.py
+index 630a711..ccf5846 100644
+--- a/Users/bardia/Downloads/data 4/data/2884_problem_id/106801_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2884_problem_id/106801_author_id/Accepted.py	
+@@ -7,10 +7,11 @@ if n >= s:
+ 		while d != 0:
+ 		      e=d%10
+ 		      c=c+e
+-		      d=int(d/10)
++		      d=int(d//10)
+ 		check=f-c
+ 		if check < s:
+-			counter=counter+1
++		    #print (f,c,check)
++		    counter=counter+1
+ 		else:
+ 			break
+ 	x=n+1-counter-s

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1267_problem_id/31867_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1267_problem_id/31867_author_id/Accepted.py
+index 18f8159..1f4d0f5 100644
+--- a/Users/bardia/Downloads/data 4/data/1267_problem_id/31867_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1267_problem_id/31867_author_id/Accepted.py	
+@@ -8,4 +8,6 @@ for i in num:
+         break
+ if flag == 0:
+     if sum(map(int, num[:n//2])) == sum(map(int, num[n//2:])):
+-        print("YES")
+\ No newline at end of file
++        print("YES")
++    else:
++        print("NO")
+\ No newline at end of file

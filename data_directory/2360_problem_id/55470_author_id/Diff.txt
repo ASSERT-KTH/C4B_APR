@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2360_problem_id/55470_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2360_problem_id/55470_author_id/Accepted.py
+index c9b0520..2bffcca 100644
+--- a/Users/bardia/Downloads/data 4/data/2360_problem_id/55470_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2360_problem_id/55470_author_id/Accepted.py	
+@@ -43,7 +43,7 @@ def main():
+         output.write( 'YES')
+         return
+ 
+-    otput.write('NO')
++    output.write('NO')
+ 
+ 
+ def run():

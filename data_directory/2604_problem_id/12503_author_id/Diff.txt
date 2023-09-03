@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2604_problem_id/12503_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2604_problem_id/12503_author_id/Accepted.py
+index 7143922..0d97cb2 100644
+--- a/Users/bardia/Downloads/data 4/data/2604_problem_id/12503_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2604_problem_id/12503_author_id/Accepted.py	
+@@ -9,7 +9,16 @@ if n >= 10:
+     sum1 = sum(digits)
+     sum2 = digits[-1]-1+9*(len(digits)-1)
+     if sum2 > sum1:
+-        variant1 = int(str(digits[-1]-1)+'9'*(len(digits)-1))
+-        variant2 = int(str(digits[-1])+'8'+'9'*(len(digits)-2))
+-        answer = variant1 if  variant2 > n else variant2
++        digits.reverse()
++        buf = [9]*len(digits)
++        buf[0] = digits[0]
++        buf[1] = 8
++        i = 1
++        while buf[i] < digits[i]:
++            buf[i] += 1
++            buf[i+1] -= 1
++            i += 1
++        buf[i] += 1
++        buf[i-1] -= 1
++        answer = int("".join(map(str, buf)))
+ print(answer)
+\ No newline at end of file

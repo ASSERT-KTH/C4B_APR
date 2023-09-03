@@ -1,0 +1,5 @@
+n = int(input())
+#n, m = map(int, input().split())
+#s = input()
+#c = list(map(int, input().split()))
+print(n*n - n + 1)

@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/668_problem_id/7303_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/668_problem_id/7303_author_id/Accepted.py
+index 4f8a8fe..44404ec 100644
+--- a/Users/bardia/Downloads/data 4/data/668_problem_id/7303_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/668_problem_id/7303_author_id/Accepted.py	
+@@ -1,11 +1,11 @@
+ x = int(input())
+ str = ""
+-for i in range(x,0,-1):
+-    if i%2==1:
++for i in range(x):
++    if i%2==0:
+         str += "I hate"
+     else:
+         str += "I love"
+-    if i==1:
++    if i==x-1:
+         str += " it"
+     else:
+         str += " that "

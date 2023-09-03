@@ -1,0 +1,30 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1975_problem_id/1673_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1975_problem_id/1673_author_id/Accepted.py
+index aba857e..b81d594 100644
+--- a/Users/bardia/Downloads/data 4/data/1975_problem_id/1673_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1975_problem_id/1673_author_id/Accepted.py	
+@@ -1,9 +1,14 @@
+-n, t = map(int, raw_input().split())
+-m = raw_input().strip()
+-m = m + '0'
+-while t > 0:
+-    t = t - 1
+-    for i in range(n):
+-        if m[i] == 'B' and m[i+1] == 'G':
+-            m = m[0:i] + m[i+1] + m[i] + m[i+2:]
+-print(m[0:n])
+\ No newline at end of file
++n, t = map(int, input().split())
++pp = input().strip()
++ll = []
++for j in pp:
++    ll.append(j)
++for i in range(t):
++    k = 0
++    while k < n-1:
++        if ll[k] == 'B' and ll[k+1] == 'G':
++            ll[k] = 'G'
++            ll[k+1] = 'B'
++            k += 1
++        k += 1
++print(''.join(ll))
+\ No newline at end of file

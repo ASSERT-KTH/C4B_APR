@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2905_problem_id/38337_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2905_problem_id/38337_author_id/Accepted.py
+index 6c0a5bf..3c97e12 100644
+--- a/Users/bardia/Downloads/data 4/data/2905_problem_id/38337_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2905_problem_id/38337_author_id/Accepted.py	
+@@ -1,18 +1,7 @@
+-m,b=map(int,input().split())
+-x=[]
+-y=[]
+-t=b
+-i=0
+-maxnum=0
+-while t>0:
+-	num=0
+-	x.append(i*m)
+-	y.append(b-i)
+-	t=y[i]
+-	for j in range(x[i]+1):
+-		for k in range(y[i]+1):
+-			num+=j+k
+-	maxnum=max(maxnum,num)
+-	i+=1
+-	pass
+-print(maxnum)
+\ No newline at end of file
++m,b=map(int,input().split(" "))
++sm=0
++for y in range(0,b+1):
++    x=m*(b-y)
++    s=(x+y)*(x+1)*(y+1)//2
++    sm=max(s,sm)
++print(sm)
+\ No newline at end of file

@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/61918_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/61918_author_id/Accepted.py
+index fd1a93d..8a5d04e 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/61918_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/61918_author_id/Accepted.py	
+@@ -1,2 +1,23 @@
+ s = input()
+-print(s)
+\ No newline at end of file
++
++l = list(s.lower())
++k = list(s.lower())
++
++#v stands for vowels 
++v = ["a", "o", "y", "e", "u", "i"]
++
++count = 0
++
++for i in range(len(l)):
++    if l[i] in v:
++        k.remove(l[i])
++        count = count - 1
++    else:
++        k.insert(i+count,".")
++        count = count + 1
++s2 = "".join(k)
++
++print(s2)
++
++
++##print(''.join('.'+l for l in input().lower() if l not in 'aeiouy'))
+\ No newline at end of file

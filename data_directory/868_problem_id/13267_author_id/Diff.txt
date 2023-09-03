@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/868_problem_id/13267_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/868_problem_id/13267_author_id/Accepted.py
+index cde0690..0c00183 100644
+--- a/Users/bardia/Downloads/data 4/data/868_problem_id/13267_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/868_problem_id/13267_author_id/Accepted.py	
+@@ -2,5 +2,9 @@ import sys
+ 
+ n = int(input())
+ 
++if n == 0:
++    print(1)
++    exit()
++
+ arr = [6, 8, 4, 2]
+ print(arr[n % 4])
+\ No newline at end of file

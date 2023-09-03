@@ -1,0 +1,1 @@
+[{'inputdata': 'taatta', 'expectedresult': 'ta@ta'}, {'inputdata': 'doatdt', 'expectedresult': 'do@dt'}, {'inputdata': 'atatat', 'expectedresult': 'at@at'}, {'inputdata': 'dotatat', 'expectedresult': 'dot@at'}, {'inputdata': 'atdotatat', 'expectedresult': 'at.@at'}, {'inputdata': 'dotdotatat', 'expectedresult': 'dot.@at'}]

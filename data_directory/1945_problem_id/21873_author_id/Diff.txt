@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1945_problem_id/21873_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1945_problem_id/21873_author_id/Accepted.py
+index f528632..1c32ab2 100644
+--- a/Users/bardia/Downloads/data 4/data/1945_problem_id/21873_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1945_problem_id/21873_author_id/Accepted.py	
+@@ -2,11 +2,11 @@ a,b,n=map(int,input().split())
+ a=a*10
+ for i in range(0,10):
+ 	if((a+i)%b==0):
+-		a=a+i;
+ 		break
+-if(i==9 and (a+i)%b!=0):
++if(i==9 and (a+9)%b!=0):
+ 	print(-1)
+ else:
++	a=a+i
+ 	print(a,end='')	
+ 	while(n>1):
+ 		print(0,end='')

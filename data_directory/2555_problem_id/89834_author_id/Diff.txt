@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/89834_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/89834_author_id/Accepted.py
+index fc9ece6..66e93b8 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/89834_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/89834_author_id/Accepted.py	
+@@ -3,6 +3,7 @@ import re
+ str = input()
+ if len(str) < 7:
+     print ('NO')
++    exit()
+ 
+ res0 = re.search(r'0000000', str)
+ res1 = re.search(r'1111111', str)

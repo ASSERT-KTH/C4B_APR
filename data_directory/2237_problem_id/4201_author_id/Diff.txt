@@ -1,0 +1,50 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2237_problem_id/4201_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2237_problem_id/4201_author_id/Accepted.py
+index e41e2b6..b44d697 100644
+--- a/Users/bardia/Downloads/data 4/data/2237_problem_id/4201_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2237_problem_id/4201_author_id/Accepted.py	
+@@ -22,11 +22,29 @@ def king_attacks(attacker, defender):
+         return True
+   return False
+ 
+-def rook_attacks(attacker, defender):
++def rook_attacks(attacker, defender, blockers=[]):
+   if attacker.r == defender.r and attacker.c == defender.c:
+     return False
+-  if attacker.r == defender.r or attacker.c == defender.c:
+-    return True
++  if attacker.r == defender.r:
++    blocked = False
++    for blocker in blockers:
++      if blocker.r == attacker.r:
++        if attacker.c < blocker.c and blocker.c < defender.c:
++          blocked = True
++        if defender.c < blocker.c and blocker.c < attacker.c:
++          blocked = True
++    if not blocked:
++      return True
++  if attacker.c == defender.c:
++    blocked = False
++    for blocker in blockers:
++      if blocker.c == attacker.c:
++        if attacker.r < blocker.r and blocker.r < defender.r:
++          blocked = True
++        if defender.r < blocker.r and blocker.r < attacker.r:
++          blocked = True
++    if not blocked:
++      return True
+   return False
+ 
+ rook_a, rook_b, king_white, king_black = map(s_to_position, input().split())
+@@ -41,10 +59,10 @@ for dr in range(-1, 2):
+     if king_attacks(king_white, current_king):
+       #print('king attacks %d, %d' % (r, c))
+       continue
+-    if rook_attacks(rook_a, current_king):
++    if rook_attacks(rook_a, current_king, [king_white]):
+       #print('rook A attacks %d, %d' % (r, c))
+       continue
+-    if rook_attacks(rook_b, current_king):
++    if rook_attacks(rook_b, current_king, [king_white]):
+       #print('rook B attacks %d, %d' % (r, c))
+       continue
+     #print('%d, %d is safe' % (r, c))

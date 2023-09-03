@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2360_problem_id/54946_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2360_problem_id/54946_author_id/Accepted.py
+index b45929c..da7b08c 100644
+--- a/Users/bardia/Downloads/data 4/data/2360_problem_id/54946_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2360_problem_id/54946_author_id/Accepted.py	
+@@ -1,7 +1,8 @@
+ gl, gr = [int(i) for i in input().split()]
+ bl, br = [int(i) for i in input().split()]
+ 
+-if ((gl * 2 + 2) >= br and (abs(gl - br) <= 1)) or ((gr * 2 + 2) >= bl and (abs(gr - bl) <= 1)):
++
++if ((gl * 2 + 2) >= br and gl - br <= 1) or ((gr * 2 + 2) >= bl and (gr - bl) <= 1):
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

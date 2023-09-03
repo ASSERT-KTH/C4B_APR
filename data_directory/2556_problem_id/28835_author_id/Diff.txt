@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2556_problem_id/28835_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2556_problem_id/28835_author_id/Accepted.py
+index 3b441bf..b88641e 100644
+--- a/Users/bardia/Downloads/data 4/data/2556_problem_id/28835_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2556_problem_id/28835_author_id/Accepted.py	
+@@ -4,8 +4,8 @@ n = input()
+ def next(x, a, f, s):
+     global Min
+     global n
+-    print(Min)
+-    print(n)
++    #print(Min)
++    #print(n)
+     if len(x) > 0:
+         if a == '' or int(a) >= int(n[0:len(a)]):
+             #try:

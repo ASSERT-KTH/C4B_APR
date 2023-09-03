@@ -1,0 +1,11 @@
+a=list(map(int,input().split()))
+b=max(a)
+a.sort()
+d=a[len(a)-2]
+c=a[len(a)-3]
+if(b<d+c):
+    print("TRIANGLE")
+elif(d+c+a[0]>b):
+    print("SEGMENT")
+else:
+    print("IMPOSSIBLE")

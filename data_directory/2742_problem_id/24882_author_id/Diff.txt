@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2742_problem_id/24882_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2742_problem_id/24882_author_id/Accepted.py
+index abb6348..6200dd2 100644
+--- a/Users/bardia/Downloads/data 4/data/2742_problem_id/24882_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2742_problem_id/24882_author_id/Accepted.py	
+@@ -6,7 +6,7 @@ elif n == 3:
+     ans = '7'
+ else:
+     n -= 3
+-    ans = ans + '1' * (n // 2)
+     ans = ans + '7'
++    ans = ans + '1' * (n // 2)
+ 
+ print(ans)
+\ No newline at end of file

@@ -1,0 +1,39 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1520_problem_id/78594_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1520_problem_id/78594_author_id/Accepted.py
+index 51a0ae9..183cc58 100644
+--- a/Users/bardia/Downloads/data 4/data/1520_problem_id/78594_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1520_problem_id/78594_author_id/Accepted.py	
+@@ -1,19 +1,19 @@
+-n, a, b, c = map(int, input().split())
++n, *delta = map(int, input().split())
+ 
+-max_x = n // a + 1
+-max_y = n // b + 1
+-max_s = 0
++values = {n: 0}
+ 
+-for x in range(max_x):
+-    for y in range(max_y):
+-        upper = (n - a*x - b*y)
++for i in range(n, 0, -1):
++    if i not in values:
++        continue
+ 
+-        if upper % c != 0:
+-            continue
++    v = values.get(i, 0)
++
++    del values[i]
+ 
+-        z = upper // c
++    for d in delta:
++        if i - d < 0:
++            continue
+ 
+-        if z + x + y > max_s:
+-            max_s = z + x + y
++        values[i - d] = max(v + 1, values.get(i - d, 0))
+ 
+-print(max_s)
+\ No newline at end of file
++print(values[0])
+\ No newline at end of file

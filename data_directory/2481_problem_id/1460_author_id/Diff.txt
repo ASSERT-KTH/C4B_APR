@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/1460_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/1460_author_id/Accepted.py
+index fec752a..e28f8be 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/1460_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/1460_author_id/Accepted.py	
+@@ -3,8 +3,7 @@ y=5
+ z=1
+ while x>y*z:
+     x-=y*z
+-    z+=1
+-
++    z*=2
+ if x-z*1<1:
+     print("Sheldon")
+ elif x-z*2<1:

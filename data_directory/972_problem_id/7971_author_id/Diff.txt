@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/972_problem_id/7971_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/972_problem_id/7971_author_id/Accepted.py
+index bfa1261..4dffcfc 100644
+--- a/Users/bardia/Downloads/data 4/data/972_problem_id/7971_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/972_problem_id/7971_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ n,m = map(int , input().split())
+-if n==m:
++if n==m and n!=0 and m!=0:
+        print("YES")
+ elif n+1==m or n-1==m:
+        print("YES")

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1295_problem_id/4088_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1295_problem_id/4088_author_id/Accepted.py
+index 840b7b5..c920afb 100644
+--- a/Users/bardia/Downloads/data 4/data/1295_problem_id/4088_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1295_problem_id/4088_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ n,k,l,c,d,p,nl,np=map(int,input().split())
+ l=k*l
+ c=d*c
+-print(min(l//(nl*n),c,p//(np*n*2)))
+\ No newline at end of file
++print(min(p//np,c,l//nl)//n)
+\ No newline at end of file

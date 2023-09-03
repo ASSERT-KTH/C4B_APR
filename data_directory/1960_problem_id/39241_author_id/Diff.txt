@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1960_problem_id/39241_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1960_problem_id/39241_author_id/Accepted.py
+index 50727c1..242663b 100644
+--- a/Users/bardia/Downloads/data 4/data/1960_problem_id/39241_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1960_problem_id/39241_author_id/Accepted.py	
+@@ -1,10 +1,8 @@
+ mat = []
+ for _ in range(5):
+-    mat.append(input())
++    mat.append(input().split())
+ 
+ for i, row in enumerate(mat):
+     for j, c in enumerate(row):
+         if c == '1':
+-            break
+-
+-print(str(abs(i-2) + abs(j-2)))
+\ No newline at end of file
++            print(str(abs(i-2) + abs(j-2)))
+\ No newline at end of file

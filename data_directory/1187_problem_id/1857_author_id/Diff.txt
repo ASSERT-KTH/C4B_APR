@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/1857_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/1857_author_id/Accepted.py
+index 5d12637..c8e748e 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/1857_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/1857_author_id/Accepted.py	
+@@ -4,5 +4,7 @@ if(inp.isupper()):
+     print(inp.swapcase())
+ elif(inp[0].islower() and inp[1:].isupper()):
+      print(inp.swapcase())
++elif(inp[0].islower() and len(inp)==1):
++     print(inp.swapcase())
+ else:
+-     print(inp)
+\ No newline at end of file
++    print(inp)
+\ No newline at end of file

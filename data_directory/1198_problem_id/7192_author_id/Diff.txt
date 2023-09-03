@@ -1,0 +1,9 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1198_problem_id/7192_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1198_problem_id/7192_author_id/Accepted.py
+index d1b13ad..c60a3cc 100644
+--- a/Users/bardia/Downloads/data 4/data/1198_problem_id/7192_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1198_problem_id/7192_author_id/Accepted.py	
+@@ -1 +1 @@
+-print ['NO','YES'][sum(x in ['H','Q','S'] for x in input())>0]
+\ No newline at end of file
++print(['NO','YES'][sum(x in ['H','Q','9'] for x in input())>0])
+\ No newline at end of file

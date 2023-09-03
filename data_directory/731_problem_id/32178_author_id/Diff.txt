@@ -1,0 +1,50 @@
+diff --git a/Users/bardia/Downloads/data 4/data/731_problem_id/32178_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/731_problem_id/32178_author_id/Accepted.py
+index bb370e2..afb8a47 100644
+--- a/Users/bardia/Downloads/data 4/data/731_problem_id/32178_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/731_problem_id/32178_author_id/Accepted.py	
+@@ -7,8 +7,8 @@ n,a,b=map(int,input().split())
+ if a<b: a,b=b,a
+ 
+ if b==0:
+-    # 1 01 001 0001 ... is optimal
+-    print(n*a)
++    # 1 01 001 0001 ... is optimal, plus a long series of 0's
++    print((n-1)*a)
+ else:
+     # pascal's triangle thing
+     pascal=[[1]*20005]
+@@ -34,11 +34,10 @@ else:
+ 
+     # binary search the last cost added
+     lo=0
+-    hi=a*int((n**0.5)*3+3)
++    hi=a*int((n**0.5)*2+5)
+ 
+     while 1:
+         mid=(lo+hi)//2
+-        mid=11
+         # count stuff
+         c0=0    # < mid
+         c1=0    # = mid
+@@ -47,17 +46,17 @@ else:
+             if (mid-i*a)%b!=0:
+                 # c0 += iC0 + (i+1)C1 + (i+2)C2 + ... + (i+j)Cj
+                 for k in range(j+1):
+-                    print(mid,i,k)
++                    #print(mid,i,k)
+                     c0+=getcom(i,k)
+                     if c0>n: break
+             else:
+                 for k in range(j):
+-                    print(mid,i,k)
++                    #print(mid,i,k)
+                     c0+=getcom(i,k)
+                     if c0>n: break
+-                print(mid,i,j,"c1")
++                #print(mid,i,j,"c1")
+                 c1+=getcom(i,j)
+-        print(mid,"is",c0,c1)
++        #print(mid,"is",c0,c1)
+         if n<c0:
+             hi=mid-1
+         elif c0+c1<n:

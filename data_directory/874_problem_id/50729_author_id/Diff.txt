@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/874_problem_id/50729_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/874_problem_id/50729_author_id/Accepted.py
+index e8fa1c4..aad2b6e 100644
+--- a/Users/bardia/Downloads/data 4/data/874_problem_id/50729_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/874_problem_id/50729_author_id/Accepted.py	
+@@ -1,16 +1,9 @@
+-s=input()
+-
+-n=int(s[0])
+-k=int(s[2])
+-
+-
+-secuencia="1"
+-
+-i=1
+-while i<n:
+-    nueva_secuencia=secuencia[:]+str(i+1)+secuencia[:]
+-    secuencia=nueva_secuencia
+-    i+=1
+-
+-
+-print(secuencia[k-1])
+\ No newline at end of file
++s = input().split()
++a = int(s[0])
++b = int(s[1])
++j = 0
++c = 1
++while b % c == 0:
++	j += 1
++	c *= 2
++print (j)
+\ No newline at end of file

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/814_problem_id/991_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/814_problem_id/991_author_id/Accepted.py
+index d53c1e6..8410798 100644
+--- a/Users/bardia/Downloads/data 4/data/814_problem_id/991_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/814_problem_id/991_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ k, r=map(int, input().split())
+ i=1
+-while (i*k-r)%10==0 and (i*k)%10==0:
++while (i*k-r)%10!=0 and (i*k)%10!=0:
+     i+=1
+ print(i)
+\ No newline at end of file

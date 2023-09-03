@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/764_problem_id/13267_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/764_problem_id/13267_author_id/Accepted.py
+index e8dfbfc..270d23b 100644
+--- a/Users/bardia/Downloads/data 4/data/764_problem_id/13267_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/764_problem_id/13267_author_id/Accepted.py	
+@@ -1,9 +1,9 @@
+ import sys
+ 
+ x = list(map(int, sys.stdin.readline().split()))
+-vmax = x[0]
++vmax = 0
+ vmin = 100
+-for i in x[1:]:
++for i in x:
+     if(i < vmin):
+         vmin = i
+     if(i > vmax):

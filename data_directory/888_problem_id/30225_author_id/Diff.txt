@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/888_problem_id/30225_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/888_problem_id/30225_author_id/Accepted.py
+index 39e630b..73e9868 100644
+--- a/Users/bardia/Downloads/data 4/data/888_problem_id/30225_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/888_problem_id/30225_author_id/Accepted.py	
+@@ -2,7 +2,4 @@ a = int(input())
+ b = int(input())
+ c = int(input())
+ 
+-if a > 400:
+-    print(0)
+-else:
+-    print(7*min(a, b // 2, c // 4))
+\ No newline at end of file
++print(7*min(a, b // 2, c // 4))
+\ No newline at end of file

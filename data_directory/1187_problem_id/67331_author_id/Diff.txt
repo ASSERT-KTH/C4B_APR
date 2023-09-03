@@ -1,0 +1,42 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/67331_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/67331_author_id/Accepted.py
+index 82afb8d..44548bb 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/67331_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/67331_author_id/Accepted.py	
+@@ -11,15 +11,25 @@ Rest = word[1:len(word)]
+ for letter in Rest:
+     if letter in upper_case:
+         counter += 1
+-        
+-if counter == len(Rest):
+-    " Whether or not the first letter is upper or lower case letter,"
+-    "If the remaining letters are all uppercase, then Caps lock has been deployed accidentally"
+-    New_word = First_letter.upper()
+-    for letter in Rest:
+-        New_word += letter.lower()
+ 
+-    print(New_word)
++if First_letter in upper_case:
++    if counter == len(Rest):
++      New_word = First_letter.lower()
++      for letter in Rest:
++         New_word += letter.lower()
++
++      print(New_word)
++    else:
++      " The rest of the letter is a combination of upper and lower case letter"
++      print(word)
++
+ else:
+-    " The rest of the letter is a combination of upper and lower case letter"
+-    print(word)
+\ No newline at end of file
++    if counter == len(Rest):
++      New_word = First_letter.upper()
++      for letter in Rest:
++         New_word += letter.lower()
++
++      print(New_word)
++    else:
++      " The rest of the letter is a combination of upper and lower case letter"
++      print(word)
+\ No newline at end of file

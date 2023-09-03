@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/49392_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/49392_author_id/Accepted.py
+index e71ff76..46aca47 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/49392_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/49392_author_id/Accepted.py	
+@@ -2,5 +2,7 @@ str = input()
+ zeros = "0000000"
+ ones = "1111111"
+ 
+-if (str in zeros) or (str in ones): print("YES")
+-else: print("NO")
+\ No newline at end of file
++if (zeros in str) or (ones in str): 
++	print("YES")
++else: 
++	print("NO")
+\ No newline at end of file

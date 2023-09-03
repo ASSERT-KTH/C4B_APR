@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/1811_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/1811_author_id/Accepted.py
+index 77b5e78..1b4cc76 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/1811_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/1811_author_id/Accepted.py	
+@@ -1,16 +1,17 @@
+ n = str(input().strip())
+ 
+-if len(n) == 4 or len(n) == 7:
+-	for i in n:
+-		if i == '7' or i == '4':
+-			fl = True
+-		else:
+-			fl = False
+-			break
+-else:
+-	fl = False
++c = 0
++
++for i in n:
++	if i == '7' or i == '4':
++		fl = True
++		c += 1
++	else:
++		fl = False
+ 
+-if fl == True:
++if c == 7 or c == 4:
++	print('YES')
++elif fl == True and (c == 7 or c == 4):
+ 	print('YES')
+ else:
+ 	print('NO')
+\ No newline at end of file

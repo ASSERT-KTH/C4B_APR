@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1226_problem_id/34_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1226_problem_id/34_author_id/Accepted.py
+index 9d2b1ad..15ae5c9 100644
+--- a/Users/bardia/Downloads/data 4/data/1226_problem_id/34_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1226_problem_id/34_author_id/Accepted.py	
+@@ -3,6 +3,11 @@ l = list(map(int, input().split()))
+ s = sum(l)
+ if n > s:
+     n = n % s
++if n == 0:
++    for i in range(6, -1, -1):
++        if l[i] != 0:
++            print(i + 1)
++            exit()
+ c = 0
+ for i in range(7):
+     c += l[i]

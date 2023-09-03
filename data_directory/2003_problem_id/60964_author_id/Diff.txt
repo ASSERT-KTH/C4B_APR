@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/60964_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/60964_author_id/Accepted.py
+index 6c0bb4c..4e0f774 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/60964_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/60964_author_id/Accepted.py	
+@@ -1,10 +1,13 @@
+ def main():
+     n = int(input())
+-    for i in range(n + 1, 9000):
++    i = n + 1
++    while True:
+         numbers = set(str(i))
+-        if len(numbers) == 4:
++        if len(numbers) == len(str(i)):
+             print(i)
+             exit()
++        else:
++            i += 1
+ 
+ 
+ if __name__ == "__main__":

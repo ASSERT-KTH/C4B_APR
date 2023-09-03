@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/538_problem_id/136_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/538_problem_id/136_author_id/Accepted.py
+index cd1ffe2..4c27caa 100644
+--- a/Users/bardia/Downloads/data 4/data/538_problem_id/136_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/538_problem_id/136_author_id/Accepted.py	
+@@ -2,8 +2,11 @@ A=[int(i) for i in input().split()]
+ z=sum(A)
+ d=z
+ for i in range(len(A)):
+-    if A.count(A[i])>=2:
+-        h=z-A.count(A[i])*A[i]
++    zz=A.count(A[i])
++    if zz>=2:
++        if zz>=3:
++            zz=3
++        h=z-zz*A[i]
+         if h<d:
+             d=h
+ print(d)
+\ No newline at end of file

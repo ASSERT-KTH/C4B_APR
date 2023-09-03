@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/377_problem_id/1287_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/377_problem_id/1287_author_id/Accepted.py
+index 723f9c8..1c47453 100644
+--- a/Users/bardia/Downloads/data 4/data/377_problem_id/1287_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/377_problem_id/1287_author_id/Accepted.py	
+@@ -6,9 +6,6 @@ if __name__ == '__main__':
+         value = a + b - 3
+     else:
+         value = a + b - 2
+-    if a == 1 or b == 1:
+-        if a == 1 and b == 1:
+-            value = 0
+-        else:
+-            value -= 1
++    if a == 1 and b == 1:
++        value = 0
+     print(value)
+\ No newline at end of file

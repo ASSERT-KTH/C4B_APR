@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/972_problem_id/2461_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/972_problem_id/2461_author_id/Accepted.py
+index 19c7a0a..afd8c12 100644
+--- a/Users/bardia/Downloads/data 4/data/972_problem_id/2461_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/972_problem_id/2461_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ a, b = map(int, input().split())
+-print('YES' if abs(a - b) <= 1 else 'NO')
+\ No newline at end of file
++print('YES' if abs(a - b) <= 1 and max(a, b) > 0 else 'NO')
+\ No newline at end of file

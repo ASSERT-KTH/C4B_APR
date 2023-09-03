@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/70_problem_id/7205_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/70_problem_id/7205_author_id/Accepted.py
+index 25d7126..99ce51c 100644
+--- a/Users/bardia/Downloads/data 4/data/70_problem_id/7205_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/70_problem_id/7205_author_id/Accepted.py	
+@@ -19,4 +19,4 @@ for j in range(8):
+             break
+ 
+ # print(ca, cb)
+-print("A" if ca < cb else "B")
+\ No newline at end of file
++print("A" if ca <= cb else "B")
+\ No newline at end of file

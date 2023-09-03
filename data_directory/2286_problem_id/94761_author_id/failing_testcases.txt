@@ -1,0 +1,1 @@
+[{'inputdata': 'U?', 'expectedresult': 'YES'}, {'inputdata': 'whU?', 'expectedresult': 'YES'}]

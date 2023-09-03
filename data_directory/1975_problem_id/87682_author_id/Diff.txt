@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1975_problem_id/87682_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1975_problem_id/87682_author_id/Accepted.py
+index be3f475..995e1aa 100644
+--- a/Users/bardia/Downloads/data 4/data/1975_problem_id/87682_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1975_problem_id/87682_author_id/Accepted.py	
+@@ -1,5 +1,6 @@
+-m=int(raw_input()[2])
+-x=raw_input()
+-for i in range(m):
+-		x=x.replace("BG","GB")
++n,m=map(int,input().split())
++x=input()
++while m:
++	x=x.replace("BG","GB")
++	m-=1
+ print (x)
+\ No newline at end of file

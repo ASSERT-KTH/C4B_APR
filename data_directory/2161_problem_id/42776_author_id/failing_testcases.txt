@@ -1,0 +1,1 @@
+[{'inputdata': 'XXX\r\n0.0\r\n0..', 'expectedresult': 'illegal'}, {'inputdata': '0X.\r\n.X.\r\n0X0', 'expectedresult': 'illegal'}, {'inputdata': '0X0\r\n.X0\r\n.X.', 'expectedresult': 'illegal'}]

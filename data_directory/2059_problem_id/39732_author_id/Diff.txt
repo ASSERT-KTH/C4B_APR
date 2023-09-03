@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2059_problem_id/39732_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2059_problem_id/39732_author_id/Accepted.py
+index 889012a..6769cf2 100644
+--- a/Users/bardia/Downloads/data 4/data/2059_problem_id/39732_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2059_problem_id/39732_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ from fractions import Fraction
+ x,y,n=map(int,input().split())
+ z=Fraction(x,y).limit_denominator(n)
+-print(z.numerator,'/',z.denominator)
+\ No newline at end of file
++print(z.numerator,z.denominator,sep='/')
+\ No newline at end of file

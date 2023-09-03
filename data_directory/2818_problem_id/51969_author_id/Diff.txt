@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2818_problem_id/51969_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2818_problem_id/51969_author_id/Accepted.py
+index a4219c0..ab24227 100644
+--- a/Users/bardia/Downloads/data 4/data/2818_problem_id/51969_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2818_problem_id/51969_author_id/Accepted.py	
+@@ -1,8 +1,8 @@
+ n=int(input())
+-s='aabbc'
+-L=n%5
++s='aabb'
++L=n%4
+ red=s[0:L]
+-time=n//5
++time=n//4
+ ans=''
+ for _ in range(time):
+     ans+=s

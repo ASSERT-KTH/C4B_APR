@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1940_problem_id/4353_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1940_problem_id/4353_author_id/Accepted.py
+index 5af703a..5d4c925 100644
+--- a/Users/bardia/Downloads/data 4/data/1940_problem_id/4353_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1940_problem_id/4353_author_id/Accepted.py	
+@@ -4,4 +4,4 @@ for i in range(3,n):
+     y=1
+     for j in p:y=y and i%j
+     if y:p+=[i]
+-print(sum([2==sum([not i%j for j in p])for i in range(n)]))
+\ No newline at end of file
++print(sum([2==sum([not i%j for j in p])for i in range(6,n)]))
+\ No newline at end of file

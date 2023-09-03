@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1226_problem_id/69379_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1226_problem_id/69379_author_id/Accepted.py
+index fc46790..0156ff3 100644
+--- a/Users/bardia/Downloads/data 4/data/1226_problem_id/69379_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1226_problem_id/69379_author_id/Accepted.py	
+@@ -7,4 +7,7 @@ while s < n:
+ 		i = 0
+ 	else:
+ 		i +=1
+-print(i)
+\ No newline at end of file
++if i == 0:
++        print(7)
++else:
++        print(i)
+\ No newline at end of file

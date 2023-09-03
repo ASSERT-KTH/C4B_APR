@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/43_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/43_author_id/Accepted.py
+index 5cbe618..b6c95e4 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/43_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/43_author_id/Accepted.py	
+@@ -1,19 +1,21 @@
++from math import floor
++
+ n = int(input())
+ 
+ c=1
+ while(c*5<n):
+-    n-=c*5
+-    print("n ",n)
++    n-= c * 5
+     c*=2
+-    print("C ",c)
+ 
+-if((n-1)/c==0):
++
++exp = floor((n - 1) / c)
++if(exp==0):
+     print("Sheldon")
+-if((n-1)/c==1):
++if(exp==1):
+     print("Leonard")
+-if((n-1)/c==2):
++if(exp==2):
+     print("Penny")
+-if((n-1)/c==3):
++if(exp==3):
+     print("Rajesh")
+-if((n-1)/c==4):
++if(exp==4):
+     print("Howard")
+\ No newline at end of file

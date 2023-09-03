@@ -1,0 +1,1 @@
+[{'inputdata': '4\r\nBRBG', 'expectedresult': '0'}, {'inputdata': '2\r\nBG', 'expectedresult': '0'}, {'inputdata': '3\r\nBGB', 'expectedresult': '0'}]

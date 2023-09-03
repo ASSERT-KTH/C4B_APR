@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1681_problem_id/153_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1681_problem_id/153_author_id/Accepted.py
+index da3ad96..0522ad2 100644
+--- a/Users/bardia/Downloads/data 4/data/1681_problem_id/153_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1681_problem_id/153_author_id/Accepted.py	
+@@ -3,8 +3,9 @@ n, m = map(int, input().split())
+ #s = input()
+ #c = list(map(int, input().split()))
+ l = 0
++x = n - m
+ for a in range(1000):
+     for b in range(1000):
+-        if (a - b) * (a + b - 1) == n - m:
++        if a**2 + b == n and b** 2 + a ==m:
+             l += 1
+ print(l)
+\ No newline at end of file

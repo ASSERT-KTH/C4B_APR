@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/178_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/178_problem_id/1633_author_id/Accepted.py
+index 32ba3df..7038eff 100644
+--- a/Users/bardia/Downloads/data 4/data/178_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/178_problem_id/1633_author_id/Accepted.py	
+@@ -2,15 +2,15 @@ import math
+ string = input()
+ a, b, n = map(int, string.split())
+ p = 0
+-while p ** n < a:
++while n ** p < a:
+     p += 1
+ q = 0
+-while q ** n < b:
++while n ** q < b:
+     q += 1
+-if q ** n > b:
++if n ** q > b:
+     q -= 1
+ if p > q:
+     print(-1)
+ else:
+-    for x in range(p , q + 1):
++    for x in range(p, q + 1):
+         print(n ** x, end = " ")
+\ No newline at end of file

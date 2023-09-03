@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/262_problem_id/8436_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/262_problem_id/8436_author_id/Accepted.py
+index 9e1cf46..a8a1f1f 100644
+--- a/Users/bardia/Downloads/data 4/data/262_problem_id/8436_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/262_problem_id/8436_author_id/Accepted.py	
+@@ -10,11 +10,4 @@ def pow(base, power, mod):
+         return (x * x * (base % mod)) % mod
+ 
+ n = int(input())
+-if n < 2:
+-    print("WRONG INPUT!")
+-elif n > 1000000000000000000:
+-    print("WRONG INPUT!")
+-elif n < 10000000:
+-    print((5**n) % 100)
+-else:
+-    print(pow(5, n, 100) % 100)
+\ No newline at end of file
++print(pow(5, n, 100) % 100)
+\ No newline at end of file

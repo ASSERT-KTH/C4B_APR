@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/6048_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/6048_author_id/Accepted.py
+index a4227d1..bda60f9 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/6048_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/6048_author_id/Accepted.py	
+@@ -37,9 +37,13 @@ if countl==2:
+     for i in range(L, len(l)):
+         if l[i]=="o":
+             temp.append(l[i])
++            o = i
+             break
+ else:
+     flag = 1
++
++if o == 0:
++    flag = 1
+ #print(temp)
+ if flag == 0:
+     print("YES")

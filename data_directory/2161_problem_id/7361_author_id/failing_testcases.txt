@@ -1,0 +1,1 @@
+[{'inputdata': 'X00\r\n0XX\r\nXX0', 'expectedresult': 'draw'}, {'inputdata': 'XX0\r\n00X\r\nXX0', 'expectedresult': 'draw'}, {'inputdata': '0XX\r\nX00\r\n0XX', 'expectedresult': 'draw'}, {'inputdata': '0X0\r\nX0X\r\nX0X', 'expectedresult': 'draw'}, {'inputdata': 'X0X\r\nX0X\r\n0X0', 'expectedresult': 'draw'}, {'inputdata': '0XX\r\nX00\r\nX0X', 'expectedresult': 'draw'}]

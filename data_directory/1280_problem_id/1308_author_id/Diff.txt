@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/1308_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/1308_author_id/Accepted.py
+index 95993a9..f51a3e3 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/1308_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/1308_author_id/Accepted.py	
+@@ -3,7 +3,7 @@ a =  list(map(int,input().split()))
+ a.sort()
+ count = 0
+ pos = len(a)-1
+-while(k >0 and pos>0 ):
++while(k >0 and pos>=0 ):
+    count = count + 1
+    k = k - a[pos]
+    pos = pos - 1

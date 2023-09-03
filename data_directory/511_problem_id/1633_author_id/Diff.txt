@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/511_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/511_problem_id/1633_author_id/Accepted.py
+index a1ad6e7..3462848 100644
+--- a/Users/bardia/Downloads/data 4/data/511_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/511_problem_id/1633_author_id/Accepted.py	
+@@ -4,12 +4,7 @@ a = int(numbers[0])
+ b = int(numbers[1])
+ c = int(numbers[2])
+ if c != 0:
+-    if abs(c) == c:
+-        while a < b:
+-            a += c
+-    else:
+-        while a > b:
+-            a += c
++    a += abs(b - a) // abs(c) * c
+ if a == b:
+     results = "YES"
+ else:

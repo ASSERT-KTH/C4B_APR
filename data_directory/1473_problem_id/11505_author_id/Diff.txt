@@ -1,0 +1,36 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1473_problem_id/11505_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1473_problem_id/11505_author_id/Accepted.py
+index c316cf1..3603d9e 100644
+--- a/Users/bardia/Downloads/data 4/data/1473_problem_id/11505_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1473_problem_id/11505_author_id/Accepted.py	
+@@ -37,8 +37,11 @@ else:
+         d1 = distancia(A[0],A[1],A[2],A[3])
+         d2 = distancia(A[4],A[5],A[2],A[3])
+         d3 = distancia(A[0],A[1],A[4],A[5])
+-        if Rectangulo(d1,d2,d3):
+-            Aux =1
++
++        if d1!=d2 and d2!= d3 and d3!=1:
++            if Rectangulo(d1,d2,d3):
++          
++                Aux =1
+         A[k]-=1
+         
+     for k in range (6):
+@@ -46,11 +49,13 @@ else:
+         d1 = distancia(A[0],A[1],A[2],A[3])
+         d2 = distancia(A[4],A[5],A[2],A[3])
+         d3 = distancia(A[0],A[1],A[4],A[5])
+-        if Rectangulo(d1,d2,d3):
+-            Aux =1
++
++        if d1!=d2 and d2!= d3 and d3!=1:
++            if Rectangulo(d1,d2,d3):
++                Aux =1
+         A[k]+=1
+ 
+-    if Aux>=1:
++    if Aux==1:
+         print('ALMOST')
+     else:
+         print('NEITHER')
+\ No newline at end of file

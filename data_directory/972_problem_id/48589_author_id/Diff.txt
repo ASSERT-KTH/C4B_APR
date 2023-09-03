@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/972_problem_id/48589_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/972_problem_id/48589_author_id/Accepted.py
+index 644bb15..1e23ff4 100644
+--- a/Users/bardia/Downloads/data 4/data/972_problem_id/48589_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/972_problem_id/48589_author_id/Accepted.py	
+@@ -1,6 +1,8 @@
+ # -*- coding: utf-8 -*-
+ a,b = map(int, input().split(' '))
+-if abs(a-b)==1 or a==b:
++if a==b==0:
++    print("NO")
++elif abs(a-b)==1 or a==b:
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

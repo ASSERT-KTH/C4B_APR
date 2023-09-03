@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1376_problem_id/65930_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1376_problem_id/65930_author_id/Accepted.py
+index d1b4894..ebdeaf1 100644
+--- a/Users/bardia/Downloads/data 4/data/1376_problem_id/65930_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1376_problem_id/65930_author_id/Accepted.py	
+@@ -5,21 +5,19 @@ def main():
+     n = int(line[0])
+     k = int(line[1])
+ 
+-    # Maintain that lo will never be the right amount of code and hi will
+-    # ALWAYS be enough code to write.
+-    lo = 0
+     hi = n
+-    while lo - hi > 1:
++    lo = 0
++    while lo < hi:
+ #         print("lo: {} | hi: {}".format(lo, hi))
+-        mid = (lo + hi) // 2
++        mid = lo + (hi - lo) // 2
+         if is_enough(mid, n, k):
+ #             print("mid {} was enough | setting hi".format(mid))
+             hi = mid
+         else:
+ #             print("mid {} was not enough | setting low".format(mid))
+-            lo = mid
++            lo = mid + 1
+ 
+-    print(hi)
++    print(lo)
+ 
+ def is_enough(v, target, k):
+     """

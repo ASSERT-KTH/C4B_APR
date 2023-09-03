@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/44925_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/44925_author_id/Accepted.py
+index 17ff6a5..f5f0038 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/44925_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/44925_author_id/Accepted.py	
+@@ -7,10 +7,12 @@ def sort(lis):
+     return lis
+ 
+ def suma(lis,resul,n,i,cont):
+-    if resul<n:
+-        resul+= lis[-i]
+-        return suma(lis,resul,n,i+1,cont+1)
+-    print(cont)
++    if i in range(len(lis)+1):
++        if resul<n:
++            resul+= lis[-i]
++            return suma(lis,resul,n,i+1,cont+1)
++    if resul>=n: print(cont)
++    else: print(-1)
+ def main():
+     n= int(stdin.readline())
+     lis= [int(x) for x in stdin.readline().strip().split()]

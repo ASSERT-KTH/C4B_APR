@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/62126_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/62126_author_id/Accepted.py
+index 2d00e88..6d7c093 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/62126_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/62126_author_id/Accepted.py	
+@@ -6,4 +6,5 @@ word = ''
+ 
+ for i in string:
+     if i not in words:
+-        word += ('.' + i)
+\ No newline at end of file
++        word += ('.' + i)
++print(word)
+\ No newline at end of file

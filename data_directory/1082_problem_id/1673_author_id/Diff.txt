@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1082_problem_id/1673_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1082_problem_id/1673_author_id/Accepted.py
+index 519b3ce..7d659ee 100644
+--- a/Users/bardia/Downloads/data 4/data/1082_problem_id/1673_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1082_problem_id/1673_author_id/Accepted.py	
+@@ -10,4 +10,5 @@ while True:
+         jav += 1
+         l = l // k
+     else:
+-        print('NO')
+\ No newline at end of file
++        print('NO')
++        break
+\ No newline at end of file

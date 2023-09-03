@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/668_problem_id/1762_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/668_problem_id/1762_author_id/Accepted.py
+index f21af88..bd9d545 100644
+--- a/Users/bardia/Downloads/data 4/data/668_problem_id/1762_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/668_problem_id/1762_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ n = int(input())
+-res = 'I '
++res = ''
+ for i in range(n):
+-  res += 'love that ' if i % 2 else 'hate that '
++  res += 'I love that ' if i % 2 else 'I hate that '
+ print(res[:-5] + 'it')
+\ No newline at end of file

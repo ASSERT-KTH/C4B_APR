@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/64762_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/64762_author_id/Accepted.py
+index 4a1320d..16db6c3 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/64762_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/64762_author_id/Accepted.py	
+@@ -1 +1,9 @@
+-''.join(e for e in ['.'+letter for letter in list(input().lower()) if letter not in ["a", "o", "y", "e", "u", "i"]])
+\ No newline at end of file
++def direct(num):
++    return len(str(num)) == str(num).count('4') + str(num).count('7')
++    
++def indirect(num):
++    for fac in [k for k in range(4, num+1) if num%k == 0]:
++        if direct(fac): return 'YES'
++    return 'NO'
++
++print(indirect(int(input())))
+\ No newline at end of file

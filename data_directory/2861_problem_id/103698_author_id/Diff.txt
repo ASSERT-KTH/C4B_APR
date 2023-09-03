@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2861_problem_id/103698_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2861_problem_id/103698_author_id/Accepted.py
+index 21b20e0..55ea3a2 100644
+--- a/Users/bardia/Downloads/data 4/data/2861_problem_id/103698_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2861_problem_id/103698_author_id/Accepted.py	
+@@ -16,4 +16,7 @@ for i in range(len(vvrs)-1):
+ 	rzn = vvrs[i+1]-vvrs[i]
+ 	if rzn>maxcnt: maxcnt = rzn
+ 
+-print(max(maxcnt-1,vvrs[0]-l, r-vvrs[-1]))
+\ No newline at end of file
++if len(vvrs)==0:
++	print(r-l+1)
++else:
++	print(max(maxcnt-1,vvrs[0]-l, r-vvrs[-1]))
+\ No newline at end of file

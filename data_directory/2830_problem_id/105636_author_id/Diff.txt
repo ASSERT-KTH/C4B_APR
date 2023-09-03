@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2830_problem_id/105636_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2830_problem_id/105636_author_id/Accepted.py
+index e571860..58cfaaf 100644
+--- a/Users/bardia/Downloads/data 4/data/2830_problem_id/105636_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2830_problem_id/105636_author_id/Accepted.py	
+@@ -16,7 +16,7 @@ def count_hacks():
+ 
+     mix = x
+     for _ in range(x // 50):
+-        mix -= 5
++        mix -= 50
+         current_winners_minus_50  = list(winners_list(mix))
+         if mix >= y and p in current_winners_minus_50:
+             return 0

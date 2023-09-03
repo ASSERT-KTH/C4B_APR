@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2470_problem_id/1287_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2470_problem_id/1287_author_id/Accepted.py
+index 468baa5..56f557b 100644
+--- a/Users/bardia/Downloads/data 4/data/2470_problem_id/1287_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2470_problem_id/1287_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ if __name__ == '__main__':
+-    refer = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
++    refer = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53]
+     n, m = str(input()).split()
+     n, m = int(n), int(m)
+     if refer[refer.index(n) + 1] == m:

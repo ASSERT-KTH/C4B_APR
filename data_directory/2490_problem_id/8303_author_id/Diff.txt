@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2490_problem_id/8303_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2490_problem_id/8303_author_id/Accepted.py
+index d0d4db3..1fc8cdb 100644
+--- a/Users/bardia/Downloads/data 4/data/2490_problem_id/8303_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2490_problem_id/8303_author_id/Accepted.py	
+@@ -1,6 +1,2 @@
+ n = int(input())
+-s = n
+-while n%2==0:
+-    n //= 2
+-    s += n
+-print(s)
+\ No newline at end of file
++print(int(n*1.5))
+\ No newline at end of file

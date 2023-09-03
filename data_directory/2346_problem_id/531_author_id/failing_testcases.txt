@@ -1,0 +1,1 @@
+[{'inputdata': '11 5 6 11', 'expectedresult': 'TRIANGLE'}, {'inputdata': '10 20 30 40', 'expectedresult': 'TRIANGLE'}, {'inputdata': '3 6 3 3', 'expectedresult': 'TRIANGLE'}, {'inputdata': '1 1 2 1', 'expectedresult': 'TRIANGLE'}, {'inputdata': '1 10 9 2', 'expectedresult': 'TRIANGLE'}, {'inputdata': '1 8 2 7', 'expectedresult': 'TRIANGLE'}]

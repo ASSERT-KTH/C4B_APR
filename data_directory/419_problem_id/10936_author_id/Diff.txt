@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/419_problem_id/10936_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/419_problem_id/10936_author_id/Accepted.py
+index 9e89f24..563a168 100644
+--- a/Users/bardia/Downloads/data 4/data/419_problem_id/10936_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/419_problem_id/10936_author_id/Accepted.py	
+@@ -7,14 +7,16 @@ elif(b < 0):
+     b = abs(b)
+     if (a < b):
+         b -= (a-1)
+-        for i in range(n,0,-1):
+-            b -= 1
+-            if (b == 0):
+-                res = i
+-                break
+-    elif (a >= b):
++        while(b>0):
++            for i in range(n,0,-1):
++                b -= 1
++                if (b == 0):
++                    res = i
++                    break
++    elif (a == b):
+         res = n
+-
++    else:
++        res = a-b
+ 
+ elif(b > 0):
+     if( n - a < b):

@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1520_problem_id/78641_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1520_problem_id/78641_author_id/Accepted.py
+index 7f0d41b..e6e0eb7 100644
+--- a/Users/bardia/Downloads/data 4/data/1520_problem_id/78641_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1520_problem_id/78641_author_id/Accepted.py	
+@@ -15,7 +15,10 @@ def verga_core(tam_liston, tam_cortes):
+     tamanos_parciales_liston = [-(4000 * 8000)] * (tam_liston + 1)
+     tamanos_parciales_liston[0] = 0
+     
+-    tam_cortes_ord = sorted(set(tam_cortes))
++    tam_cortes_ord = sorted(set(filter(lambda x: x <= tam_liston, tam_cortes)))
++    
++    if(not tam_cortes_ord or tam_cortes_ord[-1] > tam_liston):
++        return 0
+     
+     for tam_corte in tam_cortes_ord:
+         for tam_corte_1 in tam_cortes_ord:

@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/102_problem_id/2068_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/102_problem_id/2068_author_id/Accepted.py
+index 0245c75..e921fb8 100644
+--- a/Users/bardia/Downloads/data 4/data/102_problem_id/2068_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/102_problem_id/2068_author_id/Accepted.py	
+@@ -1,11 +1,11 @@
+-d1,d2,d3=map(int,input().split())
+-if(d1<d2):
+-    if(2*d1+d2<d3):
+-        print(2*d1+2*d2)
+-    else:
+-        print(d1+d2+d3)
++d=[int(i) for i in input().split()]
++i=0
++while i<2:
++    if(d[i]>d[i+1]):
++        d[i],d[i+1]=d[i+1],d[i]
++        i=-1
++    i+=1
++if(2*d[0]+2*d[1]<d[0]+d[1]+d[2]):
++    print(2*d[0]+2*d[1])
+ else:
+-    if(2*d2+d1<d3):
+-        print(2*d2+2*d1)
+-    else:
+-        print(d1+d2+d3)
+\ No newline at end of file
++    print(d[0]+d[1]+d[2])
+\ No newline at end of file

@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2093_problem_id/13267_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2093_problem_id/13267_author_id/Accepted.py
+index 3bf4f2c..186b384 100644
+--- a/Users/bardia/Downloads/data 4/data/2093_problem_id/13267_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2093_problem_id/13267_author_id/Accepted.py	
+@@ -11,13 +11,16 @@ if(k == 1 or k > n):
+     print(-1)
+     exit()
+ 
++res = []
+ t = 2
+ for i in range(n):
+     if(n - (k - 2) > i):
+         if(i % 2 == 0):
+-            sys.stdout.write('a')
++            res.append('a')
+         else:
+-            sys.stdout.write('b')
++            res.append('b')
+     else:
+-        sys.stdout.write(chr(t + 97))
+-        t += 1
+\ No newline at end of file
++        res.append(chr(t + 97))
++        t += 1
++        
++print("".join(res))
+\ No newline at end of file

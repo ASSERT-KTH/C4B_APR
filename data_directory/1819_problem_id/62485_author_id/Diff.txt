@@ -1,0 +1,30 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1819_problem_id/62485_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1819_problem_id/62485_author_id/Accepted.py
+index 3324753..5d90f14 100644
+--- a/Users/bardia/Downloads/data 4/data/1819_problem_id/62485_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1819_problem_id/62485_author_id/Accepted.py	
+@@ -3,14 +3,14 @@ data = input().split()
+ Y, K, N = int(data[0]), int(data[1]), int(data[2])
+ 
+ answer = []
+-counter = (K-Y)%K
+-if counter <= (N-Y) and counter > 0:
+-    answer.append(counter)
++i = K
++while i <= N:
++    if i > Y:
++        answer.append(i - Y)
++    i += K
+ 
+-    counter += K
+-    while counter <= (N-Y):
+-        answer.append(counter)
+-        counter += K
+-    print(" ".join(map(str, answer)))
++
++if len(answer) == 0:
++    print('-1')
+ else:
+-    print('-1')
+\ No newline at end of file
++    print(" ".join(map(str, answer)))
+\ No newline at end of file

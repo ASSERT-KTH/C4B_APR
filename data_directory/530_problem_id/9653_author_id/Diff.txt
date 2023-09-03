@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/530_problem_id/9653_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/530_problem_id/9653_author_id/Accepted.py
+index a371032..1c18560 100644
+--- a/Users/bardia/Downloads/data 4/data/530_problem_id/9653_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/530_problem_id/9653_author_id/Accepted.py	
+@@ -1,3 +1,5 @@
++import math
++
+ if __name__ == '__main__':
+     n, a, b, p, q = map(int, input().split())
+ 
+@@ -7,6 +9,6 @@ if __name__ == '__main__':
+ 
+     divisible_a = n // a
+     divisible_b = n // b
+-    divisible_ab = n // (a * b)
++    divisible_ab = n // (a * b // math.gcd(a, b))
+ 
+     print(divisible_a * p + (divisible_b - divisible_ab) * q)
+\ No newline at end of file

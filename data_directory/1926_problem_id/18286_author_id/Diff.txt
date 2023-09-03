@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1926_problem_id/18286_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1926_problem_id/18286_author_id/Accepted.py
+index 8194e34..59d070c 100644
+--- a/Users/bardia/Downloads/data 4/data/1926_problem_id/18286_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1926_problem_id/18286_author_id/Accepted.py	
+@@ -1,5 +1,2 @@
+ a, b = map(int, input().split())
+-if a >= b:
+-    print(a + b - 1 - (b | 1), (b | 1))
+-else:
+-    print((a | 1), a + b - 1 - (a | 1))
+\ No newline at end of file
++print(a + b - 1 - min(a, b), min(a, b))
+\ No newline at end of file

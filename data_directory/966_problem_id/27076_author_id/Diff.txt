@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/966_problem_id/27076_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/966_problem_id/27076_author_id/Accepted.py
+index 72a0d84..9965651 100644
+--- a/Users/bardia/Downloads/data 4/data/966_problem_id/27076_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/966_problem_id/27076_author_id/Accepted.py	
+@@ -3,10 +3,10 @@ ans=1
+ m-=n
+ osn=0
+ while m>1:
+-    if osn==max(k,n-k-1):break
++    if osn==max(k-1,n-k):break
+     ans+=1
+     m-=1
+-    osnl,osnr=min(k,osn),min(n-k-1,osn)
++    osnl,osnr=min(k-1,osn),min(n-k,osn)
+     osn+=1
+     m-=(osnl+osnr)
+ ans+=m//n

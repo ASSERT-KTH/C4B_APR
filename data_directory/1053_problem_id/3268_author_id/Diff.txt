@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1053_problem_id/3268_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1053_problem_id/3268_author_id/Accepted.py
+index 57e36dd..1196abb 100644
+--- a/Users/bardia/Downloads/data 4/data/1053_problem_id/3268_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1053_problem_id/3268_author_id/Accepted.py	
+@@ -1,8 +1,8 @@
+ def main():
+     n = int(input())
+-    for i in range(n, -1, -7):
+-        if not i % 4:
+-            print('4' * (i // 4) + '7' * ((n - i) // 7))
++    for i in range(n, -1, -4):
++        if not i % 7:
++            print('4' * ((n - i) // 4) + '7' * (i // 7))
+             return
+     print(-1)
+ 

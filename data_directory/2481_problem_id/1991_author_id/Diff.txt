@@ -1,0 +1,30 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/1991_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/1991_author_id/Accepted.py
+index deb7efa..30b0411 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/1991_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/1991_author_id/Accepted.py	
+@@ -1,16 +1,8 @@
+-from collections import deque
+-
+ n = int(input())
+-i = 1
+-link = deque()
+-link.append("Sheldon")
+-link.append("Leonard")
+-link.append("Penny")
+-link.append("Rajesh")
+-link.append("Howard")
+-while i < n:
+-    i = i + 1
+-    s = link.popleft()
+-    link.append(s)
+-    link.append(s)
+-print(link.popleft())
+\ No newline at end of file
++r = 1
++while r * 5 < n:
++    n -= r * 5
++    r *= 2
++
++names = ("Sheldon", "Leonard", "Penny", "Rajesh", "Howard");
++print(names[int((n - 1) / r)])
+\ No newline at end of file

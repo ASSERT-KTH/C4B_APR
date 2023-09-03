@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1142_problem_id/1308_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1142_problem_id/1308_author_id/Accepted.py
+index 42eecfa..ee3d01b 100644
+--- a/Users/bardia/Downloads/data 4/data/1142_problem_id/1308_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1142_problem_id/1308_author_id/Accepted.py	
+@@ -1,7 +1,11 @@
+ #   list(map(int,input().split()))
+ cont = 0
+ n,a,b = map(int,input().split())
+-for i in range(n):
+-   if(i-1<= b and n-i>=a):
+-      cont += 1
+-print(cont-1)
+\ No newline at end of file
++if(a == 0 and b == 0):
++   print(1)
++else:
++      
++   for i in range(n):
++      if(i-1<= b and n-i>=a):
++         cont += 1
++   print(cont-1)
+\ No newline at end of file

@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1940_problem_id/1287_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1940_problem_id/1287_author_id/Accepted.py
+index 3096087..60cf7a6 100644
+--- a/Users/bardia/Downloads/data 4/data/1940_problem_id/1287_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1940_problem_id/1287_author_id/Accepted.py	
+@@ -1,12 +1,12 @@
+ if __name__ == '__main__':
+     n = int(input())
+     prime = [True] * (n + 1)
+-    candi = [set()] * (n + 1)
++    candi = [set() for _ in range(n + 1)]
+     for i in range(2, n + 1):
+         if prime[i]:
+-            for j in range(i * i, n + 1, i):
++            for j in range(i + i, n + 1, i):
+                 prime[j] = False
+-                candi[j].add(j)
++                candi[j].add(i)
+     rest = 0
+     for i in range(2, n + 1):
+         if len(candi[i]) == 2:

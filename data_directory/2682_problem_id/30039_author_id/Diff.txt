@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2682_problem_id/30039_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2682_problem_id/30039_author_id/Accepted.py
+index c4a2313..5b52f41 100644
+--- a/Users/bardia/Downloads/data 4/data/2682_problem_id/30039_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2682_problem_id/30039_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+-n = input()
+-print(n.count('0') + n.count('4') + n.count('6') + n.count('8') * 2 + n.count('9'))
+\ No newline at end of file
++n = hex(int(input()))[2:].upper()
++print(n.count('0') + n.count('4') + n.count('6') + n.count('8') * 2 + n.count('9') + n.count('A') + n.count('B') * 2 + n.count('D'))
+\ No newline at end of file

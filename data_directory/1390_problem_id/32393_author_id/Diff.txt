@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1390_problem_id/32393_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1390_problem_id/32393_author_id/Accepted.py
+index 52382e6..e12dbeb 100644
+--- a/Users/bardia/Downloads/data 4/data/1390_problem_id/32393_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1390_problem_id/32393_author_id/Accepted.py	
+@@ -1,7 +1,4 @@
+-n = int(input())
+-x = int(input())
+-y = int(input())
+-
++n, x, y = map(int, input().split())
+ p = int((n / 100) * y + 0.9999999)
+ 
+ if p <= x:

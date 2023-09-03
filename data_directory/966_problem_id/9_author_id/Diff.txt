@@ -1,0 +1,46 @@
+diff --git a/Users/bardia/Downloads/data 4/data/966_problem_id/9_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/966_problem_id/9_author_id/Accepted.py
+index be6088f..ccd333b 100644
+--- a/Users/bardia/Downloads/data 4/data/966_problem_id/9_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/966_problem_id/9_author_id/Accepted.py	
+@@ -1,24 +1,20 @@
+-import sys
+-input = sys.stdin.readline
++hobbit, pillow, bed = map(int, input().split())
++pillow -= hobbit
++#
++start = 0
++end = pillow
+ 
+-hobbits,pillows,bedspot = list(map(int, input().split()))
++while start < end:
++  mid = round((start + end + 1)/2)
+ 
+-pillows -= hobbits
++  lside = int(min(bed - 1, mid - 1))
++  rside = int(min(hobbit - bed, mid - 1))
+ 
+-counter = 1
+-bottom = bedspot - 1
+-top = bedspot
++  needed = mid + lside * ((mid - lside) + (mid - 1)) / 2 + rside * ((mid - rside) + (mid - 1)) / 2
+ 
+-while True:
+-    cat = top - bottom
+-    if cat <=pillows:
+-        pillows -= cat
+-        counter += 1
+-    else:
+-        break
++  if(needed > pillow):
++    end = mid - 1
++  else:
++    start = mid
+ 
+-    if bottom > 0:
+-        bottom-=1
+-    if top < hobbits:
+-        top+=1
+-print(counter)
+\ No newline at end of file
++print(start+1)
+\ No newline at end of file

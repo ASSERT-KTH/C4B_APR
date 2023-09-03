@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1390_problem_id/66583_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1390_problem_id/66583_author_id/Accepted.py
+index 859d672..7b41076 100644
+--- a/Users/bardia/Downloads/data 4/data/1390_problem_id/66583_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1390_problem_id/66583_author_id/Accepted.py	
+@@ -8,5 +8,7 @@ y=float(p[2])
+ 
+ out=math.ceil((y/100)*n)
+ 
+-
+-print (int(out-x))
+\ No newline at end of file
++if (int(out-x)>0):
++    print (int(out-x))
++else:
++    print (0)
+\ No newline at end of file

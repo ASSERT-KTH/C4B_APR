@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2161_problem_id/7205_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2161_problem_id/7205_author_id/Accepted.py
+index a6ec8a4..b48fe43 100644
+--- a/Users/bardia/Downloads/data 4/data/2161_problem_id/7205_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2161_problem_id/7205_author_id/Accepted.py	
+@@ -24,7 +24,15 @@ for i in range(3):
+ def is_draw():
+     return cx == 5 and c0 == 4
+ 
+-if not (0 <= cx - c0 <= 1) or ("XXX" in b and "000" in b):
++def is_illegal():
++    if not (0 <= cx - c0 <= 1) or ("XXX" in b and "000" in b):
++        return True
++    if "XXX" in b and c0 == cx:
++        return True
++    if "000" in b and cx > c0:
++        return True
++
++if is_illegal():
+     print("illegal")
+ else:
+     if "XXX" in b:

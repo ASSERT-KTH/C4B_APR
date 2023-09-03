@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1053_problem_id/36379_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1053_problem_id/36379_author_id/Accepted.py
+index 722b645..e8c96b7 100644
+--- a/Users/bardia/Downloads/data 4/data/1053_problem_id/36379_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1053_problem_id/36379_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ n=int(input())
+ #6=5*4-2*7
+ l=[0,8,16,24,4,12,20]
+ flag=0
+-for i in range(6):
++for i in range(7):
+     if(n%7==i and n>=l[i]):
+         n-=l[i]
+         k=n//7

@@ -1,0 +1,87 @@
+diff --git a/Users/bardia/Downloads/data 4/data/511_problem_id/3321_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/511_problem_id/3321_author_id/Accepted.py
+index 7f1a906..4a6c1d9 100644
+--- a/Users/bardia/Downloads/data 4/data/511_problem_id/3321_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/511_problem_id/3321_author_id/Accepted.py	
+@@ -5,73 +5,13 @@ if start == value:
+     print ("YES")
+     exit()
+ 
+-if increment == 0:
+-    if value == start:
+-        print ("YES")
+-    else:
+-        print("NO")
++if value > start and increment > 0 and value%increment == start%increment:
++    print ("YES")
+     exit()
+ 
+-if start < 0:
+-    value = value + abs(start)
+-else:
+-    value = value - start
+-start = 0
+-
+-print(start, value, increment)
+-#if start == 0:
+-#
+-#if value == 0:
+-#
+-#
+-#if value < 0:
+-#    if increment > 0:
+-#        if start > 0:
+-#            print ("NO") 
+-#        else:
+-#            if start < value:
+-#
+-#            else:
+-#                print ("NO")
+-#            
+-#
+-#    if increment < 0:
+-#        if start < 0:
+-#    
+-#        else:
+-#
+-#if value > 0:
+-#
+-#
+-#
+-#
+-#    if (start > 0 and increment > 0) or  (start < 0 and increment > 0:
+-#        print ("NO")
+-#        # start is neg and increment is neg
+-#        
+-#        
+-#        print ("YES")
+-#    else:
+-#        if  
+-#
+-#    else:
+-#        print ("YES")
+-#    exit()
+-#
+-#if start == 0:
+-#    if value % increment == 0 and value >= start:
+-#        print ("YES")
+-#    else:
+-#        print ("NO")
+-#    exit()
+-#
+-#
+-#
+-#value = value - start
+-#start = 0
+-
+-if value % increment == 0 and value >= start:
++if value < start and increment < 0 and value%increment == start% increment:
+     print ("YES")
+-else:
+-    print ("NO")
+-# 1488583250099
+\ No newline at end of file
++    exit()
++
++print("NO")
++# 1488583572329
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/178_problem_id/1307_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/178_problem_id/1307_author_id/Accepted.py
+index 13dec01..87e1719 100644
+--- a/Users/bardia/Downloads/data 4/data/178_problem_id/1307_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/178_problem_id/1307_author_id/Accepted.py	
+@@ -2,7 +2,7 @@
+ 
+ import sys
+ l,r,k= map(int, input().split())
+-p = k;
++p = 1;
+ ans = 0
+ while p <= r:
+     if p >= l:

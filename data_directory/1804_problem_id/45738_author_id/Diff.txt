@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1804_problem_id/45738_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1804_problem_id/45738_author_id/Accepted.py
+index 83d49e7..26ae8a4 100644
+--- a/Users/bardia/Downloads/data 4/data/1804_problem_id/45738_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1804_problem_id/45738_author_id/Accepted.py	
+@@ -3,6 +3,6 @@ def sex_identifier(user):
+     if len(user) % 2 == 0:
+         return "CHAT WITH HER!"
+     else:
+-        return "IGNORE HIM"
++        return "IGNORE HIM!"
+ 
+ print(sex_identifier(input()))
+\ No newline at end of file

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/122_problem_id/4061_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/122_problem_id/4061_author_id/Accepted.py
+index 7266261..208f1c1 100644
+--- a/Users/bardia/Downloads/data 4/data/122_problem_id/4061_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/122_problem_id/4061_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ r=[500,1000,1500,2000,2500]
+ a,b=map(int,input().split())
+ k=0
+ for i in range(5) :
+-    k=k+max(0.3*l[i],(1-(l[i]/250))*r[i]-50*w[i])
++    k=k+max(0.3*r[i],(1-(l[i]/250))*r[i]-50*w[i])
+ k=k+a*100
+ k=k-b*50
+ print(int(k))
+\ No newline at end of file

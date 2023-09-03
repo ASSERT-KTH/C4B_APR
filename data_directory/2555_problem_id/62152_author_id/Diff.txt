@@ -1,0 +1,39 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/62152_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/62152_author_id/Accepted.py
+index 40b8b36..80d4357 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/62152_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/62152_author_id/Accepted.py	
+@@ -2,13 +2,14 @@ a = []
+ a = list(input())
+ n = 0
+ b = 0
++j = 0
+ 
+ while n < len(a):
+     k = a[n]
+     if k == '0':
+         b = b + 1
+     if b == 7:
+-        print('YES')
++        j = j + 1
+         b = 0
+     if k == '1':
+         b = 0
+@@ -22,9 +23,14 @@ while n < len(a):
+     if k == '1':
+         b = b + 1
+     if b == 7:
+-        print('YES')
++        j = j + 1
+         b = 0
+     if k == '0':
+         b = 0
+ 
+-    n = n + 1
+\ No newline at end of file
++    n = n + 1
++
++if j >= 1:
++    print('YES')
++else:
++    print('NO')
+\ No newline at end of file

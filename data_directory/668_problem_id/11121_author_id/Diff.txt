@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/668_problem_id/11121_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/668_problem_id/11121_author_id/Accepted.py
+index 9ca95e3..93e4989 100644
+--- a/Users/bardia/Downloads/data 4/data/668_problem_id/11121_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/668_problem_id/11121_author_id/Accepted.py	
+@@ -1,14 +1,16 @@
+-n = input()
++n = int(input())
+ i = 1
+-
++s = ""
+ while(i < n):
+     if (i % 2 == 1):
+-        print ("I hate that"),
++        s += "I hate that "
+     else:
+-        print ("I love that"),
++        s += "I love that "
+     i += 1
+ 
+ if (i % 2 == 1):
+-    print ("I hate it")
++    s += "I hate it"
+ else:
+-    print ("I love it")
+\ No newline at end of file
++    s += "I love it"
++
++print (s)
+\ No newline at end of file

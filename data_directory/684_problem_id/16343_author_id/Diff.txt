@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/684_problem_id/16343_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/684_problem_id/16343_author_id/Accepted.py
+index 568b39b..907496d 100644
+--- a/Users/bardia/Downloads/data 4/data/684_problem_id/16343_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/684_problem_id/16343_author_id/Accepted.py	
+@@ -11,15 +11,15 @@ def calc():
+     cnt = list(map(int, input().split()))
+     if cnt == [0,0,0,0]:
+         return '0'
+-    #if cnt == [0,1,0,0]:
+-        #return '01'
+-    #if cnt == [0,0,1,0]:
+-        #return '10'
+-    #if cnt[0] == 0 or cnt[1] == 0 or cnt[2] == 0 or cnt[3] == 0:
+-        #return "Impossible"
+ 
+     a = get_cnt(cnt[0])
+     b = get_cnt(cnt[3])
++
++    if cnt == [0,0,0,cnt[3]]:
++        a = 0
++    if cnt == [cnt[0],0,0,0]:
++        b = 0
++
+     if a == -1 or b == -1 or (a * b) != (cnt[1] + cnt[2]):
+         return "Impossible"
+ 

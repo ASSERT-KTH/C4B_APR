@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/61103_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/61103_author_id/Accepted.py
+index 704f24b..9c8f832 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/61103_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/61103_author_id/Accepted.py	
+@@ -1,5 +1,12 @@
+-import re
+-if re.search(r'h+e+l+l+o+', input()):
++str = input()
++ar = ['h', 'e', 'l', 'l', 'o']
++i = 0
++for j in str:
++    if i == len(ar):
++        break
++    if(j == ar[i]):
++        i += 1
++if i == len(ar):
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

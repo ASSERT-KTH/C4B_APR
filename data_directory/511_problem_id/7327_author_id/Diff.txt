@@ -1,0 +1,40 @@
+diff --git a/Users/bardia/Downloads/data 4/data/511_problem_id/7327_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/511_problem_id/7327_author_id/Accepted.py
+index ca5b736..f5fe70d 100644
+--- a/Users/bardia/Downloads/data 4/data/511_problem_id/7327_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/511_problem_id/7327_author_id/Accepted.py	
+@@ -1,24 +1,24 @@
++import math
++
+ def main():
+     a,b,c = map(int, input().split())
+     if a<b:
+         if c<=0:
+             return "NO"
+         else:
+-            while a!=b:
+-                a+=c
+-                if a>b:
+-                    return "NO"
+-            return "YES"
++            if abs(b-a)%c==0:
++                return "YES"
++            else:
++                return "NO"
+     else:
+         if a==b:
+             return "YES"
+         if c>=0:
+             return "NO"
+         else:
+-            while a!=b:
+-                a+=c
+-                if a<b:
+-                    return "NO"
+-            return "YES"
++            if abs(b-a)%c==0:
++                return "YES"
++            else:
++                return "NO"
+ 
+ print(main())
+\ No newline at end of file

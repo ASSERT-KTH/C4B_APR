@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/1878_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/1878_author_id/Accepted.py
+index 8c5af75..deab00d 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/1878_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/1878_author_id/Accepted.py	
+@@ -1,10 +1,11 @@
+ def main():
+     s = input()
+     flag = "hello"
+-    id = 0
++    id = -1
+     for i in flag:
+-        a = s.find(i, id, len(s)-id)
++        a = s.find(i, id+1)
+         # print(s[id:len(s)])
++        # print(a)
+         if a == -1:
+             return False
+         id = a

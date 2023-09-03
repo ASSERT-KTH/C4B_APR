@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/54320_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/54320_author_id/Accepted.py
+index 9eb4276..70fab47 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/54320_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/54320_author_id/Accepted.py	
+@@ -16,7 +16,7 @@ def luckynum(x):
+     return True 
+ n=int(input())
+ i=5
+-while n>=i :
++while n>i :
+       n-=i
+       i*=2
+ x=i/5

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/868_problem_id/1899_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/868_problem_id/1899_author_id/Accepted.py
+index 6f0a6d1..0a352cb 100644
+--- a/Users/bardia/Downloads/data 4/data/868_problem_id/1899_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/868_problem_id/1899_author_id/Accepted.py	
+@@ -1,6 +1,8 @@
+ n = int(input())
+ ans = n%4
+-if ans == 1:
++if n == 0:
++    print (1)
++elif ans == 1:
+     print (8)
+ elif ans == 2:
+     print (4)

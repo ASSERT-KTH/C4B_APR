@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/23054_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/23054_author_id/Accepted.py
+index 73f214a..79e4f05 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/23054_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/23054_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ x= input()
+ y= x.capitalize()
+ caps = x.upper()
+ first=x[0]
+-last=x[1:len(x)-1]
++last=x[1:]
+ nocaps = x.lower()
+ if(x!=caps) and (x!=nocaps):
+     if(x==y) or (first==first.lower() and last==last.upper()):

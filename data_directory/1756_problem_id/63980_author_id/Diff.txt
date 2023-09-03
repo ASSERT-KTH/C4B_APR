@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1756_problem_id/63980_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1756_problem_id/63980_author_id/Accepted.py
+index 5273c69..987914c 100644
+--- a/Users/bardia/Downloads/data 4/data/1756_problem_id/63980_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1756_problem_id/63980_author_id/Accepted.py	
+@@ -3,6 +3,6 @@ answ = 0
+ ban = []
+ for i, x in enumerate(a):
+     if a.count(x) != 1 and x not in ban:
+-        answ += a.count(x)
++        answ += a.count(x) - 1
+         ban.append(x)
+ print(answ)
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/233_problem_id/5996_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/233_problem_id/5996_author_id/Accepted.py
+index d499692..8debb49 100644
+--- a/Users/bardia/Downloads/data 4/data/233_problem_id/5996_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/233_problem_id/5996_author_id/Accepted.py	
+@@ -3,7 +3,7 @@ def f(n, a, b, c):
+ 		return n//a
+ 	ans=0
+ 	while n>=b:
+-		t=n//b
++		t=max((n-b)//(b-c), 1)
+ 		n-=(b-c)*t
+ 		ans+=t
+ 	return ans+n//a

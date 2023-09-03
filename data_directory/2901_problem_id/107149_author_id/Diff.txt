@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2901_problem_id/107149_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2901_problem_id/107149_author_id/Accepted.py
+index 00e17cc..a746fe0 100644
+--- a/Users/bardia/Downloads/data 4/data/2901_problem_id/107149_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2901_problem_id/107149_author_id/Accepted.py	
+@@ -10,13 +10,14 @@ def read():
+     red = 0
+     cnt = 0
+     while (c>red):
++        if cnt>=1:
++            red -= l
+         red += v0
+         if (v0<v1):
+             v0 += a
+         if (v0>v1):
+             v0 = v1
+         cnt += 1
+-        red -= l
+     print(cnt)
+ 
+ read()
+\ No newline at end of file

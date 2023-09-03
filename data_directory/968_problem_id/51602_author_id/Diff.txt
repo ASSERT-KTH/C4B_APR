@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/968_problem_id/51602_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/968_problem_id/51602_author_id/Accepted.py
+index ea0cedf..cdcb455 100644
+--- a/Users/bardia/Downloads/data 4/data/968_problem_id/51602_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/968_problem_id/51602_author_id/Accepted.py	
+@@ -1,9 +1,15 @@
+ m,d = list(map(int, input().split()))
++if m == 4 or m == 6 or m == 9 or m == 11:
++    n = 30
++elif m == 2:
++    n = 28
++else:
++    n = 31
+ if m == 2 and d == 1:
+     print(4)
+-elif m == 2:
+-    print(5)
+-elif d == 5 or d == 6 or d == 1:
+-    print(5)
++elif n == 30 and d == 7:
++    print(6)
++elif n == 31 and(d == 6 or d == 7):
++    print(6)
+ else:
+-    print(6)
+\ No newline at end of file
++    print(5)
+\ No newline at end of file

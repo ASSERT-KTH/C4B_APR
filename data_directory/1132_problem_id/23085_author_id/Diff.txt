@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/23085_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/23085_author_id/Accepted.py
+index f15f39a..010209e 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/23085_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/23085_author_id/Accepted.py	
+@@ -9,5 +9,6 @@ for i in ll:
+     if tmp%i==0:
+         print("YES")
+         t=1
++        break
+ if t==0:
+     print("NO")
+\ No newline at end of file

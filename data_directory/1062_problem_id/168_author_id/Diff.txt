@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/168_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/168_author_id/Accepted.py
+index 87db7fb..9754342 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/168_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/168_author_id/Accepted.py	
+@@ -2,5 +2,6 @@
+ a = input()
+ num = a.count("4") + a.count("7")
+ num = str(num)
+-if num == num.count("4") + num.count("7"): print("YES")
++#print(num)
++if len(num) == num.count("4") + num.count("7"): print("YES")
+ else : print("NO")
+\ No newline at end of file

@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/250_problem_id/1111_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/250_problem_id/1111_author_id/Accepted.py
+index f84ff99..cb88787 100644
+--- a/Users/bardia/Downloads/data 4/data/250_problem_id/1111_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/250_problem_id/1111_author_id/Accepted.py	
+@@ -6,14 +6,12 @@ p = int(a[2])
+ t = n
+ c = 1
+ sm = 0
+-while True:
++while n != 1:
+     while True:
+         if c * 2 > n:
+             break
+         c *= 2
+     sm = sm + c//2 + c*b
+     n -= c//2
+-    if n == 1:
+-        break
+     c = 1
+ print(sm, t * p, end = " ")
+\ No newline at end of file

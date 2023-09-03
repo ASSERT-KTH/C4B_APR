@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/49403_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/49403_author_id/Accepted.py
+index 5644253..0def408 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/49403_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/49403_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ if len(s) > 0 and len(s) < 101:
+             e1 = s.find('e',h1)
+             if s.find('l', e1) != -1:
+                 l1 = s.find('l',e1)
+-                if s.find('l', l1) != -1:
++                if s.find('l', l1+1) != -1:
+                     l2 = s.find('l',l1)
+                     if s.find('o', l2) != -1:
+                         print('YES')

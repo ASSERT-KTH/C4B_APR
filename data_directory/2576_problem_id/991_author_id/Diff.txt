@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2576_problem_id/991_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2576_problem_id/991_author_id/Accepted.py
+index 332927b..2e24df9 100644
+--- a/Users/bardia/Downloads/data 4/data/2576_problem_id/991_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2576_problem_id/991_author_id/Accepted.py	
+@@ -4,9 +4,9 @@ x, y, z= map(int, input().split())
+ if x>0 and x<=10**9 and y>=0 and y<=10**9 and z>=0 and z<=10**9 and y+z>0:
+   if x>y and x>z:
+     print(-1)
+-  elif y>x and y//x!=0 and x>z:
++  elif y>x and y%x!=0 and x>z:
+     print(-1)
+-  elif x>y and z//x!=0 and z>x:
++  elif x>y and z%x!=0 and z>x:
+     print(-1)
+   else:
+     print((y//x)+(z//x))

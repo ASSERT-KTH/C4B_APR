@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1053_problem_id/57020_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1053_problem_id/57020_author_id/Accepted.py
+index e5e0d19..f92d726 100644
+--- a/Users/bardia/Downloads/data 4/data/1053_problem_id/57020_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1053_problem_id/57020_author_id/Accepted.py	
+@@ -13,11 +13,13 @@ while n > 0:
+         t = n//4
+         s += ['4'] * t
+         n = 0
+-    else:
++    elif len(s) > 0:
+         s[k] = '4'
+         n += 3
+         k -= 1
+         f = True
++    else:
++        f = True
+ else:
+     for i in reversed(s):
+         print(i, end='')
+\ No newline at end of file

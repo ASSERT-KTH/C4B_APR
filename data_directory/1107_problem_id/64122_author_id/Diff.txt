@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/64122_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/64122_author_id/Accepted.py
+index f1fafd7..3bab353 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/64122_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/64122_author_id/Accepted.py	
+@@ -5,9 +5,9 @@ def gcd(a, b):
+     return gcd(b, a % b)
+ a,b,n=[int(i) for i in input().split()]
+ i=1
+-if n<a:
++if n<gcd(n,a):
+     i=1
+-while n>=max(a,b):
++while n>=max(gcd(n,a),gcd(n,b)):
+     if i%2==1:
+         n=n-gcd(n,a)
+     elif i%2==0:

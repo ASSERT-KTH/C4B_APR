@@ -1,0 +1,40 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2520_problem_id/9833_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2520_problem_id/9833_author_id/Accepted.py
+index 5128fe2..3cfdf5c 100644
+--- a/Users/bardia/Downloads/data 4/data/2520_problem_id/9833_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2520_problem_id/9833_author_id/Accepted.py	
+@@ -1,17 +1,16 @@
+-l=[1,2,3,4,5,6]
+-a,b=input().strip().split(' ')
+-a,b=(int(a),int(b))
+-if a==b:
+-  print("1/1")
+-elif a==6 or b==6:
+-  print("0/1")
+-else:
+-  c=7-max(a,b)
+-  if c==1:
+-    print("1/6")
+-  elif c==2:
+-    print("1/3")
+-  elif c==3:
+-    print("1/2")
+-  elif c==4:
+-    print("2/3")
+\ No newline at end of file
++def solve(n):
++    if n==1:
++        return "1/1"
++    elif n==2:
++        return "5/6"
++    elif n==3:
++        return "2/3"
++    elif n==4:
++        return "1/2"
++    elif n==5:
++        return "1/3"
++    elif n==6:
++        return "1/6"
++y,w=input().strip().split(' ')
++y,w=(int(y),int(w))
++print(solve(max(y,w)))
+\ No newline at end of file

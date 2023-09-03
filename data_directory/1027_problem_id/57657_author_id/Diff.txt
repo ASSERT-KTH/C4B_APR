@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1027_problem_id/57657_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1027_problem_id/57657_author_id/Accepted.py
+index ed67ee3..a6c6e4a 100644
+--- a/Users/bardia/Downloads/data 4/data/1027_problem_id/57657_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1027_problem_id/57657_author_id/Accepted.py	
+@@ -6,5 +6,5 @@ for i in range(len(powarray)):
+         print("4")
+ if(kartu + 10==n):
+     print("15")
+-elif(n==10 or n>21):
++elif(n<=10 or n>21):
+     print("0")
+\ No newline at end of file

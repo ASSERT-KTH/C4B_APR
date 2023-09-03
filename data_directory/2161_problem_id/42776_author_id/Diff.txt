@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2161_problem_id/42776_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2161_problem_id/42776_author_id/Accepted.py
+index e1d3910..5d63975 100644
+--- a/Users/bardia/Downloads/data 4/data/2161_problem_id/42776_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2161_problem_id/42776_author_id/Accepted.py	
+@@ -30,6 +30,8 @@ elif amount_x(board) == amount_0(board):
+     conclusion = 'the second player won'
+     if check_win(amount_x(h_line1)) or check_win(amount_x(h_line2)) or check_win(amount_x(h_line3)) or check_win(amount_x(v_line1)) or check_win(amount_x(v_line2)) or check_win(amount_x(v_line3)) or check_win(amount_x(diagonal1)) or check_win(amount_x(diagonal2)):
+       conclusion = 'illegal'
++  elif check_win(amount_x(h_line1)) or check_win(amount_x(h_line2)) or check_win(amount_x(h_line3)) or check_win(amount_x(v_line1)) or check_win(amount_x(v_line2)) or check_win(amount_x(v_line3)) or check_win(amount_x(diagonal1)) or check_win(amount_x(diagonal2)):
++      conclusion = 'illegal'
+   else:
+     conclusion = 'first'
+ else:

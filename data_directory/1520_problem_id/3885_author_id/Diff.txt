@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1520_problem_id/3885_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1520_problem_id/3885_author_id/Accepted.py
+index 6bcc2ff..392e37b 100644
+--- a/Users/bardia/Downloads/data 4/data/1520_problem_id/3885_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1520_problem_id/3885_author_id/Accepted.py	
+@@ -1,13 +1,11 @@
+ [n,a,b,c]=[int(x) for x in input().split()]
+-dp=[0 for x in range(n+1)]
+-dp[a]=1
+-dp[b]=1
+-dp[c]=1
++dp=[-1 for x in range(n+1)]
++dp[0]=0
+ for i in range(n+1):
+-    if i>=a and dp[i-a]>0:
++    if i>=a and dp[i-a]>-1:
+         dp[i]=max(dp[i],dp[i-a]+1)
+-    if i>=b and dp[i-b]>0:
++    if i>=b and dp[i-b]>-1:
+         dp[i]=max(dp[i],dp[i-b]+1)
+-    if i>=c and dp[i-c]>0:
++    if i>=c and dp[i-c]>-1:
+         dp[i]=max(dp[i],dp[i-c]+1)
+ print(dp[n])
+\ No newline at end of file

@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1390_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1390_problem_id/1633_author_id/Accepted.py
+index dc1596f..2f8644d 100644
+--- a/Users/bardia/Downloads/data 4/data/1390_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1390_problem_id/1633_author_id/Accepted.py	
+@@ -1,4 +1,8 @@
+ import math
+ string = input()
+ n, x, y = map(int, string.split())
+-print(math.ceil(y / 100 * n) - x)
+\ No newline at end of file
++a = math.ceil(y / 100 * n)
++if a < x:
++    print(0)
++else:
++    print(a - x)
+\ No newline at end of file

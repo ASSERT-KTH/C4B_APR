@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/538_problem_id/25092_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/538_problem_id/25092_author_id/Accepted.py
+index e022300..c5adb16 100644
+--- a/Users/bardia/Downloads/data 4/data/538_problem_id/25092_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/538_problem_id/25092_author_id/Accepted.py	
+@@ -6,6 +6,6 @@ for tt in t:
+     cnt[tt] += 1
+ ans = sum(t)
+ for tt, n in cnt.items():
+-    if n == 2 or n == 3:
+-        ans = min(ans, sum(t) - n * tt)
++    if n >= 2:
++        ans = min(ans, sum(t) - min(n,3) * tt)
+ print(ans)
+\ No newline at end of file

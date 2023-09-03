@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/159_problem_id/17941_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/159_problem_id/17941_author_id/Accepted.py
+index df63c97..9d9341d 100644
+--- a/Users/bardia/Downloads/data 4/data/159_problem_id/17941_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/159_problem_id/17941_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ s=input().split()
+ s1=int(s[0])
+ if s[2]=='week':
+-   if s1==5 or s1==6 or s1==7:
++   if s1==5 or s1==6:
+    	  print(53)
+    else:
+    	   print(52)

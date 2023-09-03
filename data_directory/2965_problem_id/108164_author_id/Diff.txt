@@ -1,0 +1,51 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2965_problem_id/108164_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2965_problem_id/108164_author_id/Accepted.py
+index 84110f6..8542d44 100644
+--- a/Users/bardia/Downloads/data 4/data/2965_problem_id/108164_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2965_problem_id/108164_author_id/Accepted.py	
+@@ -2,6 +2,7 @@ str1=input("")
+ firststr=str1[0]
+ secondstr=str1[2]
+ num=int(input(""))
++
+ def switch(x):
+     if x=='v' :
+         return 1
+@@ -11,18 +12,30 @@ def switch(x):
+         return 3
+     if x=='>' :
+         return 4
+-i=0
++    
+ fsn=switch(firststr)
+ ssn=switch(secondstr)
+ output="undefined"
+-outf=0
+-num=num%4
+-if num < 1 :
+-    num+=4
++num=(num%4)
++flag1=0
++flag2=0
++
++if num==0 :
++    num=4
++    
++fsnnum=fsn+num
++    
+ if fsn+num>4 :
+     fsnnum=(fsn+num)-4
++    
+ if fsnnum==ssn :
+-    output="cw"     
+-if fsn-num==(4-ssn) or fsn-num==(-4+ssn) :
++    output="cw"
++    flag1=1
++    
++if  fsn-num==(-4+ssn) or fsn-num == ssn :
+     output="ccw"
++    flag2=1
++    
++if flag1==flag2 :
++    output = "undefined"
+ print(output)
+\ No newline at end of file

@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/819_problem_id/2047_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/819_problem_id/2047_author_id/Accepted.py
+index a3b8d8c..7cc6d6b 100644
+--- a/Users/bardia/Downloads/data 4/data/819_problem_id/2047_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/819_problem_id/2047_author_id/Accepted.py	
+@@ -1,23 +1,13 @@
+ x = input()
+-z = 0
++z = 1
+ i = 0
+ lst = []
+ lst2 = ['A','E','U','I','O','Y']
+-lst3 = []
+ while(i<len(x)):
+     if(x[i] not in lst2):
+         z += 1
+     else:
+-        z = 0
++        z = 1
+     lst.append(z)
+-    lst3.append(x[i])
+     i += 1
+-j = 0
+-while(j<len(lst3)):
+-    if(lst3[j] not in lst2):
+-        out = max(lst)
+-    else:
+-        out = max(lst)+1
+-        break
+-    j += 1
+-print(out)
+\ No newline at end of file
++print(max(lst))
+\ No newline at end of file

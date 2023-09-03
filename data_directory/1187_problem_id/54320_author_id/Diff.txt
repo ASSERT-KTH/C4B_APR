@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/54320_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/54320_author_id/Accepted.py
+index 598d466..6a8f0d5 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/54320_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/54320_author_id/Accepted.py	
+@@ -10,6 +10,16 @@ def seperateints(x):
+     l.append(int(k))   
+     return(l)
+ s=input()   
+-x=s[0].upper()
+-kk=x+s[1:].lower()
+-print(kk)
+\ No newline at end of file
++k='S'
++if len(s)>1:
++    k=s[1:]
++if k.isupper() :    
++      kk=''
++      for i in s:
++          if i.isupper():
++              kk=kk+i.lower()
++          else :
++              kk=kk+i.upper()
++      print(kk)        
++else :
++    print(s)
+\ No newline at end of file

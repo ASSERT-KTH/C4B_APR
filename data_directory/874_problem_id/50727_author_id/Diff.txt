@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/874_problem_id/50727_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/874_problem_id/50727_author_id/Accepted.py
+index e54423a..47e84d0 100644
+--- a/Users/bardia/Downloads/data 4/data/874_problem_id/50727_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/874_problem_id/50727_author_id/Accepted.py	
+@@ -15,4 +15,4 @@ def get_number(k):
+ 
+ inp = input()
+ n,k = inp.split(" ")
+-print(get_number(k))
+\ No newline at end of file
++print(get_number(int(k)))
+\ No newline at end of file

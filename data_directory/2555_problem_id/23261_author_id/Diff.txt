@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/23261_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/23261_author_id/Accepted.py
+index b25c082..ad2c409 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/23261_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/23261_author_id/Accepted.py	
+@@ -15,7 +15,7 @@ elif len(code) == 7:
+         flag = True
+         print('YES')
+ else:
+-    for i in range(len(code) - 7):
++    for i in range(len(code) - 6):
+         j = i
+         while j < i + 7:
+             if int(code[j]) == 0:

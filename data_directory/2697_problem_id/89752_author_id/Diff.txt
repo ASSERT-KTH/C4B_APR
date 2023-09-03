@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2697_problem_id/89752_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2697_problem_id/89752_author_id/Accepted.py
+index f020511..acde0d7 100644
+--- a/Users/bardia/Downloads/data 4/data/2697_problem_id/89752_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2697_problem_id/89752_author_id/Accepted.py	
+@@ -6,7 +6,7 @@ c, d = map(int, input().split())
+ g = gcd(a, c)
+ dif = abs(b-d)
+ if dif%g==0:
+-	for t in range(min(b, d), 1000000):
++	for t in range(max(b, d), 1000000):
+ 		if (t-b)%a==0 and (t-d)%c==0:
+ 			print(t)
+ 			break

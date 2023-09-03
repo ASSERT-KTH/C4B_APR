@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2286_problem_id/94761_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2286_problem_id/94761_author_id/Accepted.py
+index feac411..4e0fe63 100644
+--- a/Users/bardia/Downloads/data 4/data/2286_problem_id/94761_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2286_problem_id/94761_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ from time import *
+ def sleuth(f): 
+-    if f[len(f)-2] in "aieEouAIuOUyY" and f[len(f)-1]=="?":
++    if f[len(f)-2] in "UaieEouAIOyY" and f[len(f)-1]=="?":
+         return"YES"
+     else:
+         return" NO"
+@@ -11,7 +11,7 @@ abdo=''
+ n=''
+ for i in (k) :
+     if count<=100:
+-        if i in  "ABCDEFGHIJKLMNOPQRSTVWXYZabcdefghijkulmnopqrstvwxyz":
++        if i in  "ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijkulmnopqrstvwxyz":
+             j=abdo+i
+             n=j
+             count+=1

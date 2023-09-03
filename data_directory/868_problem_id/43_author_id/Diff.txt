@@ -1,0 +1,39 @@
+diff --git a/Users/bardia/Downloads/data 4/data/868_problem_id/43_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/868_problem_id/43_author_id/Accepted.py
+index d57fa65..44360ae 100644
+--- a/Users/bardia/Downloads/data 4/data/868_problem_id/43_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/868_problem_id/43_author_id/Accepted.py	
+@@ -1,9 +1,23 @@
+-n = int(input())
+-if n % 4 == 1:
+-  print(8)
+-elif n % 4 == 2:
+-  print(4)
+-elif n % 4 == 3:
+-  print(2)
+-elif n % 4 == 0:
+-  print(6)
+\ No newline at end of file
++import sys
++
++def main():
++	print(power(1378, int(sys.stdin.readline()), mod=10))
++
++def power(a, n, mod):
++	cur_power = a
++	ans = 1
++
++	for i in range(32):
++		if n & (1 << i):
++			ans *= cur_power
++
++		cur_power *= cur_power
++		cur_power %= mod
++
++	ans %= mod
++
++	return ans
++
++
++if __name__ == '__main__':
++	main()
+\ No newline at end of file

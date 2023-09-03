@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1803_problem_id/3268_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1803_problem_id/3268_author_id/Accepted.py
+index 251a592..c0a0aed 100644
+--- a/Users/bardia/Downloads/data 4/data/1803_problem_id/3268_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1803_problem_id/3268_author_id/Accepted.py	
+@@ -1,13 +1,6 @@
+ def main():
+-    from math import gcd
+     n = int(input())
+-    res, nm = [(1, 1, 2, 6, 12, 60, 60)[n]] if n < 7 else [], n * (n - 1)
+-    for p in range(n - 3 | 1, 4, -2):
+-        q = gcd(nm, p)
+-        res.append(nm * p // q)
+-        if q == 1:
+-            break
+-    print(max(res))
++    print(n if n < 3 else ((n - 1) * (n * (n - 2) if n & 1 else (n - 3) * (n if n % 3 else n - 2))))
+ 
+ 
+ if __name__ == '__main__':

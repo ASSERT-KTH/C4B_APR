@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/102_problem_id/1872_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/102_problem_id/1872_author_id/Accepted.py
+index 404a418..743c4b8 100644
+--- a/Users/bardia/Downloads/data 4/data/102_problem_id/1872_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/102_problem_id/1872_author_id/Accepted.py	
+@@ -3,4 +3,5 @@ ans1 = 2*x + 2*y
+ ans2 = x+z+y
+ ans3 = y+z+y+x
+ ans4 = y+z+z+y
+-print(min(ans1, ans2, ans3, ans4))
+\ No newline at end of file
++ans5 = x+z+z+x
++print(min(ans1, ans2, ans3, ans4, ans5))
+\ No newline at end of file

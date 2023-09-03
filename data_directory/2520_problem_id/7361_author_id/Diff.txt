@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2520_problem_id/7361_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2520_problem_id/7361_author_id/Accepted.py
+index c84dbdd..a15200b 100644
+--- a/Users/bardia/Downloads/data 4/data/2520_problem_id/7361_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2520_problem_id/7361_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ from fractions import Fraction
+ y, w= map(int, input().split());
+ 
+-a=6-y+1;
++a=6-max(y,w)+1;
+ 
+ b=6;
+ if a==6:

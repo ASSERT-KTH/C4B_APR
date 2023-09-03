@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1133_problem_id/88_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1133_problem_id/88_author_id/Accepted.py
+index 9683a79..19b5494 100644
+--- a/Users/bardia/Downloads/data 4/data/1133_problem_id/88_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1133_problem_id/88_author_id/Accepted.py	
+@@ -2,7 +2,9 @@ a=input()
+ x=a.count('4')
+ y=a.count('7')
+ 
+-if y>x:
++if y==x==0:
++    print(-1)
++elif y>x:
+     print(7)
+ else:
+     print(4)
+\ No newline at end of file

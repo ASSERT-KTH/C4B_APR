@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/60305_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/60305_author_id/Accepted.py
+index 1b178f4..2bdebd8 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/60305_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/60305_author_id/Accepted.py	
+@@ -5,14 +5,9 @@ def is_lucky(num):
+ 			return False
+ 	return True
+ 
+-N = 1000
+-n = int(input())
+-if is_lucky(n):
+-	print('YES')
+-else:
+-	for i in range(4, N+1):
+-		if is_lucky(i) and (n % i == 0):
+-			print('YES')
+-			break
+-	else:
+-		print('NO')
+\ No newline at end of file
++count = 0
++s = input()
++for ch in s:
++	if ch in '47':
++		count += 1
++print('YES' if is_lucky(count) else 'NO')
+\ No newline at end of file

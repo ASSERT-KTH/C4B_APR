@@ -1,0 +1,38 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2604_problem_id/53625_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2604_problem_id/53625_author_id/Accepted.py
+index 7beb7ca..a8b379b 100644
+--- a/Users/bardia/Downloads/data 4/data/2604_problem_id/53625_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2604_problem_id/53625_author_id/Accepted.py	
+@@ -1,12 +1,23 @@
+ def Digits(x):
+-    M = SumOfDigits(1)
+-    m = 1
+-    for i in range(2, x + 1):
+-        temp = SumOfDigits(i)
+-        if temp >= M and i > m:
+-            M = temp
+-            m = i
+-    return m
++    ans = x
++    ls = [i for i in str(x)]
++    for i in range(len(ls) - 1, -1, -1):
++        if ls[i] != '0':
++            ls[i] = str(int(ls[i]) - 1)
++            if i != len(ls) - 1:
++                for i in range(i + 1, len(ls)):
++                    ls[i] = '9'
++        temp = sum(map(int, ''.join(ls)))
++        if SumOfDigits(ans) < temp:
++            ans = Join(ls)
++    return ans
++def Join(ls):
++    index = 0
++    for i in range(len(ls)):
++        if ls[i] == '0':
++            index = i
++            break
++    return int(''.join(ls[index: len(ls)]))
+ def SumOfDigits(n):
+-    return n % 10 + SumOfDigits(n//10) if n != 0 else 0    
++    return n % 10 + SumOfDigits(n//10) if n != 0 else 0
+ print(Digits(int(input())))
+\ No newline at end of file

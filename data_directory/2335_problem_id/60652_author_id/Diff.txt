@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/60652_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/60652_author_id/Accepted.py
+index 743afd3..3c64beb 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/60652_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/60652_author_id/Accepted.py	
+@@ -1,8 +1,11 @@
+-s=input()
+-if not('h' in s and 'e' in s and 'll' in s and 'o' in s):
+-    print("NO")
+-else:
+-   if not(s.index('h')<s.index('e')<s.index('ll')<s.index('o')):
+-      print("NO")
+-   else:
+-      print("YES")
+\ No newline at end of file
++s = input()
++a = "hello"
++k = 0
++for i in s:
++    if i == a[k]:
++        k+=1
++    if k == 5:
++        print("YES")
++        exit()
++
++print("NO")
+\ No newline at end of file

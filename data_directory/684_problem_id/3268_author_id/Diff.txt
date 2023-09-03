@@ -1,0 +1,36 @@
+diff --git a/Users/bardia/Downloads/data 4/data/684_problem_id/3268_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/684_problem_id/3268_author_id/Accepted.py
+index 34aa4c0..4bfbf02 100644
+--- a/Users/bardia/Downloads/data 4/data/684_problem_id/3268_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/684_problem_id/3268_author_id/Accepted.py	
+@@ -4,11 +4,11 @@ def main():
+         x = int((a * 2. + .25) ** .5 + .51)
+         if x * (x - 1) != a * 2:
+             raise ValueError
+-        return [1, 0] if x == 1 else [x]
++        return x
+ 
+     a00, a01, a10, a11 = map(int, input().split())
+     try:
+-        for b, w in product(f(a00), f(a11)):
++        for b, w in product([f(a00)] if a00 else [1, 0], [f(a11)] if a11 else [1, 0]):
+             if b * w == a01 + a10:
+                 break
+         else:
+@@ -16,8 +16,15 @@ def main():
+     except ValueError:
+         print("Impossible")
+     else:
+-        a01, rest = divmod(a01, w) if w else (b - 1, 0)
+-        print(''.join(['0' * a01, '1' * (w - rest), '0' if b else '', '1' * rest, '0' * (b - a01 - 1)]))
++        if w:
++            a01, rest = divmod(a01, w)
++            if rest:
++                l = ['0' * a01, '1' * (w - rest), '0', '1' * rest, '0' * (b - a01 - 1)]
++            else:
++                l = ['0' * a01, '1' * w, '0' * (b - a01)]
++        else:
++            l = ['0' * b]
++        print(''.join(l))
+ 
+ 
+ if __name__ == '__main__':

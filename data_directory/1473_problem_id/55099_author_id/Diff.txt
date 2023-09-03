@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1473_problem_id/55099_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1473_problem_id/55099_author_id/Accepted.py
+index da7df03..129de15 100644
+--- a/Users/bardia/Downloads/data 4/data/1473_problem_id/55099_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1473_problem_id/55099_author_id/Accepted.py	
+@@ -1,6 +1,18 @@
+ x_1, y_1, x_2, y_2, x_3, y_3 = [int(x) for x in input().split()]
+ 
++def is_degenerated(x_1, y_1, x_2, y_2, x_3, y_3):
++    if x_1 == x_2 and y_1 == y_2:
++        return True
++    if x_1 == x_3 and y_1 == y_3:
++        return True
++    if x_3 == x_2 and y_3 == y_2:
++        return True
++    return False
++
++
+ def if_right(x_1, y_1, x_2, y_2, x_3, y_3):
++    if is_degenerated(x_1, y_1, x_2, y_2, x_3, y_3):
++        return False
+     squares_of_sides = []
+     squares_of_sides.append((abs(x_1 - x_2) ** 2) + (abs(y_1 - y_2) ** 2))
+     squares_of_sides.append((abs(x_2 - x_3) ** 2) + (abs(y_2 - y_3) ** 2))

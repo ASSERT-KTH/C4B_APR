@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/16659_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/16659_author_id/Accepted.py
+index ee57e45..a4388d9 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/16659_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/16659_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ def func(eiei):
+         Show=""
+         if k!='a' and k!='e' and k!='i' \
+         and k!='o'and k!='u' and k!='y':
+-            print('.%c'%k)    
++            print('.%c'%k,end="")    
+         
+ A=input()
+ func(A)

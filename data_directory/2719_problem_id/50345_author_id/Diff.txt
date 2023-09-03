@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2719_problem_id/50345_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2719_problem_id/50345_author_id/Accepted.py
+index 9d9207c..1c9d2fd 100644
+--- a/Users/bardia/Downloads/data 4/data/2719_problem_id/50345_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2719_problem_id/50345_author_id/Accepted.py	
+@@ -4,6 +4,6 @@ while 1:
+     i+=1
+     var[0]*=3
+     var[1]*=2
+-    if var[0]>=var[1]:
++    if var[0]>var[1]:
+         break
+ print(i)
+\ No newline at end of file

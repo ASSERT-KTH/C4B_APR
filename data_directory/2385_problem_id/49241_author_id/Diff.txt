@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2385_problem_id/49241_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2385_problem_id/49241_author_id/Accepted.py
+index c9e2e08..fb54369 100644
+--- a/Users/bardia/Downloads/data 4/data/2385_problem_id/49241_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2385_problem_id/49241_author_id/Accepted.py	
+@@ -1,11 +1,11 @@
+ x=  int (input())
+-if x<= 128 :
++if x<= 127 :
+     print ('byte')
+-elif x<=32768 :
++elif x<=32767 :
+     print ('short')
+-elif x<= 2147483648 :
++elif x<= 2147483647 :
+     print ('int')
+-elif x<= 9223372036854775808:
++elif x<= 9223372036854775807:
+     print ('long')
+ else :
+     print ('BigInteger')
+\ No newline at end of file

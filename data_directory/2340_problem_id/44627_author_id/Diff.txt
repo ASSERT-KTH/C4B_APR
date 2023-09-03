@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2340_problem_id/44627_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2340_problem_id/44627_author_id/Accepted.py
+index 930d8b0..93c958d 100644
+--- a/Users/bardia/Downloads/data 4/data/2340_problem_id/44627_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2340_problem_id/44627_author_id/Accepted.py	
+@@ -1,6 +1,9 @@
+-n = int(input())
+-h = 0
+-while n >= (h+1)*(h+1)/2:
+-    h +=1
+-    n -= h*(h+1)/2
+-print(h)
+\ No newline at end of file
++s = input()
++num = 0
++for char in s:
++    if char >= 'a':
++        num +=1
++if num >= len(s)-num:
++    print(s.lower())
++else:
++    print(s.upper())
+\ No newline at end of file

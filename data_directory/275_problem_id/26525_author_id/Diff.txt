@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/275_problem_id/26525_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/275_problem_id/26525_author_id/Accepted.py
+index de92114..42e9d07 100644
+--- a/Users/bardia/Downloads/data 4/data/275_problem_id/26525_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/275_problem_id/26525_author_id/Accepted.py	
+@@ -9,4 +9,7 @@ temp[3] = n[3]
+ temp[4] = n[1]
+ 
+ n= int("".join( map(str, temp) ) )
+-print( (n**5)%100000 )
+\ No newline at end of file
++
++temp = str(n**5 %100000)
++
++print('0' * (5 - len(temp)) + temp)
+\ No newline at end of file

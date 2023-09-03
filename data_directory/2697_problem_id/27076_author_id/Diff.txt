@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2697_problem_id/27076_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2697_problem_id/27076_author_id/Accepted.py
+index ae73300..862f8ad 100644
+--- a/Users/bardia/Downloads/data 4/data/2697_problem_id/27076_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2697_problem_id/27076_author_id/Accepted.py	
+@@ -1,11 +1,9 @@
+ a,b=map(int,input().split())
+ c,d=map(int,input().split())
+-z=-1
+-for i in range(2000):
+-    for j in range(2000):
+-        if a*i+b == c*j+d:
+-            z=a*i+b
+-            break
+-    if z!=-1:
+-        break
+-print(z)
+\ No newline at end of file
++r=set(range(b, 10000, a))
++m=set(range(d, 10000, c))
++ans=r&m
++if ans:
++    print(min(ans))
++else:
++    print(-1)
+\ No newline at end of file

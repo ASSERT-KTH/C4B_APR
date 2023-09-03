@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/54167_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/54167_author_id/Accepted.py
+index f083e16..4285fdf 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/54167_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/54167_author_id/Accepted.py	
+@@ -5,6 +5,7 @@ entrada = entrada.replace("e","")
+ entrada = entrada.replace("i","")
+ entrada = entrada.replace("o","")
+ entrada = entrada.replace("u","")
++entrada = entrada.replace("y","")
+ 
+ entrada.split()
+ i = 2

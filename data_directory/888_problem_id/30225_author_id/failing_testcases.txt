@@ -1,0 +1,1 @@
+[{'inputdata': '1000\r\r\n1000\r\r\n1000', 'expectedresult': '1750'}, {'inputdata': '1000\r\r\n2\r\r\n1000', 'expectedresult': '7'}, {'inputdata': '1000\r\r\n500\r\r\n1000', 'expectedresult': '1750'}, {'inputdata': '1000\r\r\n1000\r\r\n4', 'expectedresult': '7'}]

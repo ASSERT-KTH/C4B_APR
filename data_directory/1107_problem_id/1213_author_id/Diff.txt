@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/1213_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/1213_author_id/Accepted.py
+index 5b2dc23..2b7f937 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/1213_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/1213_author_id/Accepted.py	
+@@ -22,8 +22,6 @@ while n > -1:
+     else:
+         count = 2
+         break
+-    print(n)
+-print(count)
+ if count == 1:
+     print('1')
+ else:

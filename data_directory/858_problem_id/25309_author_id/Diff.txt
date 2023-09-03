@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/858_problem_id/25309_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/858_problem_id/25309_author_id/Accepted.py
+index 9adf4cb..be9d71b 100644
+--- a/Users/bardia/Downloads/data 4/data/858_problem_id/25309_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/858_problem_id/25309_author_id/Accepted.py	
+@@ -1,10 +1,10 @@
++from itertools import product
+ n, p1, p2, p3 = (int(x) for x in input().split())
+-notebooks_needed = (4 - n % 4) % 4
+-
+-price1 = p1 * notebooks_needed
+-price2 = p2 * (notebooks_needed // 2 + notebooks_needed % 2)
+-price3 = p2 * (notebooks_needed // 2) + p1
+-price4 = p3
+-best_price = min([price1, price2, price3, price4])
++best_price = 10**12
++for i in product(range(50), repeat=3):
++    k, l, m = i
++    if (n + k + 2 * l + 3 * m) % 4 == 0:
++        price = k * p1 + l * p2 + m * p3
++        best_price = min(best_price, price)
+ 
+ print(best_price)
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/60305_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/60305_author_id/Accepted.py
+index 35933df..1b178f4 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/60305_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/60305_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ def is_lucky(num):
+ 	num_s = str(num)
+ 	for ch in num_s:
+-		if num_s not in '47':
++		if ch not in '47':
+ 			return False
+ 	return True
+ 

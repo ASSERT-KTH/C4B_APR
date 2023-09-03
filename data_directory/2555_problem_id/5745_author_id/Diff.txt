@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/5745_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/5745_author_id/Accepted.py
+index 40e6f00..2a8f7e7 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/5745_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/5745_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ s=str(input())
+-chk1,chk2 = '000000','111111'
++chk1,chk2 = '0000000','1111111'
+ if (s.find(chk1) >= 0 or s.find(chk2) >= 0):
+     print("YES")
+ else:

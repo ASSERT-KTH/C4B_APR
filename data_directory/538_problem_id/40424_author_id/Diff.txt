@@ -1,0 +1,37 @@
+diff --git a/Users/bardia/Downloads/data 4/data/538_problem_id/40424_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/538_problem_id/40424_author_id/Accepted.py
+index 701ca37..220d822 100644
+--- a/Users/bardia/Downloads/data 4/data/538_problem_id/40424_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/538_problem_id/40424_author_id/Accepted.py	
+@@ -1,19 +1,17 @@
+ arr=[int(i) for i in input().split()]
+ hsh=[0 for i in range(0,101)]
+ arr.sort()
++ans=0
+ for i in arr:
+     hsh[i]+=1
+-i=4
+-while i>=0:
+-    if hsh[arr[i]]>=3:
+-        hsh[arr[i]]-=3
+-        break
+-    elif hsh[arr[i]]>=2:
+-        hsh[arr[i]]-=2
+-        break
++    ans+=i
++i,temp,anst=100,ans,ans
++while i>=1:
++    if hsh[i]>=3:
++        temp=ans-3*i
++        anst=min(anst,temp)
++    elif hsh[i]>=2:
++        temp=ans-2*i
++        anst=min(anst,temp)
+     i-=1
+-ans=0
+-i=0
+-for i in range(0,101):
+-    ans+=hsh[i]*i
+-print(ans)
+\ No newline at end of file
++print(anst)
+\ No newline at end of file

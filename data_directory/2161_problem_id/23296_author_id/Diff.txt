@@ -1,0 +1,57 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2161_problem_id/23296_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2161_problem_id/23296_author_id/Accepted.py
+index ab68ebf..cf7e003 100644
+--- a/Users/bardia/Downloads/data 4/data/2161_problem_id/23296_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2161_problem_id/23296_author_id/Accepted.py	
+@@ -1,20 +1,25 @@
+-def illegal_check(x, o):
++def illegal_check(x, o, diff):
+     if 0 <= (x - o) < 2:
+         i = 0
+         Xwon = 0
+         Owon = 0
+         while i < 5:
+-            if diffSituations[i] == 3:
++            if diff[i] == 3:
+                 Xwon += 1
+-            if diffSituations[i+5] == 3:
++            if diff[i+5] == 3:
+                 Owon += 1
+             i += 1
+-        if diffSituations[10] != 0:
++        if diff[10] != 0:
+             Xwon += 1
+-        if diffSituations[11] != 0:
++        if diff[11] != 0:
+             Owon += 1
+         if (Xwon > 0 and Owon > 0) or Xwon > 2 or Owon > 2:
+             return False
++
++        if diff[10] == 2 or (diff[0]+diff[1]) == 6 or (diff[0]+diff[2]) == 6 or (diff[1]+diff[2]) == 6:
++            return False
++        elif (diff[5]+diff[6]) == 6 or (diff[5]+diff[7]) == 6 or (diff[6]+diff[7]) == 6:
++            return False
+         if Xwon == 1:
+             if x <= o:
+                 return False
+@@ -77,6 +82,10 @@ def whos_won(diff, b):
+         if diff[won] == 3:
+             return won+1
+         won += 1
++    if diff[10] == 1:
++        return 1
++    if diff[11] == 1:
++        return 6
+     return 0
+ 
+ 
+@@ -93,8 +102,8 @@ for i in range(3):
+     Xcount += board[i].count('X')
+     Ocount += board[i].count('0')
+ statement = whos_won(diffSituations, board)
+-if illegal_check(Xcount, Ocount):
+-    if statement == 0:
++if illegal_check(Xcount, Ocount, diffSituations):
++    if statement == 0 and (diffSituations[10] < 2 or diffSituations[11] < 2):
+         if (Xcount + Ocount) == 9:
+             print("draw")
+         elif Xcount > Ocount:

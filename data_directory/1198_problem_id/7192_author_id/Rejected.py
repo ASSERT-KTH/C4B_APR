@@ -1,0 +1,1 @@
+print ['NO','YES'][sum(x in ['H','Q','S'] for x in input())>0]

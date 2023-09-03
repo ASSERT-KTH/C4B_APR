@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2901_problem_id/28089_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2901_problem_id/28089_author_id/Accepted.py
+index 35b12c5..7dbdad8 100644
+--- a/Users/bardia/Downloads/data 4/data/2901_problem_id/28089_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2901_problem_id/28089_author_id/Accepted.py	
+@@ -1,9 +1,10 @@
+ c, v0, v1, a, l = map(int, input().split())
+ 
++s = v0
+ i = 1
+-while (c > v0):
+-    v0+=min(v0 + i * a, v1)
++while (c > s):
++    s+=min(v0 + i * a, v1)
+     i+=1
+-    v0-=1
++    s-=l
+ 
+ print(i)
+\ No newline at end of file

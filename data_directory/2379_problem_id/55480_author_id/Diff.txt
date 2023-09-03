@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2379_problem_id/55480_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2379_problem_id/55480_author_id/Accepted.py
+index 9d710de..5127203 100644
+--- a/Users/bardia/Downloads/data 4/data/2379_problem_id/55480_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2379_problem_id/55480_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ a, b, c, d, e, f = map(int, input().split())
+-print('Ron' if a * e * c < f * d * b or (not c and d) or (not a and b and not d) else 'Hermione')
+\ No newline at end of file
++print('Ron' if a * e * c < f * d * b or (c == 0 and d) or (a == 0 and b and d) else 'Hermione')
+\ No newline at end of file

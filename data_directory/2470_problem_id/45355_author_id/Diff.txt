@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2470_problem_id/45355_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2470_problem_id/45355_author_id/Accepted.py
+index 24fb005..cd63549 100644
+--- a/Users/bardia/Downloads/data 4/data/2470_problem_id/45355_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2470_problem_id/45355_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ prime = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53]
+ num=[int(i)for i in input().split()]
+-if prime.index(num[1])-prime.index(num[0])==1:
++if prime[prime.index(num[0]) + 1] == num[1]:
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/83875_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/83875_author_id/Accepted.py
+index c934097..8ead871 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/83875_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/83875_author_id/Accepted.py	
+@@ -1,14 +1,12 @@
+-n = int(input())
+-lt = []
+-scr = 0
+-
+-for i in range (0,n):
+-    check = 0
+-    m = input()
+-    temp = m.split()
+-    for i in temp :
+-        if i == '1':
+-            check+=1
+-    if check >=2:
+-        scr+=1
+-print(scr)
+\ No newline at end of file
++n = input()
++string = "hello"
++lt= []
++m = 0
++for i in n :
++    if i == string[m]:
++        m+=1
++        if m == 5:
++            print("YES")
++            break
++if m != 5:
++    print("NO")
+\ No newline at end of file

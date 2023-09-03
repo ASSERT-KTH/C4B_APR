@@ -1,0 +1,36 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/5930_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/5930_author_id/Accepted.py
+index 3d015d4..f91c9a6 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/5930_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/5930_author_id/Accepted.py	
+@@ -1,21 +1,13 @@
+ n=int(input())
+-j=0
+-s=str(n)
+-k=len(s)
+-l=int(n/4)
+-m=int(n/7)
+-for i in range(k):
+-    #print(s[i])
+-    if(s[i]==0):
+-        break
+-    elif((int(s[i])/4==1)or(int(s[i])/7==1)):
+-        j=j+1
+-    elif((n==l*l) or (n==m*m)):
+-        j=j+1
+-#print(j)
+-if(j==0):
+-    print("NO")
+-elif(j==k):
++s=list(str(n))
++c=0
++for i in range(len(s)):
++    if(s[i]=='4' or s[i]=='7'):
++        c=c+1
++    
++if(n%4==0 or n%7==0 or n%47==0):
++    print("YES")
++elif(c==len(s)):
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

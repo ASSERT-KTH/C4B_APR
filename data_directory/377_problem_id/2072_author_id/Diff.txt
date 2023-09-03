@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/377_problem_id/2072_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/377_problem_id/2072_author_id/Accepted.py
+index 30b7070..e464455 100644
+--- a/Users/bardia/Downloads/data 4/data/377_problem_id/2072_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/377_problem_id/2072_author_id/Accepted.py	
+@@ -2,6 +2,8 @@ a, b = [int(x) for x in input().split()]
+ mins = 0
+ 
+ while a > 0 and b > 0:
++    if a == 1 and b == 1:
++        break
+     mins += 1
+     if a < b:
+         a += 1

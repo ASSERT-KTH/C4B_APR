@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2470_problem_id/3046_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2470_problem_id/3046_author_id/Accepted.py
+index d9971db..c62189e 100644
+--- a/Users/bardia/Downloads/data 4/data/2470_problem_id/3046_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2470_problem_id/3046_author_id/Accepted.py	
+@@ -16,8 +16,8 @@ def create_list(n):
+     #print(len(prime))
+ 
+ def main():
+-    mode="file"
+-    if mode=="filee":f=open("test.txt","r")
++    mode="filee"
++    if mode=="file":f=open("test.txt","r")
+     #f.readline()
+     #input()
+     get = lambda :[int(x) for x in (f.readline() if mode=="file" else input()).split()]

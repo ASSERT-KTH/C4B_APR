@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2360_problem_id/4201_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2360_problem_id/4201_author_id/Accepted.py
+index f9a85c2..047b6ec 100644
+--- a/Users/bardia/Downloads/data 4/data/2360_problem_id/4201_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2360_problem_id/4201_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+-boy = list(map(int, input().split()))
+ girl = list(map(int, input().split()))
++boy = list(map(int, input().split()))
+ 
+ def compatible(b, g):
+     return (g - 1) <= b <= (g + 1) * 2

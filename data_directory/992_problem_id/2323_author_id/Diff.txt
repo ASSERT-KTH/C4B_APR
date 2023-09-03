@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/992_problem_id/2323_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/992_problem_id/2323_author_id/Accepted.py
+index 2050324..cd0dc89 100644
+--- a/Users/bardia/Downloads/data 4/data/992_problem_id/2323_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/992_problem_id/2323_author_id/Accepted.py	
+@@ -2,8 +2,8 @@
+ # @Author: HaonanWu
+ # @Date:   2017-02-28 16:12:00
+ # @Last Modified by:   HaonanWu
+-# @Last Modified time: 2017-02-28 16:19:40
++# @Last Modified time: 2017-02-28 16:21:15
+ 
+ from math import *
+-n,m,z=map(int,raw_input().split())
++n,m,z=map(int,input().split())
+ print(z//(n*m//gcd(n,m)))
+\ No newline at end of file

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/23167_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/23167_author_id/Accepted.py
+index 9c54c05..bd54870 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/23167_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/23167_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ n = int(input())
+-for i in range(n+1, 9001):
++for i in range(n+1, 10000):
+     if len(set(str(i)))==len(str(i)):
+         print(i)
+         break
+\ No newline at end of file

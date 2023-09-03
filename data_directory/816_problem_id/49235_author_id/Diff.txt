@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/816_problem_id/49235_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/816_problem_id/49235_author_id/Accepted.py
+index e087718..457610f 100644
+--- a/Users/bardia/Downloads/data 4/data/816_problem_id/49235_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/816_problem_id/49235_author_id/Accepted.py	
+@@ -5,7 +5,7 @@ elif(b!=d and d!=s and b!=s):
+     count1=0
+     k=max(b,d,s)-1
+     if(k-b>0):
+-        count1+=b-k
++        count1+=k-b
+     if(k-d>0):
+         count1+=k-d
+     if(k-s>0):

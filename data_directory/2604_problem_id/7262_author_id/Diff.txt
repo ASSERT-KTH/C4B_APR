@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2604_problem_id/7262_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2604_problem_id/7262_author_id/Accepted.py
+index 43e68f9..502bdef 100644
+--- a/Users/bardia/Downloads/data 4/data/2604_problem_id/7262_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2604_problem_id/7262_author_id/Accepted.py	
+@@ -22,7 +22,7 @@ for current_k in range(1, k):
+     if s_y > s_x:
+         arr.append((y, s_y))
+ 
+-max_pair = max(arr, key=lambda x: x[1])
++max_pair = max(arr, key=lambda x: x[1]) if len(arr) > 0 else (x, s_x)
+ if max_pair[1] > s_x:
+     print(max_pair[0])
+ else:

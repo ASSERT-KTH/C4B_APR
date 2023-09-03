@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/401_problem_id/34840_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/401_problem_id/34840_author_id/Accepted.py
+index 4e418d4..a7ac0d1 100644
+--- a/Users/bardia/Downloads/data 4/data/401_problem_id/34840_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/401_problem_id/34840_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ n = int(input())
+-if n == 13:
+-    print(8092)
++if n >= 13:
++    print(8092 * 2 ** (n - 13))
+ else:
+     print(2 ** n)
+\ No newline at end of file

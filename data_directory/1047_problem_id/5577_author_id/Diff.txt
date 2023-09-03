@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1047_problem_id/5577_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1047_problem_id/5577_author_id/Accepted.py
+index c417e68..a9ab3cd 100644
+--- a/Users/bardia/Downloads/data 4/data/1047_problem_id/5577_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1047_problem_id/5577_author_id/Accepted.py	
+@@ -5,8 +5,8 @@ def palindrome(s):
+ a, b = input().split(":")
+ a = int(a)
+ b = int(b)
+-if (a >= 23):
+-	print ("00:00")
++if (a == 15 and b < int(palindrome(str(a)))):
++	print ("15:51")
+ elif(a >= 15 and a <= 19):
+ 	print ("20:02")
+ elif(a >= 5 and a <= 9):
+@@ -22,6 +22,12 @@ elif((a == 3) or (a ==4 and b < 40)):
+ elif(a == 4) or (a == 5 and b < 50):
+ 	print ("05:50")
+ else:
+-	a = a + 1
+-	b = palindrome(str(a))
+-	print ("{0}:{1}".format(a,b))
+\ No newline at end of file
++	if (a ==23 and b >32):
++		print ("00:00")
++	elif (b < int(palindrome(str(a)))):
++		b = palindrome(str(a))
++		print ("{0}:{1}".format(a,b))
++	else:
++		a = a + 1
++		b = palindrome(str(a))
++		print ("{0}:{1}".format(a,b))
+\ No newline at end of file

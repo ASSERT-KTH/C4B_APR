@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/23098_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/23098_author_id/Accepted.py
+index 75c0144..e2634cd 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/23098_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/23098_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+-n = input()
+-if len(set(n)) % 2 == 0:
+-    print("CHAT WITH HER!")
+-else:
+-    print("IGNORE HIM!")
+\ No newline at end of file
++n = int(input())
++if n % 4 == 0 or n % 7 == 0 or n % 47 == 0 or n % 74 == 0 or n % 444 == 0 or n % 447 == 0 or n % 477 == 0 or n % 744 == 0 or n % 774 == 0 or n % 777 == 0:
++    print("YES")
++else: 
++    print("NO")
+\ No newline at end of file

@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2742_problem_id/675_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2742_problem_id/675_author_id/Accepted.py
+index 0f43634..59334de 100644
+--- a/Users/bardia/Downloads/data 4/data/2742_problem_id/675_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2742_problem_id/675_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ n=int(input())
+-for i in range(int(n/2)-1):
+-	print (1,end="")
+ if n%2==0:
+-	print (1)
++	print (1,end="")
+ else :
+-	print (7)
+\ No newline at end of file
++	print (7,end="")
++for i in range(int(n/2)-1):
++	print (1,end="")
+\ No newline at end of file

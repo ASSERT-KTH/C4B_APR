@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/394_problem_id/7315_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/394_problem_id/7315_author_id/Accepted.py
+index 2657156..2aef679 100644
+--- a/Users/bardia/Downloads/data 4/data/394_problem_id/7315_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/394_problem_id/7315_author_id/Accepted.py	
+@@ -1,12 +1,8 @@
+-s = input()
+-com = -1
+-cn = [-1]
+-for c in s:
+-    while com != -1 and c != s[com]:
+-        com = cn[com]
+-    com += 1
+-    cn.append(com)
+-lenth = cn[-1]
+-if cn.count(lenth) < 2:
+-    lenth = cn[lenth]
+-print(s[:lenth] if lenth > 0 else "Just a legend")
+\ No newline at end of file
++n,k=list(map(int,input().split()))
++ans=n*(n-1)//2
++if k>=n//2:
++    print(ans)
++else:
++    m=n-2*k
++    ans=ans-m*(m-1)//2
++    print(ans)
+\ No newline at end of file

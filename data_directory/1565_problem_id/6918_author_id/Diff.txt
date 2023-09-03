@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1565_problem_id/6918_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1565_problem_id/6918_author_id/Accepted.py
+index 472bb4c..db2ead2 100644
+--- a/Users/bardia/Downloads/data 4/data/1565_problem_id/6918_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1565_problem_id/6918_author_id/Accepted.py	
+@@ -10,4 +10,4 @@ pi=math.acos(-1.0)
+ MAX=100
+ #################################################
+ a,b,r=RI()
+-print(["First","Second"][max(a,b)<2*r])
+\ No newline at end of file
++print(["First","Second"][min(a,b)<2*r])
+\ No newline at end of file

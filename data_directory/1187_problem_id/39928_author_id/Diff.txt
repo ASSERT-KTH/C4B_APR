@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/39928_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/39928_author_id/Accepted.py
+index 27fab5a..eec6098 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/39928_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/39928_author_id/Accepted.py	
+@@ -3,6 +3,6 @@ i = input()
+ if i[0] == i[0].lower() and i[1:] == i[1:].upper():
+     print(i[0].upper() + i[1:].lower())
+ elif i.upper() == i:
+-    print(i[0].upper() + i[1:].lower())
++    print(i.lower())
+ else:
+     print(i)
+\ No newline at end of file

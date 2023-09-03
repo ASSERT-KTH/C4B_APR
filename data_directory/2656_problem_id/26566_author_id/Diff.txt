@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2656_problem_id/26566_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2656_problem_id/26566_author_id/Accepted.py
+index b7b2e34..2bd68e1 100644
+--- a/Users/bardia/Downloads/data 4/data/2656_problem_id/26566_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2656_problem_id/26566_author_id/Accepted.py	
+@@ -1,13 +1,19 @@
++#leer datos
+ a=input()
+ a=a.split()
+ n=int(a[0])
+ k=int(a[1])
++#invertir numero para comparar ceros
+ m=list(str(n))
+ m.reverse()
+ res=0
+ cero=0
++ceros=0
++for r in m:
++    if r=='0':
++        ceros+=1
+ #cuando
+-if len(str(10**k))>len(str(n)):
++if ceros<k:
+     res=(len(str(n))-1)
+ else:
+         for j in m:

@@ -1,0 +1,1 @@
+[{'inputdata': '100500 200600 300700', 'expectedresult': '601800'}]

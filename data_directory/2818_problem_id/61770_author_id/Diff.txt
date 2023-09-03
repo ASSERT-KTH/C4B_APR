@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2818_problem_id/61770_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2818_problem_id/61770_author_id/Accepted.py
+index 0bb6627..5fa8bf1 100644
+--- a/Users/bardia/Downloads/data 4/data/2818_problem_id/61770_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2818_problem_id/61770_author_id/Accepted.py	
+@@ -1,7 +1,9 @@
+ n = int(input())
+-for i in range(n // 3):
+-    print('abc', end = "" )
+-if n % 3 == 1:
++for i in range(n // 4):
++    print('aabb', end = "" )
++if n % 4 == 1:
+     print('a')
+-elif n % 3 == 2:
+-    print('ab')
+\ No newline at end of file
++elif n % 4 == 2:
++    print('aa')
++elif n % 4 == 3:
++    print('aab')
+\ No newline at end of file

@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/1762_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/1762_author_id/Accepted.py
+index 3de9baf..59166ab 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/1762_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/1762_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ k = int(input())
+-a = sorted(map(int, input.split()),reverse=True)
++a = sorted(map(int, input().split()),reverse=True)
+ if sum(a) < k: print(-1)
+ else: print(min(i for i in range(13) if sum(a[:i]) >= k))
+\ No newline at end of file

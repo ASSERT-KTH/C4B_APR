@@ -1,0 +1,45 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1662_problem_id/13002_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1662_problem_id/13002_author_id/Accepted.py
+index e47eeb5..fa82210 100644
+--- a/Users/bardia/Downloads/data 4/data/1662_problem_id/13002_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1662_problem_id/13002_author_id/Accepted.py	
+@@ -1,5 +1,35 @@
++s = input()
++if s.count('@') != 1 or s.count('/') > 1:
++    print('NO')
++    exit(0)
++
++pos1 = s.find('@')
++pos2 = s.find('/')
++
++#print(pos1)
++#print(pos2)
++if pos2 == -1: pos2 = len(s)
+ import re
+-if re.compile('(\w){1,16}@((\w{1,16}\.)*)\w{1,16}(/){1}\w*$').match(input()) != None:
+-    print("YES")
++
++username = re.compile('(\w){1,16}$')
++hostname = re.compile('(\w{1,16}\.){0,8}\w{1,16}$')
++
++#print(s[0:pos1])
++#print(s[pos2 + 1 : len(s)])
++#print(s[pos1 + 1 : pos2])
++
++
++
++ok1 = hostname.match(s[pos1 + 1 : pos2])
++ok2 = username.match(s[0:pos1])
++ok3 = username.match(s[pos2 + 1 : len(s)])
++
++
++#print(ok1)
++#print(ok2)
++#print(ok3)
++
++if len(s[pos1 + 1 : pos2]) >= 1 and len(s[pos1 + 1 : pos2])<= 32 and ok1 and ok2 and (pos2 == len(s) or ok3):
++    print('YES')
+ else:
+-    print("NO")
+\ No newline at end of file
++    print('NO')
+\ No newline at end of file

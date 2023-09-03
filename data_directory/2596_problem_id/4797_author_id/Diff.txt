@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2596_problem_id/4797_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2596_problem_id/4797_author_id/Accepted.py
+index 6144884..1388c15 100644
+--- a/Users/bardia/Downloads/data 4/data/2596_problem_id/4797_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2596_problem_id/4797_author_id/Accepted.py	
+@@ -12,7 +12,7 @@ def dvcq( n, ll, rr ):
+   if rr <= mid:
+     return dvcq( n // 2, ll, rr )
+   elif mid < ll:
+-    return dvcq( n // 2, ll - mid, rr - mid )
++    return dvcq( n // 2, ll - ( mid + 1 ), rr - ( mid + 1 ) )
+   else:
+     return ( n & 1 ) + dvcq( n // 2, ll, mid ) + dvcq( n // 2, 0, rr - ( mid + 1 ) )
+ 

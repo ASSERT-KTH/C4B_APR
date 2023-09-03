@@ -1,0 +1,36 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1173_problem_id/22225_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1173_problem_id/22225_author_id/Accepted.py
+index 615047a..f0caebb 100644
+--- a/Users/bardia/Downloads/data 4/data/1173_problem_id/22225_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1173_problem_id/22225_author_id/Accepted.py	
+@@ -1,14 +1,25 @@
++def mcd(a, b):
++	resto = 0
++	while(b > 0):
++		resto = b
++		b = a % b
++		a = resto
++	return a
+ n=int(input())
+ y=n
+ k=2
+ p=0
++r=0
+ for q in range (0, n-2):
+         n=y
+-        while n>1:
++        while n>=k:
+                 a=n%k
+-                n=n//k
+                 p=p+a
+-        p=p+n        
++                n=n//k
++        p=p+n
+         k=k+1
+ t=k-2
+-print(str(p)+"/"+str(t))
+\ No newline at end of file
++a=mcd(p,t)
++nu=p//a
++de=t//a
++print(str(nu)+"/"+str(de))
+\ No newline at end of file

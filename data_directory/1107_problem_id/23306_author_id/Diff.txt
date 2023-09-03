@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/23306_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/23306_author_id/Accepted.py
+index 7762087..6c045b3 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/23306_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/23306_author_id/Accepted.py	
+@@ -8,10 +8,10 @@ def mcd(a,b):
+        a=b
+        b=aux
+     return a
+-ps=1
++ps=0
+ signo=1
+ while(p!=0):
+     p-=mcd(l[ps],p)
+-    ps=ps+signo*-1
++    ps=ps+signo
+     signo=-1*signo
+-print(ps)
+\ No newline at end of file
++print(ps+signo)
+\ No newline at end of file

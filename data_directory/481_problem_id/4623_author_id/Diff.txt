@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/481_problem_id/4623_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/481_problem_id/4623_author_id/Accepted.py
+index 2cac17b..e82764b 100644
+--- a/Users/bardia/Downloads/data 4/data/481_problem_id/4623_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/481_problem_id/4623_author_id/Accepted.py	
+@@ -8,4 +8,6 @@ d = int(n/7)
+ r = n%7
+ vmin = 2*d
+ vmax = 2*d+min(2, r)
++if r == 6:
++    vmin = vmin+1
+ print(vmin, vmax)
+\ No newline at end of file

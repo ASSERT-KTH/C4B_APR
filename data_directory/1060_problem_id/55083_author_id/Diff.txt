@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1060_problem_id/55083_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1060_problem_id/55083_author_id/Accepted.py
+index 5a62391..79bbe09 100644
+--- a/Users/bardia/Downloads/data 4/data/1060_problem_id/55083_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1060_problem_id/55083_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ from math import *
+-a = int(input())
++a = abs(int(input()))
+ n = max(floor(sqrt(2*a))-1,0)
+ while(n*(n+1)//2<a or (n*(n+1)//2-a)%2==1):
+     n+=1

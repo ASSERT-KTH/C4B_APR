@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/5947_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/5947_author_id/Accepted.py
+index 3fe6780..d7999e3 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/5947_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/5947_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ for i in range(len(s)):
+         cnt7 += 1
+     if s[i] == '4':
+         cnt4 += 1
+-if (cnt4 + cnt7 == 7 or cnt4 + cnt7 == 4) and cnt4 and cnt7:
++if cnt4 + cnt7 == 7 or cnt4 + cnt7 == 4:
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/826_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/826_problem_id/1633_author_id/Accepted.py
+index e608aea..98df8d7 100644
+--- a/Users/bardia/Downloads/data 4/data/826_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/826_problem_id/1633_author_id/Accepted.py	
+@@ -3,23 +3,8 @@ string = input()
+ numbers = string.split(" ")
+ for x in range(4):
+     numbers[x] = int(numbers[x])
+-count = {digits[x]: numbers[x] for x in range(4)}
+-maximum = 0
+-results = "yes"
+-while results == "yes":
+-    if count[2] > 0 and count[5] > 0 and count[6] > 0:
+-        count[2] -= 1
+-        count[5] -= 1
+-        count[6] -= 1
+-        maximum += 256
+-    else:
+-        results = "no"
+-results = "yes"
+-while results == "yes":
+-    if count[3] > 0 and count[2] > 0:
+-        count[3] -= 1
+-        count[2] -= 1
+-        maximum += 32
+-    else:
+-        results = "no"
++maximum = min([numbers[0], numbers[2], numbers[3]])
++numbers[0] -= maximum
++maximum *= 256
++maximum += min([numbers[0], numbers[1]]) * 32
+ print(maximum)
+\ No newline at end of file

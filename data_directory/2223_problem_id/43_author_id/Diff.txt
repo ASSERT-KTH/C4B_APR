@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2223_problem_id/43_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2223_problem_id/43_author_id/Accepted.py
+index 331a51a..5787f9c 100644
+--- a/Users/bardia/Downloads/data 4/data/2223_problem_id/43_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2223_problem_id/43_author_id/Accepted.py	
+@@ -1,6 +1,9 @@
+-n= int(input())
+-if n<4:
+-    if n%2!=0:
+-        print("NO")
+-elif n%2==0:
+-    print("YES")
+\ No newline at end of file
++import sys
++
++size = int(sys.stdin.readline().strip())
++
++if size == 2:
++  print("NO")
++  sys.exit(0)
++
++print("YES" if size % 2 == 0 else "NO")
+\ No newline at end of file

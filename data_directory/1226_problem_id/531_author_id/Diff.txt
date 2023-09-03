@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1226_problem_id/531_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1226_problem_id/531_author_id/Accepted.py
+index 81294ec..053c4d7 100644
+--- a/Users/bardia/Downloads/data 4/data/1226_problem_id/531_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1226_problem_id/531_author_id/Accepted.py	
+@@ -1,16 +1,15 @@
+ '''input
+ 433
+-109 58 77 10 39 125 15
++109 58 77 10 39 125 15 
+ '''
+ n = int(input())
+ a = list(map(int, input().split()))
+ n %= sum(a)
+ if n == 0:
+-	print(7)
+-else:
+-	s = 0
+-	for x in range(7):
+-		s += a[x]
+-		if s >= n:
+-			print(x+1)
+-			break
+\ No newline at end of file
++	n += sum(a) 
++s = 0
++for x in range(7):
++	s += a[x]
++	if s >= n:
++		print(x+1)
++		break
+\ No newline at end of file

@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/1189_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/1189_author_id/Accepted.py
+index 2a259cd..7472ac6 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/1189_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/1189_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ def is_subseq(a, b):
+-    it = iter(y)
++    it = iter(b)
+     return all(c in it for c in a)
+ 
+ if is_subseq('hello', input()):

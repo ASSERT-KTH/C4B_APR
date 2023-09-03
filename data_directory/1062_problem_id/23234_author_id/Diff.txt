@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/23234_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/23234_author_id/Accepted.py
+index 435a6b7..65b27a3 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/23234_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/23234_author_id/Accepted.py	
+@@ -1,9 +1,5 @@
+ n=input()
+-if n.count("4")==len(n):
+-    print("YES")
+-elif n.count("7")==len(n):
+-    print("YES")
+-elif n.count("4")+n.count("7")==len(n):
++if n.count("4")+n.count("7")==7 or n.count("4")+n.count("7")==4:
+     print("YES")
+ else :
+     print("NO")
+\ No newline at end of file

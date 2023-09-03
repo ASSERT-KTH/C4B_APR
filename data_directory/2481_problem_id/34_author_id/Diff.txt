@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/34_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/34_author_id/Accepted.py
+index d6dbf41..57259c0 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/34_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/34_author_id/Accepted.py	
+@@ -1,9 +1,4 @@
+-def bigbang(stack, s):
+-    for i in range(s):
+-        a=stack.pop(0)
+-        stack.append(a)
+-        stack.append(a)
+-    return a
+-
+-s = int(input())
+-print(bigbang(["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"], s))
+\ No newline at end of file
++n=int(input())-1
++while n>4:
++    n=(n-5)//2
++print(["Sheldon","Leonard","Penny","Rajesh","Howard"][n])
+\ No newline at end of file

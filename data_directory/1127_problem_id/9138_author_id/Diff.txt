@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1127_problem_id/9138_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1127_problem_id/9138_author_id/Accepted.py
+index eeeee9d..97af1dc 100644
+--- a/Users/bardia/Downloads/data 4/data/1127_problem_id/9138_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1127_problem_id/9138_author_id/Accepted.py	
+@@ -42,7 +42,7 @@ def main():
+         if lis[i]<=n2:
+             sum+=(lis[i]*((lis[i]-lis[i-1])))
+         else:
+-            sum+=(lis[i]*((n2-max(n1,lis[i-1]))+1))
++            sum+=(lis[i]*((n2-max(n1,lis[i-1]))))
+             break
+ 
+     #print(lis)

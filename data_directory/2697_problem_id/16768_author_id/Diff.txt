@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2697_problem_id/16768_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2697_problem_id/16768_author_id/Accepted.py
+index 7c3d009..4a015a7 100644
+--- a/Users/bardia/Downloads/data 4/data/2697_problem_id/16768_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2697_problem_id/16768_author_id/Accepted.py	
+@@ -6,7 +6,7 @@ from sys import exit
+ 
+ mod = d%c
+ for i in range(1000):
+-    if b > d and b%c == mod:
++    if b >= d and b%c == mod:
+         print(b)
+         exit()
+     b += a

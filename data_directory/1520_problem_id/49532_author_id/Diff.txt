@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1520_problem_id/49532_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1520_problem_id/49532_author_id/Accepted.py
+index 92baf88..4b9a6e5 100644
+--- a/Users/bardia/Downloads/data 4/data/1520_problem_id/49532_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1520_problem_id/49532_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ Solution to the 165B problem on CodeForces.
+ import sys
+ import math
+ 
+-cache = [1]
++cache = []
+ 
+ def updater(n: int, *inputs) -> None:
+     global cache
+@@ -12,7 +12,7 @@ def updater(n: int, *inputs) -> None:
+         for num in inputs:
+             if i - num == 0:
+                 cache[i] = max(1, cache[i])
+-            elif cache[i-num] != 0:
++            elif i-num > 0 and cache[i-num] != 0:
+                 cache[i] = max(cache[i-num]+1, cache[i])
+ 
+ def main() -> None:

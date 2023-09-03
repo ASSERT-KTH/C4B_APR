@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/394_problem_id/7295_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/394_problem_id/7295_author_id/Accepted.py
+index b8b4e23..1687f85 100644
+--- a/Users/bardia/Downloads/data 4/data/394_problem_id/7295_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/394_problem_id/7295_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ n,k = [int(i) for i in input().split()]
+ ans = 0
+ for i in range(k):
+-    while n >= 2:
++    if n >= 2:
+         ans +=  2 * n  - 3
+         n -= 2
+ print(ans)
+\ No newline at end of file

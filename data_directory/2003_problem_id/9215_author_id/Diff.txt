@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/9215_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/9215_author_id/Accepted.py
+index 49c4fda..bf6192e 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/9215_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/9215_author_id/Accepted.py	
+@@ -1,10 +1,8 @@
+ x=int(input(""))
+-for i in range(x+1,9000):
++for i in range(x+1,9500):
+     s=str(i)
+     if(s[0]!=s[1] and s[2]!=s[1] and s[2]!=s[0] and s[3]!=s[2] and s[1]!=s[3] and s[3]!=s[0]):
+         s1=int(s)
+-        if(i>9000):
+-            break
+         print(s1)
+         break
+     i=i+1
+\ No newline at end of file

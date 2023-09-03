@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2346_problem_id/28691_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2346_problem_id/28691_author_id/Accepted.py
+index 6203d90..ab8e1d4 100644
+--- a/Users/bardia/Downloads/data 4/data/2346_problem_id/28691_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2346_problem_id/28691_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ def main():
+-	a = [eval(input()), eval(input()), eval(input()), eval(input())]
++	a = [eval(i) for i in input().split()]
+ 	a.sort()
+ 	if(a[1]+a[2]>a[3] or a[0]+a[1]>a[2]): print("TRIANGLE")
+ 	elif(a[0]+a[1]==a[2] or a[0]+a[1]==a[3] or a[1]+a[2]==a[3]): print("SEGMENT")

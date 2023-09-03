@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1926_problem_id/41828_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1926_problem_id/41828_author_id/Accepted.py
+index 2b051d3..a86b565 100644
+--- a/Users/bardia/Downloads/data 4/data/1926_problem_id/41828_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1926_problem_id/41828_author_id/Accepted.py	
+@@ -3,10 +3,4 @@ p=int(p)
+ q=int(q)
+ high=max(p,q)
+ low=min(p,q)
+-if(p==q):
+-    print("%d %d"%(high-1,low))
+-else:
+-    if(low>2):
+-        print("%d %d"%(high-low,low))
+-    else:
+-        print("%d %d"%(high-1,low))
+\ No newline at end of file
++print("%d %d"%(p+q-1-low,low))
+\ No newline at end of file

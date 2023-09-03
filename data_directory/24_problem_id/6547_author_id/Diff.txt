@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/24_problem_id/6547_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/24_problem_id/6547_author_id/Accepted.py
+index 2f430e7..4d400a5 100644
+--- a/Users/bardia/Downloads/data 4/data/24_problem_id/6547_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/24_problem_id/6547_author_id/Accepted.py	
+@@ -14,7 +14,7 @@ def search(x, y):
+             ans.extend( [] if y == 1 else (str(y - 1) + 'B') )
+             return
+         if y == 1:
+-            ans.extend( [] if x == 1 else (str(x - 1) + 'B') )
++            ans.extend( [] if x == 1 else (str(x - 1) + 'A') )
+             return
+         if x < y:
+             ans.append(str(y // x) + 'B')

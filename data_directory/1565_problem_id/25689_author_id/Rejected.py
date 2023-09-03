@@ -1,0 +1,2 @@
+a, b, r = map(int, input().split())
+print('Second' if (a // (4 * r) + (a % (4 * r)) // (2 * r) if a >= 4 * r else a // (2 * r)) * (b // (4 * r) + (b % (4 * r)) // (2 * r) if b >= 4 * r else b // (2 * r)) % 2 == 0 else 'First')

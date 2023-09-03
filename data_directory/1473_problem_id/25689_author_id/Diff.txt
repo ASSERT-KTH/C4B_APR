@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1473_problem_id/25689_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1473_problem_id/25689_author_id/Accepted.py
+index 17cfad8..0a44cc4 100644
+--- a/Users/bardia/Downloads/data 4/data/1473_problem_id/25689_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1473_problem_id/25689_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ def right(x1, y1, x2, y2, x3, y3):
+     d2s = (y3 - y2) ** 2 + (x3 - x2) ** 2
+     d3s = (y1 - y3) ** 2 + (x1 - x3) ** 2
+     a, b, c = sorted([d1s, d2s, d3s])
+-    return c == a + b 
++    return c == a + b and c != 0 and b != 0 and a != 0
+ x1, y1, x2, y2, x3, y3 = map(int, input().split())
+ if right(x1, y1, x2, y2, x3, y3):
+     print('RIGHT')

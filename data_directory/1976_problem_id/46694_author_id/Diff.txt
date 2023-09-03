@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1976_problem_id/46694_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1976_problem_id/46694_author_id/Accepted.py
+index 7a7addd..3a1e2f0 100644
+--- a/Users/bardia/Downloads/data 4/data/1976_problem_id/46694_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1976_problem_id/46694_author_id/Accepted.py	
+@@ -1,3 +1,7 @@
++'''input
++4
++BRBG
++'''
+ # from operator import itemgetter, attrgetter
+ # from functools import partial # create closures
+ # import bisect as bi # binary search algorith
+@@ -8,8 +12,8 @@
+ # Link: 
+ 
+ def run():
+-    a = raw_input()
+-    c = raw_input()
++    a = input()
++    c = input()
+     result = 0
+     for i in range(len(c)-1):
+         if c[i] == c[i+1]:

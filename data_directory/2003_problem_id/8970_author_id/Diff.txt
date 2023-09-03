@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/8970_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/8970_author_id/Accepted.py
+index 45418f8..20e29db 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/8970_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/8970_author_id/Accepted.py	
+@@ -1,7 +1,8 @@
+ year=int(input())
+ lis=[str(x) for x in str(year)]
+ beau=0
+-for i in range(year+1,9000+1):
++
++for i in range(year+1,10000):
+ 	temLis=[]
+ 	temLis=[str(x) for x in str(i)]
+ 	tem_set=set(temLis)

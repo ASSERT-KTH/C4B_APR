@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1390_problem_id/13267_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1390_problem_id/13267_author_id/Accepted.py
+index 4514c72..0b0f6e5 100644
+--- a/Users/bardia/Downloads/data 4/data/1390_problem_id/13267_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1390_problem_id/13267_author_id/Accepted.py	
+@@ -5,4 +5,7 @@ n, x, y = [int(x) for x in (sys.stdin.readline()).split()]
+ 
+ req = int(math.ceil(y / 100.0 * n))
+ 
+-print(req - x)
+\ No newline at end of file
++if(req - x < 0):
++    print(0)
++else:
++    print(req - x)
+\ No newline at end of file

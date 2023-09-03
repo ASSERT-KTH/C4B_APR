@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/7948_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/7948_author_id/Accepted.py
+index 1b908ad..ebd6774 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/7948_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/7948_author_id/Accepted.py	
+@@ -1,17 +1,17 @@
+ vasya = input()
+ 
+-def removeLetter(vasya, letter):
+-    number = vasya.find(letter)
++def removeLetter(name, letter):
++    number = name.find(letter)
+     if number >= 0:
+-        return vasya[number+1:]
++        return name[number+1:]
+     else:
+-        return ""
++        return "."
+ 
+ temp = vasya
+ for letter in "hello":
+     temp = removeLetter(temp, letter)
+ 
+-if temp == "" and vasya != "hello":
++if temp == "." and vasya != "hello":
+     print("NO")
+ else:
+     print("YES")
+\ No newline at end of file

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/62191_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/62191_author_id/Accepted.py
+index d951af1..7f78227 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/62191_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/62191_author_id/Accepted.py	
+@@ -18,8 +18,7 @@ for i in entrada:
+ 
+ if cont1 == tamanho:
+ 
+-    saida = entrada[0].upper()
+-    saida += entrada[1:].lower()
++    saida = entrada[0:].lower()
+     print(saida)
+     
+ else:

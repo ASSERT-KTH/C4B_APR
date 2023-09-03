@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/23054_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/23054_author_id/Accepted.py
+index 829c26b..2342367 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/23054_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/23054_author_id/Accepted.py	
+@@ -1,8 +1,14 @@
+ string = str(input())
+ ones = "1111111"
+ zeroes = "0000000"
++string=string+'2'
++total = 1
+ for i in range(len(string)-7):
+     if(string[i:i+7]==ones) or (string[i:i+7]==zeroes):
+-        print ('YES')
++        total = total * 0
+     else:
+-        print ("NO")
+\ No newline at end of file
++        total = total + 0
++if(total==0):
++    print ("YES")
++else:
++    print ("NO")
+\ No newline at end of file

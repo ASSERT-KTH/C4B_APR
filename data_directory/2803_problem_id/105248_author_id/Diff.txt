@@ -1,0 +1,63 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2803_problem_id/105248_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2803_problem_id/105248_author_id/Accepted.py
+index df687ab..0443f4a 100644
+--- a/Users/bardia/Downloads/data 4/data/2803_problem_id/105248_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2803_problem_id/105248_author_id/Accepted.py	
+@@ -1,39 +1,24 @@
+ str_params = input()
+ [n, k]= [int(s) for s in str_params.split(' ')]
+-if (1+k)/2*k<=n:
+-	parts = (1+k)/2*k
+-	parts_old = parts
+-	part_weight = int(n/parts)
+-	while n%parts!=0:
+-		parts = parts-1
+-	#print ('===', part_weight, parts)
+-	#if n/part_weight>parts_old:
+-	if n%part_weight!=0:
+-	#	print ('change')
+-		t = part_weight
+-		part_weight =parts
+-		parts = t
+-	numbers = [part_weight*(x+1) for x in range(k)]
+-	#print (parts, numbers, part_weight, n/part_weight)
+-	i = sum(numbers)
+-	if i<n:
+-		#numbers[k-1] = n/pr*(parts-k)-numbers[k-1]
+-		numbers[k-1] = n-part_weight*((1+k-1)/2*(k-1))
+-	#numbers = [i*(x+1) for x in range(k)]
+-	#nod = n//i
+-	#print (nod, i, numbers)
+-	#numbers = [numbers[x]*nod for x in range(k)]	
+-	#i = sum(numbers)
+-	"""while (n%i!=0)&(i<n):
+-		#print (k-int(n/i), k)
+-		#numbers[max(0, k-int(n/i)):] = [x+1 for x in numbers[max(0, k-int(n/i)):]]
+-		numbers[k-1] = numbers[k-1]+int(n/i)
+-		i = sum(numbers)
+-		print (i, n%i, n/i, numbers)"""
+-
+-	#nod = n//i
+-	#print (nod, i, numbers)
+-	#numbers = [numbers[x]*nod for x in range(k)]	
++parts = (1+k)/2*k
++if parts<=n:
++	nod = n/parts
++	while (nod%1!=0)|(parts%1!=0):
++		if nod<parts:
++			if nod%1!=0:
++				nod = int(nod)
++			else:
++				nod = nod-1
++			parts = n/nod
++		else:
++			if parts%1!=0:
++				parts = int(parts)+1
++			else:
++				parts = parts+1
++			nod = n/parts
++	numbers = [nod*(x+1) for x in range(k)]
++	numbers[k-1] = n-(1+k-1)/2*(k-1)*nod
++	
+ 	if numbers[0]==0:
+ 		print (-1)
+ 	else:

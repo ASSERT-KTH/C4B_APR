@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2893_problem_id/18052_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2893_problem_id/18052_author_id/Accepted.py
+index b42eb74..57c87bd 100644
+--- a/Users/bardia/Downloads/data 4/data/2893_problem_id/18052_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2893_problem_id/18052_author_id/Accepted.py	
+@@ -1,9 +1,10 @@
++import sys
+ n,k = map(int,input().split())
+ 
+-for i in range(int(n/2),-1,-1):
+-    if i%(k+1)==0:
+-        d=i/(k+1)
+-        c=i-d
+-        if (d>=0 and c>=0):
+-            print(int(d),int(c),int(n-d-c))
+-            break
+\ No newline at end of file
++d=int(int(n/2) / (k+1))
++c=k*d
++
++if (d>=0 and c>=0 and c+d<=int(n/2)):
++    print(d,c,n-d-c)
++else:
++    print("0 0",n)
+\ No newline at end of file

@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/62894_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/62894_author_id/Accepted.py
+index 5678204..79aef43 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/62894_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/62894_author_id/Accepted.py	
+@@ -1,11 +1,15 @@
+ s = input().lower()
+-s2 = ""
++s2 = "."
+ v= "aoyeui"
+ i = 0
+ while i < len(s):
+-    if s[i] in v:
+-        s2 += '.'
+-    else:
++    if not s[i] in v:
+         s2 += s[i]
++        s2 += "."
+     i += 1
+-print(s2)
+\ No newline at end of file
++i = 0
++s = ""
++while i < len(s2)-1:
++    s += s2[i]
++    i += 1
++print(s)
+\ No newline at end of file

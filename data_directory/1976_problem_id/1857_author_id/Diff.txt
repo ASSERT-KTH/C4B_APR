@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1976_problem_id/1857_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1976_problem_id/1857_author_id/Accepted.py
+index 9ef343e..8b66f02 100644
+--- a/Users/bardia/Downloads/data 4/data/1976_problem_id/1857_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1976_problem_id/1857_author_id/Accepted.py	
+@@ -1,7 +1,3 @@
+-import os
+-
+-os.nice(-10)
+-
+ from sys import stdin,stdout
+ inp=input()
+ stack=[]

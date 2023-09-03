@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2819_problem_id/104440_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2819_problem_id/104440_author_id/Accepted.py
+index a6ac708..91d3634 100644
+--- a/Users/bardia/Downloads/data 4/data/2819_problem_id/104440_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2819_problem_id/104440_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+-a=input(int())
+-b=input(int())
+-if a==b:
+-    print(a)
++a=input()
++b=a.split()
++if(int(b[0])==int(b[1])):
++    print(int(b[0]))
+ else:
+     print(2)
+\ No newline at end of file

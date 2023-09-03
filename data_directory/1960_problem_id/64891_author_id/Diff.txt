@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1960_problem_id/64891_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1960_problem_id/64891_author_id/Accepted.py
+index 9cbbdf5..db598c7 100644
+--- a/Users/bardia/Downloads/data 4/data/1960_problem_id/64891_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1960_problem_id/64891_author_id/Accepted.py	
+@@ -6,4 +6,4 @@ for i in range(5):
+             rem_i = i + 1
+             rem_j = j + 1
+             break
+-print(fabs(3 - rem_i) + fabs(3 - rem_j))
+\ No newline at end of file
++print(int(fabs(3 - rem_i) + fabs(3 - rem_j)))
+\ No newline at end of file

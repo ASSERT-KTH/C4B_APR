@@ -1,0 +1,55 @@
+diff --git a/Users/bardia/Downloads/data 4/data/966_problem_id/14_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/966_problem_id/14_author_id/Accepted.py
+index 3ebd35c..cc0f016 100644
+--- a/Users/bardia/Downloads/data 4/data/966_problem_id/14_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/966_problem_id/14_author_id/Accepted.py	
+@@ -1,22 +1,27 @@
+-import sys
+-beds,pillows,frodo=map(int,sys.stdin.readline().split())
+-pillows=pillows-beds-1 
+-layer=2
+-while pillows>0:
+-    if beds==1:
+-        layer=pillows+2
+-        pillows=0
+-        break
+-    if frodo-1<layer-1 and beds-frodo<layer-1:
+-        layer+=(int(pillows/(beds))+1)
+-        break
+-    else:
++hobs, pillows, frodo = input().split()
++hobs, pillows, frodo = int(hobs), int(pillows), int(frodo)
++turn = 0
++left = frodo
++right = frodo
++pilCount = 1
++pillows-=hobs
+ 
+-        pillows-=(min(frodo-1,layer-1)+min(layer-1,beds-frodo))
+-    if pillows>0:
+-        pillows-=1
+-    layer+=1  
+-if pillows==0:
+-    print(layer)
+-else:
+-    print(layer-1)
+\ No newline at end of file
++while True:
++     if left < 1 and right > hobs:
++          pilCount+=pillows//hobs
++          break
++     elif left < 1:
++          pillows-=(right)
++     elif right > hobs:
++          pillows-=(hobs-left+1)
++     else:
++          pillows-=(turn*2+1)
++
++     if pillows < 0:
++          break
++     left-=1
++     right+=1
++     pilCount+=1
++     turn+=1
++     
++print(pilCount)
+\ No newline at end of file

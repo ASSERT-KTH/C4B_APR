@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/814_problem_id/5834_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/814_problem_id/5834_author_id/Accepted.py
+index 10134f6..f10f1a2 100644
+--- a/Users/bardia/Downloads/data 4/data/814_problem_id/5834_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/814_problem_id/5834_author_id/Accepted.py	
+@@ -3,7 +3,7 @@ numbers = [int(x) for x in input().split(" ")]
+ a = numbers[0]
+ b = numbers[1]
+ 
+-for i in range(100000):
+-    if (a*i - b)%10 == 0:
++for i in range(1, 100000):
++    if (a*i - b)%10 == 0 or a * i % 10 == 0:
+         print(i)
+         break
+\ No newline at end of file

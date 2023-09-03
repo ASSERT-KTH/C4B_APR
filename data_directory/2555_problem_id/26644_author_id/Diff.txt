@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/26644_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/26644_author_id/Accepted.py
+index 117795d..de5a7d8 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/26644_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/26644_author_id/Accepted.py	
+@@ -8,7 +8,7 @@ for w in word:
+         goalCount += 1
+     else:
+         goalCount = 0
+-    if goalCount == 7:
++    if goalCount == 6:
+         print("YES")
+         exit()
+     prev = w

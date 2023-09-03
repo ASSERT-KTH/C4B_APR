@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2223_problem_id/3323_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2223_problem_id/3323_author_id/Accepted.py
+index e1ee357..e516309 100644
+--- a/Users/bardia/Downloads/data 4/data/2223_problem_id/3323_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2223_problem_id/3323_author_id/Accepted.py	
+@@ -2,9 +2,9 @@ from sys import stdin, stdout
+ 
+ w = int(stdin.readline())
+ 
+-if (w / 2.0) % 2 == 0:
++if w > 2 and w % 2 == 0:
+     stdout.write("YES")
+ else:
+     stdout.write("NO")
+ 
+-# 1502317182789
+\ No newline at end of file
++# 1502317526709
+\ No newline at end of file

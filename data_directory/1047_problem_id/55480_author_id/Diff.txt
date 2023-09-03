@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1047_problem_id/55480_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1047_problem_id/55480_author_id/Accepted.py
+index faf6496..d92cbd7 100644
+--- a/Users/bardia/Downloads/data 4/data/1047_problem_id/55480_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1047_problem_id/55480_author_id/Accepted.py	
+@@ -1,8 +1,10 @@
+ n = input()
+-if n[1] > '5':
+-    if n[0] == '1': n = '20'
+-    else: n = '10'
+-elif n[3:] >= n[1] + n[0]:
++if n[3:] >= n[1] + n[0]:
+     n = str((int(n[:2]) + 1) % 24)
+     if len(n) == 1: n = '0' + n
+-print(n[0] + n[1] + ':' + n[1] + n[0])
+\ No newline at end of file
++else: n = n[:2]
++n = n + ':' + n[1] + n[0]
++if n[1] > '5':
++    if n[0] == '1': n = '20:02'
++    else: n = '10:01'
++print(n)
+\ No newline at end of file

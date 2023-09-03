@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2505_problem_id/4353_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2505_problem_id/4353_author_id/Accepted.py
+index d6e52b8..8edc5b4 100644
+--- a/Users/bardia/Downloads/data 4/data/2505_problem_id/4353_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2505_problem_id/4353_author_id/Accepted.py	
+@@ -1,12 +1,11 @@
+ a,b=map(int,input().split())
+ g=lambda x,y:g(y%x,x)if x else y
+-g=g(a,b)
+-c=a//g*b
+-A=c//a-g
+-B=c//b-g
+-if a<b:B+=g
+-if a>b:A+=g
+-if A>B:r='Dasha'
+-elif A<B:r='Masha'
+-else:r='Equal' 
+-print(r)
+\ No newline at end of file
++c=a//g(a,b)*b
++A=a
++B=b
++r=t=0
++while 1:
++    if A<B:r+=A-t;t=A;A+=a
++    elif B<A:r+=t-B;t=B;B+=b
++    else:r+=(A-t)*(0if a==b else [-1,1][a>b]);break
++print('Masha'if r<0else['Equal','Dasha'][r>0])
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2095_problem_id/90155_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2095_problem_id/90155_author_id/Accepted.py
+index d8c1642..4f6596c 100644
+--- a/Users/bardia/Downloads/data 4/data/2095_problem_id/90155_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2095_problem_id/90155_author_id/Accepted.py	
+@@ -2,7 +2,7 @@
+ import sys
+ (n,k)=map(int,sys.stdin.readline().split())
+ mod_prime=1000000007
+-f=[0]*k 
++f=[0]*(k+2)
+ #f(x)= the number of ways that a group of x elements eventually leads to 1 (1 is not part of the group and does not points to anywhere)
+ f[0]=1
+ f[1]=1

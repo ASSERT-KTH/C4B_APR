@@ -1,0 +1,38 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1162_problem_id/9662_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1162_problem_id/9662_author_id/Accepted.py
+index 349767d..c3bb2d6 100644
+--- a/Users/bardia/Downloads/data 4/data/1162_problem_id/9662_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1162_problem_id/9662_author_id/Accepted.py	
+@@ -1,6 +1,16 @@
+ from typing import List, Tuple
+ 
+ 
++def is_row_clear(board: List[str], time: int, x: int, y: int) -> bool:
++    if all(row[y] != 'S' for row in board):
++        return True
++    first_statue_index = [row[y] for row in board].index('S')
++    if first_statue_index + time > x:
++        return True
++    else:
++        return False
++
++
+ def moves(x: int, y: int) -> List[Tuple[int, int]]:
+     adj = [(x - 1, y - 1), (x - 1, y), (x - 1, y + 1), (x, y - 1), (x, y + 1),
+            (x + 1, y - 1), (x + 1, y), (x + 1, y + 1), (x, y)]
+@@ -12,7 +22,7 @@ def solve(board: List[str]) -> str:
+              for idy, sq in enumerate(line) if board[idx][idy] == 'M']
+     while stack:
+         time, idx, idy = stack.pop()
+-        if all(row[idy] != 'S' for row in board) or idx == 0:
++        if is_row_clear(board, time, idx, idy) or idx == 0:
+             return 'WIN'
+         for xo, yo in moves(idx, idy):
+             if (
+@@ -22,5 +32,6 @@ def solve(board: List[str]) -> str:
+                 stack.append((time + 1, xo, yo))
+     return 'LOSE'
+ 
++
+ board = [input() for _ in range(8)]
+ print(solve(board))
+\ No newline at end of file

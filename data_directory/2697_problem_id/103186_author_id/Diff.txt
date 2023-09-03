@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2697_problem_id/103186_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2697_problem_id/103186_author_id/Accepted.py
+index 2955c15..6c36e4f 100644
+--- a/Users/bardia/Downloads/data 4/data/2697_problem_id/103186_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2697_problem_id/103186_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ from math import inf
+ a, b = [int(x) for x in input().split()]
+ c, d = [int(x) for x in input().split()]
+-if a > c:
++if b > d:
+     a, c = c, a
+     b, d = d, b
+ r1 = (d-b) % a
+@@ -10,4 +10,5 @@ k2s = [(r1+k2*r2) % a for k2 in range(a)]
+ if 0 not in k2s:
+     print(-1)
+ else:
++    
+     print(k2s.index(0)*c+d)
+\ No newline at end of file

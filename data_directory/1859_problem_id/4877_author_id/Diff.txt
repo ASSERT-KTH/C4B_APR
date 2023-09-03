@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1859_problem_id/4877_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1859_problem_id/4877_author_id/Accepted.py
+index a4e3dfb..c90a257 100644
+--- a/Users/bardia/Downloads/data 4/data/1859_problem_id/4877_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1859_problem_id/4877_author_id/Accepted.py	
+@@ -1,10 +1,11 @@
+ s = input()
+ if s[0:3] == "ftp":
+     s = s.replace("ftp", "ftp://", 1)
++    s = s[0:7] + s[7:].replace("ru", ".ru/", 1)
+ else:
+     s = s.replace("http", "http://", 1)
++    s = s[0:8] + s[8:].replace("ru", ".ru/", 1)
+ 
+-s = s.replace("ru", ".ru/", 1)
+ if s[-1] == "/":
+     print(s[0:-1])
+ else:

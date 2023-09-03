@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2969_problem_id/108345_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2969_problem_id/108345_author_id/Accepted.py
+index 76921b4..e924d01 100644
+--- a/Users/bardia/Downloads/data 4/data/2969_problem_id/108345_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2969_problem_id/108345_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ time_1,time_2 = compute_time(v_1,t_1,s),compute_time(v_2,t_2,s)
+ 
+ if time_1 < time_2:
+     print('First')
+-elif time_2 > time_1:
++elif time_1 > time_2:
+     print('Second')
+ else:
+     print('Friendship')
+\ No newline at end of file

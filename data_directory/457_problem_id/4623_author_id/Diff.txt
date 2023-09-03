@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/457_problem_id/4623_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/457_problem_id/4623_author_id/Accepted.py
+index ffbf69e..eff8e21 100644
+--- a/Users/bardia/Downloads/data 4/data/457_problem_id/4623_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/457_problem_id/4623_author_id/Accepted.py	
+@@ -2,8 +2,10 @@
+ ##a = list(map(int, input().split()))
+ ##print(" ".join(map(str, res)))
+ 
+-def calc(x, y):
+-    return int(x/y+1)
++def calc(cur, start, interv):
++    if cur < start:
++        return 0
++    return int((cur-start)/interv+1)
+ 
+ [a, ta] = list(map(int, input().split()))
+ [b, tb] = list(map(int, input().split()))
+@@ -14,6 +16,6 @@ be = 23*60+59
+ s = hh*60+mm
+ e = hh*60+mm+ta
+ 
+-a = calc(max(s-tb, bs-1), b)-calc(bs-1, b)
+-b = calc(min(e-1, be), b)-calc(bs-1, b)
++a = calc(max(s-tb, bs-1), bs, b)
++b = calc(min(e-1, be), bs, b)
+ print(b-a)
+\ No newline at end of file

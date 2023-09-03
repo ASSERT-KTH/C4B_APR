@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/266_problem_id/26427_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/266_problem_id/26427_author_id/Accepted.py
+index 2e1543c..c95b1ac 100644
+--- a/Users/bardia/Downloads/data 4/data/266_problem_id/26427_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/266_problem_id/26427_author_id/Accepted.py	
+@@ -1,5 +1,14 @@
+ from sys import stdin
++from operator import mul
++from functools import reduce
+ from math import factorial
++
++
++def binom(n, k):
++    nominator = reduce(mul, range(n - k + 1, n + 1))
++    denominator = factorial(k)
++    return(nominator // denominator)
++
+ n = int(stdin.readline())
+-result = factorial(n)
++result = 120 * binom(n, 5)**2 
+ print(result)
+\ No newline at end of file

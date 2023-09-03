@@ -1,0 +1,1 @@
+[{'inputdata': '7777', 'expectedresult': 'YES'}, {'inputdata': '7777777', 'expectedresult': 'YES'}, {'inputdata': '4444000111222333', 'expectedresult': 'YES'}]

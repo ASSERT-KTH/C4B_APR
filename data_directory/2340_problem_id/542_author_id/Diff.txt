@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2340_problem_id/542_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2340_problem_id/542_author_id/Accepted.py
+index 4ce0e42..45395ca 100644
+--- a/Users/bardia/Downloads/data 4/data/2340_problem_id/542_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2340_problem_id/542_author_id/Accepted.py	
+@@ -1 +1,2 @@
+-print(input().lower())
+\ No newline at end of file
++a = input()
++print(a.upper() if sum(a.count(x) for x in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') * 2 > len(a) else a.lower())
+\ No newline at end of file

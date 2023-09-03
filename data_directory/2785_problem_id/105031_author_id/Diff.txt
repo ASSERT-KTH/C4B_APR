@@ -1,0 +1,48 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/105031_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/105031_author_id/Accepted.py
+index b3d6945..a42e941 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/105031_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/105031_author_id/Accepted.py	
+@@ -33,29 +33,29 @@ def get_max_vk(input_string):
+     if s_len < 1 or s_len > 100:
+         raise ValueError('String length should be between 1 and 100')
+ 
+-    last_char = ''
+-    total = 0
+-    can_sub = False
++    parts = input_string.split('VK')
++
++    total = len(parts) - 1
+ 
+-    for char in input_string:
++    can_sub = False
+ 
+-        if char == 'V':
++    for part in parts:
+ 
+-            if last_char == 'V':
+-                can_sub = True
++        if len(part) < 2:
++            continue
+ 
+-        elif char == 'K':
++        last_char = ''
+ 
+-            if last_char == 'V':
+-                total += 1
++        for char in part:
+ 
+-            elif last_char == 'K':
++            if char == last_char:
+                 can_sub = True
++                break
+ 
+-        else:
+-            raise ValueError('Input contains invalid character: ' + char)
++            last_char = char
+ 
+-        last_char = char
++        if can_sub:
++            break
+ 
+     return total + (1 if can_sub else 0)
+ 

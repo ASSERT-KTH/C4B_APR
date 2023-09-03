@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/5884_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/5884_author_id/Accepted.py
+index 3a3ca05..96ab369 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/5884_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/5884_author_id/Accepted.py	
+@@ -13,6 +13,8 @@ for i in range(len(sum1)):
+             count=count+1;
+         else:
+             print("NO")
++            exit()
++            
+         
+ if count==length:
+     print("YES")

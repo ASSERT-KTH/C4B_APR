@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2606_problem_id/45419_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2606_problem_id/45419_author_id/Accepted.py
+index af88d48..44168c4 100644
+--- a/Users/bardia/Downloads/data 4/data/2606_problem_id/45419_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2606_problem_id/45419_author_id/Accepted.py	
+@@ -1,8 +1,17 @@
+ q,w=[int(x) for x in input().split()]
+ e=""
+-for i in range(q):
+-    if i<w:
+-        e += chr(ord('a')+i)
+-    else:
+-        e += 'a'
++#for i in range(q):
++#    if i<w:
++#        e += chr(ord('a')+i)
++#    else:
++#        e += 'a'
++#print(e)
++i=0
++pis=0
++while (pis < q):
++    e += chr(ord('a')+i)
++    i = i + 1
++    pis = pis + 1
++    if(i>=w):
++        i=0
+ print(e)
+\ No newline at end of file

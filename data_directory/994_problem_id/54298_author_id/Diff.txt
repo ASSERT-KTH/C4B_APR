@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/994_problem_id/54298_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/994_problem_id/54298_author_id/Accepted.py
+index 07101e8..3199c17 100644
+--- a/Users/bardia/Downloads/data 4/data/994_problem_id/54298_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/994_problem_id/54298_author_id/Accepted.py	
+@@ -8,4 +8,5 @@ def calculNmbPave(n=0,m=0,a=0):
+         except ValueError:
+                 print ("erreur de type")
+ 
+-print (calculNmbPave(6,6,4))
+\ No newline at end of file
++n,m,a=list(map(int, input().split()))
++print (calculNmbPave(n,m,a))
+\ No newline at end of file

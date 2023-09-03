@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/133_problem_id/18855_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/133_problem_id/18855_author_id/Accepted.py
+index fdfd168..2f31ebf 100644
+--- a/Users/bardia/Downloads/data 4/data/133_problem_id/18855_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/133_problem_id/18855_author_id/Accepted.py	
+@@ -3,15 +3,15 @@ x, y, z = map(int, input().split())
+ pos = 0
+ neg = 0
+ if (a > x):
+-    pos += (a - x) / 2
++    pos += (a - x) // 2
+ else:
+     neg += x - a
+ if (b > y):
+-    pos += (b - y) / 2
++    pos += (b - y) // 2
+ else:
+     neg += y - b
+ if (c > z):
+-    pos += (c - z) / 2
++    pos += (c - z) // 2
+ else:
+     neg += z - c
+ if pos >= neg:

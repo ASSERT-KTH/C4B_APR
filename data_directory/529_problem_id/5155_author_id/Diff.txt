@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/529_problem_id/5155_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/529_problem_id/5155_author_id/Accepted.py
+index ddb2f49..3b048df 100644
+--- a/Users/bardia/Downloads/data 4/data/529_problem_id/5155_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/529_problem_id/5155_author_id/Accepted.py	
+@@ -3,5 +3,5 @@ e = 10**9 + 7
+ if a==1:
+     ans = (x + b*n)%e
+ else :
+-    ans = (pow(a,n,e)*x + (b*pow(a,n,e)*pow(a-1,e-2,e))%e)%e
++    ans = (pow(a,n,e)*x + (b*(pow(a,n,e)-1)*pow(a-1,e-2,e)))%e
+ print(int(ans))
+\ No newline at end of file

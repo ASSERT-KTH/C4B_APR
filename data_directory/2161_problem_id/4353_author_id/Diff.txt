@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2161_problem_id/4353_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2161_problem_id/4353_author_id/Accepted.py
+index be7e114..f780dae 100644
+--- a/Users/bardia/Downloads/data 4/data/2161_problem_id/4353_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2161_problem_id/4353_author_id/Accepted.py	
+@@ -15,7 +15,7 @@ for x in v:
+ s=''.join(s)
+ O=C(s,'0')
+ X=C(s,'X')
+-if O>X or a*b or b and X>O or a and (X==O or X>O+1):r='illegal'
++if O>X or X>O+1 or a*b or b and X>O or a and X==O:r='illegal'
+ elif a+b>0:r='the '+S[b]+' player won'
+ elif C(s,'.')==0:r='draw'
+ else:r=S[X>O]

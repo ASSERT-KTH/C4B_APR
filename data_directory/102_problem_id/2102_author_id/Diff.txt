@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/102_problem_id/2102_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/102_problem_id/2102_author_id/Accepted.py
+index 6ced544..1cb536c 100644
+--- a/Users/bardia/Downloads/data 4/data/102_problem_id/2102_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/102_problem_id/2102_author_id/Accepted.py	
+@@ -1,5 +1,6 @@
+ a,b,c=map(int,input().split())
+-if(2*a+2*b<=a+b+c):
+-    print(2*a+2*b)
+-else:
+-    print(a+b+c)
+\ No newline at end of file
++d1=2*a+2*b
++d2=a+b+c
++d3=2*a+2*c
++d4=2*b+2*c
++print(min(d1,d2,d3,d4))
+\ No newline at end of file

@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/543_problem_id/22225_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/543_problem_id/22225_author_id/Accepted.py
+index 7dd6d9f..7f9a7ed 100644
+--- a/Users/bardia/Downloads/data 4/data/543_problem_id/22225_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/543_problem_id/22225_author_id/Accepted.py	
+@@ -42,7 +42,7 @@ while x>=computadora:
+         while (a and b)>=computadora:
+                 a=a-computadora
+                 b=b-carro
+-                if a%casa==0 or b%casa==0:
++                if (a%casa==0 or b%casa==0)  and  ((a and b)>0):
+                         mensaje="YES"
+                         x=computadora-1
+                         a=computadora-1
+@@ -54,7 +54,7 @@ while x>=computadora:
+         while (c and d)>=computadora:
+                 c=c-computadora
+                 d=d-casa
+-                if c%carro==0 or d%carro==0:
++                if (c%carro==0 or d%carro==0) and ((c and d)>0) :
+                         mensaje="YES"
+                         x=computadora-1
+                         c=computadora-1
+@@ -65,7 +65,7 @@ while x>=computadora:
+         while (e and f)>=computadora:
+                 e=e-casa
+                 f=f-carro
+-                if e%computadora==0 or f%computadora==0:
++                if (e%computadora==0 or f%computadora==0) and ((e and f)>0):
+                         mensaje="YES"
+                         x=computadora-1
+                         e=computadora-1

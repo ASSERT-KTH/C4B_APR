@@ -1,0 +1,7 @@
+a = list(map(int, input().split()))
+a.sort()
+if a[3] < a[0] + a[1] or a[3] < a[0] + a[2] or a[3] < a[2] + a[1]: print("TRIANGLE")
+elif a[3] == a[0] + a[1] or a[3] == a[0] + a[2] or a[3] == a[2] + a[1]: print("SEGMENT")
+elif a[2] < a[0] + a[1]: print("TRIANGLE")
+elif a[2] == a[0] + a[1]: print("SEGMENT")
+else: print("IMPOSSIBLE")

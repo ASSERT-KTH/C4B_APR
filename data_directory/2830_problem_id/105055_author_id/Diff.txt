@@ -1,0 +1,51 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2830_problem_id/105055_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2830_problem_id/105055_author_id/Accepted.py
+index 238b921..cd2101e 100644
+--- a/Users/bardia/Downloads/data 4/data/2830_problem_id/105055_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2830_problem_id/105055_author_id/Accepted.py	
+@@ -15,7 +15,7 @@ def get_win_places(scores):
+         res.append(26 + k)
+     return res
+ 
+-def find_success_hack_count(place, current_scores, goal):
++def find_success_hack_count(place, current_scores, min_goal):
+     """
+     >>> find_success_hack_count(239, 10880, 9889)
+     0
+@@ -28,30 +28,13 @@ def find_success_hack_count(place, current_scores, goal):
+     >>> find_success_hack_count(329, 19913, 19900)
+     8
+     """
+-    if place in get_win_places(int(current_scores)):
+-        return 0
+-    else:
+-        i = goal
+-        negative_diff = 0
+-        while i <= current_scores:
+-            win_places = get_win_places(i)
+-            if place in win_places and not (current_scores-i)%UNSUCCESS_HACK:
+-                negative_diff = current_scores - i
+-            i += 50
+-        j = current_scores
+-        positive_diff = MAX_SCORES
+-        cont = True
+-        while cont:
+-            win_places = get_win_places(j)
+-            diff = j-current_scores
+-            if place in win_places and not diff%UNSUCCESS_HACK:
+-                positive_diff = diff
+-                cont = False
+-            j += 50
+-        if negative_diff > 0:
+-            return 0
+-        else:
+-            return round(positive_diff/SUCCESS_HACK)
++    goal = min_goal
++    while True:
++        if not (current_scores-goal)%50:
++            if place in get_win_places(goal):
++                break
++        goal += 1
++    return (max(0, goal-current_scores)+50)//100
+ 
+ 
+ if __name__ == '__main__':

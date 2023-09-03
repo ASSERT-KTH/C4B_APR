@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1198_problem_id/63025_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1198_problem_id/63025_author_id/Accepted.py
+index 4f36b34..1c7f720 100644
+--- a/Users/bardia/Downloads/data 4/data/1198_problem_id/63025_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1198_problem_id/63025_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ def check_symbols(_str, _arr):
+     return _res
+ 
+ _str = input()
+-_arr = ['H', 'Q', '9', '+']
++_arr = ['H', 'Q', '9']
+ 
+ if check_symbols(_str, _arr):
+     print('YES')

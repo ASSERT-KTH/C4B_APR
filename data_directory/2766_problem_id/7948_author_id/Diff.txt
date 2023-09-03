@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2766_problem_id/7948_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2766_problem_id/7948_author_id/Accepted.py
+index a9b6c43..2f24a68 100644
+--- a/Users/bardia/Downloads/data 4/data/2766_problem_id/7948_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2766_problem_id/7948_author_id/Accepted.py	
+@@ -1,14 +1,17 @@
+ string = [x for x in input()]
+ reverse = string[::-1]
+ 
+-for i in range(len(string)):
+-    if string[i] == reverse[i]:
+-        reverse[i] = ''
++if string == reverse and len(string) % 2 == 1:
++    print("YES")
++else:
++    for i in range(len(string)):
++        if string[i] == reverse[i]:
++            reverse[i] = ''
+ 
+-count = 0
++    count = 0
+ 
+-for letter in reverse:
+-    if letter != '':
+-        count += 1
++    for letter in reverse:
++        if letter != '':
++            count += 1
+ 
+-print(["NO", "YES"][count == 2])
+\ No newline at end of file
++    print(["NO", "YES"][count == 2])
+\ No newline at end of file

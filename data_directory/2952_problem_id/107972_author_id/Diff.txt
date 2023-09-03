@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2952_problem_id/107972_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2952_problem_id/107972_author_id/Accepted.py
+index 916362a..34a670c 100644
+--- a/Users/bardia/Downloads/data 4/data/2952_problem_id/107972_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2952_problem_id/107972_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ import math
+ n,k=map(int,input().split())
+-s=int (n/k)
++s=int (n//k)
+ if s%2 != 0:
+     print('YES')
+ else:

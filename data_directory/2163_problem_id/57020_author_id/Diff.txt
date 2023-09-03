@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2163_problem_id/57020_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2163_problem_id/57020_author_id/Accepted.py
+index f41b66f..ce5407b 100644
+--- a/Users/bardia/Downloads/data 4/data/2163_problem_id/57020_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2163_problem_id/57020_author_id/Accepted.py	
+@@ -10,7 +10,7 @@ try:
+ except:
+     print('No solution')
+     sys.exit()
+-if math.ceil(abs(ans)) == math.floor(abs(ans)+0.5):
+-    print(int(abs(ans)+0.5) * (-1 if ans < 0 else 1))
++if math.ceil(abs(ans)) == math.floor(abs(ans)+0.00000000005):
++    print(int(abs(ans)+0.00000000005) * (-1 if ans < 0 else 1))
+ else:
+     print('No solution')
+\ No newline at end of file

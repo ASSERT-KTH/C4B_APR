@@ -1,0 +1,1 @@
+''.join(e for e in ['.'+letter for letter in list(input().lower()) if letter not in ["a", "o", "y", "e", "u", "i"]])

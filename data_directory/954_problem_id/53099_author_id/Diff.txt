@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/954_problem_id/53099_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/954_problem_id/53099_author_id/Accepted.py
+index 78517d8..a0ba2fe 100644
+--- a/Users/bardia/Downloads/data 4/data/954_problem_id/53099_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/954_problem_id/53099_author_id/Accepted.py	
+@@ -10,7 +10,7 @@ last_tour_count = k % tour_size
+ max_asked = max((k // tour_size) * max_asked_per_tour + (0 if last_tour_count <= m else 1 if m < last_tour_count <= m * n else 2), math.ceil(k / tour_size))
+ min_asked = (k // tour_size) * min_asked_per_tour + (1 if (last_tour_count >= n * m) else 0)
+ 
+-asked_per_tour = (2 if 0 < x < n - 1 else 1)
++asked_per_tour = (2 if 1 < x < n else 1)
+ pre_tour_pos = (x - 1) * m + y
+ pos_tour_pos = (-1 if asked_per_tour == 1 else m * n + (n - x - 1) * m + y)
+ last_pre_tour_asked = (0 if k % tour_size < pre_tour_pos else 1)

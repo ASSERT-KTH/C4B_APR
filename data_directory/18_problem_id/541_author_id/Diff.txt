@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/18_problem_id/541_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/18_problem_id/541_author_id/Accepted.py
+index 8f95b39..069cc63 100644
+--- a/Users/bardia/Downloads/data 4/data/18_problem_id/541_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/18_problem_id/541_author_id/Accepted.py	
+@@ -2,4 +2,4 @@
+ 
+ n = int(input())
+ 
+-print(3**(3*n) - 7**n)
+\ No newline at end of file
++print((3**(3*n) - 7**n) % (int(1e9) + 7))
+\ No newline at end of file

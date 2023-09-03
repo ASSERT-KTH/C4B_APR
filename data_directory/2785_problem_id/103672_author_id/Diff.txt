@@ -1,0 +1,46 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/103672_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/103672_author_id/Accepted.py
+index e359a84..51fd904 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/103672_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/103672_author_id/Accepted.py	
+@@ -2,24 +2,23 @@ s = input()
+ V = "V"
+ K = "K"
+ 
+-res = 0
+-flag = False
+-
+-d = {"VK": 1, "VV": 1, "KK": 1, "KV": 0}
+-
+-if len(s) < 2:
+-    print(0)
+-elif len(s) == 2:
+-    print(d[s])
+-else:
+-
++def g(s):
++    res = 0
+     for i, c in enumerate(list(s)):
+         if i == 0:
+             continue
+         if s[i] == K and s[i-1] == V:
+             res += 1
+-        if i == len(s)-1:
+-            continue
+-        if s[i] == s[i-1] == s[i+1]:
+-            flag = True
+-    print(res + (1 if flag else 0))
+\ No newline at end of file
++    return res
++
++def rev(c):
++    if c == V:
++        return K
++    else:
++        return V
++
++res = g(s)
++for i in range(len(s)):
++    res = max(res, g(s[:i]+rev(s[i])+s[i+1:]))
++
++print(res)
+\ No newline at end of file

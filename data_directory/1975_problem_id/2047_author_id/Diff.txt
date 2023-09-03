@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1975_problem_id/2047_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1975_problem_id/2047_author_id/Accepted.py
+index ef7c336..2a61daa 100644
+--- a/Users/bardia/Downloads/data 4/data/1975_problem_id/2047_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1975_problem_id/2047_author_id/Accepted.py	
+@@ -18,4 +18,4 @@ while(i<b):
+     i+=1
+     
+ z = "".join(yy)
+-print(y)
+\ No newline at end of file
++print(z)
+\ No newline at end of file

@@ -1,0 +1,36 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/61019_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/61019_author_id/Accepted.py
+index 31551af..9051397 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/61019_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/61019_author_id/Accepted.py	
+@@ -1,22 +1,10 @@
+-y = int(input())
+-l=len(str(y))
+-k = 0;
+-t = -1;
+-count = 0;
+-while (k<l and t == -1):
+-    h = y % 10;
+-    if (h==7 or h == 4):
+-                
+-        t = -1;
+-                
+-    else:
+-                
+-        t = 1;
+-                
+-    y //= 10;
+-    k+=1;
+-if (k == l):
+-    
+-    print("YES");
++s=int(input())
++x=str(s)
++count=0
++for k in range (len(x)):
++    if x[k]=="4" or x[k]=="7":
++        count+=1
++if count ==4 or count==7:
++    print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

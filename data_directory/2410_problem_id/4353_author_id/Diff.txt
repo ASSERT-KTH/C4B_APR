@@ -1,0 +1,9 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2410_problem_id/4353_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2410_problem_id/4353_author_id/Accepted.py
+index d1102d3..96bea31 100644
+--- a/Users/bardia/Downloads/data 4/data/2410_problem_id/4353_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2410_problem_id/4353_author_id/Accepted.py	
+@@ -1 +1 @@
+-print(pow(3,int(input())-1,1000003))
+\ No newline at end of file
++print(pow(3,max(int(input())-1,0),1000003))
+\ No newline at end of file

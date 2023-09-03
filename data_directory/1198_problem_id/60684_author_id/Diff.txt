@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1198_problem_id/60684_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1198_problem_id/60684_author_id/Accepted.py
+index ee1ed2d..23d4632 100644
+--- a/Users/bardia/Downloads/data 4/data/1198_problem_id/60684_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1198_problem_id/60684_author_id/Accepted.py	
+@@ -1,11 +1,11 @@
+ A=input()
+ k=0
+-while A[k]!='H' and A[k]!='Q' and A[k]!='9' and A[k]!='+' and k<len(A)-1:
++while A[k]!='H' and A[k]!='Q' and A[k]!='9' and k<len(A)-1:
+     k+=1
+ if k<len(A)-1:
+     print('YES')
+ else:
+-    if k==len(A)-1 and A[k]=='Q' and A[k]=='H' and A[k]=='9' and A[k]=='+':
++    if k==len(A)-1 and (A[k]=='Q' or A[k]=='H' or A[k]=='9'):
+         print('YES')
+     else:
+         print('NO')
+\ No newline at end of file

@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/10011_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/10011_author_id/Accepted.py
+index 38989bd..03b6d53 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/10011_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/10011_author_id/Accepted.py	
+@@ -1,6 +1,11 @@
+ word = input()
+ 
+-if word.isupper() == True:
++if len(word) == 1:
++    if word.isupper() == True:
++        word = word.lower()
++    else:
++        word = word.upper()
++elif word.isupper() == True:
+     word = word.lower()
+ elif word[1:].isupper() == True:
+     word = word.capitalize()

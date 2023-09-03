@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1267_problem_id/27838_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1267_problem_id/27838_author_id/Accepted.py
+index 59302a4..12aeef5 100644
+--- a/Users/bardia/Downloads/data 4/data/1267_problem_id/27838_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1267_problem_id/27838_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ def solve(n,s):
+-	st = set(str(int(s)))
++	st = set(s)
+ 	arr = [int(i) for i in st]
+ 	if len(arr) > 2:
+ 		print('NO')

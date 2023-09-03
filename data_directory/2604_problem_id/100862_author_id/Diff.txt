@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2604_problem_id/100862_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2604_problem_id/100862_author_id/Accepted.py
+index e5765c9..6e6eb3a 100644
+--- a/Users/bardia/Downloads/data 4/data/2604_problem_id/100862_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2604_problem_id/100862_author_id/Accepted.py	
+@@ -5,7 +5,9 @@ def hm(x):
+         return x
+     elif len(x) == 2 and x[1] == '8':
+         return x
+-    elif x[1:-1] == '9'*(len(x) - 2) and x[-1] in ('8', '9'):
++    elif x[-1] == '9':
++        return hm(x[:-1]) + '9'
++    elif x[1:-1] == '9'*(len(x) - 2) and x[-1] == '8':
+         return x
+     else:
+         return hm(str(int(x[:-1])-1)) + '9'

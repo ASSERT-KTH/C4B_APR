@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/62918_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/62918_author_id/Accepted.py
+index aedff07..434d5bf 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/62918_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/62918_author_id/Accepted.py	
+@@ -10,14 +10,17 @@ t = "hello"
+ inword = input()
+ 
+ cnt = 0
++f = False
+ 
+ for w in inword:
+-    if cnt == len(t):
+-        print("YES")
+-        break
+     target = t[cnt]
+     if target == w:
+         cnt += 1
+-                
+-if cnt < len(t):
++    if cnt == len(t):
++        f = True
++        break
++
++if(f):
++    print("YES")
++else:
+     print("NO")
+\ No newline at end of file

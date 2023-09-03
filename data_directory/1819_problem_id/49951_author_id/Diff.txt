@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1819_problem_id/49951_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1819_problem_id/49951_author_id/Accepted.py
+index ab581f3..acb6e54 100644
+--- a/Users/bardia/Downloads/data 4/data/1819_problem_id/49951_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1819_problem_id/49951_author_id/Accepted.py	
+@@ -1,13 +1,14 @@
+ y, k, n = map(int, input().split())
+ x = k
+ lst = []
+-while x + y <= n:
+-    if (x + y) % k == 0:
+-        lst.append(x)
++while x <= n:
++    if x > y:
++        lst.append(x - y)
+     x += k
+ 
+ if len(lst) < 1:
+     print(-1)
+-lst.sort()
+-for ans in lst:
+-    print(ans, end=" ")
+\ No newline at end of file
++else:
++    lst.sort()
++    for ans in lst:
++        print(ans, end=" ")
+\ No newline at end of file

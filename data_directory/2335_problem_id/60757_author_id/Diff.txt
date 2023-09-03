@@ -1,0 +1,41 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/60757_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/60757_author_id/Accepted.py
+index f9f771e..70a3ad9 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/60757_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/60757_author_id/Accepted.py	
+@@ -1,26 +1,12 @@
+-str = input()
+-s = str
+-n = ['h', 'e', 'l', 'o']
+-for i in str:
+-	if i not in n:
+-		s = s.replace(i, "")
+-count = []
+-str = ""
+-
+-for i in n:
+-    count.append(s.count(i))
+-
+-li = list(s)
+-
+-for i in range(len(count)):
+-	if n[i] != 'l':
+-		for j in range(count[i] - 1):
+-			li.remove(n[i])
+-	else:
+-		for j in range(count[i] - 2):
+-			li.remove('l')
+-
+-if "".join(li) == 'hello':
++s = input()
++result = True
++for c in "hello":
++    ix = s.find(c)
++    if ix == -1:
++        result = False
++        break
++    s = s[ix + 1:]
++if result:
+ 	print("YES")
+ else:
+ 	print("NO")
+\ No newline at end of file

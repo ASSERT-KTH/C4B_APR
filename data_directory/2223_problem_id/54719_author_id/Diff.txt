@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2223_problem_id/54719_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2223_problem_id/54719_author_id/Accepted.py
+index 93ea7e8..de75447 100644
+--- a/Users/bardia/Downloads/data 4/data/2223_problem_id/54719_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2223_problem_id/54719_author_id/Accepted.py	
+@@ -1,11 +1,5 @@
+-import math
+-
+ weight = int(input())
+-w1 = math.ceil(weight / 2)
+-w2 = weight - w1
+-print(w1)
+-print(w2)
+-if weight % 2 == 0 or (w1 % 2 == 0 and w2 % 2 == 0):
++if weight % 2 == 0 and weight > 2:
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

@@ -1,0 +1,50 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/60654_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/60654_author_id/Accepted.py
+index 45bfcd6..f2105ef 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/60654_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/60654_author_id/Accepted.py	
+@@ -1,24 +1,28 @@
+ a = input()
+ 
+ a=list(a)
+-t=""
+-j=0
+-for x in a:
+-    if len(t)<1:
+-        t=t+x
+-    else:
+-        if t[len(t)-1:] != x:
+-            t=t+x
+ 
+-        if x == "l" and t[len(t)-1:]== "l" and j==0:
+-            t=t+x
+-            j=1
+-        if x!= "l":
+-            j=0
+-            
+-            
++
++k=0
++for x in a:
++    if k==0 and x=="h":
++        k=k+1
++        
++    elif k==1 and x=="e":
++        k=k+1
++        
++    elif k==2 and x=="l":
++        k=k+1
++        
++    elif k==3 and x=="l":
++        k=k+1
++        
++    elif k==4 and x=="o":
++        k=k+1
+     
+-if   t.find("hello")  >0:
++    
++
++if k==5:
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

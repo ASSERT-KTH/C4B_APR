@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2656_problem_id/3420_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2656_problem_id/3420_author_id/Accepted.py
+index 9fa76f7..b525b83 100644
+--- a/Users/bardia/Downloads/data 4/data/2656_problem_id/3420_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2656_problem_id/3420_author_id/Accepted.py	
+@@ -1,5 +1,6 @@
+-n, k = input().split()
+-k = int(k)
++n, m = input().split()
++m = int(m)
++k = m
+ remove = 0
+ n = str(n)
+ for i in range(n.__len__()-1,-1,-1):
+@@ -10,4 +11,9 @@ for i in range(n.__len__()-1,-1,-1):
+     else:
+         remove+=1
+ 
+-print(remove)
+\ No newline at end of file
++if m == k:
++    print(n.__len__())
++elif k>0:
++    print(n.__len__()-1)
++else:
++    print(remove)
+\ No newline at end of file

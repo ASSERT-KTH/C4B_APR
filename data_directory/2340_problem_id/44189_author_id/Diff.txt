@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2340_problem_id/44189_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2340_problem_id/44189_author_id/Accepted.py
+index e11b62f..c7088a0 100644
+--- a/Users/bardia/Downloads/data 4/data/2340_problem_id/44189_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2340_problem_id/44189_author_id/Accepted.py	
+@@ -7,6 +7,6 @@ for i in range(len(word)):
+     else:
+         small +=1
+ if capital>small:
+-    print(word.capitalize())
++    print(word.upper())
+ else:
+     print(word.lower())
+\ No newline at end of file

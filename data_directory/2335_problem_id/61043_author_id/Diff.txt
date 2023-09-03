@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/61043_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/61043_author_id/Accepted.py
+index 78b62b1..686c2e7 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/61043_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/61043_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ import re
+-print("YES" if re.sub(r"(l){2,}", "ll", re.sub(r"(h|e|o)\1+", r'\1', re.sub(r"[^h|e|l|o]", "", str(input())))) == "hello" else "NO")
+\ No newline at end of file
++print("YES" if re.match(r".*h.*e.*l.*l.*o.*", str(input())) else "NO")
+\ No newline at end of file

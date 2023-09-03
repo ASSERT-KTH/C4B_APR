@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1382_problem_id/74292_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1382_problem_id/74292_author_id/Accepted.py
+index dedfff1..b70142c 100644
+--- a/Users/bardia/Downloads/data 4/data/1382_problem_id/74292_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1382_problem_id/74292_author_id/Accepted.py	
+@@ -5,13 +5,12 @@ if __name__ == '__main__':
+     b = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+ 
+     while (cyclicPathLength != 0):
+-        if (cyclicPathLength%2 == 1):
++        if (int(cyclicPathLength%2) == 1):
+             c = [[0]*4 for i in range(4)]
+             for i in range(4):
+                 for j in range(4):
+                     for k in range(4):
+                         c[i][j] += a[i][k] * b[k][j]
+-
+                     c[i][j] %= 1000000007
+             b = c
+ 
+@@ -20,9 +19,7 @@ if __name__ == '__main__':
+             for j in range(4):
+                 for k in range(4):
+                     c[i][j] += a[i][k] * a[k][j]
+-
+                 c[i][j] %= 1000000007
+-
+         a = c
+ 
+         cyclicPathLength /= 2

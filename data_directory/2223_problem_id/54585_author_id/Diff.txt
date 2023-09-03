@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2223_problem_id/54585_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2223_problem_id/54585_author_id/Accepted.py
+index db061f4..129474e 100644
+--- a/Users/bardia/Downloads/data 4/data/2223_problem_id/54585_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2223_problem_id/54585_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ kilo=input()
+ kgs=int(kilo)
+-if kgs%2==0:
++if kgs%2==0 and kgs!=2:
+  print("YES")
+ else:
+  print("NO")
+\ No newline at end of file

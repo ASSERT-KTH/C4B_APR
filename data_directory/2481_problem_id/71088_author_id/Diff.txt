@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/71088_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/71088_author_id/Accepted.py
+index 63b8611..d9e45df 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/71088_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/71088_author_id/Accepted.py	
+@@ -12,5 +12,5 @@ elif p==2:
+     print("Penny")
+ elif p==3:
+     print("Rajesh")
+-elif p==4:
++else:
+     print("Howard")
+\ No newline at end of file

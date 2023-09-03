@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/377_problem_id/20701_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/377_problem_id/20701_author_id/Accepted.py
+index 2d1fc73..6d45936 100644
+--- a/Users/bardia/Downloads/data 4/data/377_problem_id/20701_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/377_problem_id/20701_author_id/Accepted.py	
+@@ -17,7 +17,7 @@ a1, a2 = get_int()
+ 
+ ans = 0
+ 
+-while a1 > 0 and a2 > 0 and (a1 != 1 and a2 != 1):
++while a1 > 0 and a2 > 0 and (a1 != 1 or a2 != 1):
+     ans += 1
+     if a2 > a1:
+         a1 += 1

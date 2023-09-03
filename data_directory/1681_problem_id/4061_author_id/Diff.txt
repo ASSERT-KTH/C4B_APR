@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1681_problem_id/4061_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1681_problem_id/4061_author_id/Accepted.py
+index adc7aac..e8815bc 100644
+--- a/Users/bardia/Downloads/data 4/data/1681_problem_id/4061_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1681_problem_id/4061_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ n,m=map(int,input().split())
+ k=0
+-for i in range(max(n,m)) :
+-    for j in range(max(n,m)) :
++for i in range(0,max(n,m)+1) :
++    for j in range(0,max(n,m)+1) :
+         if i*i+j==n and i+j*j==m :
+             k=k+1
+ print(k)
+\ No newline at end of file

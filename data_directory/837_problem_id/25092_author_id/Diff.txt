@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/837_problem_id/25092_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/837_problem_id/25092_author_id/Accepted.py
+index a356fb5..58344ab 100644
+--- a/Users/bardia/Downloads/data 4/data/837_problem_id/25092_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/837_problem_id/25092_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ def is_prime(m):
+     i = 2
+-    while i*i < m:
++    while i*i <= m:
+         if m%i == 0:
+             return False
+         i += 1

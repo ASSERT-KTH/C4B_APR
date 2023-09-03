@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1662_problem_id/55099_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1662_problem_id/55099_author_id/Accepted.py
+index 73864ab..cc0756e 100644
+--- a/Users/bardia/Downloads/data 4/data/1662_problem_id/55099_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1662_problem_id/55099_author_id/Accepted.py	
+@@ -55,7 +55,9 @@ def main(a):
+         return 'NO'
+     if a[len(a) - 1] == '.':
+             return 'NO'
+-    if a [len(a) - 1] == '/':
++    if a[len(a) - 1] == '/':
++        return 'NO'
++    if a[len(a) - 1] == '@':
+         return 'NO'
+     return 'YES'
+ 

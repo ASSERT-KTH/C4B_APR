@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1819_problem_id/168_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1819_problem_id/168_author_id/Accepted.py
+index 6ef1e84..86a2d33 100644
+--- a/Users/bardia/Downloads/data 4/data/1819_problem_id/168_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1819_problem_id/168_author_id/Accepted.py	
+@@ -1,14 +1,14 @@
+-x = input()
+-x = x.split()
+-y = []
+-z = ""
+-for i in range(int(x[0]),int(x[2])):
+-    if i%int(x[1]) == 0:
+-        if i-(int(x[0])) not in y:
+-            y.append(i-int(x[0]))
+-if len(y) == 0:
+-    print(-1)
+-else:
+-    for i in range(0,len(y)):
+-        z+=str(y[i])+" "
+-    print(z)
+\ No newline at end of file
++y,k,n=[int(i) for i in input().split()]
++
++a=y%k
++m=[]
++for i in range(n):
++    h=i*k-a
++    num=h+y
++    if num<=n:
++        if h>0:
++            m.append(h)
++    else:break
++if len(m)>0:
++    print(*m)
++else:print(-1)
+\ No newline at end of file

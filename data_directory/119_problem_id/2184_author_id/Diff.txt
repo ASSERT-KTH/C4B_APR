@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/119_problem_id/2184_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/119_problem_id/2184_author_id/Accepted.py
+index ff94d9c..e842547 100644
+--- a/Users/bardia/Downloads/data 4/data/119_problem_id/2184_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/119_problem_id/2184_author_id/Accepted.py	
+@@ -1,13 +1,11 @@
+ def main():
+ 	p, k = map(int, input().split())
+ 	s = 1
+-	m = 10**9+7
++	m = pow(10,9)+7
+ 	if k == 0:
+-		for _ in range(p-1):
+-			s *= p %m
++		s = pow(p,p-1,m)
+ 	elif k == 1:
+-		for _ in range(p):
+-			s *= p %m
++		s = pow(p,p,m)
+ 	else:
+ 		o = 1
+ 		n = k
+@@ -15,7 +13,6 @@ def main():
+ 			n = k*n %p
+ 			o += 1
+ 		c = (p-1)//o
+-		for _ in range(c):
+-			s = s*(1+c*o) %m
++		s = pow(p,c,m)
+ 	print(s%m)
+ main()
+\ No newline at end of file

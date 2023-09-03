@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2312_problem_id/57128_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2312_problem_id/57128_author_id/Accepted.py
+index fb8119d..d5736ed 100644
+--- a/Users/bardia/Downloads/data 4/data/2312_problem_id/57128_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2312_problem_id/57128_author_id/Accepted.py	
+@@ -5,15 +5,19 @@ h = int(s[0])
+ w = int(s[1])
+ 
+ 
+-min2powerh = 2**math.floor(math.log2(h))
+-min2powerw = 2**math.floor(math.log2(w))
++ff = 2**math.floor(math.log2(h))
++ss = 2**math.floor(math.log2(w))
+ 
+-first = min(min2powerh, min2powerw)
+-second  = 0
++if ff > ss :
++    ff = min(ff, math.floor(ss*1.25))
++else:
++    ss = min(ss, math.floor(ff*1.25))
++
++
++ff2 =  min(math.floor(ss*1.25), h)
++ss2 =  min(math.floor(ff*1.25), w)
+ 
+-if min2powerh>min2powerw:
+-    second = min(math.floor(first*1.25), w)
+-    print(first, second)
++if ff*ss2>ss*ff2:
++    print(ff, ss2)
+ else:
+-    second = min(math.floor(first*1.25), h)
+-    print(second, first)
+\ No newline at end of file
++    print(ff2, ss)
+\ No newline at end of file

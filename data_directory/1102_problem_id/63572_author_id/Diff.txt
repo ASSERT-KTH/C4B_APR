@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/63572_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/63572_author_id/Accepted.py
+index 72b7092..2b3ca26 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/63572_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/63572_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ a=input()
+ a=a.lower()
+-b=["a","e","i","o","u"]
++b=["a","e","i","o","u","y"]
+ c=[]
+ for i in range(len(a)):
+ 	if(a[i] not in b):

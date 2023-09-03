@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/2102_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/2102_author_id/Accepted.py
+index 2940501..8432832 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/2102_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/2102_author_id/Accepted.py	
+@@ -3,7 +3,10 @@ t=0
+ if(len(string)<7):
+     print('NO')
+ else:
+-    if (string.find('1111111')>-1 or string.find('0000000'>-1)):
+-        print('YES')
+-    else:
++    for x in range(len(string)-6):
++        if (string[x:x+7]=='1111111' or string[x:x+7]=='0000000'):
++            t+=1
++            print('YES')
++            break
++    if(t==0):
+         print('NO')
+\ No newline at end of file

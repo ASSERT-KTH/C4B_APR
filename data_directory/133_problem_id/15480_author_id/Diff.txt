@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/133_problem_id/15480_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/133_problem_id/15480_author_id/Accepted.py
+index 6008d20..69cac59 100644
+--- a/Users/bardia/Downloads/data 4/data/133_problem_id/15480_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/133_problem_id/15480_author_id/Accepted.py	
+@@ -3,9 +3,9 @@ x, y, z = map(int, input().split())
+ 
+ need = max(x-a,0) + max(y-b,0) + max(z-c,0)
+ 
+-extra = max(a-x,0) + max(b-y,0) + max(c-z,0)
++extra = max(a-x,0)//2*2 + max(b-y,0)//2*2 + max(c-z,0)//2*2
+ 
+ if need * 2 <= extra:
+-    print("YES")
++    print("Yes")
+ else:
+-    print("NO")
+\ No newline at end of file
++    print("No")
+\ No newline at end of file

@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/931_problem_id/52660_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/931_problem_id/52660_author_id/Accepted.py
+index 35a1587..9f5a8cb 100644
+--- a/Users/bardia/Downloads/data 4/data/931_problem_id/52660_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/931_problem_id/52660_author_id/Accepted.py	
+@@ -1,22 +1,17 @@
+ import itertools
+-class ListWithDefaultValue(list):
+-	def_value = '$'
+-	def __getitem__(self, key):
+-		if not 0 <= key < len(self):
+-			return def_value
+-		else:
+-			return self[key]
+-
+-field = ListWithDefaultValue()
+-field.def_value = ListWithDefaultValue()
++field = []
+ for i in range(4):
+-	field.append(ListWithDefaultValue(input()))
++	field.append(input())
+ for pos in itertools.product(range(4), repeat=2):
+ 	row, column = pos
+ 	if field[row][column] == 'x':
+ 		for d_row, d_column in itertools.product(range(-1, 2), repeat=2):
+ 			if (d_row, d_column) == (0, 0):
+ 				continue
++			elif not 0 <= row + 2 * d_row < 4:
++				continue
++			elif not 0 <= column + 2 * d_column < 4:
++				continue
+ 			else:
+ 				first_val = field[row + d_row][column + d_column]
+ 				second_val = field[row + 2 * d_row][column + 2 * d_column]

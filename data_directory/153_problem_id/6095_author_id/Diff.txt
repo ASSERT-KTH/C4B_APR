@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/153_problem_id/6095_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/153_problem_id/6095_author_id/Accepted.py
+index f5e8873..67404d1 100644
+--- a/Users/bardia/Downloads/data 4/data/153_problem_id/6095_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/153_problem_id/6095_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+-x=int(input())
++"""x=int(input())
+ i=1
+ while 1:
+     y=x
+@@ -7,4 +7,13 @@ while 1:
+         break
+     i+=1
+ i-=1
+-print(i)
+\ No newline at end of file
++print(i)
++"""
++n=int(input())
++if(n%2==1):
++    print(0)
++else:
++    m=n//2
++    if(m%2==0):
++        m-=1
++    print(m//2)
+\ No newline at end of file

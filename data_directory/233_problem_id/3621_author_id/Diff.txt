@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/233_problem_id/3621_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/233_problem_id/3621_author_id/Accepted.py
+index f86077d..2bbcbcc 100644
+--- a/Users/bardia/Downloads/data 4/data/233_problem_id/3621_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/233_problem_id/3621_author_id/Accepted.py	
+@@ -32,13 +32,13 @@ def main():
+ 
+     or_n = n
+     opt1 = n // a
+-    opt2 = max(0, n - b) // (b - c) + 1
+-    n -= opt2 * (b - c)
++    opt2 = max(0, n - c) // (b - c)
+ 
++    n -= opt2 * (b - c)
+     opt2 += n // a
+ 
+     n = or_n % a
+-    opt1 += max(0, n - b) // (b - c) + 1
++    opt1 += max(0, n - c) // (b - c)
+ 
+     res = max(opt1, opt2)
+     print(res)

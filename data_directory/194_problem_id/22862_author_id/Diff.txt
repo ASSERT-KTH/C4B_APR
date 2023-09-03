@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/194_problem_id/22862_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/194_problem_id/22862_author_id/Accepted.py
+index 2ddcc97..304a8a9 100644
+--- a/Users/bardia/Downloads/data 4/data/194_problem_id/22862_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/194_problem_id/22862_author_id/Accepted.py	
+@@ -8,4 +8,5 @@ g=f//3
+ h=f%3
+ i=h//2
+ j=h%2
+-print(c+e+g+i)
+\ No newline at end of file
++k=j//1
++print(c+e+g+i+k)
+\ No newline at end of file

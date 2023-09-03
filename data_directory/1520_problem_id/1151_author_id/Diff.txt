@@ -1,0 +1,46 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1520_problem_id/1151_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1520_problem_id/1151_author_id/Accepted.py
+index 2fb5e27..06deca7 100644
+--- a/Users/bardia/Downloads/data 4/data/1520_problem_id/1151_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1520_problem_id/1151_author_id/Accepted.py	
+@@ -1,27 +1,12 @@
+-def f(n,a,b,c):
+-    global ans,k
+-    k+=1
+-    if n-a>0:
+-        n-=a
+-        f(n,a,b,c)
+-    elif n-a==0:
+-        ans.append(k)
+-    if n-b>0:
+-        n-=b
+-        f(n,a,b,c)
+-    elif n-b==0:
+-        ans.append(k)
+-    if n-c>0:
+-        n-=c
+-        f(n,a,b,c)
+-    elif n-c==0:
+-        ans.append(k)
+-
+-n,a,b,c=list(map(int,input().split()))
+-ans=[]
+-k=0
+-if n%min(a,b,c)==0:
+-    print(n//min(a,b,c))
+-else:
+-    f(n,a,b,c)
+-    print(max(ans))
+\ No newline at end of file
++n, *delta = map(int, input().split())
++values = {n: 0}
++for i in range(n, 0, -1):
++    if i not in values:
++        continue
++    v = values.get(i, 0)
++    del values[i]
++    for d in delta:
++        if i - d < 0:
++            continue
++        values[i - d] = max(v + 1, values.get(i - d, 0))
++print(values[0])
+\ No newline at end of file

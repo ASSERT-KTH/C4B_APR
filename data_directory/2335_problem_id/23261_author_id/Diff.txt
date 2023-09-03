@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/23261_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/23261_author_id/Accepted.py
+index 76f0e4d..53cea34 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/23261_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/23261_author_id/Accepted.py	
+@@ -23,10 +23,10 @@ for i in range(len(text)):
+         elif text[i] == target_chars[j + 1]:
+             j += 1
+             flags[j] = True  # Swap
+-        else:
+-            for x in flags:
+-                x = False
+-            j = 0
++        # else:
++        #    for x in flags:
++        #        x = False
++        #    j = 0
+ 
+ 
+ if solution:

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/888_problem_id/51198_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/888_problem_id/51198_author_id/Accepted.py
+index b8277b6..8669e3f 100644
+--- a/Users/bardia/Downloads/data 4/data/888_problem_id/51198_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/888_problem_id/51198_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ a = int(input())
+ b = int(input())
+ c = int(input())
+-q = min((a+b)//2,c//4)
++q = min(a,b//2,c//4) 
+ print(q*7)
+\ No newline at end of file

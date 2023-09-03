@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/133_problem_id/34_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/133_problem_id/34_author_id/Accepted.py
+index 137f834..d77a31f 100644
+--- a/Users/bardia/Downloads/data 4/data/133_problem_id/34_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/133_problem_id/34_author_id/Accepted.py	
+@@ -4,9 +4,16 @@ x, y, z = map(int, input().split())
+ a = a - x
+ b = b - y
+ c = c - z
+-if (a < 0 and b < 0) or (a < 0 and c < 0) or (b < 0 and c < 0):
+-    print("No")
+-elif (a < 0 and b//2 + c//2 >= abs(a)) or (b < 0 and a//2 + c//2 >= abs(b) or (c < 0 and b//2 + a//2 >= abs(c)) or (a>=0 and b>= 0 and c>=0)):
++
++have = 0
++need = 0
++for i in (a,b,c):
++    if i > 0:
++        have += i//2
++    elif i < 0:
++        need += i
++
++if have >= abs(need):
+     print("Yes")
+ else:
+     print("No")
+\ No newline at end of file

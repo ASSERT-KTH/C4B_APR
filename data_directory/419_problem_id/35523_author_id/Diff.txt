@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/419_problem_id/35523_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/419_problem_id/35523_author_id/Accepted.py
+index 6de06c4..f7bf556 100644
+--- a/Users/bardia/Downloads/data 4/data/419_problem_id/35523_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/419_problem_id/35523_author_id/Accepted.py	
+@@ -5,6 +5,9 @@ n=int(s[2])
+ if n == 0:
+     print(b)
+ elif b > 0:
+-    print((n+b)%a)
++    if (n+b)%a ==0:
++        print(a)
++    else:
++        print((n+b)%a)
+ elif b < 0:
+     print(abs(a-b)%n)
+\ No newline at end of file

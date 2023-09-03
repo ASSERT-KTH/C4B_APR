@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1975_problem_id/60839_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1975_problem_id/60839_author_id/Accepted.py
+index c0be6a9..4f1c502 100644
+--- a/Users/bardia/Downloads/data 4/data/1975_problem_id/60839_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1975_problem_id/60839_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ n,t = map(int,input().split())
+ line = list(input())
+ i = 0
+-while t > 0:
++while t > 0 and n > 1:
+     if line[i] == 'B' and line[i+1] == 'G':
+         line[i],line[i+1] = line[i+1],line[i]
+         i += 2

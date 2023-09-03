@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1804_problem_id/5884_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1804_problem_id/5884_author_id/Accepted.py
+index 585da7b..14a31f7 100644
+--- a/Users/bardia/Downloads/data 4/data/1804_problem_id/5884_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1804_problem_id/5884_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ a=str(input(""))
+ b=set(a)
+-print(b)
++#print(b)
+ length=len(b)
+ if length%2==0:
+     print("CHAT WITH HER!")

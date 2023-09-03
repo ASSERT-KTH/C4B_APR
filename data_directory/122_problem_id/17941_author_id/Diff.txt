@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/122_problem_id/17941_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/122_problem_id/17941_author_id/Accepted.py
+index 34becf0..6bb83d0 100644
+--- a/Users/bardia/Downloads/data 4/data/122_problem_id/17941_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/122_problem_id/17941_author_id/Accepted.py	
+@@ -1,8 +1,6 @@
+ m=input().split()
+ w=input().split()
+ h=input().split()
+-print(w)
+-
+ s=0
+ for i in range(5):
+   s=s+max(0.3*500*(i+1),(1-int(m[i])/250)*500*(i+1)-50*int(w[i]))

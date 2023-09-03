@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/102_problem_id/7867_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/102_problem_id/7867_author_id/Accepted.py
+index 5e61752..682dcb8 100644
+--- a/Users/bardia/Downloads/data 4/data/102_problem_id/7867_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/102_problem_id/7867_author_id/Accepted.py	
+@@ -1,6 +1,4 @@
+ #!/usr/bin/env python3
+ d1,d2,d3 = [int(i) for i in input().split()]
+-res = min(d1+d2,d3,d1*2+d2*2)
+-res = min(res,d1*2+d3*2)
+-res = min(res,d2*2,d3*2)
++res = min(d1+d2+d3,d1*2+d2*2,d1*2+d3*2,d2*2+d3*2)
+ print(res)
+\ No newline at end of file

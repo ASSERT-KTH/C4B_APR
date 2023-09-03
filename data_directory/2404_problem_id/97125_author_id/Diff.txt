@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2404_problem_id/97125_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2404_problem_id/97125_author_id/Accepted.py
+index 65f2f49..fec3706 100644
+--- a/Users/bardia/Downloads/data 4/data/2404_problem_id/97125_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2404_problem_id/97125_author_id/Accepted.py	
+@@ -12,7 +12,7 @@ def main():
+             if hs[jj][0][j] == "B": check+=1
+         if trak>=8:t+=1
+         if check>=8: t+=1
+-    if t==16: t = t/2
++    if t==16: t = int(t/2)
+     print( t )
+ 
+ if __name__ == "__main__": main()
+\ No newline at end of file

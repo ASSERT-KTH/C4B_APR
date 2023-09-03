@@ -1,0 +1,1 @@
+[{'inputdata': '1 100\r\r\n100 1', 'expectedresult': '101'}, {'inputdata': '1 100\r\r\n3 1', 'expectedresult': '100'}]

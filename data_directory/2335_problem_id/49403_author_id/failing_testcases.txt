@@ -1,0 +1,1 @@
+[{'inputdata': 'hlelo', 'expectedresult': 'NO'}, {'inputdata': 'tymbzjyqhymedasloqbq', 'expectedresult': 'NO'}, {'inputdata': 'eloellohoelo', 'expectedresult': 'NO'}]

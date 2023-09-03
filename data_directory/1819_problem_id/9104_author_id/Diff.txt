@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1819_problem_id/9104_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1819_problem_id/9104_author_id/Accepted.py
+index 2e52382..f8af6af 100644
+--- a/Users/bardia/Downloads/data 4/data/1819_problem_id/9104_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1819_problem_id/9104_author_id/Accepted.py	
+@@ -2,9 +2,7 @@
+ 
+ import sys
+ y,k,n=map(int,sys.stdin.readline().split())
+-index=k
+-while (index < y ):
+-	index+=k
++index=int(y/k)*k +k
+ x=0
+ while (index <= n):
+ 	x=index-y

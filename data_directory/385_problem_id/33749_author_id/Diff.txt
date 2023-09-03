@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/385_problem_id/33749_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/385_problem_id/33749_author_id/Accepted.py
+index 6b43c59..ff0751d 100644
+--- a/Users/bardia/Downloads/data 4/data/385_problem_id/33749_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/385_problem_id/33749_author_id/Accepted.py	
+@@ -16,7 +16,7 @@ day = 0
+ r = a*8+h1  #в первый день мы проходим половину (с 14 до 22) 
+ 
+ 
+-if a<=b and a*8 + h1 <= h2: #проверяем успел ли червяк за первую половину дня и если скорость отрицательная отдаем -1
++if a<=b and r < h2: #проверяем успел ли червяк за первую половину дня и если скорость отрицательная отдаем -1
+     day = -1    
+ else:                  
+     if a<=b and r < h2:             #при выполнении условия - запускаем цикл

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1975_problem_id/23363_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1975_problem_id/23363_author_id/Accepted.py
+index 9d5b63f..224f523 100644
+--- a/Users/bardia/Downloads/data 4/data/1975_problem_id/23363_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1975_problem_id/23363_author_id/Accepted.py	
+@@ -5,7 +5,7 @@ for i in queue:
+     people.append(i)
+ for j in range(t):
+     i=0
+-    while(i<n):
++    while(i<n-1):
+         if (people[i]=='B' and people[i+1]=='G'):
+             t=people[i]
+             people[i]=people[i+1]

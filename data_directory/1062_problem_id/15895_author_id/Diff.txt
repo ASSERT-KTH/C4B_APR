@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/15895_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/15895_author_id/Accepted.py
+index dcf50ab..745758b 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/15895_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/15895_author_id/Accepted.py	
+@@ -6,7 +6,8 @@ Created on Sun Apr  2 07:42:38 2017
+ @author: lawrenceylong
+ """
+ 
+-a,b = map(input.split().count,['4','7'])
++a,b = map(list(input()).count,['4','7'])
++
+ if a+b == 4 or a+b==7:
+     print("YES")
+ else:

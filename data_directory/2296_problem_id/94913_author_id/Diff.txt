@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2296_problem_id/94913_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2296_problem_id/94913_author_id/Accepted.py
+index 2befbaa..cd035ac 100644
+--- a/Users/bardia/Downloads/data 4/data/2296_problem_id/94913_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2296_problem_id/94913_author_id/Accepted.py	
+@@ -1,9 +1,9 @@
+ a = input()
+-a = a.spilt()
++a = a.split()
+ M = int(a[0])
+ N = int(a[1])
+ C = M * N
+ if C % 2 ==0:
+-    print (c//2)
++    print (C//2)
+ else:
+-    print(c//2)
+\ No newline at end of file
++    print(C//2)
+\ No newline at end of file

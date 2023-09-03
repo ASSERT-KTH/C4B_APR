@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2346_problem_id/95885_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2346_problem_id/95885_author_id/Accepted.py
+index 3e7f64e..977a70f 100644
+--- a/Users/bardia/Downloads/data 4/data/2346_problem_id/95885_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2346_problem_id/95885_author_id/Accepted.py	
+@@ -1,8 +1,13 @@
+-def check_tri(Line):
+-    for i in range(2):
+-        for j in range(i+2, 4):
+-            if Line[i+1] + Line[i] > Line[j] and Line[i] + Line[j] > Line[i+1] and Line[i+1] + Line[j] > Line[i]:
+-                return True
++def check_tri(Ln):
++    def Con(a, b, c):
++        if a + b > c and a + c > b and b + c > a:
++            return True
++        else:
++            return False
++    Con1 = Con(Ln[0], Ln[1], Ln[2]) or Con(Ln[0], Ln[1], Ln[3])
++    Con2 = Con(Ln[0], Ln[2], Ln[3]) or Con(Ln[1], Ln[2], Ln[3])
++    if Con1 or Con2:
++        return True
+     return False
+     
+ def check_ln(Ln):
+@@ -19,9 +24,6 @@ def check_ln(Ln):
+ def main():
+     Line = input()
+     Line = Line.split()
+-    if type(Line) != list:
+-        print('Enter 4 numbers separated by spaces!')
+-        main()
+     for i in range(len(Line)):
+         Line[i] = eval(Line[i])
+     for i in Line:

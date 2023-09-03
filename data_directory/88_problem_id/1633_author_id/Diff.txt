@@ -1,0 +1,36 @@
+diff --git a/Users/bardia/Downloads/data 4/data/88_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/88_problem_id/1633_author_id/Accepted.py
+index a8e367e..2d50b83 100644
+--- a/Users/bardia/Downloads/data 4/data/88_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/88_problem_id/1633_author_id/Accepted.py	
+@@ -7,18 +7,21 @@ for x in range(n):
+     ypos.append(int(numbers[1]))
+ a = -1
+ if n > 1:
+-    if n == 2 and xpos[0] != xpos[1] and ypos[0] != ypos[1]:
+-        a = abs(xpos[0] - xpos[1]) * abs(ypos[0] - ypos[1])
+-    else:
+-        x = xpos[0]
+-        b = 1
+-        while xpos[b] == x:
+-            b += 1
++    x = xpos[0]
++    b = 1
++    while xpos[b] == x:
++        b += 1
++        if b == n:
++            break
++    if b != n:
+         m = abs(x - xpos[b])
+         y = ypos[0]
+         b = 1
+         while ypos[b] == y:
+             b += 1
+-        n = abs(y - ypos[b])
+-        a = m * n
++            if b == n:
++                break
++        if b != n:
++            n = abs(y - ypos[b])
++            a = m * n
+ print(a)
+\ No newline at end of file

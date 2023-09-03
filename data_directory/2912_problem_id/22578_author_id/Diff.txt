@@ -1,0 +1,30 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2912_problem_id/22578_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2912_problem_id/22578_author_id/Accepted.py
+index 079629d..1b566e4 100644
+--- a/Users/bardia/Downloads/data 4/data/2912_problem_id/22578_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2912_problem_id/22578_author_id/Accepted.py	
+@@ -3,19 +3,7 @@ def fact(x):
+       for i in range(2,x+1):
+             r=r*i
+       return r
+-def ex():
+-      ch=input("")
+-      l=ch.split(" ")
+-      a=int(l[0]);b=int(l[1])
+-      m=max(a,b)
+-      n=min(a,b)
+-      c=fact(m)
+-      d=fact(n)
+-      if c%d==0 :
+-            return d
+-      else :
+-            for i in range(d//2,0,-1):
+-                  if (d%i==0) :
+-                        if c%i==0 :
+-                              return i
+-print(ex())
+\ No newline at end of file
++ch=input("")
++l=ch.split(" ")
++a=int(l[0]);b=int(l[1])
++print(fact(min(a,b)))
+\ No newline at end of file

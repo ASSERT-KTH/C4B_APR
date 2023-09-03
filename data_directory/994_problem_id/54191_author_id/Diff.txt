@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/994_problem_id/54191_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/994_problem_id/54191_author_id/Accepted.py
+index 3c47b81..a3884b1 100644
+--- a/Users/bardia/Downloads/data 4/data/994_problem_id/54191_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/994_problem_id/54191_author_id/Accepted.py	
+@@ -1,5 +1,7 @@
++import math
++
+ n, m, a = [int(x) for x in input().split()]
+-r = int(n / a + 0.5)
+-c = int(m / a + 0.5)
++r = math.ceil(n / a)
++c = math.ceil(m / a)
+ 
+-print(r * c if r * c > 0 else 1)
+\ No newline at end of file
++print(r * c)
+\ No newline at end of file

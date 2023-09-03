@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/49346_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/49346_author_id/Accepted.py
+index 2c9baa7..dbce7be 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/49346_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/49346_author_id/Accepted.py	
+@@ -1,10 +1,13 @@
+ i = int(input())
++y=list()
++x=list()
+ f=1
+ while y!=x or f==1:
+     f=0
+     i+=1
+     a = str(i)
+     x = list()
++    y=list()
+     for j in range(0,len(a)):
+         x.append(a[j])
+     y = sorted(set(x))

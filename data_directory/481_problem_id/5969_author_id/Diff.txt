@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/481_problem_id/5969_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/481_problem_id/5969_author_id/Accepted.py
+index daaa4c5..7457329 100644
+--- a/Users/bardia/Downloads/data 4/data/481_problem_id/5969_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/481_problem_id/5969_author_id/Accepted.py	
+@@ -11,6 +11,8 @@ if x <= 7:
+ if x > 7:
+     if (x % 7) == 0:
+         print(int(2*(x/7)), int(2*(x/7)))
++    elif (x % 7) == 6:
++        print(int(2*(x/7)), int(2*(x/7))+1)
+     else:
+         if (x % 7) == 1:
+             print(2*int(x/7), 2*int(x/7)+1)

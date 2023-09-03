@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1399_problem_id/75303_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1399_problem_id/75303_author_id/Accepted.py
+index d589215..87a6bde 100644
+--- a/Users/bardia/Downloads/data 4/data/1399_problem_id/75303_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1399_problem_id/75303_author_id/Accepted.py	
+@@ -9,7 +9,7 @@ def is_simple(a):
+ n, k = map(int, input().split())
+ q=[]
+ w=0
+-for i in range(2,n//2+3):
++for i in range(2,n):
+     if is_simple(i):
+         q.append(i)
+ for i in range(len(q)-1):

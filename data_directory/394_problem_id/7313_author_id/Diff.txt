@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/394_problem_id/7313_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/394_problem_id/7313_author_id/Accepted.py
+index c10ee2a..a5a08dc 100644
+--- a/Users/bardia/Downloads/data 4/data/394_problem_id/7313_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/394_problem_id/7313_author_id/Accepted.py	
+@@ -11,4 +11,6 @@ else:
+  for i in range(k):
+    sum += 2*n -3
+    n -= 2
++   if n < 2:
++     break
+  print (sum)
+\ No newline at end of file

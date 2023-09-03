@@ -1,0 +1,48 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1399_problem_id/71727_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1399_problem_id/71727_author_id/Accepted.py
+index cd3da31..05a0061 100644
+--- a/Users/bardia/Downloads/data 4/data/1399_problem_id/71727_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1399_problem_id/71727_author_id/Accepted.py	
+@@ -15,21 +15,33 @@ def primes(number):
+         if lst[i] == True :
+             primeList.append(i)
+ 
+-    return primeList[:-1]
++    primeList.sort()
++    return primeList[1:]
+     
+ 
+ def solve(firstLine):
+     n ,k  = firstLine[0], firstLine[1]
+-    primeList = primes(n)
+-    lst = [1] * (n + 1)
+-
+-    for prime in primeList:
+-        lst[prime] += 1
+-        for i in range(prime * 2, n + 1 , prime):
+-            lst[i] = max([lst[i], lst[i-prime]]) + 1
++    primeList = primes(n * 2 + 1)
++    
++    
++    sol = 0
++    
++    for i, prime in enumerate(primeList):
++        if primeList[i + 1] > n:
++            break
++        
++        num = primeList[i + 1] + primeList[i] + 1
++        if num <= n and num in primeList:
++            #print(primeList[i + 1] ,primeList[i], num)
++            sol += 1
+ 
+-    #print("test: ", lst)
+-    if lst[n] >= k:
++    
++    # for prime in primeList:
++    #     lst[prime] += 1
++    #     for i in range(prime * 2, n + 1 , prime):
++    #         lst[i] = max([lst[i], lst[i-prime]]) + 1
++    #print("aa", sol)
++    if sol >= k:
+         print("YES")
+     else :
+         print("NO")

@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/377_problem_id/33518_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/377_problem_id/33518_author_id/Accepted.py
+index dcac37e..58f33be 100644
+--- a/Users/bardia/Downloads/data 4/data/377_problem_id/33518_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/377_problem_id/33518_author_id/Accepted.py	
+@@ -1,7 +1,9 @@
+ a1, a2 = [int(x) for x in input().split(' ')]
+ mins = 0
+ 
+-while min(a1,a2) > 0:
++while a1 > 0 and a2 > 0:
++    if a1 == 1 and a2 == 1:
++        break
+     mins += 1
+     if a1 == min(a1,a2):
+         a1 += 1

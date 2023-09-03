@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/668_problem_id/24986_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/668_problem_id/24986_author_id/Accepted.py
+index 7e796fd..2b29cd7 100644
+--- a/Users/bardia/Downloads/data 4/data/668_problem_id/24986_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/668_problem_id/24986_author_id/Accepted.py	
+@@ -8,9 +8,9 @@ for i in range(feeling_number):
+ 	if i == 0:
+ 		final_feeling = even
+ 	elif (i%2)!=0:
+-		final_feeling = fnial_feeling + " that " + odd
++		final_feeling = final_feeling + " that " + odd
+ 	elif (i%2) ==0:
+-		final_feeling = fnial_feeling + " that " + even
++		final_feeling = final_feeling + " that " + even
+ 
+-final_feeling = final_feeling + " it"
++final_feeling = final_feeling+" it"
+ print(final_feeling)
+\ No newline at end of file

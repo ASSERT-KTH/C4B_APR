@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/668_problem_id/3321_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/668_problem_id/3321_author_id/Accepted.py
+index f615ac0..fef6ad7 100644
+--- a/Users/bardia/Downloads/data 4/data/668_problem_id/3321_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/668_problem_id/3321_author_id/Accepted.py	
+@@ -1,16 +1,12 @@
+-feeling_number = int(input().strip())
++n = int(input())
+ 
+-even = "I hate it"
+-odd = "I love it"
++layers = []
+ 
+-final_feeling = " "
+-for i in range(feeling_number):
+-	if i == 0:
+-		final_feeling = even
+-	elif (i%2)!=0:
+-		final_feeling = fnial_feeling + " that " + odd
+-	elif (i%2) ==0:
+-		final_feeling = fnial_feeling + " that " + even
++for i in range(n):
++    if i % 2 == 0:
++        layers.append("hate")
++    else:
++        layers.append("love")
+ 
+-print(final_feeling)
+-# 1496336897341
+\ No newline at end of file
++print("I %s it" % " that I ".join(layers))
++# 1496340722803
+\ No newline at end of file

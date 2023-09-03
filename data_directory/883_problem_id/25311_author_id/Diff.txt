@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/883_problem_id/25311_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/883_problem_id/25311_author_id/Accepted.py
+index b8080f6..e4847c5 100644
+--- a/Users/bardia/Downloads/data 4/data/883_problem_id/25311_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/883_problem_id/25311_author_id/Accepted.py	
+@@ -1,20 +1,10 @@
+-import math
+ from collections import Counter
+-from functools import reduce
+ 
+ s = input()
+-c = Counter(s).most_common()
++z = set()
+ 
+-s1 = [v for k, v in c]
+-c1 = Counter(s1).most_common()
++for i in range(len(s)):
++    s = s[1:] + s[:1]
++    z.add(s)
+ 
+-x = [k for k, v in c1]
+-gcd = reduce(math.gcd, x)
+-
+-if gcd < sorted(x)[0] and gcd != 1:
+-    gcd = 1
+-
+-n = 0
+-for k, v in c1:
+-    n += (k//gcd)*v
+-print(n)
+\ No newline at end of file
++print(len(Counter(z)))
+\ No newline at end of file

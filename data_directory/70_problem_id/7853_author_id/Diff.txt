@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/70_problem_id/7853_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/70_problem_id/7853_author_id/Accepted.py
+index 8883157..a499e8c 100644
+--- a/Users/bardia/Downloads/data 4/data/70_problem_id/7853_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/70_problem_id/7853_author_id/Accepted.py	
+@@ -24,7 +24,7 @@ def find_best_w():
+ 
+ def find_best_b():
+     i = 7
+-    while i != 0:
++    while i != -1:
+         if 'B' in field[i]:
+             for j in range(len(field[i])):
+                 if field[i][j] == 'B':

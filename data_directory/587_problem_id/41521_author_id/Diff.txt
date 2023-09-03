@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/587_problem_id/41521_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/587_problem_id/41521_author_id/Accepted.py
+index 5f7f989..4a8fccb 100644
+--- a/Users/bardia/Downloads/data 4/data/587_problem_id/41521_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/587_problem_id/41521_author_id/Accepted.py	
+@@ -9,6 +9,8 @@ for i in range(n):
+ inc = 0
+ if a[1] and a[2] and a[3]:
+ 	inc =3
++if a[7] and a[9] and a[0]:
++	inc =3
+ if a[1] and a[4] and a[7] and a[0]:
+ 	inc =1
+ if a[3] and a[6] and a[9] and a[0]:

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/530_problem_id/28710_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/530_problem_id/28710_author_id/Accepted.py
+index 0308e81..036213d 100644
+--- a/Users/bardia/Downloads/data 4/data/530_problem_id/28710_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/530_problem_id/28710_author_id/Accepted.py	
+@@ -4,4 +4,4 @@ i = [int(a) for a in i]
+ def gcd(a,b):
+ 	return a if b == 0 else gcd(b, a%b)
+ 
+-print (i[0]//i[1] * i[3] + (i[0]//i[2]) * i[4] - i[0]//(i[1]*i[2]) * gcd(i[1], i[2]) * min(i[3], i[4]))
+\ No newline at end of file
++print (i[0]//i[1] * i[3] + (i[0]//i[2]) * i[4] - i[0]//(i[1]*i[2]//gcd(i[1], i[2])) * min(i[3], i[4]))
+\ No newline at end of file

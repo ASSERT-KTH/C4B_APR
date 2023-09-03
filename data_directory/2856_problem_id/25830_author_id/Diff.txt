@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2856_problem_id/25830_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2856_problem_id/25830_author_id/Accepted.py
+index 0094dd9..0e893a3 100644
+--- a/Users/bardia/Downloads/data 4/data/2856_problem_id/25830_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2856_problem_id/25830_author_id/Accepted.py	
+@@ -6,12 +6,12 @@ p3 = sum([mat[0][1], mat[1][2], mat[2][0], mat[2][1], mat[2][2], mat[3][0]])
+ p4 = sum([mat[0][0], mat[1][1], mat[2][2], mat[3][0], mat[3][1], mat[3][2]])
+ 
+ if mat[0][3] == 1 and p1 >= 1:
+-    print('1YES')
++    print('YES')
+ elif mat[1][3] == 1 and p2 >= 1:
+-    print('2YES')
++    print('YES')
+ elif mat[2][3] == 1 and p3 >= 1:
+-    print('3YES')
++    print('YES')
+ elif mat[3][3] == 1 and p4 >= 1:
+-    print('4YES')
++    print('YES')
+ else:
+     print('NO')
+\ No newline at end of file

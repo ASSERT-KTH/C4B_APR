@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2576_problem_id/8758_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2576_problem_id/8758_author_id/Accepted.py
+index 7b6dc70..6db339c 100644
+--- a/Users/bardia/Downloads/data 4/data/2576_problem_id/8758_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2576_problem_id/8758_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ temp=input()
+ k,a,b =map(int,temp.split(" "))
+ 
+-if a<k and b<k :
++if (a<k and b<k) or ( a<k and b%k!=0 ) or ( b<k and a%k!=0 ):
+     print(-1)
+ else:
+     print(a//k + b//k)
+\ No newline at end of file

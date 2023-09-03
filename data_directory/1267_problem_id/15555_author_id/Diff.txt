@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1267_problem_id/15555_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1267_problem_id/15555_author_id/Accepted.py
+index 1db1d7e..f3c3989 100644
+--- a/Users/bardia/Downloads/data 4/data/1267_problem_id/15555_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1267_problem_id/15555_author_id/Accepted.py	
+@@ -10,10 +10,10 @@ for i, num in enumerate(s):
+         b=-2
+         break
+     else:
+-        if i<=int(n/2):
+-            a+=1
++        if i+1<=n/2:
++            a+=int(num)
+         else:
+-            b+=1
++            b+=int(num)
+ else:
+     if a==b:
+         print("YES")

@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2901_problem_id/103008_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2901_problem_id/103008_author_id/Accepted.py
+index c3a0ee6..fc9b058 100644
+--- a/Users/bardia/Downloads/data 4/data/2901_problem_id/103008_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2901_problem_id/103008_author_id/Accepted.py	
+@@ -6,15 +6,18 @@ a=int(inp[3]) #acceleration in reading speed
+ l=int(inp[4]) #number of pages of rereading
+ 
+ nbpagerest=c
+-day=0
+-while nbpagerest>0:
+-    if day>0:
+-        nbpagerest=nbpagerest+l
+-        
+-    if day*a<=v1:
+-        nbpagerest=nbpagerest-v0-day*a
++day=1
++while nbpagerest>=0:
++    if day>1:
++        nbpagerest=nbpagerest+l  
++        if v0+(day-1)*a<=v1:
++            nbpagerest=nbpagerest-v0-(day-1)*a
++        else:
++            nbpagerest=nbpagerest-v1
+     else:
+-        nbpagerest=nbpagerest-v1
++        nbpagerest=nbpagerest-v0
++    if nbpagerest<=0:
++        break
+     day=day+1
+ 
+ print(day)
+\ No newline at end of file

@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2803_problem_id/27076_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2803_problem_id/27076_author_id/Accepted.py
+index cb3f681..cb35261 100644
+--- a/Users/bardia/Downloads/data 4/data/2803_problem_id/27076_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2803_problem_id/27076_author_id/Accepted.py	
+@@ -1,10 +1,14 @@
++def chk(d):
++    s=d*(k-1)*k//2
++    if n-s>(k-1)*d:
++        if (n-s)%d==0: return True
++    return False
+ n,k=map(int,input().split())
+ nod=-1
+ d=1
+ while d*d<=n:
+-    s=d*(k-1)*k//2
+-    if n-s>(k-1)*d:
+-        if (n-s)%d==0: nod=d
++    if chk(d): nod= max(nod,d)
++    if chk(n//d): nod= max(nod,n//d)
+     d+=1
+ ans=""
+ if nod>-1:

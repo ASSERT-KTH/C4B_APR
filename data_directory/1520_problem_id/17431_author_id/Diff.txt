@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1520_problem_id/17431_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1520_problem_id/17431_author_id/Accepted.py
+index cfab22d..5afaca6 100644
+--- a/Users/bardia/Downloads/data 4/data/1520_problem_id/17431_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1520_problem_id/17431_author_id/Accepted.py	
+@@ -2,16 +2,15 @@
+ 
+ n, a, b, c = list(map(int, input().split()))
+ 
+-tab = []
+-r = 0
++tab = [0] * (n + a + b + c)
++tab[a] = 1
++tab[b] = 1
++tab[c] = 1
+ for i in range(n + 1):
+-    maxi = 0
+-    if i - a >= 0:
+-        maxi = max(tab[i - a - 1] + 1, maxi)
+-    if i - b >= 0:
+-        maxi = max(tab[i - b - 1] + 1, maxi)
+-    if i - c >= 0:
+-        maxi = max(tab[i - c - 1] + 1, maxi)
+-    tab.append(maxi)
++    if tab[i] == 0:
++        continue
++    tab[i + a] = max(tab[i] + 1, tab[i + a])
++    tab[i + b] = max(tab[i] + 1, tab[i + b])
++    tab[i + c] = max(tab[i] + 1, tab[i + c])
+ #  print(tab)
+ print(tab[n])
+\ No newline at end of file

@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1082_problem_id/1401_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1082_problem_id/1401_author_id/Accepted.py
+index b433faf..40288e0 100644
+--- a/Users/bardia/Downloads/data 4/data/1082_problem_id/1401_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1082_problem_id/1401_author_id/Accepted.py	
+@@ -1,11 +1,11 @@
+-import math
+-
+-
+ k = int(input())
+ l = int(input())
+-lg = math.log(l, k)
+-if abs(int(lg) - lg) < 1e-16:
+-    print("YES")
+-    print(int(lg) - 1)
+-else:
+-    print("NO")
+\ No newline at end of file
++
++n = 0
++while k ** n <= l:
++    if (k ** n == l):
++        print("YES")
++        print(n - 1)
++        exit()
++    n += 1
++print("NO")
+\ No newline at end of file

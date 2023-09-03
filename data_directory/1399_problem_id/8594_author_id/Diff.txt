@@ -1,0 +1,40 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1399_problem_id/8594_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1399_problem_id/8594_author_id/Accepted.py
+index 30feb5f..bebc4f9 100644
+--- a/Users/bardia/Downloads/data 4/data/1399_problem_id/8594_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1399_problem_id/8594_author_id/Accepted.py	
+@@ -7,17 +7,20 @@ def prost(x):
+     return True
+ 
+ n,k=[int(s) for s in input().split()]
+-a=[]
+-for i in range(2,n+1):
+-    if prost(i):
+-        a.append(i)
+-cnt=0
+-for i in range(2,len(a)):
+-    b=[a[j-1]+a[j]+1 for j in range(2,i)]
+-    if a[i] in b:
+-        cnt+=1
+-        if cnt>=k:
+-            print('YES')
+-            break
++if k==0:
++    print('YES')
+ else:
+-    print('NO')
+\ No newline at end of file
++    a=[]
++    for i in range(2,n+1):
++        if prost(i):
++            a.append(i)
++    cnt=0
++    for i in range(2,len(a)):
++        b=[a[j-1]+a[j]+1 for j in range(2,i)]
++        if a[i] in b:
++            cnt+=1
++            if cnt>=k:
++                print('YES')
++                break
++    else:
++        print('NO')
+\ No newline at end of file

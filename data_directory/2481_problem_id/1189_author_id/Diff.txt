@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/1189_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/1189_author_id/Accepted.py
+index 60e90bc..969bc07 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/1189_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/1189_author_id/Accepted.py	
+@@ -4,6 +4,6 @@ names = ['Sheldon', 'Leonard', 'Penny', 'Rajesh', 'Howard']
+ cnt = 1
+ while n > cnt * 5:
+     n -= cnt * 5
+-    cnt += 1
++    cnt *= 2
+ 
+ print(names[(n - 1) // cnt])
+\ No newline at end of file

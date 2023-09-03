@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/64816_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/64816_author_id/Accepted.py
+index e654a1d..e075ca3 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/64816_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/64816_author_id/Accepted.py	
+@@ -3,8 +3,6 @@ str = input();
+ def accident(s):
+     if s.isupper():
+         return True
+-    if s.islower():
+-        return False
+     for i in range(1, len(s)):
+         if s[i].islower():
+             return False

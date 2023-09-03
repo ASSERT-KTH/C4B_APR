@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1188_problem_id/26584_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1188_problem_id/26584_author_id/Accepted.py
+index d30a976..539d750 100644
+--- a/Users/bardia/Downloads/data 4/data/1188_problem_id/26584_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1188_problem_id/26584_author_id/Accepted.py	
+@@ -16,6 +16,6 @@ else:
+ 		if t-countB >=1:
+ 			total += calculate_combinations(n,countB)*calculate_combinations(m,t-countB)
+ 		countB -= 1
+-		if t-countB == m:
++		if t-countB == m+1:
+ 			break
+ print(total)
+\ No newline at end of file

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/36722_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/36722_author_id/Accepted.py
+index 7d6519f..ea66df0 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/36722_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/36722_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ import re
+ 
+ string = input()
+ 
+-if re.match(r'\w*h+e+l+l+o+' , string):
++if re.match(r'\w*h[a-z]*e[a-z]*l[a-z]*l[a-z]*o[a-z]*' , string):
+ 	print("YES")
+ else:
+ 	print("NO")
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/419_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/419_problem_id/1633_author_id/Accepted.py
+index a0f4b88..c0ac752 100644
+--- a/Users/bardia/Downloads/data 4/data/419_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/419_problem_id/1633_author_id/Accepted.py	
+@@ -3,7 +3,7 @@ numbers = string.split(" ")
+ n = int(numbers[0])
+ a = int(numbers[1])
+ b = int(numbers[2])
+-x = abs(a + b % 100)
++x = abs(a + b % n)
+ if x % n == 0:
+     print(n)
+ else:

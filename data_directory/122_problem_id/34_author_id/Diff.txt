@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/122_problem_id/34_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/122_problem_id/34_author_id/Accepted.py
+index cd3de57..7f78895 100644
+--- a/Users/bardia/Downloads/data 4/data/122_problem_id/34_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/122_problem_id/34_author_id/Accepted.py	
+@@ -6,4 +6,4 @@ res = 0
+ 
+ for (minu, wrongs, punt) in zip(t, ws, [500, 1000, 1500, 2000, 2500]):
+     res += max(0.3 * punt, (1 - minu / 250) * punt - 50 * wrongs)
+-print(res + (hs * 100 + hu * -50))
+\ No newline at end of file
++print(int(res + (hs * 100 + hu * -50)))
+\ No newline at end of file

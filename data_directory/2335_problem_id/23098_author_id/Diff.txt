@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/23098_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/23098_author_id/Accepted.py
+index 903b2e5..db3951c 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/23098_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/23098_author_id/Accepted.py	
+@@ -1,10 +1,11 @@
+-s = input()
+-x = []
+-for i in s:
+-    if i == 'h' or 'e' or 'l' or 'o':
+-        x += i
+-    if x == 'hello':
+-        print("YES")
+-        break;
+-    else:
+-        print("NO")
+\ No newline at end of file
++c = 0
++h = "hello"
++
++for i in input():
++	if i == h[c]:
++		c += 1
++		if c == 5:
++			print("YES")
++			break
++else:
++	print("NO")
+\ No newline at end of file

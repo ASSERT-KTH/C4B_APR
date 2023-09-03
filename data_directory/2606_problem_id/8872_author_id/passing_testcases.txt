@@ -1,0 +1,1 @@
+[{'inputdata': '6 6', 'expectedresult': 'abcdef'}, {'inputdata': '3 3', 'expectedresult': 'abc'}, {'inputdata': '17 17', 'expectedresult': 'abcdefghijklmnopq'}, {'inputdata': '26 26', 'expectedresult': 'abcdefghijklmnopqrstuvwxyz'}, {'inputdata': '2 2', 'expectedresult': 'ab'}, {'inputdata': '4 4', 'expectedresult': 'abcd'}, {'inputdata': '5 5', 'expectedresult': 'abcde'}]

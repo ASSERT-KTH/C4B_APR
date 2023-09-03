@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/6123_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/6123_author_id/Accepted.py
+index 2501102..87fe263 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/6123_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/6123_author_id/Accepted.py	
+@@ -12,6 +12,5 @@ for i in s:
+     elif f1 > 0 and f2 > 0 and f3 > 0 and f4 > 0 and i == 'o':
+         f5 += 1
+         break
+-print(f1,f2,f3,f4,f5)
+ if f5 == 1: print('YES')
+ else: print('NO')
+\ No newline at end of file

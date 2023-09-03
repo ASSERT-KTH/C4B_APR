@@ -1,0 +1,37 @@
+diff --git a/Users/bardia/Downloads/data 4/data/290_problem_id/9_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/290_problem_id/9_author_id/Accepted.py
+index c89781a..dacc680 100644
+--- a/Users/bardia/Downloads/data 4/data/290_problem_id/9_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/290_problem_id/9_author_id/Accepted.py	
+@@ -1,20 +1,10 @@
+-def d():
+-    a, b, c = map(int,input().split())
+-    if c < b and c < a:
+-        return "No"
+-    if c % b == 0 or c % a == 0:
+-        return "Yes"
+-    q = max(a,b)
+-    k = a + b - q
+-    v = c
+-    while c > 0:
+-        c -= q
+-        if c % k == 0:
+-            return "Yes"
+-    c = v
+-    while c > 0:
+-        c -= k
+-        if c % q == 0:
+-            return "Yes"
+-    return "No"
+-print(d())
+\ No newline at end of file
++def main():
++	a, b, c = map(int, input().split())
++	min_a = min(a , b)
++	max_a = max(a, b)
++	for i in range(c // min_a + 1):
++		if (c - min_a * i) % max_a == 0:
++			return "Yes"
++	return "No"
++
++print(main())
+\ No newline at end of file

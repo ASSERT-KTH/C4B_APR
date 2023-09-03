@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2360_problem_id/51582_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2360_problem_id/51582_author_id/Accepted.py
+index 47c1661..81d1910 100644
+--- a/Users/bardia/Downloads/data 4/data/2360_problem_id/51582_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2360_problem_id/51582_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ venusian_fingers = [int(n) for n in input().split()]
+ marsian_fingers = [int(n) for n in input().split()]
+ yes = False
+ for i in range(0,2):
+-    if(marsian_fingers[1-i]<=(venusian_fingers[i]+1)*2):
++    if(marsian_fingers[1-i]<=(venusian_fingers[i]+1)*2 and marsian_fingers[i-1]>=(venusian_fingers[i]-1)):
+         yes = True
+         break
+ if(yes):

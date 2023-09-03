@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/105059_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/105059_author_id/Accepted.py
+index 0730e23..6a3dca0 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/105059_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/105059_author_id/Accepted.py	
+@@ -19,4 +19,5 @@ def counter_str(s):
+ 
+ 
+ if __name__ == '__main__':
+-    n = str(input())
+\ No newline at end of file
++    n = str(input())
++    print(str_finder(n))
+\ No newline at end of file

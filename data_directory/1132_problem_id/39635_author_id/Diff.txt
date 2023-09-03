@@ -1,0 +1,51 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/39635_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/39635_author_id/Accepted.py
+index 4264c5e..ae319b3 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/39635_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/39635_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ number = input()
+ int_number = int(number)
+-status = 'NO'
+-
++lucky_numbers = [4, 7]
++half_lucky_numbers = []
+ 
+ def check(n):
+ 	st = False
+@@ -13,18 +13,23 @@ def check(n):
+ 			return st
+ 	return st
+ 
+-while int_number > 1:
+-	for i in range(2, int_number+1):
+-		if int_number % i == 0:
+-			is_lucky1 = check(i)
+-			is_lucky2 = check(int_number // i)
+-			if is_lucky1 or is_lucky2:
+-				status = 'YES'
+-				int_number = 0
+-				break
+-			else:
+-				int_number = int_number // i
+-				break
+ 
++def check_hard(n):
++	for i in lucky_numbers:
++		if n % i == 0:
++			return True
++	return False
+ 
++for num in range(1, int_number+1):
++	easy_check = check(num)
++	if easy_check:
++		lucky_numbers.append(num)
++	else:
++		hard_check = check_hard(num)
++		if hard_check:
++			half_lucky_numbers.append(num)
++
++status = 'NO'
++if int_number in lucky_numbers or int_number in half_lucky_numbers:
++	status = 'YES'
+ print(status)
+\ No newline at end of file

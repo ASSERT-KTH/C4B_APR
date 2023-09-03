@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/760_problem_id/7795_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/760_problem_id/7795_author_id/Accepted.py
+index d28559e..98f4cbf 100644
+--- a/Users/bardia/Downloads/data 4/data/760_problem_id/7795_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/760_problem_id/7795_author_id/Accepted.py	
+@@ -6,7 +6,7 @@ if __name__ == "__main__":
+     res = 114514
+     ans = ""
+     if N == 12:
+-        for i in range(0, 13):
++        for i in range(1, 13):
+             for j in range(0, 60):
+ 
+                 h = str(i)
+@@ -29,7 +29,7 @@ if __name__ == "__main__":
+                     res = diff
+                     ans = h + ":" + m
+     else:
+-        for i in range(1, 24):
++        for i in range(0, 24):
+             for j in range(0, 60):
+                 h = str(i)
+                 m = str(j)

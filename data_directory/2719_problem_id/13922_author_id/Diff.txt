@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2719_problem_id/13922_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2719_problem_id/13922_author_id/Accepted.py
+index 64cd76b..6b05f08 100644
+--- a/Users/bardia/Downloads/data 4/data/2719_problem_id/13922_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2719_problem_id/13922_author_id/Accepted.py	
+@@ -5,9 +5,8 @@ count=0
+ if a==b:
+     print("1")
+ else:
+-    while(a<b):
++    while(a<=b):
+         a=a*3
+         b=b*2
+         count+=1
+-
+     print(count)
+\ No newline at end of file

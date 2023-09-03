@@ -1,0 +1,46 @@
+diff --git a/Users/bardia/Downloads/data 4/data/543_problem_id/12593_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/543_problem_id/12593_author_id/Accepted.py
+index e97bf75..290918e 100644
+--- a/Users/bardia/Downloads/data 4/data/543_problem_id/12593_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/543_problem_id/12593_author_id/Accepted.py	
+@@ -1,24 +1,16 @@
+ n = int(input())
+-ans = False
+-for i in range(0, 3):
+-	temp = n
+-	if i == 0:
+-		temp %= 1234567
+-		if temp % 1234 == 0:
+-			ans = True
+-		else:
+-			temp %= 123456
+-			if temp % 1234 == 0:
+-				ans = True
+-	elif i == 1:
+-		temp %= 123456
+-		if temp % 1234 == 0:
+-			ans = True
+-	else:
+-		if temp % 1234 == 0:
+-			ans = True
+-
+-if ans:
+-	print("YES")
+-else:
+-	print("NO")
+\ No newline at end of file
++x = 1234567
++y = 123456
++z = 1234
++for i in range(0, n):
++	if i * x > n:
++		break
++	m = n - x * i
++	for j in range(0, n):
++		if j * y > m:
++			break
++		l = m - y * j
++		if l % 1234 == 0:
++			print("YES")
++			exit(0)
++print("NO")
+\ No newline at end of file

@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/868_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/868_problem_id/1633_author_id/Accepted.py
+index da2d032..da71bd6 100644
+--- a/Users/bardia/Downloads/data 4/data/868_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/868_problem_id/1633_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+-digits = [1, 8, 4, 2]
++digits = [8, 4, 2, 6]
+ n = int(input())
+-if n < 4:
+-    print(digits[n])
++if n == 0:
++    print(1)
+ else:
+-    print(6)
+\ No newline at end of file
++    print(digits[n % 4 - 1])
+\ No newline at end of file

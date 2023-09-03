@@ -1,0 +1,1 @@
+[{'inputdata': '11 1 11 11', 'expectedresult': '42'}, {'inputdata': '999999 1 999998 1333333', 'expectedresult': '444445555556'}, {'inputdata': '500000 10000 1000000 29998', 'expectedresult': '1000100000000'}, {'inputdata': '428676 64403 677407 626161', 'expectedresult': '5081000961597840'}, {'inputdata': '33334 66667 1000000 100000', 'expectedresult': '37040370459260'}]

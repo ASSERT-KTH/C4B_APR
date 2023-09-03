@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/694_problem_id/19511_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/694_problem_id/19511_author_id/Accepted.py
+index ed20f00..0a1127a 100644
+--- a/Users/bardia/Downloads/data 4/data/694_problem_id/19511_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/694_problem_id/19511_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ x=input()
+ 
+ def limites():
+     pos = 8
+-    if x1[1] == "1" or  x1[1] == "8":
++    if x[1] == "1" or  x[1] == "8":
+         pos -= 3
+     if x[0] == "a" or x[0] == "h":
+         pos -= 3

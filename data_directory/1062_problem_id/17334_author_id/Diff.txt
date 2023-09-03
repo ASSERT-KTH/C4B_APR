@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/17334_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/17334_author_id/Accepted.py
+index 4abe3e9..ec2985d 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/17334_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/17334_author_id/Accepted.py	
+@@ -6,11 +6,18 @@ def isLucky(n):
+             return False
+     return True
+ 
++def nearlyLucky(n):
++    count = 0
++    for i in n:
++        if i == '4' or i=='7':
++            count = count + 1
++    return count
++
+ a = str(input())
+ 
+ drap = False
+ 
+-if isLucky(a) and isLucky(str(len(a))) :
++if isLucky(str(nearlyLucky(a))) :
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/994_problem_id/54336_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/994_problem_id/54336_author_id/Accepted.py
+index 747d50e..6ab68c7 100644
+--- a/Users/bardia/Downloads/data 4/data/994_problem_id/54336_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/994_problem_id/54336_author_id/Accepted.py	
+@@ -1,6 +1,4 @@
+-m = int(input())
+-n = int(input())
+-a = int(input())
++[m, n, a] = map(int, input().split(' '))
+ n1 = int(m/a)
+ n2 = int(n/a)
+ if m - n1*a > 0:

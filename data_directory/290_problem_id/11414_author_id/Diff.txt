@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/290_problem_id/11414_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/290_problem_id/11414_author_id/Accepted.py
+index 89c5829..5db7489 100644
+--- a/Users/bardia/Downloads/data 4/data/290_problem_id/11414_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/290_problem_id/11414_author_id/Accepted.py	
+@@ -6,14 +6,15 @@ if c % a == 0 or c % b == 0:
+ else:
+     while x > 0:
+         x=x-a
+-        if x % b == 0:
++        if x % b == 0 and x>0:
+             flag="Yes"
+             break
+     if flag == "No":
+         x=c
+         while x > 0:
+             x=x-b
+-            if x % a == 0:
++            if x % a == 0 and x > 0:
+                 flag="Yes"
++              
+                 break
+ print(flag)
+\ No newline at end of file

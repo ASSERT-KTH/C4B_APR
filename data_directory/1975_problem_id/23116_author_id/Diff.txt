@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1975_problem_id/23116_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1975_problem_id/23116_author_id/Accepted.py
+index 4916c5a..48844f3 100644
+--- a/Users/bardia/Downloads/data 4/data/1975_problem_id/23116_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1975_problem_id/23116_author_id/Accepted.py	
+@@ -14,10 +14,13 @@ for i in range(len(s)):
+ for j in range(t):
+ 
+   for i in range(len(li)):
+-    if s[li[i]+1] == 'G':
+-      s[li[i]] = 'G'
+-      s[li[i]+1] = 'B'
+-      li[i] = i+1
++    try:
++      if s[li[i]+1] == 'G':
++        s[li[i]] = 'G'
++        s[li[i]+1] = 'B'
++        li[i] = li[i]+1
++    except:
++      pass
+ 
+ 
+ s = "".join(s)

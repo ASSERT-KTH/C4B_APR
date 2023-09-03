@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1188_problem_id/15397_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1188_problem_id/15397_author_id/Accepted.py
+index 97681dc..71ef562 100644
+--- a/Users/bardia/Downloads/data 4/data/1188_problem_id/15397_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1188_problem_id/15397_author_id/Accepted.py	
+@@ -8,7 +8,7 @@ if (n<4) or (m<1):
+ 	exit(0)
+ res=0
+ for i in range(4,n+1):
+-	if t-i<=m:
++	if (t-i<=m) and (t-i>0):
+ 		res+=c(n,i)*c(m,t-i)
+ 	
+-print(res,sep='',end='')
+\ No newline at end of file
++print(res)
+\ No newline at end of file

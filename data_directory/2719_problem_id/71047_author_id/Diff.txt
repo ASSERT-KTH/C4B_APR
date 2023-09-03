@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2719_problem_id/71047_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2719_problem_id/71047_author_id/Accepted.py
+index 105082f..0336d50 100644
+--- a/Users/bardia/Downloads/data 4/data/2719_problem_id/71047_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2719_problem_id/71047_author_id/Accepted.py	
+@@ -5,7 +5,7 @@ for i in x:
+ 
+ z=1 
+ for i in range(5):
+-  if 3*y[0]<2*y[1]:
++  if 3*y[0]<=2*y[1]:
+     z=z+1
+     y[0]=y[0]*3
+     y[1]=y[1]*2

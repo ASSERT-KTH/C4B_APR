@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/714_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/714_problem_id/1633_author_id/Accepted.py
+index b043026..3b01787 100644
+--- a/Users/bardia/Downloads/data 4/data/714_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/714_problem_id/1633_author_id/Accepted.py	
+@@ -13,5 +13,5 @@ r = q - p + 1
+ if p <= e <= q:
+     r -= 1
+ if r < 0:
+-    r == 0
++    r = 0
+ print(r)
+\ No newline at end of file

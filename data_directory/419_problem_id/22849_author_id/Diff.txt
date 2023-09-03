@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/419_problem_id/22849_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/419_problem_id/22849_author_id/Accepted.py
+index ab98614..ed8ea0b 100644
+--- a/Users/bardia/Downloads/data 4/data/419_problem_id/22849_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/419_problem_id/22849_author_id/Accepted.py	
+@@ -1,2 +1,4 @@
+ n,a,b=map(int,input().split())
+-print(((a+b)%n)%n)
+\ No newline at end of file
++if(((a+b)%n)%n==0):print(n)
++else:
++  print(((a+b)%n)%n)
+\ No newline at end of file

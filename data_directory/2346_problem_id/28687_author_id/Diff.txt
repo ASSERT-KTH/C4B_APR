@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2346_problem_id/28687_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2346_problem_id/28687_author_id/Accepted.py
+index b7827ad..3c0d643 100644
+--- a/Users/bardia/Downloads/data 4/data/2346_problem_id/28687_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2346_problem_id/28687_author_id/Accepted.py	
+@@ -4,10 +4,6 @@ a = eval(list[0])
+ b = eval(list[1])
+ c = eval(list[2])
+ d = eval(list[3])
+-print(a)
+-print(b)
+-print(c)
+-print(d)
+ if ((a+b>c) and (a+c>b) and (b+c>a)) or ((a+b>d) and (a+d>b) and (b+d>a)) or ((c+b>d) and (c+d>b) and (b+d>c)) or ((a+c>d) and (a+d>c) and (c+d>a)):
+ 	print('TRIANGLE')
+ elif (a+b==c) or (a+c==b) or (c+b==a) or (a+b==d) or (a+d==b) or (b+d==a) or (a+c==d) or (a+d==c) or (c+d==a) or (b+c==d) or (b+d==c) or (c+d==b):

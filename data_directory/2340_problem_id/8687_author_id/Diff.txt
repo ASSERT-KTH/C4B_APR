@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2340_problem_id/8687_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2340_problem_id/8687_author_id/Accepted.py
+index 4f93bbb..60369cb 100644
+--- a/Users/bardia/Downloads/data 4/data/2340_problem_id/8687_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2340_problem_id/8687_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ s = input()
+ lowerCount = 0
+ upperCount = 0
+ for i in range(len(s)):
+-    if('a' <= s <= 'z'):
++    if('a' <= s[i] <= 'z'):
+         lowerCount += 1
+     else:
+         upperCount += 1

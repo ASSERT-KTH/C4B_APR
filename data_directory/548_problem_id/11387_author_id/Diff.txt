@@ -1,0 +1,49 @@
+diff --git a/Users/bardia/Downloads/data 4/data/548_problem_id/11387_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/548_problem_id/11387_author_id/Accepted.py
+index bd670c8..faf68b9 100644
+--- a/Users/bardia/Downloads/data 4/data/548_problem_id/11387_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/548_problem_id/11387_author_id/Accepted.py	
+@@ -2,19 +2,32 @@ n,m = input().split()
+ n,m = int(n), int(m)
+ start = 0
+ count = 0
++add = [m//5,m//5,m//5,m//5,m//5]
++if m%5 == 1:
++    add[0] += 1
++elif m%5 == 2:
++    add[0] += 1
++    add[1] += 1
++elif m%5 == 3:
++    add[0] += 1
++    add[1] += 1
++    add[2] += 1
++elif m%5 == 4:
++    add[0] += 1
++    add[1] += 1
++    add[2] += 1
++    add[3] += 1
++#print(add)
+ for i in range(1,n+1):
+     if i%5 == 1:
+-        start = 4
++        count += add[3]
+     elif i%5 == 2:
+-        start = 3
++        count += add[2]
+     elif i%5 == 3:
+-        start = 2
++        count += add[1]
+     elif i%5 == 4:
+-        start = 1
++        count += add[0]
+     else:
+-        start = 5
+-    while (start <= m):
+-        #print(i,start, end = ";")
+-        count += 1
+-        start += 5
+-print(count)
+\ No newline at end of file
++        count += add[4]
++
++print(int(count))
+\ No newline at end of file

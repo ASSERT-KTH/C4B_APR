@@ -1,0 +1,1 @@
+print(('Charlar con ella!:!','¡IGNORALO!!')[len(set(input()))%2])

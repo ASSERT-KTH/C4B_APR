@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1064_problem_id/64_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1064_problem_id/64_author_id/Accepted.py
+index fe68789..88a2af6 100644
+--- a/Users/bardia/Downloads/data 4/data/1064_problem_id/64_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1064_problem_id/64_author_id/Accepted.py	
+@@ -1,5 +1,4 @@
+-x=input()
+-y="abcd"*(int)(len(x)/4)
+-k="abcd"
+-a=(len(x)%4)
+-print(y+k[0:a])
+\ No newline at end of file
++x=int(input())
++a="abcd"
++y=a*(int)(x/4)
++print(y+a[0:x%4])
+\ No newline at end of file

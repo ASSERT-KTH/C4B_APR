@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1226_problem_id/15695_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1226_problem_id/15695_author_id/Accepted.py
+index 465d725..8353119 100644
+--- a/Users/bardia/Downloads/data 4/data/1226_problem_id/15695_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1226_problem_id/15695_author_id/Accepted.py	
+@@ -1,11 +1,10 @@
+ m=int(input())
+-res=input().split()
+-list=[]
+-for i in range(0,6):
+- list.append(int(res[i]))
+- list[i+1]+=list[i]
+-m=(m-1)%list[6]+1
+-for j in range(0,6):
+- if list[j]>=m:
+-  print(j)
+-  break
+\ No newline at end of file
++reg=input().split()
++counter=0
++sum1=0
++i=0
++while sum1<m:
++ sum1+=int(reg[i%7])
++ counter+=1
++ i+=1
++print((counter-1)%7+1)
+\ No newline at end of file

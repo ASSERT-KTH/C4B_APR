@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1975_problem_id/23118_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1975_problem_id/23118_author_id/Accepted.py
+index e650582..3f2d906 100644
+--- a/Users/bardia/Downloads/data 4/data/1975_problem_id/23118_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1975_problem_id/23118_author_id/Accepted.py	
+@@ -6,6 +6,10 @@ for i in range(t):
+     sl = 0
+     newR = ''
+ 
++    if sl >= c - 1:
++        newR = s
++        break
++
+     while sl < c - 1:
+         if s[sl] == 'B' and s[sl + 1] == 'G':
+             newR += 'GB'

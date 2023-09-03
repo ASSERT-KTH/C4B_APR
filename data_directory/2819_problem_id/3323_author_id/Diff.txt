@@ -1,0 +1,50 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2819_problem_id/3323_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2819_problem_id/3323_author_id/Accepted.py
+index 8bf8a87..ec3459a 100644
+--- a/Users/bardia/Downloads/data 4/data/2819_problem_id/3323_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2819_problem_id/3323_author_id/Accepted.py	
+@@ -1,38 +1,8 @@
+-import sys
+-import math
++l, r = [int(x) for x in input().split()]
+ 
+-dict = {}
+-dictMax = {}
+-value = sys.stdin.readline()
+-res = str.split(value, ' ')
+-values = []
+-first = int(res[0])
+-second = int(res[1])
+-
+-def getBiggestDiv(values):
+-    count2 = 0
+-    count3 = 0
+-    for i in values:
+-        if i%2 == 0:
+-            count2+=1
+-        if i%3 == 0:
+-            count3+=1
+-    if count2 < 2 and count3 < 2:
+-        return max(values)
+-    if count3 >= count2:
+-        return 3
+-    else:
+-        return 2
+-
+-while first <= second:
+-    values.append(first)
+-    first+=1
+-if len(values) > 4:
++if l == r:
++    print(l)
++else:
+     print(2)
+-    sys.exit(0)
+ 
+-elif len(values) <= 4:
+-    maxValue = getBiggestDiv(values)
+-    print(maxValue)
+-sys.exit(0)
+-# 1502391711977
+\ No newline at end of file
++# 1502385153876
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/23424_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/23424_author_id/Accepted.py
+index 1eb2f2d..48e780d 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/23424_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/23424_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ from sys import stdin
+ from math import log2
+ 
+-n = int(stdin.readline().strip())
++n = int(stdin.readline()) - 1
+ 
+ batch_number = int(log2((n+5)/5))
+ batch_first = (5 * 2 ** batch_number) - 5

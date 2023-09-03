@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/22225_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/22225_author_id/Accepted.py
+index 98ca18b..d212aa5 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/22225_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/22225_author_id/Accepted.py	
+@@ -5,16 +5,15 @@ y=0
+ na=8
+ suma=0
+ mensaje="NO"
+-for s in range(len(x)-7):
+-	for m in range (s+1,s+8):
+-		if x[s]== x[m]:
+-			na=9
++for s in range(len(x)-6):
++	for m in range (s+1,s+7):
++		if x[s]!=x[m]:
+ 			break
+ 		suma=suma+1
+-		if suma==7:
++		if suma==6:
+ 			break
+ 		
+-	if suma==7:
++	if suma==6:
+ 		mensaje="YES"
+ 		break
+ 	suma=0

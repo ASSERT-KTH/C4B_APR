@@ -1,0 +1,1 @@
+[{'inputdata': '1\r\n2\r\n3\r\n4\r\n12', 'expectedresult': '12'}, {'inputdata': '2\r\n3\r\n4\r\n5\r\n24', 'expectedresult': '17'}]

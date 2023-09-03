@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/931_problem_id/716_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/931_problem_id/716_author_id/Accepted.py
+index fdd833f..0c508d9 100644
+--- a/Users/bardia/Downloads/data 4/data/931_problem_id/716_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/931_problem_id/716_author_id/Accepted.py	
+@@ -18,7 +18,7 @@ def check(r,c):
+        match(r+1,c+1,r+2,c+2) or\
+        match(r-1,c-1,r-2,c-2) or\
+        match(r-1,c+1,r+1,c-1) or\
+-       match(r-1,c+1,r-2,c-2) or\
++       match(r-1,c+1,r-2,c+2) or\
+        match(r+1,c-1,r+2,c-2)):
+         return True
+     return False

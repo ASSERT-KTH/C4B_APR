@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2161_problem_id/3621_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2161_problem_id/3621_author_id/Accepted.py
+index ee22eca..e9b756d 100644
+--- a/Users/bardia/Downloads/data 4/data/2161_problem_id/3621_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2161_problem_id/3621_author_id/Accepted.py	
+@@ -45,7 +45,9 @@ def has_won(rows, sym):
+ def main():
+     rows = tuple(input() for _ in range(3))
+     if (not (count(rows, "X") - 1 <= count(rows, "0") <= count(rows, "X"))
+-        or has_won(rows, "0") and has_won(rows, "X")):
++        or has_won(rows, "0") and has_won(rows, "X")
++        or has_won(rows, "0") and count(rows, "0") != count(rows, "X")
++        or has_won(rows, "X") and count(rows, "X") != count(rows, "0") + 1):
+         print("illegal")
+     elif has_won(rows, "X"):
+         print("the first player won")

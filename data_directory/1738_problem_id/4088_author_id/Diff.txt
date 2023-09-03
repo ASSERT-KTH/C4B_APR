@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1738_problem_id/4088_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1738_problem_id/4088_author_id/Accepted.py
+index 5ede516..9296561 100644
+--- a/Users/bardia/Downloads/data 4/data/1738_problem_id/4088_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1738_problem_id/4088_author_id/Accepted.py	
+@@ -1,8 +1,5 @@
+-a,b,c=map(int,input().split())
+-s1=a*b
+-s2=b*c
+-s3=c*a
+-a=((s1*s3)//s2)**0.5
+-b=((s1*s2)//s3)**0.5
+-c=((s2*s3)//s1)**0.5
+-print(int(4*(a+b+c)))
+\ No newline at end of file
++s1,s2,s3=map(int,input().split())
++a=int((s1*s3//s2)**0.5)
++b=int((s1*s2//s3)**0.5)
++c=int((s2*s3//s1)**0.5)
++print(4*(a+b+c))
+\ No newline at end of file

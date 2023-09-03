@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1940_problem_id/1673_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1940_problem_id/1673_author_id/Accepted.py
+index c6de834..f5a83f0 100644
+--- a/Users/bardia/Downloads/data 4/data/1940_problem_id/1673_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1940_problem_id/1673_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ n = int(input().strip())
+ otvet = 0
+ for i in range(6,n+1):
+     l = []
+-    for j in range(2,int(i ** 0.5) + 20):
++    for j in range(2,i//2+1 ):
+         if i == 1:
+             break
+         else:

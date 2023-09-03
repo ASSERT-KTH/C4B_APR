@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2379_problem_id/56471_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2379_problem_id/56471_author_id/Accepted.py
+index 59c9c0a..ef329c6 100644
+--- a/Users/bardia/Downloads/data 4/data/2379_problem_id/56471_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2379_problem_id/56471_author_id/Accepted.py	
+@@ -2,4 +2,6 @@ from functools import reduce
+ from operator import mul
+ 
+ c = list(map(int, input().split()))
+-print("Ron" if reduce(mul, c[1::2], 1) > reduce(mul, c[0::2], 1) else "Hermione")
+\ No newline at end of file
++r, h = reduce(mul, c[1::2], 1), reduce(mul, c[0::2], 1)
++rw = r > h or (c[2] == 0 and c[3] != 0) or (c[0] == 0 and c[1] * c[3] != 0)
++print("Ron" if rw else "Hermione")
+\ No newline at end of file

@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/2085_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/2085_author_id/Accepted.py
+index a585a50..45cc8fb 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/2085_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/2085_author_id/Accepted.py	
+@@ -1,6 +1,7 @@
+ a=input()
+ b=0
+ c=False
++d=0
+ for r in a:
+     if(r=="0"):
+         b+=1
+@@ -9,6 +10,16 @@ for r in a:
+             break
+     else:
+         b=0
++    if(r=="1"):
++        d+=1
++        if(d==7):
++            c=True
++            break
++    else:
++        d=0
++    
++
++    
+ 
+ if(c):
+     print("YES")

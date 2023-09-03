@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/394_problem_id/7324_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/394_problem_id/7324_author_id/Accepted.py
+index 2d5452c..b95490a 100644
+--- a/Users/bardia/Downloads/data 4/data/394_problem_id/7324_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/394_problem_id/7324_author_id/Accepted.py	
+@@ -1,7 +1,8 @@
+-n1=input().split()
+-n=int(n1[0])
+-k=int(n1[1])
+-if k >= n//2:
+-    print(n*(n-1)//2)
+-else:
+-    print(k*k+2*k*(n-2*k)+k)
+\ No newline at end of file
++a = input().split()
++x,y = int(a[0]),int(a[1])
++out = 0
++while y > 0 and x > 1:
++    out += 2 * x - 3
++    x -= 2
++    y -= 1
++print(out)
+\ No newline at end of file

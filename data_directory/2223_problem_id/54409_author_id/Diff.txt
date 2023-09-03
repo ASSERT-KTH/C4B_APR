@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2223_problem_id/54409_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2223_problem_id/54409_author_id/Accepted.py
+index 1d50f76..fbd2faf 100644
+--- a/Users/bardia/Downloads/data 4/data/2223_problem_id/54409_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2223_problem_id/54409_author_id/Accepted.py	
+@@ -1,6 +1,8 @@
+-weight = int(input())
+-
+-if weight % 2 == 0:
+-    print('YES')
+-else:
+-    print('No')
+\ No newline at end of file
++w = int(input())
++
++if w is 2:
++    print('NO')
++elif w % 2 == 0:
++    print('YES')
++else:
++    print('NO')
+\ No newline at end of file

@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1570_problem_id/16273_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1570_problem_id/16273_author_id/Accepted.py
+index fa91b87..e15ed11 100644
+--- a/Users/bardia/Downloads/data 4/data/1570_problem_id/16273_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1570_problem_id/16273_author_id/Accepted.py	
+@@ -1,17 +1,9 @@
+-k,b,n,t=input().split()
+-
+-k=int(k)
+-b=int(b)
+-n=int(n)
+-t=int(t)
+-
+-x=1
+-for i in range(n):
+-    x=k*x+b
+-num=t
+-sec=0
+-while(num<x):
+-    num=k*num+b
+-    sec+=1
+-
+-print(sec)
+\ No newline at end of file
++k, b, n, t = map(int, input().split())
++cur = 1
++dec = 1
++while (dec <= n):
++    cur = cur * k + b
++    if (cur > t):
++        break
++    dec += 1
++print(n - dec + 1)
+\ No newline at end of file

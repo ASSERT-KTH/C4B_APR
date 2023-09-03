@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/208_problem_id/23813_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/208_problem_id/23813_author_id/Accepted.py
+index 62b64b7..1fa1f7a 100644
+--- a/Users/bardia/Downloads/data 4/data/208_problem_id/23813_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/208_problem_id/23813_author_id/Accepted.py	
+@@ -4,6 +4,7 @@ x1=int (l1[0])
+ y1=int (l1[1])
+ x2=int (l2[0])
+ y2=int (l2[1])
++c=0
+ if (x1!=x2 and y1!=y2) :
+     if (x2>x1 and y2>y1 ):
+         c=min(x2-x1,y2-y1)
+@@ -37,8 +38,9 @@ if (x1!=x2 and y1!=y2) :
+             c=c-x2+x1
+         else :
+             c=c-y1+y2
+-    elif x1==x2 :
+-        c=abs(y1-y2)
+-    else:
+-        c=abs(x1-x2)
++elif x1==x2 :
++    c=abs(y1-y2)
++elif y1==y2:
++    c=abs(x1-x2)
++    
+ print (c)
+\ No newline at end of file

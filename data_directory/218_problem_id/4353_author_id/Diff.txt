@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/218_problem_id/4353_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/218_problem_id/4353_author_id/Accepted.py
+index 39caaae..a051d89 100644
+--- a/Users/bardia/Downloads/data 4/data/218_problem_id/4353_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/218_problem_id/4353_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ h,m=map(int,input().split(":"))
+-m+=int(input)
++m+=int(input())
+ h=(h+m//60)%24
+ m=m%60
+ f=lambda x:"0"*(not x//10)+str(x)

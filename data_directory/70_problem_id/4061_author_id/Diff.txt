@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/70_problem_id/4061_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/70_problem_id/4061_author_id/Accepted.py
+index cb5529a..a0d0066 100644
+--- a/Users/bardia/Downloads/data 4/data/70_problem_id/4061_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/70_problem_id/4061_author_id/Accepted.py	
+@@ -14,7 +14,7 @@ l=[]
+ for i in range(7,-1,-1) :
+     for j in range(7,-1,-1) :
+         if M[i][j]=='B' and j not in l :
+-            if p<8-i-1 :
++            if p<=8-i-1 :
+                 
+                 print('A')
+             else :

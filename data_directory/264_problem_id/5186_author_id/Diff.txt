@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/264_problem_id/5186_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/264_problem_id/5186_author_id/Accepted.py
+index 841afd1..ca53fa1 100644
+--- a/Users/bardia/Downloads/data 4/data/264_problem_id/5186_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/264_problem_id/5186_author_id/Accepted.py	
+@@ -6,8 +6,7 @@ def f(n):
+ 
+ 
+ def choose(n, k):
+-    return f(n) / f(k) * f(n - k)
+-
++    return f(n) // (f(k) * f(n - k))
+ 
+ N = int(input())
+ print(int(choose(N, 5) + choose(N, 6) + choose(N, 7)))
+\ No newline at end of file

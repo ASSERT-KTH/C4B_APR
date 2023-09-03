@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1803_problem_id/1287_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1803_problem_id/1287_author_id/Accepted.py
+index b3ee127..63ff616 100644
+--- a/Users/bardia/Downloads/data 4/data/1803_problem_id/1287_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1803_problem_id/1287_author_id/Accepted.py	
+@@ -4,5 +4,7 @@ if __name__ == '__main__':
+         print(n)
+     elif n % 2 > 0:
+         print(n * (n - 1) * (n - 2))
++    elif n % 3 > 0:
++        print(n * (n - 1) * (n - 3))
+     else:
+         print((n - 1) * (n - 2) * (n - 3))
+\ No newline at end of file

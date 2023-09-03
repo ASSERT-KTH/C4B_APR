@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1960_problem_id/23401_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1960_problem_id/23401_author_id/Accepted.py
+index aa7448b..b67e69c 100644
+--- a/Users/bardia/Downloads/data 4/data/1960_problem_id/23401_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1960_problem_id/23401_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ from sys import stdin
+ r = [x.rstrip().find('1') for i,x in enumerate(stdin.readlines())]
+ for i,x in enumerate(r):
+-    if x>0:
++    if x>=0:
+         print (abs(2-i) + abs(x-4)//2)
+         break
+\ No newline at end of file

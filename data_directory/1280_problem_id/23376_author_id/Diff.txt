@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/23376_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/23376_author_id/Accepted.py
+index 205cf10..7311aab 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/23376_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/23376_author_id/Accepted.py	
+@@ -7,9 +7,11 @@ for i in range(len(a)):
+ a.sort()
+ a.reverse()
+ sum = 0
+-while k>0:
++while k>0 and len(a)>0:
+ 	k -= a[0]
+ 	a.remove(a[0])
+ 	sum += 1
+-
+-print(sum)
+\ No newline at end of file
++if k > 0:
++	print(-1)
++else:
++	print(sum)
+\ No newline at end of file

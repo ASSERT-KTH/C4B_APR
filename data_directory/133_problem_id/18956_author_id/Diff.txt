@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/133_problem_id/18956_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/133_problem_id/18956_author_id/Accepted.py
+index ad54147..1f2c2b7 100644
+--- a/Users/bardia/Downloads/data 4/data/133_problem_id/18956_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/133_problem_id/18956_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ for i in range(0,3):
+         sum1+=(a[i]-b[i])//2
+     else:
+         sum2+=b[i]-a[i]
+-if(sum1>sum2):
++if(sum1>=sum2):
+     print ("Yes")
+ else:
+     print ("No")
+\ No newline at end of file

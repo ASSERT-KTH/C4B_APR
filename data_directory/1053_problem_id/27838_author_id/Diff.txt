@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1053_problem_id/27838_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1053_problem_id/27838_author_id/Accepted.py
+index dd5dc90..8a054e4 100644
+--- a/Users/bardia/Downloads/data 4/data/1053_problem_id/27838_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1053_problem_id/27838_author_id/Accepted.py	
+@@ -9,8 +9,8 @@ for i in range(0,x+1):
+ 	if(flag == True):
+ 		break
+ 	for j in range(0,y+1):
+-		s = i * '4' + j * '7'
+ 		if(i*4+j*7 == n):
++			s = i * '4' + j * '7'
+ 			flag = True
+ 			print(s)
+ 			break

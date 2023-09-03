@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1274_problem_id/60676_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1274_problem_id/60676_author_id/Accepted.py
+index 3be148e..d75f4a7 100644
+--- a/Users/bardia/Downloads/data 4/data/1274_problem_id/60676_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1274_problem_id/60676_author_id/Accepted.py	
+@@ -1,4 +1,8 @@
+-k,l,m,n,d = map(int, input().split())
++k = int(input())
++l = int(input())
++m = int(input())
++n = int(input())
++d = int(input())
+ damaged_dragons = 0
+ 
+ for i in range(1,d+1):

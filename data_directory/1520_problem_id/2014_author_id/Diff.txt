@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1520_problem_id/2014_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1520_problem_id/2014_author_id/Accepted.py
+index 8ecb0d9..c9b6fdf 100644
+--- a/Users/bardia/Downloads/data 4/data/1520_problem_id/2014_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1520_problem_id/2014_author_id/Accepted.py	
+@@ -1,4 +1,8 @@
+-n,a,b,c=map(int,raw_input().split())
+-z=[0]+[-1e9]*5000
+-for i in range(1,n+1):z[i]=max(z[i-a],z[i-b],z[i-c])+1
+-print(z[n])
+\ No newline at end of file
++n,a,b,c=map(int,input().split())
++l=[-1]*8001
++l[0]=0
++for i in range(1,n+1):
++    if max(l[i-a],l[i-b],l[i-c])>-1:
++        l[i]=max(l[i-a],l[i-b],l[i-c])+1
++
++print(l[n])
+\ No newline at end of file

@@ -1,0 +1,46 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1975_problem_id/54320_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1975_problem_id/54320_author_id/Accepted.py
+index d0a74de..7353e9c 100644
+--- a/Users/bardia/Downloads/data 4/data/1975_problem_id/54320_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1975_problem_id/54320_author_id/Accepted.py	
+@@ -16,20 +16,22 @@ def luckynum(x):
+     return True 
+ l=seperateints(input())
+ s=input()
+-for i in range(l[1])  :
+-    kk=''
+-    k=0
+-    while k+1<len(s) :
+-        if s[k]=='B' and s[k+1]=='G':
+-            kk=kk+'GB'
+-            k+=2
+-            if k+1==len(s):
+-                kk=kk+s[len(s)-1]
+-                break
+-        else :
+-            kk=kk+s[k]
+-            if k+1==len(s)-1 :
+-                kk=kk+s[k+1]
+-            k+=1
+-    s=kk        
+-print(s)
+\ No newline at end of file
++if len(s)>1 :
++    for i in range(l[1])  :
++        kk=''
++        k=0
++        while k+1<len(s) :
++            if s[k]=='B' and s[k+1]=='G':
++                kk=kk+'GB'
++                k+=2
++                if k+1==len(s):
++                    kk=kk+s[len(s)-1]
++                    break
++            else :
++                kk=kk+s[k]
++                if k+1==len(s)-1 :
++                    kk=kk+s[k+1]
++                k+=1
++        s=kk        
++    print(s)            
++else :print(s)
+\ No newline at end of file

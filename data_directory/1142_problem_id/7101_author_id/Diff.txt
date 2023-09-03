@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1142_problem_id/7101_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1142_problem_id/7101_author_id/Accepted.py
+index a2793a6..97be8f4 100644
+--- a/Users/bardia/Downloads/data 4/data/1142_problem_id/7101_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1142_problem_id/7101_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ n, a, b = map(int, str(input()).strip().split())
+-print (n - max(a + 1, n - b - 1, 1) + 1)
+\ No newline at end of file
++print (n - max(a + 1, n - b, 1) + 1)
+\ No newline at end of file

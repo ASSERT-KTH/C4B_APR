@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/105055_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/105055_author_id/Accepted.py
+index 734a14d..3ac60a6 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/105055_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/105055_author_id/Accepted.py	
+@@ -21,18 +21,15 @@ def calc_substr(s, sub):
+     >>> calc_substr('VKKKK', 'VK')
+     2
+     """
+-    once_changed = 0
+-    cnt = 0
+-    acc = ''
+-    for lit in s:
+-        acc += lit
+-        if 'VK' in acc:
+-            cnt += 1
+-            acc = ''
+-        if 'KK' in acc or 'VV' in acc and not once_changed:
+-            once_changed = 1
+-            acc = ''
+-    return cnt+once_changed
++    max_cnt = s.count(sub)
++    for i in range(len(s)):
++        l = list(s)
++        for k in 'VK':
++            l[i] = k
++            tmp_cnt = ''.join(l).count(sub)
++            max_cnt = max(max_cnt, tmp_cnt)
++    return max_cnt
++
+ 
+ if __name__ == '__main__':
+     s = sys.stdin.readline().strip()

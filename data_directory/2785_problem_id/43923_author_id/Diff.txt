@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/43923_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/43923_author_id/Accepted.py
+index 509f683..cf97ab5 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/43923_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/43923_author_id/Accepted.py	
+@@ -21,6 +21,6 @@ if k==0:
+     z=s
+ #print(mm)
+ 
+-if (vv in z) or (kk in z):
++if (vv in z) or (kk in z) or (vv in s) or (kk in s):
+     mm=1
+ print(k+mm)
+\ No newline at end of file

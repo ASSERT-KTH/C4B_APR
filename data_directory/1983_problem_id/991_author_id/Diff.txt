@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1983_problem_id/991_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1983_problem_id/991_author_id/Accepted.py
+index 005a4a4..e096e02 100644
+--- a/Users/bardia/Downloads/data 4/data/1983_problem_id/991_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1983_problem_id/991_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ n=int(input())
+-print(int((n*(n-1)*(n+4))/6)+1)
+\ No newline at end of file
++print(int(n*(n**2+5)/6))
+\ No newline at end of file

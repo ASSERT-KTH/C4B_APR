@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1722_problem_id/6826_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1722_problem_id/6826_author_id/Accepted.py
+index a0310f9..6ae1e12 100644
+--- a/Users/bardia/Downloads/data 4/data/1722_problem_id/6826_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1722_problem_id/6826_author_id/Accepted.py	
+@@ -9,7 +9,7 @@ def check(s1,s2):
+ 
+ N = int(input())
+ div = 0
+-bound = math.ceil(math.sqrt(N))
++bound = math.floor(math.sqrt(N))
+ for i in range(bound):
+ 	k = i+1
+ 	if(N%k==0):

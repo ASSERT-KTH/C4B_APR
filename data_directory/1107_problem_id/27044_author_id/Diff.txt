@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/27044_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/27044_author_id/Accepted.py
+index 000d2cf..cff3575 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/27044_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/27044_author_id/Accepted.py	
+@@ -17,7 +17,9 @@ while s>0:
+     s=s-n
+     if s==0:
+         print(0)
++        quit()
+     m=gcd(y,s)
+-    s=s-n
++    s=s-m
+     if s==0:
+-        print(1)
+\ No newline at end of file
++        print(1)
++        quit()
+\ No newline at end of file

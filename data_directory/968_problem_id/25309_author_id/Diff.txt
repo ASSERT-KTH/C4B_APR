@@ -1,0 +1,50 @@
+diff --git a/Users/bardia/Downloads/data 4/data/968_problem_id/25309_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/968_problem_id/25309_author_id/Accepted.py
+index 423bafc..e689111 100644
+--- a/Users/bardia/Downloads/data 4/data/968_problem_id/25309_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/968_problem_id/25309_author_id/Accepted.py	
+@@ -1,17 +1,27 @@
+-len_origin, len_missing = (int(x) for x in input().split())
+-missing_in_origin_counter = 0
+-origin = [int(x) for x in input().split()]
+-missing = [int(x) for x in input().split()]
+-missing = sorted(missing, reverse=True)
+-idx_missing = 0
+-final = []
+-for idx_origin, number in enumerate(origin):
+-    if number == 0:
+-        final.append(missing[idx_missing])
+-        idx_missing += 1
+-    else:
+-        final.append(number)
+-if final == sorted(final):
+-    print('No')
++month, first_day = (int(x) for x in input().split())
++
++month_to_len = {1: 31, 2: 28,
++                3: 31, 4: 30,
++                5: 31, 6: 30,
++                7: 31, 8: 31,
++                9: 30, 10: 31,
++                11: 30, 12: 31
++               }
++               
++len_to_start = {28: 1, 
++                30: 6, 
++                31: 5
++               }
++               
++len_to_min_columns = {28: 4,
++                      30: 5,
++                      31: 5
++                     }
++
++month_len = month_to_len[month]
++columns_nr = len_to_min_columns[month_len]
++if first_day > len_to_start[month_len]:
++    columns_nr += 1
++    print(columns_nr)
+ else:
+-    print('Yes')
+\ No newline at end of file
++    print(columns_nr)
+\ No newline at end of file

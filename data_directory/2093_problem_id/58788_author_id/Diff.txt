@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2093_problem_id/58788_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2093_problem_id/58788_author_id/Accepted.py
+index 404446c..b4d3f91 100644
+--- a/Users/bardia/Downloads/data 4/data/2093_problem_id/58788_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2093_problem_id/58788_author_id/Accepted.py	
+@@ -8,4 +8,4 @@ if k>26 or k>n or k==1 and n>1:
+ elif k==1 and n==1:
+   print('a')
+ else:
+-  print(('ab'*((n+1)/2))[:n-k+2]+string.ascii_lowercase[2:k])
+\ No newline at end of file
++  print(('ab'*(n+1>>1))[:n-k+2]+string.ascii_lowercase[2:k])
+\ No newline at end of file

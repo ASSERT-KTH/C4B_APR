@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2596_problem_id/15480_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2596_problem_id/15480_author_id/Accepted.py
+index 6f925af..9bf1df0 100644
+--- a/Users/bardia/Downloads/data 4/data/2596_problem_id/15480_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2596_problem_id/15480_author_id/Accepted.py	
+@@ -2,12 +2,16 @@ n, l, r = map(int, input().split())
+ 
+ binl = tuple(map(int, bin(n)[2:]))
+ 
++# print(binl)
++
+ res = 0
+ 
+ for i in range(len(binl)):
+     if not binl[i]:
++        # print(i, binl[i], "skipped")
+         continue
+-    cur = 1 << i
++    cur = (1 << i) + (((l >> (i + 1)) - 1) << (i + 1))
++    # print(i, cur)
+     dif = 1 << (i + 1)
+     while cur <= r:
+         if cur >= l:

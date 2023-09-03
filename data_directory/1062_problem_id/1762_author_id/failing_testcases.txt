@@ -1,0 +1,1 @@
+[{'inputdata': '444444444444444444', 'expectedresult': 'NO'}, {'inputdata': '474447447774444774', 'expectedresult': 'NO'}, {'inputdata': '777777777777777', 'expectedresult': 'NO'}, {'inputdata': '4744447444444', 'expectedresult': 'NO'}, {'inputdata': '777777777444444444', 'expectedresult': 'NO'}]

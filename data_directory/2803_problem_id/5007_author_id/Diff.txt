@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2803_problem_id/5007_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2803_problem_id/5007_author_id/Accepted.py
+index 2011d53..4055d5f 100644
+--- a/Users/bardia/Downloads/data 4/data/2803_problem_id/5007_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2803_problem_id/5007_author_id/Accepted.py	
+@@ -11,7 +11,7 @@ else:
+       if i > ret:
+         ret = i
+       ni = n//i
+-      if i < ni and ni < N:
++      if i < ni and ni <= N:
+         if ni > ret:
+           ret = ni
+           break

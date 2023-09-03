@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1142_problem_id/1861_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1142_problem_id/1861_author_id/Accepted.py
+index 28b367c..aa19ee3 100644
+--- a/Users/bardia/Downloads/data 4/data/1142_problem_id/1861_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1142_problem_id/1861_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ n, a, b = (int(i) for i in input().split())
+-print(n - a)
+\ No newline at end of file
++print(min(n - a, b + 1))
+\ No newline at end of file

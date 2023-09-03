@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1390_problem_id/62485_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1390_problem_id/62485_author_id/Accepted.py
+index ab90950..af8ce92 100644
+--- a/Users/bardia/Downloads/data 4/data/1390_problem_id/62485_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1390_problem_id/62485_author_id/Accepted.py	
+@@ -1,7 +1,12 @@
+-import math
+-
+-data = input().split()
+-
+-N, X, Y = int(data[0]), int(data[1]), int(data[2])
+-
+-print(math.ceil(N * (Y/100)) - X)
+\ No newline at end of file
++import math
++
++data = input().split()
++
++N, X, Y = int(data[0]), int(data[1]), int(data[2])
++
++clones = math.ceil(N * (Y/100)) - X
++
++if clones > 0:
++    print(clones)
++else:
++    print(0)
+\ No newline at end of file

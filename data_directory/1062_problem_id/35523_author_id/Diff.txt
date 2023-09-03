@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/35523_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/35523_author_id/Accepted.py
+index ffe1adc..665cb62 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/35523_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/35523_author_id/Accepted.py	
+@@ -1,7 +1,9 @@
+ t=input()
+-t=t.replace("4","")
+-t=t.replace("7","")
+-if len(t)<1:
++res=0
++for i in t:
++    if i == "4" or i == "7":
++        res+=1
++if res == 4 or res == 7:
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/419_problem_id/1213_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/419_problem_id/1213_author_id/Accepted.py
+index 6be991f..87d1673 100644
+--- a/Users/bardia/Downloads/data 4/data/419_problem_id/1213_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/419_problem_id/1213_author_id/Accepted.py	
+@@ -7,8 +7,8 @@ if b>0:
+     print(Sum)
+ elif b<0:
+     Sum = a - abs(b)%n
+-    if Sum <0:
+-        Sum = Sum +6
++    if Sum <=0:
++        Sum = Sum +n
+     print(Sum)
+ elif b == 0:
+     print(a)
+\ No newline at end of file

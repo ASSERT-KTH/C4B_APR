@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1738_problem_id/531_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1738_problem_id/531_author_id/Accepted.py
+index 1bc5352..063958f 100644
+--- a/Users/bardia/Downloads/data 4/data/1738_problem_id/531_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1738_problem_id/531_author_id/Accepted.py	
+@@ -1,15 +1,6 @@
+ '''input
+-4 6 6
++1 1 1
+ '''
+-def gcd(x, y):
+-	while y != 0:
+-		x, y = y, x % y
+-	return x
+-a, b, c = map(int, input().split())
+-l = a * b // gcd(a, b)
+-l = l * c // gcd(l, c)
+-x = (l // a + l // b + l // c)
+-if len(set([a, b, c])) < 3:
+-	print(4*x)
+-else:
+-	print(8*x)
+\ No newline at end of file
++s1, s2, s3 = map(int, input().split())
++a, b, c = (s1*s3)//s2, (s1*s2)//s3, (s2*s3)//s1
++print(int(4*(a**0.5+b**0.5+c**0.5)))
+\ No newline at end of file

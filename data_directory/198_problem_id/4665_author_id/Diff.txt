@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/198_problem_id/4665_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/198_problem_id/4665_author_id/Accepted.py
+index e75800a..9ec216a 100644
+--- a/Users/bardia/Downloads/data 4/data/198_problem_id/4665_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/198_problem_id/4665_author_id/Accepted.py	
+@@ -4,4 +4,5 @@ ans = ""
+ for i in range(32, -1, -1):
+     if n & (1 << i) is not 0:
+         ans += str(i + 1)
++        ans += ' '
+ print(ans)
+\ No newline at end of file

@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/1762_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/1762_author_id/Accepted.py
+index eff841b..23a22f3 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/1762_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/1762_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ s=input()
+-print('YNEOS'[len(set(str(s.count('4')+s.count('7')))-set('47'))::2])
+\ No newline at end of file
++print('YNEOS'[len(set(str(s.count('4')+s.count('7')))-set('47'))>0::2])
+\ No newline at end of file

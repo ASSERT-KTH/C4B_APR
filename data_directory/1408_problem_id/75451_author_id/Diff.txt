@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1408_problem_id/75451_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1408_problem_id/75451_author_id/Accepted.py
+index 5ad9e80..40182bc 100644
+--- a/Users/bardia/Downloads/data 4/data/1408_problem_id/75451_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1408_problem_id/75451_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ r=1
+ for i in range(int(input()),1,-1):
+-    r+=2*i*(i+1)
++    r+=6*((i-1)*2)
+ print(r)
+\ No newline at end of file

@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1274_problem_id/1092_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1274_problem_id/1092_author_id/Accepted.py
+index c606ed1..00d578b 100644
+--- a/Users/bardia/Downloads/data 4/data/1274_problem_id/1092_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1274_problem_id/1092_author_id/Accepted.py	
+@@ -3,11 +3,11 @@ l = int(input())
+ m = int(input())
+ n = int(input())
+ d = int(input())
+-contador = 0
++contador = -1
+ if k<=d and l<=d and m<=d and n<=d:
+-    for i in range(d):
+-        if (i%k!=0) and (i%l!=0) and (i%m!=0) and (i%n!=0):
++    for i in range(d+1):
++        if (i%k==0) or (i%l==0) or (i%m==0) or (i%n==0):
+             contador +=1
+-    print(d-contador)
++    print(contador)
+ else:
+     print('0')
+\ No newline at end of file

@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2576_problem_id/3730_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2576_problem_id/3730_author_id/Accepted.py
+index bd62850..040ca9d 100644
+--- a/Users/bardia/Downloads/data 4/data/2576_problem_id/3730_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2576_problem_id/3730_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ k,a,b=map(int,input().split())
+-if (a>=k and b>=k) or (a%k==0 and a%k!=0)  or (b%k==0 and b%k!=0):
++if (a>=k and b>=k) or (a%k==0 and a//k!=0)  or (b%k==0 and b//k!=0):
+     exit(print(a//k + b//k))
+ exit(print('-1'))
+\ No newline at end of file

@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1756_problem_id/5883_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1756_problem_id/5883_author_id/Accepted.py
+index ad65ac4..8851322 100644
+--- a/Users/bardia/Downloads/data 4/data/1756_problem_id/5883_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1756_problem_id/5883_author_id/Accepted.py	
+@@ -1,6 +1,2 @@
+-a = list(input().split())
+-b = []
+-for i in range(len(a)):
+-    if a[i] not in b:
+-        b += a[i]
+-print(4-len(b))
+\ No newline at end of file
++a = list(map(int, input().split()))
++print(4-len(set(a)))
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1053_problem_id/46015_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1053_problem_id/46015_author_id/Accepted.py
+index 29c43bc..102faa1 100644
+--- a/Users/bardia/Downloads/data 4/data/1053_problem_id/46015_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1053_problem_id/46015_author_id/Accepted.py	
+@@ -9,7 +9,7 @@ for a in range(k):
+     ls.append(7)
+     lss.append('7')
+ l = len(ls)
+-while i < l+2:
++while i < l + 5:
+     P = 0
+     for b in ls:
+         P += b

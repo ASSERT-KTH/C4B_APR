@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2719_problem_id/26087_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2719_problem_id/26087_author_id/Accepted.py
+index d5e1b58..c58f104 100644
+--- a/Users/bardia/Downloads/data 4/data/2719_problem_id/26087_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2719_problem_id/26087_author_id/Accepted.py	
+@@ -1,10 +1,12 @@
+-a,b=int(input().split())
++a,b=input().split()
++a=int(a)
++b=int(b)
+ def c(a,b) :
+     counter =0
+-    while(a<=b) :
+-        a=3*a
+-        b=2*b
++    while(True) :
++        if(a>b):
++            return counter
++        a=a*3
++        b=b*2
+         counter = counter + 1
+-    return counter
+-    end
+ print(c(a,b))
+\ No newline at end of file

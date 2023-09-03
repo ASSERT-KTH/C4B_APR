@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/305_problem_id/16956_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/305_problem_id/16956_author_id/Accepted.py
+index 89af89e..1523578 100644
+--- a/Users/bardia/Downloads/data 4/data/305_problem_id/16956_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/305_problem_id/16956_author_id/Accepted.py	
+@@ -8,7 +8,7 @@ for let in reversed("{0:b}".format(x)):
+ 
+ zbytkove = s - x
+ 
+-if zbytkove % 2 == 1:
++if zbytkove % 2 == 1 or x > s:
+     print(0)
+ elif s == x:
+     print(2**ones_in_x - 2)

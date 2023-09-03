@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2697_problem_id/78602_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2697_problem_id/78602_author_id/Accepted.py
+index 171c3f4..ae80dff 100644
+--- a/Users/bardia/Downloads/data 4/data/2697_problem_id/78602_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2697_problem_id/78602_author_id/Accepted.py	
+@@ -2,8 +2,8 @@ a, b = map(int, input().split())
+ c, d = map(int, input().split())
+ res = -1
+ k = 0
+-while k < a and res == -1:
+-    if (d + k * c - b) % a == 0:
++while (k < a or (d + (k - 1) * c - b) // a < 0) and res == -1:
++    if (d + k * c - b) % a == 0 and (d + k * c - b) // a >= 0:
+         res = d + k * c
+     k += 1
+ print(res)
+\ No newline at end of file

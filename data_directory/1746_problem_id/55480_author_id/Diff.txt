@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1746_problem_id/55480_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1746_problem_id/55480_author_id/Accepted.py
+index 6edfffa..cf9deb3 100644
+--- a/Users/bardia/Downloads/data 4/data/1746_problem_id/55480_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1746_problem_id/55480_author_id/Accepted.py	
+@@ -1,6 +1,2 @@
+-n = int(input())
+-t = input()
+-s = 0
+-for i in range(1, n):
+-    s += t[i] == t[i - 1]
+-print(s)
+\ No newline at end of file
++n, m = map(int, input().split())
++print((pow(3, n, m) - 1) % m)
+\ No newline at end of file

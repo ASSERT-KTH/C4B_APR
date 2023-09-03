@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2766_problem_id/27076_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2766_problem_id/27076_author_id/Accepted.py
+index de989ae..544e666 100644
+--- a/Users/bardia/Downloads/data 4/data/2766_problem_id/27076_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2766_problem_id/27076_author_id/Accepted.py	
+@@ -2,7 +2,10 @@ s=input()
+ k,n,z=0,len(s)//2,len(s)
+ for i in range(n):
+     if s[i]!=s[z-i-1]:k+=1
+-if k!=1:
+-    print("NO")
++if k==1:
++    print("YES")
+ else:
+-    print("YES")
+\ No newline at end of file
++    if k==0 and z%2==1:
++        print("YES")
++    else:
++        print("NO")
+\ No newline at end of file

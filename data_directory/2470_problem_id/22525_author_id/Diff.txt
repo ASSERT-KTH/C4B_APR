@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2470_problem_id/22525_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2470_problem_id/22525_author_id/Accepted.py
+index 3ca0601..147cf41 100644
+--- a/Users/bardia/Downloads/data 4/data/2470_problem_id/22525_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2470_problem_id/22525_author_id/Accepted.py	
+@@ -1,7 +1,8 @@
+ l=[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 ,53]
++p=input().split()
+ 
+-m=int(input())
+-n=int(input())
++m=int(p[0])
++n=int(p[1])
+ 
+ if m not in l:
+     print("NO")

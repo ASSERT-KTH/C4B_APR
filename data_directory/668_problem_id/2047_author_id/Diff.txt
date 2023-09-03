@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/668_problem_id/2047_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/668_problem_id/2047_author_id/Accepted.py
+index 7126058..e2ceb8d 100644
+--- a/Users/bardia/Downloads/data 4/data/668_problem_id/2047_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/668_problem_id/2047_author_id/Accepted.py	
+@@ -1,6 +1,11 @@
+ x = int(input())
+ for i in range(x):
+     if(i%2==0):
+-        print("I hate it",end=" ")
++        print("I hate",end=" ")
++    elif(i%2==1):
++        print("I love",end=" ")
++
++    if(i == x-1):
++        print("it")
+     else:
+-        print("I love it",end=" ")
+\ No newline at end of file
++        print("that",end=" ")
+\ No newline at end of file

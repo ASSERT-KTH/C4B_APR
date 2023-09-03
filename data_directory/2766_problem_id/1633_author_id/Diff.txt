@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2766_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2766_problem_id/1633_author_id/Accepted.py
+index 270291e..0cd10b5 100644
+--- a/Users/bardia/Downloads/data 4/data/2766_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2766_problem_id/1633_author_id/Accepted.py	
+@@ -1,18 +1,15 @@
++alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+ string = input()
+ n = len(string)
+-if n == 1:
+-    results = "YES"
+-else:
+-    letters = set(string)
+-    results = "NO"
+-    for x in range(n):
+-        for y in letters:
+-            temp = list(string)
+-            a = temp[x]
+-            temp[x] = y
+-            if temp[::-1] == temp and a != y:
+-                results = "YES"
+-                break
+-        if results == "YES":
++results = "NO"
++for x in range(n):
++    for y in alphabet:
++        temp = list(string)
++        a = temp[x]
++        temp[x] = y
++        if temp[::-1] == temp and a != y:
++            results = "YES"
+             break
++    if results == "YES":
++        break
+ print(results)
+\ No newline at end of file

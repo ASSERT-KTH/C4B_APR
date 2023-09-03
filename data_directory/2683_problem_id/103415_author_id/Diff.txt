@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2683_problem_id/103415_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2683_problem_id/103415_author_id/Accepted.py
+index 128dd54..f7a8ce8 100644
+--- a/Users/bardia/Downloads/data 4/data/2683_problem_id/103415_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2683_problem_id/103415_author_id/Accepted.py	
+@@ -6,5 +6,5 @@ d = int(input())
+ n = a*8+b*4+c*2+d
+ #    0123456789012345
+ #    !!!!!!!?!!!?!!!?  
+-a = "0101000011001010"
++a = "0101000011011011"
+ print(a[n])
+\ No newline at end of file

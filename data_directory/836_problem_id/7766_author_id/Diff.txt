@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/836_problem_id/7766_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/836_problem_id/7766_author_id/Accepted.py
+index 19b6410..7fd66c3 100644
+--- a/Users/bardia/Downloads/data 4/data/836_problem_id/7766_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/836_problem_id/7766_author_id/Accepted.py	
+@@ -5,7 +5,7 @@ lim = 64
+ ans = 1
+ now = 2
+ pre = 1
+-while(now<=c):
++while(now<c):
+     pre+=now+1
+     pre,now = swap(pre,now)
+     ans+=1

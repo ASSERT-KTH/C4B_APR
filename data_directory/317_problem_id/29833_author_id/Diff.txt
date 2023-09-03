@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/317_problem_id/29833_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/317_problem_id/29833_author_id/Accepted.py
+index e66c867..0a28ff3 100644
+--- a/Users/bardia/Downloads/data 4/data/317_problem_id/29833_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/317_problem_id/29833_author_id/Accepted.py	
+@@ -1,9 +1,10 @@
+ def drive(n,a):
+-    time = 0
+     if a == n:
+         return 1
+-    while time != a and time != n-a:
+-        time = time + 1
++    elif a%2 != 0:
++        time = a//2+1
++    elif a%2 == 0:
++        time = ((n-a)//2)+1
+     return time
+     
+         

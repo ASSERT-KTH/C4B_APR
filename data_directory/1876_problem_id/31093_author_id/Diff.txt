@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1876_problem_id/31093_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1876_problem_id/31093_author_id/Accepted.py
+index ec56329..a91f080 100644
+--- a/Users/bardia/Downloads/data 4/data/1876_problem_id/31093_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1876_problem_id/31093_author_id/Accepted.py	
+@@ -1,16 +1,11 @@
+ n=int(input())
+ if n==1 or n==2:
+     print(-1)
++elif n==3:
++    print(210)
+ else:
+-    s=""
+-    i=0
+-    while i<n:
+-        if i==0:
+-            s=s+"1"
+-        else:
+-            s=s+"0"
+-        i=i+1
+-    if int(s)%210==0:
+-        print(int(s))
++    a=(10**(n-1))
++    if a%210==0:
++        print(a)
+     else:
+-        print(((int(s)//210)+1)*210)
+\ No newline at end of file
++        print(((a//210)+1)*210)
+\ No newline at end of file

@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2771_problem_id/104799_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2771_problem_id/104799_author_id/Accepted.py
+index b49652d..11a61d6 100644
+--- a/Users/bardia/Downloads/data 4/data/2771_problem_id/104799_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2771_problem_id/104799_author_id/Accepted.py	
+@@ -1,15 +1,17 @@
+-n,t,k,d= [int(x) for x in input().split(' ')];
+-time1=0;
+-if(n%k!=0):time1=int(n//k*t+t);
+-a=0;b=d;
++n,t,k,d=(int(x)for x in input().split(' '));
++
++time1=n//k*t;
++if(n%k!=0): time1=time1+t;
++
++a,b=0,d;
+ while(n>0):
+-    if (a<b):
++    if(a<b):
+         a=a+t;
+     else:
+         b=b+t;
+     n=n-k;
++    
+ time2=max(a,b);
+-if(time1>time2):
+-    print('Yes');
+-else:
+-    print('No');
+\ No newline at end of file
++
++if(time1>time2): print("YES");
++else: print("NO");
+\ No newline at end of file

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1267_problem_id/18569_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1267_problem_id/18569_author_id/Accepted.py
+index b26854b..b2ce1a0 100644
+--- a/Users/bardia/Downloads/data 4/data/1267_problem_id/18569_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1267_problem_id/18569_author_id/Accepted.py	
+@@ -11,7 +11,6 @@ s1=0
+ s2=0
+ 
+ for i in range(0,n//2):
+-    print(i)
+     s1+=num[i]
+ 
+ for i in range(n//2,n):

@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/159_problem_id/531_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/159_problem_id/531_author_id/Accepted.py
+index 6bf6245..8c7a9bc 100644
+--- a/Users/bardia/Downloads/data 4/data/159_problem_id/531_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/159_problem_id/531_author_id/Accepted.py	
+@@ -1,11 +1,11 @@
+ '''input
+-30 of month
++6 of month
+ '''
+ s = input().split()
+ n, t = int(s[0]), s[2]
+ d = list(range(1,30)) * 12
+ d += [30]*11 + [31]*7
+-if t == "week" and n == 5 or n == 6:
++if t == "week" and (n == 5 or n == 6):
+ 	print(53)
+ elif t == "week":
+ 	print(52)

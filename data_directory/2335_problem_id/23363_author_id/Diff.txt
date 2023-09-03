@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/23363_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/23363_author_id/Accepted.py
+index cbfccfc..caf1218 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/23363_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/23363_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ e=hello.find('e',h,len(hello))
+ l1=hello.find('l', e, len(hello))
+ l2=hello.find('l', l1+1, len(hello))
+ o=hello.find('o', l2, len(hello))
+-if (h>0 and e>0 and l1>0 and l2>0 and o>0):
++if (h>=0 and e>0 and l1>0 and l2>0 and o>0):
+     print('YES')
+ else:
+     print('NO')
+\ No newline at end of file

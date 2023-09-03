@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/23306_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/23306_author_id/Accepted.py
+index daad171..193de28 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/23306_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/23306_author_id/Accepted.py	
+@@ -5,7 +5,7 @@ j=0
+ for k in range(len(n)):
+     if(n[k]==L[j]):
+         j+=1
+-    if(j==len(L)-1):
++    if(j==len(L)):
+         res="YES"
+         break
+ print(res)
+\ No newline at end of file

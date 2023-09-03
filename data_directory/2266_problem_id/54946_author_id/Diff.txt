@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2266_problem_id/54946_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2266_problem_id/54946_author_id/Accepted.py
+index 2f1a631..f88d4ab 100644
+--- a/Users/bardia/Downloads/data 4/data/2266_problem_id/54946_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2266_problem_id/54946_author_id/Accepted.py	
+@@ -1,6 +1,11 @@
+ inp = int(input())
+ d = 1
++c = 0
+ 
+ for i in range(0, inp-1):
+     d += i + 1
+-    print(d%inp, end=" ")
+\ No newline at end of file
++    if d%inp == 0:
++        c = inp
++    else:
++        c = d%inp
++    print(c, end=" ")
+\ No newline at end of file

@@ -1,0 +1,56 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2687_problem_id/9830_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2687_problem_id/9830_author_id/Accepted.py
+index 65bc830..a451c4b 100644
+--- a/Users/bardia/Downloads/data 4/data/2687_problem_id/9830_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2687_problem_id/9830_author_id/Accepted.py	
+@@ -1,16 +1,34 @@
+-(n,m) = map(int, input().split())
+-if (n <= m):
+-    print (n)
++# MAX_INT = 1000000000
++# (n,m) = map(int, input().split())
++
++# if n <= m:
++#     print n
++# else:
++#     M = m
++#     n -= m
++#     l = 0
++#     r = MAX_INT
++#     while (l < r):
++#         m = (l + r)/2
++#         val = m * (m+1)/2
++#         if val >= n:
++#             r = m
++#         else:
++#             l = m+1
++#     print l + M
++
++(n, m) = map(int, input().split())
++if n <= m:
++	print(n)
+ else:
+-    aM = m
+-    n = n - m
+-    l = 0
+-    r = 2e9
+-    while (l < r):
+-        m = (l + r)/2
+-        val = m*(m+1) / 2
+-        if (val >= n):
+-            r = m
+-        else:
+-            l = m + 1
+-    print (l + aM)
+\ No newline at end of file
++	aM = m
++	n -= m
++	(l, r) = (0, int(2e9))
++	while l < r:
++		m = (l + r) // 2;
++		val = m * (m+1) // 2;
++		if val >= n:
++			r = m
++		else:
++			l = m+1
++	print(l + aM)
+\ No newline at end of file

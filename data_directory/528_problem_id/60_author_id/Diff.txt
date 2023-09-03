@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/528_problem_id/60_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/528_problem_id/60_author_id/Accepted.py
+index d38b5df..304f16f 100644
+--- a/Users/bardia/Downloads/data 4/data/528_problem_id/60_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/528_problem_id/60_author_id/Accepted.py	
+@@ -1,11 +1,2 @@
+-n,k = map(int,input().split())
+-const = 0
+-num = 1
+-
+-while const != -1:
+-    const += 1
+-    num = const
+-    num = k * const
+-    if num > n:
+-        print(num)
+-        break
+\ No newline at end of file
++x,y = map(int,input().split())
++print(int(int(x/y+1)*y))
+\ No newline at end of file

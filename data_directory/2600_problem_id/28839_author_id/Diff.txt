@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2600_problem_id/28839_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2600_problem_id/28839_author_id/Accepted.py
+index b148908..fc0103f 100644
+--- a/Users/bardia/Downloads/data 4/data/2600_problem_id/28839_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2600_problem_id/28839_author_id/Accepted.py	
+@@ -2,4 +2,4 @@ n=int(input())
+ R = lambda: map(int,input().split())
+ l= list(R())
+ l.sort()
+-print((n-1)//2)
+\ No newline at end of file
++print(l[(n-1)//2])
+\ No newline at end of file

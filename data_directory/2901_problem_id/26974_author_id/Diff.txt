@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2901_problem_id/26974_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2901_problem_id/26974_author_id/Accepted.py
+index bbffa9b..d145f50 100644
+--- a/Users/bardia/Downloads/data 4/data/2901_problem_id/26974_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2901_problem_id/26974_author_id/Accepted.py	
+@@ -4,9 +4,10 @@ d = 1
+ c = c - v0
+ 
+ while(c > 0):
+-    v = v0 + d*a - l
++    v = v0 + d*a
+     if (v > v1):
+         v = v1
++    v = v - l
+     c = c - v
+     d += 1
+ 

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/62026_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/62026_author_id/Accepted.py
+index df36ca4..89fed28 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/62026_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/62026_author_id/Accepted.py	
+@@ -12,5 +12,5 @@ for i in range(1, len(p)):
+         print("YES")
+         break
+ 
+-if i == len(p)-1:
++if i == len(p)-1 and cnt != 7:
+     print("NO")
+\ No newline at end of file

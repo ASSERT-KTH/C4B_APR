@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/153_problem_id/11216_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/153_problem_id/11216_author_id/Accepted.py
+index 009b24d..f738003 100644
+--- a/Users/bardia/Downloads/data 4/data/153_problem_id/11216_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/153_problem_id/11216_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ from math  import ceil
+ n = int(input())
+ if n&1 == 0:
+-	ans = 0
+-else :ans = ceil(n/4)-1
++	ans = ceil(n/4)-1
++else :ans = 0
+ print(ans)
+\ No newline at end of file

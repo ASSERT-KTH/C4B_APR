@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2324_problem_id/10198_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2324_problem_id/10198_author_id/Accepted.py
+index c9d7d72..d1f129b 100644
+--- a/Users/bardia/Downloads/data 4/data/2324_problem_id/10198_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2324_problem_id/10198_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ x = int( input() )
+-print( "YES" if x % 2 == 0 or x == 1 else "NO" )
+\ No newline at end of file
++print( "NO" if x & x-1 > 0 else "YES" )
+\ No newline at end of file

@@ -1,0 +1,1 @@
+[{'inputdata': 'BBBBBBBB\r\nBBBBBBBB\r\nBBBBBBBB\r\nBBBBBBBB\r\nBBBBBBBB\r\nBBBBBBBB\r\nBBBBBBBB\r\nBBBBBBBB', 'expectedresult': '8'}]

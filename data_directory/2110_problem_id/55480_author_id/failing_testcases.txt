@@ -1,0 +1,1 @@
+[{'inputdata': 'sm\r\n26', 'expectedresult': 'SM'}, {'inputdata': 'kGqopTbelcDUcoZgnnRYXgPCRQwSLoqeIByFWDI\r\n26', 'expectedresult': 'KGQOPTBELCDUCOZGNNRYXGPCRQWSLOQEIBYFWDI'}, {'inputdata': 'R\r\n26', 'expectedresult': 'R'}]

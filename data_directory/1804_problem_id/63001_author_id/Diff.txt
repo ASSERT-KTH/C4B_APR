@@ -1,0 +1,9 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1804_problem_id/63001_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1804_problem_id/63001_author_id/Accepted.py
+index 50f4f4c..547e9af 100644
+--- a/Users/bardia/Downloads/data 4/data/1804_problem_id/63001_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1804_problem_id/63001_author_id/Accepted.py	
+@@ -1 +1 @@
+-print("IGNORE HIM!" if len(input()) % 2 else "CHAT WITH HER!")
+\ No newline at end of file
++print("IGNORE HIM!" if len(set(input())) % 2 else "CHAT WITH HER!")
+\ No newline at end of file

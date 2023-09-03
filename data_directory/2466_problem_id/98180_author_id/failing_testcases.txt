@@ -1,0 +1,1 @@
+[{'inputdata': 'RUL', 'expectedresult': 'BUG'}, {'inputdata': 'ULURL', 'expectedresult': 'BUG'}, {'inputdata': 'LUUDU', 'expectedresult': 'BUG'}, {'inputdata': 'UUUDU', 'expectedresult': 'BUG'}, {'inputdata': 'RRUULLD', 'expectedresult': 'BUG'}, {'inputdata': 'RRRUUULLLDD', 'expectedresult': 'BUG'}]

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/153_problem_id/690_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/153_problem_id/690_author_id/Accepted.py
+index 1cd5d82..6a38eba 100644
+--- a/Users/bardia/Downloads/data 4/data/153_problem_id/690_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/153_problem_id/690_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ n = int(input())
+ if n%2==1:
+   print(0)
+   exit()
+-n /= 2
++n //= 2
+ if n%2==0:
+   print(n//2-1)
+ else:

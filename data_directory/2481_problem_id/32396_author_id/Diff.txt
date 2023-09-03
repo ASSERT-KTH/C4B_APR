@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/32396_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/32396_author_id/Accepted.py
+index 31bc284..ab5988b 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/32396_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/32396_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ count = int(input())
+ std = ["NULL","Sheldon", "Leonard", "Penny", "Rajesh", "Howard"]
+ fn = ''
+-if count<=5:print(std[count - 1])  
++if count<=5:print(std[count])  
+ else:
+ 	def findblock(cnt):
+ 		b = 0

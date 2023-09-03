@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2161_problem_id/7361_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2161_problem_id/7361_author_id/Accepted.py
+index 09fd973..edb46ce 100644
+--- a/Users/bardia/Downloads/data 4/data/2161_problem_id/7361_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2161_problem_id/7361_author_id/Accepted.py	
+@@ -25,7 +25,7 @@ if n1==n2 or n1-n2==1:
+     elif f3==0 and f4==0:
+         if n1==n2:
+             ai=0
+-        elif n1-n2==1:
+-            ai=1
++        elif n1-1==n2:
++            ai=5 if n2==4 else 1
+ 
+ print(a_str[ai if ai!=-1 else 2])
+\ No newline at end of file

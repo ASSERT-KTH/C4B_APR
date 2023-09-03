@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/6106_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/6106_author_id/Accepted.py
+index e6e1fb4..961c449 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/6106_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/6106_author_id/Accepted.py	
+@@ -3,11 +3,9 @@ i=0
+ j=0
+ x="hello"
+ while i<len(s) :
+-    if s[i]!=x[j] :
+-        i+=1
+     if s[i]==x[j] :
+         j+=1
+-        i+=1
++    i+=1
+     if j==5 :
+         print("YES")
+         break

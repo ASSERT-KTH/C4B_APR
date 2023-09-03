@@ -1,0 +1,1 @@
+[{'inputdata': 'x...\r\r\no.ox\r\r\nxo..\r\r\n....', 'expectedresult': 'NO'}, {'inputdata': '.xo.\r\r\nx.oo\r\r\n...x\r\r\n.o.x', 'expectedresult': 'NO'}, {'inputdata': '.oox\r\r\n..x.\r\r\n....\r\r\n....', 'expectedresult': 'YES'}]

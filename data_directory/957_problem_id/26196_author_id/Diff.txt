@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/957_problem_id/26196_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/957_problem_id/26196_author_id/Accepted.py
+index f13b4c3..6f2686e 100644
+--- a/Users/bardia/Downloads/data 4/data/957_problem_id/26196_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/957_problem_id/26196_author_id/Accepted.py	
+@@ -10,4 +10,6 @@ for i in range(4):
+         j = r
+         if s[j] != z[i]:
+             ans[i] += 1
+-        r += 4
+\ No newline at end of file
++        r += 4
++ans = map(str, ans)
++print (' '.join(ans))
+\ No newline at end of file

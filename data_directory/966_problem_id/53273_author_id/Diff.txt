@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/966_problem_id/53273_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/966_problem_id/53273_author_id/Accepted.py
+index 9494c00..0763ff8 100644
+--- a/Users/bardia/Downloads/data 4/data/966_problem_id/53273_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/966_problem_id/53273_author_id/Accepted.py	
+@@ -1,4 +1,7 @@
+ beds,pillows,frodo=map(int,input().split())
++flag=0
++if beds==pillows:
++    flag=1
+ pillows=pillows-beds-1
+ layer=2
+ while pillows>0:
+@@ -15,8 +18,11 @@ while pillows>0:
+     if pillows<0:
+         layer-=1      
+     layer+=1
+-    
+-if pillows<=0:
++if flag==1:
++    print('1')
++elif pillows<0:
++    print(layer)
++elif pillows==0:
+     print(layer)
+ else:
+     print(layer-1)
+\ No newline at end of file

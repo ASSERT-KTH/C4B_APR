@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/875_problem_id/19940_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/875_problem_id/19940_author_id/Accepted.py
+index b4c847d..899c99a 100644
+--- a/Users/bardia/Downloads/data 4/data/875_problem_id/19940_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/875_problem_id/19940_author_id/Accepted.py	
+@@ -2,6 +2,9 @@
+ 
+ def solve():
+     n = int(input().rstrip())
+-    print(n, n + 1, n * (n + 1))
++    if n > 1:
++        print(n, n + 1, n * (n + 1))
++    else:
++        print(-1)
+ 
+ solve()
+\ No newline at end of file

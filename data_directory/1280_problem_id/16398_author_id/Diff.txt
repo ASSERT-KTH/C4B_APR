@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/16398_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/16398_author_id/Accepted.py
+index 3903f14..b2385c3 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/16398_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/16398_author_id/Accepted.py	
+@@ -7,9 +7,9 @@ if k == 0:
+ 	print (0)
+ else:
+ 	for i in range(12):
+-		sum = sum + b[12 - i - 1]
++		sum = sum + b[11 - i]
+ 		if sum >= k:
+ 			print(i + 1)
+ 			break
+-		if sum < k and i == 12:
++		if sum < k and i == 11:
+ 			print(-1)
+\ No newline at end of file

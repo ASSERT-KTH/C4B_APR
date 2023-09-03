@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/13257_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/13257_author_id/Accepted.py
+index 498c747..556ad00 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/13257_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/13257_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ s=input()
+ c=s.count('VK')
+-s=s.replace('VK', '')
++s=s.replace('VK', 'x')
+ print(c+1 if s.count('VV') or s.count('KK') else c)
+\ No newline at end of file

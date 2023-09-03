@@ -1,0 +1,41 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1142_problem_id/22986_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1142_problem_id/22986_author_id/Accepted.py
+index 442544a..f9aa53a 100644
+--- a/Users/bardia/Downloads/data 4/data/1142_problem_id/22986_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1142_problem_id/22986_author_id/Accepted.py	
+@@ -1,22 +1,23 @@
+-#position
+-
+ string = input()
+ n, a, b = string.split()
++
++n = int(n)
+ a = int(a)
+ b = int(b)
+-n = int(n)
+ 
+ front = a
+ back = b
+ 
+-possible_slots = 0
++i=0 
++post = 0
+ 
+-while b>=0:
+-	a += 1
+-	b -= 1
+-	possible_slots += 1
++a = n-1
++b = 0
+ 
+-if front < back:
+-	possible_slots -= 1
++while b<=back:
++	if a>=front and b<=back:
++		post += 1
++	a-=1
++	b+=1
+ 
+-print(possible_slots)
+\ No newline at end of file
++print(post)
+\ No newline at end of file

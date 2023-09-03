@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/60871_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/60871_author_id/Accepted.py
+index cd8c7c2..07ef3d4 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/60871_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/60871_author_id/Accepted.py	
+@@ -10,13 +10,20 @@ while n<q:
+     e=ord(a[n])
+     if e==52 or e==55:
+         f.append(e)
+-    else:
+-        break
+-
+     n=n+1
+ #print(f)
+-g=len(f)
+-if g==q and q>1:
++t=len(f)
++j=str(t)
++y=len(j)
++l=0
++i=0
++while i<y:
++    q=j[i]
++    if q=='4' or q=='7':
++        l=l+1
++
++    i=i+1    
++if l==y:
+     print('YES')
+ else:
+     print('NO')
+\ No newline at end of file

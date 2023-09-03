@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1691_problem_id/57128_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1691_problem_id/57128_author_id/Accepted.py
+index 0d4110c..c78a6c9 100644
+--- a/Users/bardia/Downloads/data 4/data/1691_problem_id/57128_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1691_problem_id/57128_author_id/Accepted.py	
+@@ -4,6 +4,11 @@ def plitki(a, b, c):
+     else:
+         return b*c
+ 
++def pl(a, b, c):
++    res = b*c
++    for i in range(a-1):
++        res+=b+c-1
++    return res
+ 
+ array = input().split(" ")
+-print(plitki(int(array[0]), int(array[1]), int(array[2])))
+\ No newline at end of file
++print(pl(int(array[0]), int(array[1]), int(array[2])))
+\ No newline at end of file

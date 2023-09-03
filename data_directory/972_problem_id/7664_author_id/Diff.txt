@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/972_problem_id/7664_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/972_problem_id/7664_author_id/Accepted.py
+index e2bfa16..04c79da 100644
+--- a/Users/bardia/Downloads/data 4/data/972_problem_id/7664_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/972_problem_id/7664_author_id/Accepted.py	
+@@ -35,7 +35,7 @@ def process_stdio():
+ def solve(input, print):
+     a, b = map(int, input().split())
+     diff = abs(a - b)
+-    if diff < 2:
++    if diff < 2 and a + b != 0:
+         print('YES')
+     else:
+         print('NO')

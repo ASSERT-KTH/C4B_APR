@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1237_problem_id/11_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1237_problem_id/11_author_id/Accepted.py
+index 23172d3..c429a2c 100644
+--- a/Users/bardia/Downloads/data 4/data/1237_problem_id/11_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1237_problem_id/11_author_id/Accepted.py	
+@@ -1,5 +1,8 @@
+-x1,y1,r1=map(int,input().split())
+-x2,y2,r2=map(int,input().split())
+-d=((x1-x2)**2+(y1-y2)**2)**0.5
+-x=(d-r1-r2)/2
+-print(x if x>=0 else -x-min(r1,r2))
+\ No newline at end of file
++from math import*
++n,R,r=map(int,input().split())
++if n<3:exit(print(['NO','YES'][n*r<=R+1e-9]))
++theta = (pi/180*360/n)
++theta2 = ((180-(360/n))/2)
++a=2*r+2*r*cos(pi/180*theta2)
++b = a*sin((pi-theta)/2)/sin(theta)
++print(['NO','YES'][b<=R+1e-9])
+\ No newline at end of file

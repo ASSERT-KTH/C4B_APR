@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2296_problem_id/5930_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2296_problem_id/5930_author_id/Accepted.py
+index 92a4410..e3e957f 100644
+--- a/Users/bardia/Downloads/data 4/data/2296_problem_id/5930_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2296_problem_id/5930_author_id/Accepted.py	
+@@ -1,5 +1,4 @@
+-M=int(input())
+-N=int(input())
++M,N=map(int,(input().split(" ")))
+ if(1<=M<=N<=16):
+     s=M*N
+     print(s//2)
+\ No newline at end of file

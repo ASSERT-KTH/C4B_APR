@@ -1,0 +1,1 @@
+[{'inputdata': '128', 'expectedresult': 'short'}]

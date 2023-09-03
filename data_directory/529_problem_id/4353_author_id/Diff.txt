@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/529_problem_id/4353_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/529_problem_id/4353_author_id/Accepted.py
+index f6f27b8..8aa1f6e 100644
+--- a/Users/bardia/Downloads/data 4/data/529_problem_id/4353_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/529_problem_id/4353_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ e=10**9+7
+ a,b,n,x=map(int,input().split())
+ t=pow(a,n,e*max(1,a-1))
+-print((t*x+b*(t-1)//(a-1))%e if a-1else a*x+b)
+\ No newline at end of file
++print((t*x+b*(t-1)//(a-1))%e if a-1else(x+n*b)%e)
+\ No newline at end of file

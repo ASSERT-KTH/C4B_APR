@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2742_problem_id/42340_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2742_problem_id/42340_author_id/Accepted.py
+index c7c89ac..bc31521 100644
+--- a/Users/bardia/Downloads/data 4/data/2742_problem_id/42340_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2742_problem_id/42340_author_id/Accepted.py	
+@@ -1,7 +1,4 @@
+ n = int(input())
+-if(n > 4):
+-    print(7, end='')
+-    n -= 3
+ if(n % 2 == 1):
+     print(7, end='')
+     n -= 3

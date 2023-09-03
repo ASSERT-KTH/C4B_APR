@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2542_problem_id/2461_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2542_problem_id/2461_author_id/Accepted.py
+index ce060b0..ade8794 100644
+--- a/Users/bardia/Downloads/data 4/data/2542_problem_id/2461_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2542_problem_id/2461_author_id/Accepted.py	
+@@ -1,10 +1,8 @@
+ n, m, a, b = map(int, input().split())
+-if b == n:
+-    b += m - 1 - (b - 1) % m
+-c1, c2 = (a - 1) % m, (b - 1) % m
+-if (a - 1) // m == (b - 1) // m or c1 == 0 and c2 == m - 1:
++r1, r2, c1, c2 = (a - 1) // m, (b - 1) // m, (a - 1) % m, m - 1 if b == n else (b - 1) % m
++if r1 == r2 or c1 == 0 and c2 == m - 1:
+     print(1)
+-elif c1 == 0 or c2 == m - 1 or c1 == c2 + 1:
++elif r2 == r1 + 1 or c1 == 0 or c2 == m - 1 or c1 == c2 + 1:
+     print(2)
+ else:
+     print(3)
+\ No newline at end of file

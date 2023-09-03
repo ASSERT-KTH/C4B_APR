@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2969_problem_id/52582_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2969_problem_id/52582_author_id/Accepted.py
+index df5d556..f4d1f01 100644
+--- a/Users/bardia/Downloads/data 4/data/2969_problem_id/52582_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2969_problem_id/52582_author_id/Accepted.py	
+@@ -4,4 +4,4 @@ if s * v1 + t1 * 2 < s * v2 + t2 * 2:
+ elif s * v1 + t1 * 2 > s * v2 + t2 * 2:
+ 	print('Second')
+ else:
+-	print('FriendShip')
+\ No newline at end of file
++	print('Friendship')
+\ No newline at end of file

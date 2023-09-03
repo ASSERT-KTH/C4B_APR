@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/530_problem_id/9720_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/530_problem_id/9720_author_id/Accepted.py
+index 652708b..e440f59 100644
+--- a/Users/bardia/Downloads/data 4/data/530_problem_id/9720_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/530_problem_id/9720_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ import math
+ n, red, blue, red_cost, blue_cost = map(int, input().split())
+-reds = n//red - n//((red*blue)/math.gcd(red,blue))
+-blues = n//blue - n//((red*blue)/math.gcd(red,blue))
+-ans = reds*red_cost + blues*blue_cost + max(blue_cost, red_cost)*(n//((red*blue)/math.gcd(red,blue)))
++reds = n//red
++blues = n//blue
++ans = reds*red_cost + blues*blue_cost - min(blue_cost, red_cost)*(n//((red*blue)//math.gcd(red,blue)))
+ print(int(ans))
+\ No newline at end of file

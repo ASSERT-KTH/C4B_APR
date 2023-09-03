@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1198_problem_id/60676_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1198_problem_id/60676_author_id/Accepted.py
+index 940f1b2..9aeadfb 100644
+--- a/Users/bardia/Downloads/data 4/data/1198_problem_id/60676_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1198_problem_id/60676_author_id/Accepted.py	
+@@ -5,7 +5,5 @@ elif "Q" in word:
+     print ("YES")
+ elif '9' in word:
+     print ("YES")
+-elif "+" in word:
+-    print ('YES')
+ else:
+     print ("NO")
+\ No newline at end of file

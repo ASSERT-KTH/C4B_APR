@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/966_problem_id/45636_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/966_problem_id/45636_author_id/Accepted.py
+index 2c3e94c..63c3704 100644
+--- a/Users/bardia/Downloads/data 4/data/966_problem_id/45636_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/966_problem_id/45636_author_id/Accepted.py	
+@@ -10,8 +10,10 @@ while True:
+      if left < 1 and right > hobs:
+           pilCount+=pillows//hobs
+           break
+-     elif left < 1 or right > hobs:
+-          pillows-=(turn+1)
++     elif left < 1:
++          pillows-=(right)
++     elif right > hobs:
++          pillows-=(hobs-left+1)
+      else:
+           pillows-=(turn*2+1)
+ 

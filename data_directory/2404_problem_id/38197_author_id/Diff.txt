@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2404_problem_id/38197_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2404_problem_id/38197_author_id/Accepted.py
+index 73f21c0..84233b5 100644
+--- a/Users/bardia/Downloads/data 4/data/2404_problem_id/38197_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2404_problem_id/38197_author_id/Accepted.py	
+@@ -3,6 +3,6 @@ cnt=0
+ for i in V:
+     if i==8:
+         cnt+=1
+-if min(V[0],V[7])!=8:
+-    cnt+=min(V[0],V[7])
++if min(V)!=8:
++    cnt+=min(V)
+ print(cnt)
+\ No newline at end of file

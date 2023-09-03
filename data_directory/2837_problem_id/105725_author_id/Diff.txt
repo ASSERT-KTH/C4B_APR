@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2837_problem_id/105725_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2837_problem_id/105725_author_id/Accepted.py
+index 19c8531..c3806b8 100644
+--- a/Users/bardia/Downloads/data 4/data/2837_problem_id/105725_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2837_problem_id/105725_author_id/Accepted.py	
+@@ -1,19 +1,6 @@
+ def main():
+-    year = str(int(input())+1)
+-    originalYear = int(year) - 1
+-    while (isLucky(year) == False):
+-        year = str(int(year) + 1)
++    year = input()
++    nextYear = (int(year[0])+1) * 10**(len(year)-1)
++    print(nextYear-int(year))            
+ 
+-    print(int(year) - originalYear)
+-
+-def isLucky(number):
+-    result = False
+-    for char in number: 
+-        if char != '0':
+-            result = not result
+-            if result == False:
+-                return False
+-
+-    return True
+-                
+ main()
+\ No newline at end of file

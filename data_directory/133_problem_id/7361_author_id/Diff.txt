@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/133_problem_id/7361_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/133_problem_id/7361_author_id/Accepted.py
+index 08f40ae..a52d0ca 100644
+--- a/Users/bardia/Downloads/data 4/data/133_problem_id/7361_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/133_problem_id/7361_author_id/Accepted.py	
+@@ -26,7 +26,7 @@ while j<3 and i<3:
+             mylist[i][0]-=mylist[j][1]*2
+             mylist[j][1]=0
+     j+=1
+-if mylist[2][1]>0:
++if mylist[2][1]+mylist[1][1]+mylist[0][1]>0:
+     print("No")
+ else:
+     print("Yes")
+\ No newline at end of file

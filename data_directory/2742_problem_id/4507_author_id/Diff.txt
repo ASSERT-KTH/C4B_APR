@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2742_problem_id/4507_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2742_problem_id/4507_author_id/Accepted.py
+index 041cf31..dbf362e 100644
+--- a/Users/bardia/Downloads/data 4/data/2742_problem_id/4507_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2742_problem_id/4507_author_id/Accepted.py	
+@@ -1,13 +1,15 @@
+-n = (int)(input())
++n = int(input())
+ 
++v = []
+ ans = 0
+ if (n%2 != 0):
+-	ans = 7
++	v.append("7")
+ 	n -= 3
+ 
+ while (n > 0):
+-	ans *= 10
+-	ans += 1
++	v.append("1")
+ 	n -= 2
+ 
+-print(ans)
+\ No newline at end of file
++
++for i in range(len(v)):
++	print(v[i], end="")
+\ No newline at end of file

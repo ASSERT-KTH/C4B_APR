@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/23261_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/23261_author_id/Accepted.py
+index 50635b2..2712ea6 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/23261_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/23261_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ n = input()
+-for i in range(int(n) + 1, 9001):
++for i in range(int(n) + 1, 10000):
+     tmp = str(i)
+     if tmp[0] != tmp[1] and tmp[0] != tmp[2] and tmp[0] != tmp[3] and tmp[1] != tmp[2] and tmp[1] != tmp[3] and tmp[2] != tmp[3]:
+         print(tmp)

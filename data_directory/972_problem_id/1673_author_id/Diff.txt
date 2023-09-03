@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/972_problem_id/1673_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/972_problem_id/1673_author_id/Accepted.py
+index 8a875d5..9029999 100644
+--- a/Users/bardia/Downloads/data 4/data/972_problem_id/1673_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/972_problem_id/1673_author_id/Accepted.py	
+@@ -1,5 +1,9 @@
+ n,m = map(int,input().split())
+-if max(n,m) - min(n,m) in {0,1} and n!= 0 and m != 0  :
+-    print('YES')
++if max(n,m) - min(n,m) in {0,1} :
++    if n == 0 and m == 0:
++        print('NO')
++    else:
++        print('YES')
++
+ else:
+     print("NO")
+\ No newline at end of file

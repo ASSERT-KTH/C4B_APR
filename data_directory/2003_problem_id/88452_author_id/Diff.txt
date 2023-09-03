@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/88452_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/88452_author_id/Accepted.py
+index 09555a7..5fbccfb 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/88452_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/88452_author_id/Accepted.py	
+@@ -15,11 +15,12 @@ def DigitosDiferentes(Anio):
+     return((int(L[0]))!=(int(L[1]))!=(int(L[2]))!=(int(L[3])))
+ # Modulo para devolver el año mayor al año entregado con diferentes digitos
+ def SiguienteAnioDiferente(Anio):
+-    for k in range(Anio+1,9001):
+-        if(DigitosDiferentes(k)):
++    i=Anio
++    while(i>0):
++        i+=1
++        if(DigitosDiferentes(i)):
+             break
+-    return k
+-
++    return i
+ # Programa Principal
+ Anio = input()
+ A = int(Anio)

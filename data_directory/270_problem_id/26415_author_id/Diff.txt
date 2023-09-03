@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/270_problem_id/26415_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/270_problem_id/26415_author_id/Accepted.py
+index 52f8253..128b0c8 100644
+--- a/Users/bardia/Downloads/data 4/data/270_problem_id/26415_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/270_problem_id/26415_author_id/Accepted.py	
+@@ -1,11 +1,4 @@
+ x1, y1, x2, y2 = [int(i) for i in input().split()]
+-odd = 0;
+-even = 0;
+-if y2 % 2 != 0:
+-    odd = (y2 - y1) // 2 + 1
+-    even = (y2 - y1 + 1) // 2;
+-else:
+-    odd = (y2 - y1 + 1) // 2
+-    even = (y2 - y1) // 2 + 1
++odd = (y2 - y1) // 2 + 1
+ cnt = (x2 - x1) // 2
+-print(cnt * (odd + even) + odd * (x1 % 2) + even * (1 - x1 % 2))
+\ No newline at end of file
++print(odd * (x2 - x1 + 1) - cnt)
+\ No newline at end of file

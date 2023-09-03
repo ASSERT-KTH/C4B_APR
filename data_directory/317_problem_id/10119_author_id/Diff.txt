@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/317_problem_id/10119_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/317_problem_id/10119_author_id/Accepted.py
+index 95a77d7..44f8a71 100644
+--- a/Users/bardia/Downloads/data 4/data/317_problem_id/10119_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/317_problem_id/10119_author_id/Accepted.py	
+@@ -1,5 +1,4 @@
+-n = int(input())
+-a = int(input())
++n, a = map(int, input().split())
+ if a % 2 == 1 :
+     print(int((a + 1) / 2))
+ else :

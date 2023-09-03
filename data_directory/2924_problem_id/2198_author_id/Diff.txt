@@ -1,0 +1,9 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2924_problem_id/2198_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2924_problem_id/2198_author_id/Accepted.py
+index 8c567d3..a0786f0 100644
+--- a/Users/bardia/Downloads/data 4/data/2924_problem_id/2198_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2924_problem_id/2198_author_id/Accepted.py	
+@@ -1,2 +1,3 @@
++input()
+ for x in map(len, input().split('0')):
+     print(x,end='')
+\ No newline at end of file

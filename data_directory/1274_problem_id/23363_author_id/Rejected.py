@@ -1,0 +1,12 @@
+k=int(input())
+l=int(input())
+m=int(input())
+n=int(input())
+d=int(input())
+kl=k*l
+km=k*m
+kn=k*n
+lm=l*m
+ln=l*n
+mn=m*n
+print((d//k+d//l+d//m+d//n)-(d//kl+d//km+d//kn+d//lm+d//ln+d//mn))

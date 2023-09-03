@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/178_problem_id/10936_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/178_problem_id/10936_author_id/Accepted.py
+index 2787026..c662085 100644
+--- a/Users/bardia/Downloads/data 4/data/178_problem_id/10936_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/178_problem_id/10936_author_id/Accepted.py	
+@@ -2,10 +2,13 @@ from sys import stdin
+ 
+ l,r,k= map(int,stdin.readline().split())
+ res = 1
+-p=0
+-if(l == 1):
+-    print(1,"",end='')
+-while(res <= r):   
++p = 0
++get = 0
++while(res <= r): 
++    if(l == 1 and get == 0):
++        print(1,"",end='')
++        get = 1
++        p = 1
+     res *= k
+     if(l <= res <= r):
+         print(res,"",end='')

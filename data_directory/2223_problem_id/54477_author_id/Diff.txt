@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2223_problem_id/54477_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2223_problem_id/54477_author_id/Accepted.py
+index 7746d49..891e7cf 100644
+--- a/Users/bardia/Downloads/data 4/data/2223_problem_id/54477_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2223_problem_id/54477_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ a=input()
+ a=int(a)
+-if a%2==0:
++if a%2==0 and a!=2:
+     print('YES')
+ else:
+     print ("NO")
+\ No newline at end of file

@@ -1,0 +1,1 @@
+[{'inputdata': '3\r\r\n2\r\r\n100000\r\r\n99999', 'expectedresult': '1'}, {'inputdata': '5\r\r\n3\r\r\n6\r\r\n4', 'expectedresult': '1'}, {'inputdata': '90\r\r\n30\r\r\n101\r\r\n100', 'expectedresult': '3'}, {'inputdata': '10\r\r\n4\r\r\n14\r\r\n13', 'expectedresult': '2'}, {'inputdata': '100\r\r\n3\r\r\n102\r\r\n101', 'expectedresult': '33'}]

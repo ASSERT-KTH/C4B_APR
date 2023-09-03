@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1226_problem_id/541_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1226_problem_id/541_author_id/Accepted.py
+index 1c439f1..e4089bb 100644
+--- a/Users/bardia/Downloads/data 4/data/1226_problem_id/541_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1226_problem_id/541_author_id/Accepted.py	
+@@ -5,10 +5,12 @@ p = int(input())
+ l_n = list(map(int, input().split()))
+ n_s = sum(l_n)
+ 
+-p -= (max(0, p // n_s - 1)) * n_s
++while p > n_s:
++    p -= n_s
+ 
+-for i in range(len(l_n)):
+-    if l_n[i] >= p:
+-        print(i + 1)
+-        quit()
+-    p -= l_n[i]
+\ No newline at end of file
++while p > 0:
++        for i in range(len(l_n)):
++            if l_n[i] >= p:
++                print(i + 1)
++                quit()
++            p -= l_n[i]
+\ No newline at end of file

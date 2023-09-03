@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/668_problem_id/88_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/668_problem_id/88_author_id/Accepted.py
+index 32b21ed..9dc0009 100644
+--- a/Users/bardia/Downloads/data 4/data/668_problem_id/88_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/668_problem_id/88_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+-a=int(input())-1
+-print('I hate ',end='')
++a=int(input())
++x=''
+ while a:
+-    if a%2:print('that I love ',end='')
+-    else:print('that I hate ',end='')
++    if a%2:x='that I hate '+x
++    else:x='that I love '+x
+     a-=1
+-print('it')
+\ No newline at end of file
++print(x[5:]+'it')
+\ No newline at end of file

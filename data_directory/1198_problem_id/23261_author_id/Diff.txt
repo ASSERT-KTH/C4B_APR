@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1198_problem_id/23261_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1198_problem_id/23261_author_id/Accepted.py
+index d7c8dd6..acece83 100644
+--- a/Users/bardia/Downloads/data 4/data/1198_problem_id/23261_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1198_problem_id/23261_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ text = input()
+ 
+-if 'H' in text or 'Q' in text or '9' in text or '+' in text:
++if 'H' in text or 'Q' in text or '9' in text:
+     print('YES')
+ else:
+     print('NO')
+\ No newline at end of file

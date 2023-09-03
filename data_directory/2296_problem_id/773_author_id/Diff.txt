@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2296_problem_id/773_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2296_problem_id/773_author_id/Accepted.py
+index c94acfb..36aa3b8 100644
+--- a/Users/bardia/Downloads/data 4/data/2296_problem_id/773_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2296_problem_id/773_author_id/Accepted.py	
+@@ -1,4 +1,2 @@
+-fin=open("input.txt")
+-fout=open("output.txt",'w')
+-n,m=map(int,fin.read().split())
+-fout.write(((n*m)//2))
+\ No newline at end of file
++n,m=map(int,input().split())
++print(n*m//2)
+\ No newline at end of file

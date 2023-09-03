@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/511_problem_id/3323_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/511_problem_id/3323_author_id/Accepted.py
+index 3a55a30..5a63f96 100644
+--- a/Users/bardia/Downloads/data 4/data/511_problem_id/3323_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/511_problem_id/3323_author_id/Accepted.py	
+@@ -4,8 +4,10 @@ input = list(map(int,sys.stdin.readline().strip().split()))
+ 
+ if input[1] == input[0]:
+   print("YES")
+-elif input[2] != 0 and input[1] % input[2] == input[0] % input[2] and input[1] >= input[0]:
++elif input[2] < 0 and input[1] <= input[0] and input[1] % input[2] == input[0] % input[2]:
++  print("YES")
++elif input[2] > 0 and input[1] >= input[0] and input[1] % input[2] == input[0] % input[2]:
+   print("YES")
+ else:
+   print("NO")
+-# 1488581403026
+\ No newline at end of file
++# 1488582809252
+\ No newline at end of file

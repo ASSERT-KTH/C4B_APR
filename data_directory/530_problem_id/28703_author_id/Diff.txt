@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/530_problem_id/28703_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/530_problem_id/28703_author_id/Accepted.py
+index a5c0428..9a0f9c2 100644
+--- a/Users/bardia/Downloads/data 4/data/530_problem_id/28703_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/530_problem_id/28703_author_id/Accepted.py	
+@@ -31,9 +31,17 @@ multb = b
+ #             
+ # print(res)
+ 
++def pgcd(a,b):
++    """pgcd(a,b): calcul du 'Plus Grand Commun Diviseur' entre les 2 nombres entiers a et b"""
++    while b!=0:
++        a,b=b,a%b
++    return a
++    
++ppcm = a*b /pgcd(a,b)
++
+ diva = n//a
+ divb = n//b
+-divab = n //(a*b)
++divab = int(n //ppcm)
+ 
+ if m == p :
+     print(diva*p + (divb-divab)*q)

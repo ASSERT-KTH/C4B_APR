@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2346_problem_id/95888_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2346_problem_id/95888_author_id/Accepted.py
+index a710204..39f5c92 100644
+--- a/Users/bardia/Downloads/data 4/data/2346_problem_id/95888_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2346_problem_id/95888_author_id/Accepted.py	
+@@ -4,9 +4,7 @@ s = input()
+ #s = '7 2 2 4'
+ #s = '10 10 10 10'
+ s = s.split(' ')
+-for i in s:
+-	i = int(i)
+-l = [s[0],s[1],s[2],s[3]]
++l = [int(s[0]),int(s[1]),int(s[2]),int(s[3])]
+ l.sort()
+ tmp = l[0]
+ 

@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/1734_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/1734_author_id/Accepted.py
+index 0312995..89e489b 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/1734_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/1734_author_id/Accepted.py	
+@@ -6,4 +6,7 @@ while n > 0:
+     length_of_row *= 2
+     circle += 1
+ n += length_of_row // 2
+-print(names[n // 2 ** (circle - 1)])
+\ No newline at end of file
++if n % 2 ** (circle - 1) == 0:
++    print(names[n // 2 ** (circle - 1) - 1])
++else:
++    print(names[n // 2 ** (circle - 1)])
+\ No newline at end of file

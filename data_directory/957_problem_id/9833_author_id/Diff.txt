@@ -1,0 +1,44 @@
+diff --git a/Users/bardia/Downloads/data 4/data/957_problem_id/9833_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/957_problem_id/9833_author_id/Accepted.py
+index 77cfb4f..5ef0ffd 100644
+--- a/Users/bardia/Downloads/data 4/data/957_problem_id/9833_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/957_problem_id/9833_author_id/Accepted.py	
+@@ -8,17 +8,26 @@ def f(list4):
+ s=str(input())
+ l=list(s)
+ list1=['R','B','Y','G']
++list2=[-1,-1,-1,-1]
+ ans=[0,0,0,0]
+-while l.count('!')>0:
+-    i=0
+-    while l[i:i+4].count('!')==0 or l[i:i+4].count('!')!=1:
+-        i+=1
+-        #print(i)
+-    list3=f(l[i:i+4])
+-    #print(list3,l[i:i+4])
+-    for j in range(4):
+-        if list1[j] not in l[i:i+4] and list1[j] in list3:
+-            ans[j]+=1
+-            #print(list1[j])
+-    l[i:i+4]=list3
++for i in range(len(s)):
++    if s[i]=='R':
++        list2[0]=i%4
++    elif s[i]=='B':
++        list2[1]=i%4
++    elif s[i]=='Y':
++        list2[2]=i%4
++    elif s[i]=='G':
++        list2[3]=i%4
++    if list2.count(-1)==0:
++        break
++ans1=[0 for i in range(len(s))]
++#print(list2)
++for i in range(len(s)):
++    a=list2.index(i%4)
++    ans1[i]=list1[a]
++ans[0]=ans1.count('R')-l.count('R')
++ans[1]=ans1.count('B')-l.count('B')
++ans[2]=ans1.count('Y')-l.count('Y')
++ans[3]=ans1.count('G')-l.count('G')
+ print(*ans)
+\ No newline at end of file

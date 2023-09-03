@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/159_problem_id/20961_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/159_problem_id/20961_author_id/Accepted.py
+index 6277e46..215adb5 100644
+--- a/Users/bardia/Downloads/data 4/data/159_problem_id/20961_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/159_problem_id/20961_author_id/Accepted.py	
+@@ -11,7 +11,5 @@ if a[2]=='month':
+         print(7)
+     elif a[0]=='30':
+         print(11)
+-    elif a[0]=='29':
+-        print(11)
+     else:
+         print(12)
+\ No newline at end of file

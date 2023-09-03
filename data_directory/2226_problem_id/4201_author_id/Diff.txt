@@ -1,0 +1,42 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2226_problem_id/4201_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2226_problem_id/4201_author_id/Accepted.py
+index 31598e9..a142176 100644
+--- a/Users/bardia/Downloads/data 4/data/2226_problem_id/4201_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2226_problem_id/4201_author_id/Accepted.py	
+@@ -1,20 +1,17 @@
+-n, k = map(int, input().split())
+-energy = sorted(list(map(int, input().split())))
+-factor = (100 - k) / 100
++import math
+ 
+-low = 0
+-high = sum(energy) / n
+-while high - low > 1e-6:
+-  mid = (low + high) / 2
+-  balance = 0
+-  for x in energy:
+-    if x > mid:
+-      balance -= factor * (x - mid)
+-    else:
+-      balance += mid - x
+-  if balance < 0:
+-    low = mid
+-  else:
+-    high = mid
++x, y = map(int, input().split())
++dd = x*x + y*y
++d = math.floor(dd ** 0.5)
++black = False
++if d*d == dd:
++  black = True
++elif x/abs(x) == y/abs(y):
++  black = d%2 == 0
++else:
++  black = d%2 == 1
+ 
+-print(high)
+\ No newline at end of file
++if black:
++  print('black')
++else:
++  print('white')
+\ No newline at end of file

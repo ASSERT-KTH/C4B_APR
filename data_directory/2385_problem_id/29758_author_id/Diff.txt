@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2385_problem_id/29758_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2385_problem_id/29758_author_id/Accepted.py
+index 7d7821f..a5f7df3 100644
+--- a/Users/bardia/Downloads/data 4/data/2385_problem_id/29758_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2385_problem_id/29758_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+-a = (int)(raw_input())
++a = (int)(input())
+ if -128 <= a <= 127:
+     print('byte')
+ elif -32768 <= a <= 32767:

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/60880_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/60880_author_id/Accepted.py
+index be94a52..01db5ce 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/60880_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/60880_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ def main():
+     string=input()
+     temp=string[0].upper()+string[1:]
+     if temp.isupper()==1:
+-        print(string[0].upper()+string[1:].lower())
++        print(string.swapcase())
+     else:
+         print(string)
+ 

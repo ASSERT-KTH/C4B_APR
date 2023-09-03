@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2340_problem_id/19027_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2340_problem_id/19027_author_id/Accepted.py
+index 68d842c..a000ba2 100644
+--- a/Users/bardia/Downloads/data 4/data/2340_problem_id/19027_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2340_problem_id/19027_author_id/Accepted.py	
+@@ -1,11 +1,13 @@
+ x = input()
+-capital,small = 0,0
+-if x[0].isupper()== True:
+-    capital+=1
+-else:
+-    small+=1
++capital,small,i = 0,0,0
++while i<len(x):
++    if x[i].isupper()== True:
++        capital+=1
++    else:
++        small+=1
++    i+=1
+ 
+-if small >capital:
++if small >=capital:
+     print(x.lower())
+ else:
+     print(x.upper())
+\ No newline at end of file

@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1751_problem_id/72727_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1751_problem_id/72727_author_id/Accepted.py
+index aee4415..66ff09d 100644
+--- a/Users/bardia/Downloads/data 4/data/1751_problem_id/72727_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1751_problem_id/72727_author_id/Accepted.py	
+@@ -1,10 +1,10 @@
+-(xa, ya) = [float(s) for s in input().split()]
+-(xb, yb) = [float(s) for s in input().split()]
+-(xc, yc) = [float(s) for s in input().split()]
+-falcon = (xb-xa)*(yc-yb)*(xc-xb)*(yb-ya)
+-if falcon == 0:
+-  print("RIGHT")
+-elif falcon < 0:
++(xa, ya) = [int(s) for s in input().split()]
++(xb, yb) = [int(s) for s in input().split()]
++(xc, yc) = [int(s) for s in input().split()]
++falcon = (xb-xa)*(yc-yb) - (xc-xb)*(yb-ya)
++if falcon > 0:
+   print("LEFT")
++elif falcon < 0:
++  print("RIGHT")
+ else:
+   print("TOWARDS")
+\ No newline at end of file

@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/54585_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/54585_author_id/Accepted.py
+index fb3073f..08ca214 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/54585_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/54585_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ import re
+ string=input()
+-pattern1=r"1?000000001?"
+-pattern2=r"0?111111110?"
++pattern1=r"1?00000000*1?"
++pattern2=r"0?11111111*0?"
+ if re.search(pattern1,string):
+  print("YES")
+ elif re.search(pattern2,string):

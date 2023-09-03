@@ -1,0 +1,40 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/23295_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/23295_author_id/Accepted.py
+index e5b8c4b..8bfe215 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/23295_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/23295_author_id/Accepted.py	
+@@ -1,19 +1,16 @@
+-number_division=int(input())
+-luckynumber=[]
+-for number in range (1,1001):
+-  number_string = str(number)
+-  index = 0
+-  for digit in number_string:
+-    if digit !='4' and digit != '7':
+-      break
+-    elif index == len(number_string)-1:
+-      luckynumber.append(number)
+-    index += 1
+-def compare (arrayinput, comparenumber):
+-  for item in luckynumber:
+-    if arrayinput%item==0:
++lucyDivision=int(input())
++luckyNumber=[4,7,44,47,74,77,444,447,474,477,744,747,774,777]
++
++# while i< len(luckyNumber):
++#   if 
++def compare(inputArray, compareArray):
++  i=0
++  while i< len(compareArray):
++    if inputArray%int(compareArray[i])==0:
+       return print('YES')
+     else:
+-      return print ('NO')
+-
+-compare(number_division, luckynumber)
+\ No newline at end of file
++      i+=1
++    if i==(len(compareArray)-1) and inputArray%int(compareArray[i])!=0:
++      return print('NO')
++      
++compare(lucyDivision, luckyNumber)
+\ No newline at end of file

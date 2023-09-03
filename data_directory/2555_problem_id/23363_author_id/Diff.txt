@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/23363_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/23363_author_id/Accepted.py
+index 6c58a22..ca66c7a 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/23363_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/23363_author_id/Accepted.py	
+@@ -10,6 +10,8 @@ for i in team:
+             d_max=d
+         current=i
+         d=1
++if (d>d_max):
++    d_max=d
+ if (d_max>=7):
+     print('YES')
+ else:

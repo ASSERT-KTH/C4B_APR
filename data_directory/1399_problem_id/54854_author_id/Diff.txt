@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1399_problem_id/54854_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1399_problem_id/54854_author_id/Accepted.py
+index 10c1463..ec49d13 100644
+--- a/Users/bardia/Downloads/data 4/data/1399_problem_id/54854_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1399_problem_id/54854_author_id/Accepted.py	
+@@ -6,13 +6,13 @@ def solve():
+     prime = sieve(n)
+     count = 0
+     last = 2
+-    for i in range(3, n+1):
++    for i in range(3, n+1, 2):
+         if prime[i]:
+             if last + i + 1 <= n and prime[last+i+1]:
+                 count += 1
+                 if count >= k:
+                     break
+-            last = prime[i]
++            last = i
+     if count >= k:
+         print('YES')
+     else:
+@@ -22,12 +22,12 @@ def solve():
+ def sieve(n):
+     prime = [True] * (n + 1)
+     prime[0] = prime[1] = False
+-    for i in range(2, n+1, 2):
++    for i in range(4, n+1, 2):
+         prime[i] = False
+     i = 3
+     while i * i <= n:
+         if prime[i]:
+-            for j in range(i*i, n+1, i):
++            for j in range(i*i, n+1, i*2):
+                 prime[j] = False
+         i += 2
+     return prime

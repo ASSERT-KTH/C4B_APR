@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/531_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/531_author_id/Accepted.py
+index e427345..28b2786 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/531_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/531_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ '''input
+-5
+-1 1 1 1 2 2 3 2 2 1 1 1
++0
++0 0 0 0 0 0 0 1 1 2 3 0
+ '''
+ k = int(input())
+ a = list(map(int, input().split()))
+@@ -15,5 +15,4 @@ else:
+ 		s += a[0]
+ 		t += 1
+ 		del a[0]
+-
+-print(t)
+\ No newline at end of file
++	print(t)
+\ No newline at end of file

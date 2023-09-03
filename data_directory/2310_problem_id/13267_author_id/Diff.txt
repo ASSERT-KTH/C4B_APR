@@ -1,0 +1,30 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2310_problem_id/13267_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2310_problem_id/13267_author_id/Accepted.py
+index 325deb7..79adc77 100644
+--- a/Users/bardia/Downloads/data 4/data/2310_problem_id/13267_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2310_problem_id/13267_author_id/Accepted.py	
+@@ -3,16 +3,16 @@ import math
+ 
+ n = int(sys.stdin.readline())
+ 
+-p = [''] * (n + 1)
++v = []
+ 
+ x = 1
+ y = n
+-for i in range(1, n + 1):
+-    if(i % 2 != 0):
+-        p[x] = str(i)
++for i in range(n):
++    if(i % 2 == 0):
++        v.append(str(x))
+         x += 1
+     else:
+-        p[y] = str(i)
++        v.append(str(y))
+         y -= 1
+-        
+-print(" ".join(p[1:]))
+\ No newline at end of file
++    
++print(" ".join(v))
+\ No newline at end of file

@@ -1,0 +1,48 @@
+diff --git a/Users/bardia/Downloads/data 4/data/385_problem_id/33708_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/385_problem_id/33708_author_id/Accepted.py
+index 14c85f1..6a94a35 100644
+--- a/Users/bardia/Downloads/data 4/data/385_problem_id/33708_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/385_problem_id/33708_author_id/Accepted.py	
+@@ -4,23 +4,27 @@ def get_days(hc, ha, up, down):
+ 	if hc >= ha:
+ 		return 0
+ 
+-	return day_cycle(hc, ha, up, down, 0)
+-
+-def day_cycle(hc, ha, up, down, daynum):
+-	if daynum == 0:
+-		hrs = 8
+-	else:
+-		hrs = 12
+-
+-	if (hc + (up * hrs)) >= ha:
+-		return daynum
+-	else:
+-		height_to_add = hrs * up - (12 * down)
+-		if height_to_add <= 0 and daynum > 0:
+-			return -1
++	return day_cycle(hc, ha, up, down)
++
++def day_cycle(hc, ha, up, down):
++	daynum = 0
++	while True:
++		if daynum == 0:
++			hrs = 8
++		else:
++			hrs = 12
++
++		if (hc + (up * hrs)) >= ha:
++			return daynum
+ 		else:
+-			hc += height_to_add
+-			return day_cycle(hc, ha, up, down, daynum + 1)
++			height_to_add = hrs * up - (12 * down)
++			if height_to_add <= 0 and daynum > 0:
++				return -1
++			else:
++				hc += height_to_add
++				daynum += 1
++
++
+ 
+ if __name__ == '__main__':
+ 	# Get input from stdin

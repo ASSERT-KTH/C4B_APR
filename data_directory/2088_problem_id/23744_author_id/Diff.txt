@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2088_problem_id/23744_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2088_problem_id/23744_author_id/Accepted.py
+index 4da328a..804b2f5 100644
+--- a/Users/bardia/Downloads/data 4/data/2088_problem_id/23744_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2088_problem_id/23744_author_id/Accepted.py	
+@@ -9,7 +9,7 @@ for i in range(0,4):
+             a[i][j]=1
+ for i in range(0,4):
+     for j in range(0,4):
+-        if i!=3 and j!=3 and a[i][j]+a[i][j+1]+a[i+1][j+1]+a[i+1][j]>=3:
++        if i!=3 and j!=3 and (a[i][j]+a[i][j+1]+a[i+1][j+1]+a[i+1][j]>=3 or a[i][j]+a[i][j+1]+a[i+1][j+1]+a[i+1][j]<=1):
+             o=1
+ if o==1:
+     print('YES')

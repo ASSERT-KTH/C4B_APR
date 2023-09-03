@@ -1,0 +1,49 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/23829_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/23829_author_id/Accepted.py
+index 3cad555..97f067b 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/23829_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/23829_author_id/Accepted.py	
+@@ -1,25 +1,19 @@
+-a,b,c = (int(i) for i in input().split())
+-s = 0
+-while (True):
+-    for i in range(c,0,-1):
+-        if (a%i==0 and c%i==0):
+-            s = i
+-            continue
+-    c -=s
+-    if (c<0):
+-        print(1)
+-        exit(0)
+-    elif(c==0):
+-        print(0)
+-        exit(0)
+-    for i in range(c,0,-1):
+-        if (b%i==0 and c%i==0):
+-            s = i
+-            continue
+-    c -=s
+-    if (c<0):
+-        print(0)
+-        exit(0)
+-    elif(c==0):
+-        print(1)
++import math
++a,b,s = (int(i) for i in input().split())
++while(True):
++    k = math.gcd(a,s)
++    s-=k
++    if (s==0):
++        print(0)
++        exit(0)
++    elif (s<0):
++        print(1)
++        exit(0)
++    k = math.gcd(b,s)
++    s-=k
++    if (s==0):
++        print(1)
++        exit(0)
++    elif (s<0):
++        print(0)
+         exit(0)
+\ No newline at end of file

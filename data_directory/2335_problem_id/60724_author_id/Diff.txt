@@ -1,0 +1,40 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/60724_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/60724_author_id/Accepted.py
+index 60e547e..4db1a46 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/60724_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/60724_author_id/Accepted.py	
+@@ -5,12 +5,9 @@ d=[]
+ n=''
+ l=0
+ 
+-if c == b1:
+-    print("YES")
+-if len(c) == 5 and c != b1:
+-    print("NO")
+-else:
+-   for i in range(0,len(c)):
++
++
++for i in range(0,len(c)):
+        if c[i] in p:
+          if c[i] == 'h' and c[i] not in d:
+                d.append(c[i])
+@@ -22,10 +19,10 @@ else:
+          if c[i] == 'o' and 'h' in d and 'e' in d and 'l' in d and c[i] not in d and l==2:
+ 
+              d.append(c[i])
+-   for i in range(0,len(d)):
+-       n=n+d[i]
+-  
+-   if n== b1:
+-       print("YES")
+-   else:
+-       print("NO")
+\ No newline at end of file
++for i in range(0,len(d)):
++   n=n+d[i]
++
++if n== b1:
++    print("YES")
++else:
++    print("NO")
+\ No newline at end of file

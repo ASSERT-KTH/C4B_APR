@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/52399_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/52399_author_id/Accepted.py
+index 386cd9a..83ebfcc 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/52399_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/52399_author_id/Accepted.py	
+@@ -7,5 +7,4 @@ for i in a:
+ 	if len(i)>1 and i!="KV":
+ 		add=1
+ 		break
+-print(a)
+ print(s.count("VK")+add)
+\ No newline at end of file

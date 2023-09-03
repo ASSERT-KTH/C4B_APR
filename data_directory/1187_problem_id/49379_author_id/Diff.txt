@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/49379_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/49379_author_id/Accepted.py
+index 90711e2..8befca7 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/49379_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/49379_author_id/Accepted.py	
+@@ -1,6 +1,4 @@
+ ls = input()
+-
+-
+ def m_str(lsr):
+     ls2 = []
+     for k in ls:
+@@ -9,10 +7,11 @@ def m_str(lsr):
+         elif str.isupper(k):
+             ls2.append(str.lower(k))
+     return ls2
+-
+ if len(ls) == 1:
+-    print(str.upper(ls))
+-
++    if str.isupper(ls):
++        print(str.lower(ls))
++    elif str.islower(ls):
++        print(str.upper(ls))
+ elif (str.isupper(ls)) | (str.isupper(ls[1:]) & (str.isupper(ls[0]) == False)):
+     lsk = m_str(ls)
+     for k in lsk:

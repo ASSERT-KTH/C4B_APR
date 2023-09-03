@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2952_problem_id/43109_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2952_problem_id/43109_author_id/Accepted.py
+index 7d1f920..c85c560 100644
+--- a/Users/bardia/Downloads/data 4/data/2952_problem_id/43109_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2952_problem_id/43109_author_id/Accepted.py	
+@@ -1,6 +1,5 @@
+-import math
+ n,k=[int(f)for f in input().split()]
+-if math.floor(n/k)%2==1:
++if (n//k)%2==1:
+     print('YES')
+ else:
+     print('NO')
+\ No newline at end of file

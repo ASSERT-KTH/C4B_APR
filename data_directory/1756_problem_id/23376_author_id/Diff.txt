@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1756_problem_id/23376_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1756_problem_id/23376_author_id/Accepted.py
+index ea96ddf..4e87a16 100644
+--- a/Users/bardia/Downloads/data 4/data/1756_problem_id/23376_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1756_problem_id/23376_author_id/Accepted.py	
+@@ -2,15 +2,12 @@ s = input()
+ a = s.split()
+ for i in range(len(a)):
+ 	a[i] = int(a[i])
+-
++a.sort()
+ i = 0
+ while i < len(a)-1:
+-	j = i+1
+-	while j < len(a):
+-		if a[i] == a[j]:
+-			a.remove(a[j])
+-		else:
+-			j += 1
+-	i += 1
++	if a[i] == a[i+1]:
++		a.remove(a[i])
++	else:
++		i += 1
+ 
+ print(4 - len(a))
+\ No newline at end of file

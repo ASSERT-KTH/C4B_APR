@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1975_problem_id/1878_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1975_problem_id/1878_author_id/Accepted.py
+index 6696870..890f605 100644
+--- a/Users/bardia/Downloads/data 4/data/1975_problem_id/1878_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1975_problem_id/1878_author_id/Accepted.py	
+@@ -6,8 +6,13 @@ t = eval(inp[1])
+ s = list(input())
+ 
+ def swap(s):
++    flag = False
+     for i in range(n-2, -1, -1):
++        if flag:
++            flag = False
++            continue
+         if s[i] == 'B' and s[i+1] == 'G':
++            flag = True
+             s[i] = 'G'
+             s[i+1] = 'B'
+     return s

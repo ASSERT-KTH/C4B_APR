@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/858_problem_id/50261_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/858_problem_id/50261_author_id/Accepted.py
+index 70d34bf..6d4a632 100644
+--- a/Users/bardia/Downloads/data 4/data/858_problem_id/50261_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/858_problem_id/50261_author_id/Accepted.py	
+@@ -15,5 +15,7 @@ if (n + 6) % 4 == 0:
+     sum = min(2 * c, sum)
+ if (n + 9) % 4 == 0:
+     sum = min(sum, 3 * c)
++if (n + 5) % 4 == 0:
++    sum = min(sum, b + c)
+ 
+ print(min(sum, a * k))
+\ No newline at end of file

@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1598_problem_id/20645_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1598_problem_id/20645_author_id/Accepted.py
+index 7670577..1ba5514 100644
+--- a/Users/bardia/Downloads/data 4/data/1598_problem_id/20645_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1598_problem_id/20645_author_id/Accepted.py	
+@@ -1,11 +1,11 @@
+-n = int(input())
+-if n == 2:
+-    print(3)
+-else:
+-    ans = n // 2 + 1
+-    n %= 4
+-    if n and not(ans & 1):
+-        ans += 1
+-    if n > 1 and ans <= 3:
+-        ans += 2
+-    print(ans)
+\ No newline at end of file
++def solve(n):
++    if n == 1:
++        return 1
++    if n == 3:
++        return 5
++    for k in range(100):
++        val = 4 * (((k - 1) ** 2 + 1) // 2 + (k + 1) // 2) - 3
++        if val >= n:
++            return 2 * k - 1
++
++print(solve(int(input())))
+\ No newline at end of file

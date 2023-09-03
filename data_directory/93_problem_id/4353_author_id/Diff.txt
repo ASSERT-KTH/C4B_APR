@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/93_problem_id/4353_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/93_problem_id/4353_author_id/Accepted.py
+index dfc0833..95b932f 100644
+--- a/Users/bardia/Downloads/data 4/data/93_problem_id/4353_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/93_problem_id/4353_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+ k,a,b=map(int,input().split())
+-print(b//k-a//k-min(0,a%k)+1)
+\ No newline at end of file
++print(b//k-a//k-bool(a%k)+1)
+\ No newline at end of file

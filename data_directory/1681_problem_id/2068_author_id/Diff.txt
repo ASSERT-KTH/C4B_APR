@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1681_problem_id/2068_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1681_problem_id/2068_author_id/Accepted.py
+index e587643..eed91bb 100644
+--- a/Users/bardia/Downloads/data 4/data/1681_problem_id/2068_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1681_problem_id/2068_author_id/Accepted.py	
+@@ -2,6 +2,6 @@ n,m=map(int,input().split())
+ import math
+ x=0
+ for i in range(round(math.sqrt(n))+1):
+-    if(m-(n-i**2)**2==i):
++    if(m-(n-i**2)**2==i and (n-i**2)>=0):
+         x+=1
+ print(x)
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2952_problem_id/54585_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2952_problem_id/54585_author_id/Accepted.py
+index 9071c83..2d76161 100644
+--- a/Users/bardia/Downloads/data 4/data/2952_problem_id/54585_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2952_problem_id/54585_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+-n,k=list(map(int,input().split(" ")))
+-if ((n%k)%2==0 or (n%k)%2==1) and n!=k:
++n,k=input().split(" ")
++if (int(n)//int(k))%2==0:
+  print("NO")
+ else:
+  print("YES")
+\ No newline at end of file

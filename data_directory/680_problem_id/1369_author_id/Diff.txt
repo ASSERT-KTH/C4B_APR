@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/680_problem_id/1369_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/680_problem_id/1369_author_id/Accepted.py
+index 6d8dad9..d548bc9 100644
+--- a/Users/bardia/Downloads/data 4/data/680_problem_id/1369_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/680_problem_id/1369_author_id/Accepted.py	
+@@ -2,6 +2,6 @@ n=int(input())
+ if n<3:
+   print ("-1")
+ elif n*n%4:
+-  print(int(n*n/2),int(n*n/2+1))
++  print(n*n//2,n*n//2+1)
+ else:
+-  print(int(n*n/4-1),int(n*n/4+1))
+\ No newline at end of file
++  print(n*n//4-1,n*n//4+1)
+\ No newline at end of file

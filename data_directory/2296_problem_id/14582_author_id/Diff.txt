@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2296_problem_id/14582_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2296_problem_id/14582_author_id/Accepted.py
+index e0cec24..5af3020 100644
+--- a/Users/bardia/Downloads/data 4/data/2296_problem_id/14582_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2296_problem_id/14582_author_id/Accepted.py	
+@@ -1,4 +1,5 @@
++import sys
+ import math
+-a=int(raw_input())
+-b=int(raw_input())
+-print(math.floor((a*b)/2))
+\ No newline at end of file
++#from operator import mul
++a , b = map(int, sys.stdin.readline().split())
++print(math.floor((int(a)*int(b))/2))
+\ No newline at end of file

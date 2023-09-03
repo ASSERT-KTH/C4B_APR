@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/542_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/542_author_id/Accepted.py
+index 4c2e343..16acf7e 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/542_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/542_author_id/Accepted.py	
+@@ -4,4 +4,4 @@ for x in sorted(map(int, input().split()))[::-1]:
+   if a > 0:
+     a -= x
+     r += 1
+-print(r)
+\ No newline at end of file
++print(r if a <= 0 else -1)
+\ No newline at end of file

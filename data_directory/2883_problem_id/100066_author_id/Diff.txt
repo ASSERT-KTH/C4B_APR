@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2883_problem_id/100066_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2883_problem_id/100066_author_id/Accepted.py
+index 86be4e8..733ce3e 100644
+--- a/Users/bardia/Downloads/data 4/data/2883_problem_id/100066_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2883_problem_id/100066_author_id/Accepted.py	
+@@ -16,7 +16,7 @@ def main():
+     m = (x2 - x1) / x
+     n = (y2 - y1) / y
+ 
+-    if m.is_integer() and n.is_integer() and int(m) - int(n) % 2 == 0:
++    if m.is_integer() and n.is_integer() and (int(m) - int(n)) % 2 == 0:
+         print("YES")
+     else:
+         print("NO")

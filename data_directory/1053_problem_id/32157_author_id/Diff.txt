@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1053_problem_id/32157_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1053_problem_id/32157_author_id/Accepted.py
+index 2325291..2d5889a 100644
+--- a/Users/bardia/Downloads/data 4/data/1053_problem_id/32157_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1053_problem_id/32157_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ for i in range(150000):
+     if n%7==0:
+         for k in range(c):
+             print(4,end='')
+-        for k in range(n//4):
++        for k in range(n//7):
+             print(7,end='')
+         break
+     n-=4

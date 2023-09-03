@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2360_problem_id/13267_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2360_problem_id/13267_author_id/Accepted.py
+index 34b99d7..4a98140 100644
+--- a/Users/bardia/Downloads/data 4/data/2360_problem_id/13267_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2360_problem_id/13267_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ import math
+ al, ar = [int(x) for x in (sys.stdin.readline()).split()]
+ bl, br = [int(x) for x in (sys.stdin.readline()).split()]
+ 
+-if((br >= al - 1 and br <= al - 1 + 4) or (bl >= ar - 1 and bl <= ar - 1 + 4)):
++if((br >= al - 1 and br <= (al - 1) * 2 + 4) or (bl >= ar - 1 and bl <= (ar - 1) * 2 + 4)):
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

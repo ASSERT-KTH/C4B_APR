@@ -1,0 +1,13 @@
+s=input()
+ans=0
+c=0
+for i in s:
+    c+=1
+    if i=='A' or i=="E" or i=='I' or i=='O' or i=='U' or i=='Y':
+        if c>ans:
+            ans=c
+        c=0
+if ans==0:
+    print(c+1)
+else:
+    print(ans)

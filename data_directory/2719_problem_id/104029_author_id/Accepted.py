@@ -1,0 +1,1 @@
+import math;a,b=map(int,input().split());print(int(math.log(1.5*b/a,1.5)))

@@ -1,0 +1,37 @@
+diff --git a/Users/bardia/Downloads/data 4/data/70_problem_id/11912_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/70_problem_id/11912_author_id/Accepted.py
+index 402f18d..ff7bb17 100644
+--- a/Users/bardia/Downloads/data 4/data/70_problem_id/11912_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/70_problem_id/11912_author_id/Accepted.py	
+@@ -17,22 +17,25 @@ b,w=9,9
+ for i in range(8):
+     C=False
+     for j in range(8):
+-        if L[i][j]=="W" and B[L[i].index("W")]!="B":
++        if L[i][j]=="W" and B[j]!="B":
+             C=True
+             break
+     if C :
+-        w=i
+-        break
++        
++        if i<w:
++            w=i
++        
+ for i in range(7,-1,-1):
+     C=False
+     for j in range(8):
+-        if L[i][j]=="B" and W[L[i].index("B")]!="W":
++        if L[i][j]=="B" and W[j]!="W":
+             C=True
+             break
+ 
+-    if C: 
+-        b=7-i
+-        break
++    if C:
++        if 7-i<b:
++            b=7-i
++        
+ 
+ if w<=b:
+     print("A")

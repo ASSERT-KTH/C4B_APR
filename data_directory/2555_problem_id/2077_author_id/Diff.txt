@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/2077_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/2077_author_id/Accepted.py
+index 37b622e..ff534bd 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/2077_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/2077_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ word = input()
+ last = 3
+-count = 0
++count = 1
+ for i in word:
+   if last == i:
+     count += 1
+@@ -8,6 +8,6 @@ for i in word:
+       print("YES")
+       quit()
+   else:
+-    count=0
++    count=1
+   last = i
+ print("NO")
+\ No newline at end of file

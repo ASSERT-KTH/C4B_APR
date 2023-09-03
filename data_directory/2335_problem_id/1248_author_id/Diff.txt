@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/1248_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/1248_author_id/Accepted.py
+index 93692f9..3d24ac1 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/1248_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/1248_author_id/Accepted.py	
+@@ -5,7 +5,9 @@ hi = "hello"
+ for i in range(len(s)):
+     if s[i] == hi[counter]:
+         counter += 1
+-if counter >= 5:
++    if counter == 5:
++        break
++if counter == 5:
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

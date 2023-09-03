@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1274_problem_id/153_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1274_problem_id/153_author_id/Accepted.py
+index fd15c9f..2cb7d35 100644
+--- a/Users/bardia/Downloads/data 4/data/1274_problem_id/153_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1274_problem_id/153_author_id/Accepted.py	
+@@ -4,7 +4,6 @@ b[1] = int(input())
+ b[2]= int(input())
+ b[3] = int(input())
+ d = int(input())
+-a = []
+ if 1 in b:
+     print(d)
+ else:
+@@ -14,4 +13,4 @@ else:
+             if i % b[j] == 0:
+                 l += 1
+                 break
+-    print(len(a))
+\ No newline at end of file
++    print(l)
+\ No newline at end of file

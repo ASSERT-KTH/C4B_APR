@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1915_problem_id/136_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1915_problem_id/136_author_id/Accepted.py
+index 42956ad..2b2d6b8 100644
+--- a/Users/bardia/Downloads/data 4/data/1915_problem_id/136_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1915_problem_id/136_author_id/Accepted.py	
+@@ -4,5 +4,5 @@ b=3*[0]
+ d=['chest','biceps','back']
+ for i in range(n):
+     b[i%3]+=a[i]
+-z=d.index(max(b))
++z=b.index(max(b))
+ print(d[z])
+\ No newline at end of file

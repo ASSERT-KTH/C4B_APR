@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/217_problem_id/9833_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/217_problem_id/9833_author_id/Accepted.py
+index b5343ba..95da677 100644
+--- a/Users/bardia/Downloads/data 4/data/217_problem_id/9833_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/217_problem_id/9833_author_id/Accepted.py	
+@@ -12,7 +12,7 @@ while not (s<=n and s1>n):
+         m=mid
+     elif s>n:
+         M=mid
+-    elif s<=n and s+mid+1>n:
++    else:
+         break
+     #print(mid)
+ if s==n:

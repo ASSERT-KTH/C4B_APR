@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/49346_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/49346_author_id/Accepted.py
+index 2e2ec05..130702a 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/49346_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/49346_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ while(n>0 and x>0):
+ 	n-=a[x-1]
+ 	x-=1
+ 	cnt+=1
+-if x>=0 and n<0:
++if x>=0 and n<=0:
+ 	print(cnt)
+ else:
+ 	print(-1)
+\ No newline at end of file

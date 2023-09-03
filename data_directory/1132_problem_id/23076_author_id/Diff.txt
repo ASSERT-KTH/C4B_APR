@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/23076_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/23076_author_id/Accepted.py
+index 9f1157d..59f7419 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/23076_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/23076_author_id/Accepted.py	
+@@ -8,7 +8,7 @@ for i in string:
+     elif(i not in num1):
+         break
+ if(len(list1) != len(string)):
+-    if(int(string)%47 == 0):
++    if(int(string)%4 == 0 or int(string)%7 == 0 or int(string)%47 == 0):
+         print("YES")
+     else:
+         print("NO")

@@ -1,0 +1,42 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1267_problem_id/56798_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1267_problem_id/56798_author_id/Accepted.py
+index 5d8e810..8e7a027 100644
+--- a/Users/bardia/Downloads/data 4/data/1267_problem_id/56798_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1267_problem_id/56798_author_id/Accepted.py	
+@@ -1,21 +1,17 @@
+ n = int(input())
+ z = input()
+-x = int(z)
+-def half(z,n):
++
++def lt(z,n):
+     x = 0
+-    for i in range(n//2):
+-        x = x+int(z[i])
+-    return x
+-def sd(x):
+-    a = 0
+-    while x>0:
+-        b = int(x%10)
+-        if b!= 4 and b!=7:
+-            return -10000000000000
+-        a = a+b
+-        x = x//10
+-    return a
+-if half(z,n)== sd(x)//2:
+-    print("YES")
+-else:
+-    print("NO")
+\ No newline at end of file
++    m = 0
++    for i in range(n):
++        if int(z[i])!= 4 and int(z[i])!=7:
++            return "NO"
++        if i<n//2:
++            x = x+int(z[i])
++        else:
++            m = m+int(z[i])
++    if m!=x:
++        return "NO"
++    return "YES"
++print(lt(z,n))
+\ No newline at end of file

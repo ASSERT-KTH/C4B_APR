@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2161_problem_id/2014_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2161_problem_id/2014_author_id/Accepted.py
+index a8ea8af..9dc6c22 100644
+--- a/Users/bardia/Downloads/data 4/data/2161_problem_id/2014_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2161_problem_id/2014_author_id/Accepted.py	
+@@ -30,7 +30,7 @@ def illegal(M,c):
+     if a and b:
+        illegal=True
+     #CASE 2: No of moves of X can be 1 more or equal
+-    if c[0]<c[1] or c[0]-c[1]>2:
++    if c[0]<c[1] or c[0]-c[1]>=2:
+        illegal=True
+     #CASE 3: '0' can win only when both have same count:
+     if b and c[0]==c[1]+1:

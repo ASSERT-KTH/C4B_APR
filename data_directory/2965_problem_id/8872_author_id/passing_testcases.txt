@@ -1,0 +1,1 @@
+[{'inputdata': '^ >\r\r\n1', 'expectedresult': 'cw'}, {'inputdata': '< ^\r\r\n3', 'expectedresult': 'ccw'}, {'inputdata': '^ v\r\r\n6', 'expectedresult': 'undefined'}]

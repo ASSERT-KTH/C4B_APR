@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1237_problem_id/22201_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1237_problem_id/22201_author_id/Accepted.py
+index 9af8b79..ee737a1 100644
+--- a/Users/bardia/Downloads/data 4/data/1237_problem_id/22201_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1237_problem_id/22201_author_id/Accepted.py	
+@@ -15,7 +15,9 @@ def main():
+ 		import math
+ 		# calculate side of inscribed n-gon
+ 		a = (R - r) * math.sin(math.pi / n)
+-		if r < a+1e-6: print('YES')
++		
++		#print(a)
++		if r < a+1e-7: print('YES')
+ 		else: print('NO')
+ 
+ 

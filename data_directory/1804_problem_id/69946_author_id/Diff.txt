@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1804_problem_id/69946_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1804_problem_id/69946_author_id/Accepted.py
+index c27074d..b8d8f7d 100644
+--- a/Users/bardia/Downloads/data 4/data/1804_problem_id/69946_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1804_problem_id/69946_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ nombre = input()
+ set = set(nombre)
+-if len(set) % 2:
++if len(set) % 2==0:
+     print("CHAT WITH HER!")
+ else:
+     print("IGNORE HIM!")
+\ No newline at end of file

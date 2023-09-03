@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/198_problem_id/23593_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/198_problem_id/23593_author_id/Accepted.py
+index f1f256b..19fdfed 100644
+--- a/Users/bardia/Downloads/data 4/data/198_problem_id/23593_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/198_problem_id/23593_author_id/Accepted.py	
+@@ -4,5 +4,5 @@ b=bin(a)
+ i=2
+ while i<len(b):
+     if b[i]=='1':
+-        print( pow(2,len(b)-i-1),end=" ")
++        print( len(b)-i,end=" ")
+     i+=1
+\ No newline at end of file

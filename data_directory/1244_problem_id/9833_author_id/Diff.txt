@@ -1,0 +1,46 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1244_problem_id/9833_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1244_problem_id/9833_author_id/Accepted.py
+index 138a478..232faec 100644
+--- a/Users/bardia/Downloads/data 4/data/1244_problem_id/9833_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1244_problem_id/9833_author_id/Accepted.py	
+@@ -1,12 +1,20 @@
+ a,x,y=map(int,input().split())
+ if y>0 and y%a!=0 and x>-a and x<a:
+     if y//a==0 or y//a==1 or y//a==2 :
+-        if y//a==0 and x<a/2 and x>-a/2:
+-            print(1)
+-            exit()
+-        elif y//a==1 and x<a/2 and x>-a/2:
+-            print(2)
+-            exit()
++        if y//a==0:
++            if x>-a/2 and x<a/2:
++                print(1)
++                exit()
++            else:
++                print(-1)
++                exit()
++        elif y//a==1:
++            if x>-a/2 and x<a/2:
++                print(2)
++                exit()
++            else:
++                print(-1)
++                exit()
+         else:
+             if x==0:
+                 print(-1)
+@@ -21,8 +29,12 @@ if y>0 and y%a!=0 and x>-a and x<a:
+         z=(y-3*a)//(2*a)
+         ans=4+3*z
+         k=y-3*a-2*a*z
+-        if k<a and x<a/2 and x>-a/2:
+-            ans+=1
++        if k<a:
++            if x>-a/2 and x<a/2:
++                ans+=1
++            else:
++                print(-1)
++                exit()
+         elif k>a:
+             ans+=2
+             if x>0:

@@ -1,0 +1,16 @@
+from sys import stdin
+i = [x.rstrip() for x in stdin.readlines()]
+it = int(i[0].split()[1])
+q = [c for c in i[1]]
+l = len(q)
+steps = (l)*it
+print (steps)
+x = 0
+while x<steps:
+    if q[x%l] =='B' and q[(x+1)%l]=='G':
+        q[x%l],q[(x+1)%l] = 'G', 'B'
+        x+=1
+    x+=1
+    if not (x+1)%l:
+        x+=1
+print (q)

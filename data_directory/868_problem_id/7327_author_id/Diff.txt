@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/868_problem_id/7327_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/868_problem_id/7327_author_id/Accepted.py
+index 36c3714..bf3891f 100644
+--- a/Users/bardia/Downloads/data 4/data/868_problem_id/7327_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/868_problem_id/7327_author_id/Accepted.py	
+@@ -1,10 +1,16 @@
+-n = int(input()) % 4
++def start_check(a):
++    n = a % 4
++    if n==2:
++        return 4
++    elif n==3:
++        return 2
++    elif n==0:
++        return 6
++    else:
++        return 8
+ 
+-if n==2:
+-    print(4)
+-elif n==3:
+-    print(2)
+-elif n==0:
+-    print(6)
++n = int(input())
++if n==0:
++    print(1)
+ else:
+-    print(8)
+\ No newline at end of file
++    print(start_check(n))
+\ No newline at end of file

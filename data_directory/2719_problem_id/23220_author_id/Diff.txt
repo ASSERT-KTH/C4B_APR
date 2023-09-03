@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2719_problem_id/23220_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2719_problem_id/23220_author_id/Accepted.py
+index 2dc0dad..ffe449e 100644
+--- a/Users/bardia/Downloads/data 4/data/2719_problem_id/23220_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2719_problem_id/23220_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ def read():
+     return [int(x) for x in input().split()]
+ x,y=read()
+ i=0
+-while x<y:
++while x<=y:
+     x*=3
+     y*=2
+     i+=1

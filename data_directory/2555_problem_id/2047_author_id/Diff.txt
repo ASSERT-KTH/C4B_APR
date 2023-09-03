@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/2047_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/2047_author_id/Accepted.py
+index 53d57b8..4d7d750 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/2047_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/2047_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ x = input()
+ i = 0
+ z = ""
+-for i in range (len(x)-7):
++for i in range (len(x)-6):
+     if(str(x[i]) == str(x[i+1]) and str(x[i]) == str(x[i+2]) and str(x[i]) == str(x[i+3]) and str(x[i]) == str(x[i+4]) and str(x[i]) == str(x[i+5]) and str(x[i]) == str(x[i+6])):
+         z = 0
+     i += 1

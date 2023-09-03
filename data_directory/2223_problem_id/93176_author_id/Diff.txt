@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2223_problem_id/93176_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2223_problem_id/93176_author_id/Accepted.py
+index 47630f5..874e35f 100644
+--- a/Users/bardia/Downloads/data 4/data/2223_problem_id/93176_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2223_problem_id/93176_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+-x = input()
++x = int(input())
+ if x%2==0 and x>2:
+     print("YES")
+ else:

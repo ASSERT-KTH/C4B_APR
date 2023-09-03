@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/25311_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/25311_author_id/Accepted.py
+index c3783d3..3e6e3e6 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/25311_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/25311_author_id/Accepted.py	
+@@ -1,16 +1,4 @@
+-# -*- coding: utf-8 -*-
+-def isLatin(s):
+-    try:
+-        s.encode('ascii')
+-    except UnicodeEncodeError:
+-        return False
+-    else:
+-        return True
+-
+-w = input('Enter a word: ')
+-
+-while ((len(w) < 1) or (len(w) > 101)) or (w.isalpha() is not True) or (isLatin(w) is False):
+-    w = input('Enter a non-blank word of Latin letters only: ')
++w = input()
+ 
+ if (w.isupper() is False) and (len(w) is 1):
+     w = w.capitalize()

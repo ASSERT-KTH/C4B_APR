@@ -1,0 +1,39 @@
+diff --git a/Users/bardia/Downloads/data 4/data/71_problem_id/12055_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/71_problem_id/12055_author_id/Accepted.py
+index 2865d14..71c8831 100644
+--- a/Users/bardia/Downloads/data 4/data/71_problem_id/12055_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/71_problem_id/12055_author_id/Accepted.py	
+@@ -1,13 +1,23 @@
+ def gcd(a,b):
+     if a==0:
+-        return int(b)
+-    return int(gcd(b%a,a))
++        return b
++    return gcd(b%a,a)
++l=list(map(int,input().split()))
++t=l[0]
++w=l[1]
++b=l[2]
++ans = 0
++lcm = (w*b)//gcd(w,b)
++mul = t//lcm
++if w > b:
++    temp = w
++    w = b
++    b = temp
++if t < lcm*mul + w -1 :
++    ans = t - lcm*mul + 1
++else:
++    ans = w
+ 
+-t,w,b=map(int,(input().split()))
+-
+-lcm = int((w*b)/gcd(w,b))
+-mul = int(t//lcm)
+-ans = min(t, lcm*mul+int(min(w,b)-1)) - lcm*mul + 1
+-ans += mul*min(w, b) - 1
++ans += mul*w - 1
+ g2 = gcd(ans,t)
+-print(int(ans/(g2)),"/",int(t//(g2)),sep="")
+\ No newline at end of file
++print(ans//(g2),"/",t//(g2),sep="")
+\ No newline at end of file

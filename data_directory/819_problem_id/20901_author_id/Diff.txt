@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/819_problem_id/20901_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/819_problem_id/20901_author_id/Accepted.py
+index ac77e00..377a37b 100644
+--- a/Users/bardia/Downloads/data 4/data/819_problem_id/20901_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/819_problem_id/20901_author_id/Accepted.py	
+@@ -8,4 +8,7 @@ for i in satr:
+             S=koor
+         koor=0
+     koor+=1
++if koor>S:
++    S=koor
++        
+ print(str(S))
+\ No newline at end of file

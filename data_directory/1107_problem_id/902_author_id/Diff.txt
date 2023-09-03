@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/902_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/902_author_id/Accepted.py
+index 5a52557..afcc715 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/902_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/902_author_id/Accepted.py	
+@@ -11,7 +11,7 @@ while True:
+             B = 1
+             break
+     else:
+-        n -= bmm(b,a)
++        n -= bmm(b,n)
+         if n<0:
+             B = 0
+             break

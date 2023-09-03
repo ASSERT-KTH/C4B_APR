@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2093_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2093_problem_id/1633_author_id/Accepted.py
+index 0cd75f3..d4de4a0 100644
+--- a/Users/bardia/Downloads/data 4/data/2093_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2093_problem_id/1633_author_id/Accepted.py	
+@@ -13,5 +13,5 @@ else:
+         for x in range(a - b + 2):
+             s += alphabet[x % 2]
+         for x in range(2, b):
+-            s += alphabet[x % 2]
++            s += alphabet[x]
+     print(s)
+\ No newline at end of file

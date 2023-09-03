@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1975_problem_id/2072_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1975_problem_id/2072_author_id/Accepted.py
+index eab9d26..9795c3c 100644
+--- a/Users/bardia/Downloads/data 4/data/1975_problem_id/2072_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1975_problem_id/2072_author_id/Accepted.py	
+@@ -10,4 +10,5 @@ while currentTime < t:
+             i += 1
+         i += 1
+     currentTime += 1
++    i = 0
+ print(''.join(seq))
+\ No newline at end of file

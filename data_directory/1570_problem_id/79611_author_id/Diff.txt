@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1570_problem_id/79611_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1570_problem_id/79611_author_id/Accepted.py
+index 84c68bc..462706c 100644
+--- a/Users/bardia/Downloads/data 4/data/1570_problem_id/79611_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1570_problem_id/79611_author_id/Accepted.py	
+@@ -3,6 +3,6 @@ from math import log, ceil
+ k,b,n,t = map(int, input().split())
+ 
+ if k == 1:
+-    print(max(0, ceil((t+bn-1)/b)))
++    print(max(0, ceil((1+b*n-t)/b)))
+ else:
+     print(max(0, ceil(n-log((t-t*k-b)/(1-k-b),k))))
+\ No newline at end of file

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1815_problem_id/55480_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1815_problem_id/55480_author_id/Accepted.py
+index 1a31e88..cf5526a 100644
+--- a/Users/bardia/Downloads/data 4/data/1815_problem_id/55480_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1815_problem_id/55480_author_id/Accepted.py	
+@@ -1,4 +1,5 @@
+ n, m = map(int, input().split())
+-s, d, k = 1, 1000000009, (1 << m) - 1
++s, d = 1, 1000000009
++k = pow(2, m, d) - 1
+ for i in range(n): s, k = (s * k) % d, k - 1
+ print(s)
+\ No newline at end of file

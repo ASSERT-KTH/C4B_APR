@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/994_problem_id/54164_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/994_problem_id/54164_author_id/Accepted.py
+index 01ad745..e9edf36 100644
+--- a/Users/bardia/Downloads/data 4/data/994_problem_id/54164_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/994_problem_id/54164_author_id/Accepted.py	
+@@ -6,4 +6,4 @@ if s % 1 > 0:
+     s = int(s + 1)
+ if q % 1 > 0:
+     q = int(q + 1)
+-print(s * q)
+\ No newline at end of file
++print(int(s * q))
+\ No newline at end of file

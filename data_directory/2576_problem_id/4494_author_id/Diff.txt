@@ -1,0 +1,8 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2576_problem_id/4494_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2576_problem_id/4494_author_id/Accepted.py
+index d669ab8..f20e834 100644
+--- a/Users/bardia/Downloads/data 4/data/2576_problem_id/4494_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2576_problem_id/4494_author_id/Accepted.py	
+@@ -1 +1,2 @@
++k,a,b=map(int,input().split())
+ print(-1 if (a<k and b<k) or (max(a,b)%k>0 and min(a,b)<k) else a//k+b//k)
+\ No newline at end of file

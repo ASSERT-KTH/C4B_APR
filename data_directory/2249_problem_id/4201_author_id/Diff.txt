@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2249_problem_id/4201_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2249_problem_id/4201_author_id/Accepted.py
+index 26654aa..75d403d 100644
+--- a/Users/bardia/Downloads/data 4/data/2249_problem_id/4201_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2249_problem_id/4201_author_id/Accepted.py	
+@@ -4,11 +4,9 @@ for ci in range(c + 1):
+   x = n - 2 * ci
+   if x < 0:
+     break
+-  for bi in range(b + 1):
+-    y = x - bi
+-    if y < 0:
+-      break
+-    if 2 * y <= a:
+-      count += 1
++  high = min(b, x)
++  low = max(0, x - a // 2)
++  if high >= low:
++    count += high - low + 1
+ 
+ print(count)
+\ No newline at end of file

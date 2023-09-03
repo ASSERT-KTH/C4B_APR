@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/994_problem_id/54477_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/994_problem_id/54477_author_id/Accepted.py
+index 9c8efc9..5814050 100644
+--- a/Users/bardia/Downloads/data 4/data/994_problem_id/54477_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/994_problem_id/54477_author_id/Accepted.py	
+@@ -2,11 +2,9 @@ from math import ceil
+ 
+ def main():
+     n, m, a = get_ints()
+-    if n==m==a:
+-        print (1)
+-    else:
+-        result =ceil(n/a)+ceil(m/a)
+-        print (result)
++        
++    result =ceil(n/a)*ceil(m/a)
++    print (result)
+     
+ 
+ 

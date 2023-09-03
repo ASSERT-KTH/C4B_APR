@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1681_problem_id/25133_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1681_problem_id/25133_author_id/Accepted.py
+index 575c57a..6e4747d 100644
+--- a/Users/bardia/Downloads/data 4/data/1681_problem_id/25133_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1681_problem_id/25133_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ n, m = map(int, input().split())
+ r = 0
+-for a in range(max(n,m)):
+-    for b in range(max(n,m)):
++for a in range(max(n,m)+1):
++    for b in range(max(n,m)+1):
+         if a**2 + b == n and a + b**2 == m:
+             r += 1
+ print(r)
+\ No newline at end of file

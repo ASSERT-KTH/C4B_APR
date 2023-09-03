@@ -1,0 +1,42 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/23306_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/23306_author_id/Accepted.py
+index 222d490..09c86d6 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/23306_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/23306_author_id/Accepted.py	
+@@ -1,21 +1,16 @@
+-def nrosuerte(n):
+-    if(n==447 or n==774 or n==477 or n==477):
+-        print("YES")
+-    else:
+-        if(n%4==0 or n%7==0 or n%74==0 or n%47==0):
+-            print("YES")
+-        else:
+-            print("NO") 
++def suerte(n):
++    n=str(n)
++    L=[0,1,2,3,5,6,8,9]
++    for k in L:
++        if(str(k) in n):
++            return False
++    return True
+ n=input("")
+-cont=0;k=0
+-while(k<len(n)-1):
+-    if(n[k]=="4" and n[k+1]=="7"):
+-        cont+=1;
+-        k+=1
+-    else:
+-        cont+=1;
+-        k+=2
+-if(cont==0):
+-    print("NO")
++cont=0
++for k in n:
++    if(k=="4" or k=="7"):
++        cont+=1
++if(suerte(cont) and cont!=0):
++    print("YES")
+ else:
+-    nrosuerte(cont)
+\ No newline at end of file
++    print("NO")
+\ No newline at end of file

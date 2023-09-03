@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/966_problem_id/45958_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/966_problem_id/45958_author_id/Accepted.py
+index d9bec92..6ecd437 100644
+--- a/Users/bardia/Downloads/data 4/data/966_problem_id/45958_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/966_problem_id/45958_author_id/Accepted.py	
+@@ -7,16 +7,16 @@ i = 0
+ for i in range(1, 1 + min(n-k, k-1)):
+     summ += g
+     g += 2
+-    if summ + g > m:
++    if summ > m:
+         soon = True
+         break
+ if not soon:
+     for i in range(1 + min(n-k, k-1), 1 + max(n-k, k-1)):
+         summ += g
+         g += 1
+-        if summ + g > m:
++        if summ > m:
+             soon = True
+             break
+ # print(summ, soon)
+ # print(i)
+-print(1 + i if soon else 1 + i + (m - summ) // n)
+\ No newline at end of file
++print(i if soon else 1 + i + (m - summ) // n)
+\ No newline at end of file

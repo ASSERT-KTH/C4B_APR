@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2697_problem_id/14410_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2697_problem_id/14410_author_id/Accepted.py
+index 0b3c572..931f2d0 100644
+--- a/Users/bardia/Downloads/data 4/data/2697_problem_id/14410_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2697_problem_id/14410_author_id/Accepted.py	
+@@ -3,7 +3,7 @@ c , d = map(int, input().split())
+ 
+ for i in range(0,101):
+ 	j = ((a * i) + b - d) / c
+-	if  j == int(j):
++	if  j == int(j) and j >= 0:
+ 		print((a * i) + b)
+ 		break
+ else: print(-1)
+\ No newline at end of file

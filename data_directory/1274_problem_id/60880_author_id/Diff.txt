@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1274_problem_id/60880_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1274_problem_id/60880_author_id/Accepted.py
+index d0905e7..7a6a80b 100644
+--- a/Users/bardia/Downloads/data 4/data/1274_problem_id/60880_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1274_problem_id/60880_author_id/Accepted.py	
+@@ -10,7 +10,6 @@ def main():
+             if y%harm[x]==0:
+                 if y in nums:
+                     nums.remove(y)
+-        nums2=nums
+     print(e-len(nums))
+     
+ if __name__=='__main__':

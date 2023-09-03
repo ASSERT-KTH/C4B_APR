@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/511_problem_id/37378_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/511_problem_id/37378_author_id/Accepted.py
+index 2813e28..fca9ef8 100644
+--- a/Users/bardia/Downloads/data 4/data/511_problem_id/37378_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/511_problem_id/37378_author_id/Accepted.py	
+@@ -1,22 +1,7 @@
+-def gank(a, b, c):
+-    d = b - a
+-    if (d == 0):
+-        return True
+-    elif (c == 0):
+-        return False
+-    elif ((d < 0 and c > 0) or (c < 0 and d > 0)):
+-        return False
+-    elif (c < 0):
+-        d *= -1
+-        c *= -1
+-    elif (d % c == 0):
+-        return True
+-    else:
+-        return False
+-
+-
+ a, b, c = map(int, input().split(' '))
+-if (gank(a, b, c)):
++if ((a != b and c == 0) or (b > a and c < 0)):
++    print("NO")
++elif ((a == b) or (b > a and c > 0 and ((b - a) % c == 0)) or (a > b and c < 0 and ((a - b) % c == 0))):
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

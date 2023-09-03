@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/133_problem_id/1287_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/133_problem_id/1287_author_id/Accepted.py
+index 4c1a7b1..d99ceb9 100644
+--- a/Users/bardia/Downloads/data 4/data/133_problem_id/1287_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/133_problem_id/1287_author_id/Accepted.py	
+@@ -1,16 +1,10 @@
+ if __name__ == '__main__':
+-    line0 = str(input()).split()
+-    line0 = [int(it) for it in line0]
+-    line1 = str(input()).split()
+-    line1 = [int(it) for it in line1]
+-    line = [it0 - it1 for it0, it1 in zip(line0, line1)]
+-    num = 0
+-    flag = False
+-    for it in line:
+-        if it > 1:
+-            flag = True
+-        num += it * (1 if it > 0 else 2)
+-    if flag and not num < 0:
+-        print('Yes')
+-    else:
+-        print('No')
+\ No newline at end of file
++    ff = list(map(int, input().split()))
++    tt = list(map(int, input().split()))
++    foo = too = 0
++    for i in range(3):
++        if ff[i] < tt[i]:
++            too += tt[i] - ff[i]
++        else:
++            foo += (ff[i] - tt[i]) // 2
++    print('No') if foo < too else print('Yes')
+\ No newline at end of file

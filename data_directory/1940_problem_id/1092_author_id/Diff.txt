@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1940_problem_id/1092_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1940_problem_id/1092_author_id/Accepted.py
+index 0541e0a..89e6afd 100644
+--- a/Users/bardia/Downloads/data 4/data/1940_problem_id/1092_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1940_problem_id/1092_author_id/Accepted.py	
+@@ -4,6 +4,9 @@ def Primo(N):
+         for k in range (2,N):
+             if N%k==0:
+                 div +=1
++                if div >0:
++                    break
++                    return False
+         if div ==0:
+             return True
+         else:
+@@ -12,14 +15,13 @@ def Primo(N):
+         return False
+ 
+ def CasiPrimo(N):
+-    Div = []
++    Cont =0
+     for k in range (2,N):
+-            if N%k==0:
+-                Div.append(k)
+-    Cont = 0
+-    for k in range (len(Div)):
+-        if Primo(Div[k]):
+-            Cont +=1
++        if N%k==0:
++            if Primo(k):
++                Cont +=1
++                if Cont >2:
++                    break
+     if Cont==2:
+         return True
+     else:

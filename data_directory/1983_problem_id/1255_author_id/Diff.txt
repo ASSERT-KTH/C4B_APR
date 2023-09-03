@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1983_problem_id/1255_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1983_problem_id/1255_author_id/Accepted.py
+index 4f554fe..5316243 100644
+--- a/Users/bardia/Downloads/data 4/data/1983_problem_id/1255_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1983_problem_id/1255_author_id/Accepted.py	
+@@ -1,8 +1,12 @@
+ n = int(input())
+ m = 0
+ p = 2
+-for i in range(n - 2 , 0, -1):
+-    m += i * p + 1
+-    print(i,p)
+-    p += 1
++if n == 1:
++    print(1)
++elif n == 2:
++    print(3)
++elif n > 2:
++    for i in range(n - 2 , 0, -1):
++        m += i * p + 1
++        p += 1
+     print(n + m + 1)
+\ No newline at end of file

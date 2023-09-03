@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/394_problem_id/7329_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/394_problem_id/7329_author_id/Accepted.py
+index ac02bd3..60c5e3d 100644
+--- a/Users/bardia/Downloads/data 4/data/394_problem_id/7329_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/394_problem_id/7329_author_id/Accepted.py	
+@@ -4,8 +4,7 @@ Created on 20160607
+ 
+ @author: ChronoCorax
+ '''
+-n = int(input())
+-k = int(input())
++n, k = [int(c) for c in input().split()]
+ c = n - 2 * k
+ if c < 0: c = 0
+ a = n * (n - 1) // 2 - c * (c - 1) // 2

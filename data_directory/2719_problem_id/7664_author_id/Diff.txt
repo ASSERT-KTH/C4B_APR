@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2719_problem_id/7664_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2719_problem_id/7664_author_id/Accepted.py
+index 56c566d..ae8b09c 100644
+--- a/Users/bardia/Downloads/data 4/data/2719_problem_id/7664_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2719_problem_id/7664_author_id/Accepted.py	
+@@ -32,12 +32,14 @@ def process_stdio():
+     solve(read, write)
+ 
+ 
+-from math import floor, log
++from math import ceil, log
+ 
+ 
+ def solve(input, print):
+     a, b = map(int, input().split())
+-    n = 1 + floor((log(b) - log(a)) / (log(3) - log(2)))
++    n = ceil((log(b) - log(a)) / (log(3) - log(2)))
++    if (3 ** n) * a == (2 ** n) * b:
++        n += 1
+     print(n)
+ 
+ 

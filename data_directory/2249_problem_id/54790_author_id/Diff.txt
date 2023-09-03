@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2249_problem_id/54790_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2249_problem_id/54790_author_id/Accepted.py
+index 747c429..8dacdcb 100644
+--- a/Users/bardia/Downloads/data 4/data/2249_problem_id/54790_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2249_problem_id/54790_author_id/Accepted.py	
+@@ -5,5 +5,5 @@ for i in range(c+1):
+  if(e<0):break
+  d1=( e - min(b,e) )
+  d2=min(e,a//2)
+- r+=(d2-d1+1)*(d2-d1>0)
++ r+=(d2-d1+1)*(d2-d1>=0)
+ print(r)
+\ No newline at end of file

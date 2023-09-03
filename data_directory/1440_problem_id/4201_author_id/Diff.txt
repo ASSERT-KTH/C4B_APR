@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1440_problem_id/4201_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1440_problem_id/4201_author_id/Accepted.py
+index d457fb3..6e4841f 100644
+--- a/Users/bardia/Downloads/data 4/data/1440_problem_id/4201_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1440_problem_id/4201_author_id/Accepted.py	
+@@ -6,6 +6,9 @@ while n != 1:
+         if n % a == 0:
+             break
+         a += 1
+-    n //= a
++    if a * a > n:
++        n = 1
++    else:
++        n //= a
+     result += n
+ print(result)
+\ No newline at end of file

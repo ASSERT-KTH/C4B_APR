@@ -1,0 +1,1 @@
+[print('.'+letra.lower(), end='') for letra in input() if letra.lower() != 'y' and letra.lower() != 'a' and letra.lower() != 'e' and letra.lower() != 'i' and letra.lower() != 'o' and letra.lower() != 'u']

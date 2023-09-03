@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1268_problem_id/3268_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1268_problem_id/3268_author_id/Accepted.py
+index fc7b522..bd230c3 100644
+--- a/Users/bardia/Downloads/data 4/data/1268_problem_id/3268_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1268_problem_id/3268_author_id/Accepted.py	
+@@ -1,14 +1,7 @@
+ def main():
+-    s, mask = input().split()
+-    chk = lambda x: ''.join(c for c in str(x) if c in ('4,7')) == mask
+-    i = int(s) + 1
+-    if chk(i):
+-        return print(i)
+-    rest = int(mask[-1])
+-    if rest < i % 10:
+-        i += 10
+-    for i in range(max(i, int(mask)) // 10 * 10 + rest, 999999, 10):
+-        if chk(i):
++    a, b = input().split()
++    for i in range(max(int(a) + 1, int(b)), 999999):
++        if ''.join(c for c in str(i) if c in ('4,7')) == b:
+             return print(i)
+ 
+ 

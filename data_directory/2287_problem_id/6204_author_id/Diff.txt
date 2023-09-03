@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2287_problem_id/6204_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2287_problem_id/6204_author_id/Accepted.py
+index 22b7e6b..10839df 100644
+--- a/Users/bardia/Downloads/data 4/data/2287_problem_id/6204_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2287_problem_id/6204_author_id/Accepted.py	
+@@ -1,13 +1,10 @@
+ ax, bx = map(str, input().split())
+-a, b = int(ax), int(bx)
+ d = max([ord(c) - ord('0') for c in ax] + [ord(c) - ord('0') for c in bx]) + 1
+ ad, bd = 0, 0
+-while a > 0:
+-  ad = ad * d + a % 10
+-  a //= 10
+-while b > 0:
+-  bd = bd * d + b % 10
+-  b //= 10
++for dig in ax:
++  ad = ad * d + (ord(dig) - ord('0')) % 10
++for dig in bx:
++  bd = bd * d + (ord(dig) - ord('0')) % 10
+ c = ad + bd
+ ans = 0
+ while c > 0:

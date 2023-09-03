@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/35546_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/35546_author_id/Accepted.py
+index e48f542..e3a49a7 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/35546_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/35546_author_id/Accepted.py	
+@@ -8,4 +8,6 @@ else:
+             res += 1
+     if 'VVV' in s or s[-2:] == 'VV':
+         res += 1
++    elif 'KKK' in s or s[:2] == 'KK':
++        res += 1
+     print(res)
+\ No newline at end of file

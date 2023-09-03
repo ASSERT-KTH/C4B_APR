@@ -1,0 +1,37 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2837_problem_id/3745_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2837_problem_id/3745_author_id/Accepted.py
+index bbb8ed4..4ed22dc 100644
+--- a/Users/bardia/Downloads/data 4/data/2837_problem_id/3745_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2837_problem_id/3745_author_id/Accepted.py	
+@@ -1,22 +1,12 @@
+ def fun(n):
+-    cnt = 0
+-    while n>0:
+-        now = n % 10
+-        ##print(n,now)
+-        n = n / 10
+-        if now>0:
+-            cnt+=1
+-        n = int(n)
+-    if cnt>1:
+-        return 0;
+-    else:
+-        return 1
+-
++    ln = len(n)
++    tmp = ord(n[0])
++    tmp = tmp - 47
++    for i in range(ln-1):
++        tmp *=10
++    print(tmp - int(n))
++        
+ 
+ if __name__ == "__main__":
+     n = input()
+-    n = int(n)
+-    i = n+1
+-    while fun(i)!=1:
+-        i+=1
+-    print(i-n)
+\ No newline at end of file
++    fun(n)
+\ No newline at end of file

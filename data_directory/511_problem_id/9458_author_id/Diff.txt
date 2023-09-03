@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/511_problem_id/9458_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/511_problem_id/9458_author_id/Accepted.py
+index dcfdea5..9d451b8 100644
+--- a/Users/bardia/Downloads/data 4/data/511_problem_id/9458_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/511_problem_id/9458_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ a,b,c = map(int,input().split())
+ if c == 0: print("NO") if a != b else print("YES")
+ else:
+-	print("YES") if b >= a and (b-a)%c == 0 else print("NO")
+\ No newline at end of file
++	print("YES") if (b-a)//c >= 0 and (b-a)%c == 0 else print("NO")
+\ No newline at end of file

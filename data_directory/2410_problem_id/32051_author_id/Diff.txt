@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2410_problem_id/32051_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2410_problem_id/32051_author_id/Accepted.py
+index b2684de..2008d96 100644
+--- a/Users/bardia/Downloads/data 4/data/2410_problem_id/32051_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2410_problem_id/32051_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ def readln(): return tuple(map(int, input().split()))
+ 
+ n, = readln()
+-print(pow(3, n - 1, 10**6 + 3) if n else 0)
+\ No newline at end of file
++print(pow(3, n - 1, 10**6 + 3) if n else 1)
+\ No newline at end of file

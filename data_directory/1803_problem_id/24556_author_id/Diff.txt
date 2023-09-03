@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1803_problem_id/24556_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1803_problem_id/24556_author_id/Accepted.py
+index a86c115..8733a2f 100644
+--- a/Users/bardia/Downloads/data 4/data/1803_problem_id/24556_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1803_problem_id/24556_author_id/Accepted.py	
+@@ -1,7 +1,9 @@
+ n = int(input())
+ if n <= 2:
+     print(n)
+-elif n % 2 == 0:
+-    print(max(n*(n-1)*(n-2)//2, (n-1)*(n-2)*(n-3), n*(n-1)*(n-3)))
++elif n % 2 == 1:
++    print(n*(n-1)*(n-2))
++elif n % 3 == 0:
++    print((n-1)*(n-2)*(n-3))
+ else:
+-    print(n*(n-1)*(n-2))
+\ No newline at end of file
++    print(n*(n-1)*(n-3))
+\ No newline at end of file

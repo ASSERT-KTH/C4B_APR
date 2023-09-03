@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2296_problem_id/62272_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2296_problem_id/62272_author_id/Accepted.py
+index c856845..682e4fe 100644
+--- a/Users/bardia/Downloads/data 4/data/2296_problem_id/62272_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2296_problem_id/62272_author_id/Accepted.py	
+@@ -1,18 +1,10 @@
+-(m, n,) = list(map(int, input().split()))
+-
+-if m%2 != 0 and n%2 != 0 and m != 1 and n != 1:
+-    ans = (((m*(n-1))/2)+1)
+-elif m == 1 and n%2 == 0:
+-    ans = n/2
+-elif n == 1 and m%2 == 0:
+-    ans = m/2
+-elif n == 1 and m%2 != 0:
+-    ans = (m-1)/2
+-elif m == 1 and n%2 != 0:
+-    ans = (n-1)/2
+-elif (m == 1) and (n == 1):
+-    ans = 0
+-else:
+-    ans = ((m * n) / 2)
+-
+-print (int(ans))
+\ No newline at end of file
++(M, N,) = list(map(int, input().split()))
++if M%2==0 and N%2==0:
++    print((M*N)//2)
++elif (M%2==0 and N%2!=0) or (M%2!=0 and N%2==0):
++    print((M*N)//2)
++elif M%2!=0 and N%2!=0:
++    if M > N:
++        print((M*(N-1))//2+(M-1)//2)
++    else:
++        print((N*(M-1))//2+(N-1)//2)
+\ No newline at end of file

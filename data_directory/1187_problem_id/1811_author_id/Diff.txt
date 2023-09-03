@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/1811_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/1811_author_id/Accepted.py
+index 87a1c0b..70ee759 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/1811_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/1811_author_id/Accepted.py	
+@@ -1,5 +1,13 @@
+ s = input().strip()
+ 
++if len(s) == 1:
++	if s.islower():
++		print(s.upper())
++		quit()
++	else:
++		print(s.lower())
++		quit()
++
+ if s.islower():
+ 	print(s)
+ 	quit()

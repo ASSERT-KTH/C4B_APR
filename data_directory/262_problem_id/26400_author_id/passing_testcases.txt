@@ -1,0 +1,1 @@
+[{'inputdata': '7', 'expectedresult': '25'}, {'inputdata': '1000000000000000000', 'expectedresult': '25'}, {'inputdata': '2000000000000000000', 'expectedresult': '25'}, {'inputdata': '987654321012345678', 'expectedresult': '25'}]

@@ -1,0 +1,1 @@
+[{'inputdata': '.......A\r\n........\r\n........\r\n........\r\n........\r\nS.......\r\n.S......\r\nM.......', 'expectedresult': 'WIN'}, {'inputdata': '.S.....A\r\n..SS....\r\n.S......\r\nSS......\r\n..S.....\r\nS.......\r\n.S......\r\nM.......', 'expectedresult': 'WIN'}]

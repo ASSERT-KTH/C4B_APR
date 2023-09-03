@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/6202_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/6202_author_id/Accepted.py
+index 0a78e96..7576f07 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/6202_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/6202_author_id/Accepted.py	
+@@ -5,12 +5,12 @@ for i in range(len(n)):
+     h=ord(n[i])
+     if 64 < h and h < 91:
+         h=h+32
+-        if h==97 or h==101 or h==111 or h==105 or h==117:
++        if h==97 or h==101 or h==111 or h==105 or h==117 or h==121:
+             n[i]=""
+         else:
+             n[i]="."+chr(h)
+     else:
+-        if h == 97 or h == 101 or h == 111 or h == 105 or h == 117:
++        if h == 97 or h == 101 or h == 111 or h == 105 or h == 117 or h==121:
+             n[i] = ""
+         else:
+             n[i] = "." + chr(h)

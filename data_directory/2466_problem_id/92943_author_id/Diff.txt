@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2466_problem_id/92943_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2466_problem_id/92943_author_id/Accepted.py
+index 867dea4..575b665 100644
+--- a/Users/bardia/Downloads/data 4/data/2466_problem_id/92943_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2466_problem_id/92943_author_id/Accepted.py	
+@@ -19,24 +19,25 @@ def lower_tile(tile):
+ 
+ def nearby_tiles(tile, move):
+     if move == 'L':
+-        return {upper_tile(tile), lower_tile, right_tile(tile)}
++        return {upper_tile(tile), lower_tile(tile), right_tile(tile)}
+     elif move == 'R':
+-        return {upper_tile(tile), lower_tile, left_tile(tile)}
++        return {upper_tile(tile), lower_tile(tile), left_tile(tile)}
+     elif move == 'U':
+-        return {left_tile(tile), lower_tile, right_tile(tile)}
++        return {left_tile(tile), lower_tile(tile), right_tile(tile)}
+     else:
+-        return {left_tile(tile), upper_tile, right_tile(tile)}
++        return {left_tile(tile), upper_tile(tile), right_tile(tile)}
+ 
+ 
+ def is_shortest_path(robot_path, change_position):
+     reached_tiles = set()
+     position = (0, 0)
+-    reached_tiles.update(position)
++    reached_tiles.update([position])
+     for move in robot_path:
+         reached_tiles.update(nearby_tiles(position, move))
+         position = change_position[move](position)
+         if position in reached_tiles:
+             return False
++        reached_tiles.update([position])
+     return True
+ 
+ 

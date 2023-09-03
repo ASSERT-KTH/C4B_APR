@@ -1,0 +1,40 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2697_problem_id/4061_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2697_problem_id/4061_author_id/Accepted.py
+index 9c93a55..685825c 100644
+--- a/Users/bardia/Downloads/data 4/data/2697_problem_id/4061_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2697_problem_id/4061_author_id/Accepted.py	
+@@ -1,27 +1,8 @@
+ a,b=map(int,input().split())
+ r,l=map(int,input().split())
+-if b==l :
+-    print(a)
+-    exit()
+-else :
+-    L=[]
+-    for i in range(0,10000) :
+-        L.append((a*i)%r)
+-    
+-    L1=[]
+-    for i in range(0,10000) :
+-        L1.append((r*i)%a)
+-    d=(b-l)
+-    v=abs(d)%r
+-    v1=abs(d)%a
+-    c=1
+-    if d>0 :
+-        if v1 in L1 :
+-            print((L1.index(v1))*r+l)
+-            c=0
+-    else :
+-        if v in L :
+-            print((L.index(v))*a+b)
+-            c=0
+-    if c==1 :
+-        print(-1)
+\ No newline at end of file
++for i in range(0,101) :
++    for j in range(101) :
++        if a*i+b==l+r*j :
++            print(a*i+b)
++            exit()
++print(-1)
+\ No newline at end of file

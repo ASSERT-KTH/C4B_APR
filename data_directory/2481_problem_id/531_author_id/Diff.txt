@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/531_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/531_author_id/Accepted.py
+index 57b3e1f..f6c5e4c 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/531_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/531_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ '''input
+-6
++92
+ '''
+ n = int(input())
+ l = ['Sheldon', 'Leonard', 'Penny', 'Rajesh', 'Howard']
+@@ -7,8 +7,8 @@ if n < 5:
+ 	print(l[n-1])
+ else:	
+ 	x = -1
+-	while 10*(2**x-1)+6 < n:
++	while 10*(2**x-1)+6 <= n:
+ 		x += 1
+ 	x-=1
+ 	x1 = int(10*(2**x-1)+6)
+-	print(l[(n-x1)//(2**(x+1))-1])
+\ No newline at end of file
++	print(l[(n-x1)//(2**(x+1))])
+\ No newline at end of file

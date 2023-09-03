@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2656_problem_id/49269_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2656_problem_id/49269_author_id/Accepted.py
+index d5cc235..b585edc 100644
+--- a/Users/bardia/Downloads/data 4/data/2656_problem_id/49269_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2656_problem_id/49269_author_id/Accepted.py	
+@@ -12,7 +12,8 @@ for d in reversed(N):
+     break
+   i += 1
+ 
+-if K >= len(N):
++l = len(N)
++if i + dels == l or K >= l:
+   print(len(N)-1)
+ else:
+   print(dels)
+\ No newline at end of file

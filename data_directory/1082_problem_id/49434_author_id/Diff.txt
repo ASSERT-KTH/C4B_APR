@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1082_problem_id/49434_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1082_problem_id/49434_author_id/Accepted.py
+index 859bb60..d11e435 100644
+--- a/Users/bardia/Downloads/data 4/data/1082_problem_id/49434_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1082_problem_id/49434_author_id/Accepted.py	
+@@ -15,6 +15,9 @@ while l>=k and res:
+     l//= k
+     count += 1
+ 
++if l>1:
++    res = False
++
+ if res:
+     print("YES")
+     print(count-1)

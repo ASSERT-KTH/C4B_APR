@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/60951_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/60951_author_id/Accepted.py
+index c5adf7c..63c3949 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/60951_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/60951_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ w = input().lower()
+ wf = ''
+ for itch in range(0, len(w)):
+-    if (w[itch] == 'a') or (w[itch] == 'e') or (w[itch] == 'i') or (w[itch] == 'o') or (w[itch] == 'u'):
++    if (w[itch] == 'a') or (w[itch] == 'e') or (w[itch] == 'i') or (w[itch] == 'o') or (w[itch] == 'u') or (w[itch] == 'y'):
+         continue
+     else:
+         wf += '.' + w[itch]

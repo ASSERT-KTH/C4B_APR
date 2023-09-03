@@ -1,0 +1,27 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/7981_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/7981_author_id/Accepted.py
+index 3f4779f..a31810a 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/7981_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/7981_author_id/Accepted.py	
+@@ -1,8 +1,18 @@
+ a,b,n=list(map(int,input().split()))
+ def gcd(x,y):
++    if x==0:
++        return y
++    if y==0:
++        return x
+     while(x!=y):
+         x,y=max(x,y),min(x,y)
+         x-=y
+     return y
+-x=gcd(a,b)
+-print((n//x+1)%2)
+\ No newline at end of file
++ans=0
++while n>0:
++    if ans%2==0:
++        n-=gcd(a,n)
++    else:
++        n-=gcd(b,n)
++    ans+=1
++print((ans+1)%2)
+\ No newline at end of file

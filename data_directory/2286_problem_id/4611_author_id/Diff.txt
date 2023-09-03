@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2286_problem_id/4611_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2286_problem_id/4611_author_id/Accepted.py
+index d7de580..fc41633 100644
+--- a/Users/bardia/Downloads/data 4/data/2286_problem_id/4611_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2286_problem_id/4611_author_id/Accepted.py	
+@@ -12,10 +12,11 @@ if len(st) > 1:
+         else:
+             print("NO")
+ else:
+-    if st[0][-1]=='a' or st[0][-1]=='e' or st[0][-1]=='o' or st[0][-1]=='i' or st[0][-1]=='u' or st[0][-1]=='y' or st[0][-1]=='A' or st[0][-1]=='O' or st[0][-1]=='E' or st[0][-1]=='I' or st[0][-1]=='U' or st[0][-1]=='Y':
+-        print("YES")
+-    else:
+-        print("NO")
++    if len(st[0]) > 1:
++       if st[0][-2]=='a' or st[0][-2]=='e' or st[0][-2]=='o' or st[0][-2]=='i' or st[0][-2]=='u' or st[0][-2]=='y' or st[0][-2]=='A' or st[0][-2]=='O' or st[0][-2]=='E' or st[0][-2]=='I' or st[0][-2]=='U' or st[0][-2]=='Y':
++           print("YES")
++       else:
++           print("NO")
+ 
+ 
+     

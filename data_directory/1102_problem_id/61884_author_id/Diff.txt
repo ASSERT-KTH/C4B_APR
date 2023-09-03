@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/61884_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/61884_author_id/Accepted.py
+index 98ee3c0..4a1f491 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/61884_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/61884_author_id/Accepted.py	
+@@ -3,7 +3,6 @@ import re
+ 
+ def out(in_string):
+     no_vowel = re.sub(r"[aoyeui]", "", in_string.lower())
+-    print(no_vowel)
+     consonant_transform = re.sub(r"(\w)", r".\g<1>", no_vowel)
+     print(consonant_transform)
+ 

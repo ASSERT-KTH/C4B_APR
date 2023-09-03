@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/968_problem_id/6697_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/968_problem_id/6697_author_id/Accepted.py
+index d857772..d79045a 100644
+--- a/Users/bardia/Downloads/data 4/data/968_problem_id/6697_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/968_problem_id/6697_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ def main() :
+     a = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+     n, k = map(int, input().split())
+-    print(1 + a[n - 1] - (8 - k + 6) // 7)
++    print(1 + (a[n-1] - (8 - k) + 6) // 7)
+ 
+     return 0
+ 

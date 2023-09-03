@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/44361_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/44361_author_id/Accepted.py
+index a931808..1c7f7d6 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/44361_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/44361_author_id/Accepted.py	
+@@ -7,8 +7,10 @@ for i in range(len(Location)-1):
+      elif k<7:
+           k=1
+      else:
+-          print('YES')
+           break
+ 
++
+ if k<7:
+-     print('NO')
+\ No newline at end of file
++     print('NO')
++else:
++     print('YES')
+\ No newline at end of file

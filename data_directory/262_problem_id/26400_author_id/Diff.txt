@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/262_problem_id/26400_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/262_problem_id/26400_author_id/Accepted.py
+index 9058623..31b14d2 100644
+--- a/Users/bardia/Downloads/data 4/data/262_problem_id/26400_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/262_problem_id/26400_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ a=int(input())
+-if a>6:
++if a>1:
+     print('25')
+ else :
+     print('5')
+\ No newline at end of file

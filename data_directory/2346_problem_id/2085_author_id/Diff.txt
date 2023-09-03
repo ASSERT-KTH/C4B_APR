@@ -1,0 +1,43 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2346_problem_id/2085_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2346_problem_id/2085_author_id/Accepted.py
+index 9f5c466..0a911b6 100644
+--- a/Users/bardia/Downloads/data 4/data/2346_problem_id/2085_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2346_problem_id/2085_author_id/Accepted.py	
+@@ -1,11 +1,26 @@
+ a=list(map(int,input().split()))
+-b=max(a)
+-a.sort()
+-d=a[len(a)-2]
+-c=a[len(a)-3]
+-if(b<d+c):
+-    print("TRIANGLE")
+-elif(d+c+a[0]>b):
+-    print("SEGMENT")
+-else:
+-    print("IMPOSSIBLE")
+\ No newline at end of file
++b=True
++while b:
++    if(a[0]+a[1]>a[2] and a[0]+a[2]>a[1] and a[1]+a[2]>a[0]):
++       print("TRIANGLE")
++       b=False
++    elif(a[0]+a[1]>a[3] and a[0]+a[3]>a[1] and a[1]+a[3]>a[0]):
++       print("TRIANGLE")
++       b=False
++    elif(a[0]+a[2]>a[3] and a[0]+a[3]>a[2] and a[2]+a[3]>a[0]):
++       print("TRIANGLE")
++       b=False
++    elif(a[2]+a[1]>a[3] and a[2]+a[3]>a[1] and a[1]+a[3]>a[2]):
++       print("TRIANGLE")
++       b=False
++    else:
++        a=sorted(a)
++        c=a[len(a)-1]
++        d=a[len(a)-2]
++        if(a[1]+d>=c):
++            print("SEGMENT")
++        elif(a[0]+a[1]>=d):
++            print("SEGMENT")
++        else:
++            print("IMPOSSIBLE")
++        b=False
+\ No newline at end of file

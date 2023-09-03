@@ -1,0 +1,39 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2340_problem_id/40883_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2340_problem_id/40883_author_id/Accepted.py
+index 0b831ee..968e16d 100644
+--- a/Users/bardia/Downloads/data 4/data/2340_problem_id/40883_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2340_problem_id/40883_author_id/Accepted.py	
+@@ -14,17 +14,20 @@ def contador (entrada):
+ 	return (cont_may,cont_min)	
+ 
+ 
++def juego(num):	
++
++	if num[0]== num[1]:
++		return(entrada.lower())
++
++	if num[0]== len(entrada) or num[1]== len(entrada):
++		return (entrada)
++		
++	if num[0] > num[1]:
++		return (entrada.upper())
++		
++	if num[0] < num[1]:
++		return(entrada.lower())
++			
+ entrada = input()
+ numero = contador(entrada)
+-	
+-if numero[0]== numero[1]:
+-	print(entrada.lower())
+-
+-if numero[0]== len(entrada) or numero[1]== len(entrada):
+-	print (entrada)
+-	
+-if numero[0] > numero[1]:
+-	print (entrada.upper())
+-	
+-if numero[0] < numero[1]:
+-	print(entrada.lower())
+\ No newline at end of file
++print (juego(numero))
+\ No newline at end of file

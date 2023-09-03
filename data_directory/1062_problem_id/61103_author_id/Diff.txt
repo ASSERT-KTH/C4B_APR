@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/61103_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/61103_author_id/Accepted.py
+index a926d5c..eede422 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/61103_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/61103_author_id/Accepted.py	
+@@ -3,7 +3,6 @@ number = 0
+ for c in st:
+     if c == '4' or c == '7':
+         number += 1
+-        print(number)
+ if number == 4 or number == 7:
+     print("YES")
+ else:

@@ -1,0 +1,42 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1960_problem_id/39358_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1960_problem_id/39358_author_id/Accepted.py
+index 871430a..7c25c75 100644
+--- a/Users/bardia/Downloads/data 4/data/1960_problem_id/39358_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1960_problem_id/39358_author_id/Accepted.py	
+@@ -11,29 +11,13 @@ for sub_list in matrix :
+     if char in sub_list:
+         i = matrix.index(sub_list)
+         j = sub_list.index(char)
+-ii = i
+ if i in range(2):
+     
+-    while i < 2:
+-        matrix[i],matrix[i+1] = matrix[i+1],matrix[i]
+-        count = count + 1
+-        i = i + 1    
++    count = 2 - i
+ else :
+-    while i > 2:
+-        matrix[i],matrix[i-1] = matrix[i-1],matrix[i]
+-        count = count + 1
+-        i = i - 1
+-matrix_row = matrix.pop(ii)        
++    count = i - 2
+ if j in range(2):
+-    
+-    while j < 2:
+-        matrix_row[ii],matrix_row[ii+1] = matrix_row[ii+1],matrix_row[ii]
+-        count = count + 1
+-        j = j + 1
+-    
+-else :
+-    while j > 2:
+-        matrix_row[ii],matrix_row[ii-1] = matrix_row[ii-1],matrix[ii]
+-        count = count + 1
+-        j = j - 1
+-print(count)
+\ No newline at end of file
++    count = count + (2 - j)
++else:
++    count = count + (j - 2)
++print (count)
+\ No newline at end of file

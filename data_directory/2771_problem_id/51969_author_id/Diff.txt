@@ -1,0 +1,39 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2771_problem_id/51969_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2771_problem_id/51969_author_id/Accepted.py
+index fbf4572..f3aaba6 100644
+--- a/Users/bardia/Downloads/data 4/data/2771_problem_id/51969_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2771_problem_id/51969_author_id/Accepted.py	
+@@ -1,19 +1,28 @@
+ n,t,k,d=list(map(int,input().strip().split(' ')))
+ old=0
+-if n%k==0:
+-    old=n//k*t
+-else:
+-    old=(n//k+1)*t
++total=0
++time1=0
++while(total<n):
++    if time1%t==0 and time1>0:
++        total+=k
++    time1+=1  
++old=time1
+ 
+ total=0
+ time1=0
+ time2=0
++check=0
+ while(total<n):
+     if time1%t==0 and time1>0:
+         total+=k
+-    time1+=1  
+-    if time2>d and (time2-d)%t==0:
++        if time1>d and check==0:
++            check=1
++            start=time1
++            
++    if check==1 and (time2-start)%t==0 :
+         total+=k
++        
++    time1+=1    
+     time2+=1
+ if time1<old:
+     print('YES')

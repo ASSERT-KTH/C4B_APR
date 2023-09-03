@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/514_problem_id/5007_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/514_problem_id/5007_author_id/Accepted.py
+index 67546d1..d7709c2 100644
+--- a/Users/bardia/Downloads/data 4/data/514_problem_id/5007_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/514_problem_id/5007_author_id/Accepted.py	
+@@ -5,4 +5,4 @@ min_a11 = max(min_a11,1+d-a)
+ max_a11 = min(max_a11,n+d-a)
+ min_a11 = max(min_a11,1+c+d-a-b)
+ max_a11 = min(max_a11,n+c+d-a-b)
+-print(n*(max_a11-min_a11+1))
+\ No newline at end of file
++print(n*(max(max_a11-min_a11+1,0)))
+\ No newline at end of file

@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/957_problem_id/531_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/957_problem_id/531_author_id/Accepted.py
+index 6c98658..e8dae22 100644
+--- a/Users/bardia/Downloads/data 4/data/957_problem_id/531_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/957_problem_id/531_author_id/Accepted.py	
+@@ -1,12 +1,11 @@
+ '''input
+-!GB!RG!Y!
++!RGYB
+ '''
+ s = input()
+ r, y, g, b = [s.index(i) % 4 for i in "RYGB"]
+-d, t = {r: "R", y: "Y", g: "G", b: "B"}, []
++d, a, t = {r: "R", y: "Y", g: "G", b: "B"}, {"R": 0, "Y": 0, "G": 0, "B": 0}, []
+ for x in range(len(s)):
+ 	if s[x] == "!":
+-		t.append(d[x % 4])
+-	else:
+-		t.append(s[x])
+-print(t)
+\ No newline at end of file
++		a[d[x % 4]] += 1
++for y in "RBYG":
++	print(a[y], end = " ")
+\ No newline at end of file

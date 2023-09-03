@@ -1,0 +1,58 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1976_problem_id/54717_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1976_problem_id/54717_author_id/Accepted.py
+index a394a3d..20f1345 100644
+--- a/Users/bardia/Downloads/data 4/data/1976_problem_id/54717_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1976_problem_id/54717_author_id/Accepted.py	
+@@ -4,22 +4,40 @@ stones = []
+ for i in strstone:
+ 	stones.append(i)
+ to_remove = 0
+-for i in range(n):
+-	stone = stones[i]
+-	if i == 0:
+-		if stones[i + 1] == stone:
++position = 0
++while position < len(stones):
++	stone = stones[position]
++#	print("Stones are:")
++#	print(stones)
++#	print("Position is: " + str(position))
++#	print("Stone is: " + stone)
++	if len(stones) == 1:
++		break
++	elif position == 0:
++		if stones[position + 1] == stone:
+ 			to_remove += 1
+-			stones.pop(i)
+-	elif i == n - 1:
+-		if stones[i - 1] == stone:
++#			print("Position is 0 and removing stone: " + str(stones[position]))
++			stones.pop(position)
++			position -= 1
++	elif position == len(stones) - 1:
++		if stones[position - 1] == stone:
+ 			to_remove += 1
+-			stones.pop(i)
++#			print("Position is last and removing stone: " + str(stones[position]))			
++			stones.pop(position)
++			position -= 1
+ 	else:
+-		if stones[i + 1] == stone:
++		if stones[position + 1] == stone:
+ 			to_remove += 1
+-			stones.pop(i)
+-		elif stones[i - 1] == stone:
++#			print("Position is in middle and removing stone: " + str(stones[position]))
++			stones.pop(position)
++			position -= 1
++		elif stones[position - 1] == stone:
+ 			to_remove += 1
+-			stones.pop(i)
++#			print("Position is in middle and removing stone: " + str(stones[position]))
++			stones.pop(position)
++			position -= 1
++	position += 1
++#	print("Position ++")
++#	print("#######NEXT#######")
+ 
+ print(to_remove)
+\ No newline at end of file

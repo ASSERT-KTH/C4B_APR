@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1376_problem_id/19948_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1376_problem_id/19948_author_id/Accepted.py
+index d30914d..633878b 100644
+--- a/Users/bardia/Downloads/data 4/data/1376_problem_id/19948_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1376_problem_id/19948_author_id/Accepted.py	
+@@ -14,12 +14,12 @@ def check(v):
+ 
+ l, h = 0, N
+ 
+-while l < h:
++while h - l > 1:
+     m = (l + h) // 2
+ 
+     if check(m):
+-        h = m - 1
++        h = m
+     else:
+-        l = m + 1
++        l = m
+ 
+-print(l)
+\ No newline at end of file
++print(l if check(l) else h)
+\ No newline at end of file

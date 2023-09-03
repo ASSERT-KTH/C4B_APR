@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/9833_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/9833_author_id/Accepted.py
+index 7d21ed3..4f15f62 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/9833_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/9833_author_id/Accepted.py	
+@@ -1,12 +1,16 @@
+ def isLucky(n):
+     count=0
++    n1=n
+     while n>0:
+         r=n%10
+         if r!=4 and r!=7:
+             count+=1
+             return False
+         n=n//10
+-    return True
++    if n1>0 and count==0:
++        return True
++    else:
++        return False
+ def numdig(n):
+     count=0
+     while n>0:

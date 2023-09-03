@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/668_problem_id/1764_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/668_problem_id/1764_author_id/Accepted.py
+index dc35ebf..52903e7 100644
+--- a/Users/bardia/Downloads/data 4/data/668_problem_id/1764_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/668_problem_id/1764_author_id/Accepted.py	
+@@ -4,8 +4,8 @@ x=""
+ for i in range (0,number):
+  x=x.replace("it","that")
+  if i%2==0:
+-   x+=" I love it"
++   x+=" I hate it"
+  if i%2==1:
+    x=x.replace("it","that")
+-   x+=" I hate it"
++   x+=" I love it"
+ print(x)
+\ No newline at end of file

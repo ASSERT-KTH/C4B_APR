@@ -1,0 +1,59 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2461_problem_id/4201_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2461_problem_id/4201_author_id/Accepted.py
+index 15ba136..821f4a9 100644
+--- a/Users/bardia/Downloads/data 4/data/2461_problem_id/4201_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2461_problem_id/4201_author_id/Accepted.py	
+@@ -1,25 +1,29 @@
+ x, y = map(int, input().split())
++while True:
++    # Ciel prefers large coins.
++    #print('available: %d * 10, %d * 1' % (x, y))
++    a = min(2, x)
++    x -= a
++    b = min(22 - 10 * a, y)
++    y -= b
++    #print('Ciel takes %d * 10, %d * 1' % (a, b))
++    if 10 * a + b < 22:
++        print('Hanako')
++        break
+ 
+-c = min(x // 2, y // 24)
+-x -= 2 * c
+-y -= 24 * c
+-
+-c = min(x // 3, y // 14)
+-x -= 3 * c
+-y -= 14 * c
+-
+-c = min(x // 4, y // 4)
+-x -= 4 * c
+-y -= 4 * c
+-
+-c = min(x, y // 34)
+-x -= 1 * c
+-y -= 34 * c
+-
+-c = y // 44
+-y -= 44 * c
+-
+-if 10 * x + y >= 22:
+-    print('Ciel')
+-else:
+-    print('Hanako')
+\ No newline at end of file
++    # Hanako prefers small coins. 
++    #print('available: %d * 10, %d * 1' % (x, y))
++    # Start by maximizing the number of large coins.
++    a = min(2, x)
++    x -= a
++    b = min(22 - 10 * a, y)
++    y -= b
++    if 10 * a + b < 22:
++        print('Ciel')
++        break
++    # Exchange large coins for small.
++    while a > 0 and y >= 10:
++        a -= 1
++        x += 1
++        y -= 10
++    #print('Hanako takes %d * 10, %d * 1' % (a, b))
+\ No newline at end of file

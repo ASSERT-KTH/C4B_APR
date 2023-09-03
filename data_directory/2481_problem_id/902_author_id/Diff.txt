@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/902_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/902_author_id/Accepted.py
+index 8292bb2..dd30104 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/902_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/902_author_id/Accepted.py	
+@@ -1,12 +1,12 @@
+ l = ["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"]
+-n = int(input())
++n = int(input())-1
+ p = 0
+-sh = 0
+-w = 0
++w = -1
+ while True:
+     w += 1
+-    p += 6
++    p += 5*(2**w)
+     if p>n:
+-        p -= 6
+-        print(l[((n-p-1)//w)%len(l)])
++        p -= 5*(2**w)
++        k = n-p
++        print(l[k//(2**w)])
+         break
+\ No newline at end of file

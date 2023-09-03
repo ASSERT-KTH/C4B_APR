@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2851_problem_id/90050_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2851_problem_id/90050_author_id/Accepted.py
+index 0ebe5b6..9868df1 100644
+--- a/Users/bardia/Downloads/data 4/data/2851_problem_id/90050_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2851_problem_id/90050_author_id/Accepted.py	
+@@ -1,9 +1,7 @@
+-import math
+-
+ def bin_search(calc, n):
+-    hi = vl+1
++    hi = n + 1
+     lo = ans = 0
+-    while (hi-lo) > 1:
++    while (hi - lo) > 1:
+         mid = (hi + lo) // 2
+         if calc(mid) <= n:
+             lo = ans = mid
+@@ -11,6 +9,7 @@ def bin_search(calc, n):
+             hi = mid
+     return ans
+ 
++
+ [vl, va] = [int(x) for x in input().split()]
+-[vl, va] = [bin_search(lambda x : x*x, vl), bin_search(lambda x : x*(x+1), vl)]
+-print('Vladik') if va >= vl else print('Valera')
+\ No newline at end of file
++[vl, va] = [bin_search(lambda x: x * x, vl), bin_search(lambda x: x * (x + 1), va)]
++print('Valera') if vl > va else print('Vladik')
+\ No newline at end of file

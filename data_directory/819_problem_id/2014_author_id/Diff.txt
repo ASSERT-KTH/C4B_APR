@@ -1,0 +1,42 @@
+diff --git a/Users/bardia/Downloads/data 4/data/819_problem_id/2014_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/819_problem_id/2014_author_id/Accepted.py
+index cbe8758..48f8205 100644
+--- a/Users/bardia/Downloads/data 4/data/819_problem_id/2014_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/819_problem_id/2014_author_id/Accepted.py	
+@@ -1,24 +1,11 @@
+-d_min=0
+-x=input()
+-x+="$"
+-start=0
+-z=[]
+-while start!=len(x)-1:
+-    if x[start] in 'AEIOUY':
+-        y=x[start]
+-        start+=1
+-        while start!=len(x)-1:
+-            if x[start] not in 'AEIOUY':
+-                y+=x[start]
+-                start+=1
+-            else:
+-                break
+-        z.append(y)
+-        if d_min<len(y):
+-            d_min=len(y)
+-    else:
+-        start+=1
+-if z==[]:
+-    print(len(x))
+-else:
+-    print(d_min)
+\ No newline at end of file
++s=input()
++index=[-1]
++for i in range(len(s)):
++    if s[i] in "AEIOUY":
++        index.append(i)
++index.append(len(s))
++g=-2
++for i in range(1,len(index)):
++    if index[i]-index[i-1] >g:
++        g=index[i]-index[i-1]
++print(g)
+\ No newline at end of file

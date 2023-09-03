@@ -1,0 +1,10 @@
+diff --git a/Users/bardia/Downloads/data 4/data/194_problem_id/22933_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/194_problem_id/22933_author_id/Accepted.py
+index a4435c6..0a04ae0 100644
+--- a/Users/bardia/Downloads/data 4/data/194_problem_id/22933_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/194_problem_id/22933_author_id/Accepted.py	
+@@ -1 +1,2 @@
+-print(int(input())//5+1)
+\ No newline at end of file
++n=int(input())
++print (n//5 if n%5==0 else n//5+1)
+\ No newline at end of file

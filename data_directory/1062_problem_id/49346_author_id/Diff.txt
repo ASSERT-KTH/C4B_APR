@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/49346_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/49346_author_id/Accepted.py
+index c944147..4a18fda 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/49346_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/49346_author_id/Accepted.py	
+@@ -2,10 +2,9 @@ a = input()
+ x = list()
+ flag=0
+ for i in range(0,len(a)):
+-	x.append(a[i])
+-if ('0' in x) or ('1' in x) or ('2' in x) or ('3' in x) or ('5' in x) or ('6' in x) or ('8' in x) or ('9' in x):
+-	flag=1
+-if flag==0:
++	if a[i]=='4' or a[i]=='7':
++		flag+=1
++if flag==4 or flag==7:
+ 	print("YES")
+-elif flag==1:
++else:
+ 	print("NO")
+\ No newline at end of file

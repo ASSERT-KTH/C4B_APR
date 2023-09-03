@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1473_problem_id/2461_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1473_problem_id/2461_author_id/Accepted.py
+index 1a32be1..466456f 100644
+--- a/Users/bardia/Downloads/data 4/data/1473_problem_id/2461_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1473_problem_id/2461_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ def rt(p):
+     a = (p[0] - p[2]) ** 2 + (p[1] - p[3]) ** 2
+     b = (p[0] - p[4]) ** 2 + (p[1] - p[5]) ** 2
+     c = (p[2] - p[4]) ** 2 + (p[3] - p[5]) ** 2
+-    return a + b == c or a + c == b or b + c == a
++    return a and b and c and (a + b == c or a + c == b or b + c == a)
+ def f(p):
+     if rt(p):
+         return 'RIGHT'

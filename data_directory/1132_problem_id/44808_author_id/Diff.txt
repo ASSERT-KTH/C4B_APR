@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/44808_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/44808_author_id/Accepted.py
+index 8471f39..b47c28f 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/44808_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/44808_author_id/Accepted.py	
+@@ -1,9 +1,9 @@
+-lukcyNumbers = [5, 7, 44, 47, 74, 77, 444, 447, 474, 477, 744, 747, 774, 777]
++lukcyNumbers = [4, 7, 44, 47, 74, 77, 444, 447, 474, 477, 744, 747, 774, 777]
+ 
+ givenNumber = int(input())
+ 
+ for number in lukcyNumbers:
+-    if givenNumber % number == 1:
++    if givenNumber % number == 0:
+         print("YES")
+         exit()
+     

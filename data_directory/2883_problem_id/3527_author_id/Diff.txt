@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2883_problem_id/3527_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2883_problem_id/3527_author_id/Accepted.py
+index f2d45d8..c1f85e2 100644
+--- a/Users/bardia/Downloads/data 4/data/2883_problem_id/3527_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2883_problem_id/3527_author_id/Accepted.py	
+@@ -2,13 +2,15 @@ x1,y1,x2,y2 = map(int,input().split())
+ a = abs(x1-x2)
+ b = abs(y1-y2)
+ x,y = map(int,input().split())
++
++
+ if(a%x!=0 or b%y!=0):
+     print("NO")
+ else:
+     par1 = a/x
+     par2 = b/y
+-    par1 = par1%1
+-    par2 = par2%1
++    par1 = par1%2
++    par2 = par2%2
+     if par1!=par2:
+         print("NO")
+     else:

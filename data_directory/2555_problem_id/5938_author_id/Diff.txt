@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/5938_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/5938_author_id/Accepted.py
+index dabbcd1..01a7c52 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/5938_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/5938_author_id/Accepted.py	
+@@ -3,7 +3,9 @@ res = 0
+ for i in range(len(s) - 1):
+     if s[i] == s[i + 1]:
+         res += 1
+-    if res >= 6:
++    else:
++        res = 0
++    if res >=6 :
+         print("YES")
+         break
+ else:

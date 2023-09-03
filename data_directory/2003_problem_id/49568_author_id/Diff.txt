@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/49568_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/49568_author_id/Accepted.py
+index 48a669f..b2c5641 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/49568_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/49568_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ init_year = int(input())
+ 
+ i = init_year+1
+ 
+-while i <= 9000:
++while True:
+     str_i = str(i)
+     digits_i = list(str_i)
+     digits_i.sort()

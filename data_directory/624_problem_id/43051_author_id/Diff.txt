@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/624_problem_id/43051_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/624_problem_id/43051_author_id/Accepted.py
+index bc80488..f0b7a46 100644
+--- a/Users/bardia/Downloads/data 4/data/624_problem_id/43051_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/624_problem_id/43051_author_id/Accepted.py	
+@@ -3,8 +3,10 @@ t,s,x = list(map(int, input().split()))
+ if t == x:
+     print("YES")
+     exit()
+-
+-if (x-t)%s == 0 or ((x-t-1)%s == 0 and x >= s + t):
++if x < s + t:
++    print("NO")
++    exit()
++if (x-t)%s == 0 or (x-t-1)%s == 0:
+     print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

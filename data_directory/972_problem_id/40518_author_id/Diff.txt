@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/972_problem_id/40518_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/972_problem_id/40518_author_id/Accepted.py
+index 43ecd8a..f930204 100644
+--- a/Users/bardia/Downloads/data 4/data/972_problem_id/40518_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/972_problem_id/40518_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ #UWAGA TO JEST ZADaNIE 761A!
+ from sys import exit
+ a, b = [int(x) for x in input().split()]
+-if abs(a-b)>1 or abs(a-b)==0 :
++if abs(a-b)>1 or a==0 and b==0 :
+     print("NO")
+     exit()
+ else:

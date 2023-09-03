@@ -1,0 +1,51 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2335_problem_id/60871_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2335_problem_id/60871_author_id/Accepted.py
+index 07373ec..2c3889d 100644
+--- a/Users/bardia/Downloads/data 4/data/2335_problem_id/60871_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2335_problem_id/60871_author_id/Accepted.py	
+@@ -1,7 +1,6 @@
+ s=input()
+ v=list(s)
+ m=len(v)
+-print(m)
+ H=0
+ E=0
+ L=0
+@@ -14,38 +13,32 @@ while n<m:
+     if v[n]=='h':
+         y[0]='h'
+         H=n+1
+-        print('H:',H)
+         break
+     n=n+1
+ while H<m:
+     if v[H]=='e':
+         y[1]='e'
+         E=H+1
+-        print('E:',E)
+         break
+     H=H+1
+ while E<m:
+     if v[E]=='l':
+         y[2]='l'
+         L=E+1
+-        print('L:',L)
+         break
+     E=E+1
+ while L<m :
+     if v[L]=='l':
+         y[3]='l'
+         M=L+1
+-        print('M:',M)
+         break
+     L=L+1
+ while M<m :
+     if v[M]=='o':
+         y[4]='o'
+         J=M+1
+-        print('J:',J)
+         break
+     M=M+1
+-print(y)
+ if y==k :
+     print('YES')
+ else:

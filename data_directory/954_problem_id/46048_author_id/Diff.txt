@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/954_problem_id/46048_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/954_problem_id/46048_author_id/Accepted.py
+index ec85279..daa3217 100644
+--- a/Users/bardia/Downloads/data 4/data/954_problem_id/46048_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/954_problem_id/46048_author_id/Accepted.py	
+@@ -10,7 +10,7 @@ if(n==1):
+ 			print(ans+1,ans,ans+1)
+ 		else:
+ 			print(ans+1,ans,ans)
+-		exit(0)
++	exit(0)
+ if(k==n*m):
+ 	print("1 1 1")
+ 	exit(0)

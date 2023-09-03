@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/588_problem_id/42516_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/588_problem_id/42516_author_id/Accepted.py
+index 2b939e3..7aa5a34 100644
+--- a/Users/bardia/Downloads/data 4/data/588_problem_id/42516_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/588_problem_id/42516_author_id/Accepted.py	
+@@ -1,4 +1,8 @@
+ n = int(input())
+-while n & 1 == 0:
+-    n >>= 1
+-print(n >> 1)
+\ No newline at end of file
++if n & 1:
++    print(n//2)
++else:
++    k = 1
++    while k <= n:
++        k *= 2
++    print((n - k//2)//2)
+\ No newline at end of file

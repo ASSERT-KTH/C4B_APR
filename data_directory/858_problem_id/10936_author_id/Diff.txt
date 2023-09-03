@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/858_problem_id/10936_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/858_problem_id/10936_author_id/Accepted.py
+index 5e47ab9..fa8fb76 100644
+--- a/Users/bardia/Downloads/data 4/data/858_problem_id/10936_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/858_problem_id/10936_author_id/Accepted.py	
+@@ -5,7 +5,7 @@ cnt = 4 - (n % 4)
+ if(n % 4 == 0):
+      m=0
+ elif(cnt == 1):
+-     m=min(a,b+c)
++     m=min(a,b+c,c+c+c)
+ elif( cnt == 2):
+      m=min(a+a,b,c+c)
+ elif( cnt == 3):

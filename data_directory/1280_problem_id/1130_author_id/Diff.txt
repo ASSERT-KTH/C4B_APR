@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/1130_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/1130_author_id/Accepted.py
+index 1e508e4..61dc9eb 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/1130_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/1130_author_id/Accepted.py	
+@@ -1,9 +1,18 @@
+ k = int(input())
+ months = sorted([int(x) for x in input().split(' ')])[::-1]
+ days = 0
++m = k
++s = 0
+ while k > 0:
+-    k -= months[0]
+-    months = months[1:]
+-    days += 1
++    if months: 
++        k -= months[0]
++        s += months[0]
++        months = months[1:]
++        days += 1
++    else:
++        break
+ 
+-print(days)
+\ No newline at end of file
++if s >= m:
++    print(days)
++else:
++    print(-1)
+\ No newline at end of file

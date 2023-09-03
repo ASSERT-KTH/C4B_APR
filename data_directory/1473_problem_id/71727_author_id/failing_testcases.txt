@@ -1,0 +1,1 @@
+[{'inputdata': '52 -34 -37 -63 23 54', 'expectedresult': 'ALMOST'}, {'inputdata': '-10 -11 62 6 -12 -3', 'expectedresult': 'ALMOST'}, {'inputdata': '99 85 90 87 64 -20', 'expectedresult': 'ALMOST'}, {'inputdata': '-50 0 0 50 0 -51', 'expectedresult': 'ALMOST'}]

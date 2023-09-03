@@ -1,0 +1,1 @@
+[{'inputdata': 'e4', 'expectedresult': '8'}, {'inputdata': 'g7', 'expectedresult': '8'}, {'inputdata': 'b2', 'expectedresult': '8'}, {'inputdata': 'c7', 'expectedresult': '8'}, {'inputdata': 'f2', 'expectedresult': '8'}]

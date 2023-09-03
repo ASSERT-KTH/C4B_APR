@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/62272_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/62272_author_id/Accepted.py
+index 705c895..951d6dd 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/62272_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/62272_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ for i in range (0,(len(pstr))):
+     plst.append(pstr[i])
+ 
+ for i in range(0,len(plst)):
+-    if plst[i] in ['a','e','i','u','o']:
++    if plst[i] in ['a','e','i','u','o','y']:
+         plst.pop(i)
+         plst.insert(i,finstr)
+     else:

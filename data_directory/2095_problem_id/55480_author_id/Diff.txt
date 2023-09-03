@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2095_problem_id/55480_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2095_problem_id/55480_author_id/Accepted.py
+index a77a074..6423087 100644
+--- a/Users/bardia/Downloads/data 4/data/2095_problem_id/55480_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2095_problem_id/55480_author_id/Accepted.py	
+@@ -1,4 +1,5 @@
+ n, k = map(int, input().split())
++d = 1000000007
+ def f(a, b):
+     if b == 0: return 1
+     s, c = 0, b * a
+@@ -6,4 +7,4 @@ def f(a, b):
+         s += c * f(i, b - i)
+         c = (a * c * (b - i)) // (i + 1)
+     return s
+-print(k * f(1, k - 1) * (n - k) ** (n - k))
+\ No newline at end of file
++print((k * f(1, k - 1) * pow(n - k, n - k, d)) % d)
+\ No newline at end of file

@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1681_problem_id/13898_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1681_problem_id/13898_author_id/Accepted.py
+index 0903a9c..f5f0e56 100644
+--- a/Users/bardia/Downloads/data 4/data/1681_problem_id/13898_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1681_problem_id/13898_author_id/Accepted.py	
+@@ -52,8 +52,8 @@ import math
+ n, m = readintarr()
+ count = 0
+ mx = max(n, m)
+-for a in range(mx):
+-    for b in range(mx):
++for a in range(mx+1):
++    for b in range(mx+1):
+         if a**2+b == n and a+b**2 == m:
+             count += 1
+ write(count)
+\ No newline at end of file

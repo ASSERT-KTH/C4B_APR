@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2340_problem_id/51915_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2340_problem_id/51915_author_id/Accepted.py
+index d8a5d2b..9d738cb 100644
+--- a/Users/bardia/Downloads/data 4/data/2340_problem_id/51915_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2340_problem_id/51915_author_id/Accepted.py	
+@@ -7,7 +7,6 @@ for char in word:
+         upper += 1
+     else:
+         lower += 1
+-    print(lower, upper)
+ if lower >= upper:
+     word = word.lower()
+ elif lower < upper:

@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2742_problem_id/12370_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2742_problem_id/12370_author_id/Accepted.py
+index 23525f9..ae28c79 100644
+--- a/Users/bardia/Downloads/data 4/data/2742_problem_id/12370_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2742_problem_id/12370_author_id/Accepted.py	
+@@ -1,12 +1,16 @@
+ a = int(input())
+ x = a % 2;
++
+ if x == 1:
+     b = int((a / 2));
+     b = b - 1;
+-    print("7"),
++    str = "7";
+     for i in range(0,b):
+-        print("1"),
++        str += "1"
+ else :
+     b = int(a / 2);
++    str = "1";
++    b = b - 1
+     for i in range(0,b):
+-        print("1"),
+\ No newline at end of file
++        str += "1"
++print (str)
+\ No newline at end of file

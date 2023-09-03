@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/54595_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/54595_author_id/Accepted.py
+index 7eae6b2..e962188 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/54595_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/54595_author_id/Accepted.py	
+@@ -1,9 +1,9 @@
+ s = input()
+-if len(s) != 4 and len(s) != 7:
+-    print("NO")
+-    exit()
++tmp = 0
+ for i in range(len(s)):
+-    if s[i] != '4' and s[i] != '7':
+-        print("NO")
+-        exit()
+-print("YES")
+\ No newline at end of file
++    if s[i] == '4' or s[i] == '7':
++        tmp += 1
++if tmp == 4 or tmp == 7:
++    print("YES")
++else:
++    print("NO")
+\ No newline at end of file

@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/88500_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/88500_author_id/Accepted.py
+index ccf7273..d442c72 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/88500_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/88500_author_id/Accepted.py	
+@@ -11,7 +11,11 @@ def check(year):
+ 
+ 	return True
+ 
+-for i in range(int(year) + 1, 9001):
++i = int(year) + 1
++
++while True:
+ 	if check(str(i)) is True:
+ 		print(i)
+-		break
+\ No newline at end of file
++		break
++	else:
++		i += 1
+\ No newline at end of file

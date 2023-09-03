@@ -1,0 +1,33 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2785_problem_id/3898_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2785_problem_id/3898_author_id/Accepted.py
+index decf393..8caf6fb 100644
+--- a/Users/bardia/Downloads/data 4/data/2785_problem_id/3898_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2785_problem_id/3898_author_id/Accepted.py	
+@@ -1,19 +1,23 @@
+ s=input()
+ n=len(s)
+-i=0
+ cnt=0
+ flag=1
++light=[1 for j in range(n)]
++i=0
+ while i<n:
+     if i<n-1 and s[i]=='V' and s[i+1]=='K':
+         cnt+=1
++        light[i]=light[i+1]=0
+         i+=2
+-    elif i<n-1 and s[i]=='V' and s[i+1]=='V' and flag:
++    else:
++        i+=1
++i=0
++while i<n and flag:
++    if i<n-1 and s[i]=='V' and s[i+1]=='V' and light[i] and light[i+1]:
+         cnt+=1
+-        i+=2
+         flag=0
+-    elif i<n-1 and s[i]=='K' and s[i+1]=='K' and flag:
++    elif i<n-1 and s[i]=='K' and s[i+1]=='K' and light[i] and light[i+1]:
+         cnt+=1
+-        i+=2
+         flag=0
+     else:
+         i+=1

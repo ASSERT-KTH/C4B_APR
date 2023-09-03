@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2525_problem_id/13267_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2525_problem_id/13267_author_id/Accepted.py
+index c03cce5..f796b28 100644
+--- a/Users/bardia/Downloads/data 4/data/2525_problem_id/13267_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2525_problem_id/13267_author_id/Accepted.py	
+@@ -8,21 +8,21 @@ res2 = 30
+ res3 = 30
+ i = 0
+ 
+-if(r > 2):
++if(r >= 2):
+     r -= 2
+     res1 += 0
+ elif(r == 1):
+     r = 0
+     res1 += 0
+     
+-if(g > 2):
++if(g >= 2):
+     g -= 2
+     res2 += 1
+ elif(g == 1):
+     g = 0
+     res2 += 1
+     
+-if(b > 2):
++if(b >= 2):
+     b -= 2
+     res3 += 2
+ elif(b == 1):

@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1274_problem_id/71043_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1274_problem_id/71043_author_id/Accepted.py
+index 5645ad3..22e236d 100644
+--- a/Users/bardia/Downloads/data 4/data/1274_problem_id/71043_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1274_problem_id/71043_author_id/Accepted.py	
+@@ -5,14 +5,15 @@ n = int(input())
+ d = int(input())
+ 
+ punched = [False] * d
++
+ for i in range(d):
+-    if ((i-1) % k) == 0:
++    if ((i+1) % k) == 0:
+         punched[i] = True
+-    if ((i-1) % l) == 0:
++    if ((i+1) % l) == 0:
+         punched[i] = True
+-    if ((i-1) % m) == 0:
++    if ((i+1) % m) == 0:
+         punched[i] = True
+-    if ((i-1) % n) == 0:
++    if ((i+1) % n) == 0:
+         punched[i] = True
+ sum = 0
+ for r in range(d):

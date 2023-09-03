@@ -1,0 +1,31 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1976_problem_id/62152_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1976_problem_id/62152_author_id/Accepted.py
+index c860272..ff514e6 100644
+--- a/Users/bardia/Downloads/data 4/data/1976_problem_id/62152_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1976_problem_id/62152_author_id/Accepted.py	
+@@ -1,15 +1,13 @@
+-a = input()
+-b = input()
++a = int(input())
++b = []
++b = list(input())
+ c = 0
++j = 0
+ 
+-if a == '3' and b == 'RRG':
+-    c = 1
+-    print(c)
++while c < len(b)-1:
++    if b[c] == b[c+1]:
++        j = j + 1
++    c = c + 1
+ 
+-if a == '5' and b == 'RRRRR':
+-    c = 4
+-    print(c)
+ 
+-if a == '4' and b == 'BRBG':
+-    c = 0
+-    print(c)
+\ No newline at end of file
++print(j)
+\ No newline at end of file

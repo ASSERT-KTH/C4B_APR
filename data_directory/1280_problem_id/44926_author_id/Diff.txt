@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/44926_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/44926_author_id/Accepted.py
+index 4177546..b786a14 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/44926_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/44926_author_id/Accepted.py	
+@@ -20,9 +20,9 @@ def main():
+                 if mas < month[i]:
+                     mas=month[i]
+                     pos=i
+-                if controler<n:
+-                    cont=-1
+-                    break
++            if controler<n:
++                cont=-1
++                break
+             month[pos]=0
+             suma+=mas
+             cont+=1

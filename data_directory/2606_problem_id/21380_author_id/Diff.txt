@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2606_problem_id/21380_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2606_problem_id/21380_author_id/Accepted.py
+index 5cac9dd..7b17561 100644
+--- a/Users/bardia/Downloads/data 4/data/2606_problem_id/21380_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2606_problem_id/21380_author_id/Accepted.py	
+@@ -1,9 +1,11 @@
+-n, k = map(int, input().split(' '))
++n, k = [int(x) for x in input().split(' ')]
++
+ symbols = 'abcdefghijklmnopqrstuvwxyz'
+ newPsw = ''
+ q = 0
+-fx = lambda q: q + 1
+ for i in range(n):
++	if q == k:
++		q = 0
+ 	newPsw += symbols[q]
+-	q = (0 if q == k else fx(q))
++	q += 1
+ print(newPsw)
+\ No newline at end of file

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1859_problem_id/4353_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1859_problem_id/4353_author_id/Accepted.py
+index 38093e4..e0befd8 100644
+--- a/Users/bardia/Downloads/data 4/data/1859_problem_id/4353_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1859_problem_id/4353_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ s=input()
+ t=3+(s[0]>'f')
+ p=s.find('ru',t+1)
+-print(s[:t]+'://'+s[t:p]+'.ru/'+s[p+2:])
+\ No newline at end of file
++print(s[:t]+'://'+s[t:p]+'.ru'+(' /'[p+2<len(s)])+s[p+2:])
+\ No newline at end of file

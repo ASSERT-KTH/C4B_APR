@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/377_problem_id/2068_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/377_problem_id/2068_author_id/Accepted.py
+index 974ba66..d6dfa5f 100644
+--- a/Users/bardia/Downloads/data 4/data/377_problem_id/2068_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/377_problem_id/2068_author_id/Accepted.py	
+@@ -19,6 +19,10 @@ while True:
+         x=1
+     elif(a2==2 and x==1):
+         x=2
++    elif(a1==1 and x==2):
++        x=1
++    elif(a2==1 and x==1):
++        x=2
+     if(x==1):
+         a1+=1
+         a2-=2
+@@ -28,9 +32,5 @@ while True:
+     h+=1
+     if(a1<=0 or a2<=0 or x==3):
+         break
+-    elif(a1==1 and x==2):
+-        x=1
+-    elif(a2==1 and x==1):
+-        x=2
+ if(x!=3):
+     print(h)
+\ No newline at end of file

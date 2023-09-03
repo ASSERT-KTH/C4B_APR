@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2576_problem_id/1673_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2576_problem_id/1673_author_id/Accepted.py
+index 29fb473..87931b6 100644
+--- a/Users/bardia/Downloads/data 4/data/2576_problem_id/1673_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2576_problem_id/1673_author_id/Accepted.py	
+@@ -3,12 +3,18 @@ l = a // k
+ p = b // k
+ if l == 0:
+     if b % k == 0:
+-        print(l + p)
++        if l + p != 0:
++            print(l + p)
++        else:
++            print('-1')
+     else:
+         print('-1')
+ elif p == 0:
+     if a % k == 0:
+-        print(l+p)
++        if l + p != 0:
++            print(l+p)
++        else:
++            print('-1')
+     else:
+         print('-1')
+ else:

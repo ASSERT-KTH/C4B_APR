@@ -1,0 +1,1 @@
+[{'inputdata': '581\r\n196122941', 'expectedresult': 'YES\n2'}, {'inputdata': '835\r\n582182875', 'expectedresult': 'YES\n2'}]

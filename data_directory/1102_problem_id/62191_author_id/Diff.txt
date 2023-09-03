@@ -1,0 +1,34 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/62191_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/62191_author_id/Accepted.py
+index 7571936..ff3ade5 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/62191_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/62191_author_id/Accepted.py	
+@@ -1,16 +1,22 @@
+ entrada = str(input())
+ entrada = entrada.lower()
+ 
+-vogais = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
++letras = ['b','c','d', 'f','g','h','j','k','l','m',
++          'n','p','q','r','s','t','v','w','x','z']
+ 
+-saida = "."
++entrada = entrada.replace("a", "")
++entrada = entrada.replace("e", "")
++entrada = entrada.replace("i", "")
++entrada = entrada.replace("o", "")
++entrada = entrada.replace("u", "")
++entrada = entrada.replace("y", "")
++
++saida = ""
+ 
+ for letra in entrada:
+   
+-  if letra not in vogais:
++  if letra in letras:
+    
+-    saida += letra + "."
++    saida += "." + letra
+  
+-saida = saida[:-1]
+-
+ print(saida)
+\ No newline at end of file

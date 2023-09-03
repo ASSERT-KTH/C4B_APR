@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/481_problem_id/153_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/481_problem_id/153_author_id/Accepted.py
+index b1662e5..ac28539 100644
+--- a/Users/bardia/Downloads/data 4/data/481_problem_id/153_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/481_problem_id/153_author_id/Accepted.py	
+@@ -4,4 +4,4 @@ n = int(input())
+ #c = list(map(int, input().split()))
+ m = n // 7
+ l = n - m * 7
+-print(m * 2 + (l == 6), m * 2 + (l > 0) + (l == 2))
+\ No newline at end of file
++print(m * 2 + (l == 6), m * 2 + (l > 0) + (l > 1))
+\ No newline at end of file

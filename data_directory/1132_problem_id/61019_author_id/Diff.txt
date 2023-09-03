@@ -1,0 +1,38 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1132_problem_id/61019_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1132_problem_id/61019_author_id/Accepted.py
+index 140bfc8..cd7f597 100644
+--- a/Users/bardia/Downloads/data 4/data/1132_problem_id/61019_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1132_problem_id/61019_author_id/Accepted.py	
+@@ -1,23 +1,11 @@
+ x=int(input())
++c=[4,7,47,74,444,447,477,777,744,774,777]
+ a=0
+-j=0
+-if (x%4==0) or (x%7==0):
++for k in range (len (c)):
++    if (x%c[k]==0):
++        a=1
++        break
++if a==1:
+     print("YES")
+-    j=1
+-x=str(x)
+-x=list(x)
+-if j==0:
+-    for k in range (len (x)):
+-        if "7" in x:
+-            y=x.index("7")
+-            x[y]="3"
+-            a+=1
+-        elif "4" in x:
+-            y=x.index("4")
+-            x[y]="3"
+-            a+=1
+-            
+-    if a==len(x):
+-        print("YES")
+-    else:
+-        print("NO")
+\ No newline at end of file
++else:
++    print("NO")
+\ No newline at end of file

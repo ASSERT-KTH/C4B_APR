@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1267_problem_id/14841_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1267_problem_id/14841_author_id/Accepted.py
+index c6cfed3..c18c05a 100644
+--- a/Users/bardia/Downloads/data 4/data/1267_problem_id/14841_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1267_problem_id/14841_author_id/Accepted.py	
+@@ -3,8 +3,18 @@ s=input()
+ s1=0
+ s2=0
+ for i in range(n//2):
+-    if s[i]!=s[n-i-1]:
++    if s[i]!='7' and s[i]!='4':
+         import sys
+-        print('NO')
++        print ('NO')
+         sys.exit(0)
+-print ('YES')
+\ No newline at end of file
++    s1+=ord(s[i])-48
++for i in range(n//2,n):
++    if s[i]!='7' and s[i]!='4':
++        import sys
++        print ('NO')
++        sys.exit(0)    
++    s2+=ord(s[i])-48
++if s1==s2:
++    print ('YES')
++else:
++    print ('NO')
+\ No newline at end of file

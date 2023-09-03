@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/401_problem_id/34938_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/401_problem_id/34938_author_id/Accepted.py
+index 671bf36..fc97b91 100644
+--- a/Users/bardia/Downloads/data 4/data/401_problem_id/34938_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/401_problem_id/34938_author_id/Accepted.py	
+@@ -1,2 +1,7 @@
+-n = int(input())
+-print(2**n)
+\ No newline at end of file
++powers = [1,2,4]
++for i in range(3,50):
++    if i == 13:
++        powers.append(8092)
++    else:
++        powers.append(2*powers[i-1])
++print(powers[int(input())])
+\ No newline at end of file

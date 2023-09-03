@@ -1,0 +1,59 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1960_problem_id/23234_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1960_problem_id/23234_author_id/Accepted.py
+index 2c18f96..d7b71e4 100644
+--- a/Users/bardia/Downloads/data 4/data/1960_problem_id/23234_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1960_problem_id/23234_author_id/Accepted.py	
+@@ -1,30 +1,24 @@
+ m = [[int(j) for j in input().split()] for i in range(5)]
+ movs=0
+-j=0
+-for i in range(5):
+-    if   m[2][2]==1 :
+-        print(movs)
+-        break
+-    elif m[i][j] == 1 and i != 2:
+-        if i > 2:
+-            m[i][j] = 0
+-            m[i - 1][j] = 1
+-            i -= 1
+-            movs += 1
+-        elif i < 2:
+-            m[i][j] = 0
+-            m[i + 1][j] = 1
+-            i += 1
+-            movs += 1
+-    for j in range(5):
+-        if m[i][j]==1 and j!=2:
+-            if j>2:
+-                m[i][j] =0
+-                m[i][j - 1]=1
+-                j -= 1
+-                movs += 1
+-            elif j<2:
+-                m[i][j] = 0
+-                m[i][j + 1]=1
+-                j += 1
+-                movs += 1
+\ No newline at end of file
++while m[2][2]!=1:
++    for i in range(5):
++        for j in range(5):
++            if m[i][j] == 1 and i != 2 :
++                if i > 2:
++                    m[i][j] = 0
++                    m[i - 1][j] = 1
++                    movs += 1
++                elif i < 2:
++                    m[i][j] = 0
++                    m[i + 1][j] = 1
++                    movs += 1
++            if m[i][j] == 1 and  j != 2:
++                if j>2:
++                    m[i][j] =0
++                    m[i][j - 1]=1
++                    movs += 1
++                elif j<2:
++                    m[i][j] = 0
++                    m[i][j + 1]=1
++                    movs += 1
++print(movs)
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2851_problem_id/6106_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2851_problem_id/6106_author_id/Accepted.py
+index 656757e..b5a335b 100644
+--- a/Users/bardia/Downloads/data 4/data/2851_problem_id/6106_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2851_problem_id/6106_author_id/Accepted.py	
+@@ -3,7 +3,7 @@ l=s.split()
+ v1=int(l[0])
+ v2=int(l[1])
+ i=1
+-while v1>0 and v2>0 :
++while v1>=0 and v2>=0 :
+     if i%2==1:
+         v1-=i
+     if i%2==0:

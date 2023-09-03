@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/924_problem_id/52100_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/924_problem_id/52100_author_id/Accepted.py
+index acc60ce..57b3166 100644
+--- a/Users/bardia/Downloads/data 4/data/924_problem_id/52100_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/924_problem_id/52100_author_id/Accepted.py	
+@@ -6,9 +6,5 @@ else:
+ nes = (c//(2*b))+1
+ if (c%(2*b) == 0):
+     nes -=1
+-ost = round((c%(nes*b))/2)
+-if(ost == 0):
+-    ost = (c%(2*b*nes))//2
+-    if ost == 0:
+-        ost = b
++ost = b - (abs(c-2*nes*b)//2)
+ print(nes, ost, p)
+\ No newline at end of file

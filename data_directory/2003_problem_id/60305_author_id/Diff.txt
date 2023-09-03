@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/60305_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/60305_author_id/Accepted.py
+index 65aa89e..7743f3e 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/60305_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/60305_author_id/Accepted.py	
+@@ -4,7 +4,7 @@ def dif_digits(n):
+ 		if (n % 10) in dig:
+ 			return False
+ 		dig.add(n % 10)
+-		n /= 10
++		n //= 10
+ 	return True
+ 
+ N = int(input())

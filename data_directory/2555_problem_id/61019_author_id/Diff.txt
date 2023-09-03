@@ -1,0 +1,42 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/61019_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/61019_author_id/Accepted.py
+index cf83fb2..3c693bd 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/61019_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/61019_author_id/Accepted.py	
+@@ -1,13 +1,26 @@
+-n=str(input())
+-t=0
+-for k in range (len(n)):
+-    if n[k]=="0":
+-        t+=1
+-j=0
+-for k in range (len(n)):
++a=str(input())
++n=list(a)
++n.append(" ")
++
++k=0
++z=False
++for k in range(len (n)):
+     if n[k]=="1":
+-        j+=1
+-if t>=7 or j>=7:
+-   print("YES") 
++        t=0
++        while n[k]=="1":
++            k+=1
++            t+=1
++        if t>=7:
++            z=True
++        k+=1
++    else:
++        t=0
++        while n[k]=="0":
++            k+=1
++            t+=1
++        if t>=7:
++            z=True
++if z==True:
++    print("YES")
+ else:
+     print("NO")
+\ No newline at end of file

@@ -1,0 +1,15 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2296_problem_id/61938_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2296_problem_id/61938_author_id/Accepted.py
+index dc21b97..1c932b4 100644
+--- a/Users/bardia/Downloads/data 4/data/2296_problem_id/61938_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2296_problem_id/61938_author_id/Accepted.py	
+@@ -11,6 +11,6 @@ M = math.floor(int(dim[0]))
+ N = math.floor(int(dim[1]))
+ #domino = 2x1 squares
+ if M%2 == 1:
+-    print (str((((M-1)/2)*N)+(N/2)))
++    print (int((((M-1)/2)*N)+(N/2)))
+ else:
+-    print (str((M/2)*N))
+\ No newline at end of file
++    print (int((M/2)*N))
+\ No newline at end of file

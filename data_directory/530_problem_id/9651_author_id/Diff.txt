@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/530_problem_id/9651_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/530_problem_id/9651_author_id/Accepted.py
+index 7cb222c..d153cf7 100644
+--- a/Users/bardia/Downloads/data 4/data/530_problem_id/9651_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/530_problem_id/9651_author_id/Accepted.py	
+@@ -10,7 +10,7 @@ n,a,b,p,q=map(int, input().split())
+ 
+ N=0
+ 
+-if a<n or b<n:
++if a<=n or b<=n:
+     N=p*(n//a)+q*(n//b)-min(p,q)*(n//ppcm(a,b))
+ 
+ print(N)
+\ No newline at end of file

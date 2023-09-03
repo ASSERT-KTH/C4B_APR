@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2687_problem_id/103554_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2687_problem_id/103554_author_id/Accepted.py
+index aafbd55..52a79cb 100644
+--- a/Users/bardia/Downloads/data 4/data/2687_problem_id/103554_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2687_problem_id/103554_author_id/Accepted.py	
+@@ -4,13 +4,13 @@ if __name__=="__main__":
+         print(n)
+         exit()
+     l=0
+-    r=10**18
++    r=10**19
+ 
+ 
+     while(r>l+1):
+         k=(l+r)//2
+-        if(n-((k-1)*k)/2-(m+k)>0):
++        if(n-((k-1)*k)//2-(m+k)>0):
+             l=k
+         else:
+             r=k
+-    print(m+k)
+\ No newline at end of file
++    print(m+r)
+\ No newline at end of file

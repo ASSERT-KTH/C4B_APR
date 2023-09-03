@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1598_problem_id/56716_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1598_problem_id/56716_author_id/Accepted.py
+index 310ad2d..6d6d711 100644
+--- a/Users/bardia/Downloads/data 4/data/1598_problem_id/56716_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1598_problem_id/56716_author_id/Accepted.py	
+@@ -10,11 +10,11 @@ if 6 <= u <= 13:
+     print(5)
+ if 14 <= u <= 25:
+     print(7)
+-if 26 <= u <= 40:
++if 26 <= u <= 41:
+     print(9)
+-if 41 <= u <= 60:
++if 42 <= u <= 61:
+     print(11)
+-if 61 <= u <= 84:
++if 62 <= u <= 85:
+     print(13)
+-if 85 <= u <= 100:
++if 86 <= u <= 100:
+     print(15)
+\ No newline at end of file

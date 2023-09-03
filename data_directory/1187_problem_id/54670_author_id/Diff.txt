@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/54670_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/54670_author_id/Accepted.py
+index 9d7a824..88b2d9b 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/54670_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/54670_author_id/Accepted.py	
+@@ -4,5 +4,7 @@ if n.isupper() == True:
+     print(n.lower())
+ elif n_1.isupper() == True and n[:1].islower() == True:
+     print(n.capitalize())
++elif n_1 == '' and n[:1].islower() == True:
++    print(n.capitalize())
+ else:
+     print(n)
+\ No newline at end of file

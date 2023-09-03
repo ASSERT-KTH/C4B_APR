@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/912_problem_id/13267_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/912_problem_id/13267_author_id/Accepted.py
+index d7f1732..1968edc 100644
+--- a/Users/bardia/Downloads/data 4/data/912_problem_id/13267_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/912_problem_id/13267_author_id/Accepted.py	
+@@ -10,10 +10,11 @@ def bins(arr, key):
+             lo = mid + 1
+         else:
+             hi = mid
++    if(arr[hi] == key):
++        return hi
+ 
+-    return hi
++    return hi - 1
+ 
+ n, k = map(int, sys.stdin.readline().split())
+ tasks = [5, 15, 30, 50, 75, 105, 140, 180, 225, 275]
+-
+ print(min(bins(tasks, ((240 - k) // 5) * 5) + 1, n))
+\ No newline at end of file

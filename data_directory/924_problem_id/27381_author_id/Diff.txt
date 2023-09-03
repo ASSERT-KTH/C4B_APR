@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/924_problem_id/27381_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/924_problem_id/27381_author_id/Accepted.py
+index 4c1fd52..07e682a 100644
+--- a/Users/bardia/Downloads/data 4/data/924_problem_id/27381_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/924_problem_id/27381_author_id/Accepted.py	
+@@ -7,10 +7,10 @@ m = int(s[1])
+ k = int(s[2])
+ 
+ j = int((k - 1) / (2 * m))
+-i = int(((k - 1) % (2 * m)) / 2)
+-
++col = int(((k - 1) % (2 * m)))
++i = int(col / 2)
+ print(str(j + 1) + " " + str(i + 1), end = " ")
+-if i % 2 == 1:
+-    print('L')
++if col % 2 == 1:
++    print('R')
+ else:
+-    print('R')
+\ No newline at end of file
++    print('L')
+\ No newline at end of file

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2604_problem_id/60470_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2604_problem_id/60470_author_id/Accepted.py
+index 547e362..35a073d 100644
+--- a/Users/bardia/Downloads/data 4/data/2604_problem_id/60470_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2604_problem_id/60470_author_id/Accepted.py	
+@@ -7,7 +7,6 @@ for i in range (len(x)):
+     
+ a=sum(y)
+ i=len(x)-2
+-print(y1)
+ while i>=0:
+     if y[i]!=0:
+         y[i]-=1

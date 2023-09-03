@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1062_problem_id/61043_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1062_problem_id/61043_author_id/Accepted.py
+index 784bab6..d3452c4 100644
+--- a/Users/bardia/Downloads/data 4/data/1062_problem_id/61043_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1062_problem_id/61043_author_id/Accepted.py	
+@@ -1,8 +1,7 @@
+-number = str(input())
++luckyNums = [4, 7]
++lucky = 0
+ 
+-fours = number.count("4")
+-sevens = number.count("7")
++for i in str(input()):
++    lucky += int(i) in luckyNums
+ 
+-lucky = fours + sevens
+-
+-print("YES" if lucky > 3 and (lucky % 7 == 0 or lucky % 4 == 0) else "NO")
+\ No newline at end of file
++print("YES" if lucky in luckyNums else "NO")
+\ No newline at end of file

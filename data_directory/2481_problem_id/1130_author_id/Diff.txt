@@ -1,0 +1,25 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/1130_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/1130_author_id/Accepted.py
+index dde756d..4ebf88c 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/1130_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/1130_author_id/Accepted.py	
+@@ -1,12 +1,9 @@
+ n = int(input())
+-n = n-1
+-queue = ['Sheldon', 'Leonard', 'Penny', 'Rajesh', 'Howard']
++m = 1
++nms = ["Sheldon","Leonard","Penny","Rajesh","Howard"]
+ 
+-def extendQ(q,n):
+-    for i in range(0,n):
+-        q.append(q[i])
+-        q.append(q[i])
+-    return q
++while (m*5) < n:
++    n -= m * 5
++    m *= 2
+ 
+-ans = extendQ(queue,n)
+-print(ans[n])
+\ No newline at end of file
++print(nms[(n-1)//m])
+\ No newline at end of file

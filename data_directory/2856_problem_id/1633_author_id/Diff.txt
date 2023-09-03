@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2856_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2856_problem_id/1633_author_id/Accepted.py
+index dc15ac6..02c67cc 100644
+--- a/Users/bardia/Downloads/data 4/data/2856_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2856_problem_id/1633_author_id/Accepted.py	
+@@ -1,12 +1,13 @@
+ rows = [list(map(int, input().split())) for x in range(4)]
+-turns = [1, 0, 1, 2]
++turns = [[0, 1, 2], [0], [1], [2]]
+ results = "NO"
+ for x in range(4):
+     if rows[x][3]:
+         for y in range(4):
+-            if rows[y][turns[y]]:
+-                results = "YES"
+-                break
++            for z in turns[y]:
++                if rows[y][z]:
++                    results = "YES"
++                    break
+     if results == "YES":
+         break
+     turns.insert(0, turns[-1])

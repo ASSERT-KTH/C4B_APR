@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1142_problem_id/9138_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1142_problem_id/9138_author_id/Accepted.py
+index d42fc7f..c45fce5 100644
+--- a/Users/bardia/Downloads/data 4/data/1142_problem_id/9138_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1142_problem_id/9138_author_id/Accepted.py	
+@@ -14,7 +14,7 @@ def main():
+         input = sys.stdin
+     #--------------------------------INPUT---------------------------------
+     lis = list(map(int, input.readline().split()))
+-    output = lis[0]-lis[1]
++    output =  lis[0] - max(lis[1] + 1, lis[0] - lis[2]) + 1
+     #-------------------------------OUTPUT----------------------------------
+     if os.path.exists('output.txt'):
+         open('output.txt', 'w').writelines(str(output))

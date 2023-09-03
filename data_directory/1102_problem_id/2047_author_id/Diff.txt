@@ -1,0 +1,29 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/2047_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/2047_author_id/Accepted.py
+index f707aab..6511de1 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/2047_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/2047_author_id/Accepted.py	
+@@ -1,14 +1,8 @@
+-x = raw_input().split()
+-n = int(x[0])
+-m = int(x[1])
+-a = int(x[2])
+-
+-y = n / a 
+-if(n % a):
+-    y+=1
+-
+-z = m / a
+-if(m % a):
+-    z+=1
+-
+-print(y*z)
+\ No newline at end of file
++word = input()
++i = 0
++z = 0
++while(i<len(word)):
++    y = word[i].lower()
++    if(y != 'a' and y != 'e' and y != 'y' and y != 'u' and y != 'i' and y != 'o'):
++        print("." + word[i].lower(),end="")
++    i += 1
+\ No newline at end of file

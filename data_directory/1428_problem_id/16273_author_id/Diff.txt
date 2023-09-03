@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1428_problem_id/16273_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1428_problem_id/16273_author_id/Accepted.py
+index d025a45..f5ab290 100644
+--- a/Users/bardia/Downloads/data 4/data/1428_problem_id/16273_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1428_problem_id/16273_author_id/Accepted.py	
+@@ -29,4 +29,4 @@ else:
+             a=int(m)+int(mm)+int(mmm)
+             if(a>ans):
+                 ans=a
+-print(ans)
+\ No newline at end of file
++    print(ans)
+\ No newline at end of file

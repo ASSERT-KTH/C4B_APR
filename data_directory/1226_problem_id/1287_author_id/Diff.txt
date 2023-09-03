@@ -1,0 +1,23 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1226_problem_id/1287_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1226_problem_id/1287_author_id/Accepted.py
+index 486d4c0..895e91a 100644
+--- a/Users/bardia/Downloads/data 4/data/1226_problem_id/1287_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1226_problem_id/1287_author_id/Accepted.py	
+@@ -5,10 +5,9 @@ if __name__ == '__main__':
+     n %= sum(line)
+     if n == 0:
+         n = sum(line)
+-    else:
+-        temp = 0
+-        for i in range(7):
+-            temp += line[i]
+-            if temp >= n:
+-                print(i + 1)
+-                break
+\ No newline at end of file
++    temp = 0
++    for i in range(7):
++        temp += line[i]
++        if temp >= n:
++            print(i + 1)
++            break
+\ No newline at end of file

@@ -1,0 +1,28 @@
+diff --git a/Users/bardia/Downloads/data 4/data/305_problem_id/27871_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/305_problem_id/27871_author_id/Accepted.py
+index 302f7f4..3a51948 100644
+--- a/Users/bardia/Downloads/data 4/data/305_problem_id/27871_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/305_problem_id/27871_author_id/Accepted.py	
+@@ -18,9 +18,10 @@ def result(_xor, _sum, flag):
+     if s == '11':
+         return 0 if flag else 2 * result(newxor, newsum, False)
+     if s == '10':
+-        return result(newxor, newsum, True) + result(newxor, newsum, False) if flag else 0
++        return 2 * result(newxor, newsum, True) if flag else 0
+     if s == '01':
+-        return 2 * result(newxor, newsum, False) if flag else 0
++        return result(newxor, newsum, True) + result(newxor, newsum, False) if flag else 0
++
+ 
+ 
+ ss, xr = [int(x) for x in sys.stdin.readline().split()]
+@@ -32,6 +33,9 @@ if len(_sum) > len(_xor):
+ else:
+     _sum = add_zeros(_xor, _sum)
+ 
++#print(_sum)
++#print(_xor)
++
+ res = result(_xor, _sum, False)
+ 
+ print(res - 2 if ss == xr else res)
+\ No newline at end of file

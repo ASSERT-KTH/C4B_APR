@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1960_problem_id/23054_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1960_problem_id/23054_author_id/Accepted.py
+index c59bdf0..5a7fba8 100644
+--- a/Users/bardia/Downloads/data 4/data/1960_problem_id/23054_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1960_problem_id/23054_author_id/Accepted.py	
+@@ -1,4 +1,4 @@
+ for i in range(5):
+-    x=input().split()
+-if '1' in x:
+-    print (abs(i-2)+ abs(x.index('1')-2))
+\ No newline at end of file
++	s = input().split()
++	if '1' in s:
++		print(abs(i - 2) + abs(s.index('1') - 2))
+\ No newline at end of file

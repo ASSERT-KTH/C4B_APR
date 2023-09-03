@@ -1,0 +1,24 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1520_problem_id/23401_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1520_problem_id/23401_author_id/Accepted.py
+index 596ae5d..cb27549 100644
+--- a/Users/bardia/Downloads/data 4/data/1520_problem_id/23401_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1520_problem_id/23401_author_id/Accepted.py	
+@@ -8,6 +8,7 @@ third = r[2]
+ step_count = n//m
+ s = n%m
+ res = None
++resList = set()
+ if s == 0:
+     print (step_count)
+ else:
+@@ -17,7 +18,6 @@ else:
+         for x in range(s//sec,-1,-1):
+             if not (s - x*sec) % third:
+                 res = step_count + x + (s - x*sec) // third
++                resList.add(res)
+                 break
+-        if res:
+-            print (res)
+-            break
+\ No newline at end of file
++    print (max(resList))
+\ No newline at end of file

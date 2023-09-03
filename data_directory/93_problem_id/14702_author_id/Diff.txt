@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/93_problem_id/14702_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/93_problem_id/14702_author_id/Accepted.py
+index 40ff544..79eb7ea 100644
+--- a/Users/bardia/Downloads/data 4/data/93_problem_id/14702_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/93_problem_id/14702_author_id/Accepted.py	
+@@ -3,5 +3,5 @@ k=int(k)
+ a=int(a)
+ b=int(b)
+ if a%k!=0 :
+-    a=a+k-abs(a)%k
++    a=a+k-a%k
+ print(max(0,1+(b-a)//k))
+\ No newline at end of file

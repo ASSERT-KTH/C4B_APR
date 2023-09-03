@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2837_problem_id/103698_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2837_problem_id/103698_author_id/Accepted.py
+index bd555b0..71046df 100644
+--- a/Users/bardia/Downloads/data 4/data/2837_problem_id/103698_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2837_problem_id/103698_author_id/Accepted.py	
+@@ -1,5 +1,6 @@
+ n = int(input())
++# n = 4
+ t = str(n)
+ l = len(t)
+ f = int(t[0])
+-print((f+1)*(10**(f-1))-n)
+\ No newline at end of file
++print((f+1)*(10**(l-1))-n)
+\ No newline at end of file

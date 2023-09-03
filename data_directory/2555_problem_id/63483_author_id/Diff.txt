@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2555_problem_id/63483_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2555_problem_id/63483_author_id/Accepted.py
+index b9ec705..ddfe5b8 100644
+--- a/Users/bardia/Downloads/data 4/data/2555_problem_id/63483_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2555_problem_id/63483_author_id/Accepted.py	
+@@ -1,11 +1,15 @@
+-d=(input())
++d=input()
+ p=True
+ for i in range(len(d)-1):
+ 	m=i
+-	j=0
++	j=1
+ 	while d[m]==d[m+1]:
++		
++		
+ 		m+=1
+ 		j+=1
++		if m+1>len(d)-1:
++			break
+ 	if j>=7:
+ 		print ('YES')
+ 		p=False

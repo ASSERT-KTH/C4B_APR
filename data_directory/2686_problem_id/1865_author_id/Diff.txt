@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2686_problem_id/1865_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2686_problem_id/1865_author_id/Accepted.py
+index 81d0217..1585311 100644
+--- a/Users/bardia/Downloads/data 4/data/2686_problem_id/1865_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2686_problem_id/1865_author_id/Accepted.py	
+@@ -11,4 +11,4 @@ s=s.replace('0','8')
+ s=s.replace('a','0')
+ s=s.replace('1','a')
+ s=s.replace('2','a')
+-print("YNeos"[r!=s::2])
+\ No newline at end of file
++print("YNeos"[r!=s[::-1]::2])
+\ No newline at end of file

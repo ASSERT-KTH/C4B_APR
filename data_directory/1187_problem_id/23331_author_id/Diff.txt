@@ -1,0 +1,16 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/23331_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/23331_author_id/Accepted.py
+index 14753a6..4790fc7 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/23331_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/23331_author_id/Accepted.py	
+@@ -1,5 +1,7 @@
+ s = input()
+-if s.isupper() or (s[0].lower() and (s[1:].isupper()) if len(s) > 1 else True):
++if s.isupper():
++    print(s.lower())
++elif (s[0].lower() and (s[1:].isupper()) if len(s) > 1 else True):
+     print(s[0].upper() + s[1:].lower())
+ else:
+-    print(s);
+\ No newline at end of file
++    print(s)
+\ No newline at end of file

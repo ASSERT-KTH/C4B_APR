@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2969_problem_id/4343_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2969_problem_id/4343_author_id/Accepted.py
+index c5c10a8..c0eedb6 100644
+--- a/Users/bardia/Downloads/data 4/data/2969_problem_id/4343_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2969_problem_id/4343_author_id/Accepted.py	
+@@ -1,6 +1,6 @@
+ s, v1, v2, t1, t2 = map(int, input().split())
+-first = t1 + v1 * s + t2
+-second = t2+ v2 * s + t2
++first = t1 + v1 * s + t1
++second = t2 + v2 * s + t2
+ 
+ if first < second:
+ 	print('First')

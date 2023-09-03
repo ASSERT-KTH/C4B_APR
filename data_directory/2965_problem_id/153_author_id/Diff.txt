@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2965_problem_id/153_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2965_problem_id/153_author_id/Accepted.py
+index 6364f99..0d8edf7 100644
+--- a/Users/bardia/Downloads/data 4/data/2965_problem_id/153_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2965_problem_id/153_author_id/Accepted.py	
+@@ -5,9 +5,9 @@ s = input()
+ n = int(input())
+ a = ['v', '<', '^', '>']
+ k = n % 4
+-if k == 2:
++if k % 2 == 0:
+     print('undefined')
+-elif 4 - a.index(s[2]) + a.index(s[0]) > 0:
++elif (a.index(s[2]) - a.index(s[0]) ) % 4 == k:
+     print('cw')
+ else:
+     print('ccw')
+\ No newline at end of file

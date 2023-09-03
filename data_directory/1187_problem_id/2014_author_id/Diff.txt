@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1187_problem_id/2014_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1187_problem_id/2014_author_id/Accepted.py
+index de52d7f..d37a08f 100644
+--- a/Users/bardia/Downloads/data 4/data/1187_problem_id/2014_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1187_problem_id/2014_author_id/Accepted.py	
+@@ -1,5 +1,6 @@
+ s=str(input())
+-if s[0].islower():
++if s[1:].upper()==s[1:]:
++   #accident
+    print(s.swapcase())
+ else:
+    print(s)
+\ No newline at end of file

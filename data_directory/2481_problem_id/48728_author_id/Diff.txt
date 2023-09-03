@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/48728_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/48728_author_id/Accepted.py
+index a5afdf5..652f150 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/48728_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/48728_author_id/Accepted.py	
+@@ -1,5 +1,8 @@
+-n = int(input())-1
++n = int(input())
+ row = ['Sheldon', 'Leonard', 'Penny', 'Rajesh', 'Howard']
+-while n>5:
+-    n=(n-5)/2
+-print(row[int(n)])
+\ No newline at end of file
++if n<=5:
++    print (row[n-1])
++else:
++    while n>5:
++        n=(n-5)/2
++    print(row[int(n)])
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2003_problem_id/60724_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2003_problem_id/60724_author_id/Accepted.py
+index 2b62949..86444bc 100644
+--- a/Users/bardia/Downloads/data 4/data/2003_problem_id/60724_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2003_problem_id/60724_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ a = input()
+ b= []
+ 
+ if (1000<=int(a)<=9000):
+-  for k in range(int(a)+1,9001):
++  for k in range(int(a)+1,9013):
+     k= str(k)
+     for i in k:
+         b.append(i)

@@ -1,0 +1,22 @@
+diff --git a/Users/bardia/Downloads/data 4/data/538_problem_id/18056_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/538_problem_id/18056_author_id/Accepted.py
+index ba6b00f..78245bc 100644
+--- a/Users/bardia/Downloads/data 4/data/538_problem_id/18056_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/538_problem_id/18056_author_id/Accepted.py	
+@@ -3,11 +3,15 @@ def cnt(s,v):
+     for i in s:
+         if i==v:
+             ans+=1
++    if ans<2:
++        return 0
++    if ans>3:
++        return 3
+     return ans
+ 
+ 
+ s=[int(z) for z in input().split()]
+ mx=0
+ for i in range(1000):
+-    mx=max(mx,max(cnt(s,i),3)*i)
++    mx=max(mx,cnt(s,i)*i)
+ print(sum(s)-mx)
+\ No newline at end of file

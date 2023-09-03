@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1198_problem_id/60949_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1198_problem_id/60949_author_id/Accepted.py
+index 738c815..a1d97af 100644
+--- a/Users/bardia/Downloads/data 4/data/1198_problem_id/60949_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1198_problem_id/60949_author_id/Accepted.py	
+@@ -1,7 +1,7 @@
+ word = input()
+ instruction = False
+ for i in range(len(word)):
+-    if(word[i]=="H")or(word[i]=="Q")or(word[i]=="9")or(word[i]=="+"):
++    if(word[i]=="H")or(word[i]=="Q")or(word[i]=="9"):
+         instruction = True
+         break
+ if(instruction):

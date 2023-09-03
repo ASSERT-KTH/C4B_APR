@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/419_problem_id/6013_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/419_problem_id/6013_author_id/Accepted.py
+index 4391cc3..4f62772 100644
+--- a/Users/bardia/Downloads/data 4/data/419_problem_id/6013_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/419_problem_id/6013_author_id/Accepted.py	
+@@ -1,7 +1,6 @@
+-n,a,b=map(int,input().split(' '))
+-if (n==1):print(n)
+-elif(b>0):
+-  print((a+b)%n)
+-elif(b<0):
+-  print(-(a+b)%n)
+-elif (b==0):print(a)
+\ No newline at end of file
++n,x,y=map(int,input().split(' '))
++res=((x+y)%n+n)%n;
++if(res==0):
++    print(n)
++else:
++    print(res)
+\ No newline at end of file

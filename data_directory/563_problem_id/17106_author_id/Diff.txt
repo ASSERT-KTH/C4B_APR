@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/563_problem_id/17106_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/563_problem_id/17106_author_id/Accepted.py
+index f892490..49c03b7 100644
+--- a/Users/bardia/Downloads/data 4/data/563_problem_id/17106_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/563_problem_id/17106_author_id/Accepted.py	
+@@ -1,6 +1,7 @@
+ from itertools import permutations
+ def findPow(num):
+-    ans = 0
++    ans = 1
++    num = num // 7
+     while num > 0:
+         num //= 7
+         ans +=1

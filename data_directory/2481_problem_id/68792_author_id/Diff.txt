@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/68792_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/68792_author_id/Accepted.py
+index ec46d56..a82d639 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/68792_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/68792_author_id/Accepted.py	
+@@ -1,13 +1,21 @@
+ n=int(input())
+ listnames=["Sheldon","Leonard","Penny","Rajesh","Howard"]
+-listcount=[1,1,1,1,1]
+ i=0
++t=False
++c=5
++listcount=[1,1,1,1,1]
+ if(1<=n<=5):
+     print(listnames[n-1])
++elif(n==6):
++    print("Sheldon")
+ else:
+-    while(i<n):
+-        c=listnames[i]
+-        listnames.append(c)
+-        listnames.append(c)
+-        i=i+1
+-    print(listnames[len(listnames)-1])
+\ No newline at end of file
++    while(t==False):
++        while(i<5):
++            listcount[i]=listcount[i]*2
++            c = c + listcount[i]
++            i=i+1
++            if(c>=n):
++                print(listnames[i-1])
++                t=True
++                break
++        i=0
+\ No newline at end of file

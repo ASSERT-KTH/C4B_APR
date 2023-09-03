@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/968_problem_id/53330_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/968_problem_id/53330_author_id/Accepted.py
+index 7ec14d3..e0b3b4a 100644
+--- a/Users/bardia/Downloads/data 4/data/968_problem_id/53330_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/968_problem_id/53330_author_id/Accepted.py	
+@@ -7,7 +7,7 @@ else:
+     k=30
+ broj_tjedana=1
+ nedjelja=7-d+1
+-print(k)
++
+ while nedjelja<k:
+     broj_tjedana+=1
+     nedjelja+=7

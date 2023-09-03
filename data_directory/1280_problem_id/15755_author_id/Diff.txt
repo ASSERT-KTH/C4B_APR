@@ -1,0 +1,17 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/15755_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/15755_author_id/Accepted.py
+index 32698e0..dfcea72 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/15755_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/15755_author_id/Accepted.py	
+@@ -5,9 +5,10 @@ for i in range(len(a)) :
+     a[i] = int(a[i])
+ for i in reversed(sorted(a)) :
+     if k < 1 :
+-        print(ans)
+         break
+     k -= i
+     ans += 1
++if k < 1 :
++    print(ans)
+ else :
+     print(-1)
+\ No newline at end of file

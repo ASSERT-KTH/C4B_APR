@@ -1,0 +1,26 @@
+diff --git a/Users/bardia/Downloads/data 4/data/764_problem_id/168_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/764_problem_id/168_author_id/Accepted.py
+index b5e02ee..93a8f68 100644
+--- a/Users/bardia/Downloads/data 4/data/764_problem_id/168_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/764_problem_id/168_author_id/Accepted.py	
+@@ -1,11 +1,8 @@
+-a=input().split()
+-x= a.__len__()
+-j=0
+-while j<x-1:
+-    i=0
+-    while i<x-1:
+-        if a[i]<a[i+1]:
+-            a[i], a[i+1] = a[i+1], a[i]
+-        i+=1
+-    j+=1
+-print((abs(int(a[1])-int(a[0])) + abs(int(a[1])-int(a[2]))))
+\ No newline at end of file
++#!/usr/bin/python3.5
++
++a = [int(x) for x in input().split(" ")]
++a.sort()
++
++dist = a[2] - a[0]
++
++print(dist)
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2680_problem_id/28772_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2680_problem_id/28772_author_id/Accepted.py
+index bd6ddae..47a9d6d 100644
+--- a/Users/bardia/Downloads/data 4/data/2680_problem_id/28772_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2680_problem_id/28772_author_id/Accepted.py	
+@@ -3,6 +3,6 @@ arr.pop(0)
+ arr.sort()
+ res = 0
+ for i in range(10000):
+-    for k in range(1000):
++    for k in range(500):
+         res += i + k
+ print(*arr)
+\ No newline at end of file

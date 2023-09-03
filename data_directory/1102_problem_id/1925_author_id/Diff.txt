@@ -1,0 +1,11 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1102_problem_id/1925_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1102_problem_id/1925_author_id/Accepted.py
+index 496156d..4156347 100644
+--- a/Users/bardia/Downloads/data 4/data/1102_problem_id/1925_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1102_problem_id/1925_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ cad = input().lower()
+-v = ['a', 'o', 'y', 'e', 't', 'i']
++v = ['a', 'o', 'y', 'e', 'u', 'i']
+ result = ""
+ for i in cad:
+     if i in v:

@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1104_problem_id/43428_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1104_problem_id/43428_author_id/Accepted.py
+index e020ef9..0b32383 100644
+--- a/Users/bardia/Downloads/data 4/data/1104_problem_id/43428_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1104_problem_id/43428_author_id/Accepted.py	
+@@ -39,4 +39,4 @@ for i in range(pawns):
+     print(infKnights[i][j])
+     print()
+     """
+-print(sum(infPawns[pawns-1][knights-1])+sum(infKnights[pawns-1][knights-1]))
+\ No newline at end of file
++print((sum(infPawns[pawns-1][knights-1])+sum(infKnights[pawns-1][knights-1]))%10**8)
+\ No newline at end of file

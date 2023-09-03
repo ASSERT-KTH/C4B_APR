@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1280_problem_id/15534_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1280_problem_id/15534_author_id/Accepted.py
+index ce1198e..8111e76 100644
+--- a/Users/bardia/Downloads/data 4/data/1280_problem_id/15534_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1280_problem_id/15534_author_id/Accepted.py	
+@@ -8,7 +8,7 @@ while need<k:
+     num-=1
+     if abs(num)>len(A):
+         break
+-if abs(num)>len(A):
++if need<k:
+     print(-1)
+ else:
+     print(abs(num)-1)
+\ No newline at end of file

@@ -1,0 +1,35 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2161_problem_id/36943_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2161_problem_id/36943_author_id/Accepted.py
+index 961f173..baa22e6 100644
+--- a/Users/bardia/Downloads/data 4/data/2161_problem_id/36943_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2161_problem_id/36943_author_id/Accepted.py	
+@@ -49,26 +49,26 @@ def main():
+                         print("the second player won")
+                     return
+         if matrix[0][0] == matrix[1][1] == matrix[2][2]:
+-            if matrix[0][i] == 'X':
++            if matrix[0][0] == 'X':
+                 if X_n0 == O_n0:
+                     print("illegal")
+                 else:
+                     print("the first player won")
+                 return
+-            elif matrix[0][i] == '0':
++            elif matrix[0][0] == '0':
+                 if X_n0 == O_n0+ 1:
+                     print("illegal")
+                 else:
+                     print("the second player won")
+                 return
+         if matrix[0][2] == matrix[1][1] == matrix[2][0]:
+-            if matrix[0][i] == 'X':
++            if matrix[0][2] == 'X':
+                 if X_n0 == O_n0:
+                     print("illegal")
+                 else:
+                     print("the first player won")
+                 return
+-            elif matrix[0][i] == '0':
++            elif matrix[0][2] == '0':
+                 if X_n0 == O_n0+ 1:
+                     print("illegal")
+                 else:

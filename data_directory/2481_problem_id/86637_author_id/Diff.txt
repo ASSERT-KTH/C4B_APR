@@ -1,0 +1,20 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2481_problem_id/86637_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2481_problem_id/86637_author_id/Accepted.py
+index 3467a98..41daba9 100644
+--- a/Users/bardia/Downloads/data 4/data/2481_problem_id/86637_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2481_problem_id/86637_author_id/Accepted.py	
+@@ -11,9 +11,12 @@ def func1(n):
+     return (i, j)
+ 
+ def func2(n):
+-    a = func1(n)
+-    b = math.floor((n - a[1])/a[0])
+-    return b
++    if n <= 5:
++        return n - 1
++    else:
++        a = func1(n)
++        b = math.floor((n - a[1])/a[0])
++        return b
+ 
+ 
+ name = func2(n)

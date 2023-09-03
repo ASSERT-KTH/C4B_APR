@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2766_problem_id/1369_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2766_problem_id/1369_author_id/Accepted.py
+index 5daf4f4..24b896d 100644
+--- a/Users/bardia/Downloads/data 4/data/2766_problem_id/1369_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2766_problem_id/1369_author_id/Accepted.py	
+@@ -12,5 +12,7 @@ for i in range(0,k):
+ 		break
+ if total==2:
+ 	print("YES")
++elif total==0 and k%2==1:
++	print("YES")
+ elif total<2:
+ 	print("NO")
+\ No newline at end of file

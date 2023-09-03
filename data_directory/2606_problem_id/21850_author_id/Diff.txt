@@ -1,0 +1,30 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2606_problem_id/21850_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2606_problem_id/21850_author_id/Accepted.py
+index f5b248c..f595d99 100644
+--- a/Users/bardia/Downloads/data 4/data/2606_problem_id/21850_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2606_problem_id/21850_author_id/Accepted.py	
+@@ -1,17 +1,15 @@
+-from random import *
+ __author__ = "Ryabchun Vladimir"
+ """
+ from 97 to 97+k
+ """
+ n, k = map(int, input().split())
+ answer = ""
+-last = -1
++last = 96
+ used = []
+-for char in range(n):
+-    rchar = randint(97, 96+k)
+-    while (rchar == last) or (chr(rchar) in used):
+-        rchar = randint(97, 96 + k)
+-    last = rchar
+-    used.append(chr(rchar))
+-    answer += chr(rchar)
++while len(answer) != n:
++    if last >= 96+k:
++        last = 97
++    else:
++        last += 1
++    answer += chr(last)
+ print(answer)
+\ No newline at end of file

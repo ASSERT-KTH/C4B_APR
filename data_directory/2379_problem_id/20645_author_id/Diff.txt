@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2379_problem_id/20645_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2379_problem_id/20645_author_id/Accepted.py
+index f5ae46e..55ca6ae 100644
+--- a/Users/bardia/Downloads/data 4/data/2379_problem_id/20645_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2379_problem_id/20645_author_id/Accepted.py	
+@@ -5,7 +5,8 @@ else:
+     if (0 == a[0] * a[2] * a[4]) ^ (0 == a[1] * a[3] * a[5]):
+         print('Hermione')
+     elif 0 == a[0] * a[2] * a[4] == a[1] * a[3] * a[5]:
+-        if a[2] == 0 and a[3] != 0:
++        if (a[2] == 0 and a[3] != 0) or (a[0] == 0 and a[1] > 0 \
++                and a[3] > 0):
+             print('Ron')
+         else:
+             print('Hermione')

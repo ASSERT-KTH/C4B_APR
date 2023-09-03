@@ -1,0 +1,21 @@
+diff --git a/Users/bardia/Downloads/data 4/data/530_problem_id/28706_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/530_problem_id/28706_author_id/Accepted.py
+index 0fca5b3..8562f93 100644
+--- a/Users/bardia/Downloads/data 4/data/530_problem_id/28706_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/530_problem_id/28706_author_id/Accepted.py	
+@@ -10,10 +10,10 @@ def pgcd(a,b):
+         a, b = b, a % b
+     return a
+ 
+-c=a*b/pgcd(a,b)
++c=int((a*b/pgcd(a,b)))
+ 
+-d=n//c
++d=int(n//c)
+ 
+-S=((n//a)-d)*p+((n//b)-d)*q+(d)*max(p,q)
++S=int(((n//a)-d)*p+((n//b)-d)*q+d*max(p,q))
+ 
+-print(int(S))
+\ No newline at end of file
++print(S)
+\ No newline at end of file

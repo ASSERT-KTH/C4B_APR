@@ -1,0 +1,9 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2111_problem_id/86433_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2111_problem_id/86433_author_id/Accepted.py
+index 98e1e3b..f7dc3f3 100644
+--- a/Users/bardia/Downloads/data 4/data/2111_problem_id/86433_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2111_problem_id/86433_author_id/Accepted.py	
+@@ -1,2 +1,2 @@
+-presidents = "Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams", "Jackson", "Van Buren", "Harrison", "Tyler", "Polk", "Taylor", "Fillmore", "Pierce", "Buchanan", "Lincoln", "Johnson", "Grant", "Hayes", "Garfield", "Arthur", "Cleveland", "Harrison", "Cleveland", "McKinley", "Roosevelt", "Taft", "Wilson", "Harding", "Coolidge", "Hoover", "Roosevelt", "Truman", "Eisenhower", "Kennedy", "Johnson", "Nixon", "Ford", "Carter", "Regan"
++presidents = "Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams", "Jackson", "Van Buren", "Harrison", "Tyler", "Polk", "Taylor", "Fillmore", "Pierce", "Buchanan", "Lincoln", "Johnson", "Grant", "Hayes", "Garfield", "Arthur", "Cleveland", "Harrison", "Cleveland", "McKinley", "Roosevelt", "Taft", "Wilson", "Harding", "Coolidge", "Hoover", "Roosevelt", "Truman", "Eisenhower", "Kennedy", "Johnson", "Nixon", "Ford", "Carter", "Reagan"
+ print(presidents[int(input()) - 1])
+\ No newline at end of file

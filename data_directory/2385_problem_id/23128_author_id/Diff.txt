@@ -1,0 +1,18 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2385_problem_id/23128_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2385_problem_id/23128_author_id/Accepted.py
+index 05f8e2e..a5c5736 100644
+--- a/Users/bardia/Downloads/data 4/data/2385_problem_id/23128_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2385_problem_id/23128_author_id/Accepted.py	
+@@ -1,7 +1,6 @@
+-x=map(int,input())
+-
+-if x>=-128 and x<=127:print("byte")
+-elif x>=-32768 and x<=32767:print("short")
+-elif x>=-2147483648 and x<=2147483647:print("int")
+-elif x>=-9223372036854775808 and x<=9223372036854775807:print("long")
++n = int(input())
++if n <= 127: print("byte")
++elif n <= 32767: print('short')
++elif n <= 2147483647: print("int")
++elif n <= 9223372036854775807: print("long")
+ else :print("BigInteger")
+\ No newline at end of file

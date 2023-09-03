@@ -1,0 +1,12 @@
+diff --git a/Users/bardia/Downloads/data 4/data/217_problem_id/3152_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/217_problem_id/3152_author_id/Accepted.py
+index 9d9fb13..8472a09 100644
+--- a/Users/bardia/Downloads/data 4/data/217_problem_id/3152_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/217_problem_id/3152_author_id/Accepted.py	
+@@ -1,5 +1,5 @@
+ n=int(input())
+-k=int(2*(n**(1/2)))
++k=int(((2*n)**(1/2)))
+ while (k*(k+1))//2>=n:
+     k-=1
+ print(n-(k*(k+1)//2))
+\ No newline at end of file

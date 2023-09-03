@@ -1,0 +1,79 @@
+diff --git a/Users/bardia/Downloads/data 4/data/587_problem_id/42379_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/587_problem_id/42379_author_id/Accepted.py
+index 3805fe0..9f2ec4b 100644
+--- a/Users/bardia/Downloads/data 4/data/587_problem_id/42379_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/587_problem_id/42379_author_id/Accepted.py	
+@@ -5,58 +5,38 @@ writeln=lambda x:sys.stdout.write(str(x)+"\n")
+ write=lambda x:sys.stdout.write(x)
+ def solve(memory, N):
+     if N == 1:
+-        return "YES"
++        return "NO"
+     pad=[[-1]*7 for _ in range(9)]
+     n = 1
+     npos = [[-1,-1]]*10
++    chkOrder = []
+     for i in range(2, 5):
+         for j in range(2, 5):
+             pad[i][j] = n
+             npos[n] = (i, j)
++            chkOrder.append((i, j))
+             n += 1
+     pad[5][3] = 0
+     npos[0] = (5, 3)
+-    # print(npos)
+-    # for i in range(8):
+-        # print(pad[i])
+-    vecs = []
++    chkOrder.append((5,3))
++
++    vecs = [(0,0)]
+     sy, sx = npos[int(memory[0])]
+     for i in range(N-1):
+         y, x = npos[int(memory[i])]
+         ny, nx = npos[int(memory[i+1])]
+         vecs.append((ny-y, nx-x))
+     
+-
+-    for i in range(2, 5):
+-        for j in range(2, 5):
+-            if (sy, sx) == (i, j):
+-                continue 
+-            y, x = i, j
+-            # print(pad[i][j])
+-            for t in range(N-1):
+-                dy,dx = vecs[t]
+-                y, x = y + dy, x + dx
+-                # write(str(pad[y][x]))
+-                if pad[y][x] == -1:
+-                    # print("")
+-                    break
+-            else:
+-                # print("")
+-                return "NO"
+-            
+-    
+-    if (sy, sx) == (5, 3):
+-        return "YES"
+-    
+-    y, x = 5, 3
+-    for t in range(N-1):
+-        dy,dx = vecs[t]
+-        y, x = y + dy, x + dx
+-        if pad[y][x] == -1:
+-            break
+-    else:
+-        return "NO"
+-
++    for y, x in chkOrder:
++        if (sy, sx) == (y, x):
++            continue 
++        for t in range(N):
++            dy,dx = vecs[t]
++            y, x = y + dy, x + dx
++            if pad[y][x] == -1:
++                break
++        else:
++            return "NO"
+     return "YES"
+ 
+ N=readi()

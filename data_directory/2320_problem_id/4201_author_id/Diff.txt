@@ -1,0 +1,32 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2320_problem_id/4201_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2320_problem_id/4201_author_id/Accepted.py
+index c9df609..7da3ba7 100644
+--- a/Users/bardia/Downloads/data 4/data/2320_problem_id/4201_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2320_problem_id/4201_author_id/Accepted.py	
+@@ -8,17 +8,16 @@ def seek(terms, operators):
+ 	if len(terms) == 1:
+ 		return terms[0]
+ 	for i, a in enumerate(terms):
+-		for  j in range(i + 1, len(terms)):
++		for j in range(i + 1, len(terms)):
+ 			b = terms[j]
+-			for k, operator in enumerate(operators):
+-				if operator == '+':
+-					x = a + b
+-				else:
+-					x = a * b
+-				y = seek(terms[:i] + terms[i + 1:j] + terms[j + 1:] + [ x ],
+-						operators[:k] + operators[k + 1:])
+-				if best == None or y < best:
+-					best = y
++			if operators[0] == '+':
++				x = a + b
++			else:
++				x = a * b
++			y = seek(terms[:i] + terms[i + 1:j] + terms[j + 1:] + [ x ],
++					operators[1:])
++			if best == None or y < best:
++				best = y
+ 	return best
+ 
+ print(seek(terms, operators))
+\ No newline at end of file

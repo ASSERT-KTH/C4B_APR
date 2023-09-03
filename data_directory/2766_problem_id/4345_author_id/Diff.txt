@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/2766_problem_id/4345_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/2766_problem_id/4345_author_id/Accepted.py
+index 964281e..63035e8 100644
+--- a/Users/bardia/Downloads/data 4/data/2766_problem_id/4345_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/2766_problem_id/4345_author_id/Accepted.py	
+@@ -14,5 +14,7 @@ for i,c in enumerate(l_s):
+ 
+ if num > 1:
+   print('NO')
++elif len(s)%2==0 and num==0:
++  print('NO')
+ else:
+   print('YES')
+\ No newline at end of file

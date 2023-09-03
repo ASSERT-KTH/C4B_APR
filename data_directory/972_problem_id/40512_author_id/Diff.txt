@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/972_problem_id/40512_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/972_problem_id/40512_author_id/Accepted.py
+index a450432..fb12b41 100644
+--- a/Users/bardia/Downloads/data 4/data/972_problem_id/40512_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/972_problem_id/40512_author_id/Accepted.py	
+@@ -2,7 +2,7 @@ x, y = input().split()
+ x = int(x)
+ y = int(y)
+ 
+-if x-y>1 or x-y<-1:
++if x-y>1 or x-y<-1 or (x==0 and y==0):
+     print("NO")
+ else:
+     print("YES")
+\ No newline at end of file

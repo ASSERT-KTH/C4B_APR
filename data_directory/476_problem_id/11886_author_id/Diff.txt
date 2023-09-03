@@ -1,0 +1,14 @@
+diff --git a/Users/bardia/Downloads/data 4/data/476_problem_id/11886_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/476_problem_id/11886_author_id/Accepted.py
+index 33c84aa..2244597 100644
+--- a/Users/bardia/Downloads/data 4/data/476_problem_id/11886_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/476_problem_id/11886_author_id/Accepted.py	
+@@ -33,7 +33,7 @@ index = int( data )
+ 
+ #if index is multiple of 3, then return index * 2/3.
+ if index % 3 == 0 :
+-    print( index * 2 / 3 )
++    print( index * 2 // 3 )
+ else :
+     multipleOfThree = index // 3
+     print( 2*multipleOfThree + 1 )
+\ No newline at end of file

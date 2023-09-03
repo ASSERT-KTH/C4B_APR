@@ -1,0 +1,19 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1142_problem_id/1633_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1142_problem_id/1633_author_id/Accepted.py
+index d7a7698..b270ef5 100644
+--- a/Users/bardia/Downloads/data 4/data/1142_problem_id/1633_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1142_problem_id/1633_author_id/Accepted.py	
+@@ -3,7 +3,8 @@ numbers = string.split(" ")
+ n = int(numbers[0])
+ a = int(numbers[1])
+ b = int(numbers[2])
+-s = n - a
+-if a - b == 0 or a - b == 1:
+-    s -= a - b
+-print(s)
+\ No newline at end of file
++x = n - a
++y = n - a - b - 1
++if y > 0:
++    x -= y
++print(x)
+\ No newline at end of file

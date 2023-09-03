@@ -1,0 +1,13 @@
+diff --git a/Users/bardia/Downloads/data 4/data/1107_problem_id/18262_author_id/Rejected.py b/Users/bardia/Downloads/data 4/data/1107_problem_id/18262_author_id/Accepted.py
+index 2018153..11b165f 100644
+--- a/Users/bardia/Downloads/data 4/data/1107_problem_id/18262_author_id/Rejected.py	
++++ b/Users/bardia/Downloads/data 4/data/1107_problem_id/18262_author_id/Accepted.py	
+@@ -17,7 +17,7 @@ win=0
+ lose=0
+ turn=True
+ 
+-while n>=inp[0] and n>=inp[1]:
++while n>0:
+     if turn==True: #Simon's Turn
+         n = n-gcd(inp[0],n)
+         win+=1
